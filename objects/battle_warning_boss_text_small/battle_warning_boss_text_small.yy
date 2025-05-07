@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"battle_warning_boss_slash",
+  "%Name":"battle_warning_boss_text_small",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"battle_warning_boss_slash",
+  "name":"battle_warning_boss_text_small",
   "overriddenProperties":[],
   "parent":{
     "name":"ui",
@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_ui_warning_boss_slash",
-    "path":"sprites/spr_ui_warning_boss_slash/spr_ui_warning_boss_slash.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
