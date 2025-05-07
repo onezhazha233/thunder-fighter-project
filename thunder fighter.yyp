@@ -332,6 +332,7 @@
     {"id":{"name":"battle_warning_boss_slash_creator","path":"objects/battle_warning_boss_slash_creator/battle_warning_boss_slash_creator.yy",},},
     {"id":{"name":"battle_warning_boss_slash","path":"objects/battle_warning_boss_slash/battle_warning_boss_slash.yy",},},
     {"id":{"name":"battle_warning_boss_text_small","path":"objects/battle_warning_boss_text_small/battle_warning_boss_text_small.yy",},},
+    {"id":{"name":"battle_warning_boss_textbar","path":"objects/battle_warning_boss_textbar/battle_warning_boss_textbar.yy",},},
     {"id":{"name":"beam_cannon","path":"objects/beam_cannon/beam_cannon.yy",},},
     {"id":{"name":"blade_zero","path":"objects/blade_zero/blade_zero.yy",},},
     {"id":{"name":"blast_xeno","path":"objects/blast_xeno/blast_xeno.yy",},},

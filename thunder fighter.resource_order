@@ -273,6 +273,7 @@
     {"name":"battle_warning_boss_slash_creator","order":2,"path":"objects/battle_warning_boss_slash_creator/battle_warning_boss_slash_creator.yy",},
     {"name":"battle_warning_boss_slash","order":1,"path":"objects/battle_warning_boss_slash/battle_warning_boss_slash.yy",},
     {"name":"battle_warning_boss_text_small","order":3,"path":"objects/battle_warning_boss_text_small/battle_warning_boss_text_small.yy",},
+    {"name":"battle_warning_boss_textbar","order":4,"path":"objects/battle_warning_boss_textbar/battle_warning_boss_textbar.yy",},
     {"name":"blade_zero","order":1,"path":"objects/blade_zero/blade_zero.yy",},
     {"name":"blast_xeno","order":2,"path":"objects/blast_xeno/blast_xeno.yy",},
     {"name":"blaze_phoenix","order":3,"path":"objects/blaze_phoenix/blaze_phoenix.yy",},
