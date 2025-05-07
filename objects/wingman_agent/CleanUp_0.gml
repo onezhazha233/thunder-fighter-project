@@ -1,0 +1,4 @@
+if(surface_exists(surf))surface_free(surf);
+layer_sequence_destroy(wingman_sequence)
+layer_sequence_destroy(flame_sequence)
+instance_destroy(bullet_emitter_inst)

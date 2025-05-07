@@ -1,0 +1,1 @@
+if(draw = 1)draw_sprite_ext(spr_assault_d_base,0,x,y,2,2,0,-1,1)

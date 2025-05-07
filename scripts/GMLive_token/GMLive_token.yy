@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"GMLive_token",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GMLive_token",
+  "parent":{
+    "name":"Compiler",
+    "path":"folders/扩展/GMLive/Internal/Compiler.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

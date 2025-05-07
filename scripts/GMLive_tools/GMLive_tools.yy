@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"GMLive_tools",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GMLive_tools",
+  "parent":{
+    "name":"Public",
+    "path":"folders/扩展/GMLive/Public.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

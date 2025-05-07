@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Macro_Depth",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Macro_Depth",
+  "parent":{
+    "name":"脚本",
+    "path":"folders/脚本.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

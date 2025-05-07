@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"GMLive_program",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GMLive_program",
+  "parent":{
+    "name":"Runtime",
+    "path":"folders/扩展/GMLive/Internal/Runtime.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

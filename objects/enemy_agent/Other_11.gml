@@ -1,0 +1,109 @@
+live;
+SetState = function(s){
+	state = s;
+	if(display_mode = 1){
+		if(s = 0){
+			if(pre_mode = 0){
+				layer_sequence_destroy(enemy_sequence);
+				enemy_sequence = layer_sequence_create("enemies",x,y,intro_sequence);
+				layer_sequence_xscale(enemy_sequence,image_xscale);
+				layer_sequence_yscale(enemy_sequence,image_yscale);
+				layer_sequence_speedscale(enemy_sequence,0);
+				layer_sequence_headpos(enemy_sequence,0);
+			}
+			if(pre_mode = 1){
+				layer_sequence_destroy(enemy_sequence);
+				enemy_sequence = layer_sequence_create("enemies",x,y,pre_sequence);
+				layer_sequence_xscale(enemy_sequence,image_xscale);
+				layer_sequence_yscale(enemy_sequence,image_yscale);
+			}
+		}
+		if(s = 1){
+			layer_sequence_destroy(enemy_sequence);
+			enemy_sequence = layer_sequence_create("enemies",x,y,intro_sequence);
+			layer_sequence_xscale(enemy_sequence,image_xscale);
+			layer_sequence_yscale(enemy_sequence,image_yscale);
+		}
+		if(s = 2){
+			if(idle_mode = 0){
+				layer_sequence_destroy(enemy_sequence);
+				enemy_sequence = layer_sequence_create("enemies",x,y,intro_sequence);
+				layer_sequence_xscale(enemy_sequence,image_xscale);
+				layer_sequence_yscale(enemy_sequence,image_yscale);
+				layer_sequence_speedscale(enemy_sequence,0);
+				layer_sequence_headpos(enemy_sequence,layer_sequence_get_length(enemy_sequence));
+			}
+			if(idle_mode = 1){
+				layer_sequence_destroy(enemy_sequence);
+				enemy_sequence = layer_sequence_create("enemies",x,y,idle_sequence);
+				layer_sequence_xscale(enemy_sequence,image_xscale);
+				layer_sequence_yscale(enemy_sequence,image_yscale);
+			}
+		}
+		if(s = 3){
+			layer_sequence_destroy(enemy_sequence);
+			enemy_sequence = layer_sequence_create("enemies",x,y,intro_sequence);
+			layer_sequence_xscale(enemy_sequence,image_xscale);
+			layer_sequence_yscale(enemy_sequence,image_yscale);
+			layer_sequence_headdir(enemy_sequence,seqdir_left);
+			layer_sequence_headpos(enemy_sequence,layer_sequence_get_length(enemy_sequence));
+		}
+	}
+}
+
+SetSurfEnabled = function(enabled){
+	surf_enabled = enabled;
+	var scrBegin = function(){
+		if (event_number != ev_draw_normal) return;
+		if(surf_enabled = true&&surface_exists(surf))surface_set_target(surf);
+		gpu_set_blendmode_ext_sepalpha(bm_src_alpha, bm_inv_src_alpha, bm_one, bm_inv_src_alpha);
+		shader_set(shd_blend_alpha);
+		shader_set_uniform_f(shader_get_uniform(shd_blend_alpha,"u_blendColor"),color_get_red(image_blend)/255,color_get_green(image_blend)/255,color_get_blue(image_blend)/255,image_alpha);
+	}
+
+	var scrEnd = function(){
+		if (event_number != ev_draw_normal) return;
+		shader_reset();
+		draw_set_color(c_red)
+		if(collision_type = 0){
+			draw_rectangle(x-left*image_xscale,y-up*image_yscale,x+right*image_xscale,y+down*image_yscale,1);
+		}
+		if(collision_type = 1){
+			draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,1);
+		}
+		draw_set_color(-1)
+		gpu_set_blendmode(bm_normal);
+		if(surf_enabled = true&&surface_exists(surf))surface_reset_target();
+	}
+	layer_script_begin("enemies", scrBegin);
+	layer_script_end("enemies", scrEnd);
+
+	layer_script_begin("enemies_lower", scrBegin);
+	layer_script_end("enemies_lower", scrEnd);
+	
+	SetPosition(x,y);
+}
+
+SetPosition = function(xx,yy){
+	x = xx;
+	y = yy;
+	if(instance_exists(bullet_emitter_inst)){
+		bullet_emitter_inst.x = xx;
+		bullet_emitter_inst.y = yy;
+	}
+	
+	if(layer_sequence_exists("enemies",enemy_sequence)){
+		layer_sequence_x(enemy_sequence,x-surf_x*surf_enabled);
+		layer_sequence_y(enemy_sequence,y-surf_y*surf_enabled);
+		layer_sequence_xscale(enemy_sequence,image_xscale);
+		layer_sequence_yscale(enemy_sequence,image_yscale);
+		layer_sequence_angle(enemy_sequence,image_angle);
+	}
+	if(layer_sequence_exists("enemies_lower",flame_sequence)){
+		layer_sequence_x(flame_sequence,x+lengthdir_x(flame_x_offset,image_angle)*image_xscale-surf_x*surf_enabled+lengthdir_x(flame_y_offset,image_angle-90)*image_xscale-surf_x*surf_enabled);
+		layer_sequence_y(flame_sequence,y+lengthdir_y(flame_x_offset,image_angle)*image_yscale-surf_y*surf_enabled+lengthdir_y(flame_y_offset,image_angle-90)*image_yscale-surf_y*surf_enabled);
+		layer_sequence_xscale(flame_sequence,image_xscale);
+		layer_sequence_yscale(flame_sequence,image_yscale);
+		layer_sequence_angle(flame_sequence,image_angle);
+	}
+}

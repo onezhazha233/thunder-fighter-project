@@ -1,0 +1,11 @@
+function Macro_Depth(){
+	enum DEPTH_BATTLE{
+		UI = -1000,
+		INSTANCES_UPPER = -100,
+		BULLETS_PLAYER = 600,
+		BULLETS_ENEMY = -300,
+		EXPLOSION = -400,
+		ENEMIES = 700,
+		BG = 800
+	}
+}

@@ -1,0 +1,9 @@
+live;
+instance_destroy(plane_inst)
+for(i=0;i<array_length(wingman_left_inst);i+=1){
+	instance_destroy(wingman_left_inst[i]);
+}
+for(i=0;i<array_length(wingman_right_inst);i+=1){
+	instance_destroy(wingman_right_inst[i]);
+}
+layer_sequence_destroy(player_point)
