@@ -1,0 +1,2 @@
+live;
+image_alpha = battle_warning_boss_slash_creator.image_alpha
