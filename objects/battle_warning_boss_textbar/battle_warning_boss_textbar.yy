@@ -9,8 +9,8 @@
   "name":"battle_warning_boss_textbar",
   "overriddenProperties":[],
   "parent":{
-    "name":"ui",
-    "path":"folders/物体/ui.yy",
+    "name":"warning_boss",
+    "path":"folders/物体/ui/warning_boss.yy",
   },
   "parentObjectId":null,
   "persistent":false,

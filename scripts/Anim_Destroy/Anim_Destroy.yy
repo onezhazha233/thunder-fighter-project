@@ -6,7 +6,7 @@
   "name":"Anim_Destroy",
   "parent":{
     "name":"Anim",
-    "path":"folders/脚本/Anim.yy",
+    "path":"folders/脚本/GMU/Anim.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

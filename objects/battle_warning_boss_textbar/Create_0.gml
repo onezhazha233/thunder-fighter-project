@@ -1,6 +1,6 @@
 live;
 lv = 0
-name = "asd"
+name = Lang_GetString("battle.testboss.name")
 
 image_xscale = 5
 image_yscale = 5

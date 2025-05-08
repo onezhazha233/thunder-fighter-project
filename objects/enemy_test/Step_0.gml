@@ -1,10 +1,14 @@
 live;
 event_inherited();
 
-time += 1
+if(hp <= 0){
+	layer_sequence_create("enemies",x,y,seq_enemy_boss_mini_2_die);
+	instance_destroy();
+}
+
+time += ts
 if(time = 40){
-	//Anim_Create(id,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,y,320-y,40);
-	y = 320;
+	Anim_Create(id,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,y,320-y,40);
 }
 if(time = 80){
 	SetState(1);

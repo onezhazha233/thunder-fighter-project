@@ -1,4 +1,5 @@
 live;
+draw_set_font(Lang_GetFont("zpix"))
 draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
 draw_sprite_ext(spr_ui_warning_boss_textbar,0,x,y,image_xscale,image_yscale,0,-1,image_alpha)
