@@ -38,8 +38,11 @@ if(collision_type = 0){
 		    if (enemy_up <= bullet_down && enemy_down >= bullet_up &&
 		        enemy_left <= bullet_right && enemy_right >= bullet_left) {
 				enemy = other.id;
+				if(collision_destroy = true){
+					instance_destroy();
+				}
 		        with(other)event_user(0);
-				event_user(0);
+				if(other.inv = false)event_user(0);
 		    }
 		}
 	}
@@ -47,8 +50,11 @@ if(collision_type = 0){
 	if(instance_exists(bullet)){
 		if(bullet.collision_type = 1){
 			bullet.enemy = id;
+			if(other.collision_destroy = true){
+				instance_destroy(other);
+			}
 			with(other)event_user(0);
-			event_user(0);
+			if(inv = false)event_user(0);
 		}
 	}
 	player_point = collision_rectangle(x-left*image_xscale,y-up*image_yscale,x+right*image_xscale,y+down*image_yscale,player,1,1)
@@ -64,20 +70,15 @@ if(collision_type = 1){
 		if(collision_type = 0){
 			if(collision_rectangle(x-left*scale_x,y-up*scale_y,x+right*scale_x,y+down*scale_y,other,1,1)){
 				enemy = other.id;
+				if(collision_destroy = true){
+					instance_destroy();
+				}
 				with(other)event_user(0);
-				event_user(0);
+				if(other.inv = false)event_user(0);
 			}
 		}
 	}
 	
-	bullet = instance_place(x,y,bullet_player);
-	if(instance_exists(bullet)){
-		if(collision_type = 1){
-			//bullet.enemy = id;
-			//with(bullet)event_user(0);
-			//event_user(0);
-		}
-	}
 	player_point = instance_place(x,y,player);
 	if(instance_exists(player_point)){
 		if(global.inv = 0){

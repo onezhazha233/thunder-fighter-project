@@ -30,7 +30,5 @@ aa = 0
 num = 4
 as = 4
 
+x = 400
 y = -200
-
-ts = 0
-Anim_Create(id,"ts",0,0,0,1,0,260)

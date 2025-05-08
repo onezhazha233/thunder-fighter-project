@@ -35,6 +35,7 @@ blend_r = 255
 blend_g = 255
 blend_b = 255
 
+inv = false
 hp_max = 5
 hp = hp_max
 hurt_time = 0
