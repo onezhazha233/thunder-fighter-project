@@ -1171,16 +1171,9 @@
                 {"$GMGraphicTrack":"","%Name":"spr_enemy_boss_mini_2_wing","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
                       {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
                           "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_2_wing","path":"sprites/spr_enemy_boss_mini_2_wing/spr_enemy_boss_mini_2_wing.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
-                        },"Disabled":false,"id":"35ecfe0c-1a07-4275-a622-a0f876d30f68","IsCreationKey":false,"Key":0.0,"Length":120.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                        },"Disabled":false,"id":"35ecfe0c-1a07-4275-a622-a0f876d30f68","IsCreationKey":false,"Key":0.0,"Length":98.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                     ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_wing","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[
-                    {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
-                          {"$Keyframe<ColourKeyframe>":"","Channels":{
-                              "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                            },"Disabled":false,"id":"e1bd1161-5e8d-4b64-9649-191bfd31d601","IsCreationKey":false,"Key":114.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
-                          {"$Keyframe<ColourKeyframe>":"","Channels":{
-                              "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":16777215,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                            },"Disabled":false,"id":"9f0d6832-134f-411f-9876-df9792e67cdd","IsCreationKey":false,"Key":120.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
-                        ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
+                    {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
                     {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
                           {"$Keyframe<RealKeyframe>":"","Channels":{
                               "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
@@ -1189,35 +1182,13 @@
                         ],"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"origin","resourceType":"GMRealTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
                     {"$GMRealTrack":"","%Name":"position","builtinName":14,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
                           {"$Keyframe<RealKeyframe>":"","Channels":{
-                              "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":{"$GMAnimCurve":"","%Name":"位置","channels":[
-                                    {"$GMAnimCurveChannel":"","%Name":"X","colour":4290799884,"name":"X","points":[
-                                        {"th0":0.0,"th1":0.16198348,"tv0":0.0,"tv1":0.0,"x":0.0,"y":115.0,},
-                                        {"th0":-0.16198348,"th1":0.03636364,"tv0":0.0,"tv1":0.0,"x":0.80991733,"y":115.0,},
-                                        {"th0":-0.03636364,"th1":0.0016528964,"tv0":0.0,"tv1":0.0,"x":0.9917355,"y":115.0,},
-                                        {"th0":-0.0016528964,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":115.0,},
-                                      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
-                                    {"$GMAnimCurveChannel":"","%Name":"Y","colour":4281083598,"name":"Y","points":[
-                                        {"th0":0.0,"th1":0.16198348,"tv0":0.0,"tv1":0.0,"x":0.0,"y":-60.0,},
-                                        {"th0":-0.16198348,"th1":0.09090909,"tv0":0.0,"tv1":0.0,"x":0.80991733,"y":-60.0,},
-                                        {"th0":-3.8099562E-10,"th1":0.0016528964,"tv0":0.0,"tv1":0.0,"x":0.9917355,"y":190.0,},
-                                        {"th0":-0.0016528964,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":190.0,},
-                                      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
-                                  ],"function":2,"name":"位置","resourceType":"GMAnimCurve","resourceVersion":"2.0",},"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
-                              "1":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":{"$GMAnimCurve":"","%Name":"位置","channels":[
-                                    {"$GMAnimCurveChannel":"","%Name":"X","colour":4290799884,"name":"X","points":[
-                                        {"th0":0.0,"th1":0.16198348,"tv0":0.0,"tv1":0.0,"x":0.0,"y":115.0,},
-                                        {"th0":-0.16198348,"th1":0.03636364,"tv0":0.0,"tv1":0.0,"x":0.80991733,"y":115.0,},
-                                        {"th0":-0.03636364,"th1":0.0016528964,"tv0":0.0,"tv1":0.0,"x":0.9917355,"y":115.0,},
-                                        {"th0":-0.0016528964,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":115.0,},
-                                      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
-                                    {"$GMAnimCurveChannel":"","%Name":"Y","colour":4281083598,"name":"Y","points":[
-                                        {"th0":0.0,"th1":0.16198348,"tv0":0.0,"tv1":0.0,"x":0.0,"y":-60.0,},
-                                        {"th0":-0.16198348,"th1":0.09090909,"tv0":0.0,"tv1":0.0,"x":0.80991733,"y":-60.0,},
-                                        {"th0":-3.8099562E-10,"th1":0.0016528964,"tv0":0.0,"tv1":0.0,"x":0.9917355,"y":190.0,},
-                                        {"th0":-0.0016528964,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":190.0,},
-                                      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
-                                  ],"function":2,"name":"位置","resourceType":"GMAnimCurve","resourceVersion":"2.0",},"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
-                            },"Disabled":false,"id":"f9cb60b9-0c14-454b-ae52-3050d59589e8","IsCreationKey":false,"Key":0.0,"Length":121.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                              "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":115.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
+                              "1":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":-60.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
+                            },"Disabled":false,"id":"8bf1012f-cccd-4988-baea-9c3aa6089d81","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                          {"$Keyframe<RealKeyframe>":"","Channels":{
+                              "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":115.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
+                              "1":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":-60.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
+                            },"Disabled":false,"id":"bd2cd64d-d104-43f5-9c92-14ac3022c8c2","IsCreationKey":false,"Key":98.0,"Length":1.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
                         ],"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"position","resourceType":"GMRealTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
                     {"$GMRealTrack":"","%Name":"rotation","builtinName":8,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
                           {"$Keyframe<RealKeyframe>":"","Channels":{
@@ -1480,6 +1451,71 @@
                   ],"traits":0,},
               ],"traits":0,},
           ],"traits":0,},
+      ],"traits":0,},
+    {"$GMGraphicTrack":"","%Name":"spr_enemy_boss_mini_2_wing","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
+          {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
+              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_2_wing","path":"sprites/spr_enemy_boss_mini_2_wing/spr_enemy_boss_mini_2_wing.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+            },"Disabled":false,"id":"8e7658d4-ee30-4d06-8885-9287bac6a107","IsCreationKey":false,"Key":98.0,"Length":22.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
+        ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_wing","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[
+        {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
+              {"$Keyframe<ColourKeyframe>":"","Channels":{
+                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                },"Disabled":false,"id":"922015cf-ab13-4545-bbb6-f2e867b2b017","IsCreationKey":false,"Key":114.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              {"$Keyframe<ColourKeyframe>":"","Channels":{
+                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":16777215,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                },"Disabled":false,"id":"b4d7da6f-6d42-4597-8c4c-3a3143f63656","IsCreationKey":false,"Key":120.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
+        {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
+              {"$Keyframe<RealKeyframe>":"","Channels":{
+                  "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
+                  "1":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
+                },"Disabled":false,"id":"a0ce481c-dba8-4eae-9f7c-1f9fcddcd35b","IsCreationKey":true,"Key":98.0,"Length":1.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            ],"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"origin","resourceType":"GMRealTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
+        {"$GMRealTrack":"","%Name":"position","builtinName":14,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
+              {"$Keyframe<RealKeyframe>":"","Channels":{
+                  "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":{"$GMAnimCurve":"","%Name":"位置","channels":[
+                        {"$GMAnimCurveChannel":"","%Name":"X","colour":4290799884,"name":"X","points":[
+                            {"th0":0.0,"th1":0.19130436,"tv0":0.0,"tv1":0.0,"x":0.0,"y":-115.0,},
+                            {"th0":-0.19130436,"th1":0.00869565,"tv0":0.0,"tv1":0.0,"x":0.95652175,"y":-115.0,},
+                            {"th0":-0.00869565,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":-115.0,},
+                          ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+                        {"$GMAnimCurveChannel":"","%Name":"Y","colour":4281083598,"name":"Y","points":[
+                            {"th0":-0.09565218,"th1":0.47826087,"tv0":0.0,"tv1":0.0,"x":0.0,"y":-60.0,},
+                            {"th0":-2.0043682E-09,"th1":0.00869565,"tv0":0.0,"tv1":0.0,"x":0.95652175,"y":190.0,},
+                            {"th0":-0.00869565,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":190.0,},
+                          ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+                      ],"function":2,"name":"位置","resourceType":"GMAnimCurve","resourceVersion":"2.0",},"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
+                  "1":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":{"$GMAnimCurve":"","%Name":"位置","channels":[
+                        {"$GMAnimCurveChannel":"","%Name":"X","colour":4290799884,"name":"X","points":[
+                            {"th0":0.0,"th1":0.19130436,"tv0":0.0,"tv1":0.0,"x":0.0,"y":-115.0,},
+                            {"th0":-0.19130436,"th1":0.00869565,"tv0":0.0,"tv1":0.0,"x":0.95652175,"y":-115.0,},
+                            {"th0":-0.00869565,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":-115.0,},
+                          ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+                        {"$GMAnimCurveChannel":"","%Name":"Y","colour":4281083598,"name":"Y","points":[
+                            {"th0":-0.09565218,"th1":0.47826087,"tv0":0.0,"tv1":0.0,"x":0.0,"y":-60.0,},
+                            {"th0":-2.0043682E-09,"th1":0.00869565,"tv0":0.0,"tv1":0.0,"x":0.95652175,"y":190.0,},
+                            {"th0":-0.00869565,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":190.0,},
+                          ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+                      ],"function":2,"name":"位置","resourceType":"GMAnimCurve","resourceVersion":"2.0",},"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
+                },"Disabled":false,"id":"559c3191-8712-49ad-82bc-dee3ffac353d","IsCreationKey":false,"Key":98.0,"Length":23.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            ],"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"position","resourceType":"GMRealTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
+        {"$GMRealTrack":"","%Name":"rotation","builtinName":8,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
+              {"$Keyframe<RealKeyframe>":"","Channels":{
+                  "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
+                },"Disabled":false,"id":"59e23168-47f8-4371-9f97-52498b18d67a","IsCreationKey":false,"Key":98.0,"Length":1.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            ],"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"rotation","resourceType":"GMRealTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
+        {"$GMRealTrack":"","%Name":"scale","builtinName":15,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
+              {"$Keyframe<RealKeyframe>":"","Channels":{
+                  "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":1.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
+                  "1":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":1.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
+                },"Disabled":false,"id":"5b62e4f4-7344-4044-9c28-eb4a8ac94a12","IsCreationKey":true,"Key":98.0,"Length":1.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            ],"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"scale","resourceType":"GMRealTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
+        {"$GMRealTrack":"","%Name":"scale","builtinName":15,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
+              {"$Keyframe<RealKeyframe>":"","Channels":{
+                  "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":-1.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
+                  "1":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":1.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
+                },"Disabled":false,"id":"efa27282-88e1-4977-8665-07fc2f1a719c","IsCreationKey":false,"Key":98.0,"Length":1.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            ],"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"scale","resourceType":"GMRealTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
       ],"traits":0,},
   ],
   "visibleRange":null,

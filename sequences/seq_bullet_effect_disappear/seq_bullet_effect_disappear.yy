@@ -95,24 +95,24 @@
                         {"$GMAnimCurveChannel":"","%Name":"X","colour":4290799884,"name":"X","points":[
                             {"th0":0.0,"th1":0.125,"tv0":0.0,"tv1":0.0,"x":0.0,"y":1.0,},
                             {"th0":-0.125,"th1":7.8579043E-10,"tv0":0.0,"tv1":0.0,"x":0.625,"y":1.0,},
-                            {"th0":-0.1874969,"th1":0.03749938,"tv0":0.0,"tv1":0.0,"x":0.9999938,"y":1.5,},
+                            {"th0":-0.1874969,"th1":0.03749938,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.5,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                         {"$GMAnimCurveChannel":"","%Name":"Y","colour":4281083598,"name":"Y","points":[
                             {"th0":0.0,"th1":0.125,"tv0":0.0,"tv1":0.0,"x":0.0,"y":1.0,},
                             {"th0":-0.125,"th1":7.8579043E-10,"tv0":0.0,"tv1":0.0,"x":0.625,"y":1.0,},
-                            {"th0":-0.1874969,"th1":0.03749938,"tv0":0.0,"tv1":0.0,"x":0.9999938,"y":1.5,},
+                            {"th0":-0.1874969,"th1":0.03749938,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.5,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                       ],"function":2,"name":"缩放","resourceType":"GMAnimCurve","resourceVersion":"2.0",},"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
                   "1":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":{"$GMAnimCurve":"","%Name":"缩放","channels":[
                         {"$GMAnimCurveChannel":"","%Name":"X","colour":4290799884,"name":"X","points":[
                             {"th0":0.0,"th1":0.125,"tv0":0.0,"tv1":0.0,"x":0.0,"y":1.0,},
                             {"th0":-0.125,"th1":7.8579043E-10,"tv0":0.0,"tv1":0.0,"x":0.625,"y":1.0,},
-                            {"th0":-0.1874969,"th1":0.03749938,"tv0":0.0,"tv1":0.0,"x":0.9999938,"y":1.5,},
+                            {"th0":-0.1874969,"th1":0.03749938,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.5,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                         {"$GMAnimCurveChannel":"","%Name":"Y","colour":4281083598,"name":"Y","points":[
                             {"th0":0.0,"th1":0.125,"tv0":0.0,"tv1":0.0,"x":0.0,"y":1.0,},
                             {"th0":-0.125,"th1":7.8579043E-10,"tv0":0.0,"tv1":0.0,"x":0.625,"y":1.0,},
-                            {"th0":-0.1874969,"th1":0.03749938,"tv0":0.0,"tv1":0.0,"x":0.9999938,"y":1.5,},
+                            {"th0":-0.1874969,"th1":0.03749938,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.5,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                       ],"function":2,"name":"缩放","resourceType":"GMAnimCurve","resourceVersion":"2.0",},"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
                 },"Disabled":false,"id":"979e6890-bf02-438d-b785-12066eb6eb98","IsCreationKey":false,"Key":4.0,"Length":16.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},

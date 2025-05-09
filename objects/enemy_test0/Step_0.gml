@@ -2,7 +2,7 @@ live;
 event_inherited();
 
 if(hp <= 0){
-	layer_sequence_create("enemies",x,y,seq_enemy_boss_mini_2_die);
+	layer_sequence_create("enemies",x,y,seq_enemy_boss_mini_1_die);
 }
 
 time += 1
