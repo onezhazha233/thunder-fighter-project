@@ -621,6 +621,7 @@
     {"id":{"name":"seq_enemy_boss_mini_3_attack_012","path":"sequences/seq_enemy_boss_mini_3_attack_012/seq_enemy_boss_mini_3_attack_012.yy",},},
     {"id":{"name":"seq_enemy_boss_mini_3_attack_1","path":"sequences/seq_enemy_boss_mini_3_attack_1/seq_enemy_boss_mini_3_attack_1.yy",},},
     {"id":{"name":"seq_enemy_boss_mini_3_attack_2","path":"sequences/seq_enemy_boss_mini_3_attack_2/seq_enemy_boss_mini_3_attack_2.yy",},},
+    {"id":{"name":"seq_enemy_boss_mini_3_die","path":"sequences/seq_enemy_boss_mini_3_die/seq_enemy_boss_mini_3_die.yy",},},
     {"id":{"name":"seq_enemy_boss_mini_3_flame","path":"sequences/seq_enemy_boss_mini_3_flame/seq_enemy_boss_mini_3_flame.yy",},},
     {"id":{"name":"seq_enemy_boss_mini_3_intro","path":"sequences/seq_enemy_boss_mini_3_intro/seq_enemy_boss_mini_3_intro.yy",},},
     {"id":{"name":"seq_enemy_minion_0a_flame","path":"sequences/seq_enemy_minion_0a_flame/seq_enemy_minion_0a_flame.yy",},},
