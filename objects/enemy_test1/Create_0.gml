@@ -25,6 +25,8 @@ right = 85
 up = 63
 down = 60
 
+bullet_emitter = emitter_enemy_test
+
 time = 0
 aa = 0
 num = 4

@@ -47,9 +47,16 @@ event_user(1)
 
 surf_enabled = false
 surf = -1;
-surf_x = 50
-surf_y = 50
-surf_width = 800
-surf_height = 600
+surf_x = 0
+surf_y = 200
+surf_width = 720
+surf_height = 500
+
+//le = "enemies"
+//lel = "enemies_lower"
+layer_enemy = layer_create(depth+100)
+layer_enemy_lower = layer_create(depth+150)
+le = layer_enemy
+lel = layer_enemy_lower
 
 damage = 2

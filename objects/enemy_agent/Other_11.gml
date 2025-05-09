@@ -5,7 +5,7 @@ SetState = function(s){
 		if(s = 0){
 			if(pre_mode = 0){
 				layer_sequence_destroy(enemy_sequence);
-				enemy_sequence = layer_sequence_create("enemies",x,y,intro_sequence);
+				enemy_sequence = layer_sequence_create(le,x,y,intro_sequence);
 				layer_sequence_xscale(enemy_sequence,image_xscale);
 				layer_sequence_yscale(enemy_sequence,image_yscale);
 				layer_sequence_speedscale(enemy_sequence,0);
@@ -13,21 +13,21 @@ SetState = function(s){
 			}
 			if(pre_mode = 1){
 				layer_sequence_destroy(enemy_sequence);
-				enemy_sequence = layer_sequence_create("enemies",x,y,pre_sequence);
+				enemy_sequence = layer_sequence_create(le,x,y,pre_sequence);
 				layer_sequence_xscale(enemy_sequence,image_xscale);
 				layer_sequence_yscale(enemy_sequence,image_yscale);
 			}
 		}
 		if(s = 1){
 			layer_sequence_destroy(enemy_sequence);
-			enemy_sequence = layer_sequence_create("enemies",x,y,intro_sequence);
+			enemy_sequence = layer_sequence_create(le,x,y,intro_sequence);
 			layer_sequence_xscale(enemy_sequence,image_xscale);
 			layer_sequence_yscale(enemy_sequence,image_yscale);
 		}
 		if(s = 2){
 			if(idle_mode = 0){
 				layer_sequence_destroy(enemy_sequence);
-				enemy_sequence = layer_sequence_create("enemies",x,y,intro_sequence);
+				enemy_sequence = layer_sequence_create(le,x,y,intro_sequence);
 				layer_sequence_xscale(enemy_sequence,image_xscale);
 				layer_sequence_yscale(enemy_sequence,image_yscale);
 				layer_sequence_speedscale(enemy_sequence,0);
@@ -35,14 +35,14 @@ SetState = function(s){
 			}
 			if(idle_mode = 1){
 				layer_sequence_destroy(enemy_sequence);
-				enemy_sequence = layer_sequence_create("enemies",x,y,idle_sequence);
+				enemy_sequence = layer_sequence_create(le,x,y,idle_sequence);
 				layer_sequence_xscale(enemy_sequence,image_xscale);
 				layer_sequence_yscale(enemy_sequence,image_yscale);
 			}
 		}
 		if(s = 3){
 			layer_sequence_destroy(enemy_sequence);
-			enemy_sequence = layer_sequence_create("enemies",x,y,intro_sequence);
+			enemy_sequence = layer_sequence_create(le,x,y,intro_sequence);
 			layer_sequence_xscale(enemy_sequence,image_xscale);
 			layer_sequence_yscale(enemy_sequence,image_yscale);
 			layer_sequence_headdir(enemy_sequence,seqdir_left);
@@ -75,11 +75,11 @@ SetSurfEnabled = function(enabled){
 		gpu_set_blendmode(bm_normal);
 		if(surf_enabled = true&&surface_exists(surf))surface_reset_target();
 	}
-	layer_script_begin("enemies", scrBegin);
-	layer_script_end("enemies", scrEnd);
+	layer_script_begin(le, scrBegin);
+	layer_script_end(le, scrEnd);
 
-	layer_script_begin("enemies_lower", scrBegin);
-	layer_script_end("enemies_lower", scrEnd);
+	layer_script_begin(lel, scrBegin);
+	layer_script_end(lel, scrEnd);
 	
 	SetPosition(x,y);
 }
@@ -92,16 +92,16 @@ SetPosition = function(xx,yy){
 		bullet_emitter_inst.y = yy;
 	}
 	
-	if(layer_sequence_exists("enemies",enemy_sequence)){
+	if(layer_sequence_exists(le,enemy_sequence)){
 		layer_sequence_x(enemy_sequence,x-surf_x*surf_enabled);
 		layer_sequence_y(enemy_sequence,y-surf_y*surf_enabled);
 		layer_sequence_xscale(enemy_sequence,image_xscale);
 		layer_sequence_yscale(enemy_sequence,image_yscale);
 		layer_sequence_angle(enemy_sequence,image_angle);
 	}
-	if(layer_sequence_exists("enemies_lower",flame_sequence)){
-		layer_sequence_x(flame_sequence,x+lengthdir_x(flame_x_offset,image_angle)*image_xscale-surf_x*surf_enabled+lengthdir_x(flame_y_offset,image_angle-90)*image_xscale-surf_x*surf_enabled);
-		layer_sequence_y(flame_sequence,y+lengthdir_y(flame_x_offset,image_angle)*image_yscale-surf_y*surf_enabled+lengthdir_y(flame_y_offset,image_angle-90)*image_yscale-surf_y*surf_enabled);
+	if(layer_sequence_exists(lel,flame_sequence)){
+		layer_sequence_x(flame_sequence,x+lengthdir_x(flame_x_offset,image_angle)*image_xscale-surf_x*surf_enabled+lengthdir_x(flame_y_offset,image_angle-90)*image_xscale);
+		layer_sequence_y(flame_sequence,y+lengthdir_y(flame_x_offset,image_angle)*image_yscale-surf_y*surf_enabled+lengthdir_y(flame_y_offset,image_angle-90)*image_yscale);
 		layer_sequence_xscale(flame_sequence,image_xscale);
 		layer_sequence_yscale(flame_sequence,image_yscale);
 		layer_sequence_angle(flame_sequence,image_angle);

@@ -35,12 +35,12 @@ image_yscale = 1
 alarm[0] = 1
 event_user(0)
 
-surf_enabled = 0
+surf_enabled = false
 surf = -1;
-surf_x = 50
-surf_y = 50
-surf_width = 800
-surf_height = 600
+surf_x = 0
+surf_y = 720
+surf_width = 720
+surf_height = 300
 
 speed_x = 0
 

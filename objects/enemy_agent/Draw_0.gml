@@ -7,10 +7,10 @@ if(display_mode = 0){
 	}
 }
 
-if(surf_enabled = 1){
+if(surf_enabled = true){
 	gpu_set_blendmode_ext_sepalpha(bm_one, bm_inv_src_alpha, bm_one, bm_one);
 	draw_surface(surf,surf_x,surf_y);
-	gpu_set_blendmode(bm_normal)
+	gpu_set_blendmode(bm_normal);
 }
 if(hurt_time > 0){
 	draw_sprite_ext(spr_ui_hpbar_enemy,0,x,y+hpbar_yoffset*image_yscale,image_xscale,image_yscale,0,-1,1);

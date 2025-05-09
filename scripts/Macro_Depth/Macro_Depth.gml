@@ -6,6 +6,6 @@ function Macro_Depth(){
 		BULLETS_ENEMY = -300,
 		EXPLOSION = -400,
 		ENEMIES = 700,
-		BG = 800
+		BG = 900
 	}
 }
