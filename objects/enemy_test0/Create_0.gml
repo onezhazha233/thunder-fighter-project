@@ -5,9 +5,9 @@ display_mode = 1
 
 pre_mode = 0
 idle_mode = 0
-pre_sequence = seq_enemy_boss_mini_3_intro
-intro_sequence = seq_enemy_boss_mini_3_intro
-idle_sequence = seq_enemy_boss_mini_3_intro
+pre_sequence = seq_enemy_boss_large_0_p1_intro
+intro_sequence = seq_enemy_boss_large_0_p1_intro
+idle_sequence = seq_enemy_boss_large_0_p1_intro
 flame = seq_enemy_boss_mini_3_flame
 flame_y_offset = 0
 
