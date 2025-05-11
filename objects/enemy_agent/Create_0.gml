@@ -1,5 +1,6 @@
 live;
 depth = DEPTH_BATTLE.ENEMIES
+depth_previous = depth
 
 display_mode = 0//0为纯贴图 1为纯序列
 pre_mode = 0//0为展开序列第一帧 1为序列
@@ -12,10 +13,15 @@ pre_sequence = -1
 intro_sequence = -1
 idle_sequence = -1
 
-flame = -1//-1为无尾焰
-flame_sequence = -1
-flame_x_offset = 0
-flame_y_offset = 0
+flame_lower = -1//-1为无尾焰
+flame_lower_sequence = -1
+flame_lower_x_offset = 0
+flame_lower_y_offset = 0
+
+flame_upper = -1//-1为无尾焰
+flame_upper_sequence = -1
+flame_upper_x_offset = 0
+flame_upper_y_offset = 0
 
 state = 0//0为未展开 1为展开中 2为已展开 3为收回
 
@@ -54,9 +60,11 @@ surf_height = 500
 
 //le = "enemies"
 //lel = "enemies_lower"
-layer_enemy = layer_create(depth+100)
-layer_enemy_lower = layer_create(depth+150)
+layer_enemy = layer_create(depth)
+layer_enemy_lower = layer_create(depth+1)
+layer_enemy_upper = layer_create(depth-1)
 le = layer_enemy
 lel = layer_enemy_lower
+leu = layer_enemy_upper
 
 damage = 2

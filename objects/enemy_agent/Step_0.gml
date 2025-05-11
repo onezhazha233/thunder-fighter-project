@@ -1,4 +1,10 @@
 live;
+if!(depth_previous = depth){
+	layer_depth(layer_enemy,depth);
+	layer_depth(layer_enemy_lower,depth+1);
+	layer_depth(layer_enemy_upper,depth-1);
+}
+
 if(hp <= 0){
 	if(object_exists(explosion)){
 		instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,explosion);

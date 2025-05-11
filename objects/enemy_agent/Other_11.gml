@@ -80,6 +80,9 @@ SetSurfEnabled = function(enabled){
 
 	layer_script_begin(lel, scrBegin);
 	layer_script_end(lel, scrEnd);
+
+	layer_script_begin(leu, scrBegin);
+	layer_script_end(leu, scrEnd);
 	
 	SetPosition(x,y);
 }
@@ -99,11 +102,18 @@ SetPosition = function(xx,yy){
 		layer_sequence_yscale(enemy_sequence,image_yscale);
 		layer_sequence_angle(enemy_sequence,image_angle);
 	}
-	if(layer_sequence_exists(lel,flame_sequence)){
-		layer_sequence_x(flame_sequence,x+lengthdir_x(flame_x_offset,image_angle)*image_xscale-surf_x*surf_enabled+lengthdir_x(flame_y_offset,image_angle-90)*image_xscale);
-		layer_sequence_y(flame_sequence,y+lengthdir_y(flame_x_offset,image_angle)*image_yscale-surf_y*surf_enabled+lengthdir_y(flame_y_offset,image_angle-90)*image_yscale);
-		layer_sequence_xscale(flame_sequence,image_xscale);
-		layer_sequence_yscale(flame_sequence,image_yscale);
-		layer_sequence_angle(flame_sequence,image_angle);
+	if(layer_sequence_exists(lel,flame_lower_sequence)){
+		layer_sequence_x(flame_lower_sequence,x+lengthdir_x(flame_lower_x_offset,image_angle)*image_xscale-surf_x*surf_enabled+lengthdir_x(flame_lower_y_offset,image_angle-90)*image_xscale);
+		layer_sequence_y(flame_lower_sequence,y+lengthdir_y(flame_lower_x_offset,image_angle)*image_yscale-surf_y*surf_enabled+lengthdir_y(flame_lower_y_offset,image_angle-90)*image_yscale);
+		layer_sequence_xscale(flame_lower_sequence,image_xscale);
+		layer_sequence_yscale(flame_lower_sequence,image_yscale);
+		layer_sequence_angle(flame_lower_sequence,image_angle);
+	}
+	if(layer_sequence_exists(leu,flame_upper_sequence)){
+		layer_sequence_x(flame_upper_sequence,x+lengthdir_x(flame_upper_x_offset,image_angle)*image_xscale-surf_x*surf_enabled+lengthdir_x(flame_upper_y_offset,image_angle-90)*image_xscale);
+		layer_sequence_y(flame_upper_sequence,y+lengthdir_y(flame_upper_x_offset,image_angle)*image_yscale-surf_y*surf_enabled+lengthdir_y(flame_upper_y_offset,image_angle-90)*image_yscale);
+		layer_sequence_xscale(flame_upper_sequence,image_xscale);
+		layer_sequence_yscale(flame_upper_sequence,image_yscale);
+		layer_sequence_angle(flame_upper_sequence,image_angle);
 	}
 }
