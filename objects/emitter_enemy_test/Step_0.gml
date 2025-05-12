@@ -1,9 +1,9 @@
 live;
 event_inherited();
 
-if(time >= 160&&time <= 160+6*7){
-	if((time-160) mod 6 = 0){
-		switch((time-160) div 6){
+if(time >= 1&&time <= 1+6*7){
+	if((time-1) mod 6 = 0){
+		switch((time-1) div 6){
 			case 0:
 			case 6:
 				a = instance_create_depth(x,y,0,bullet_enemy_red);
@@ -53,7 +53,7 @@ if(time >= 160&&time <= 160+6*7){
 		}
 	}
 }
-if(time = 210){
+if(time = 50){
 	for(i=0;i<5;i+=1){
 		for(j=0;j<15;j+=1){
 			a = instance_create_depth(x,y,0,bullet_enemy_red);
@@ -75,7 +75,7 @@ if(time = 210){
 		}
 	}
 }
-if(time = 240){
+if(time = 80){
 	for(i=0;i<6;i+=1){
 		for(j=0;j<10;j+=1){
 			a = instance_create_depth(x,y,0,bullet_enemy_red);
@@ -97,7 +97,7 @@ if(time = 240){
 		}
 	}
 }
-if(time = 270){
+if(time = 110){
 	for(i=0;i<7;i+=1){
 		for(j=0;j<10;j+=1){
 			a = instance_create_depth(x,y,0,bullet_enemy_red);
@@ -119,8 +119,8 @@ if(time = 270){
 		}
 	}
 }
-if(time >= 300&&time <= 300+5*10){
-	if((time-300) mod 5 = 0){
+if(time >= 160&&time <= 160+5*10){
+	if((time-160) mod 5 = 0){
 		a = instance_create_depth(x+20,y,0,bullet_enemy_red);
 		a.sprite_index = spr_bullet_enemy_red_2;
 		dd = (time-300) div 5;

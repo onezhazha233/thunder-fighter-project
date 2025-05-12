@@ -6,10 +6,17 @@ if!(depth_previous = depth){
 }
 
 if(hp <= 0){
-	if(object_exists(explosion)){
-		instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,explosion);
-	}
 	instance_destroy();
+	if!(object_exists(next_boss)){
+		if(object_exists(explosion)){
+			instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,explosion);
+		}
+	}
+	else{
+		phase += 1;
+		instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,effect_explosion_big);
+		instance_create_depth(x,y,depth,next_boss).skip = true;
+	}
 }
 hurt_time = max(0,hurt_time-1)
 
@@ -20,9 +27,6 @@ if(layer_sequence_is_finished(enemy_sequence)){
 		if(state = 1){
 			SetState(2);
 		}
-	}
-	if(state = 3){
-		SetState(0);
 	}
 }
 

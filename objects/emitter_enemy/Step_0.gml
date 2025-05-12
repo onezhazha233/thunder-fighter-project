@@ -1,2 +1,2 @@
 live;
-time += 1
+if(enabled = true)time += 1;

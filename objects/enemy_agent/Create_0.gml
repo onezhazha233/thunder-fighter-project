@@ -41,10 +41,12 @@ blend_r = 255
 blend_g = 255
 blend_b = 255
 
-inv = false
+inv_damage = false//为真时会被子弹击中但不掉血
+inv_collision = false//为真时不会和子弹触发碰撞事件
 hp_max = 5
 hp = hp_max
 hurt_time = 0
+hpbar_enabled = true
 hpbar_yoffset = 50
 explosion = -1
 

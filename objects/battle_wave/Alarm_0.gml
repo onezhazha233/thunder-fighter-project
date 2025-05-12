@@ -1,11 +1,16 @@
 live;
-if!(ds_queue_empty(enemies)){
-	enemies_info = ds_queue_dequeue(enemies);
+if(enabled = true){
+	if!(ds_queue_empty(enemies)){
+		enemies_info = ds_queue_dequeue(enemies);
 	
-	array_foreach(enemies_info[0],function(enemy){
-		instance_create_depth(-1000,-1000,0,enemy);
-		ds_list_add(enemy_list,enemy);
-	});
+		array_foreach(enemies_info[0],function(enemy){
+			instance_create_depth(-1000,-1000,0,enemy);
+			ds_list_add(enemy_list,enemy);
+		});
 	
-	alarm[0] = max(1,enemies_info[1]);
+		alarm[0] = max(1,enemies_info[1]);
+	}
+}
+else{
+	alarm[0] = 1;
 }

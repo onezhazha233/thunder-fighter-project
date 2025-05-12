@@ -17,3 +17,6 @@ if(time = 40){
 if(time = 80){
 	SetState(1);
 }
+if(time = 160){
+	bullet_emitter_inst.enabled = true;
+}

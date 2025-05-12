@@ -12,7 +12,7 @@ if(surf_enabled = true){
 	draw_surface(surf,surf_x,surf_y);
 	gpu_set_blendmode(bm_normal);
 }
-if(hurt_time > 0){
+if(hpbar_enabled = true&&hurt_time > 0){
 	draw_sprite_ext(spr_ui_hpbar_enemy,0,x,y+hpbar_yoffset*image_yscale,image_xscale,image_yscale,0,-1,1);
 	draw_sprite_part_ext(spr_ui_hpbar_enemy,1,0,0,sprite_get_width(spr_ui_hpbar_enemy)*hp/hp_max,sprite_get_height(spr_ui_hpbar_enemy),x-sprite_get_xoffset(spr_ui_hpbar_enemy),y-sprite_get_yoffset(spr_ui_hpbar_enemy)+hpbar_yoffset*image_yscale,image_xscale,image_yscale,-1,1);
 }

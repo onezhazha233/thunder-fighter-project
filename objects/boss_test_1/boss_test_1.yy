@@ -1,19 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"battle_wave_manager",
+  "%Name":"boss_test_1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"battle_wave_manager",
+  "name":"boss_test_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"battle_wave",
-    "path":"folders/物体/battle_wave.yy",
+    "name":"enemy",
+    "path":"folders/物体/enemy.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"boss_agent",
+    "path":"objects/boss_agent/boss_agent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

@@ -1,4 +1,5 @@
 live;
+enabled = true//boss存在时暂停检测
 enemies = ds_queue_create()//内容格式为[[enemy0,enemy1,etc.],delay=1]
 enemy_list = ds_list_create()
 
