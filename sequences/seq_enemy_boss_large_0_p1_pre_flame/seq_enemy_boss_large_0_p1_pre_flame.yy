@@ -1,6 +1,6 @@
 {
   "$GMSequence":"",
-  "%Name":"seq_enemy_boss_large_0_flame_pre",
+  "%Name":"seq_enemy_boss_large_0_p1_pre_flame",
   "autoRecord":true,
   "backdropHeight":768,
   "backdropImageOpacity":0.5,
@@ -24,7 +24,7 @@
     "resourceType":"KeyframeStore<MomentsEventKeyframe>",
     "resourceVersion":"2.0",
   },
-  "name":"seq_enemy_boss_large_0_flame_pre",
+  "name":"seq_enemy_boss_large_0_p1_pre_flame",
   "parent":{
     "name":"breaker_III",
     "path":"folders/序列/enemy/boss/large/breaker_III.yy",
@@ -144,6 +144,6 @@
   ],
   "visibleRange":null,
   "volume":1.0,
-  "xorigin":1,
-  "yorigin":-1,
+  "xorigin":0,
+  "yorigin":0,
 }

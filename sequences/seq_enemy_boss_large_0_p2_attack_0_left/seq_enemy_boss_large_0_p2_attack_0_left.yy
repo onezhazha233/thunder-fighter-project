@@ -1051,6 +1051,6 @@
   ],
   "visibleRange":null,
   "volume":1.0,
-  "xorigin":1,
-  "yorigin":-1,
+  "xorigin":0,
+  "yorigin":0,
 }

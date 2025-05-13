@@ -12,7 +12,7 @@ if(time = 40){
 if(time = 80){
 	SetState(1);
 }
-if(time > 120){
-	x += sin(time/60)*2;
-	y += cos(time/60)*2;
+if(time > 160){
+	x += sin(time/20)*1.5;
+	y += cos(time/20)*1.5;
 }

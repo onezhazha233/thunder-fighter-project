@@ -8,6 +8,9 @@ if!(depth_previous = depth){
 if(hp <= 0){
 	instance_destroy();
 	if!(object_exists(next_boss)){
+		if!(die_sequence = -1){
+			layer_sequence_create("enemies",x,y,die_sequence);
+		}
 		if(object_exists(explosion)){
 			instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,explosion);
 		}
