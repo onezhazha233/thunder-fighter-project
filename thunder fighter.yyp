@@ -312,6 +312,7 @@
     {"$GMFolder":"","%Name":"GMU","folderPath":"folders/脚本/GMU.yy","name":"GMU","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Anim","folderPath":"folders/脚本/GMU/Anim.yy","name":"Anim","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Lang","folderPath":"folders/脚本/GMU/Lang.yy","name":"Lang","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Macro","folderPath":"folders/脚本/Macro.yy","name":"Macro","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"路径","folderPath":"folders/路径.yy","name":"路径","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
@@ -471,6 +472,7 @@
     {"id":{"name":"Anim_Uninit","path":"scripts/Anim_Uninit/Anim_Uninit.yy",},},
     {"id":{"name":"AutoDestroySequence","path":"scripts/AutoDestroySequence/AutoDestroySequence.yy",},},
     {"id":{"name":"Camera_Shake","path":"scripts/Camera_Shake/Camera_Shake.yy",},},
+    {"id":{"name":"EnemyMove_0","path":"scripts/EnemyMove_0/EnemyMove_0.yy",},},
     {"id":{"name":"GlobalInit","path":"scripts/GlobalInit/GlobalInit.yy",},},
     {"id":{"name":"GMLive_action","path":"scripts/GMLive_action/GMLive_action.yy",},},
     {"id":{"name":"GMLive_builder","path":"scripts/GMLive_builder/GMLive_builder.yy",},},

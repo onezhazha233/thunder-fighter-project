@@ -1,7 +1,71 @@
 live;
 event_inherited();
 
-if(time >= 1&&time <= 1+6*7){
+if(time >= 1&&time <= 1+5*5){
+	if((time-1) mod 5 = 0){
+		dd = point_direction(x,y,player.x,player.y);
+		a = instance_create_depth(x,y,0,bullet_enemy_red);
+		a.sprite_index = spr_bullet_enemy_red_1;
+		a.image_angle = dd;
+		a.direction = a.image_angle;
+		a.speed = 8;
+		a.mark = mark;
+	}
+}
+if(time >= 90&&time <= 90+3*4){
+	if((time-90) mod 3 = 0){
+		for(i=0;i<5;i+=1){
+			dd = point_direction(x,y,player.x,player.y) + ((time-60) div 3)*5;
+			a = instance_create_depth(x,y,0,bullet_enemy_red);
+			a.sprite_index = spr_bullet_enemy_red_1;
+			a.image_angle = 72*i+dd;
+			a.direction = a.image_angle;
+			a.speed = 20;
+			Anim_Create(a,"speed",0,0,20,-12,3);
+			a.mark = mark;
+		}
+	}
+}
+if(time >= 120&&time <= 120+3*4){
+	if((time-120) mod 3 = 0){
+		for(i=0;i<5;i+=1){
+			dd = point_direction(x,y,player.x,player.y) - ((time-60) div 3)*5;
+			a = instance_create_depth(x,y,0,bullet_enemy_red);
+			a.sprite_index = spr_bullet_enemy_red_1;
+			a.image_angle = 72*i+dd;
+			a.direction = a.image_angle;
+			a.speed = 20;
+			Anim_Create(a,"speed",0,0,20,-12,3);
+			a.mark = mark;
+		}
+	}
+}
+if(time >= 180&&time <= 180+10*3){
+	if((time-180) mod 15 = 0){
+		for(i=0;i<4;i+=1){
+			dd = point_direction(x,y,player.x,player.y)+(2-(time-180) div 15)*10+5;
+			a = instance_create_depth(x,y,0,bullet_enemy_red);
+			a.sprite_index = spr_bullet_enemy_red_2;
+			a.image_angle = dd;
+			a.direction = a.image_angle;
+			a.speed = 0;
+			Anim_Create(a,"speed",0,0,0,15+i*2,80);
+			a.mark = mark;
+			dd = point_direction(x,y,player.x,player.y)-(2-(time-180) div 15)*10-5;
+			a = instance_create_depth(x,y,0,bullet_enemy_red);
+			a.sprite_index = spr_bullet_enemy_red_2;
+			a.image_angle = dd;
+			a.direction = a.image_angle;
+			a.speed = 0;
+			Anim_Create(a,"speed",0,0,0,15+i*2,80);
+			a.mark = mark;
+		}
+	}
+}
+if(time = 250){
+	time = 0;
+}
+/*if(time >= 1&&time <= 1+6*7){
 	if((time-1) mod 6 = 0){
 		switch((time-1) div 6){
 			case 0:

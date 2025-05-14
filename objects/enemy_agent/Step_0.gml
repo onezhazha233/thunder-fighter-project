@@ -28,6 +28,8 @@ if(layer_sequence_is_finished(enemy_sequence)){
 
 time += 1
 
+mover()
+
 SetPosition(x,y)
 
 if(inv_collision = false){

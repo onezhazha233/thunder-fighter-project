@@ -72,3 +72,5 @@ leu = layer_enemy_upper
 damage = 2
 
 time = 0
+
+mover = function(){}

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"Macro_Depth",
   "parent":{
-    "name":"脚本",
-    "path":"folders/脚本.yy",
+    "name":"Macro",
+    "path":"folders/脚本/Macro.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

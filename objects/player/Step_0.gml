@@ -35,6 +35,8 @@ global.inv = max(0,global.inv-1)
 
 if(global.hp <= 0){
 	instance_create_depth(x,y,0,effect_explosion_big);
+	instance_create_depth(x,y,0,effect_explosion_ring_red);
+	instance_create_depth(x,y,0,effect_explosion_ring_white);
 	instance_destroy();
 	instance_destroy(equipment_test);
 }

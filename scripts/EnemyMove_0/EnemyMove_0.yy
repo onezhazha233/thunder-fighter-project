@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Macro_EnemyAnim",
+  "%Name":"EnemyMove_0",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Macro_EnemyAnim",
+  "name":"EnemyMove_0",
   "parent":{
-    "name":"Macro",
-    "path":"folders/脚本/Macro.yy",
+    "name":"脚本",
+    "path":"folders/脚本.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

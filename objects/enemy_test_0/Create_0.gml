@@ -15,12 +15,12 @@ flame_lower = seq_enemy_minion_4b_flame
 hp_max = 30
 hp = 30
 
-hpbar_yoffset = 200
+hpbar_yoffset = 80
 
-explosion = effect_explosion_big
+explosion = effect_explosion_medium
 
 collision_type = 1
-sprite_index = spr_enemy_minion_0c1
+sprite_index = spr_enemy_minion_4b
 left = 85
 right = 85
 up = 63
@@ -33,5 +33,4 @@ aa = 0
 num = 4
 as = 4
 
-x = 360
-y = -200
+mover = function(){EnemyMove_0()}

@@ -52,6 +52,19 @@ SetState = function(s){
 			layer_sequence_headpos(enemy_sequence,layer_sequence_get_length(enemy_sequence));
 		}
 	}
+	else{
+		if(s = ENEMY_STAT.INTRO){
+			SetState(ENEMY_STAT.IDLE);
+		}
+		if(s = ENEMY_STAT.IDLE){
+			if(instance_exists(bullet_emitter_inst)){
+				bullet_emitter_inst.enabled = true;
+			}
+		}
+		if(s = ENEMY_STAT.WITHDRAW){
+			SetState(ENEMY_STAT.PRE);
+		}
+	}
 }
 
 SetSurfEnabled = function(enabled){
