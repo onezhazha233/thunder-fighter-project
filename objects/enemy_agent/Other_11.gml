@@ -1,9 +1,9 @@
 live;
 SetState = function(s){
 	state = s;
-	if(display_mode = 1){
-		if(s = 0){
-			if(pre_mode = 0){
+	if(display_mode = DISPLAY_MODE.SEQUENCE){
+		if(s = ENEMY_STAT.PRE){
+			if(pre_mode = PRE_MODE.START_FRAME){
 				layer_sequence_destroy(enemy_sequence);
 				enemy_sequence = layer_sequence_create(le,x,y,intro_sequence);
 				layer_sequence_xscale(enemy_sequence,image_xscale);
@@ -11,21 +11,24 @@ SetState = function(s){
 				layer_sequence_speedscale(enemy_sequence,0);
 				layer_sequence_headpos(enemy_sequence,0);
 			}
-			if(pre_mode = 1){
+			if(pre_mode = PRE_MODE.SEQUENCE){
 				layer_sequence_destroy(enemy_sequence);
 				enemy_sequence = layer_sequence_create(le,x,y,pre_sequence);
 				layer_sequence_xscale(enemy_sequence,image_xscale);
 				layer_sequence_yscale(enemy_sequence,image_yscale);
 			}
 		}
-		if(s = 1){
+		if(s = ENEMY_STAT.INTRO){
 			layer_sequence_destroy(enemy_sequence);
 			enemy_sequence = layer_sequence_create(le,x,y,intro_sequence);
 			layer_sequence_xscale(enemy_sequence,image_xscale);
 			layer_sequence_yscale(enemy_sequence,image_yscale);
 		}
-		if(s = 2){
-			if(idle_mode = 0){
+		if(s = ENEMY_STAT.IDLE){
+			if(instance_exists(bullet_emitter_inst)){
+				bullet_emitter_inst.enabled = true;
+			}
+			if(idle_mode = IDLE_MODE.END_FRAME){
 				layer_sequence_destroy(enemy_sequence);
 				enemy_sequence = layer_sequence_create(le,x,y,intro_sequence);
 				layer_sequence_xscale(enemy_sequence,image_xscale);
@@ -33,14 +36,14 @@ SetState = function(s){
 				layer_sequence_speedscale(enemy_sequence,0);
 				layer_sequence_headpos(enemy_sequence,layer_sequence_get_length(enemy_sequence));
 			}
-			if(idle_mode = 1){
+			if(idle_mode = IDLE_MODE.SEQUENCE){
 				layer_sequence_destroy(enemy_sequence);
 				enemy_sequence = layer_sequence_create(le,x,y,idle_sequence);
 				layer_sequence_xscale(enemy_sequence,image_xscale);
 				layer_sequence_yscale(enemy_sequence,image_yscale);
 			}
 		}
-		if(s = 3){
+		if(s = ENEMY_STAT.WITHDRAW){
 			layer_sequence_destroy(enemy_sequence);
 			enemy_sequence = layer_sequence_create(le,x,y,intro_sequence);
 			layer_sequence_xscale(enemy_sequence,image_xscale);

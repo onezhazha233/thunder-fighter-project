@@ -2,7 +2,7 @@ live;
 if(display_mode = 0){
 	if(sprite_exists(enemy_sprite)){
 		if(surf_enabled = 1)surface_set_target(surf);
-		draw_sprite_ext(enemy_sprite,0,x-surf_x*surf_enabled,y-surf_y*surf_enabled,image_xscale,image_yscale,image_angle,-1,1);
+		draw_sprite_ext(enemy_sprite,0,x-surf_x*surf_enabled,y-surf_y*surf_enabled,image_xscale,image_yscale,image_angle,image_blend,1);
 		if(surf_enabled = 1)surface_reset_target();
 	}
 }

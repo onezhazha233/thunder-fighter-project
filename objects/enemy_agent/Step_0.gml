@@ -17,14 +17,16 @@ image_blend = make_color_rgb(blend_r,blend_g,blend_b)
 
 if(layer_sequence_is_finished(enemy_sequence)){
 	if(layer_sequence_get_headdir(enemy_sequence) = seqdir_right){
-		if(state = 1){
-			SetState(2);
+		if(state = ENEMY_STAT.INTRO){
+			SetState(ENEMY_STAT.IDLE);
 		}
 	}
-	if(state = 3){
-		SetState(0);
+	if(state = ENEMY_STAT.WITHDRAW){
+		SetState(ENEMY_STAT.PRE);
 	}
 }
+
+time += 1
 
 SetPosition(x,y)
 

@@ -16,6 +16,7 @@ if(boss_hpbar_enabled = true){
 		else{
 			length = 537;
 		}
+		length = clamp(length,0,537);
 		draw_sprite_ext(spr_ui_hpbar_boss_bar,i,360-273+5,110,length,1,0,-1,1);
 	}
 }

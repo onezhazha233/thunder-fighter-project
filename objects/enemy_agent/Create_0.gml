@@ -2,9 +2,9 @@ live;
 depth = DEPTH_BATTLE.ENEMIES
 depth_previous = depth
 
-display_mode = 0//0为纯贴图 1为纯序列
-pre_mode = 0//0为展开序列第一帧 1为序列
-idle_mode = 0//0为展开序列最后一帧 1为序列
+display_mode = DISPLAY_MODE.SPRITE
+pre_mode = PRE_MODE.START_FRAME
+idle_mode = IDLE_MODE.END_FRAME
 
 enemy_sequence = -1
 enemy_sprite = -1
@@ -23,7 +23,7 @@ flame_upper_sequence = -1
 flame_upper_x_offset = 0
 flame_upper_y_offset = 0
 
-state = 0//0为未展开 1为展开中 2为已展开 3为收回
+state = ENEMY_STAT.PRE
 
 bullet_emitter = noone
 bullet_emitter_inst = noone
@@ -70,3 +70,5 @@ lel = layer_enemy_lower
 leu = layer_enemy_upper
 
 damage = 2
+
+time = 0
