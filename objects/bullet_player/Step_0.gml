@@ -1,6 +1,6 @@
 if(collision_type = 1){
 	enemy = instance_place(x,y,enemy_agent);
-	if!(enemy = noone){
+	if(instance_exists(enemy)){
 		if(enemy.inv_collision = false){
 			if(enemy.collision_type = 1){
 				if(collision_destroy = true){

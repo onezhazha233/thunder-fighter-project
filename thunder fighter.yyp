@@ -1177,6 +1177,7 @@
     {"id":{"name":"spr_effect_explosion_ring","path":"sprites/spr_effect_explosion_ring/spr_effect_explosion_ring.yy",},},
     {"id":{"name":"spr_effect_explosion_small","path":"sprites/spr_effect_explosion_small/spr_effect_explosion_small.yy",},},
     {"id":{"name":"spr_effect_explosion_smoke","path":"sprites/spr_effect_explosion_smoke/spr_effect_explosion_smoke.yy",},},
+    {"id":{"name":"spr_effect_explosion_whitecircle","path":"sprites/spr_effect_explosion_whitecircle/spr_effect_explosion_whitecircle.yy",},},
     {"id":{"name":"spr_enemy_bluepoint","path":"sprites/spr_enemy_bluepoint/spr_enemy_bluepoint.yy",},},
     {"id":{"name":"spr_enemy_boss_large_0_flame","path":"sprites/spr_enemy_boss_large_0_flame/spr_enemy_boss_large_0_flame.yy",},},
     {"id":{"name":"spr_enemy_boss_large_0_gun_down","path":"sprites/spr_enemy_boss_large_0_gun_down/spr_enemy_boss_large_0_gun_down.yy",},},

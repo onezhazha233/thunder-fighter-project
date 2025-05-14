@@ -957,6 +957,7 @@
     {"name":"spr_effect_explosion_line","order":2,"path":"sprites/spr_effect_explosion_line/spr_effect_explosion_line.yy",},
     {"name":"spr_effect_explosion_ring","order":4,"path":"sprites/spr_effect_explosion_ring/spr_effect_explosion_ring.yy",},
     {"name":"spr_effect_explosion_smoke","order":3,"path":"sprites/spr_effect_explosion_smoke/spr_effect_explosion_smoke.yy",},
+    {"name":"spr_effect_explosion_whitecircle","order":5,"path":"sprites/spr_effect_explosion_whitecircle/spr_effect_explosion_whitecircle.yy",},
     {"name":"spr_enemy_bluepoint","order":3,"path":"sprites/spr_enemy_bluepoint/spr_enemy_bluepoint.yy",},
     {"name":"spr_enemy_boss_large_0_flame","order":5,"path":"sprites/spr_enemy_boss_large_0_flame/spr_enemy_boss_large_0_flame.yy",},
     {"name":"spr_enemy_boss_large_0_gun_down","order":10,"path":"sprites/spr_enemy_boss_large_0_gun_down/spr_enemy_boss_large_0_gun_down.yy",},

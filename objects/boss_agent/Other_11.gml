@@ -28,6 +28,7 @@ SetState = function(s){
 			layer_sequence_yscale(enemy_sequence,image_yscale);
 		}
 		if(s = 2){
+			start = 1;
 			if(instance_exists(bullet_emitter_inst)){
 				bullet_emitter_inst.enabled = true;
 			}

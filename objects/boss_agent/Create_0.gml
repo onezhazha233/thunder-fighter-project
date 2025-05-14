@@ -20,6 +20,9 @@ flame_upper_pre = -1
 
 hpbar_enabled = false
 
+start = 0
 time = 0
 
 name = ""
+
+move_start_duration = 60

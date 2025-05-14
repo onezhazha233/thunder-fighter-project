@@ -14,7 +14,7 @@ flame_upper = seq_enemy_boss_large_1_p1_flame_1
 explosion = effect_explosion_boss
 
 x = 360
-y = -200
+y = -500
 
 battle_ui.boss_hpbar_enabled = true
 battle_ui.boss_hpbar_phase = 1

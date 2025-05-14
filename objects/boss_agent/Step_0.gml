@@ -18,12 +18,18 @@ if(hp <= 0){
 	else{
 		phase += 1;
 		instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,effect_explosion_big);
-		instance_create_depth(x,y,depth,next_boss).skip = true;
+		a = instance_create_depth(x,y,depth,next_boss);
+		a.move_start_duration = 30;
+		a.skip = true;
 	}
 }
 hurt_time = max(0,hurt_time-1)
 
 image_blend = make_color_rgb(blend_r,blend_g,blend_b)
+
+if(start = 1){
+	time += 1;
+}
 
 if(layer_sequence_is_finished(enemy_sequence)){
 	if(layer_sequence_get_headdir(enemy_sequence) = seqdir_right){
