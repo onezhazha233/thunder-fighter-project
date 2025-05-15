@@ -6,6 +6,8 @@ depth = DEPTH_BATTLE.ENEMIES
 next_boss = -1
 phase = 0
 
+Anim_Destroy(id,"inv_damage")
+inv_damage = false
 inv_collision = true
 
 skip = false//为0时为第一阶段，否则创建即变形

@@ -41,7 +41,7 @@ blend_r = 255
 blend_g = 255
 blend_b = 255
 
-inv_damage = false//为真时会被子弹击中但不掉血
+inv_damage = true//为真时会被子弹击中但不掉血
 inv_collision = false//为真时不会和子弹触发碰撞事件
 hp_max = 5
 hp = hp_max
@@ -74,3 +74,5 @@ damage = 2
 time = 0
 
 mover = function(){}
+
+Anim_Create(id,"inv_damage",0,0,1,-1,0,60)
