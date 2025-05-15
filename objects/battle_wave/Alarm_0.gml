@@ -4,8 +4,13 @@ if(enabled = true){
 		enemies_info = ds_queue_dequeue(enemies);
 	
 		array_foreach(enemies_info[0],function(enemy){
-			instance_create_depth(-1000,-1000,0,enemy);
-			ds_list_add(enemy_list,enemy);
+			if(is_struct(enemy)){
+				ee = enemy.Create();
+			}
+			else{
+				ee = instance_create_depth(-1000,-1000,0,enemy);
+			}
+			ds_list_add(enemy_list,ee);
 		});
 	
 		alarm[0] = max(1,enemies_info[1]);

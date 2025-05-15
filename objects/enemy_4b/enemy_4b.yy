@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"emitter_enemy_test",
+  "%Name":"enemy_4b",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"emitter_enemy_test",
+  "name":"enemy_4b",
   "overriddenProperties":[],
   "parent":{
-    "name":"enemy",
-    "path":"folders/物体/enemy.yy",
+    "name":"4",
+    "path":"folders/物体/enemy/minion/4.yy",
   },
   "parentObjectId":{
-    "name":"emitter_enemy",
-    "path":"objects/emitter_enemy/emitter_enemy.yy",
+    "name":"enemy_agent",
+    "path":"objects/enemy_agent/enemy_agent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

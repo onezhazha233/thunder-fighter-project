@@ -1,3 +1,5 @@
+image_angle += rotate
+
 if(global.inv = 0){
 	if(collision_mask_enabled = true){
 		if(place_meeting(x,y,player)){

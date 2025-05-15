@@ -26,7 +26,7 @@ right = 85
 up = 63
 down = 60
 
-bullet_emitter = emitter_enemy_test
+bullet_emitter = emitter_enemy_b
 
 time = 0
 aa = 0

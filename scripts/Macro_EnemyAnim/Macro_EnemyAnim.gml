@@ -20,4 +20,9 @@ function Macro_EnemyAnim(){
 		END_FRAME = 0,
 		SEQUENCE = 1
 	}
+	
+	enum COLLISION_TYPE{
+		RECTANGLE = 0,
+		SPRITE = 1
+	}
 }

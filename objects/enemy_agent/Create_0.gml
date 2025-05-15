@@ -28,7 +28,7 @@ state = ENEMY_STAT.PRE
 bullet_emitter = noone
 bullet_emitter_inst = noone
 
-collision_type = 0//0为矩形 1为贴图
+collision_type = COLLISION_TYPE.RECTANGLE
 up = 10
 down = 10
 left = 10

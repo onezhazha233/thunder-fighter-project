@@ -20,4 +20,6 @@ mark = noone
 scale_x = 1
 scale_y = 1
 
+rotate = 0
+
 alarm[0] = 1

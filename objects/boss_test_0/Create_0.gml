@@ -20,4 +20,4 @@ battle_ui.boss_hpbar_enabled = true
 battle_ui.boss_hpbar_phase = 1
 battle_wave.enabled = false
 
-bullet_emitter = emitter_enemy_test
+bullet_emitter = emitter_enemy_b
