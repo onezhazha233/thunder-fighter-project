@@ -628,6 +628,7 @@
     {"id":{"name":"seq_enemy_boss_large_0_p2_attack_1","path":"sequences/seq_enemy_boss_large_0_p2_attack_1/seq_enemy_boss_large_0_p2_attack_1.yy",},},
     {"id":{"name":"seq_enemy_boss_large_0_p2_flame","path":"sequences/seq_enemy_boss_large_0_p2_flame/seq_enemy_boss_large_0_p2_flame.yy",},},
     {"id":{"name":"seq_enemy_boss_large_0_p2_intro","path":"sequences/seq_enemy_boss_large_0_p2_intro/seq_enemy_boss_large_0_p2_intro.yy",},},
+    {"id":{"name":"seq_enemy_boss_large_1_die_black","path":"sequences/seq_enemy_boss_large_1_die_black/seq_enemy_boss_large_1_die_black.yy",},},
     {"id":{"name":"seq_enemy_boss_large_1_die","path":"sequences/seq_enemy_boss_large_1_die/seq_enemy_boss_large_1_die.yy",},},
     {"id":{"name":"seq_enemy_boss_large_1_p1_flame_0","path":"sequences/seq_enemy_boss_large_1_p1_flame_0/seq_enemy_boss_large_1_p1_flame_0.yy",},},
     {"id":{"name":"seq_enemy_boss_large_1_p1_flame_1","path":"sequences/seq_enemy_boss_large_1_p1_flame_1/seq_enemy_boss_large_1_p1_flame_1.yy",},},

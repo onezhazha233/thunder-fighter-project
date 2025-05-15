@@ -4,7 +4,7 @@ function Enemy(enemy,emitter,mover) constructor{
 	mover_func = mover;
 	
 	Create = function(){
-		a = instance_create_depth(-1000,-1000,0,enemy_obj);
+		a = instance_create_depth(360,-1000,0,enemy_obj);
 		with(a) {
             bullet_emitter = other.emitter_obj;
             mover = method(self,other.mover_func);

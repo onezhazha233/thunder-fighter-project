@@ -13,4 +13,4 @@ explosion = effect_explosion_boss
 
 battle_ui.boss_hpbar_phase = 0
 
-die_sequence = seq_enemy_boss_large_1_die
+die_sequence = seq_enemy_boss_large_1_die_black

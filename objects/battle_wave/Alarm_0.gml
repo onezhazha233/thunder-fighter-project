@@ -8,7 +8,7 @@ if(enabled = true){
 				ee = enemy.Create();
 			}
 			else{
-				ee = instance_create_depth(-1000,-1000,0,enemy);
+				ee = instance_create_depth(360,-1000,0,enemy);
 			}
 			ds_list_add(enemy_list,ee);
 		});

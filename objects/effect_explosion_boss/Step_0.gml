@@ -1,6 +1,8 @@
 live;
 time += 1
 if(time = 1){
+	Camera_Shake(10,10,3,3,1,1);
+	instance_create_depth(x,y,0,effect_explosion_ring_white);
 	instance_create_depth(x-50,y-60,0,effect_explosion_small);
 	instance_create_depth(x+50,y-60,0,effect_explosion_small);
 }
