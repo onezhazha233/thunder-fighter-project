@@ -23,5 +23,5 @@ enemy_2 = new Enemy(enemy_12c0, emitter_enemy_c0, function() {
 });
 
 // === 敌人组队入队（分批登场，支持多敌人同时生成） ===
-//ds_queue_enqueue(enemies, [[enemy_0, enemy_2], 50]);  // 第一波：左侧和右侧敌人同时登场
+ds_queue_enqueue(enemies, [[enemy_0, enemy_2], 50]);  // 第一波：左侧和右侧敌人同时登场
 ds_queue_enqueue(enemies, [[enemy_1], 50]);         // 第二波：中间敌人在50帧后登场
