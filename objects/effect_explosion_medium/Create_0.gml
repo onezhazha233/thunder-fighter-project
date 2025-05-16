@@ -18,3 +18,7 @@ bgea = 0.5
 Anim_Create(id,"bges",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0,1,16)
 Anim_Create(id,"bgea",0,0,0.5,-0.5,12,12)
 Anim_Create(id,"image_alpha",0,0,1,-1,8,16)
+a = instance_create_depth(x,y,depth+2,effect_explosion_smoke)
+a.image_xscale = image_xscale*2
+a.image_yscale = image_yscale*2
+a.delay = 10

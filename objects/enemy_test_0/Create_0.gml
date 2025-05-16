@@ -33,4 +33,4 @@ aa = 0
 num = 4
 as = 4
 
-mover = function(){EnemyMove_0()}
+mover = function(){EnemyMove_0b()}

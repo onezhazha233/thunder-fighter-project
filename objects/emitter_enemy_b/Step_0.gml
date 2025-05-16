@@ -74,21 +74,21 @@ if(time >= 180&&time <= 180+10*3){
 			pd = point_direction(x,y,player.x,player.y);
 		}
 		for(i=0;i<4;i+=1){
-			dd = pd + (2-(time-180) div 15)*10+5;
+			dd = pd + ((time-180) div 15)*10+5;
 			a = instance_create_depth(x,y,0,bullet_enemy_red);
 			a.sprite_index = spr_bullet_enemy_red_2;
 			a.image_angle = dd;
 			a.direction = a.image_angle;
 			a.speed = 0;
-			Anim_Create(a,"speed",0,0,0,15+i*2,80);
+			Anim_Create(a,"speed",0,0,0,15+i*2,100);
 			a.mark = mark;
-			dd = pd - (2-(time-180) div 15)*10-5;
+			dd = pd - ((time-180) div 15)*10-5;
 			a = instance_create_depth(x,y,0,bullet_enemy_red);
 			a.sprite_index = spr_bullet_enemy_red_2;
 			a.image_angle = dd;
 			a.direction = a.image_angle;
 			a.speed = 0;
-			Anim_Create(a,"speed",0,0,0,15+i*2,80);
+			Anim_Create(a,"speed",0,0,0,15+i*2,100);
 			a.mark = mark;
 		}
 	}
