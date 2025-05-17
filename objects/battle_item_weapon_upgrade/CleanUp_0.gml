@@ -1,0 +1,3 @@
+live;
+layer_sequence_destroy(bg_sequence)
+layer_sequence_destroy(item_sequence)

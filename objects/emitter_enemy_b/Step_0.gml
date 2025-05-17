@@ -93,9 +93,6 @@ if(time >= 180&&time <= 180+10*3){
 		}
 	}
 }
-if(time = 250){
-	time = 0;
-}
 /*if(time >= 1&&time <= 1+6*7){
 	if((time-1) mod 6 = 0){
 		switch((time-1) div 6){

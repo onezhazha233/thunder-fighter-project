@@ -1,32 +1,72 @@
 live;
-SetRampage = function(state){//0为开始暴走 1为结束暴走
+SetWeaponLevel = function(level){
+	weapon_level = level;
+	with(plane_inst){
+		if(instance_exists(bullet_emitter)){
+			bullet_emitter.weapon_level = level;
+		}
+	}
+	for(i=0;i<array_length(wingman_left);i+=1){
+		with(wingman_left_inst[i]){
+			if(instance_exists(bullet_emitter)){
+				bullet_emitter.weapon_level = level;
+			}
+		}
+	}
+	for(i=0;i<array_length(wingman_right);i+=1){
+		with(wingman_right_inst[i]){
+			if(instance_exists(bullet_emitter)){
+				bullet_emitter.weapon_level = level;
+			}
+		}
+	}
+}
+SetRampage = function(state){//1为开始暴走 0为结束暴走
 	if(state = 1){
 		with(plane_inst){
 			SetState(1);
+			if(instance_exists(bullet_emitter)){
+				bullet_emitter.SetRampage(true);
+			}
 		}
 		for(i=0;i<array_length(wingman_left);i+=1){
 			with(wingman_left_inst[i]){
 				SetState(1);
+				if(instance_exists(bullet_emitter)){
+					bullet_emitter.SetRampage(true);
+				}
 			}
 		}
 		for(i=0;i<array_length(wingman_right);i+=1){
 			with(wingman_right_inst[i]){
 				SetState(1);
+				if(instance_exists(bullet_emitter)){
+					bullet_emitter.SetRampage(true);
+				}
 			}
 		}
 	}
 	if(state = 0){
 		with(plane_inst){
 			SetState(3);
+			if(instance_exists(bullet_emitter)){
+				bullet_emitter.SetRampage(false);
+			}
 		}
 		for(i=0;i<array_length(wingman_left);i+=1){
 			with(wingman_left_inst[i]){
 				SetState(3);
+				if(instance_exists(bullet_emitter)){
+					bullet_emitter.SetRampage(false);
+				}
 			}
 		}
 		for(i=0;i<array_length(wingman_right);i+=1){
 			with(wingman_right_inst[i]){
 				SetState(3);
+				if(instance_exists(bullet_emitter)){
+					bullet_emitter.SetRampage(false);
+				}
 			}
 		}
 	}

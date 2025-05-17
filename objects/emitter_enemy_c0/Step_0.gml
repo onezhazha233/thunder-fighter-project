@@ -181,9 +181,6 @@ if(time = 220){
 		}
 	}
 }
-if(time = 400){
-	time = 0;
-}
 /*if(time = 160){
 	dir = random(360);
 	n0 = 5;

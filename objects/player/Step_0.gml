@@ -42,4 +42,11 @@ if(visible = true){
 		//instance_destroy();
 		instance_destroy(equipment_test);
 	}
+	
+	if(rampage_duration > 0)rampage_duration -= 1;
+	if(rampage_duration = 0){
+		if(equipment.state = 1){
+			equipment.SetRampage(0);
+		}
+	}
 }

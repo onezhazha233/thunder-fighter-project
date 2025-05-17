@@ -1,5 +1,5 @@
 live;
-if(enabled = true)time += 1;
+event_inherited();
 
 if(time >= 1&&time <= 1+4){
 	if((time-1) mod 4 = 0){
@@ -207,9 +207,6 @@ if(time >= 450&&time <= 450+3*10){
 			a.speed = 3 + i;
 		}
 	}
-}
-if(time = 600){
-	time = 0;
 }
 /*if(time = 160){
 	dir = random(360);

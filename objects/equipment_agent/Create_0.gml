@@ -18,4 +18,5 @@ alarm[0] = 1
 
 event_user(0)
 
+weapon_level = 0
 state = 0//0为正常或暴走结束 1为暴走开始或暴走中
