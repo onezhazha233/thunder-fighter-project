@@ -8,7 +8,7 @@ if(player.visible = true){
 	}
 	if(chase = 1){
 		direction = point_direction(x,y,player.x,player.y);
-		speed = 15;
+		speed = min(20,speed+2);
 	}
 	if(point_distance(x,y,player.x,player.y) <= speed){
 		event_user(0);
