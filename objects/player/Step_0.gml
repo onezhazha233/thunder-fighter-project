@@ -23,6 +23,8 @@ if(visible = true){
 	equipment.SetPosition(x,y);
 	
 	if(instance_exists(battle_quantum_shield)){
+		battle_quantum_shield.x = x;
+		battle_quantum_shield.y = y;
 		battle_quantum_shield.SetPosition(x,y);
 	}
 

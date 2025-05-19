@@ -37,8 +37,10 @@ SetPosition = function(xx,yy){
 	x = xx;
 	y = yy;
 	
-	layer_sequence_x(shield_sequence,x);
-	layer_sequence_y(shield_sequence,y);
-	layer_sequence_xscale(shield_sequence,image_xscale);
-	layer_sequence_yscale(shield_sequence,image_yscale);
+	if(layer_sequence_exists(sl,shield_sequence)){
+		layer_sequence_x(shield_sequence,x);
+		layer_sequence_y(shield_sequence,y);
+		layer_sequence_xscale(shield_sequence,image_xscale);
+		layer_sequence_yscale(shield_sequence,image_yscale);
+	}
 }
