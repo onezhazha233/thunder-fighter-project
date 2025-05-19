@@ -20,7 +20,13 @@
   "lockOrigin":false,
   "moments":{
     "$KeyframeStore<MomentsEventKeyframe>":"",
-    "Keyframes":[],
+    "Keyframes":[
+      {"$Keyframe<MomentsEventKeyframe>":"","Channels":{
+          "0":{"$MomentsEventKeyframe":"","Events":[
+              "AutoDestroySequence",
+            ],"resourceType":"MomentsEventKeyframe","resourceVersion":"2.0",},
+        },"Disabled":false,"id":"2f516231-525c-4544-8d11-f582a87b2e57","IsCreationKey":false,"Key":59.9999,"Length":1.0,"resourceType":"Keyframe<MomentsEventKeyframe>","resourceVersion":"2.0","Stretch":false,},
+    ],
     "resourceType":"KeyframeStore<MomentsEventKeyframe>",
     "resourceVersion":"2.0",
   },
@@ -236,13 +242,13 @@
                             {"th0":-0.020000001,"th1":4.1909518E-10,"tv0":0.0,"tv1":0.0,"x":0.0,"y":3.0,},
                             {"th0":-0.1,"th1":0.120000005,"tv0":0.0,"tv1":0.0,"x":0.2,"y":1.25,},
                             {"th0":-0.120000005,"th1":4.1909165E-10,"tv0":0.0,"tv1":0.0,"x":0.8,"y":1.25,},
-                            {"th0":-0.09999916,"th1":0.019999832,"tv0":0.0,"tv1":0.0,"x":0.99999833,"y":1.0,},
+                            {"th0":-0.09999916,"th1":0.019999832,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                         {"$GMAnimCurveChannel":"","%Name":"Y","colour":4281083598,"name":"Y","points":[
                             {"th0":-0.020000001,"th1":4.1909518E-10,"tv0":0.0,"tv1":0.0,"x":0.0,"y":3.0,},
                             {"th0":-0.1,"th1":0.120000005,"tv0":0.0,"tv1":0.0,"x":0.2,"y":1.25,},
                             {"th0":-0.120000005,"th1":4.1909165E-10,"tv0":0.0,"tv1":0.0,"x":0.8,"y":1.25,},
-                            {"th0":-0.09999916,"th1":0.019999832,"tv0":0.0,"tv1":0.0,"x":0.99999833,"y":1.0,},
+                            {"th0":-0.09999916,"th1":0.019999832,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                       ],"function":2,"name":"缩放","resourceType":"GMAnimCurve","resourceVersion":"2.0",},"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
                   "1":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":{"$GMAnimCurve":"","%Name":"缩放","channels":[
@@ -250,13 +256,13 @@
                             {"th0":-0.020000001,"th1":4.1909518E-10,"tv0":0.0,"tv1":0.0,"x":0.0,"y":3.0,},
                             {"th0":-0.1,"th1":0.120000005,"tv0":0.0,"tv1":0.0,"x":0.2,"y":1.25,},
                             {"th0":-0.120000005,"th1":4.1909165E-10,"tv0":0.0,"tv1":0.0,"x":0.8,"y":1.25,},
-                            {"th0":-0.09999916,"th1":0.019999832,"tv0":0.0,"tv1":0.0,"x":0.99999833,"y":1.0,},
+                            {"th0":-0.09999916,"th1":0.019999832,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                         {"$GMAnimCurveChannel":"","%Name":"Y","colour":4281083598,"name":"Y","points":[
                             {"th0":-0.020000001,"th1":4.1909518E-10,"tv0":0.0,"tv1":0.0,"x":0.0,"y":3.0,},
                             {"th0":-0.1,"th1":0.120000005,"tv0":0.0,"tv1":0.0,"x":0.2,"y":1.25,},
                             {"th0":-0.120000005,"th1":4.1909165E-10,"tv0":0.0,"tv1":0.0,"x":0.8,"y":1.25,},
-                            {"th0":-0.09999916,"th1":0.019999832,"tv0":0.0,"tv1":0.0,"x":0.99999833,"y":1.0,},
+                            {"th0":-0.09999916,"th1":0.019999832,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                       ],"function":2,"name":"缩放","resourceType":"GMAnimCurve","resourceVersion":"2.0",},"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
                 },"Disabled":false,"id":"dde2deef-39ce-4db0-a3cd-8268ca2dca97","IsCreationKey":false,"Key":0.0,"Length":60.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},

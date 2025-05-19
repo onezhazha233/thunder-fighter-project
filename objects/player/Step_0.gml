@@ -1,6 +1,6 @@
 live;
 if(visible = true){
-	if(place_meeting(x,y,bullet_enemy)&&global.inv = 0){
+	if(place_meeting(x,y,bullet_enemy)&&global.inv_hurt = 0&&global.inv_shield = 0){
 		event_user(0);
 	}
 
@@ -21,9 +21,13 @@ if(visible = true){
 	equipment.x = x
 	equipment.y = y
 	equipment.SetPosition(x,y);
+	
+	if(instance_exists(battle_quantum_shield)){
+		battle_quantum_shield.SetPosition(x,y);
+	}
 
-	if(global.inv > 0){
-		if(global.inv mod 5 = 0){
+	if(global.inv_hurt > 0){
+		if(global.inv_hurt mod 5 = 0){
 			if(equipment.image_alpha = 1){
 				equipment.image_alpha = 0.5;
 			}
@@ -32,7 +36,7 @@ if(visible = true){
 			}
 		}
 	}
-	global.inv = max(0,global.inv-1)
+	global.inv_hurt = max(0,global.inv_hurt-1)
 
 	if(global.hp <= 0){
 		visible = false;
