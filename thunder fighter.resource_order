@@ -289,6 +289,8 @@
     {"name":"assault_zero","order":2,"path":"objects/assault_zero/assault_zero.yy",},
     {"name":"aurora_phantom","order":3,"path":"objects/aurora_phantom/aurora_phantom.yy",},
     {"name":"battle_bg_city","order":1,"path":"objects/battle_bg_city/battle_bg_city.yy",},
+    {"name":"battle_item_hp_recovery_healer","order":5,"path":"objects/battle_item_hp_recovery_healer/battle_item_hp_recovery_healer.yy",},
+    {"name":"battle_item_hp_recovery","order":4,"path":"objects/battle_item_hp_recovery/battle_item_hp_recovery.yy",},
     {"name":"battle_item_quantum_shield","order":3,"path":"objects/battle_item_quantum_shield/battle_item_quantum_shield.yy",},
     {"name":"battle_item_rampage","order":2,"path":"objects/battle_item_rampage/battle_item_rampage.yy",},
     {"name":"battle_item_weapon_upgrade","order":1,"path":"objects/battle_item_weapon_upgrade/battle_item_weapon_upgrade.yy",},

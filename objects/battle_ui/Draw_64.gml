@@ -1,6 +1,14 @@
 live;
 draw_sprite(spr_ui_hpbar_player,0,0,0)
-draw_sprite_part_ext(spr_ui_hpbar_player_yellow,0,0,0,sprite_get_width(spr_ui_hpbar_player_yellow)*(global.hp/global.hpmax),sprite_get_height(spr_ui_hpbar_player_yellow),114,30,1,1,-1,1)
+if(global.hp <= global.hpmax*0.25){
+	hp_red_time += 1;
+	draw_sprite_part_ext(spr_ui_hpbar_player_red,0,0,0,sprite_get_width(spr_ui_hpbar_player_red),sprite_get_height(spr_ui_hpbar_player_red),114,30,1,1,-1,0.25-cos(hp_red_time/10)*0.25);
+	draw_sprite_part_ext(spr_ui_hpbar_player_red,0,0,0,sprite_get_width(spr_ui_hpbar_player_red)*(global.hp/global.hpmax),sprite_get_height(spr_ui_hpbar_player_red),114,30,1,1,-1,1);
+}
+else{
+	hp_red_time = 0;
+	draw_sprite_part_ext(spr_ui_hpbar_player_yellow,0,0,0,sprite_get_width(spr_ui_hpbar_player_yellow)*(global.hp/global.hpmax),sprite_get_height(spr_ui_hpbar_player_yellow),114,30,1,1,-1,1);
+}
 
 if(boss_hpbar_enabled = true){
 	draw_sprite_ext(spr_ui_hpbar_boss_name,0,360-273-3,104,1,1,0,-1,1);

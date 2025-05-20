@@ -367,6 +367,8 @@
     {"id":{"name":"battle_bg_city","path":"objects/battle_bg_city/battle_bg_city.yy",},},
     {"id":{"name":"battle_bg","path":"objects/battle_bg/battle_bg.yy",},},
     {"id":{"name":"battle_item_agent","path":"objects/battle_item_agent/battle_item_agent.yy",},},
+    {"id":{"name":"battle_item_hp_recovery_healer","path":"objects/battle_item_hp_recovery_healer/battle_item_hp_recovery_healer.yy",},},
+    {"id":{"name":"battle_item_hp_recovery","path":"objects/battle_item_hp_recovery/battle_item_hp_recovery.yy",},},
     {"id":{"name":"battle_item_quantum_shield","path":"objects/battle_item_quantum_shield/battle_item_quantum_shield.yy",},},
     {"id":{"name":"battle_item_rampage","path":"objects/battle_item_rampage/battle_item_rampage.yy",},},
     {"id":{"name":"battle_item_weapon_upgrade","path":"objects/battle_item_weapon_upgrade/battle_item_weapon_upgrade.yy",},},
