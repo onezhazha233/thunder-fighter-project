@@ -394,6 +394,7 @@
     {"id":{"name":"bullet_enemy_red","path":"objects/bullet_enemy_red/bullet_enemy_red.yy",},},
     {"id":{"name":"bullet_enemy","path":"objects/bullet_enemy/bullet_enemy.yy",},},
     {"id":{"name":"bullet_player_assault_fire","path":"objects/bullet_player_assault_fire/bullet_player_assault_fire.yy",},},
+    {"id":{"name":"bullet_player_enemy","path":"objects/bullet_player_enemy/bullet_player_enemy.yy",},},
     {"id":{"name":"bullet_player_plane_assault_a_0","path":"objects/bullet_player_plane_assault_a_0/bullet_player_plane_assault_a_0.yy",},},
     {"id":{"name":"bullet_player_plane_assault_a_1","path":"objects/bullet_player_plane_assault_a_1/bullet_player_plane_assault_a_1.yy",},},
     {"id":{"name":"bullet_player_plane_assault_a_2","path":"objects/bullet_player_plane_assault_a_2/bullet_player_plane_assault_a_2.yy",},},

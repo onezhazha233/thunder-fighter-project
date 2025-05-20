@@ -1,4 +1,4 @@
-collision_type = 0//0为矩形 1为贴图
+collision_type = COLLISION_TYPE.RECTANGLE
 up = 10
 down = 10
 left = 10
