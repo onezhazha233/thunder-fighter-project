@@ -80,7 +80,7 @@ if(inv_collision = false){
 		player_point = collision_rectangle(x-left*image_xscale,y-up*image_yscale,x+right*image_xscale,y+down*image_yscale,player,1,1)
 		if(instance_exists(player_point)){
 			if(global.inv_hurt = 0){
-				global.hp -= damage;
+				Player_Hurt(damage);
 				with(player)event_user(0);
 			}
 		}
@@ -102,7 +102,7 @@ if(inv_collision = false){
 		player_point = instance_place(x,y,player);
 		if(instance_exists(player_point)){
 			if(global.inv_hurt = 0){
-				global.hp -= damage;
+				Player_Hurt(damage);
 				with(player)event_user(0);
 			}
 		}

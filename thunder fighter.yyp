@@ -324,6 +324,7 @@
     {"$GMFolder":"","%Name":"Anim","folderPath":"folders/脚本/GMU/Anim.yy","name":"Anim","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Lang","folderPath":"folders/脚本/GMU/Lang.yy","name":"Lang","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Macro","folderPath":"folders/脚本/Macro.yy","name":"Macro","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Player","folderPath":"folders/脚本/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"路径","folderPath":"folders/路径.yy","name":"路径","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
@@ -551,6 +552,9 @@
     {"id":{"name":"Lang_Uninit","path":"scripts/Lang_Uninit/Lang_Uninit.yy",},},
     {"id":{"name":"Macro_Depth","path":"scripts/Macro_Depth/Macro_Depth.yy",},},
     {"id":{"name":"Macro_EnemyAnim","path":"scripts/Macro_EnemyAnim/Macro_EnemyAnim.yy",},},
+    {"id":{"name":"Player_CallHurtEvent","path":"scripts/Player_CallHurtEvent/Player_CallHurtEvent.yy",},},
+    {"id":{"name":"Player_Heal","path":"scripts/Player_Heal/Player_Heal.yy",},},
+    {"id":{"name":"Player_Hurt","path":"scripts/Player_Hurt/Player_Hurt.yy",},},
     {"id":{"name":"seq_apex_a_rampage_intro","path":"sequences/seq_apex_a_rampage_intro/seq_apex_a_rampage_intro.yy",},},
     {"id":{"name":"seq_apex_a_rampage_outro","path":"sequences/seq_apex_a_rampage_outro/seq_apex_a_rampage_outro.yy",},},
     {"id":{"name":"seq_apex_a_rampage","path":"sequences/seq_apex_a_rampage/seq_apex_a_rampage.yy",},},

@@ -1,3 +1,4 @@
 live;
 duration = 20
-heal = global.hpmax*0.0175
+time = 0
+heal = global.hpmax*0.35
