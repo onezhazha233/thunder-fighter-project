@@ -1,4 +1,5 @@
 live;
+layer_sequence_create("item_effects",x,y,seq_battle_item_effect_quantum_shield);
 if(instance_exists(battle_quantum_shield)){
 	if(battle_quantum_shield.duration > 0){
 		battle_quantum_shield.duration = global.quantum_shield_duration;

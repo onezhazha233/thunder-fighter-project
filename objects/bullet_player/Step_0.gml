@@ -13,11 +13,8 @@ if(collision_type = COLLISION_TYPE.RECTANGLE){
 		if(rectangle_in_rectangle(enemy_left,enemy_up,enemy_right,enemy_down,bullet_left,bullet_up,bullet_right,bullet_down) > 0){
 			if(collision_type = COLLISION_TYPE.RECTANGLE){
 				other.enemy = id;
-				if(other.collision_destroy = true){
-					instance_destroy(other);
-				}
-			    with(other)event_user(0);
-				if(inv_damage = false)event_user(0);
+				event_user(0);
+				other.OnCollision(id);
 			}
 		}
 	}
@@ -25,25 +22,19 @@ if(collision_type = COLLISION_TYPE.RECTANGLE){
 	enemy = collision_rectangle(x-left*scale_x,y-up*scale_y,x+right*scale_x,y+down*scale_y,enemy_agent,1,1);
 	if(instance_exists(enemy)){
 		if(enemy.collision_type = COLLISION_TYPE.SPRITE){
-			if(collision_destroy = true){
-				instance_destroy();
-			}
 			with(enemy)event_user(0);
-			if(enemy.inv_damage = false)event_user(0);
+			OnCollision(enemy);
 		}
 	}
 }
 if(collision_type = COLLISION_TYPE.SPRITE){
 	with(enemy_agent){
-		if(collision_type = COLLISION_TYPE.RECTANGLE){
-			bullet = collision_rectangle(x-left*image_xscale,y-up*image_yscale,x+right*image_xscale,y+down*image_yscale,bullet_player,1,1);
-			if(instance_exists(bullet)){
-				bullet.enemy = id;
-				if(collision_destroy = true){
-					instance_destroy();
-				}
-				with(bullet)event_user(0);
-				if(inv_damage = false)event_user(0);
+		bullet = collision_rectangle(x-left*image_xscale,y-up*image_yscale,x+right*image_xscale,y+down*image_yscale,other,1,1);
+		if(instance_exists(bullet)){
+			if(collision_type = COLLISION_TYPE.RECTANGLE){
+				other.enemy = id;
+				event_user(0);
+				other.OnCollision(id);
 			}
 		}
 	}
@@ -52,11 +43,8 @@ if(collision_type = COLLISION_TYPE.SPRITE){
 	if(instance_exists(enemy)){
 		if(enemy.inv_collision = false){
 			if(enemy.collision_type = COLLISION_TYPE.SPRITE){
-				if(collision_destroy = true){
-					instance_destroy();
-				}
-				if(enemy.inv_damage = false)event_user(0);
 				with(enemy)event_user(0);
+				OnCollision(enemy);
 			}
 		}
 	}

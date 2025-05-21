@@ -15,3 +15,10 @@ scale_x = 1
 scale_y = 1
 
 alarm[0] = 1
+
+function OnCollision(enemy){
+	if(enemy.inv_damage = false)event_user(0);
+	if(collision_destroy = true){
+		instance_destroy();
+	}
+}
