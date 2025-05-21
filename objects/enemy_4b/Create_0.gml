@@ -13,5 +13,11 @@ hpbar_yoffset = 80
 
 explosion = effect_explosion_medium
 
-collision_type = COLLISION_TYPE.SPRITE
+collision_type = COLLISION_TYPE.RECTANGLE
+
+up = 10
+down = 10
+left = 10
+right = 10
+
 sprite_index = spr_enemy_minion_4b
