@@ -16,9 +16,26 @@ scale_y = 1
 
 alarm[0] = 1
 
-function OnCollision(enemy){
-	if(enemy.inv_damage = false)event_user(0);
-	if(collision_destroy = true){
-		instance_destroy();
+damage_type = 0//0为帧伤 1为启动对敌人失效机制
+collision_enemy = ds_map_create()
+damage_interval = 1//无效时间间隔
+
+function CollideEnemy(enemy){
+	if(damage_type = 1){
+		if!(ds_map_exists(collision_enemy,enemy)){
+			ds_map_add(collision_enemy,enemy,damage_interval);
+			if(enemy.inv_damage = false)event_user(0);
+			with(enemy)event_user(0);
+			if(collision_destroy = true){
+				instance_destroy();
+			}
+		}
+	}
+	else{
+		if(enemy.inv_damage = false)event_user(0);
+		with(enemy)event_user(0);
+		if(collision_destroy = true){
+			instance_destroy();
+		}
 	}
 }

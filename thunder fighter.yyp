@@ -177,6 +177,8 @@
     {"$GMFolder":"","%Name":"bg","folderPath":"folders/精灵/bg.yy","name":"bg","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"bullet_enemy","folderPath":"folders/精灵/bullet_enemy.yy","name":"bullet_enemy","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"bullet_player","folderPath":"folders/精灵/bullet_player.yy","name":"bullet_player","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"apex","folderPath":"folders/精灵/bullet_player/apex.yy","name":"apex","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"apex_zero","folderPath":"folders/精灵/bullet_player/apex/apex_zero.yy","name":"apex_zero","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"assault","folderPath":"folders/精灵/bullet_player/assault.yy","name":"assault","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"assault_zero","folderPath":"folders/精灵/bullet_player/assault/assault_zero.yy","name":"assault_zero","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"pulse_assault","folderPath":"folders/精灵/bullet_player/assault/pulse_assault.yy","name":"pulse_assault","resourceType":"GMFolder","resourceVersion":"2.0",},

@@ -9,6 +9,7 @@ if(hp <= 0){
 	if(object_exists(explosion)){
 		instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,explosion);
 	}
+	CreateItem();
 	instance_destroy();
 }
 hurt_time = max(0,hurt_time-1)

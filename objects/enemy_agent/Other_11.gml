@@ -133,3 +133,24 @@ SetPosition = function(xx,yy){
 		layer_sequence_angle(flame_upper_sequence,image_angle);
 	}
 }
+
+CreateItem = function(){
+	var total_weight = 0;
+    for (var i = 0; i < array_length(items); i++) {
+        total_weight += items[i][1];
+    }
+    
+    var rand = random(total_weight);
+    var current_weight = 0;
+    
+    for (var i = 0; i < array_length(items); i++) {
+        current_weight += items[i][1];
+        if (rand < current_weight) {
+            var selected_items = items[i][0];
+            for (var j = 0; j < array_length(selected_items); j++) {
+                instance_create_depth(x,y,0,selected_items[j]);
+            }
+            break;
+        }
+    }
+}

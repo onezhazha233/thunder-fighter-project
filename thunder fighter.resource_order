@@ -159,6 +159,8 @@
     {"name":"bg","order":10,"path":"folders/精灵/bg.yy",},
     {"name":"bullet_enemy","order":9,"path":"folders/精灵/bullet_enemy.yy",},
     {"name":"bullet_player","order":12,"path":"folders/精灵/bullet_player.yy",},
+    {"name":"apex","order":3,"path":"folders/精灵/bullet_player/apex.yy",},
+    {"name":"apex_zero","order":1,"path":"folders/精灵/bullet_player/apex/apex_zero.yy",},
     {"name":"assault","order":1,"path":"folders/精灵/bullet_player/assault.yy",},
     {"name":"pulse_assault","order":1,"path":"folders/精灵/bullet_player/assault/pulse_assault.yy",},
     {"name":"swift_assault","order":3,"path":"folders/精灵/bullet_player/assault/swift_assault.yy",},

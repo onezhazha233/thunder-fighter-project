@@ -17,4 +17,4 @@ sprite_roll_flip = true
 
 surf_enabled = 0
 
-bullet_emitter = emitter_player_test//emitter_plane_assault_d
+bullet_emitter = emitter_plane_assault_d

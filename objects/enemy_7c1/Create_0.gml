@@ -19,3 +19,5 @@ explosion = effect_explosion_big
 
 collision_type = COLLISION_TYPE.SPRITE
 sprite_index = spr_enemy_minion_7c1_side
+
+items = [[[battle_item_hp_recovery],1],[[battle_item_quantum_shield],1],[[battle_item_weapon_upgrade],1],[[battle_item_rampage],1],[[],8]]

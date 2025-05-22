@@ -10,6 +10,11 @@ if(enabled = true){
 		a.direction = direction;
 		a.speed = 0;
 		a.type = 1;
+		a.collision_type = COLLISION_TYPE.RECTANGLE;
+		a.up = 0;
+		a.down = 0;
+		a.left = 0;
+		a.right = 0;
 		duration -= 1;
 		if(duration = 0){
 			Anim_Create(id,"image_xscale",ANIM_TWEEN.QUAD,ANIM_EASE.IN,image_xscale,-image_xscale,10);

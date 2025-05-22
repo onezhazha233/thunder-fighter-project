@@ -14,3 +14,6 @@ duration = 10
 
 image_alpha = 0
 alarm[0] = 1
+
+damage_type = 1
+damage_interval = 999
