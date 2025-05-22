@@ -5,6 +5,6 @@ down = 30
 left = 60
 right = 60
 
-destroy_effect = bullet_effect_assault
+collision_effect = bullet_effect_assault
 
 vspeed = -45

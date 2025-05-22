@@ -8,7 +8,7 @@ bullet_sequence = -1
 collision_destroy = true
 auto_destroy = true
 auto_destroy_delay = 60
-destroy_effect = noone
+collision_effect = noone
 damage = 1
 
 scale_x = 1
@@ -29,6 +29,11 @@ function CollideEnemy(enemy){
 			if(collision_destroy = true){
 				instance_destroy();
 			}
+			if!(collision_effect = noone){
+				a = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
+				a.image_xscale = scale_x;
+				a.image_yscale = scale_y;
+			}
 		}
 	}
 	else{
@@ -36,6 +41,11 @@ function CollideEnemy(enemy){
 		with(enemy)event_user(0);
 		if(collision_destroy = true){
 			instance_destroy();
+		}
+		if!(collision_effect = noone){
+			a = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
+			a.image_xscale = scale_x;
+			a.image_yscale = scale_y;
 		}
 	}
 }

@@ -6,7 +6,7 @@ down = 30
 left = 70
 right = 70
 
-destroy_effect = bullet_effect_assault
+collision_effect = bullet_effect_assault
 
 image_speed = 0
 
