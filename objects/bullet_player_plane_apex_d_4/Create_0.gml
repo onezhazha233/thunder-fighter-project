@@ -1,10 +1,10 @@
 live;
 event_inherited();
 
-up = 0
-down = 30
-left = 35
-right = 35
+up = 30
+down = 20
+left = 60
+right = 60
 
 image_xscale = 1.8
 image_yscale = 2.2
@@ -16,3 +16,33 @@ damage_interval = 999
 collision_destroy = false
 
 collision_effect = bullet_effect_apex
+
+function CollideEnemy(enemy){
+	if(damage_type = 1){
+		if!(ds_map_exists(collision_enemy,enemy)){
+			ds_map_add(collision_enemy,enemy,damage_interval);
+			if(enemy.inv_damage = false)event_user(0);
+			with(enemy)event_user(0);
+			if(collision_destroy = true){
+				instance_destroy();
+			}
+			if!(collision_effect = noone){
+				a = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
+				a.image_xscale = scale_x*1.5;
+				a.image_yscale = scale_y*1.5;
+			}
+		}
+	}
+	else{
+		if(enemy.inv_damage = false)event_user(0);
+		with(enemy)event_user(0);
+		if(collision_destroy = true){
+			instance_destroy();
+		}
+		if!(collision_effect = noone){
+			a = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
+			a.image_xscale = scale_x*1.5;
+			a.image_yscale = scale_y*1.5;
+		}
+	}
+}

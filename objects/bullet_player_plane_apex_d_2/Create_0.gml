@@ -1,8 +1,8 @@
 live;
 event_inherited();
 
-up = 0
-down = 30
+up = 15
+down = 20
 left = 35
 right = 35
 

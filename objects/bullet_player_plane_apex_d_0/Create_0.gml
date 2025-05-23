@@ -1,10 +1,10 @@
 live;
 event_inherited();
 
-up = 0
-down = 30
-left = 35
-right = 35
+up = 10
+down = 20
+left = 25
+right = 25
 
 image_xscale = 1.2
 image_yscale = 1.4

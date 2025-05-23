@@ -23,3 +23,15 @@ if(keyboard_check_pressed(ord("C"))){
 		instance_destroy();
 	}
 }
+
+if(keyboard_check_pressed(vk_space)){
+	if(player.rampage_duration > 0){
+		player.SetRampageDuration(0);
+	}
+	else{
+		player.SetRampageDuration(300);
+	}
+}
+
+if(keyboard_check_pressed(vk_up))player.equipment.plane.bullet_emitter.SetLevel(min(3,player.equipment.plane.bullet_emitter.weapon_level+1));
+if(keyboard_check_pressed(vk_down))player.equipment.plane.bullet_emitter.SetLevel(max(0,player.equipment.plane.bullet_emitter.weapon_level-1));

@@ -1,1 +1,0 @@
-if(draw = 1)draw_sprite_ext(spr_assault_c_base,0,x,y,3,3,0,-1,1)
