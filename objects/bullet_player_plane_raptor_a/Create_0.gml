@@ -1,24 +1,12 @@
-collision_type = COLLISION_TYPE.RECTANGLE
-up = 10
-down = 10
-left = 10
-right = 10
-sequence = -1//-1为不使用序列
-bullet_sequence = -1
-collision_destroy = true
-auto_destroy = true
-auto_destroy_delay = 60
-collision_effect = noone
-damage = 1
+live;
+event_inherited();
 
-scale_x = 1
-scale_y = 1
+collision_type = COLLISION_TYPE.SPRITE
 
-alarm[0] = 1
+rampage = false
+collision_effect = bullet_effect_raptor
 
-damage_type = 0//0为帧伤 1为启动对敌人失效机制
-collision_enemy = ds_map_create()
-damage_interval = 1//无效时间间隔
+damage = 0.25
 
 function CollideEnemy(enemy){
 	if(damage_type = 1){
@@ -31,8 +19,8 @@ function CollideEnemy(enemy){
 			}
 			if!(collision_effect = noone){
 				a = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
-				a.image_xscale = scale_x;
-				a.image_yscale = scale_y;
+				a.image_xscale = scale_x*(rampage = true ? 1 : 0.6);
+				a.image_yscale = scale_y*(rampage = true ? 1 : 0.6);
 			}
 		}
 	}
@@ -44,8 +32,8 @@ function CollideEnemy(enemy){
 		}
 		if!(collision_effect = noone){
 			a = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
-			a.image_xscale = scale_x;
-			a.image_yscale = scale_y;
+			a.image_xscale = scale_x*(rampage = true ? 1 : 0.6);
+			a.image_yscale = scale_y*(rampage = true ? 1 : 0.6);
 		}
 	}
 }
