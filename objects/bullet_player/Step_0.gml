@@ -1,11 +1,3 @@
-if(layer_sequence_exists("bullets_player",bullet_sequence)){
-	layer_sequence_x(bullet_sequence,x);
-	layer_sequence_y(bullet_sequence,y);
-	layer_sequence_xscale(bullet_sequence,image_xscale);
-	layer_sequence_yscale(bullet_sequence,image_yscale);
-	layer_sequence_angle(bullet_sequence,image_angle);
-}
-
 if(damage_type = 1){
 	var _keys = ds_map_find_first(collision_enemy);
 	while (!is_undefined(_keys)) {

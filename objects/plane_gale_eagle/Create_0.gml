@@ -12,4 +12,4 @@ rampage_outro = seq_raptor_b_rampage_outro
 sprite_roll_left = spr_raptor_b_roll_left
 sprite_roll_flip = true
 
-bullet_emitter = emitter_plane_raptor_b
+bullet_emitter = emitter_plane_raptor_a

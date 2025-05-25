@@ -2,42 +2,30 @@ live;
 switch(weapon_level){
 	case 0:
 		if(l1b = 0){
-			a = instance_create_depth(x,y,depth,bullet_player_plane_assault_a_0);
-			a.scale_x = scale_x;
-			a.scale_y = scale_y;
+			MakePlayerBullet(x,y,bullet_player_plane_assault_a_0);
 		}
 		else{
-			a = instance_create_depth(x,y,depth,bullet_player_plane_assault_a_1);
-			a.scale_x = scale_x;
-			a.scale_y = scale_y;
+			MakePlayerBullet(x,y,bullet_player_plane_assault_a_1);
 		}
 		l1b = !l1b;
 		break;
 		
 	case 1:
 		if(l1b = 0){
-			a = instance_create_depth(x,y,depth,bullet_player_plane_assault_a_3);
-			a.scale_x = scale_x;
-			a.scale_y = scale_y;
+			MakePlayerBullet(x,y,bullet_player_plane_assault_a_3);
 		}
 		else{
-			a = instance_create_depth(x,y,depth,bullet_player_plane_assault_a_2);
-			a.scale_x = scale_x;
-			a.scale_y = scale_y;
+			MakePlayerBullet(x,y,bullet_player_plane_assault_a_2);
 		}
 		l1b = !l1b;
 		break;
 		
 	case 2:
-		a = instance_create_depth(x,y,depth,bullet_player_plane_assault_a_4);
-		a.scale_x = scale_x;
-		a.scale_y = scale_y;
+		MakePlayerBullet(x,y,bullet_player_plane_assault_a_4);
 		break;
 		
 	case 3:
-		a = instance_create_depth(x,y,depth,bullet_player_plane_assault_a_5);
-		a.scale_x = scale_x;
-		a.scale_y = scale_y;
+		MakePlayerBullet(x,y,bullet_player_plane_assault_a_5);
 		break;
 }
 fire = instance_create_depth(x,y,DEPTH_BATTLE.BULLETS_PLAYER-10,bullet_player_assault_fire);

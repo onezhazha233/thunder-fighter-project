@@ -1,8 +1,5 @@
 live;
-a = instance_create_depth(x,y-40*scale_y,depth,bullet_player_plane_assault_c_4);
-a.scale_x = scale_x;
-a.scale_y = scale_y;
-a.image_index = l1b;
+MakePlayerBullet(x,y-40*scale_y,bullet_player_plane_assault_c_4).image_index = l1b;
 l1b = !l1b;
 fire = instance_create_depth(x,y,DEPTH_BATTLE.BULLETS_PLAYER-10,bullet_player_assault_fire);
 fire.image_index = 1;

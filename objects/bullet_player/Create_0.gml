@@ -3,7 +3,6 @@ up = 10
 down = 10
 left = 10
 right = 10
-sequence = -1//-1为不使用序列
 bullet_sequence = -1
 collision_destroy = true
 auto_destroy = true
@@ -13,8 +12,6 @@ damage = 1
 
 scale_x = 1
 scale_y = 1
-
-alarm[0] = 1
 
 damage_type = 0//0为帧伤 1为启动对敌人失效机制
 collision_enemy = ds_map_create()

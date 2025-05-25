@@ -1,34 +1,22 @@
 live;
 switch(weapon_level){
 	case 0:
-		a = instance_create_depth(x,y,depth,bullet_player_plane_assault_d_0);
-		a.scale_x = scale_x;
-		a.scale_y = scale_y;
-		a.image_index = l1b;
+		MakePlayerBullet(x,y,bullet_player_plane_assault_d_0).image_index = l1b;
 		l1b = !l1b;
 		break;
 		
 	case 1:
-		a = instance_create_depth(x,y-40*scale_y,depth,bullet_player_plane_assault_d_1);
-		a.scale_x = scale_x;
-		a.scale_y = scale_y;
-		a.image_index = l1b;
+		MakePlayerBullet(x,y-40*scale_y,bullet_player_plane_assault_d_1).image_index = l1b;
 		l1b = !l1b;
 		break;
 		
 	case 2:
-		a = instance_create_depth(x,y-50*scale_y,depth,bullet_player_plane_assault_d_2);
-		a.scale_x = scale_x;
-		a.scale_y = scale_y;
-		a.image_index = l1b;
+		MakePlayerBullet(x,y-50*scale_y,bullet_player_plane_assault_d_2).image_index = l1b;
 		l1b = !l1b;
 		break;
 		
 	case 3:
-		a = instance_create_depth(x,y-60*scale_y,depth,bullet_player_plane_assault_d_3);
-		a.scale_x = scale_x;
-		a.scale_y = scale_y;
-		a.image_index = l1b;
+		MakePlayerBullet(x,y-60*scale_y,bullet_player_plane_assault_d_3).image_index = l1b;
 		l1b = !l1b;
 		break;
 }
