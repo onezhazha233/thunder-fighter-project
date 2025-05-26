@@ -25,3 +25,4 @@ fire.sprite_index = spr_bullet_player_assault_d_fire
 fire.scale_x = scale_x;
 fire.scale_y = scale_y;
 fire.y_offset = -20
+follow_inst = [fire]

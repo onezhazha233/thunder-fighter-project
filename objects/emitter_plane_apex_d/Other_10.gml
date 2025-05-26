@@ -5,3 +5,4 @@ fire = instance_create_depth(x,y,DEPTH_BATTLE.BULLETS_PLAYER-10,bullet_player_ap
 fire.sprite_index = spr_bullet_player_apex_d_fire
 fire.scale_x = scale_x;
 fire.scale_y = scale_y;
+follow_inst = [fire]

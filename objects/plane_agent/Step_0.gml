@@ -8,5 +8,3 @@ if(layer_sequence_is_finished(plane_sequence)){
 		SetState(0);
 	}
 }
-
-SetPosition(x,y)

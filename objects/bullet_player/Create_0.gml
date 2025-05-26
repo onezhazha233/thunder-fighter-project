@@ -13,7 +13,7 @@ damage = 1
 scale_x = 1
 scale_y = 1
 
-damage_type = 0//0为帧伤 1为启动对敌人失效机制
+damage_type = 0//0为帧伤 1为碰到敌人后对该敌人失效一段时间
 collision_enemy = ds_map_create()
 damage_interval = 1//无效时间间隔
 
@@ -22,7 +22,7 @@ function CollideEnemy(enemy){
 		if!(ds_map_exists(collision_enemy,enemy)){
 			ds_map_add(collision_enemy,enemy,damage_interval);
 			if(enemy.inv_damage = false)event_user(0);
-			with(enemy)event_user(0);
+			enemy.Hurt();
 			if(collision_destroy = true){
 				instance_destroy();
 			}
@@ -35,7 +35,7 @@ function CollideEnemy(enemy){
 	}
 	else{
 		if(enemy.inv_damage = false)event_user(0);
-		with(enemy)event_user(0);
+		enemy.Hurt();
 		if(collision_destroy = true){
 			instance_destroy();
 		}

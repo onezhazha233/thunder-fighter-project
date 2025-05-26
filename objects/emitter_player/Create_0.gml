@@ -4,6 +4,7 @@ weapon_level = 0
 time_interval_idle = [8,8,8,8]
 time_interval_rampage = 4
 alarm[0] = 1
+follow_inst = []
 
 SetLevel = function(level){
 	weapon_level = level;

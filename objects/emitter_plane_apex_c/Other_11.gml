@@ -5,3 +5,4 @@ fire.sprite_index = spr_bullet_player_apex_abc_fire
 fire.image_index = 1;
 fire.scale_x = scale_x;
 fire.scale_y = scale_y;
+follow_inst = [fire]

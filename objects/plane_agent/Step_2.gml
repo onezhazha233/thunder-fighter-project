@@ -16,3 +16,5 @@ if (abs(speed_x) > ROLL_THRESHOLD) {
     // 低速或静止时，恢复水平状态
     roll_state = lerp(roll_state, 0, ROLL_CHANGE_SPEED);  // 恢复速度更快
 }
+
+SetPosition(x,y)

@@ -51,7 +51,7 @@ hpbar_yoffset = 50
 explosion = -1
 
 alarm[0] = 1
-event_user(1)
+event_user(0)
 
 surf_enabled = false
 surf = -1;

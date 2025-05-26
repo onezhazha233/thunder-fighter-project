@@ -84,10 +84,10 @@ SetPosition = function(xx,yy){
 		bullet_emitter_inst.y = yy;
 
 		with(bullet_emitter_inst){
-			if(variable_instance_exists(id,"fire")){
-				if(instance_exists(fire)){
-					fire.x = xx;
-					fire.y = yy;
+			for(i=0;i<array_length(follow_inst);i+=1){
+				if(instance_exists(follow_inst[i])){
+					follow_inst[i].x = xx;
+					follow_inst[i].y = yy;
 				}
 			}
 		}

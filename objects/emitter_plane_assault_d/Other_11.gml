@@ -7,3 +7,4 @@ fire.image_index = 1;
 fire.scale_x = scale_x;
 fire.scale_y = scale_y;
 fire.y_offset = -20
+follow_inst = [fire]

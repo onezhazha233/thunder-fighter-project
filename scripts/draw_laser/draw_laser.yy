@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"draw_laser",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_laser",
+  "parent":{
+    "name":"Laser",
+    "path":"folders/脚本/Laser.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

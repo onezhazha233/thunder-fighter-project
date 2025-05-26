@@ -16,3 +16,4 @@ if(weapon_level > 2){
 fire = instance_create_depth(x,y,DEPTH_BATTLE.BULLETS_PLAYER-10,bullet_player_raptor_fire);
 fire.scale_x = scale_x;
 fire.scale_y = scale_y;
+follow_inst = [fire]

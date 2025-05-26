@@ -22,7 +22,7 @@ function CollideEnemy(enemy){
 		if!(ds_map_exists(collision_enemy,enemy)){
 			ds_map_add(collision_enemy,enemy,damage_interval);
 			if(enemy.inv_damage = false)event_user(0);
-			with(enemy)event_user(0);
+			enemy.Hurt();
 			if(collision_destroy = true){
 				instance_destroy();
 			}
@@ -35,7 +35,7 @@ function CollideEnemy(enemy){
 	}
 	else{
 		if(enemy.inv_damage = false)event_user(0);
-		with(enemy)event_user(0);
+		enemy.Hurt();
 		if(collision_destroy = true){
 			instance_destroy();
 		}
