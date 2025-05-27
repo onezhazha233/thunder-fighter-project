@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"bullet_player_plane_raptor_a",
+  "%Name":"emitter_enemy_test",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"bullet_player_plane_raptor_a",
+  "name":"emitter_enemy_test",
   "overriddenProperties":[],
   "parent":{
-    "name":"raptor_zero",
-    "path":"folders/物体/bullet_player/plane/raptor/raptor_zero.yy",
+    "name":"enemy",
+    "path":"folders/物体/enemy.yy",
   },
   "parentObjectId":{
-    "name":"bullet_player",
-    "path":"objects/bullet_player/bullet_player.yy",
+    "name":"emitter_enemy",
+    "path":"objects/emitter_enemy/emitter_enemy.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -32,10 +33,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_bullet_player_raptor_a",
-    "path":"sprites/spr_bullet_player_raptor_a/spr_bullet_player_raptor_a.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
