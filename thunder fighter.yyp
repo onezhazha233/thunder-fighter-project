@@ -565,6 +565,7 @@
     {"id":{"name":"enemy_4b","path":"objects/enemy_4b/enemy_4b.yy",},},
     {"id":{"name":"enemy_7c1","path":"objects/enemy_7c1/enemy_7c1.yy",},},
     {"id":{"name":"enemy_agent","path":"objects/enemy_agent/enemy_agent.yy",},},
+    {"id":{"name":"enemy_damagetest","path":"objects/enemy_damagetest/enemy_damagetest.yy",},},
     {"id":{"name":"enemy_test_0","path":"objects/enemy_test_0/enemy_test_0.yy",},},
     {"id":{"name":"enemy_test_1","path":"objects/enemy_test_1/enemy_test_1.yy",},},
     {"id":{"name":"enigmatic_blade","path":"objects/enigmatic_blade/enigmatic_blade.yy",},},

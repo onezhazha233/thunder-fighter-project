@@ -443,6 +443,7 @@
     {"name":"emitter_player_test","order":2,"path":"objects/emitter_player_test/emitter_player_test.yy",},
     {"name":"emitter_player","order":1,"path":"objects/emitter_player/emitter_player.yy",},
     {"name":"enemy_agent","order":1,"path":"objects/enemy_agent/enemy_agent.yy",},
+    {"name":"enemy_damagetest","order":12,"path":"objects/enemy_damagetest/enemy_damagetest.yy",},
     {"name":"enemy_test_1","order":2,"path":"objects/enemy_test_1/enemy_test_1.yy",},
     {"name":"equipment_agent","order":2,"path":"objects/equipment_agent/equipment_agent.yy",},
     {"name":"equipment_test","order":6,"path":"objects/equipment_test/equipment_test.yy",},
