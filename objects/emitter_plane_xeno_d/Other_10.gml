@@ -36,11 +36,11 @@ if(weapon_level > 1){
 if(weapon_level > 2){
 	a = MakePlayerBullet(x-12*scale_x,y,bullet_player_plane_xeno_d,seq_bullet_player_xeno_d);
 	a.vspeed = -33.5;
-	a.damage_interval -= 3;
+	a.damage_interval -= 2;
 	a.damage = damage;
 	a = MakePlayerBullet(x+12*scale_x,y,bullet_player_plane_xeno_d,seq_bullet_player_xeno_d);
 	a.vspeed = -33.5;
-	a.damage_interval -= 3;
+	a.damage_interval -= 2;
 	a.damage = damage;
 }
 

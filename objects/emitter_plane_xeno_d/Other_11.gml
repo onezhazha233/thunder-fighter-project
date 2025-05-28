@@ -1,13 +1,15 @@
 live
+damage = 0.125
+
 a = MakePlayerBullet(x-12*scale_x,y,bullet_player_plane_xeno_d,seq_bullet_player_xeno_d_rampage)
 a.vspeed = -32.5*2
 a.rampage = true
-a.damage_interval -= 4
+a.damage_interval -= 3
 a.damage = damage
 a = MakePlayerBullet(x+12*scale_x,y,bullet_player_plane_xeno_d,seq_bullet_player_xeno_d_rampage)
 a.vspeed = -32.5*2
 a.rampage = true
-a.damage_interval -= 4
+a.damage_interval -= 3
 a.damage = damage
 a = MakePlayerBullet(x-22*scale_x,y+15*scale_y,bullet_player_plane_xeno_d,seq_bullet_player_xeno_d_rampage)
 a.vspeed = -27*2

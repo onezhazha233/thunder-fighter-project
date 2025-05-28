@@ -1,5 +1,5 @@
 live
-damage = 0.125
+damage = 0.25
 
 a = MakePlayerBullet(x-12*scale_x,y,bullet_player_plane_raptor_d,seq_bullet_player_raptor_d_rampage)
 a.vspeed = -16*2
