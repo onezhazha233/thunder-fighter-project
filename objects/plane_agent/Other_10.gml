@@ -89,6 +89,9 @@ SetPosition = function(xx,yy){
 					follow_inst[i].x = xx;
 					follow_inst[i].y = yy;
 				}
+				else{
+					array_delete(follow_inst,i,0);
+				}
 			}
 		}
 	}

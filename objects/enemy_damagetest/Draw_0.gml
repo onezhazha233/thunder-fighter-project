@@ -24,7 +24,7 @@ if (ds_list_size(damage_history) > 0) {
     current_dps = 0;
 }
 
-while(!ds_list_empty(dpss)&&ds_list_size(dpss) > 200){
+while(!ds_list_empty(dpss)&&ds_list_size(dpss) > 400){
 	ds_list_delete(dpss,0);
 }
 ds_list_add(dpss,current_dps);
