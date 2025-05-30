@@ -448,6 +448,7 @@
     {"name":"emitter_plane_assault_b","order":1,"path":"objects/emitter_plane_assault_b/emitter_plane_assault_b.yy",},
     {"name":"emitter_plane_assault_c","order":2,"path":"objects/emitter_plane_assault_c/emitter_plane_assault_c.yy",},
     {"name":"emitter_plane_assault_d","order":3,"path":"objects/emitter_plane_assault_d/emitter_plane_assault_d.yy",},
+    {"name":"emitter_plane_dawn_b","order":1,"path":"objects/emitter_plane_dawn_b/emitter_plane_dawn_b.yy",},
     {"name":"emitter_plane_phantom_a","order":1,"path":"objects/emitter_plane_phantom_a/emitter_plane_phantom_a.yy",},
     {"name":"emitter_plane_phantom_b","order":2,"path":"objects/emitter_plane_phantom_b/emitter_plane_phantom_b.yy",},
     {"name":"emitter_plane_phantom_c","order":3,"path":"objects/emitter_plane_phantom_c/emitter_plane_phantom_c.yy",},

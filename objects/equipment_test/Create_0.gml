@@ -2,7 +2,7 @@ event_inherited();
 
 xscale = 1
 yscale = 1
-plane = plane_dawn_zero
+plane = plane_peace_dawn
 wingman_left = [wingman_test]
 wingman_right = []
 
