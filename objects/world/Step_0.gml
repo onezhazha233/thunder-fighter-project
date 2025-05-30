@@ -29,7 +29,7 @@ if(keyboard_check_pressed(vk_space)){
 		player.SetRampageDuration(0);
 	}
 	else{
-		player.SetRampageDuration(300);
+		player.SetRampageDuration(global.rampage_duration);
 	}
 }
 
