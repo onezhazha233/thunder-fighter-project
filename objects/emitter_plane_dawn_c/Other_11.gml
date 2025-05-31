@@ -1,7 +1,7 @@
 live;
 rtime += 1
 spd = 46
-damage = 0.2875
+damage = 0.2875/4*3
 a = MakePlayerBullet(x,y,bullet_player_plane_dawn_a_big);
 a.sprite_index = spr_bullet_player_dawn_c_big;
 a.image_index = 2;
