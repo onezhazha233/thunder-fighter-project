@@ -568,6 +568,8 @@
     {"id":{"name":"emitter_plane_assault_d","path":"objects/emitter_plane_assault_d/emitter_plane_assault_d.yy",},},
     {"id":{"name":"emitter_plane_dawn_a","path":"objects/emitter_plane_dawn_a/emitter_plane_dawn_a.yy",},},
     {"id":{"name":"emitter_plane_dawn_b","path":"objects/emitter_plane_dawn_b/emitter_plane_dawn_b.yy",},},
+    {"id":{"name":"emitter_plane_dawn_c","path":"objects/emitter_plane_dawn_c/emitter_plane_dawn_c.yy",},},
+    {"id":{"name":"emitter_plane_dawn_d","path":"objects/emitter_plane_dawn_d/emitter_plane_dawn_d.yy",},},
     {"id":{"name":"emitter_plane_phantom_a","path":"objects/emitter_plane_phantom_a/emitter_plane_phantom_a.yy",},},
     {"id":{"name":"emitter_plane_phantom_b","path":"objects/emitter_plane_phantom_b/emitter_plane_phantom_b.yy",},},
     {"id":{"name":"emitter_plane_phantom_c","path":"objects/emitter_plane_phantom_c/emitter_plane_phantom_c.yy",},},

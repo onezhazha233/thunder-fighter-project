@@ -13,4 +13,4 @@ rampage_outro = seq_dawn_c_rampage_outro
 sprite_roll_left = spr_dawn_c_roll_left
 sprite_roll_flip = true
 
-bullet_emitter = emitter_plane_assault_d
+bullet_emitter = emitter_plane_dawn_c
