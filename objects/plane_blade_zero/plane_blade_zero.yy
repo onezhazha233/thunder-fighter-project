@@ -1,18 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"blade_zero",
+  "%Name":"plane_blade_zero",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"blade_zero",
+  "name":"plane_blade_zero",
   "overriddenProperties":[],
   "parent":{
     "name":"blade",
     "path":"folders/物体/plane/blade.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"plane_agent",
+    "path":"objects/plane_agent/plane_agent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

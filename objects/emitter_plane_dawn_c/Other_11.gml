@@ -2,14 +2,14 @@ live;
 rtime += 1
 spd = 46
 damage = 0.2875/4*3
-a = MakePlayerBullet(x,y,bullet_player_plane_dawn_a_big);
+a = MakePlayerBullet(x,y,bullet_player_plane_dawn_big);
 a.sprite_index = spr_bullet_player_dawn_c_big;
 a.image_index = 2;
 a.direction = 90;
 a.speed = spd;
 a.damage = damage;
 if(sin(rtime/2-12) > -0.9){
-	a = MakePlayerBullet(x,y,bullet_player_plane_dawn_a_big);
+	a = MakePlayerBullet(x,y,bullet_player_plane_dawn_big);
 	a.sprite_index = spr_bullet_player_dawn_c_big;
 	a.image_index = 2;
 	a.direction = 90;
@@ -17,7 +17,7 @@ if(sin(rtime/2-12) > -0.9){
 	a.damage = damage;
 }
 if(sin(rtime/2-4.4) > -0.9){
-	a = MakePlayerBullet(x,y,bullet_player_plane_dawn_a_big);
+	a = MakePlayerBullet(x,y,bullet_player_plane_dawn_big);
 	a.sprite_index = spr_bullet_player_dawn_c_big;
 	a.image_index = 2;
 	a.direction = 90+3;
@@ -26,7 +26,7 @@ if(sin(rtime/2-4.4) > -0.9){
 	a.damage = damage;
 }
 if(sin(rtime/2-2.7) > -0.9){
-	a = MakePlayerBullet(x,y,bullet_player_plane_dawn_a_big);
+	a = MakePlayerBullet(x,y,bullet_player_plane_dawn_big);
 	a.sprite_index = spr_bullet_player_dawn_c_big;
 	a.image_index = 2;
 	a.direction = 90-3;
@@ -35,7 +35,7 @@ if(sin(rtime/2-2.7) > -0.9){
 	a.damage = damage;
 }
 if(sin(rtime/2-10) > -0.9){
-	a = MakePlayerBullet(x,y,bullet_player_plane_dawn_a_big);
+	a = MakePlayerBullet(x,y,bullet_player_plane_dawn_big);
 	a.sprite_index = spr_bullet_player_dawn_c_big;
 	a.image_index = 2;
 	a.direction = 90+10;
@@ -44,7 +44,7 @@ if(sin(rtime/2-10) > -0.9){
 	a.damage = damage;
 }
 if(sin(rtime/2-6.7) > -0.9){
-	a = MakePlayerBullet(x,y,bullet_player_plane_dawn_a_big);
+	a = MakePlayerBullet(x,y,bullet_player_plane_dawn_big);
 	a.sprite_index = spr_bullet_player_dawn_c_big;
 	a.image_index = 2;
 	a.direction = 90-10;
@@ -53,7 +53,7 @@ if(sin(rtime/2-6.7) > -0.9){
 	a.damage = damage;
 }
 if(sin(rtime/2+12) > -0.9){
-	a = MakePlayerBullet(x,y,bullet_player_plane_dawn_a_big);
+	a = MakePlayerBullet(x,y,bullet_player_plane_dawn_big);
 	a.sprite_index = spr_bullet_player_dawn_c_big;
 	a.image_index = 1;
 	a.direction = 90+15.5;
@@ -62,7 +62,7 @@ if(sin(rtime/2+12) > -0.9){
 	a.damage = damage;
 }
 if(sin(rtime/2+5) > -0.8){
-	a = MakePlayerBullet(x,y,bullet_player_plane_dawn_a_big);
+	a = MakePlayerBullet(x,y,bullet_player_plane_dawn_big);
 	a.sprite_index = spr_bullet_player_dawn_c_big;
 	a.image_index = 1;
 	a.direction = 90-15.5;
@@ -71,7 +71,7 @@ if(sin(rtime/2+5) > -0.8){
 	a.damage = damage;
 }
 if(sin(rtime/2+2.5) > -0.8){
-	a = MakePlayerBullet(x,y,bullet_player_plane_dawn_a_big);
+	a = MakePlayerBullet(x,y,bullet_player_plane_dawn_big);
 	a.sprite_index = spr_bullet_player_dawn_c_big;
 	a.direction = 90+22;
 	a.image_angle = 22;
@@ -79,7 +79,7 @@ if(sin(rtime/2+2.5) > -0.8){
 	a.damage = damage;
 }
 if(sin(rtime/2) > -0.8){
-	a = MakePlayerBullet(x,y,bullet_player_plane_dawn_a_big);
+	a = MakePlayerBullet(x,y,bullet_player_plane_dawn_big);
 	a.sprite_index = spr_bullet_player_dawn_c_big;
 	a.direction = 90-22;
 	a.image_angle = -22;
@@ -87,7 +87,7 @@ if(sin(rtime/2) > -0.8){
 	a.damage = damage;
 }
 if(sin(rtime-2.5) > -0.7){
-	a = MakePlayerBullet(x,y,bullet_player_plane_dawn_a_big);
+	a = MakePlayerBullet(x,y,bullet_player_plane_dawn_big);
 	a.sprite_index = spr_bullet_player_dawn_c_big;
 	a.direction = 90+30;
 	a.image_angle = 30;
@@ -95,7 +95,7 @@ if(sin(rtime-2.5) > -0.7){
 	a.damage = damage;
 }
 if(sin(rtime-8.5) > -0.7){
-	a = MakePlayerBullet(x,y,bullet_player_plane_dawn_a_big);
+	a = MakePlayerBullet(x,y,bullet_player_plane_dawn_big);
 	a.sprite_index = spr_bullet_player_dawn_c_big;
 	a.direction = 90-30;
 	a.image_angle = -30;

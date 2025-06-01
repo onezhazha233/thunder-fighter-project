@@ -14,26 +14,26 @@ if(time mod 5 = 1){
 		case 2:damage = 0.521/2*1.7;break;
 		case 3:damage = 0.521;break;
 	}
-	a = MakePlayerBullet(x-16*scale_x,y-50,bullet_player_plane_dawn_a_small);
+	a = MakePlayerBullet(x-16*scale_x,y-50,bullet_player_plane_dawn_small);
 	a.sprite_index = spr_bullet_player_dawn_a_small;
 	a.image_index = 2;
 	a.direction = 90;
 	a.speed = spd;
 	a.damage = damage;
-	a = MakePlayerBullet(x+16*scale_x,y-50,bullet_player_plane_dawn_a_small);
+	a = MakePlayerBullet(x+16*scale_x,y-50,bullet_player_plane_dawn_small);
 	a.sprite_index = spr_bullet_player_dawn_a_small;
 	a.image_index = 2;
 	a.direction = 90;
 	a.speed = spd;
 	a.damage = damage;
 	if(weapon_level > 0){
-		a = MakePlayerBullet(x-16*scale_x,y-50,bullet_player_plane_dawn_a_small);
+		a = MakePlayerBullet(x-16*scale_x,y-50,bullet_player_plane_dawn_small);
 		a.image_index = 1;
 		a.direction = 90+9;
 		a.image_angle = 9;
 		a.speed = spd;
 		a.damage = damage;
-		a = MakePlayerBullet(x+16*scale_x,y-50,bullet_player_plane_dawn_a_small);
+		a = MakePlayerBullet(x+16*scale_x,y-50,bullet_player_plane_dawn_small);
 		a.image_index = 1;
 		a.direction = 90-9;
 		a.image_angle = -9;
@@ -41,24 +41,24 @@ if(time mod 5 = 1){
 		a.damage = damage;
 	}
 	if(weapon_level > 1){
-		a = MakePlayerBullet(x-35*scale_x,y-25,bullet_player_plane_dawn_a_small);
+		a = MakePlayerBullet(x-35*scale_x,y-25,bullet_player_plane_dawn_small);
 		a.direction = 90+20;
 		a.image_angle = 20;
 		a.speed = spd;
 		a.damage = damage;
-		a = MakePlayerBullet(x+35*scale_x,y-25,bullet_player_plane_dawn_a_small);
+		a = MakePlayerBullet(x+35*scale_x,y-25,bullet_player_plane_dawn_small);
 		a.direction = 90-20;
 		a.image_angle = -20;
 		a.speed = spd;
 		a.damage = damage;
 	}
 	if(weapon_level > 2){
-		a = MakePlayerBullet(x-50*scale_x,y,bullet_player_plane_dawn_a_small);
+		a = MakePlayerBullet(x-50*scale_x,y,bullet_player_plane_dawn_small);
 		a.direction = 90+31.5;
 		a.image_angle = 31.5;
 		a.speed = spd;
 		a.damage = damage;
-		a = MakePlayerBullet(x+50*scale_x,y,bullet_player_plane_dawn_a_small);
+		a = MakePlayerBullet(x+50*scale_x,y,bullet_player_plane_dawn_small);
 		a.direction = 90-31.5;
 		a.image_angle = -31.5;
 		a.speed = spd;

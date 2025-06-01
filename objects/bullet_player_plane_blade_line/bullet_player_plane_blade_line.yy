@@ -1,18 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"bullet_player_plane_dawn_a_big",
+  "%Name":"bullet_player_plane_blade_line",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"bullet_player_plane_dawn_a_big",
+  "name":"bullet_player_plane_blade_line",
   "overriddenProperties":[],
   "parent":{
-    "name":"dawn_zero",
-    "path":"folders/物体/bullet_player/plane/dawn/dawn_zero.yy",
+    "name":"blade",
+    "path":"folders/物体/bullet_player/plane/blade.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",
@@ -35,10 +34,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_bullet_player_dawn_a_big",
-    "path":"sprites/spr_bullet_player_dawn_a_big/spr_bullet_player_dawn_a_big.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

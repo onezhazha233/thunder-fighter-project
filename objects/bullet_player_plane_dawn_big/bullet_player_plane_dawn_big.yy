@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"bullet_player_plane_dawn_a_small",
+  "%Name":"bullet_player_plane_dawn_big",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -8,11 +8,11 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"bullet_player_plane_dawn_a_small",
+  "name":"bullet_player_plane_dawn_big",
   "overriddenProperties":[],
   "parent":{
-    "name":"dawn_zero",
-    "path":"folders/物体/bullet_player/plane/dawn/dawn_zero.yy",
+    "name":"dawn",
+    "path":"folders/物体/bullet_player/plane/dawn.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",
@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bullet_player_dawn_a_small",
-    "path":"sprites/spr_bullet_player_dawn_a_small/spr_bullet_player_dawn_a_small.yy",
+    "name":"spr_bullet_player_dawn_a_big",
+    "path":"sprites/spr_bullet_player_dawn_a_big/spr_bullet_player_dawn_a_big.yy",
   },
   "spriteMaskId":null,
   "visible":true,
