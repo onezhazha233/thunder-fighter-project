@@ -93,6 +93,15 @@ SetPosition = function(xx,yy){
 					array_delete(follow_inst,i,0);
 				}
 			}
+			for(i=0;i<array_length(follow_seq);i+=1){
+				if(layer_sequence_exists(follow_seq[i,0],follow_seq[i,1])){
+					layer_sequence_x(follow_seq[i,1],xx);
+					layer_sequence_y(follow_seq[i,1],yy);
+				}
+				else{
+					array_delete(follow_seq,i,0);
+				}
+			}
 		}
 	}
 	

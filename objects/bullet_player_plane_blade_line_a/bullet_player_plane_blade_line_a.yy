@@ -6,13 +6,14 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"bullet_player_plane_blade_line_a",
   "overriddenProperties":[],
   "parent":{
-    "name":"blade",
-    "path":"folders/物体/bullet_player/plane/blade.yy",
+    "name":"blade_zero",
+    "path":"folders/物体/bullet_player/plane/blade/blade_zero.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

@@ -15,8 +15,8 @@
     "resourceVersion":"2.0",
   },
   "eventStubScript":{
-    "name":"AutoDestroySequence",
-    "path":"scripts/AutoDestroySequence/AutoDestroySequence.yy",
+    "name":"Sequence_AutoDestroy",
+    "path":"scripts/Sequence_AutoDestroy/Sequence_AutoDestroy.yy",
   },
   "eventToFunction":{},
   "length":20.0,

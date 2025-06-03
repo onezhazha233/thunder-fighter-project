@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bullet_player_blade_a_slash_ring",
-    "path":"sprites/spr_bullet_player_blade_a_slash_ring/spr_bullet_player_blade_a_slash_ring.yy",
+    "name":"spr_bullet_player_blade_abcd_slash_ring",
+    "path":"sprites/spr_bullet_player_blade_abcd_slash_ring/spr_bullet_player_blade_abcd_slash_ring.yy",
   },
   "spriteMaskId":null,
   "visible":true,

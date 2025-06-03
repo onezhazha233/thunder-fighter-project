@@ -15,7 +15,7 @@ function draw_laser(spr,img,xx,yy,offset,dir,length,flip,xscale,yscale,alpha){
 	}
 	surface_reset_target();
 	
-	draw_surface_general(surf,0,0,w,length,x+lengthdir_x(w/2,dir-90),y+lengthdir_y(w/2,dir-90),1,1,dir+90,-1,-1,-1,-1,alpha);
+	draw_surface_general(surf,0,0,w,length,xx+lengthdir_x(w/2,dir-90),yy+lengthdir_y(w/2,dir-90),1,1,dir+90,-1,-1,-1,-1,alpha);
 	
 	surface_free(surf);
 }
