@@ -5,7 +5,7 @@ time_interval_idle = [8,8,8,8]
 time_interval_rampage = 4
 alarm[0] = 1
 follow_inst = []
-follow_seq = []
+follow_seq = []//[[层,序列,[x,y]],[层,序列,[x,y]]]
 
 SetLevel = function(level){
 	weapon_level = level;

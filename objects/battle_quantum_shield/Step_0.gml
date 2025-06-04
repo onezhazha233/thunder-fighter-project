@@ -27,6 +27,8 @@ else{
 	image_alpha = 1;
 }
 
+Sequence_PlayByFrame(sl);
+
 SetPosition(x,y)
 
 with(bullet_enemy){

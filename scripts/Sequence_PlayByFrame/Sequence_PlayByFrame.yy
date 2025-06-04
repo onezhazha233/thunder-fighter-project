@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Sequence_AutoDestroy",
+  "%Name":"Sequence_PlayByFrame",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Sequence_AutoDestroy",
+  "name":"Sequence_PlayByFrame",
   "parent":{
     "name":"Sequence",
     "path":"folders/脚本/Sequence.yy",

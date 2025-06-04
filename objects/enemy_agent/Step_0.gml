@@ -5,6 +5,10 @@ if!(depth_previous = depth){
 	layer_depth(layer_enemy_upper,depth-1);
 }
 
+Sequence_PlayByFrame(layer_enemy);
+Sequence_PlayByFrame(layer_enemy_lower);
+Sequence_PlayByFrame(layer_enemy_upper);
+
 if(hp <= 0){
 	if(object_exists(explosion)){
 		instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,explosion);

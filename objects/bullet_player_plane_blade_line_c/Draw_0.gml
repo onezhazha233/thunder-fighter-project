@@ -3,7 +3,7 @@ laser_offset += offset_speed
 if(laser_offset >= sprite_get_height(spr_bullet_player_blade_abcd_line_point))laser_offset = 0;
 if(laser_offset <= -sprite_get_height(spr_bullet_player_blade_abcd_line_point))laser_offset = 0;
 
-find = laser_find(x+x_offset,y+y_offset,image_angle,range,enemy_agent,true,true)
+find = laser_find(x+x_offset,y+y_offset,image_angle,range,enemy_agent,true,false)
 len = find[0]
 if(len = -1)len = range;
 
@@ -18,7 +18,7 @@ if(instance_exists(find[1])){
 	ey = y + y_offset + lengthdir_y(len,image_angle);
 	draw_sprite_ext(spr_bullet_player_blade_abcd_point,0,ex,ey,0.5*scale_x,scale_y,0,-1,1);
 	if(edge_state = 2){
-		layer_sequence_destroy(edge_sequence);
+		instance_destroy(edge_sequence);
 		slash_x = find[1].x;
 		slash_y = find[1].y;
 		if(edge_attack_sequence_enabled = true){
@@ -29,6 +29,9 @@ if(instance_exists(find[1])){
 				edge_attack_sequence = layer_sequence_create(layer_edge,edge_x,edge_y,seq_bullet_player_blade_c_edge_attack);
 			}
 		}
+		
+		Sequence_PlayByFrame(layer_edge);
+		
 		instance_create_depth(slash_x,slash_y,0,bullet_effect_blade_slash_ring);
 		dir = -65/2+random_range(-30,30);
 		a = instance_create_depth(slash_x,slash_y,0,bullet_player_plane_blade_slash);
@@ -43,15 +46,7 @@ if(instance_exists(find[1])){
 		edge_cd = edge_cdd;
 	}
 }
-
-if(edge_sequence_enabled = true){
-	if(layer_sequence_exists(layer_edge,edge_sequence)){
-		layer_sequence_x(edge_sequence,edge_x);
-		layer_sequence_y(edge_sequence,edge_y);
-		layer_sequence_xscale(edge_sequence,image_xscale*edge_xscale[clamp(ceil(abs(plane_agent.roll_state))-1,0,2)]);
-		layer_sequence_yscale(edge_sequence,image_yscale);
-		layer_sequence_angle(edge_sequence,image_angle-90);
-	}
+if(edge_attack_sequence_enabled = true){
 	if(layer_sequence_exists(layer_edge,edge_attack_sequence)){
 		layer_sequence_x(edge_attack_sequence,edge_x);
 		layer_sequence_y(edge_attack_sequence,edge_y);

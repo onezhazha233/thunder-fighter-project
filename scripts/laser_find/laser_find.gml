@@ -40,6 +40,30 @@ function laser_find() {
                     }
                 }
             }
+			else{
+				// 原始碰撞检测逻辑
+		        var inst = collision_line(ox, oy, dx, dy, object, prec, notme);
+		        var distance = -1;
+        
+		        if (inst != noone) {
+		            while ((abs(sx) >= 1) || (abs(sy) >= 1)) {
+		                sx /= 2;
+		                sy /= 2;
+                
+		                var test_inst = collision_line(ox, oy, dx, dy, object, prec, notme);
+		                if (test_inst != noone) {
+		                    dx -= sx;
+		                    dy -= sy;
+		                    inst = test_inst;
+		                } else {
+		                    dx += sx;
+		                    dy += sy;
+		                }
+		            }
+		            distance = point_distance(ox, oy, dx, dy);
+		        }
+		        return [distance, inst];
+			}
         }
         
         if (closest_inst != noone) {

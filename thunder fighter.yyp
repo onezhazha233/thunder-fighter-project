@@ -418,6 +418,7 @@
     {"$GMFolder":"","%Name":"Laser","folderPath":"folders/脚本/Laser.yy","name":"Laser","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Macro","folderPath":"folders/脚本/Macro.yy","name":"Macro","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/脚本/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sequence","folderPath":"folders/脚本/Sequence.yy","name":"Sequence","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"路径","folderPath":"folders/路径.yy","name":"路径","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
@@ -489,6 +490,7 @@
     {"id":{"name":"bullet_enemy","path":"objects/bullet_enemy/bullet_enemy.yy",},},
     {"id":{"name":"bullet_player_apex_fire","path":"objects/bullet_player_apex_fire/bullet_player_apex_fire.yy",},},
     {"id":{"name":"bullet_player_assault_fire","path":"objects/bullet_player_assault_fire/bullet_player_assault_fire.yy",},},
+    {"id":{"name":"bullet_player_blade_edge","path":"objects/bullet_player_blade_edge/bullet_player_blade_edge.yy",},},
     {"id":{"name":"bullet_player_enemy","path":"objects/bullet_player_enemy/bullet_player_enemy.yy",},},
     {"id":{"name":"bullet_player_plane_apex_a_0","path":"objects/bullet_player_plane_apex_a_0/bullet_player_plane_apex_a_0.yy",},},
     {"id":{"name":"bullet_player_plane_apex_a_1","path":"objects/bullet_player_plane_apex_a_1/bullet_player_plane_apex_a_1.yy",},},
@@ -733,6 +735,7 @@
     {"id":{"name":"Player_Heal","path":"scripts/Player_Heal/Player_Heal.yy",},},
     {"id":{"name":"Player_Hurt","path":"scripts/Player_Hurt/Player_Hurt.yy",},},
     {"id":{"name":"Sequence_AutoDestroy","path":"scripts/Sequence_AutoDestroy/Sequence_AutoDestroy.yy",},},
+    {"id":{"name":"Sequence_PlayByFrame","path":"scripts/Sequence_PlayByFrame/Sequence_PlayByFrame.yy",},},
     {"id":{"name":"seq_apex_a_rampage_intro","path":"sequences/seq_apex_a_rampage_intro/seq_apex_a_rampage_intro.yy",},},
     {"id":{"name":"seq_apex_a_rampage_outro","path":"sequences/seq_apex_a_rampage_outro/seq_apex_a_rampage_outro.yy",},},
     {"id":{"name":"seq_apex_a_rampage","path":"sequences/seq_apex_a_rampage/seq_apex_a_rampage.yy",},},

@@ -36,11 +36,11 @@ edge_sequence_enabled = true
 edge_attack_sequence_enabled = true
 edge_x = x
 edge_y = y
-edge_sequence = -1
+edge_sequence = noone
+edge_attack_sequence = -1
 edge_state = 0//0为冷却中 1为刀刃准备中 2为刀刃准备攻击
 edge_cdd = 45
 edge_cd = edge_cdd
-edge_attack_sequence = -1
 edge_xscale = [0.95,0.87,0.7]
 
 slash_x = 0
