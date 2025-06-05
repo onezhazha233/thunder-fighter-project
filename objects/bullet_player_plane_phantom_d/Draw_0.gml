@@ -24,7 +24,7 @@ else{
 
 if(rampage = false){
 	if(fire_image mod 1 = 0){
-		a = instance_create_depth(x+random_range(-20,20)*image_xscale*scale_x,y,0,bullet_effect_phantom_point);
+		a = instance_create_depth(x+random_range(-20,20)*image_xscale*scale_x,y,DEPTH_BATTLE.INSTANCES_UPPER,bullet_effect_phantom_point);
 		a.sprite_index = spr_bullet_effect_phantom_cd_point;
 		a.direction = 90;
 		a.depth = depth;
@@ -73,7 +73,7 @@ if(instance_exists(find[1])){
 		}
 		a.image_xscale = scale;
 		a.image_yscale = scale;
-		a.speed = 4*scale;
+		a.speed = 6*scale;
 		a.friction = 0.2*scale;
 	}
 }

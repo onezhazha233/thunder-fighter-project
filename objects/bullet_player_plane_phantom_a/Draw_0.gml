@@ -22,8 +22,8 @@ else{
 }
 
 if(instance_exists(find[1])){
-	find[1].Hurt();
 	enemy = find[1];
+	enemy.last_bullet = id;
 	CollideEnemy(enemy);
 	if(rampage = false){
 		effect_xscale = (1.865 + 0.035 * sin(fire_image*4))*0.5;

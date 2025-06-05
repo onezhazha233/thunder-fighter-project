@@ -15,7 +15,7 @@ gpu_set_blendmode(bm_normal)
 
 rampage = (laser_sprite == spr_bullet_player_phantom_c_rampage);
 if(rampage = false){
-	draw_sprite_ext(spr_bullet_player_phantom_bc_start,fire_image,x+lengthdir_x(-20,image_angle)*scale_x,y+lengthdir_y(-20,image_angle)*scale_y,(0.88-sin(fire_image*(3*pi/3))*0.12)*image_xscale*scale_x,(1.6+sin(fire_image*(3*pi/3))*0.2)*image_yscale*scale_y,image_angle-90,-1,1);
+	draw_sprite_ext(spr_bullet_player_phantom_bc_start,fire_image,x+lengthdir_x(-20,image_angle)*scale_x,y+lengthdir_y(-20,image_angle)*scale_y,(1.4-sin(fire_image*(3*pi/3))*0.12)*image_xscale*scale_x,(1+sin(fire_image*(3*pi/3))*0.1)*image_yscale*scale_y,image_angle-90,-1,1);
 }
 else{
 	draw_sprite_ext(spr_bullet_player_phantom_cd_start_rampage,fire_image,x+lengthdir_x(-20,image_angle)*scale_x,y+lengthdir_y(-20,image_angle)*scale_y,0.88-sin(fire_image*(2*pi/3))*0.12,1.6+sin(fire_image*(2*pi/3))*0.2,image_angle-90,-1,1);
@@ -23,7 +23,7 @@ else{
 
 if(rampage = false){
 	if(fire_image mod 1 = 0){
-		a = instance_create_depth(x+random_range(-20,20)*image_xscale*scale_x,y,0,bullet_effect_phantom_point);
+		a = instance_create_depth(x+random_range(-20,20)*image_xscale*scale_x,y,DEPTH_BATTLE.INSTANCES_UPPER,bullet_effect_phantom_point);
 		a.sprite_index = spr_bullet_effect_phantom_b_point;
 		a.direction = 90;
 		a.depth = depth;
@@ -72,7 +72,7 @@ if(instance_exists(find[1])){
 		}
 		a.image_xscale = scale;
 		a.image_yscale = scale;
-		a.speed = 4*scale;
+		a.speed = 5*scale;
 		a.friction = 0.2*scale;
 	}
 }

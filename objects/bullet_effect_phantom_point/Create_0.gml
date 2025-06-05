@@ -1,3 +1,3 @@
 live;
-depth = DEPTH_BATTLE.INSTANCES_UPPER
+image_alpha = 0
 alarm[0] = 1

@@ -20,14 +20,14 @@ for(i=0;i<1;i+=1){
 		laser[i].image_xscale = laser_scale_level[weapon_level];
 		laser[i].image_angle = 36*i+90;
 		laser[i].laser_sprite = spr_bullet_player_phantom_d;
-		laser[i].offset_speed = 12;
+		laser[i].offset_speed = laser_speed[weapon_level];
 		laser[i].damage = damage;
 		follow_inst[i] = laser[i];
 	}
 	else{
 		laser[i].image_xscale = laser_scale;
 		laser[i].laser_sprite = spr_bullet_player_phantom_d;
-		laser[i].offset_speed = 12;
+		laser[i].offset_speed = laser_speed[weapon_level];
 		laser[i].damage = damage;
 	}
 }

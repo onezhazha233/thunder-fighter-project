@@ -29,7 +29,9 @@ for(i=0;i<array_length(layers);i+=1){
 	elements = layer_get_all_elements(layers[i]);
 	for(j=0;j<array_length(elements);j+=1){
 		if(layer_get_element_type(elements[j]) = layerelementtype_sequence){
-			layer_sequence_speedscale(elements[j],game_get_speed(gamespeed_fps)/60);
+			if(layer_sequence_get_speedscale(elements[j]) > 0){
+				layer_sequence_speedscale(elements[j],game_get_speed(gamespeed_fps)/60);
+			}
 		}
 	}
 }

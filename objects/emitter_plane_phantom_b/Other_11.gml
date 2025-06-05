@@ -1,4 +1,6 @@
 live;
+damage = 0.5
+
 laser_scale = 1
 
 for(i=0;i<1;i+=1){
@@ -7,6 +9,7 @@ for(i=0;i<1;i+=1){
 		laser[i].image_angle = 36*i+90;
 		laser[i].laser_sprite = spr_bullet_player_phantom_bc;
 		laser[i].offset_speed = 45;
+		laser[i].damage = damage;
 		follow_inst[i] = laser[i];
 	}
 	else{
@@ -15,5 +18,6 @@ for(i=0;i<1;i+=1){
 			laser[i].laser_sprite = spr_bullet_player_phantom_bc;
 		}
 		laser[i].offset_speed = 45;
+		laser[i].damage = damage;
 	}
 }

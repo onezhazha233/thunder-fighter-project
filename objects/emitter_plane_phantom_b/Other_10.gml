@@ -1,4 +1,11 @@
 live;
+switch(weapon_level){
+	case 0:damage = 0.125;break;
+	case 1:damage = 0.125*1.3;break;
+	case 2:damage = 0.125*1.7;break;
+	case 3:damage = 0.25;break;
+}
+
 laser_scale_target = laser_scale_level[weapon_level]
 if(abs(laser_scale - laser_scale_target) > 0.01){
 	laser_scale += (laser_scale_target - laser_scale)/5;
@@ -13,11 +20,13 @@ for(i=0;i<1;i+=1){
 		laser[i].image_angle = 36*i+90;
 		laser[i].laser_sprite = spr_bullet_player_phantom_b;
 		laser[i].offset_speed = 14;
+		laser[i].damage = damage;
 		follow_inst[i] = laser[i];
 	}
 	else{
 		laser[i].image_xscale = laser_scale;
 		laser[i].laser_sprite = spr_bullet_player_phantom_b;
 		laser[i].offset_speed = 14;
+		laser[i].damage = damage;
 	}
 }
