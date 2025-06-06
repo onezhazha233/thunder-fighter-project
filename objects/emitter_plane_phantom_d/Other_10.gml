@@ -1,4 +1,5 @@
 live;
+damage = 0.125
 switch(weapon_level){
 	case 0:damage = 0.125;break;
 	case 1:damage = 0.125*1.3;break;
