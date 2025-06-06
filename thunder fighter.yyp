@@ -727,6 +727,7 @@
     {"id":{"name":"Lang_LoadSprite","path":"scripts/Lang_LoadSprite/Lang_LoadSprite.yy",},},
     {"id":{"name":"Lang_LoadString","path":"scripts/Lang_LoadString/Lang_LoadString.yy",},},
     {"id":{"name":"Lang_Uninit","path":"scripts/Lang_Uninit/Lang_Uninit.yy",},},
+    {"id":{"name":"laser_find_width","path":"scripts/laser_find_width/laser_find_width.yy",},},
     {"id":{"name":"laser_find","path":"scripts/laser_find/laser_find.yy",},},
     {"id":{"name":"Macro_Depth","path":"scripts/Macro_Depth/Macro_Depth.yy",},},
     {"id":{"name":"Macro_EnemyAnim","path":"scripts/Macro_EnemyAnim/Macro_EnemyAnim.yy",},},

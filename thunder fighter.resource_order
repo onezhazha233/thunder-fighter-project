@@ -581,6 +581,7 @@
     {"name":"Lang_LoadSprite","order":20,"path":"scripts/Lang_LoadSprite/Lang_LoadSprite.yy",},
     {"name":"Lang_LoadString","order":21,"path":"scripts/Lang_LoadString/Lang_LoadString.yy",},
     {"name":"Lang_Uninit","order":22,"path":"scripts/Lang_Uninit/Lang_Uninit.yy",},
+    {"name":"laser_find_width","order":2,"path":"scripts/laser_find_width/laser_find_width.yy",},
     {"name":"laser_find","order":1,"path":"scripts/laser_find/laser_find.yy",},
     {"name":"Macro_EnemyAnim","order":1,"path":"scripts/Macro_EnemyAnim/Macro_EnemyAnim.yy",},
     {"name":"MakePlayerBullet","order":17,"path":"scripts/MakePlayerBullet/MakePlayerBullet.yy",},

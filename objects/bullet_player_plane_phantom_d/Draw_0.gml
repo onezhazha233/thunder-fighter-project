@@ -3,7 +3,8 @@ laser_offset += offset_speed
 if(laser_offset >= sprite_get_height(laser_sprite)*(1+!rampage))laser_offset = 0;
 if(laser_offset <= -sprite_get_height(laser_sprite)*(1+!rampage))laser_offset = 0;
 
-find = laser_find(x,y,image_angle,range,enemy_agent,true,true)
+//find = laser_find(x,y,image_angle,range,enemy_agent,true,true)
+find = laser_find_width(x,y,image_angle,range,sprite_get_width(laser_sprite)*image_xscale*scale_x*0.4,enemy_agent,true,true)
 len = find[0]
 if(len = -1)len = range;
 
