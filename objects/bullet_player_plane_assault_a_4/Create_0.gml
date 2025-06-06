@@ -8,3 +8,5 @@ right = 50
 collision_effect = bullet_effect_assault
 
 vspeed = -22.5
+
+damage = 1.7
