@@ -10,7 +10,7 @@ image_xscale = 4.73
 image_yscale = 2.58
 vspeed = -45
 
-damage = 1
+damage = 2
 damage_type = 1
 damage_interval = 999
 collision_destroy = false

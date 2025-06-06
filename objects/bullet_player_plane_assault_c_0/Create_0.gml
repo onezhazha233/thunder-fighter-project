@@ -12,3 +12,5 @@ image_xscale = 0.64
 image_yscale = 0.9
 image_speed = 0
 vspeed = -22.5
+
+damage = 1

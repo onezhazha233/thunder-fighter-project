@@ -11,3 +11,5 @@ collision_effect = bullet_effect_assault
 image_xscale = 0.6
 image_yscale = 0.69
 vspeed = -22.5
+
+damage = 1
