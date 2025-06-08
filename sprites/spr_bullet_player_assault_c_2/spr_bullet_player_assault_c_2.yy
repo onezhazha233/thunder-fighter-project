@@ -27,7 +27,7 @@
   "origin":9,
   "parent":{
     "name":"swift_assault",
-    "path":"folders/精灵/bullet_player/assault/swift_assault.yy",
+    "path":"folders/精灵/bullet_player/plane/assault/swift_assault.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

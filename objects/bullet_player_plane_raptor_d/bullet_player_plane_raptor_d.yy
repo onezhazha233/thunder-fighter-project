@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"blaze_phoenix",
-    "path":"folders/物体/bullet_player/plane/raptor/blaze_phoenix.yy",
+    "path":"folders/物体/bullet_player/plane/bullet/raptor/blaze_phoenix.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

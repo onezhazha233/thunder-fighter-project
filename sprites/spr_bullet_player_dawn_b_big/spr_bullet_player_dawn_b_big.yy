@@ -28,7 +28,7 @@
   "origin":9,
   "parent":{
     "name":"peace_dawn",
-    "path":"folders/精灵/bullet_player/dawn/peace_dawn.yy",
+    "path":"folders/精灵/bullet_player/plane/dawn/peace_dawn.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

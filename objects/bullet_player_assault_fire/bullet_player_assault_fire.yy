@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"assault",
-    "path":"folders/物体/bullet_player/plane/assault.yy",
+    "path":"folders/物体/bullet_player/plane/bullet/assault.yy",
   },
   "parentObjectId":null,
   "persistent":false,

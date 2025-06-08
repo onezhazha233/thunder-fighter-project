@@ -27,7 +27,7 @@
   "origin":9,
   "parent":{
     "name":"enigmatic_blade",
-    "path":"folders/精灵/bullet_player/blade/enigmatic_blade.yy",
+    "path":"folders/精灵/bullet_player/plane/blade/enigmatic_blade.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

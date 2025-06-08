@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"blast_xeno",
-    "path":"folders/精灵/bullet_player/xeno/blast_xeno.yy",
+    "path":"folders/精灵/bullet_player/plane/xeno/blast_xeno.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

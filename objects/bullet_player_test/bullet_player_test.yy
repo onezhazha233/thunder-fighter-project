@@ -13,8 +13,8 @@
   "name":"bullet_player_test",
   "overriddenProperties":[],
   "parent":{
-    "name":"bullet_player",
-    "path":"folders/物体/bullet_player.yy",
+    "name":"bullet",
+    "path":"folders/物体/bullet_player/plane/bullet.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

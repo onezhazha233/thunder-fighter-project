@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"blade",
-    "path":"folders/精灵/bullet_player/blade.yy",
+    "path":"folders/精灵/bullet_player/plane/blade.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

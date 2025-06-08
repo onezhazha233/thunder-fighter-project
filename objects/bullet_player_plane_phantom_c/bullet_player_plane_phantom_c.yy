@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"void_phantom",
-    "path":"folders/物体/bullet_player/plane/phantom/void_phantom.yy",
+    "path":"folders/物体/bullet_player/plane/bullet/phantom/void_phantom.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

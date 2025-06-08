@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"steel_xeno",
-    "path":"folders/精灵/bullet_player/xeno/steel_xeno.yy",
+    "path":"folders/精灵/bullet_player/plane/xeno/steel_xeno.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

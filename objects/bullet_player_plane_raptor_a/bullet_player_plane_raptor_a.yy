@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"raptor_zero",
-    "path":"folders/物体/bullet_player/plane/raptor/raptor_zero.yy",
+    "path":"folders/物体/bullet_player/plane/bullet/raptor/raptor_zero.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

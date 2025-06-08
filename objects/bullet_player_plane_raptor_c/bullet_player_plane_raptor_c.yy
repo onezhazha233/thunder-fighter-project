@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"hurricane_griffin",
-    "path":"folders/物体/bullet_player/plane/raptor/hurricane_griffin.yy",
+    "path":"folders/物体/bullet_player/plane/bullet/raptor/hurricane_griffin.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"cruise_missile",
-    "path":"folders/精灵/subweapon/missile/cruise_missile.yy",
+    "path":"folders/精灵/bullet_player/subweapon/missile/cruise_missile.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

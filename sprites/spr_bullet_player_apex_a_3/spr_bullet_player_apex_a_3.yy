@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"apex_zero",
-    "path":"folders/精灵/bullet_player/apex/apex_zero.yy",
+    "path":"folders/精灵/bullet_player/plane/apex/apex_zero.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

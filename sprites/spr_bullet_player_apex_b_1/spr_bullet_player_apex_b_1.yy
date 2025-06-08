@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"pulse_apex",
-    "path":"folders/精灵/bullet_player/apex/pulse_apex.yy",
+    "path":"folders/精灵/bullet_player/plane/apex/pulse_apex.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

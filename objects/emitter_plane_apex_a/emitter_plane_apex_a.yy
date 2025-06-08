@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"apex",
-    "path":"folders/物体/bullet_player/emitter_player/plane/apex.yy",
+    "path":"folders/物体/bullet_player/plane/emitter/apex.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

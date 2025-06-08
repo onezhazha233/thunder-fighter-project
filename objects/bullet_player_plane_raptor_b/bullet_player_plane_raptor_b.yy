@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"gale_eagle",
-    "path":"folders/物体/bullet_player/plane/raptor/gale_eagle.yy",
+    "path":"folders/物体/bullet_player/plane/bullet/raptor/gale_eagle.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

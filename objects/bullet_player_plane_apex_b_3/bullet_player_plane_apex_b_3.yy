@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"pulse_apex",
-    "path":"folders/物体/bullet_player/plane/apex/pulse_apex.yy",
+    "path":"folders/物体/bullet_player/plane/bullet/apex/pulse_apex.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

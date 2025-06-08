@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"dawn",
-    "path":"folders/物体/bullet_player/emitter_player/plane/dawn.yy",
+    "path":"folders/物体/bullet_player/plane/emitter/dawn.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

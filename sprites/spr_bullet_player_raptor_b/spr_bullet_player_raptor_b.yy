@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"gale_eagle",
-    "path":"folders/精灵/bullet_player/raptor/gale_eagle.yy",
+    "path":"folders/精灵/bullet_player/plane/raptor/gale_eagle.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -28,7 +28,7 @@
   "origin":4,
   "parent":{
     "name":"aurora_phantom",
-    "path":"folders/精灵/bullet_player/phantom/aurora_phantom.yy",
+    "path":"folders/精灵/bullet_player/plane/phantom/aurora_phantom.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

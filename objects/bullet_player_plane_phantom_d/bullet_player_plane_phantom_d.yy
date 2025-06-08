@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"aurora_phantom",
-    "path":"folders/物体/bullet_player/plane/phantom/aurora_phantom.yy",
+    "path":"folders/物体/bullet_player/plane/bullet/phantom/aurora_phantom.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

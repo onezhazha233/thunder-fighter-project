@@ -10,8 +10,8 @@
   "name":"emitter_player_test",
   "overriddenProperties":[],
   "parent":{
-    "name":"emitter_player",
-    "path":"folders/物体/bullet_player/emitter_player.yy",
+    "name":"emitter",
+    "path":"folders/物体/bullet_player/plane/emitter.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"apex",
-    "path":"folders/物体/bullet_player/plane/apex.yy",
+    "path":"folders/物体/bullet_player/plane/bullet/apex.yy",
   },
   "parentObjectId":null,
   "persistent":false,

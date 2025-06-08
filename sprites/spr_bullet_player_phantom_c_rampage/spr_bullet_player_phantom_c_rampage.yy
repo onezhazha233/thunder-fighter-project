@@ -27,7 +27,7 @@
   "origin":7,
   "parent":{
     "name":"void_phantom",
-    "path":"folders/精灵/bullet_player/phantom/void_phantom.yy",
+    "path":"folders/精灵/bullet_player/plane/phantom/void_phantom.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

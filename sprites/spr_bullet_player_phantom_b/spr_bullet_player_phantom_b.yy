@@ -26,7 +26,7 @@
   "origin":7,
   "parent":{
     "name":"squall_phantom",
-    "path":"folders/精灵/bullet_player/phantom/squall_phantom.yy",
+    "path":"folders/精灵/bullet_player/plane/phantom/squall_phantom.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

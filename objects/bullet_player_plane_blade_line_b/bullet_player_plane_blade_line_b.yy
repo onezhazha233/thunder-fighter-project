@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"enigmatic_blade",
-    "path":"folders/物体/bullet_player/plane/blade/enigmatic_blade.yy",
+    "path":"folders/物体/bullet_player/plane/bullet/blade/enigmatic_blade.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"steel_xeno",
-    "path":"folders/物体/bullet_player/plane/xeno/steel_xeno.yy",
+    "path":"folders/物体/bullet_player/plane/bullet/xeno/steel_xeno.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

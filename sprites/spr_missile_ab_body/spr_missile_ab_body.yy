@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"tracking_and_radar_missile",
-    "path":"folders/精灵/subweapon/missile/tracking_and_radar_missile.yy",
+    "path":"folders/精灵/bullet_player/subweapon/missile/tracking_and_radar_missile.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

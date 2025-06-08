@@ -19,32 +19,40 @@ SetState = function(s){
 		}
 	}
 	if(s = 1){
-		layer_sequence_destroy(plane_sequence);
-		plane_sequence = layer_sequence_create("planes",x,y,rampage_intro);
-		layer_sequence_xscale(plane_sequence,image_xscale);
-		layer_sequence_yscale(plane_sequence,image_yscale);
-		draw_plane = 0;
+		if(sequence_exists(rampage_intro)){
+			layer_sequence_destroy(plane_sequence);
+			plane_sequence = layer_sequence_create("planes",x,y,rampage_intro);
+			layer_sequence_xscale(plane_sequence,image_xscale);
+			layer_sequence_yscale(plane_sequence,image_yscale);
+			draw_plane = 0;
+		}
 	}
 	if(s = 2){
-		layer_sequence_destroy(plane_sequence);
-		plane_sequence = layer_sequence_create("planes",x,y,rampage);
-		layer_sequence_xscale(plane_sequence,image_xscale);
-		layer_sequence_yscale(plane_sequence,image_yscale);
-		draw_plane = 0;
+		if(sequence_exists(rampage)){
+			layer_sequence_destroy(plane_sequence);
+			plane_sequence = layer_sequence_create("planes",x,y,rampage);
+			layer_sequence_xscale(plane_sequence,image_xscale);
+			layer_sequence_yscale(plane_sequence,image_yscale);
+			draw_plane = 0;
+		}
 	}
 	if(s = 3){
 		layer_sequence_destroy(plane_sequence);
 		if(rampage_outro_mode = 0){
-			plane_sequence = layer_sequence_create("planes",x,y,rampage_outro);
-			layer_sequence_xscale(plane_sequence,image_xscale);
-			layer_sequence_yscale(plane_sequence,image_yscale);
+			if(sequence_exists(rampage_outro)){
+				plane_sequence = layer_sequence_create("planes",x,y,rampage_outro);
+				layer_sequence_xscale(plane_sequence,image_xscale);
+				layer_sequence_yscale(plane_sequence,image_yscale);
+			}
 		}
 		if(rampage_outro_mode = 1){
-			plane_sequence = layer_sequence_create("planes",x,y,rampage_intro);
-			layer_sequence_xscale(plane_sequence,image_xscale);
-			layer_sequence_yscale(plane_sequence,image_yscale);
-			layer_sequence_headdir(plane_sequence,seqdir_left);
-			layer_sequence_headpos(plane_sequence,layer_sequence_get_length(plane_sequence));
+			if(sequence_exists(rampage_intro)){
+				plane_sequence = layer_sequence_create("planes",x,y,rampage_intro);
+				layer_sequence_xscale(plane_sequence,image_xscale);
+				layer_sequence_yscale(plane_sequence,image_yscale);
+				layer_sequence_headdir(plane_sequence,seqdir_left);
+				layer_sequence_headpos(plane_sequence,layer_sequence_get_length(plane_sequence));
+			}
 		}
 	}
 }

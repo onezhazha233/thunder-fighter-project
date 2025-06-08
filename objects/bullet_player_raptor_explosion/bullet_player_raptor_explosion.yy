@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"raptor",
-    "path":"folders/物体/bullet_player/plane/raptor.yy",
+    "path":"folders/物体/bullet_player/plane/bullet/raptor.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

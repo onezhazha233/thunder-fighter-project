@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"assault",
-    "path":"folders/物体/bullet_player/emitter_player/plane/assault.yy",
+    "path":"folders/物体/bullet_player/plane/emitter/assault.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

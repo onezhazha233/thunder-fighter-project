@@ -28,7 +28,7 @@
   "origin":9,
   "parent":{
     "name":"wisdom_dawn",
-    "path":"folders/精灵/bullet_player/dawn/wisdom_dawn.yy",
+    "path":"folders/精灵/bullet_player/plane/dawn/wisdom_dawn.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

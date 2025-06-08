@@ -29,7 +29,7 @@
   "origin":4,
   "parent":{
     "name":"blade_zero",
-    "path":"folders/精灵/bullet_player/blade/blade_zero.yy",
+    "path":"folders/精灵/bullet_player/plane/blade/blade_zero.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

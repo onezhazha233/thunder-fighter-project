@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"thunder_apex",
-    "path":"folders/精灵/bullet_player/apex/thunder_apex.yy",
+    "path":"folders/精灵/bullet_player/plane/apex/thunder_apex.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -14,8 +14,8 @@
   "name":"wingman_agent",
   "overriddenProperties":[],
   "parent":{
-    "name":"物体",
-    "path":"folders/物体.yy",
+    "name":"wingman",
+    "path":"folders/物体/wingman.yy",
   },
   "parentObjectId":null,
   "persistent":false,

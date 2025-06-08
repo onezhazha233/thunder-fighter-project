@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"blade_zero",
-    "path":"folders/物体/bullet_player/plane/blade/blade_zero.yy",
+    "path":"folders/物体/bullet_player/plane/bullet/blade/blade_zero.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

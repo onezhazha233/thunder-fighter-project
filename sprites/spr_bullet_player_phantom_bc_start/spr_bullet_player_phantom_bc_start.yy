@@ -28,7 +28,7 @@
   "origin":9,
   "parent":{
     "name":"phantom",
-    "path":"folders/精灵/bullet_player/phantom.yy",
+    "path":"folders/精灵/bullet_player/plane/phantom.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

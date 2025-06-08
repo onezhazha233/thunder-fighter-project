@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"swift_apex",
-    "path":"folders/物体/bullet_player/plane/apex/swift_apex.yy",
+    "path":"folders/物体/bullet_player/plane/bullet/apex/swift_apex.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

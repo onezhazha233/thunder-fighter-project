@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"swift_apex",
-    "path":"folders/精灵/bullet_player/apex/swift_apex.yy",
+    "path":"folders/精灵/bullet_player/plane/apex/swift_apex.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

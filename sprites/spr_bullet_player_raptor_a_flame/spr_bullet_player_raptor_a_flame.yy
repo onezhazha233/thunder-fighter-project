@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"raptor_zero",
-    "path":"folders/精灵/bullet_player/raptor/raptor_zero.yy",
+    "path":"folders/精灵/bullet_player/plane/raptor/raptor_zero.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

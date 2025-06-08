@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"squall_phantom",
-    "path":"folders/物体/bullet_player/plane/phantom/squall_phantom.yy",
+    "path":"folders/物体/bullet_player/plane/bullet/phantom/squall_phantom.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

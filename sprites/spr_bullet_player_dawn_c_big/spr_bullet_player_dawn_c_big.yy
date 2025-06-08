@@ -47,7 +47,7 @@
   "origin":9,
   "parent":{
     "name":"hope_dawn",
-    "path":"folders/精灵/bullet_player/dawn/hope_dawn.yy",
+    "path":"folders/精灵/bullet_player/plane/dawn/hope_dawn.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

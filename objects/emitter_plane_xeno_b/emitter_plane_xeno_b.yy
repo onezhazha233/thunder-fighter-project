@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"xeno",
-    "path":"folders/物体/bullet_player/emitter_player/plane/xeno.yy",
+    "path":"folders/物体/bullet_player/plane/emitter/xeno.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

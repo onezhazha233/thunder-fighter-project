@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"devil_blade",
-    "path":"folders/物体/bullet_player/plane/blade/devil_blade.yy",
+    "path":"folders/物体/bullet_player/plane/bullet/blade/devil_blade.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

@@ -27,7 +27,7 @@
   "origin":9,
   "parent":{
     "name":"thunder_assault",
-    "path":"folders/精灵/bullet_player/assault/thunder_assault.yy",
+    "path":"folders/精灵/bullet_player/plane/assault/thunder_assault.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

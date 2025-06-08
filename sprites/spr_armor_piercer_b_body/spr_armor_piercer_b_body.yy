@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"alloy_armor_piercer",
-    "path":"folders/精灵/subweapon/armor_piercer/alloy_armor_piercer.yy",
+    "path":"folders/精灵/bullet_player/subweapon/armor_piercer/alloy_armor_piercer.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
