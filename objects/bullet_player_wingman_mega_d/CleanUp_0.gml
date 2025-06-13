@@ -1,0 +1,4 @@
+live;
+event_inherited();
+
+surface_free(surf)

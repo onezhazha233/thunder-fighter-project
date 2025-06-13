@@ -1,0 +1,8 @@
+live;
+for(i=0;i<1;i+=1){
+	instance_destroy(laser[i]);
+	laser[i] = MakePlayerBullet(x,y,bullet_player_wingman_mega_c);
+	laser[i].image_angle = 36*i;
+	laser[i].damage = damage;
+	array_push(follow_inst,laser[i]);
+}

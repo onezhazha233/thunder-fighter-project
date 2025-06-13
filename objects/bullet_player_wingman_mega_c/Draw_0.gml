@@ -22,5 +22,5 @@ if(instance_exists(find[1])){
 	CollideEnemy(enemy);
 	ex = x + lengthdir_x(length,image_angle+90);
 	ey = y + lengthdir_y(length,image_angle+90);
-	draw_sprite_ext(spr_bullet_effect_mega,0,ex,ey,image_xscale*scale_x*choose(1,-1),image_yscale*scale_y*image_xscale,choose(0,180),-1,image_alpha);
+	draw_sprite_ext(spr_bullet_effect_mega,0,ex,ey,image_xscale*scale_x*choose(1,-1)/0.8/1.4,image_yscale*scale_y*image_xscale/0.8/1.4,choose(0,180),-1,image_alpha);
 }
