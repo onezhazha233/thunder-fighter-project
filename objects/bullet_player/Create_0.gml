@@ -28,9 +28,9 @@ function CollideEnemy(enemy){
 				instance_destroy();
 			}
 			if!(collision_effect = noone){
-				spr_bullet_player_mega_c_start = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
-				spr_bullet_player_mega_c_start.image_xscale = scale_x;
-				spr_bullet_player_mega_c_start.image_yscale = scale_y;
+				a = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
+				a.image_xscale = scale_x;
+				a.image_yscale = scale_y;
 			}
 		}
 	}
@@ -42,9 +42,9 @@ function CollideEnemy(enemy){
 			instance_destroy();
 		}
 		if!(collision_effect = noone){
-			spr_bullet_player_mega_c_start = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
-			spr_bullet_player_mega_c_start.image_xscale = scale_x;
-			spr_bullet_player_mega_c_start.image_yscale = scale_y;
+			a = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
+			a.image_xscale = scale_x;
+			a.image_yscale = scale_y;
 		}
 	}
 }

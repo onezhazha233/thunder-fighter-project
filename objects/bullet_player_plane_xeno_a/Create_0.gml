@@ -23,10 +23,10 @@ function CollideEnemy(enemy){
 				instance_destroy();
 			}
 			if!(collision_effect = noone){
-				spr_bullet_player_mega_c_start = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
-				spr_bullet_player_mega_c_start.image_xscale = scale_x*(rampage = true ? 1 : 0.6);
-				spr_bullet_player_mega_c_start.image_yscale = scale_y*(rampage = true ? 1 : 0.6);
-				spr_bullet_player_mega_c_start.damage = damage;
+				a = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
+				a.image_xscale = scale_x*(rampage = true ? 1 : 0.6);
+				a.image_yscale = scale_y*(rampage = true ? 1 : 0.6);
+				a.damage = damage;
 			}
 		}
 	}
@@ -37,10 +37,10 @@ function CollideEnemy(enemy){
 			instance_destroy();
 		}
 		if!(collision_effect = noone){
-			spr_bullet_player_mega_c_start = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
-			spr_bullet_player_mega_c_start.image_xscale = scale_x*(rampage = true ? 1 : 0.6);
-			spr_bullet_player_mega_c_start.image_yscale = scale_y*(rampage = true ? 1 : 0.6);
-			spr_bullet_player_mega_c_start.damage = damage;
+			a = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
+			a.image_xscale = scale_x*(rampage = true ? 1 : 0.6);
+			a.image_yscale = scale_y*(rampage = true ? 1 : 0.6);
+			a.damage = damage;
 		}
 	}
 }
