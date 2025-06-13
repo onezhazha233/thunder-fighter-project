@@ -114,7 +114,7 @@
       ],"traits":0,},
     {"$GMGraphicTrack":"","%Name":"spr_bullet_player_beam_cannon_a_ball_0","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_bullet_player_mega_bc_ball_0","path":"sprites/spr_bullet_player_mega_bc_ball_0/spr_bullet_player_mega_bc_ball_0.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_bullet_player_mega_bcd_ball_0","path":"sprites/spr_bullet_player_mega_bcd_ball_0/spr_bullet_player_mega_bcd_ball_0.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
             },"Disabled":false,"id":"86186960-64c7-4d84-a586-6b696ab89861","IsCreationKey":false,"Key":0.0,"Length":6.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_bullet_player_beam_cannon_a_ball_0","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294072904,"tracks":[
         {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
