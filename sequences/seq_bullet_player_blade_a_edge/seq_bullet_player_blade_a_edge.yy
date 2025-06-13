@@ -27,7 +27,7 @@
   "name":"seq_bullet_player_blade_a_edge",
   "parent":{
     "name":"blade_zero",
-    "path":"folders/序列/bullet_player/blade/blade_zero.yy",
+    "path":"folders/序列/bullet_player/plane/blade/blade_zero.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

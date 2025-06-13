@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"phantom_zero",
-    "path":"folders/精灵/effect/bullet_player/phantom/phantom_zero.yy",
+    "path":"folders/精灵/effect/bullet_player/plane/phantom/phantom_zero.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

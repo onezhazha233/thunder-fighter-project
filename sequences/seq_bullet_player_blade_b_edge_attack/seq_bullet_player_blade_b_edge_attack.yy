@@ -33,7 +33,7 @@
   "name":"seq_bullet_player_blade_b_edge_attack",
   "parent":{
     "name":"enigmatic_blade",
-    "path":"folders/序列/bullet_player/blade/enigmatic_blade.yy",
+    "path":"folders/序列/bullet_player/plane/blade/enigmatic_blade.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

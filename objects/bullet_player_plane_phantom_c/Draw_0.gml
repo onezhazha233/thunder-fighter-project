@@ -36,7 +36,6 @@ if(rampage = false){
 }
 
 if(instance_exists(find[1])){
-	find[1].Hurt();
 	enemy = find[1];
 	CollideEnemy(enemy);
 	if(rampage = false){

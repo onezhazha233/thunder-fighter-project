@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"assault",
-    "path":"folders/精灵/effect/bullet_player/assault.yy",
+    "path":"folders/精灵/effect/bullet_player/plane/assault.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -33,7 +33,7 @@
   "name":"seq_bullet_player_blade_d_edge_attack_rampage",
   "parent":{
     "name":"devil_blade",
-    "path":"folders/序列/bullet_player/blade/devil_blade.yy",
+    "path":"folders/序列/bullet_player/plane/blade/devil_blade.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

@@ -27,7 +27,7 @@
   "name":"seq_bullet_player_blade_c_edge",
   "parent":{
     "name":"demon_blade",
-    "path":"folders/序列/bullet_player/blade/demon_blade.yy",
+    "path":"folders/序列/bullet_player/plane/blade/demon_blade.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

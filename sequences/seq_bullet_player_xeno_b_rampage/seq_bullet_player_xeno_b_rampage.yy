@@ -27,7 +27,7 @@
   "name":"seq_bullet_player_xeno_b_rampage",
   "parent":{
     "name":"steel_xeno",
-    "path":"folders/序列/bullet_player/xeno/steel_xeno.yy",
+    "path":"folders/序列/bullet_player/plane/xeno/steel_xeno.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

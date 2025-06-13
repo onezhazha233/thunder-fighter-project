@@ -1,12 +1,4 @@
-function laser_find() {
-    var ox, oy, dir, range, object, prec, notme;
-    ox = argument0;
-    oy = argument1;
-    dir = argument2;
-    range = argument3;
-    object = argument4;
-    prec = argument5;
-    notme = argument6;
+function laser_find(ox, oy, dir, range, object, prec, notme) {
     
     var sx = lengthdir_x(range, dir);
     var sy = lengthdir_y(range, dir);

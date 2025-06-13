@@ -29,7 +29,7 @@
   "origin":4,
   "parent":{
     "name":"raptor",
-    "path":"folders/精灵/effect/bullet_player/raptor.yy",
+    "path":"folders/精灵/effect/bullet_player/plane/raptor.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

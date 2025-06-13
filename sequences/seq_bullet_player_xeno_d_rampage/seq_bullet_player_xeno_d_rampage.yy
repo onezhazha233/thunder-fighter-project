@@ -27,7 +27,7 @@
   "name":"seq_bullet_player_xeno_d_rampage",
   "parent":{
     "name":"ghost_xeno",
-    "path":"folders/序列/bullet_player/xeno/ghost_xeno.yy",
+    "path":"folders/序列/bullet_player/plane/xeno/ghost_xeno.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

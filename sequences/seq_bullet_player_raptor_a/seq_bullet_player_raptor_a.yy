@@ -27,7 +27,7 @@
   "name":"seq_bullet_player_raptor_a",
   "parent":{
     "name":"raptor_zero",
-    "path":"folders/序列/bullet_player/raptor/raptor_zero.yy",
+    "path":"folders/序列/bullet_player/plane/raptor/raptor_zero.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

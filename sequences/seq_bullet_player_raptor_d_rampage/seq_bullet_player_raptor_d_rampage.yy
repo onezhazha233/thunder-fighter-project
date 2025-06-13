@@ -27,7 +27,7 @@
   "name":"seq_bullet_player_raptor_d_rampage",
   "parent":{
     "name":"blaze_phoenix",
-    "path":"folders/序列/bullet_player/raptor/blaze_phoenix.yy",
+    "path":"folders/序列/bullet_player/plane/raptor/blaze_phoenix.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,
