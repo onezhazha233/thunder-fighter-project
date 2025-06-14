@@ -23,7 +23,7 @@ flame_upper_sequence = -1
 flame_upper_x_offset = 0
 flame_upper_y_offset = 0
 
-state = ENEMY_STAT.PRE
+state = ENEMY_STATE.PRE
 
 bullet_emitter = noone
 bullet_emitter_inst = noone

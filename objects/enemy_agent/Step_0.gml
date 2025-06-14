@@ -22,12 +22,12 @@ image_blend = make_color_rgb(blend_r,blend_g,blend_b)
 
 if(layer_sequence_is_finished(enemy_sequence)){
 	if(layer_sequence_get_headdir(enemy_sequence) = seqdir_right){
-		if(state = ENEMY_STAT.INTRO){
-			SetState(ENEMY_STAT.IDLE);
+		if(state = ENEMY_STATE.INTRO){
+			SetState(ENEMY_STATE.IDLE);
 		}
 	}
-	if(state = ENEMY_STAT.WITHDRAW){
-		SetState(ENEMY_STAT.PRE);
+	if(state = ENEMY_STATE.WITHDRAW){
+		SetState(ENEMY_STATE.PRE);
 	}
 }
 

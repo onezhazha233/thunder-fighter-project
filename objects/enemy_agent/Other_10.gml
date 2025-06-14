@@ -2,7 +2,7 @@ live;
 SetState = function(s){
 	state = s;
 	if(display_mode = DISPLAY_MODE.SEQUENCE){
-		if(s = ENEMY_STAT.PRE){
+		if(s = ENEMY_STATE.PRE){
 			if(pre_mode = PRE_MODE.START_FRAME){
 				layer_sequence_destroy(enemy_sequence);
 				enemy_sequence = layer_sequence_create(le,x,y,intro_sequence);
@@ -18,13 +18,13 @@ SetState = function(s){
 				layer_sequence_yscale(enemy_sequence,image_yscale);
 			}
 		}
-		if(s = ENEMY_STAT.INTRO){
+		if(s = ENEMY_STATE.INTRO){
 			layer_sequence_destroy(enemy_sequence);
 			enemy_sequence = layer_sequence_create(le,x,y,intro_sequence);
 			layer_sequence_xscale(enemy_sequence,image_xscale);
 			layer_sequence_yscale(enemy_sequence,image_yscale);
 		}
-		if(s = ENEMY_STAT.IDLE){
+		if(s = ENEMY_STATE.IDLE){
 			if(instance_exists(bullet_emitter_inst)){
 				bullet_emitter_inst.enabled = true;
 			}
@@ -43,7 +43,7 @@ SetState = function(s){
 				layer_sequence_yscale(enemy_sequence,image_yscale);
 			}
 		}
-		if(s = ENEMY_STAT.WITHDRAW){
+		if(s = ENEMY_STATE.WITHDRAW){
 			layer_sequence_destroy(enemy_sequence);
 			enemy_sequence = layer_sequence_create(le,x,y,intro_sequence);
 			layer_sequence_xscale(enemy_sequence,image_xscale);
@@ -53,16 +53,16 @@ SetState = function(s){
 		}
 	}
 	else{
-		if(s = ENEMY_STAT.INTRO){
-			SetState(ENEMY_STAT.IDLE);
+		if(s = ENEMY_STATE.INTRO){
+			SetState(ENEMY_STATE.IDLE);
 		}
-		if(s = ENEMY_STAT.IDLE){
+		if(s = ENEMY_STATE.IDLE){
 			if(instance_exists(bullet_emitter_inst)){
 				bullet_emitter_inst.enabled = true;
 			}
 		}
-		if(s = ENEMY_STAT.WITHDRAW){
-			SetState(ENEMY_STAT.PRE);
+		if(s = ENEMY_STATE.WITHDRAW){
+			SetState(ENEMY_STATE.PRE);
 		}
 	}
 }

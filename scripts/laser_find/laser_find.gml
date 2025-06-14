@@ -7,7 +7,7 @@ function laser_find(ox, oy, dir, range, object, prec, notme) {
     
     // 特殊处理enemy_agent的矩形碰撞检测
     if (object == enemy_agent) {
-        var min_dist = range + 1;
+		var min_dist = range + 1;
         var closest_inst = noone;
         
         with(enemy_agent) {
@@ -29,12 +29,13 @@ function laser_find(ox, oy, dir, range, object, prec, notme) {
                     if (dist < min_dist) {
                         min_dist = dist;
                         closest_inst = id;
+						return [min_dist, closest_inst];
                     }
                 }
             }
-			else{
+			if (collision_type == COLLISION_TYPE.SPRITE) {
 				// 原始碰撞检测逻辑
-		        var inst = collision_line(ox, oy, dx, dy, object, prec, notme);
+		        var inst = collision_line(ox, oy, dx, dy, enemy_agent, prec, notme);
 		        var distance = -1;
         
 		        if (inst != noone) {
@@ -53,17 +54,13 @@ function laser_find(ox, oy, dir, range, object, prec, notme) {
 		                }
 		            }
 		            distance = point_distance(ox, oy, dx, dy);
+					return [distance, inst];
 		        }
-		        return [distance, inst];
 			}
         }
-        
-        if (closest_inst != noone) {
-            return [min_dist, closest_inst];
-        }
-        return [-1, noone];
+		
     }
-    else {
+    //else {
         // 原始碰撞检测逻辑
         var inst = collision_line(ox, oy, dx, dy, object, prec, notme);
         var distance = -1;
@@ -84,9 +81,10 @@ function laser_find(ox, oy, dir, range, object, prec, notme) {
                 }
             }
             distance = point_distance(ox, oy, dx, dy);
+			return [distance, inst];
         }
-        return [distance, inst];
-    }
+    //}
+	return [-1, noone];
 }
 
 // 辅助函数：线段与矩形相交检测

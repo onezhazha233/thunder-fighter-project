@@ -1,5 +1,5 @@
 function Macro_EnemyAnim(){
-	enum ENEMY_STAT{
+	enum ENEMY_STATE{
 		PRE = 0,
 		INTRO = 1,
 		IDLE = 2,

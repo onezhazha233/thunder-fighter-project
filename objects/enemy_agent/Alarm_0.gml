@@ -17,4 +17,4 @@ if!(bullet_emitter = noone){
 	bullet_emitter_inst.mark = id;
 }
 
-SetState(0)
+SetState(ENEMY_STATE.PRE)

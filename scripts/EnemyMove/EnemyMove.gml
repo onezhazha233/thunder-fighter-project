@@ -9,7 +9,7 @@ function EnemyMove_Pre(start_pos,target_pos,duration,delay=0){
 
 function EnemyMove_Intro(itime){
 	if(time = itime){
-		SetState(ENEMY_STAT.INTRO);
+		SetState(ENEMY_STATE.INTRO);
 	}
 }
 

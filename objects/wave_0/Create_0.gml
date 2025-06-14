@@ -17,4 +17,4 @@ ds_queue_enqueue(enemies,[[enemy_0],200])
 	EnemyMove_LoopEllipse(240,120,0,1,220,480);
 })
 
-ds_queue_enqueue(enemies,[[enemy_0],200])
+ds_queue_enqueue(enemies,[[enemy_0],200])*/
