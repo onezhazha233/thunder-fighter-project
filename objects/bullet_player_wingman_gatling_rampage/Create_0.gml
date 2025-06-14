@@ -7,7 +7,7 @@ collision_effect = bullet_effect_shotcannon
 
 image_xscale = 0.4
 image_yscale = 1.5
-vspeed = -45
+vspeed = -66
 
 damage = 1
 

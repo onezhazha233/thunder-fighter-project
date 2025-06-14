@@ -7,6 +7,9 @@ if(sequence_exists(flame)){
 }
 if!(bullet_emitter = noone){
 	bullet_emitter_inst = instance_create_depth(x,y,DEPTH_BATTLE.BULLETS_PLAYER,bullet_emitter);
+	if(flip = 1){
+		bullet_emitter_inst.dir = 1;
+	}
 }
 
 SetState(0)

@@ -3,6 +3,7 @@ rampage = false
 weapon_level = 0
 time_interval_idle = [8,8,8,8]
 time_interval_rampage = 4
+dir = 0//0为右 1为左
 alarm[0] = 1
 follow_inst = []
 follow_seq = []//[[层,序列,[x,y]],[层,序列,[x,y]]]
