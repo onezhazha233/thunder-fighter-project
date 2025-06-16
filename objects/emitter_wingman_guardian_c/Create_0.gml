@@ -1,8 +1,8 @@
 live;
 event_inherited();
 
-time_interval_idle = [26,24,22,20]
-time_interval_rampage = 6
+time_interval_idle = [31,31,31,31]
+time_interval_rampage = 16
 
 scale_x = 1
 scale_y = 1

@@ -12,4 +12,3 @@ weapon_level = 0
 fire = noone
 
 time = 0
-rtime = 0

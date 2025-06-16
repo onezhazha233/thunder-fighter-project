@@ -1,8 +1,6 @@
 live;
 event_inherited();
 
-if(alarm[1] = -1)rtime = 0;
-
 if(enabled = true){
 	time -= 1;
 	if(time <= 0)time = 0;
