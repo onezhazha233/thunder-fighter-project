@@ -1,13 +1,13 @@
 live;
 event_inherited();
 
-enemy_0 = new Enemy(enemy_damagetest,noone,function(){
+/*enemy_0 = new Enemy(enemy_damagetest,noone,function(){
 	EnemyMove_Pre([360,-200], [360,320], 40);
 })
 
-ds_queue_enqueue(enemies,[[enemy_0],200])
+ds_queue_enqueue(enemies,[[enemy_0],200])*/
 
-/*enemy_0 = new Enemy(enemy_4b,emitter_enemy_b,function(){
+enemy_0 = new Enemy(enemy_4b,emitter_enemy_b,function(){
 	EnemyMove_Pre([360, -200], [360, 320], 40);
 	EnemyMove_Intro(60);
 	if(time = 100){
@@ -17,4 +17,4 @@ ds_queue_enqueue(enemies,[[enemy_0],200])
 	EnemyMove_LoopEllipse(240,120,0,1,220,480);
 })
 
-ds_queue_enqueue(enemies,[[enemy_0],200])*/
+ds_queue_enqueue(enemies,[[enemy_0],200])

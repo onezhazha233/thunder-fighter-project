@@ -12,3 +12,13 @@ weapon_level = 0
 fire = noone
 
 time = 0
+
+block_inst = noone
+block_xoffset = 10
+block_yoffset = -6
+block_xoffset_rampage = 20
+block_yoffset_rampage = 6
+block_width = 56
+block_height = 34
+block_width_rampage = 74
+block_height_rampage = 42
