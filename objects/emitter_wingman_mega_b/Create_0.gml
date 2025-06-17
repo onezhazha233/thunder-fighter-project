@@ -15,3 +15,27 @@ for(i=0;i<10;i+=1){
 fire = noone
 
 damage = 1
+
+SetPosition = function(xx,yy){
+	x = xx;
+	y = yy;
+	
+	for(i=0;i<array_length(follow_inst);i+=1){
+		if(instance_exists(follow_inst[i])){
+			follow_inst[i].x = xx;
+			follow_inst[i].y = yy;
+			
+			with(follow_inst[i]){
+				if(variable_instance_exists(id,"bullet_sequence")){
+					if(variable_instance_exists(id,"ll")){
+						layer_sequence_x(bullet_sequence,x);
+						layer_sequence_y(bullet_sequence,y);
+					}
+				}
+			}
+		}
+		else{
+			array_delete(follow_inst,i,1);
+		}
+	}
+}

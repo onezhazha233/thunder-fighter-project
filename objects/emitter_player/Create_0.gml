@@ -6,8 +6,21 @@ time_interval_rampage = 4
 dir = 0//0为右 1为左
 alarm[0] = 1
 follow_inst = []
-follow_seq = []//[[层,序列,[x,y]],[层,序列,[x,y]]]
 
+SetPosition = function(xx,yy){
+	x = xx;
+	y = yy;
+	
+	for(i=0;i<array_length(follow_inst);i+=1){
+		if(instance_exists(follow_inst[i])){
+			follow_inst[i].x = xx;
+			follow_inst[i].y = yy;
+		}
+		else{
+			array_delete(follow_inst,i,1);
+		}
+	}
+}
 SetLevel = function(level){
 	weapon_level = level;
 	alarm[0] = 1;

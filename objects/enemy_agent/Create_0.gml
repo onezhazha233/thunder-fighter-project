@@ -33,6 +33,7 @@ up = 10
 down = 10
 left = 10
 right = 10
+mask_sprite = -1
 
 image_angle = 0
 image_xscale = 1

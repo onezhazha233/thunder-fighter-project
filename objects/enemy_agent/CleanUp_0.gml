@@ -7,6 +7,7 @@ layer_destroy(layer_enemy)
 layer_destroy(layer_enemy_lower)
 layer_destroy(layer_enemy_upper)
 instance_destroy(bullet_emitter_inst)
+if(sprite_exists(mask_sprite))sprite_delete(mask_sprite);
 /*layer_script_begin("enemies", function(){});
 layer_script_end("enemies", function(){});
 layer_script_begin("enemies_lower", function(){});

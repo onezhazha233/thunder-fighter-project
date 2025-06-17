@@ -77,30 +77,9 @@ SetSurfEnabled = function(enabled){
 SetPosition = function(xx,yy){
 	x = xx;
 	y = yy;
+	
 	if(instance_exists(bullet_emitter_inst)){
-		bullet_emitter_inst.x = xx;
-		bullet_emitter_inst.y = yy;
-
-		with(bullet_emitter_inst){
-			for(i=0;i<array_length(follow_inst);i+=1){
-				if(instance_exists(follow_inst[i])){
-					follow_inst[i].x = xx;
-					follow_inst[i].y = yy;
-				}
-				else{
-					array_delete(follow_inst,i,0);
-				}
-			}
-			for(i=0;i<array_length(follow_seq);i+=1){
-				if(layer_sequence_exists(follow_seq[i,0],follow_seq[i,1])){
-					layer_sequence_x(follow_seq[i,1],follow_seq[i,2][0]);
-					layer_sequence_y(follow_seq[i,1],follow_seq[i,2][1]);
-				}
-				else{
-					array_delete(follow_seq,i,0);
-				}
-			}
-		}
+		bullet_emitter_inst.SetPosition(x,y);
 	}
 	
 	if(layer_sequence_exists("wingmans",wingman_sequence)){
