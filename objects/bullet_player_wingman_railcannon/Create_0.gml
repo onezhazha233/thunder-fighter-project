@@ -3,13 +3,17 @@ event_inherited();
 
 collision_type = COLLISION_TYPE.SPRITE
 
-collision_effect = bullet_effect_dawn
-collision_effect_sequence = seq_bullet_effect_dawn_a
+damage = 1
+damage_type = 1
+damage_interval = 999
+collision_destroy = false
+
+collision_effect = bullet_effect_railcannon
+collision_effect_sequence = seq_bullet_effect_railcannon_a
 
 image_speed = 0
-image_xscale = 0.7
-image_yscale = 0.3
-image_alpha = 0.5
+rampage = false
+time = 0
 
 function CollideEnemy(enemy){
 	if(damage_type = 1){
@@ -24,8 +28,8 @@ function CollideEnemy(enemy){
 			if!(collision_effect = noone){
 				a = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
 				a.sequence = collision_effect_sequence;
-				a.image_xscale = scale_x*1.5;
-				a.image_yscale = scale_y*1.5;
+				a.image_xscale = scale_x*(rampage = true ? 1.5 : 1);
+				a.image_yscale = scale_y*(rampage = true ? 1.5 : 1);
 			}
 		}
 	}
@@ -39,8 +43,8 @@ function CollideEnemy(enemy){
 		if!(collision_effect = noone){
 			a = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
 			a.sequence = collision_effect_sequence;
-			a.image_xscale = scale_x*1.5;
-			a.image_yscale = scale_y*1.5;
+			a.image_xscale = scale_x*(rampage = true ? 1.5 : 1);
+			a.image_yscale = scale_y*(rampage = true ? 1.5 : 1);
 		}
 	}
 }
