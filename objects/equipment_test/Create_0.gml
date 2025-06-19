@@ -2,9 +2,9 @@ event_inherited();
 
 xscale = 1
 yscale = 1
-plane = plane_agent
-wingman_left = [wingman_railcannon]
-wingman_right = [wingman_railcannon]
+plane = plane_wisdom_dawn
+wingman_left = [wingman_superconductive_railcannon]
+wingman_right = [wingman_superconductive_railcannon]
 
 /*for(i=0;i<8;i+=1){
 	wingman_left[i] = plane_aurora_phantom;

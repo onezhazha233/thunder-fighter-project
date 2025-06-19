@@ -1,6 +1,6 @@
 {
   "$GMSequence":"",
-  "%Name":"seq_railcannon_c_outro",
+  "%Name":"seq_railcannon_c_rampage_outro",
   "autoRecord":true,
   "backdropHeight":768,
   "backdropImageOpacity":0.5,
@@ -24,7 +24,7 @@
     "resourceType":"KeyframeStore<MomentsEventKeyframe>",
     "resourceVersion":"2.0",
   },
-  "name":"seq_railcannon_c_outro",
+  "name":"seq_railcannon_c_rampage_outro",
   "parent":{
     "name":"hyper_railcannon",
     "path":"folders/序列/wingman/railcannon/hyper_railcannon.yy",
