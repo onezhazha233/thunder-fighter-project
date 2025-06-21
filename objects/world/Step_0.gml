@@ -42,6 +42,7 @@ if(keyboard_check_pressed(vk_space)){
 	}
 	else{
 		player.SetRampageDuration(global.rampage_duration);
+		layer_sequence_create("item_effects",player.x,player.y,seq_battle_item_effect_rampage);
 	}
 }
 
