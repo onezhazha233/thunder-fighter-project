@@ -334,7 +334,7 @@
     {"$GMGraphicTrack":"","%Name":"spr_magnetic_spinblade_cannon_light_0","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
               "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_spinblade_cannon_c_light_0","path":"sprites/spr_spinblade_cannon_c_light_0/spr_spinblade_cannon_c_light_0.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
-            },"Disabled":false,"id":"a941c9fe-5113-4a6b-8581-10bfd9b91324","IsCreationKey":false,"Key":58.0,"Length":28.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            },"Disabled":false,"id":"a941c9fe-5113-4a6b-8581-10bfd9b91324","IsCreationKey":false,"Key":58.0,"Length":7.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_magnetic_spinblade_cannon_light_0","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294107464,"tracks":[
         {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
               {"$Keyframe<ColourKeyframe>":"","Channels":{
@@ -385,7 +385,7 @@
     {"$GMGraphicTrack":"","%Name":"spr_magnetic_spinblade_cannon_light_2","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
               "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_spinblade_cannon_c_light_2","path":"sprites/spr_spinblade_cannon_c_light_2/spr_spinblade_cannon_c_light_2.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
-            },"Disabled":false,"id":"1332a18c-0e76-446d-9d9e-814a45bd2aed","IsCreationKey":false,"Key":58.0,"Length":28.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            },"Disabled":false,"id":"1332a18c-0e76-446d-9d9e-814a45bd2aed","IsCreationKey":false,"Key":58.0,"Length":7.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_magnetic_spinblade_cannon_light_2","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4282962418,"tracks":[
         {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
               {"$Keyframe<ColourKeyframe>":"","Channels":{
@@ -436,7 +436,7 @@
     {"$GMGraphicTrack":"","%Name":"spr_magnetic_spinblade_cannon_light_1","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
               "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_spinblade_cannon_c_light_1","path":"sprites/spr_spinblade_cannon_c_light_1/spr_spinblade_cannon_c_light_1.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
-            },"Disabled":false,"id":"6a1803b2-2280-4c2e-8913-98fe480cc3b0","IsCreationKey":false,"Key":58.0,"Length":28.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            },"Disabled":false,"id":"6a1803b2-2280-4c2e-8913-98fe480cc3b0","IsCreationKey":false,"Key":58.0,"Length":7.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_magnetic_spinblade_cannon_light_1","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4282962418,"tracks":[
         {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
               {"$Keyframe<ColourKeyframe>":"","Channels":{

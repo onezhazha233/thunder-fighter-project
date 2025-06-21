@@ -45,5 +45,8 @@ if(keyboard_check_pressed(vk_space)){
 	}
 }
 
-if(keyboard_check_pressed(vk_up))player.equipment.SetWeaponLevel(min(3,player.equipment.weapon_level+1));
+if(keyboard_check_pressed(vk_up)){
+	player.equipment.SetWeaponLevel(min(3,player.equipment.weapon_level+1));
+	if(player.equipment.weapon_level < 3)layer_sequence_create("item_effects",player.x,player.y,seq_battle_item_effect_weapon_upgrade);
+}
 if(keyboard_check_pressed(vk_down))player.equipment.SetWeaponLevel(max(0,player.equipment.weapon_level-1));

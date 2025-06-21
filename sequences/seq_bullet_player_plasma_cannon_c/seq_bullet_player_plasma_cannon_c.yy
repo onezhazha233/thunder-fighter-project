@@ -26,8 +26,8 @@
   },
   "name":"seq_bullet_player_plasma_cannon_c",
   "parent":{
-    "name":"plasma_cannon",
-    "path":"folders/序列/bullet_player/wingman/plasma_cannon.yy",
+    "name":"hyper_plasma_cannon",
+    "path":"folders/序列/bullet_player/wingman/plasma_cannon/hyper_plasma_cannon.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

@@ -26,7 +26,6 @@ function CollideEnemy(enemy){
 				a = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
 				a.image_xscale = scale_x*(rampage = true ? 1 : 0.6);
 				a.image_yscale = scale_y*(rampage = true ? 1 : 0.6);
-				a.damage = damage;
 			}
 		}
 	}
@@ -40,7 +39,6 @@ function CollideEnemy(enemy){
 			a = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
 			a.image_xscale = scale_x*(rampage = true ? 1 : 0.6);
 			a.image_yscale = scale_y*(rampage = true ? 1 : 0.6);
-			a.damage = damage;
 		}
 	}
 }
