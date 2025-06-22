@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"find_priority_enemy",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"find_priority_enemy",
+  "parent":{
+    "name":"脚本",
+    "path":"folders/脚本.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

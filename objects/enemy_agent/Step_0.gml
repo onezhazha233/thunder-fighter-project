@@ -61,9 +61,9 @@ if(inv_collision = false){
 var _keys = ds_map_find_first(tracks);
 while (!is_undefined(_keys)) {
 	var num = ds_map_find_value(tracks, _keys);
+	var _next_key = ds_map_find_next(tracks, _keys);
 	if (num <= 0){
-	    var _next_key = ds_map_find_next(tracks, _keys);
 	    ds_map_delete(tracks, _keys);
-	    _keys = _next_key;
 	}
+	_keys = _next_key;
 }
