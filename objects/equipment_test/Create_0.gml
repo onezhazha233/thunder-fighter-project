@@ -3,8 +3,9 @@ event_inherited();
 xscale = 1
 yscale = 1
 plane = plane_agent
-wingman_left = [wingman_quantum_spinblade_cannon]
-wingman_right = [wingman_quantum_spinblade_cannon]
+wingman_left = []
+wingman_right = []
+subweapon = subweapon_test
 
 /*for(i=0;i<8;i+=1){
 	wingman_left[i] = plane_aurora_phantom;

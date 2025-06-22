@@ -81,3 +81,5 @@ Anim_Create(id,"inv_damage",0,0,1,-1,0,30)
 items = []//掉落道具列表，格式为[[[道具0,道具1],权重],[[道具0,道具1],权重]]
 
 last_bullet = noone
+
+tracks = ds_map_create()//被子弹锁定的数量

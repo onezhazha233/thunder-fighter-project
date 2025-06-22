@@ -50,9 +50,9 @@ function CollideEnemy(enemy){
 				if(collision_destroy = true){
 					instance_destroy();
 				}
-				a = instance_create_depth(x+lengthdir_x(len+random_range(0,10)*scale_x,dirr),y+lengthdir_y(len+random_range(0,10)*scale_y,dirr),DEPTH_BATTLE.INSTANCES_UPPER,bullet_effect_xeno);
-				a.image_xscale = scale_x*0.6;
-				a.image_yscale = scale_y*0.6;
+				effect = instance_create_depth(x+lengthdir_x(len+random_range(0,10)*scale_x,dirr),y+lengthdir_y(len+random_range(0,10)*scale_y,dirr),DEPTH_BATTLE.INSTANCES_UPPER,bullet_effect_xeno);
+				effect.image_xscale = scale_x*0.6;
+				effect.image_yscale = scale_y*0.6;
 			}
 		}
 	}

@@ -28,9 +28,9 @@ function CollideEnemy(enemy){
 				instance_destroy();
 			}
 			if!(collision_effect = noone){
-				a = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
-				a.image_xscale = scale_x;
-				a.image_yscale = scale_y;
+				effect = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
+				effect.image_xscale = scale_x;
+				effect.image_yscale = scale_y;
 			}
 		}
 	}
@@ -42,9 +42,9 @@ function CollideEnemy(enemy){
 			instance_destroy();
 		}
 		if!(collision_effect = noone){
-			a = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
-			a.image_xscale = scale_x;
-			a.image_yscale = scale_y;
+			effect = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
+			effect.image_xscale = scale_x;
+			effect.image_yscale = scale_y;
 		}
 	}
 }

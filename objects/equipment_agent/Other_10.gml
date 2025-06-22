@@ -3,22 +3,25 @@ SetWeaponLevel = function(level){
 	weapon_level = level;
 	with(plane_inst){
 		if(instance_exists(bullet_emitter_inst)){
-			bullet_emitter_inst.weapon_level = level;
+			bullet_emitter_inst.SetLevel(level);
 		}
 	}
 	for(i=0;i<array_length(wingman_left);i+=1){
 		with(wingman_left_inst[i]){
 			if(instance_exists(bullet_emitter_inst)){
-				bullet_emitter_inst.weapon_level = level;
+				bullet_emitter_inst.SetLevel(level);
 			}
 		}
 	}
 	for(i=0;i<array_length(wingman_right);i+=1){
 		with(wingman_right_inst[i]){
 			if(instance_exists(bullet_emitter_inst)){
-				bullet_emitter_inst.weapon_level = level;
+				bullet_emitter_inst.SetLevel(level);
 			}
 		}
+	}
+	if(instance_exists(subweapon_inst)){
+		subweapon_inst.SetLevel(level);
 	}
 }
 SetRampage = function(state){//1为开始暴走 0为结束暴走
@@ -45,6 +48,9 @@ SetRampage = function(state){//1为开始暴走 0为结束暴走
 				}
 			}
 		}
+		if(instance_exists(subweapon_inst)){
+			subweapon_inst.SetRampage(true);
+		}
 	}
 	if(state = 0){
 		with(plane_inst){
@@ -68,6 +74,9 @@ SetRampage = function(state){//1为开始暴走 0为结束暴走
 					bullet_emitter_inst.SetRampage(false);
 				}
 			}
+		}
+		if(instance_exists(subweapon_inst)){
+			subweapon_inst.SetRampage(false);
 		}
 	}
 }
@@ -100,5 +109,8 @@ SetPosition = function(xx,yy){
 		plane_inst.image_xscale = xscale;
 		plane_inst.image_yscale = yscale;
 		plane_inst.image_angle = angle;
+	}
+	if(instance_exists(subweapon_inst)){
+		subweapon_inst.SetPosition(xx,yy);
 	}
 }

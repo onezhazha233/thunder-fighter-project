@@ -14,6 +14,9 @@ wingman_left_inst = []
 wingman_right_inst = []
 wingman_x_offset = [130]
 wingman_y_offset = [50]
+
+subweapon = -1
+subweapon_inst = noone
 alarm[0] = 1
 
 event_user(0)

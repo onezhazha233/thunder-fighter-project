@@ -6,4 +6,5 @@ for(i=0;i<array_length(wingman_left_inst);i+=1){
 for(i=0;i<array_length(wingman_right_inst);i+=1){
 	instance_destroy(wingman_right_inst[i]);
 }
+instance_destroy(subweapon_inst)
 layer_sequence_destroy(player_point)

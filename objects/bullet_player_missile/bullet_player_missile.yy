@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"bullet_player_wingman_spinblade_cannon",
+  "%Name":"bullet_player_missile",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"bullet_player_wingman_spinblade_cannon",
+  "name":"bullet_player_missile",
   "overriddenProperties":[],
   "parent":{
-    "name":"spinblade_cannon",
-    "path":"folders/物体/bullet_player/wingman/bullet/spinblade_cannon.yy",
+    "name":"missile",
+    "path":"folders/物体/bullet_player/subweapon/missile.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",
@@ -38,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bullet_player_spinblade_cannon_a",
-    "path":"sprites/spr_bullet_player_spinblade_cannon_a/spr_bullet_player_spinblade_cannon_a.yy",
+    "name":"spr_missile_ab_body",
+    "path":"sprites/spr_missile_ab_body/spr_missile_ab_body.yy",
   },
   "spriteMaskId":null,
   "visible":true,
