@@ -4,7 +4,6 @@ event_inherited();
 if(enabled = true){
 	time -= 1;
 	if(time <= 0)time = 0;
-	damage = 0.46875;
 	if(time > 0){
 		if(rampage = false){
 			damage = 0.96875;
