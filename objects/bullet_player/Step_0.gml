@@ -28,7 +28,6 @@ if(collision_type = COLLISION_TYPE.RECTANGLE){
 		if(rectangle_in_rectangle(enemy_left,enemy_up,enemy_right,enemy_down,bullet_left,bullet_up,bullet_right,bullet_down) > 0){
 			if(collision_type = COLLISION_TYPE.RECTANGLE){
 				other.enemy = id;
-				//last_bullet = other;
 				other.CollideEnemy(id);
 			}
 		}
@@ -37,7 +36,6 @@ if(collision_type = COLLISION_TYPE.RECTANGLE){
 	enemy = collision_rectangle(x-left*scale_x,y-up*scale_y,x+right*scale_x,y+down*scale_y,enemy_agent,1,1);
 	if(instance_exists(enemy)){
 		if(enemy.collision_type = COLLISION_TYPE.SPRITE){
-			//enemy.last_bullet = id;
 			CollideEnemy(enemy);
 		}
 	}
@@ -47,7 +45,6 @@ if(collision_type = COLLISION_TYPE.SPRITE){
 		bullet = collision_rectangle(x-left*image_xscale,y-up*image_yscale,x+right*image_xscale,y+down*image_yscale,other,1,1);
 		if(instance_exists(bullet)){
 			if(collision_type = COLLISION_TYPE.RECTANGLE){
-				//last_bullet = other;
 				other.enemy = id;
 				other.CollideEnemy(id);
 			}
@@ -58,7 +55,6 @@ if(collision_type = COLLISION_TYPE.SPRITE){
 	if(instance_exists(enemy)){
 		if(enemy.inv_collision = false){
 			if(enemy.collision_type = COLLISION_TYPE.SPRITE){
-				//enemy.last_bullet = id;
 				CollideEnemy(enemy);
 			}
 		}

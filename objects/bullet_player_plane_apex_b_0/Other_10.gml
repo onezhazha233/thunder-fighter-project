@@ -1,2 +1,2 @@
 live;
-enemy.hp -= damage
+HurtEnemy()

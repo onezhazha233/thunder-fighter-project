@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"tungsten_and_depleted_uranium_armor_piercer",
-    "path":"folders/精灵/bullet_player/subweapon/armor_piercer/tungsten_and_depleted_uranium_armor_piercer.yy",
+    "name":"armor_piercer",
+    "path":"folders/精灵/bullet_player/subweapon/armor_piercer.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

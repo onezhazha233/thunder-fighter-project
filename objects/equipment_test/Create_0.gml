@@ -2,10 +2,10 @@ event_inherited();
 
 xscale = 1
 yscale = 1
-plane = plane_thunder_assault
-wingman_left = [wingman_scatter_shotcannon]
-wingman_right = [wingman_scatter_shotcannon]
-subweapon = subweapon_missile_d
+plane = plane_agent
+wingman_left = []
+wingman_right = []
+subweapon = subweapon_armor_piercer
 
 /*for(i=0;i<8;i+=1){
 	wingman_left[i] = plane_aurora_phantom;

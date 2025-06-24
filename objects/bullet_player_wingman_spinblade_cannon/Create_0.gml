@@ -40,20 +40,15 @@ layer_script_end(ll, scrEnd);
 damage = 1
 
 function CollideEnemy(enemy){
-	if(damage_type = 1){
-		if!(ds_map_exists(collision_enemy,enemy)){
-			if(instance_exists(enemy)){
-				ds_map_add(collision_enemy,enemy,damage_interval);
-				enemy.last_bullet = id;
-				if(enemy.inv_damage = false)event_user(0);
-				enemy.Hurt();
-				if(collision_destroy = true){
-					instance_destroy();
-				}
-				effect = instance_create_depth(x+lengthdir_x(len+random_range(0,10)*scale_x,dirr),y+lengthdir_y(len+random_range(0,10)*scale_y,dirr),DEPTH_BATTLE.INSTANCES_UPPER,bullet_effect_xeno);
-				effect.image_xscale = scale_x*0.6;
-				effect.image_yscale = scale_y*0.6;
-			}
+	if!(ds_map_exists(collision_enemy,enemy)){
+		if(instance_exists(enemy)){
+			ds_map_add(collision_enemy,enemy,damage_interval);
+			enemy.last_bullet = id;
+			event_user(0);
+			enemy.Hurt();
+			effect = instance_create_depth(x+lengthdir_x(len+random_range(0,10)*scale_x,dirr),y+lengthdir_y(len+random_range(0,10)*scale_y,dirr),DEPTH_BATTLE.INSTANCES_UPPER,bullet_effect_xeno);
+			effect.image_xscale = scale_x*0.6;
+			effect.image_yscale = scale_y*0.6;
 		}
 	}
 }

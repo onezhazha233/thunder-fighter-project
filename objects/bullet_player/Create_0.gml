@@ -22,7 +22,7 @@ function CollideEnemy(enemy){
 		if!(ds_map_exists(collision_enemy,enemy)){
 			ds_map_add(collision_enemy,enemy,damage_interval);
 			enemy.last_bullet = id;
-			if(enemy.inv_damage = false)event_user(0);
+			event_user(0);
 			enemy.Hurt();
 			if(collision_destroy = true){
 				instance_destroy();
@@ -36,7 +36,7 @@ function CollideEnemy(enemy){
 	}
 	else{
 		enemy.last_bullet = id;
-		if(enemy.inv_damage = false)event_user(0);
+		event_user(0);
 		enemy.Hurt();
 		if(collision_destroy = true){
 			instance_destroy();
@@ -47,4 +47,8 @@ function CollideEnemy(enemy){
 			effect.image_yscale = scale_y;
 		}
 	}
+}
+
+function HurtEnemy(){
+	if(enemy.inv_damage = false)enemy.hp -= damage;
 }

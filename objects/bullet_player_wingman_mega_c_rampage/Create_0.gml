@@ -26,6 +26,7 @@ Anim_Create(id,"image_index",0,0,1,-1,0,6)
 alarm[1] = 6
 
 function CollideEnemy(enemy){
-	if(enemy.inv_damage = false)event_user(0);
+	enemy.last_bullet = id;
+	event_user(0);
 	enemy.Hurt();
 }
