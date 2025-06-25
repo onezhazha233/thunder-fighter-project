@@ -416,7 +416,7 @@
       ],"traits":0,},
     {"$GMGraphicTrack":"","%Name":"spr_bullet_effect_armor_piercer_a_flow","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_bullet_effect_armor_piercer_a_flow","path":"sprites/spr_bullet_effect_armor_piercer_a_flow/spr_bullet_effect_armor_piercer_a_flow.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_bullet_effect_armor_piercer_abcd_flow","path":"sprites/spr_bullet_effect_armor_piercer_abcd_flow/spr_bullet_effect_armor_piercer_abcd_flow.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
             },"Disabled":false,"id":"38e1fd07-e51f-4778-b896-a1a1dbd328f0","IsCreationKey":false,"Key":0.0,"Length":4.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_bullet_effect_armor_piercer_a_flow","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4282970778,"tracks":[
         {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[

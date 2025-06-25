@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"tracking_and_radar_missile",
-    "path":"folders/精灵/bullet_player/subweapon/missile/tracking_and_radar_missile.yy",
+    "name":"missile",
+    "path":"folders/精灵/bullet_player/subweapon/missile.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -23,8 +23,8 @@ function CollideEnemy(enemy){
 		enemy.last_bullet = id;
 		event_user(0);
 		enemy.Hurt();
-		a = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
-		a.image_xscale = scale_x*1.5;
-		a.image_yscale = scale_y*1.5;
+		effect = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
+		effect.image_xscale = scale_x*1.5;
+		effect.image_yscale = scale_y*1.5;
 	}
 }

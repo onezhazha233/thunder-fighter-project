@@ -26,8 +26,8 @@
   },
   "name":"seq_missile_ab",
   "parent":{
-    "name":"tracking_and_radar_missile",
-    "path":"folders/序列/subweapon/missile/tracking_and_radar_missile.yy",
+    "name":"missile",
+    "path":"folders/序列/bullet_player/subweapon/missile.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

@@ -15,8 +15,8 @@ function CollideEnemy(enemy){
 	event_user(0);
 	enemy.Hurt();
 	instance_destroy();
-	a = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
-	a.sequence = collision_effect_sequence;
-	a.image_xscale = scale_x;
-	a.image_yscale = scale_y;
+	effect = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
+	effect.sequence = collision_effect_sequence;
+	effect.image_xscale = scale_x;
+	effect.image_yscale = scale_y;
 }

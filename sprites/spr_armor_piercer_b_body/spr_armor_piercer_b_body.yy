@@ -23,7 +23,7 @@
   ],
   "name":"spr_armor_piercer_b_body",
   "nineSlice":null,
-  "origin":9,
+  "origin":4,
   "parent":{
     "name":"alloy_armor_piercer",
     "path":"folders/精灵/bullet_player/subweapon/armor_piercer/alloy_armor_piercer.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":12,
-    "yorigin":43,
+    "yorigin":34,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

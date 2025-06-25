@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_armor_piercer_cd_flame_1",
   "bboxMode":0,
-  "bbox_bottom":79,
+  "bbox_bottom":67,
   "bbox_left":0,
-  "bbox_right":25,
+  "bbox_right":26,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":80,
+  "height":68,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"3006bea3-f8b6-432f-aed7-c4cd79735b3a","blendMode":0,"displayName":"default","isLocked":false,"name":"3006bea3-f8b6-432f-aed7-c4cd79735b3a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":26,
+  "width":27,
 }

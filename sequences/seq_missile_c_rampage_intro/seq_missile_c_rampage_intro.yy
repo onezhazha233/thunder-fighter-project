@@ -27,7 +27,7 @@
   "name":"seq_missile_c_rampage_intro",
   "parent":{
     "name":"ballistic_missile",
-    "path":"folders/序列/subweapon/missile/ballistic_missile.yy",
+    "path":"folders/序列/bullet_player/subweapon/missile/ballistic_missile.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

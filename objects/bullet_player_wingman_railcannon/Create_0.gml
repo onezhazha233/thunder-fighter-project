@@ -21,9 +21,9 @@ function CollideEnemy(enemy){
 		enemy.last_bullet = id;
 		event_user(0);
 		enemy.Hurt();
-		a = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
-		a.sequence = collision_effect_sequence;
-		a.image_xscale = scale_x*(rampage = true ? 1.5 : 1);
-		a.image_yscale = scale_y*(rampage = true ? 1.5 : 1);
+		effect = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
+		effect.sequence = collision_effect_sequence;
+		effect.image_xscale = scale_x*(rampage = true ? 1.5 : 1);
+		effect.image_yscale = scale_y*(rampage = true ? 1.5 : 1);
 	}
 }
