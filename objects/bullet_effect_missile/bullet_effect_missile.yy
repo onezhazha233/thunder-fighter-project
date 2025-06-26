@@ -10,8 +10,8 @@
   "name":"bullet_effect_missile",
   "overriddenProperties":[],
   "parent":{
-    "name":"effect",
-    "path":"folders/物体/effect.yy",
+    "name":"subweapon",
+    "path":"folders/物体/effect/bullet_player/subweapon.yy",
   },
   "parentObjectId":null,
   "persistent":false,

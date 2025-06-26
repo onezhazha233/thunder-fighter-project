@@ -10,8 +10,8 @@
   "name":"bullet_effect_lightning",
   "overriddenProperties":[],
   "parent":{
-    "name":"lightning",
-    "path":"folders/物体/bullet_player/subweapon/lightning.yy",
+    "name":"subweapon",
+    "path":"folders/物体/effect/bullet_player/subweapon.yy",
   },
   "parentObjectId":null,
   "persistent":false,

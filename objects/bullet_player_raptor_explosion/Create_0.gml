@@ -12,3 +12,5 @@ damage = 0.25
 damage_type = 1
 damage_interval = 999
 collision_destroy = false
+
+alarm[1] = 1

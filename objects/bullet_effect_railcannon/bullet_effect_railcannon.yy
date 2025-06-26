@@ -10,8 +10,8 @@
   "name":"bullet_effect_railcannon",
   "overriddenProperties":[],
   "parent":{
-    "name":"effect",
-    "path":"folders/物体/effect.yy",
+    "name":"wingman",
+    "path":"folders/物体/effect/bullet_player/wingman.yy",
   },
   "parentObjectId":null,
   "persistent":false,

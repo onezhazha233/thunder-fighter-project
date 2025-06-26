@@ -10,8 +10,8 @@
   "name":"bullet_effect_xeno",
   "overriddenProperties":[],
   "parent":{
-    "name":"effect",
-    "path":"folders/物体/effect.yy",
+    "name":"plane",
+    "path":"folders/物体/effect/bullet_player/plane.yy",
   },
   "parentObjectId":null,
   "persistent":false,

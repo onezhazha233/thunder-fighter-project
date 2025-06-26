@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_lightning_circle",
-    "path":"sprites/spr_lightning_circle/spr_lightning_circle.yy",
+    "name":"spr_lightning_abcd_circle",
+    "path":"sprites/spr_lightning_abcd_circle/spr_lightning_abcd_circle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

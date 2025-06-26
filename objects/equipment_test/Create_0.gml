@@ -5,7 +5,7 @@ yscale = 1
 plane = plane_agent
 wingman_left = []
 wingman_right = []
-subweapon = subweapon_lightning_ball
+subweapon = subweapon_spherical_lightning
 
 /*for(i=0;i<8;i+=1){
 	wingman_left[i] = plane_aurora_phantom;
