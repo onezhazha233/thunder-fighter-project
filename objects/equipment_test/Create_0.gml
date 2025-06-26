@@ -2,9 +2,9 @@ event_inherited();
 
 xscale = 1
 yscale = 1
-plane = plane_agent
-wingman_left = []
-wingman_right = []
+plane = plane_blaze_phoenix
+wingman_left = [wingman_hyper_speed_gatling]
+wingman_right = [wingman_hyper_speed_gatling]
 subweapon = subweapon_lightning_nova
 
 /*for(i=0;i<8;i+=1){
