@@ -1,18 +1,18 @@
 live;
-damage = 5.167/4*3
+damage = 5.167/5*3
 
 if(bb = false){
-	angle = 0;
+	angle = -90;
 }
 else{
-	angle = 45;
+	angle = 90;
 }
 bb = !bb
 
-for(i=0;i<4;i+=1){
-	a = MakePlayerBullet(x,y,bullet_player_lightning,seq_lightning_b);
+for(i=0;i<5;i+=1){
+	a = MakePlayerBullet(x,y,bullet_player_lightning,seq_lightning_cd);
 	layer_sequence_angle(a.bullet_sequence,angle-90);
-	a.collision_effect_sequence = seq_bullet_effect_lightning_b;
+	a.collision_effect_sequence = seq_bullet_effect_lightning_cd;
 	a.dir = angle;
 	a.direction = angle;
 	a.image_angle = angle - 90;
@@ -20,5 +20,5 @@ for(i=0;i<4;i+=1){
 	a.track_inst = find_priority_enemy(bullet_player_lightning);
 	a.damage = damage;
 	a.rampage = true;
-	angle += 90;
+	angle += 72;
 }
