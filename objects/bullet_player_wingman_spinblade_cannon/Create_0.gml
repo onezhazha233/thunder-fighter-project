@@ -1,6 +1,8 @@
 live;
 event_inherited();
 
+collision_type = COLLISION_TYPE.SPRITE
+
 mode = 0//0为开始动画 1为未展开 2为展开中 3为已展开 4为消失
 idle = seq_bullet_player_spinblade_cannon_a
 edge_intro = seq_bullet_player_spinblade_cannon_a_edge_intro
@@ -39,7 +41,25 @@ layer_script_end(ll, scrEnd);
 
 damage = 1
 
-function CollideEnemy(enemy){
+function CollideEnemies(){
+	for(i=0;i<ds_list_size(enemy_list);i+=1){
+		enemy = enemy_list[|i];
+		if(instance_exists(enemy)){
+			if(enemy.inv_collision = false){
+				if(enemy.collision_type = COLLISION_TYPE.SPRITE){
+					dirr = point_direction(x,y,enemy_list[|i].x,enemy_list[|i].y);
+					find = laser_find(x,y,dirr,range*scale_x,enemy_list[|i],1,1);
+					len = find[0];
+					enemy = find[1];
+					CollideSingleEnemy(enemy);
+				}
+			}
+		}
+	}
+	ds_list_clear(enemy_list);
+}
+
+function CollideSingleEnemy(enemy){
 	if!(ds_map_exists(collision_enemy,enemy)){
 		if(instance_exists(enemy)){
 			ds_map_add(collision_enemy,enemy,damage_interval);

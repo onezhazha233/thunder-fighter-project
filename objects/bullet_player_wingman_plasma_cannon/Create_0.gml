@@ -1,6 +1,11 @@
 live;
 event_inherited();
 
+up = 1500
+left = 0.5
+right = 0.5
+down = 0
+
 collision_destroy = false
 
 ll = layer_create(depth)
@@ -18,5 +23,5 @@ layer_script_begin(ll, scrBegin);
 layer_script_end(ll, scrEnd);
 
 damage = 1
-
-alarm[1] = 1
+damage_type = 1
+damage_interval = 999

@@ -1,16 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"bullet_player_plane_raptor_b",
+  "%Name":"bullet_player_plane_raptor",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"bullet_player_plane_raptor_b",
+  "name":"bullet_player_plane_raptor",
   "overriddenProperties":[],
   "parent":{
-    "name":"gale_eagle",
-    "path":"folders/物体/bullet_player/plane/bullet/raptor/gale_eagle.yy",
+    "name":"raptor",
+    "path":"folders/物体/bullet_player/plane/bullet/raptor.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",
@@ -34,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bullet_player_raptor_b",
-    "path":"sprites/spr_bullet_player_raptor_b/spr_bullet_player_raptor_b.yy",
+    "name":"spr_bullet_player_raptor_a",
+    "path":"sprites/spr_bullet_player_raptor_a/spr_bullet_player_raptor_a.yy",
   },
   "spriteMaskId":null,
   "visible":true,

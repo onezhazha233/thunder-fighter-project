@@ -17,16 +17,32 @@ damage_type = 0//0为帧伤 1为碰到敌人后对该敌人失效一段时间
 collision_enemy = ds_map_create()
 damage_interval = 1//无效时间间隔
 
-function CollideEnemy(enemy){
+enemy_list = ds_list_create()
+
+function CollideEnemies(){
+	for(i=0;i<ds_list_size(enemy_list);i+=1){
+		enemy = enemy_list[|i];
+		if(instance_exists(enemy)){
+			if(enemy.inv_collision = false){
+				if(enemy.collision_type = COLLISION_TYPE.SPRITE){
+					CollideSingleEnemy(enemy);
+				}
+			}
+		}
+	}
+	ds_list_clear(enemy_list);
+	if(collision_destroy = true){
+		instance_destroy();
+	}
+}
+
+function CollideSingleEnemy(enemy){
 	if(damage_type = 1){
 		if!(ds_map_exists(collision_enemy,enemy)){
 			ds_map_add(collision_enemy,enemy,damage_interval);
 			enemy.last_bullet = id;
 			event_user(0);
 			enemy.Hurt();
-			if(collision_destroy = true){
-				instance_destroy();
-			}
 			if!(collision_effect = noone){
 				effect = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
 				effect.image_xscale = scale_x;
@@ -38,9 +54,6 @@ function CollideEnemy(enemy){
 		enemy.last_bullet = id;
 		event_user(0);
 		enemy.Hurt();
-		if(collision_destroy = true){
-			instance_destroy();
-		}
 		if!(collision_effect = noone){
 			effect = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
 			effect.image_xscale = scale_x;

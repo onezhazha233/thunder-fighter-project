@@ -1,7 +1,5 @@
 live;
-event_inherited()
-
-/*if(damage_type = 1){
+if(damage_type = 1){
 	var _keys = ds_map_find_first(collision_enemy);
 	while (!is_undefined(_keys)) {
 	    var _time = ds_map_find_value(collision_enemy, _keys) - 1;
@@ -16,7 +14,9 @@ event_inherited()
 	}
 }
 
-enemy_num = collision_circle_list(x,y,25*image_xscale,enemy_agent,1,1,enemy_list,0);
-if(enemy_num > 0){
-	CollideEnemies();
+if(collision_type = COLLISION_TYPE.SPRITE){
+	enemy = instance_place(x,y,enemy_agent);
+	if(instance_exists(enemy)){
+		CollideSingleEnemy(enemy);
+	}
 }
