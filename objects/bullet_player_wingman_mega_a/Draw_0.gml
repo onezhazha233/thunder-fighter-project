@@ -19,7 +19,7 @@ draw_surface_general(surf,0,0,sprite_get_width(start_sprite),length,xx,yy,scale_
 if(instance_exists(find[1])){
 	enemy = find[1];
 	enemy.last_bullet = id;
-	CollideEnemy(enemy);
+	CollideSingleEnemy(enemy);
 	ex = x + lengthdir_x(length,image_angle+90);
 	ey = y + lengthdir_y(length,image_angle+90);
 	draw_sprite_ext(spr_bullet_effect_mega,0,ex,ey,image_xscale*scale_x*choose(1,-1)/0.8,image_yscale*scale_y*image_xscale/0.8,choose(0,180),-1,image_alpha);

@@ -4,7 +4,7 @@ event_inherited();
 collision_type = COLLISION_TYPE.SPRITE
 
 collision_effect = bullet_player_lightning_explosion
-collision_effect_sequence = seq_bullet_effect_lightning_a
+collision_effect_sequence = seq_lightning_a_explosion
 
 track_inst = noone
 

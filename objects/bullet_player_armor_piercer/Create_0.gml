@@ -14,7 +14,7 @@ damage_type = 0
 ospd = 0
 time = random(5)
 
-function CollideEnemy(enemy){
+function CollideSingleEnemy(enemy){
 	enemy.last_bullet = id;
 	event_user(0);
 	enemy.Hurt();

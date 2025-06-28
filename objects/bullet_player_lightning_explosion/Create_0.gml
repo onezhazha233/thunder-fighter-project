@@ -16,7 +16,7 @@ layer_script_end("effects", scrEnd);
 
 seq = -1
 
-sequence = seq_bullet_effect_lightning_a
+sequence = seq_lightning_a_explosion
 
 alarm[1] = 1
 

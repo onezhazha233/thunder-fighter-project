@@ -38,7 +38,7 @@ if(rampage = false){
 
 if(instance_exists(find[1])){
 	enemy = find[1];
-	CollideEnemy(enemy);
+	CollideSingleEnemy(enemy);
 	if(rampage = false){
 		effect_xscale = (1.865 + 0.035 * sin(fire_image*4));
 		effect_yscale = (1.95 + 0.12 * sin(fire_image*4));

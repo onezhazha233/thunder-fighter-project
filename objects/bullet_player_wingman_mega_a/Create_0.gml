@@ -28,7 +28,7 @@ Anim_Create(id,"image_index",0,0,1,1,0,16)
 
 alarm[1] = 22
 
-function CollideEnemy(enemy){
+function CollideSingleEnemy(enemy){
 	enemy.last_bullet = id;
 	event_user(0);
 	enemy.Hurt();

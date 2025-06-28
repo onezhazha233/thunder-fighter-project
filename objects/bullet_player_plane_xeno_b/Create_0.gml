@@ -13,7 +13,7 @@ collision_effect = bullet_effect_xeno
 
 damage = 0.125
 
-function CollideEnemy(enemy){
+function CollideSingleEnemy(enemy){
 	if!(ds_map_exists(collision_enemy,enemy)){
 		ds_map_add(collision_enemy,enemy,damage_interval);
 		enemy.last_bullet = id;

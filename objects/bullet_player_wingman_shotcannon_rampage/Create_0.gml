@@ -11,7 +11,7 @@ vspeed = -45
 
 damage = 1
 
-function CollideEnemy(enemy){
+function CollideSingleEnemy(enemy){
 	enemy.last_bullet = id;
 	event_user(0);
 	enemy.Hurt();
