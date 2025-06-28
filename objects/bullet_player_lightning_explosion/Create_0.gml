@@ -1,4 +1,6 @@
 live;
+event_inherited()
+
 var scrBegin = function () {
 	if (event_number != ev_draw_normal) return;
 	gpu_set_blendmode(bm_add);
@@ -16,4 +18,9 @@ seq = -1
 
 sequence = seq_bullet_effect_lightning_a
 
-alarm[0] = 1
+alarm[1] = 1
+
+damage = 1
+damage_type = 1
+damage_interval = 999
+collision_destroy = false

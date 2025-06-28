@@ -1,18 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"bullet_player_raptor_explosion",
+  "%Name":"bullet_player_lightning_explosion",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"bullet_player_raptor_explosion",
+  "name":"bullet_player_lightning_explosion",
   "overriddenProperties":[],
   "parent":{
-    "name":"raptor",
-    "path":"folders/物体/bullet_player/plane/bullet/raptor.yy",
+    "name":"lightning",
+    "path":"folders/物体/bullet_player/subweapon/lightning.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",
@@ -36,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bullet_effect_raptor",
-    "path":"sprites/spr_bullet_effect_raptor/spr_bullet_effect_raptor.yy",
+    "name":"spr_lightning_abcd_circle",
+    "path":"sprites/spr_lightning_abcd_circle/spr_lightning_abcd_circle.yy",
   },
   "spriteMaskId":null,
   "visible":true,
