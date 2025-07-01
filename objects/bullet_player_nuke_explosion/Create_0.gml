@@ -27,3 +27,5 @@ collision_destroy = false
 
 duration = 10
 radius = 80
+
+dir = 0

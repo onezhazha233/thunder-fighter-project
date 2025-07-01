@@ -38,6 +38,8 @@ if(instance_exists(find[1])){
 		a.slash_sequence = seq_bullet_player_blade_a_slash;
 		a.slash_rampage_sequence = seq_bullet_player_blade_a_slash_rampage;
 		a.point_sprite = spr_bullet_player_blade_a_slash_point;
+		a.scale_x = scale_x;
+		a.scale_y = scale_y;
 		a.image_angle = dir;
 		a.rampage = rampage;
 		a.damage = slash_damage;
@@ -50,8 +52,8 @@ if(edge_attack_sequence_enabled = true){
 	if(layer_sequence_exists(layer_edge,edge_attack_sequence)){
 		layer_sequence_x(edge_attack_sequence,edge_x);
 		layer_sequence_y(edge_attack_sequence,edge_y);
-		layer_sequence_xscale(edge_attack_sequence,image_xscale);
-		layer_sequence_yscale(edge_attack_sequence,image_yscale);
+		layer_sequence_xscale(edge_attack_sequence,image_xscale*scale_x);
+		layer_sequence_yscale(edge_attack_sequence,image_yscale*scale_y);
 		layer_sequence_angle(edge_attack_sequence,image_angle-90);
 	}
 }

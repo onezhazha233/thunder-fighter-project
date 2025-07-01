@@ -2,8 +2,8 @@ event_inherited();
 
 xscale = 1
 yscale = 1
-plane = plane_agent
-wingman_left = [wingman_doom_guardian]
+plane = plane_ghost_xeno
+wingman_left = []
 wingman_right = []
 //subweapon = subweapon_fusion_nuke
 

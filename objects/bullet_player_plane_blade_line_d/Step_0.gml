@@ -6,7 +6,7 @@ if(edge_cd = 0){
 	if!(instance_exists(edge_sequence)){
 		if(edge_sequence_enabled = true){
 			edge_sequence = instance_create_depth(edge_x,edge_y,0,bullet_player_plane_blade_edge);
-			edge_sequence.edge_xscale = edge_xscale;
+			edge_sequence.edge_xscale = edge_xscale*scale_x;
 			edge_sequence.bullet_sequence = layer_sequence_create(edge_sequence.ll,edge_x,edge_y,seq_bullet_player_blade_d_edge);
 			if!(array_contains(emitter_plane_blade_d.follow_inst,edge_sequence)){
 				array_push(emitter_plane_blade_d.follow_inst,edge_sequence);
