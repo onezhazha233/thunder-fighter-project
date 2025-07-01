@@ -6,6 +6,8 @@ a.idle = seq_nuke_b_rampage
 a.collision_effect_sequence = seq_nuke_b_explosion
 a.collision_effect_duration = 12;
 a.collision_effect_radius = 100;
+a.scale_x = scale_x
+a.scale_y = scale_y
 a.hspeed = 34/3
 a.damage = damage
 Anim_Create(a,"hspeed",0,0,a.hspeed,2-a.hspeed,27)
@@ -18,6 +20,8 @@ a.idle = seq_nuke_b_rampage
 a.collision_effect_sequence = seq_nuke_b_explosion
 a.collision_effect_duration = 12;
 a.collision_effect_radius = 100;
+a.scale_x = -scale_x
+a.scale_y = scale_y
 a.hspeed = -34/3
 a.damage = damage
 Anim_Create(a,"hspeed",0,0,a.hspeed,-2-a.hspeed,27)

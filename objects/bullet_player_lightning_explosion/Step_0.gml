@@ -14,7 +14,7 @@ if(damage_type = 1){
 	}
 }
 
-enemy_num = collision_circle_list(x,y,100,enemy_agent,1,1,enemy_list,false);
+enemy_num = collision_circle_list(x,y,100*image_xscale,enemy_agent,1,1,enemy_list,false);
 if(enemy_num > 0){
 	CollideEnemies();
 }

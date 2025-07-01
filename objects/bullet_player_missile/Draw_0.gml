@@ -1,4 +1,7 @@
 live;
+image_xscale = scale_x
+image_yscale = scale_y
+
 if(instance_exists(track_inst)){
 	target_angle = point_direction(x,y,track_inst.x,track_inst.y);
 	direction += angle_difference(target_angle,direction)*rot_rate;

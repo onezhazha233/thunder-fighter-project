@@ -1,4 +1,7 @@
 live;
+image_xscale = scale_x
+image_yscale = scale_y
+
 if(instance_exists(track_inst)&&acceleration < 0.9+rampage){
 	dir = point_direction(x,y,track_inst.x,track_inst.y);
 }
