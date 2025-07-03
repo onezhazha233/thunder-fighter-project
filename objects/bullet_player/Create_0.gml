@@ -17,6 +17,7 @@ damage_type = 0//0为帧伤 1为碰到敌人后对该敌人失效一段时间
 collision_enemy = ds_map_create()
 damage_interval = 1//无效时间间隔
 
+collision_single = true
 enemy_list = ds_list_create()
 
 function CollideEnemies(){

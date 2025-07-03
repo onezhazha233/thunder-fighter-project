@@ -14,11 +14,12 @@ rot_rate = 0
 
 speed = 3
 
+collision_single = true
+
 function CollideSingleEnemy(enemy){
 	enemy.last_bullet = id;
 	event_user(0);
 	enemy.Hurt();
-	instance_destroy();
 	effect = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
 	effect.sequence = collision_effect_sequence;
 	effect.image_xscale = scale_x;

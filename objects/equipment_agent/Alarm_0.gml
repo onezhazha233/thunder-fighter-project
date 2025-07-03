@@ -23,5 +23,5 @@ if(player_point_enabled = true){
 	player_point = layer_sequence_create("instances_upper",x,y,seq_player_point);
 }
 if!(subweapon = -1){
-	subweapon_inst = instance_create_depth(x,y,depth,subweapon);
+	subweapon_inst = instance_create_depth(x,y,DEPTH_BATTLE.BULLETS_PLAYER,subweapon);
 }

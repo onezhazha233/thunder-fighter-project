@@ -13,15 +13,39 @@ if(damage_type = 1){
 	}
 }
 
-if(collision_type = COLLISION_TYPE.RECTANGLE){
-	enemy_num = collision_rectangle_list(x-left*scale_x,y-up*scale_y,x+right*scale_x,y+down*scale_y,enemy_agent,1,1,enemy_list,false);
-	if(enemy_num > 0){
-		CollideEnemies();
+if(collision_single = true){
+	if(collision_type = COLLISION_TYPE.RECTANGLE){
+		enemy_num = collision_rectangle_list(x-left*scale_x,y-up*scale_y,x+right*scale_x,y+down*scale_y,enemy_agent,1,1,enemy_list,false);
+		if(enemy_num > 0){
+			CollideEnemies();
+		}
+	}
+	if(collision_type = COLLISION_TYPE.SPRITE){
+		enemy_num = instance_place_list(x,y,enemy_agent,enemy_list,false);
+		if(enemy_num > 0){
+			CollideEnemies();
+		}
 	}
 }
-if(collision_type = COLLISION_TYPE.SPRITE){
-	enemy_num = instance_place_list(x,y,enemy_agent,enemy_list,false);
-	if(enemy_num > 0){
-		CollideEnemies();
+else{
+	if(collision_type = COLLISION_TYPE.RECTANGLE){
+		enemy = collision_rectangle(x-left*scale_x,y-up*scale_y,x+right*scale_x,y+down*scale_y,enemy_agent,1,1);
+		if(instance_exists(enemy)){
+			if(enemy.inv_collision = false){
+				if(enemy.collision_type = COLLISION_TYPE.SPRITE){
+					CollideSingleEnemy(enemy);
+				}
+			}
+		}
+	}
+	if(collision_type = COLLISION_TYPE.SPRITE){
+		enemy = instance_place(x,y,enemy_agent);
+		if(instance_exists(enemy)){
+			if(enemy.inv_collision = false){
+				if(enemy.collision_type = COLLISION_TYPE.SPRITE){
+					CollideSingleEnemy(enemy);
+				}
+			}
+		}
 	}
 }

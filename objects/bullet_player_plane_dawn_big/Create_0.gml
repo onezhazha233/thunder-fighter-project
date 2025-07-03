@@ -11,11 +11,12 @@ image_xscale = 0.7
 image_yscale = 0.3
 image_alpha = 0.5
 
+collision_single = true
+
 function CollideSingleEnemy(enemy){
 	enemy.last_bullet = id;
 	event_user(0);
 	enemy.Hurt();
-	instance_destroy();
 	effect = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
 	effect.sequence = collision_effect_sequence;
 	effect.image_xscale = scale_x*1.5;
