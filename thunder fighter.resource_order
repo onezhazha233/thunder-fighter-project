@@ -484,6 +484,7 @@
     {"name":"battle_warning_boss_slash_creator","order":1,"path":"objects/battle_warning_boss_slash_creator/battle_warning_boss_slash_creator.yy",},
     {"name":"battle_warning_boss_text_small","order":2,"path":"objects/battle_warning_boss_text_small/battle_warning_boss_text_small.yy",},
     {"name":"battle_warning_boss_textbar","order":3,"path":"objects/battle_warning_boss_textbar/battle_warning_boss_textbar.yy",},
+    {"name":"battle_warning_boss","order":4,"path":"objects/battle_warning_boss/battle_warning_boss.yy",},
     {"name":"battle_wave_manager","order":2,"path":"objects/battle_wave_manager/battle_wave_manager.yy",},
     {"name":"boss_agent","order":4,"path":"objects/boss_agent/boss_agent.yy",},
     {"name":"boss_test_0","order":5,"path":"objects/boss_test_0/boss_test_0.yy",},

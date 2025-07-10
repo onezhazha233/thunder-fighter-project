@@ -28,3 +28,5 @@ time = 0
 name = ""
 
 move_start_duration = 60
+
+items = [[[battle_item_quantum_shield,battle_item_weapon_upgrade],1]]

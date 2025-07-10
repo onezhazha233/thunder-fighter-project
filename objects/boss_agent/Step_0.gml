@@ -6,6 +6,7 @@ if!(depth_previous = depth){
 }
 
 if(hp <= 0){
+	CreateItem();
 	instance_destroy();
 	if!(object_exists(next_boss)){
 		if!(die_sequence = -1){

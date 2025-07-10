@@ -1,22 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"boss_test_0",
+  "%Name":"battle_warning_boss",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"boss_test_0",
+  "name":"battle_warning_boss",
   "overriddenProperties":[],
   "parent":{
-    "name":"enemy",
-    "path":"folders/物体/enemy.yy",
+    "name":"warning_boss",
+    "path":"folders/物体/ui/warning_boss.yy",
   },
-  "parentObjectId":{
-    "name":"boss_agent",
-    "path":"objects/boss_agent/boss_agent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

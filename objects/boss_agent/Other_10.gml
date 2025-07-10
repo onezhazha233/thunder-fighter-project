@@ -1,53 +1,51 @@
 live;
 SetState = function(s){
 	state = s;
-	if(display_mode = 1){
-		if(s = 0){
-			SetFlame(flame_lower_pre,flame_upper_pre);
-			if(pre_mode = 0){
-				layer_sequence_destroy(enemy_sequence);
-				enemy_sequence = layer_sequence_create(le,x,y,intro_sequence);
-				layer_sequence_xscale(enemy_sequence,image_xscale);
-				layer_sequence_yscale(enemy_sequence,image_yscale);
-				layer_sequence_speedscale(enemy_sequence,0);
-				layer_sequence_headpos(enemy_sequence,0);
-			}
-			if(pre_mode = 1){
-				layer_sequence_destroy(enemy_sequence);
-				enemy_sequence = layer_sequence_create(le,x,y,pre_sequence);
-				layer_sequence_xscale(enemy_sequence,image_xscale);
-				layer_sequence_yscale(enemy_sequence,image_yscale);
-			}
-		}
-		if(s = 1){
-			layer_sequence_destroy(flame_lower_sequence);
-			layer_sequence_destroy(flame_upper_sequence);
+	if(s = 0){
+		SetFlame(flame_lower_pre,flame_upper_pre);
+		if(pre_mode = 0){
 			layer_sequence_destroy(enemy_sequence);
 			enemy_sequence = layer_sequence_create(le,x,y,intro_sequence);
 			layer_sequence_xscale(enemy_sequence,image_xscale);
 			layer_sequence_yscale(enemy_sequence,image_yscale);
+			layer_sequence_speedscale(enemy_sequence,0);
+			layer_sequence_headpos(enemy_sequence,0);
 		}
-		if(s = 2){
-			start = 1;
-			if(instance_exists(bullet_emitter_inst)){
-				bullet_emitter_inst.enabled = true;
-			}
-			inv_collision = false;
-			SetFlame(flame_lower,flame_upper);
-			if(idle_mode = 0){
-				layer_sequence_destroy(enemy_sequence);
-				enemy_sequence = layer_sequence_create(le,x,y,intro_sequence);
-				layer_sequence_xscale(enemy_sequence,image_xscale);
-				layer_sequence_yscale(enemy_sequence,image_yscale);
-				layer_sequence_speedscale(enemy_sequence,0);
-				layer_sequence_headpos(enemy_sequence,layer_sequence_get_length(enemy_sequence));
-			}
-			if(idle_mode = 1){
-				layer_sequence_destroy(enemy_sequence);
-				enemy_sequence = layer_sequence_create(le,x,y,idle_sequence);
-				layer_sequence_xscale(enemy_sequence,image_xscale);
-				layer_sequence_yscale(enemy_sequence,image_yscale);
-			}
+		if(pre_mode = 1){
+			layer_sequence_destroy(enemy_sequence);
+			enemy_sequence = layer_sequence_create(le,x,y,pre_sequence);
+			layer_sequence_xscale(enemy_sequence,image_xscale);
+			layer_sequence_yscale(enemy_sequence,image_yscale);
+		}
+	}
+	if(s = 1){
+		layer_sequence_destroy(flame_lower_sequence);
+		layer_sequence_destroy(flame_upper_sequence);
+		layer_sequence_destroy(enemy_sequence);
+		enemy_sequence = layer_sequence_create(le,x,y,intro_sequence);
+		layer_sequence_xscale(enemy_sequence,image_xscale);
+		layer_sequence_yscale(enemy_sequence,image_yscale);
+	}
+	if(s = 2){
+		start = 1;
+		if(instance_exists(bullet_emitter_inst)){
+			bullet_emitter_inst.enabled = true;
+		}
+		inv_collision = false;
+		SetFlame(flame_lower,flame_upper);
+		if(idle_mode = 0){
+			layer_sequence_destroy(enemy_sequence);
+			enemy_sequence = layer_sequence_create(le,x,y,intro_sequence);
+			layer_sequence_xscale(enemy_sequence,image_xscale);
+			layer_sequence_yscale(enemy_sequence,image_yscale);
+			layer_sequence_speedscale(enemy_sequence,0);
+			layer_sequence_headpos(enemy_sequence,layer_sequence_get_length(enemy_sequence));
+		}
+		if(idle_mode = 1){
+			layer_sequence_destroy(enemy_sequence);
+			enemy_sequence = layer_sequence_create(le,x,y,idle_sequence);
+			layer_sequence_xscale(enemy_sequence,image_xscale);
+			layer_sequence_yscale(enemy_sequence,image_yscale);
 		}
 	}
 }
@@ -133,5 +131,34 @@ SetFlame = function(lower,upper){
 		layer_sequence_xscale(flame_upper_sequence,image_xscale);
 		layer_sequence_yscale(flame_upper_sequence,image_yscale);
 		layer_sequence_angle(flame_upper_sequence,image_angle);
+	}
+}
+
+CreateItem = function(){
+	var total_weight = 0;
+    for (var i = 0; i < array_length(items); i++) {
+        total_weight += items[i][1];
+    }
+    
+    var rand = random(total_weight);
+    var current_weight = 0;
+    
+    for (var i = 0; i < array_length(items); i++) {
+        current_weight += items[i][1];
+        if (rand < current_weight) {
+            var selected_items = items[i][0];
+            for (var j = 0; j < array_length(selected_items); j++) {
+                instance_create_depth(x,y,0,selected_items[j]);
+            }
+            break;
+        }
+    }
+}
+
+Hurt = function(){
+	hurt_time = 120;
+	if!(Anim_IsExists(id,"blend_g")){
+		Anim_Create(id,"blend_g",0,0,0,255,4);
+		Anim_Create(id,"blend_b",0,0,0,255,4);
 	}
 }

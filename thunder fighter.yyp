@@ -591,6 +591,7 @@
     {"id":{"name":"battle_warning_boss_slash","path":"objects/battle_warning_boss_slash/battle_warning_boss_slash.yy",},},
     {"id":{"name":"battle_warning_boss_text_small","path":"objects/battle_warning_boss_text_small/battle_warning_boss_text_small.yy",},},
     {"id":{"name":"battle_warning_boss_textbar","path":"objects/battle_warning_boss_textbar/battle_warning_boss_textbar.yy",},},
+    {"id":{"name":"battle_warning_boss","path":"objects/battle_warning_boss/battle_warning_boss.yy",},},
     {"id":{"name":"battle_wave_manager","path":"objects/battle_wave_manager/battle_wave_manager.yy",},},
     {"id":{"name":"battle_wave","path":"objects/battle_wave/battle_wave.yy",},},
     {"id":{"name":"boss_agent","path":"objects/boss_agent/boss_agent.yy",},},
