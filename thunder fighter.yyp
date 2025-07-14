@@ -723,6 +723,7 @@
     {"id":{"name":"emitter_enemy_b","path":"objects/emitter_enemy_b/emitter_enemy_b.yy",},},
     {"id":{"name":"emitter_enemy_c0","path":"objects/emitter_enemy_c0/emitter_enemy_c0.yy",},},
     {"id":{"name":"emitter_enemy_c1","path":"objects/emitter_enemy_c1/emitter_enemy_c1.yy",},},
+    {"id":{"name":"emitter_enemy_knight","path":"objects/emitter_enemy_knight/emitter_enemy_knight.yy",},},
     {"id":{"name":"emitter_enemy_test","path":"objects/emitter_enemy_test/emitter_enemy_test.yy",},},
     {"id":{"name":"emitter_enemy","path":"objects/emitter_enemy/emitter_enemy.yy",},},
     {"id":{"name":"emitter_plane_apex_a","path":"objects/emitter_plane_apex_a/emitter_plane_apex_a.yy",},},
