@@ -1,4 +1,12 @@
 live;
+if(layer_sequence_exists("bullets_enemy",bullet_sequence)){
+	layer_sequence_x(bullet_sequence,x);
+	layer_sequence_y(bullet_sequence,y);
+	layer_sequence_xscale(bullet_sequence,scale_x);
+	layer_sequence_yscale(bullet_sequence,scale_y);
+	layer_sequence_angle(bullet_sequence,image_angle);
+}
+
 if(collision_mask_enabled = false){
 	draw_set_color(c_red);
 	switch(collision_mask_type){

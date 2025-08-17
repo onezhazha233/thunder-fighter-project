@@ -38,7 +38,7 @@ warning = {
 
 boss = {
 	enemy_obj : boss_test_0,
-	emitter_obj : emitter_enemy_knight,
+	emitter_obj : emitter_boss_test_0,
 	
 	Create : function(){
 		enemy = instance_create_depth(room_width/2,-200,0,enemy_obj);
