@@ -1,5 +1,5 @@
 live;
-damage = 5.167/4*3
+damage = 5.167/4*3*global.atk_subweapon
 
 if(bb = false){
 	angle = 0;

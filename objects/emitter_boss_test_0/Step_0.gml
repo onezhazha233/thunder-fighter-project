@@ -52,7 +52,7 @@ if(time = 1300){
 }
 if(time = 1400){
 	rdm_attack = irandom(5);
-	rdm_attack_duration = [90,180,125,160,100,250];//0短散弹 1长中散弹 2两侧封位弹 3双闪电球 4长侧封位弹 5双侧封位弹
+	rdm_attack_duration = [90,180,125,160,200,250];//0短散弹 1长中散弹 2两侧封位弹 3双闪电球 4长侧封位弹 5双侧封位弹
 }
 if(time >= 1400){
 	rdm_attack_time -= 1;

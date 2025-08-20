@@ -1,5 +1,5 @@
 live;
-damage = 0.75/2
+damage = 0.75/2*global.atk_subweapon
 
 a = MakePlayerBullet(x,y-10*scale_y,bullet_player_nuke,seq_nuke_cd_rampage_intro)
 a.idle = seq_nuke_cd_rampage

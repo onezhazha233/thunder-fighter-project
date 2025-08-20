@@ -1,5 +1,5 @@
 live;
-damage = 2.2727
+damage = 2.2727*global.atk_wingman
 
 a = instance_create_depth(x,y,depth,bullet_player_wingman_spinblade_cannon)
 a.dir = dir

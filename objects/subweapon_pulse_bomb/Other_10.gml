@@ -1,10 +1,10 @@
 live;
 damage = 0.75
 switch(weapon_level){
-	case 0:damage = 0.75;break;
-	case 1:damage = 0.8125;break;
-	case 2:damage = 0.85;break;
-	case 3:damage = 0.75;break;
+	case 0:damage = 0.75*global.atk_subweapon;break;
+	case 1:damage = 0.8125*global.atk_subweapon;break;
+	case 2:damage = 0.85*global.atk_subweapon;break;
+	case 3:damage = 0.75*global.atk_subweapon;break;
 }
 
 a = MakePlayerBullet(x,y-10*scale_y,bullet_player_nuke,seq_nuke_a_intro)

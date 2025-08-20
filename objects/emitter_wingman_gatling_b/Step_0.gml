@@ -8,10 +8,10 @@ if(enabled = true){
 		hspd = 1;
 		damage = 0.375;
 		switch(weapon_level){
-			case 0:damage = 0.375;break;
-			case 1:damage = 0.433;break;
-			case 2:damage = 0.496;break;
-			case 3:damage = 0.5;break;
+			case 0:damage = 0.375*global.atk_wingman;break;
+			case 1:damage = 0.433*global.atk_wingman;break;
+			case 2:damage = 0.496*global.atk_wingman;break;
+			case 3:damage = 0.5*global.atk_wingman;break;
 		}
 		a = MakePlayerBullet(x,y,bullet_player_wingman_gatling);
 		a.sprite_index = spr_bullet_player_gatling_abc;

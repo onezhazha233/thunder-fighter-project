@@ -10,10 +10,10 @@ if(enabled = true){
 		spd = 18;
 		damage = 0.521;
 		switch(weapon_level){
-			case 0:damage = 0.521;break;
-			case 1:damage = 0.521/2*1.3;break;
-			case 2:damage = 0.521/2*1.7;break;
-			case 3:damage = 0.521;break;
+			case 0:damage = 0.521*global.atk_plane;break;
+			case 1:damage = 0.521/2*1.3*global.atk_plane;break;
+			case 2:damage = 0.521/2*1.7*global.atk_plane;break;
+			case 3:damage = 0.521*global.atk_plane;break;
 		}
 		a = MakePlayerBullet(x-16*scale_x,y-50*scale_y,bullet_player_plane_dawn_small);
 		a.sprite_index = spr_bullet_player_dawn_a_small;

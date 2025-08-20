@@ -8,10 +8,10 @@ if(enabled = true){
 		hspd = 0.8;
 		damage = 0.271/2;
 		switch(weapon_level){
-			case 0:damage = 0.271/2;break;
-			case 1:damage = 0.325/2;break;
-			case 2:damage = 0.39/2;break;
-			case 3:damage = 0.417/2;break;
+			case 0:damage = 0.271/2*global.atk_wingman;break;
+			case 1:damage = 0.325/2*global.atk_wingman;break;
+			case 2:damage = 0.39/2*global.atk_wingman;break;
+			case 3:damage = 0.417/2*global.atk_wingman;break;
 		}
 		a = MakePlayerBullet(x,y-40,bullet_player_wingman_shotcannon);
 		a.sprite_index = spr_bullet_player_shotcannon_abc;

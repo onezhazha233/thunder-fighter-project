@@ -1,5 +1,5 @@
 live;
-damage = 0.5
+damage = 0.5*global.atk_plane
 
 laser_scale = 1
 

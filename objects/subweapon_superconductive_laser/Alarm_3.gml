@@ -1,5 +1,5 @@
 live;
-damage = 1
+damage = 1*global.atk_subweapon
 
 a = MakePlayerBullet(x-55*scale_x,y,bullet_player_laser)
 a.sprite_index = spr_laser_d

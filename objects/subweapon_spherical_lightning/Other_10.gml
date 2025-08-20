@@ -1,10 +1,10 @@
 live;
-damage = 3.75/4*3
+damage = 3.75/4*3*global.atk_subweapon
 switch(weapon_level){
-	case 0:damage = 3.75/4*3;break;
-	case 1:damage = 4.3875/4*3;break;
-	case 2:damage = 5.1/4*3;break;
-	case 3:damage = 5.25/4*3;break;
+	case 0:damage = 3.75/4*3*global.atk_subweapon;break;
+	case 1:damage = 4.3875/4*3*global.atk_subweapon;break;
+	case 2:damage = 5.1/4*3*global.atk_subweapon;break;
+	case 3:damage = 5.25/4*3*global.atk_subweapon;break;
 }
 
 angle = 0

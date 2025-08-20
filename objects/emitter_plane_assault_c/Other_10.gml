@@ -1,22 +1,30 @@
 live;
 switch(weapon_level){
 	case 0:
-		MakePlayerBullet(x,y,bullet_player_plane_assault_c_0).image_index = l1b;
+		bullet = MakePlayerBullet(x,y,bullet_player_plane_assault_c_0);
+		bullet.image_index = l1b;
+		bullet.damage = damage;
 		l1b = !l1b;
 		break;
 		
 	case 1:
-		MakePlayerBullet(x,y-20*scale_y,bullet_player_plane_assault_c_1).image_index = l1b;
+		bullet = MakePlayerBullet(x,y-20*scale_y,bullet_player_plane_assault_c_1);
+		bullet.image_index = l1b;
+		bullet.damage = damage;
 		l1b = !l1b;
 		break;
 		
 	case 2:
-		MakePlayerBullet(x,y-30*scale_y,bullet_player_plane_assault_c_2).image_index = l1b;
+		bullet = MakePlayerBullet(x,y-30*scale_y,bullet_player_plane_assault_c_2);
+		bullet.image_index = l1b;
+		bullet.damage = damage;
 		l1b = !l1b;
 		break;
 		
 	case 3:
-		MakePlayerBullet(x,y-40*scale_y,bullet_player_plane_assault_c_3).image_index = l1b;
+		bullet = MakePlayerBullet(x,y-40*scale_y,bullet_player_plane_assault_c_3);
+		bullet.image_index = l1b;
+		bullet.damage = damage;
 		l1b = !l1b;
 		break;
 }

@@ -1,6 +1,6 @@
 live;
 hspd = 1;
-damage = 0.25;
+damage = 0.25*global.atk_wingman;
 a = MakePlayerBullet(x,y-30,bullet_player_wingman_gatling_rampage);
 a.sprite_index = spr_bullet_player_gatling_abc_rampage;
 if(dir = 0){

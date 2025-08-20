@@ -6,7 +6,7 @@ if(enabled = true){
 	if(time <= 0)time = 0;
 	if(time mod 5 = 1){
 		hspd = 1;
-		damage = 2.5833;
+		damage = 2.5833*global.atk_wingman;
 		a = MakePlayerBullet(x,y,bullet_player_wingman_railcannon);
 		a.sprite_index = spr_bullet_player_railcannon_b;
 		a.collision_effect_sequence = seq_bullet_effect_railcannon_b;

@@ -1,5 +1,5 @@
 live;
-damage = 4.0625/2
+damage = 4.0625/2*global.atk_subweapon
 switch(weapon_level){
 	case 0:damage = 4.0625/2;break;
 	case 1:damage = 4.55/2;break;

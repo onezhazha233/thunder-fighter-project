@@ -1,9 +1,9 @@
 live;
 switch(weapon_level){
-	case 0:damage = 9.375/21;break;
-	case 1:damage = 9.75/21;break;
-	case 2:damage = 9.5625/21;break;
-	case 3:damage = 7.5/21;break;
+	case 0:damage = 9.375/21*global.atk_wingman;break;
+	case 1:damage = 9.75/21*global.atk_wingman;break;
+	case 2:damage = 9.5625/21*global.atk_wingman;break;
+	case 3:damage = 7.5/21*global.atk_wingman;break;
 }
 
 for(i=0;i<1;i+=1){

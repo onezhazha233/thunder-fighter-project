@@ -9,7 +9,7 @@ for(i=0;i<3;i+=1){
 		if!(i = 1)laser[i].laser_offset += 280;
 		laser[i].rampage = rampage;
 		laser[i].edge_sequence_enabled = false;
-		laser[i].slash_damage = damages[4];
+		laser[i].slash_damage = damages[4]*global.atk_plane;
 		follow_inst[i] = laser[i];
 		//if(i = 1)laser[i].edge_sequence_enabled = false;
 	}
@@ -19,6 +19,6 @@ for(i=0;i<3;i+=1){
 		laser[i].edge_cdd = 18;
 		if(instance_exists(laser[1]))laser[1].edge_cdd = 30;
 		laser[i].rampage = rampage;
-		laser[i].slash_damage = damages[4];
+		laser[i].slash_damage = damages[4]*global.atk_plane;
 	}
 }

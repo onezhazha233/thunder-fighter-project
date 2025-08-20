@@ -1,5 +1,5 @@
 live;
-damage = 2
+damage = 2*global.atk_subweapon
 
 a = MakePlayerBullet(x-35*scale_x,y,bullet_player_laser)
 a.direction = 90

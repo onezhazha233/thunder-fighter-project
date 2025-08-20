@@ -1,5 +1,5 @@
 live;
-damage = 0.4305
+damage = 0.4305*global.atk_subweapon
 
 a = MakePlayerBullet(x,y-10*scale_y,bullet_player_armor_piercer,seq_armor_piercer_cd_rampage_intro)
 a.idle = seq_armor_piercer_cd_rampage

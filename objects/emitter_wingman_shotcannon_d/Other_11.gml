@@ -1,6 +1,6 @@
 live;
 hspd = 3
-damage = 0.3
+damage = 0.3*global.atk_wingman
 a = MakePlayerBullet(x,y-30,bullet_player_wingman_shotcannon_rampage);
 a.sprite_index = spr_bullet_player_shotcannon_d_rampage;
 a.hspeed = -hspd*2;

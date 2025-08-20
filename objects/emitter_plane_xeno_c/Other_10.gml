@@ -1,10 +1,10 @@
 live;
 damage = 0.25;
 switch(weapon_level){
-	case 0:damage = 0.25;break;
-	case 1:damage = 0.1625;break;
-	case 2:damage = 0.1417;break;
-	case 3:damage = 0.125;break;
+	case 0:damage = 0.25*global.atk_plane;break;
+	case 1:damage = 0.1625*global.atk_plane;break;
+	case 2:damage = 0.1417*global.atk_plane;break;
+	case 3:damage = 0.125*global.atk_plane;break;
 }
 
 if(bb mod 4 = 3){

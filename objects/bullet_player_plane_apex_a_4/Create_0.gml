@@ -10,7 +10,7 @@ image_xscale = 5.26
 image_yscale = 2.69
 vspeed = -45
 
-damage = 2*global.atk_plane
+damage = 2
 damage_type = 1
 damage_interval = 999
 collision_destroy = false

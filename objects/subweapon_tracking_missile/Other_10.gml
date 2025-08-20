@@ -1,10 +1,10 @@
 live;
 damage = 5
 switch(weapon_level){
-	case 0:damage = 5;break;
-	case 1:damage = 5.85;break;
-	case 2:damage = 6.5875;break;
-	case 3:damage = 6.5;break;
+	case 0:damage = 5*global.atk_subweapon;break;
+	case 1:damage = 5.85*global.atk_subweapon;break;
+	case 2:damage = 6.5875*global.atk_subweapon;break;
+	case 3:damage = 6.5*global.atk_subweapon;break;
 }
 
 angle = 45
