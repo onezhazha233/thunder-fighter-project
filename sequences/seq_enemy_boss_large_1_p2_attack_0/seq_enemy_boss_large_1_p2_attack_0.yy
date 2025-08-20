@@ -29,7 +29,7 @@
     "name":"galaxy_ash",
     "path":"folders/序列/enemy/boss/large/galaxy_ash.yy",
   },
-  "playback":0,
+  "playback":1,
   "playbackSpeed":60.0,
   "playbackSpeedType":0,
   "resourceType":"GMSequence",

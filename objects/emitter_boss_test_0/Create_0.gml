@@ -4,20 +4,22 @@ event_inherited();
 duration = -1
 loop = false
 
-attack = [-1,-1,-1]
-attack_time = [0,0,0]
-
 num0 = 3
 angle_range = 90
 a1 = 0
 
+rdm_attack = 0
+rdm_attack_time = -1
+rdm_attack_duration = -1
+
 attack_list = ds_list_create()
 
-function start_attack(attack_type){
+function start_attack(attack_type,arg=0){
 	attack = {
 		type : attack_type,
 		time : 0,
-		active : true
+		active : true,
+		exarg : arg
 	}
 	
 	ds_list_add(attack_list,attack);
@@ -25,15 +27,16 @@ function start_attack(attack_type){
 
 function run_attack(attack){
 	switch(attack.type){
-		case 0: attack_0(attack);break;
-		case 1: attack_1(attack);break;
-		case 2: attack_2(attack);break;
-		case 3: attack_3(attack);break;
-		case 4: attack_4(attack);break;
+		case 0: attack_0(attack,attack.exarg); break;
+		case 1: attack_1(attack,attack.exarg); break;
+		case 2: attack_2(attack,attack.exarg); break;
+		case 3: attack_3(attack,attack.exarg); break;
+		case 4: attack_4(attack,attack.exarg); break;
+		case 5: attack_5(attack,attack.exarg); break;
 	}
 }
 
-function attack_0(attack){
+function attack_0(attack,exarg=0){//短散弹 60
 	if(attack.time < 30){
 		if(attack.time mod 5 = 0){
 			tt = (attack.time div 5);
@@ -87,7 +90,7 @@ function attack_0(attack){
 	if(attack.time = 60)attack.active = false;
 }
 
-function attack_1(attack){
+function attack_1(attack,exarg=0){//长中散弹 150
 	if(attack.time = 1){
 		num0 = 3;
 		angle_range = 90;
@@ -119,7 +122,7 @@ function attack_1(attack){
 	if(attack.time = 150)attack.active = false;
 }
 
-function attack_2(attack){
+function attack_2(attack,exarg=0){//两侧封位弹 120
 	if(attack.time = 1){
 		a1 = 0;
 	}
@@ -127,11 +130,11 @@ function attack_2(attack){
 		a = MakeEnemyBullet(x-145,y+160,bullet_enemy_red,spr_bullet_enemy_red_2);
 		a.image_angle = -90-a1;
 		a.direction = a.image_angle;
-		Anim_Create(a,"speed",0,0,10,3,120);
+		Anim_Create(a,"speed",0,0,10,6,30);
 		a = MakeEnemyBullet(x+145,y+160,bullet_enemy_red,spr_bullet_enemy_red_2);
 		a.image_angle = -90+a1;
 		a.direction = a.image_angle;
-		Anim_Create(a,"speed",0,0,10,3,120);
+		Anim_Create(a,"speed",0,0,10,6,30);
 	}
 	if(attack.time = 20){
 		Anim_Create(id,"a1",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,0,30,20);
@@ -141,7 +144,7 @@ function attack_2(attack){
 	if(attack.time = 120)attack.active = false;
 }
 
-function attack_3(attack){
+function attack_3(attack,exarg=0){//侧闪电球 60
 	if(attack.time = 1){
 		for(i=0;i<3;i+=1){
 			a = MakeEnemyBullet(x,y+120,bullet_enemy_lightning_ball,-1);
@@ -163,7 +166,7 @@ function attack_3(attack){
 	if(attack.time = 2)attack.active = false;
 }
 
-function attack_4(attack){
+function attack_4(attack,exarg=0){//中闪电球（触底反弹散射） 100
 	if(attack.time = 1){
 		a = MakeEnemyBullet(x,y+120,bullet_enemy_lightning_ball,-1);
 		a.direction = -90;
@@ -184,4 +187,48 @@ function attack_4(attack){
 		}
 	}
 	if(attack.time = 2)attack.active = false;
+}
+
+function attack_5(attack,exarg=0){//长侧封位弹（触侧反弹） 180+exarg
+	if(attack.time mod 5 = 0){
+		a = MakeEnemyBullet(x-145,y+160,bullet_enemy_red,spr_bullet_enemy_red_2);
+		a.image_angle = -90;
+		a.direction = a.image_angle;
+		Anim_Create(a,"speed",0,0,10,6,30);
+		a = MakeEnemyBullet(x+145,y+160,bullet_enemy_red,spr_bullet_enemy_red_2);
+		a.image_angle = -90;
+		a.direction = a.image_angle;
+		Anim_Create(a,"speed",0,0,10,6,30);
+		a = MakeEnemyBullet(x-145,y+160,bullet_enemy_red,spr_bullet_enemy_red_2);
+		a.image_angle = -90-45;
+		a.direction = a.image_angle;
+		a.bounced = false;
+		Anim_Create(a,"speed",0,0,10,6,30);
+		with(a){
+			custom_function = function(){
+				if(x <= 0&&bounced = false){
+					bounced = true;
+					x = 0;
+					hspeed *= -0.6;
+					image_angle = direction;
+				}
+			}
+		}
+		a = MakeEnemyBullet(x+145,y+160,bullet_enemy_red,spr_bullet_enemy_red_2);
+		a.image_angle = -90+45;
+		a.direction = a.image_angle;
+		Anim_Create(a,"speed",0,0,10,6,30);
+		a.bounced = false;
+		with(a){
+			custom_function = function(){
+				if(x >= room_width-0&&bounced = false){
+					bounced = true;
+					x = room_width;
+					hspeed *= -0.6;
+					image_angle = direction;
+				}
+			}
+		}
+	}
+	if(attack.time = 180+exarg)attack.active = false;
 }

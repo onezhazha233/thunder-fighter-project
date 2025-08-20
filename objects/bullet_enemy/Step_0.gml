@@ -1,5 +1,7 @@
 image_angle += rotate
 
+custom_function()
+
 if(instance_exists(player)&&player.visible = true){
 	if(global.inv_hurt = 0&&global.inv_shield = 0){
 		if(collision_mask_enabled = true){

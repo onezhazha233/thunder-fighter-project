@@ -22,3 +22,5 @@ scale_y = 1
 rotate = 0
 
 alarm[0] = 1
+
+custom_function = function(){}
