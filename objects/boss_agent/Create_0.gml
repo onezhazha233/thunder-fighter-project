@@ -3,7 +3,7 @@ event_inherited();
 
 depth = DEPTH_BATTLE.ENEMIES
 
-next_boss = -1
+boss_list = []
 phase = 0
 
 Anim_Destroy(id,"inv_damage")

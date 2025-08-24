@@ -2,7 +2,7 @@ event_inherited();
 
 xscale = 1
 yscale = 1
-plane = plane_thunder_apex
+plane = plane_dawn_zero
 wingman_left = []
 wingman_right = []
 //subweapon = subweapon_nano_splitter

@@ -17,6 +17,8 @@ if(damage_type = 1){
 if(collision_type = COLLISION_TYPE.SPRITE){
 	enemy = instance_place(x,y,enemy_agent);
 	if(instance_exists(enemy)){
-		CollideSingleEnemy(enemy);
+		if(enemy.inv_collision = false){
+			CollideSingleEnemy(enemy);
+		}
 	}
 }

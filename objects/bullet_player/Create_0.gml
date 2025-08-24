@@ -27,14 +27,18 @@ function CollideEnemies(){
 			if(enemy.inv_collision = false){
 				if(enemy.collision_type = COLLISION_TYPE.SPRITE){
 					CollideSingleEnemy(enemy);
+					if(collision_destroy = true){
+						instance_destroy();
+						break;
+					}
 				}
 			}
 		}
 	}
-	ds_list_clear(enemy_list);
-	if(collision_destroy = true){
+	if(ds_exists(enemy_list,ds_type_list))ds_list_clear(enemy_list);
+	/*if(collision_destroy = true){
 		instance_destroy();
-	}
+	}*/
 }
 
 function CollideSingleEnemy(enemy){
