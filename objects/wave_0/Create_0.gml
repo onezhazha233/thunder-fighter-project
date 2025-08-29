@@ -37,13 +37,11 @@ warning = {
 }
 
 boss = {
-	enemy_obj : boss_test_0,
-	emitter_obj : emitter_boss_test_0,
-	boss_list : [boss_test_1],
+	boss_list : [boss_test_1,boss_test_1],
 	
 	Create : function(){
-		enemy = instance_create_depth(room_width/2,-200,0,enemy_obj);
-		enemy.bullet_emitter = emitter_obj;
+		enemy = instance_create_depth(room_width/2,-200,0,boss_list[0]);
+		array_delete(boss_list,0,1);
 		enemy.boss_list = boss_list;
 		
 		return enemy;

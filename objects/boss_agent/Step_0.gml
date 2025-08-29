@@ -7,7 +7,9 @@ if!(depth_previous = depth){
 
 if(hp <= 0){
 	CreateItem();
-	instance_destroy();
+	alarm[2] = 1;
+	active = false;
+	
 	if(array_length(boss_list) = 0){
 		if!(die_sequence = -1){
 			layer_sequence_create("enemies",x,y,die_sequence);
@@ -15,6 +17,9 @@ if(hp <= 0){
 		if(object_exists(explosion)){
 			instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,explosion);
 		}
+		battle_ui.boss_hpbar_hp = 0;
+		Anim_Create(battle_ui,"boss_hpbar_enabled",0,0,1,-1,0,180);
+		Anim_Create(battle_wave,"enabled",0,0,0,1,0,240);
 	}
 	else{
 		instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,effect_explosion_big);
@@ -22,8 +27,11 @@ if(hp <= 0){
 		a.move_start_duration = 30;
 		a.skip = true;
 		a.phase = phase + 1;
+		battle_ui.boss_hpbar_hp = 1;
+		battle_ui.boss_hpbar_hp_max = 1;
 		array_delete(boss_list,0,1);
 		a.boss_list = boss_list;
+		
 	}
 }
 

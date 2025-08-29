@@ -16,7 +16,7 @@ flame_upper = seq_enemy_boss_large_1_p1_flame_1
 
 explosion = effect_explosion_boss
 
-hp_max = 10
+hp_max = 500
 hp = hp_max
 
 x = 360
@@ -26,7 +26,7 @@ battle_ui.boss_hpbar_enabled = true
 battle_ui.boss_hpbar_phase = 1
 battle_wave.enabled = false
 
-bullet_emitter = noone//emitter_enemy_b
+bullet_emitter = emitter_boss_test_0
 
 move_enabled = true
 move_range = [200,250,720-200,350]

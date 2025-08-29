@@ -30,3 +30,5 @@ name = ""
 move_start_duration = 60
 
 items = [[[battle_item_quantum_shield,battle_item_weapon_upgrade],1]]
+
+active = true//销毁前一帧设置为false

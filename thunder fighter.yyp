@@ -724,6 +724,7 @@
     {"id":{"name":"effect_explosion_small","path":"objects/effect_explosion_small/effect_explosion_small.yy",},},
     {"id":{"name":"effect_explosion_smoke","path":"objects/effect_explosion_smoke/effect_explosion_smoke.yy",},},
     {"id":{"name":"emitter_boss_test_0","path":"objects/emitter_boss_test_0/emitter_boss_test_0.yy",},},
+    {"id":{"name":"emitter_boss_test_1","path":"objects/emitter_boss_test_1/emitter_boss_test_1.yy",},},
     {"id":{"name":"emitter_enemy_b","path":"objects/emitter_enemy_b/emitter_enemy_b.yy",},},
     {"id":{"name":"emitter_enemy_c0","path":"objects/emitter_enemy_c0/emitter_enemy_c0.yy",},},
     {"id":{"name":"emitter_enemy_c1","path":"objects/emitter_enemy_c1/emitter_enemy_c1.yy",},},
