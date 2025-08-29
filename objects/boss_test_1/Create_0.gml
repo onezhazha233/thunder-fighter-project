@@ -16,7 +16,7 @@ flame_upper = seq_enemy_boss_large_1_p2_flame_1
 
 explosion = effect_explosion_boss
 
-hp_max = 500
+hp_max = 400
 hp = hp_max
 
 battle_ui.boss_hpbar_enabled = true;
@@ -36,3 +36,5 @@ move_duration = [40,80]
 move_interval = [10,20]
 move_state = 0//0为静止 1为移动中
 move_targetpos = [x,y]
+
+items = []

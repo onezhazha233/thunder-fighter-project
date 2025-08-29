@@ -16,7 +16,7 @@ flame_upper = seq_enemy_boss_large_1_p1_flame_1
 
 explosion = effect_explosion_boss
 
-hp_max = 500
+hp_max = 400
 hp = hp_max
 
 x = 360

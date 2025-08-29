@@ -5,18 +5,18 @@ draw_sprite_ext(laser_sprite,image_index,sprite_get_width(start_sprite)/2,sprite
 surface_reset_target()
 
 find = laser_find_width(x,y,image_angle+90,1500,width*scale_x,enemy_agent,true,true)
-if!(instance_exists(find[1])){
-	length = 1500;
+if(instance_exists(find[1])&&find[1].inv_collision = false){
+	length = find[0];
 }
 else{
-	length = find[0];
+	length = 1500;
 }
 
 xx = x+lengthdir_x(-sprite_get_width(start_sprite)/2,image_angle)+lengthdir_x(-0,image_angle+90)
 yy = y+lengthdir_y(-sprite_get_width(start_sprite)/2,image_angle)+lengthdir_y(-0,image_angle+90)
 draw_surface_general(surf,0,0,sprite_get_width(start_sprite),length,xx,yy,scale_x,-scale_y,image_angle,-1,-1,-1,-1,image_alpha)
 
-if(instance_exists(find[1])){
+if(instance_exists(find[1])&&find[1].inv_collision = false){
 	enemy = find[1];
 	enemy.last_bullet = id;
 	CollideSingleEnemy(enemy);

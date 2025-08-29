@@ -11,8 +11,8 @@ intro_sequence = seq_enemy_minion_12c0_intro
 idle_sequence = seq_enemy_minion_12c0_idle
 flame_lower = seq_enemy_minion_12c0_flame
 
-hp_max = 20
-hp = 20
+hp_max = 30
+hp = 30
 
 hpbar_yoffset = 120
 

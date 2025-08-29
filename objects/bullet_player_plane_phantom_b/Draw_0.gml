@@ -21,7 +21,7 @@ else{
 	draw_sprite_ext(spr_bullet_player_phantom_b_start_rampage,fire_image,x+lengthdir_x(-20,image_angle)*scale_x,y+lengthdir_y(-20,image_angle)*scale_y,0.88-sin(fire_image*(2*pi/3))*0.12,1.6+sin(fire_image*(2*pi/3))*0.2,image_angle-90,-1,1);
 }
 
-if(instance_exists(find[1])){
+if(instance_exists(find[1])&&find[1].inv_collision = false){
 	enemy = find[1];
 	CollideSingleEnemy(enemy);
 	if(rampage = false){

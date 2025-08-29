@@ -51,13 +51,13 @@ if(time = 1340){
 	start_attack(1);
 }
 if(time = 1520){
-	rdm_attack = irandom(5);
+	rdm_attack = irandom(4);
 	rdm_attack_duration = [90,180,90,200,100];
 }
 if(time >= 1520){
 	rdm_attack_time -= 1;
 	if(rdm_attack_time <= 0){
-		rdm_attack = irandom(5);
+		rdm_attack = irandom(4);
 		rdm_attack_time = rdm_attack_duration[rdm_attack];
 		switch(rdm_attack){
 			case 0: start_attack(0); break;

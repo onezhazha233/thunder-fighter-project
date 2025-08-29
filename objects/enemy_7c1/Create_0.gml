@@ -10,8 +10,8 @@ pre_sequence = seq_enemy_minion_7c1_intro
 intro_sequence = seq_enemy_minion_7c1_intro
 idle_sequence = seq_enemy_minion_7c1_idle
 
-hp_max = 20
-hp = 20
+hp_max = 30
+hp = 30
 
 hpbar_yoffset = 180
 

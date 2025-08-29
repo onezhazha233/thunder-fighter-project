@@ -44,7 +44,7 @@ function laser_find(ox, oy, dir, range, object, prec, notme) {
 		                sy /= 2;
                 
 		                var test_inst = collision_line(ox, oy, dx, dy, object, prec, notme);
-		                if (test_inst != noone) {
+		                if (test_inst != noone&&test_inst.inv_collision = false) {
 		                    dx -= sx;
 		                    dy -= sy;
 		                    inst = test_inst;

@@ -1,7 +1,7 @@
 live;
 event_inherited();
 
-enemy_0 = new Enemy(enemy_12c0, emitter_enemy_c0, function() {
+enemy_0 = new Enemy(enemy_9c1, emitter_enemy_c2, function() {
 	EnemyMove_Pre([-100, 160], [360, 160], 40);
 	EnemyMove_Intro(60);
 	EnemyMove_LoopEllipse(400, 360, 1, 0, 150,300);

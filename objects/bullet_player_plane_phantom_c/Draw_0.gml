@@ -35,7 +35,7 @@ if(rampage = false){
 	}
 }
 
-if(instance_exists(find[1])){
+if(instance_exists(find[1])&&find[1].inv_collision = false){
 	enemy = find[1];
 	CollideSingleEnemy(enemy);
 	if(rampage = false){

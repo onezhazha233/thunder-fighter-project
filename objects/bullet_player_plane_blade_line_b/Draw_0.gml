@@ -13,7 +13,7 @@ draw_laser(laser_sprite,0,x+x_offset,y+y_offset,0,image_angle,len,false,image_xs
 draw_laser(spr_bullet_player_blade_abcd_line_point,0,x+x_offset,y+y_offset,laser_offset,image_angle,len,false,image_xscale*scale_x,image_yscale*scale_y,image_alpha/2)
 gpu_set_blendmode(bm_normal)
 
-if(instance_exists(find[1])){
+if(instance_exists(find[1])&&find[1].inv_collision = false){
 	ex = x + x_offset + lengthdir_x(len,image_angle);
 	ey = y + y_offset + lengthdir_y(len,image_angle);
 	draw_sprite_ext(spr_bullet_player_blade_abcd_point,0,ex,ey,0.5*scale_x,scale_y,0,-1,1);

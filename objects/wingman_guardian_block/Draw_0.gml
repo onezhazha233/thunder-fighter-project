@@ -9,5 +9,13 @@ if(instance_exists(bullet)){
 		instance_destroy();
 	}
 }
+with(bullet_enemy){
+	if(collision_mask_type = 1){
+		if(point_distance(x,y,other.x,other.y) <= radius){
+			destroy_type = 1;
+			instance_destroy();
+		}
+	}
+}
 
 //draw_self()

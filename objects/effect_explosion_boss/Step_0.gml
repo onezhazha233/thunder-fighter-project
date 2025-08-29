@@ -81,6 +81,7 @@ if(time = 156){
 	instance_create_depth(x,y,0,effect_explosion_big);
 }
 if(time = 160){
+	Camera_Shake(15,15,3,3,1,1);
 	instance_create_depth(x,y,0,effect_explosion_ring_white);
 	instance_create_depth(x,y,0,effect_explosion_big);
 	instance_create_depth(x,y,0,effect_explosion_ring_red);
