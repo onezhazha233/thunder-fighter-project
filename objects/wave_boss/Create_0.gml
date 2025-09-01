@@ -37,7 +37,7 @@ warning = {
 }
 
 boss = {
-	boss_list : [boss_test_0,boss_test_1],
+	boss_list : [boss_galaxy_ash_p1,boss_galaxy_ash_p2],
 	
 	Create : function(){
 		enemy = instance_create_depth(room_width/2,-200,0,boss_list[0]);

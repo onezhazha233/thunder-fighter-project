@@ -23,7 +23,7 @@ battle_ui.boss_hpbar_enabled = true;
 battle_ui.boss_hpbar_phase = 0;
 battle_wave.enabled = false
 
-bullet_emitter = emitter_boss_test_1
+bullet_emitter = emitter_boss_galaxy_ash_p2
 
 die_sequence = seq_enemy_boss_large_1_die_black
 

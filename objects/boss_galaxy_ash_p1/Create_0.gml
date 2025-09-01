@@ -26,7 +26,7 @@ battle_ui.boss_hpbar_enabled = true
 battle_ui.boss_hpbar_phase = 1
 battle_wave.enabled = false
 
-bullet_emitter = emitter_boss_test_0
+bullet_emitter = emitter_boss_galaxy_ash_p1
 
 move_enabled = true
 move_range = [200,250,720-200,350]
