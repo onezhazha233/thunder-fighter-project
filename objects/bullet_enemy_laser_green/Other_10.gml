@@ -1,0 +1,2 @@
+live;
+global.hp -= damage

@@ -49,7 +49,7 @@ else{
 }
 
 if!(instance_exists(block_inst)){
-	block_inst = instance_create_depth(x,y,0,wingman_guardian_block);
+	block_inst = instance_create_depth(x,y,0,bullet_enemy_block);
 	block_inst.image_xscale = block_width/2;
 	block_inst.image_yscale = block_height/2;
 	if(dir = 0)block_inst.x_offset = block_xoffset;

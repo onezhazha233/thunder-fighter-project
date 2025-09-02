@@ -1,4 +1,6 @@
 live;
+event_inherited()
+
 depth = -50
 sl = layer_create(-50)
 shield_sequence = layer_sequence_create(sl,x,y,seq_battle_quantum_shield)
@@ -9,12 +11,19 @@ fade = 0
 fade_time = 0
 
 range = 75
-shield_range = 55
+
+mask_surf = surface_create(range*2,range*2);
+surface_set_target(mask_surf);
+draw_circle(range,range,range,0)
+surface_reset_target();
+mask_sprite = sprite_create_from_surface(mask_surf,0,0,range*2,range*2,0,0,range,range);
+sprite_collision_mask(mask_sprite,false,2,0,0,range*2,range*2,bboxkind_precise,0)
+mask_index = mask_sprite;
+surface_free(mask_surf);
 
 image_xscale = 0.7
 image_yscale = 0.7
 
-Anim_Create(id,"shield_range",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,shield_range,range-shield_range,10)
 Anim_Create(id,"image_xscale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,image_xscale,1-image_xscale,10)
 Anim_Create(id,"image_yscale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,image_yscale,1-image_yscale,10)
 

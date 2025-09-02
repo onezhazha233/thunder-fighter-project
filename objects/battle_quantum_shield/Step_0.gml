@@ -31,14 +31,8 @@ Sequence_PlayByFrame(sl);
 
 SetPosition(x,y)
 
-with(bullet_enemy){
+/*with(bullet_enemy){
 	if(point_distance(x,y,other.x,other.y) <= other.shield_range){
-		/*destroy_type = 3;
-		a = instance_create_depth(x,y,depth,bullet_player_enemy);
-		a.sprite_index = sprite_index;
-		a.direction = point_direction(x,y,other.x,other.y) + 180;
-		a.image_angle = a.direction;
-		a.speed = speed;*/
 		destroy_type = 1;
 		instance_destroy();
 	}

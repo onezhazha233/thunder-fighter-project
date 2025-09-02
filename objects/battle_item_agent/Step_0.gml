@@ -10,7 +10,7 @@ if(player.visible = true){
 		direction = point_direction(x,y,player.x,player.y);
 		speed = min(20,speed+4);
 	}
-	if(point_distance(x,y,player.x,player.y) <= speed){
+	if(point_distance(x,y,player.x,player.y) <= speed*2){
 		event_user(0);
 		instance_destroy();
 	}
