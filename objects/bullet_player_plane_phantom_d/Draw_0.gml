@@ -4,7 +4,10 @@ if(laser_offset >= sprite_get_height(laser_sprite)*(1+!rampage))laser_offset = 0
 if(laser_offset <= -sprite_get_height(laser_sprite)*(1+!rampage))laser_offset = 0;
 
 find = laser_find_width(x,y,image_angle,range,sprite_get_width(laser_sprite)*image_xscale*scale_x*0.4,enemy_agent,true,true)
-len = find[0]
+len = find[0];
+if(instance_exists(find[1])&&find[1].inv_collision = true){
+	len = range;
+}
 if(len = -1)len = range;
 
 rampage = (laser_sprite == spr_bullet_player_phantom_d_rampage);

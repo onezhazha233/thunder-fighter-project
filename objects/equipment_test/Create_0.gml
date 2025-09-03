@@ -2,10 +2,10 @@ event_inherited();
 
 xscale = 1
 yscale = 1
-plane = plane_enigmatic_blade
-wingman_left = [wingman_doom_guardian]
-wingman_right = [wingman_mega_particle_cannon]
-wingman_y_offset = [-50]
+plane = plane_aurora_phantom
+wingman_left = [wingman_high_speed_gatling]
+wingman_right = [wingman_triple_shotcannon]
+wingman_y_offset = [-20]
 //subweapon = subweapon_nano_splitter
 
 /*for(i=0;i<8;i+=1){

@@ -21,6 +21,7 @@ flame_lower_pre = -1
 flame_upper_pre = -1
 
 hpbar_enabled = false
+boss_hpbar_enabled = true
 
 start = 0
 time = 0
@@ -32,3 +33,13 @@ move_start_duration = 60
 items = [[[battle_item_quantum_shield,battle_item_weapon_upgrade],1]]
 
 active = true//销毁前一帧设置为false
+
+move_enabled = true
+move_range = [200,250,720-200,350]
+move_starttime = 0
+move_nexttime = 0
+move_distance = [100,160]
+move_duration = [80,120]
+move_interval = [20,30]
+move_state = 0//0为静止 1为移动中
+move_targetpos = [x,y]

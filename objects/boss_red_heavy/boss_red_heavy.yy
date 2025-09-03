@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"emitter_boss_galaxy_ash_p2",
+  "%Name":"boss_red_heavy",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"emitter_boss_galaxy_ash_p2",
+  "name":"boss_red_heavy",
   "overriddenProperties":[],
   "parent":{
     "name":"enemy",
     "path":"folders/物体/enemy.yy",
   },
   "parentObjectId":{
-    "name":"emitter_enemy",
-    "path":"objects/emitter_enemy/emitter_enemy.yy",
+    "name":"boss_agent",
+    "path":"objects/boss_agent/boss_agent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

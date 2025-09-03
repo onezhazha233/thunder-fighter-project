@@ -2,6 +2,12 @@ image_angle += rotate
 
 custom_function()
 
+duration -= 1
+if(duration = 0){
+	destroy_type = 3;
+	instance_destroy();
+}
+
 if(instance_exists(player)&&player.visible = true){
 	if(global.inv_hurt = 0&&global.inv_shield = 0){
 		if(collision_mask_enabled = true){

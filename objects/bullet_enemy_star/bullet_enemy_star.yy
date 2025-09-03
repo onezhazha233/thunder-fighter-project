@@ -1,20 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"emitter_boss_galaxy_ash_p2",
+  "%Name":"bullet_enemy_star",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"emitter_boss_galaxy_ash_p2",
+  "name":"bullet_enemy_star",
   "overriddenProperties":[],
   "parent":{
-    "name":"enemy",
-    "path":"folders/物体/enemy.yy",
+    "name":"bullet_enemy",
+    "path":"folders/物体/bullet_enemy.yy",
   },
   "parentObjectId":{
-    "name":"emitter_enemy",
-    "path":"objects/emitter_enemy/emitter_enemy.yy",
+    "name":"bullet_enemy",
+    "path":"objects/bullet_enemy/bullet_enemy.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,7 +34,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_bullet_enemy_red_4",
+    "path":"sprites/spr_bullet_enemy_red_4/spr_bullet_enemy_red_4.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

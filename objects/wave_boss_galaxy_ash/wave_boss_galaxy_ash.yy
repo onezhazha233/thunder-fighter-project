@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"emitter_boss_galaxy_ash_p2",
+  "%Name":"wave_boss_galaxy_ash",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"emitter_boss_galaxy_ash_p2",
+  "name":"wave_boss_galaxy_ash",
   "overriddenProperties":[],
   "parent":{
-    "name":"enemy",
-    "path":"folders/物体/enemy.yy",
+    "name":"battle_wave",
+    "path":"folders/物体/battle_wave.yy",
   },
   "parentObjectId":{
-    "name":"emitter_enemy",
-    "path":"objects/emitter_enemy/emitter_enemy.yy",
+    "name":"battle_wave",
+    "path":"objects/battle_wave/battle_wave.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_plane_base",
+    "path":"sprites/spr_plane_base/spr_plane_base.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

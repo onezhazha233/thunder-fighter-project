@@ -19,7 +19,11 @@ function start_attack(attack_type,arg=0){
 		type : attack_type,
 		time : 0,
 		active : true,
-		exarg : arg
+		exarg : arg,
+		
+		End : function(){
+			active = false;
+		}
 	}
 	
 	ds_list_add(attack_list,attack);
@@ -32,7 +36,6 @@ function run_attack(attack){
 		case 2: attack_2(attack,attack.exarg); break;
 		case 3: attack_3(attack,attack.exarg); break;
 		case 4: attack_4(attack,attack.exarg); break;
-		/*case 5: attack_5(attack,attack.exarg); break;*/
 	}
 }
 
@@ -117,7 +120,7 @@ function attack_0(attack,exarg=0){//中4散弹 60
 			Anim_Create(a,"speed",0,0,0,12+i*3,50);
 		}
 	}
-	if(attack.time = 60)attack.active = false;
+	if(attack.time = 60)attack.End();
 }
 
 function attack_1(attack,exarg=0){//中3散弹 150
@@ -136,7 +139,7 @@ function attack_1(attack,exarg=0){//中3散弹 150
 		a.direction = a.image_angle;
 		Anim_Create(a,"speed",0,0,3,10,50);
 	}
-	if(attack.time = 150)attack.active = false;
+	if(attack.time = 150)attack.End();
 }
 	
 function attack_2(attack,exarg=0){//机枪 60
@@ -178,7 +181,7 @@ function attack_2(attack,exarg=0){//机枪 60
 	if(attack.time = 59){
 		mark.SetState(ENEMY_STATE.IDLE);
 	}
-	if(attack.time = 60)attack.active = false;
+	if(attack.time = 60)attack.End();
 }
 	
 function attack_3(attack,exarg=0){//长侧封位弹（触侧反弹） 180+exarg
@@ -230,7 +233,7 @@ function attack_3(attack,exarg=0){//长侧封位弹（触侧反弹） 180+exarg
 			}
 		}
 	}
-	if(attack.time = 180+exarg)attack.active = false;
+	if(attack.time = 180+exarg)attack.End();
 }
 	
 function attack_4(attack,exarg=0){//侧狙 40
@@ -291,7 +294,7 @@ function attack_4(attack,exarg=0){//侧狙 40
 		}
 	}
 	if(attack.time = 40){
-		attack.active = false;
+		attack.End();
 		with(mark){
 			move_enabled = !move_enabled;
 			if(move_enabled = true){

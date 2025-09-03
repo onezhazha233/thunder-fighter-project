@@ -162,3 +162,15 @@ Hurt = function(){
 		Anim_Create(id,"blend_b",0,0,0,255,4);
 	}
 }
+
+SetMoveEnabled = function(enabled){
+	move_enabled = enabled;
+	if(move_enabled = true){
+		move_nexttime = time;
+		move_state = 0;
+	}
+	else{
+		Anim_Destroy(id,"x");
+		Anim_Destroy(id,"y");
+	}
+}

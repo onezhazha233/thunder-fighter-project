@@ -19,7 +19,11 @@ function start_attack(attack_type,arg=0){
 		type : attack_type,
 		time : 0,
 		active : true,
-		exarg : arg
+		exarg : arg,
+		
+		End : function(){
+			active = false;
+		}
 	}
 	
 	ds_list_add(attack_list,attack);
@@ -87,7 +91,7 @@ function attack_0(attack,exarg=0){//短散弹 60
 			}
 		}
 	}
-	if(attack.time = 60)attack.active = false;
+	if(attack.time = 60)attack.End();
 }
 
 function attack_1(attack,exarg=0){//长中散弹 150
@@ -119,7 +123,7 @@ function attack_1(attack,exarg=0){//长中散弹 150
 		num0 = 3;
 		angle_range = 90;
 	}
-	if(attack.time = 150)attack.active = false;
+	if(attack.time = 150)attack.End();
 }
 
 function attack_2(attack,exarg=0){//两侧封位弹 120
@@ -141,7 +145,7 @@ function attack_2(attack,exarg=0){//两侧封位弹 120
 		Anim_Create(id,"a1",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,30,-60,40,20);
 		Anim_Create(id,"a1",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,-30,30,20,60);
 	}
-	if(attack.time = 120)attack.active = false;
+	if(attack.time = 120)attack.End();
 }
 
 function attack_3(attack,exarg=0){//侧闪电球 60
@@ -163,7 +167,7 @@ function attack_3(attack,exarg=0){//侧闪电球 60
 			Anim_Create(a,"direction",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,-90-40,60-i*15,30,10);
 		}
 	}
-	if(attack.time = 2)attack.active = false;
+	if(attack.time = 2)attack.End();
 }
 
 function attack_4(attack,exarg=0){//中闪电球（触底反弹散射） 100
@@ -186,7 +190,7 @@ function attack_4(attack,exarg=0){//中闪电球（触底反弹散射） 100
 			}
 		}
 	}
-	if(attack.time = 2)attack.active = false;
+	if(attack.time = 2)attack.End();
 }
 
 function attack_5(attack,exarg=0){//长侧封位弹（触侧反弹） 180+exarg
@@ -230,5 +234,5 @@ function attack_5(attack,exarg=0){//长侧封位弹（触侧反弹） 180+exarg
 			}
 		}
 	}
-	if(attack.time = 180+exarg)attack.active = false;
+	if(attack.time = 180+exarg)attack.End();
 }

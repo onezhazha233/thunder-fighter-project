@@ -15,6 +15,7 @@ destroy_type = 0//0为被守卫抵挡 1为被护盾消除 2为碰到玩家判定
 destroy_effect = noone
 damage = 1
 mark = noone
+duration = -1
 
 scale_x = 1
 scale_y = 1

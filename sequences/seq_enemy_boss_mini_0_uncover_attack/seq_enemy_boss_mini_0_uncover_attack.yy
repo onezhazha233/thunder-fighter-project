@@ -29,7 +29,7 @@
     "name":"red_heavy",
     "path":"folders/序列/enemy/boss/mini/red_heavy.yy",
   },
-  "playback":0,
+  "playback":1,
   "playbackSpeed":60.0,
   "playbackSpeedType":0,
   "resourceType":"GMSequence",
