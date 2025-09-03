@@ -3,7 +3,7 @@ event_inherited();
 
 line_length = 0
 
-function laser(){
+laser = function(){
 	speed = 0;
 	Anim_Destroy(id,"speed");
 	for(i=0;i<3;i+=1){
