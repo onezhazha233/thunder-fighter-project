@@ -35,8 +35,6 @@ time += 1
 
 mover()
 
-SetPosition(x,y)
-
 if(inv_collision = false){
 	if(collision_type = 0){
 		player_point = collision_rectangle(x-left*image_xscale,y-up*image_yscale,x+right*image_xscale,y+down*image_yscale,player,1,1);
