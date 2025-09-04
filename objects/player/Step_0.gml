@@ -10,19 +10,16 @@ if(visible = true){
     
 	    x += dx;
 	    y += dy;
-	
-		x = clamp(20,x,room_width-20);
-		y = clamp(20,y,room_height-20);
 	}
 
 	touch_start_x = (mouse_x-camera._shake_pos_x);
 	touch_start_y = (mouse_y-camera._shake_pos_y);
 	
-	if(instance_exists(equipment)){
-		equipment.x = x
-		equipment.y = y
-		equipment.SetPosition(x,y);
-	}
+	x += (keyboard_check(vk_right) - keyboard_check(vk_left))*8/(1+keyboard_check(vk_lshift));
+	y += (keyboard_check(vk_down) - keyboard_check(vk_up))*8/(1+keyboard_check(vk_lshift));
+	
+	x = clamp(20,x,room_width-20);
+	y = clamp(20,y,room_height-20);
 	
 	if(instance_exists(battle_quantum_shield)){
 		battle_quantum_shield.x = x;
@@ -31,6 +28,10 @@ if(visible = true){
 	}
 	
 	if(instance_exists(equipment)){
+		equipment.x = x
+		equipment.y = y
+		equipment.SetPosition(x,y);
+		
 		if(global.inv_hurt > 0){
 			if(global.inv_hurt mod 5 = 0){
 				if(equipment.image_alpha = 1){
@@ -38,6 +39,19 @@ if(visible = true){
 				}
 				else{
 					equipment.image_alpha = 1;
+				}
+			}
+		}
+		
+		if(rampage_duration > 0){
+			if(equipment.enabled = true){
+				rampage_duration -= 1;
+			}
+		}
+		if(rampage_duration = 0){
+			if(instance_exists(equipment)){
+				if(equipment.state = 1){
+					equipment.SetRampage(0);
 				}
 			}
 		}
@@ -50,15 +64,6 @@ if(visible = true){
 		instance_create_depth(x,y,0,effect_explosion_ring_red);
 		instance_create_depth(x,y,0,effect_explosion_ring_white);
 		//instance_destroy();
-		instance_destroy(equipment_test);
-	}
-	
-	if(rampage_duration > 0)rampage_duration -= 1;
-	if(rampage_duration = 0){
-		if(instance_exists(equipment)){
-			if(equipment.state = 1){
-				equipment.SetRampage(0);
-			}
-		}
+		instance_destroy(equipment_main);
 	}
 }

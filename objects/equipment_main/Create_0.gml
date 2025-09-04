@@ -16,4 +16,3 @@ subweapon = subweapon_nano_splitter
 	wingman_y_offset[i] = 0-cos(i/8*pi)*100;
 }
 */
-e = 0

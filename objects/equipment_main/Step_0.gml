@@ -4,6 +4,6 @@ live;
 event_inherited();
 
 if(keyboard_check_pressed(ord("E"))){
-	SetEnabled(e);
-	e = !e;
+	enabled = !enabled;
+	SetEnabled(enabled);
 }

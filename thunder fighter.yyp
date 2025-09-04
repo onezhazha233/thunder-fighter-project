@@ -808,7 +808,7 @@
     {"id":{"name":"enemy_test_0","path":"objects/enemy_test_0/enemy_test_0.yy",},},
     {"id":{"name":"enemy_test_1","path":"objects/enemy_test_1/enemy_test_1.yy",},},
     {"id":{"name":"equipment_agent","path":"objects/equipment_agent/equipment_agent.yy",},},
-    {"id":{"name":"equipment_test","path":"objects/equipment_test/equipment_test.yy",},},
+    {"id":{"name":"equipment_main","path":"objects/equipment_main/equipment_main.yy",},},
     {"id":{"name":"obj_gmlive","path":"objects/obj_gmlive/obj_gmlive.yy",},},
     {"id":{"name":"plane_agent","path":"objects/plane_agent/plane_agent.yy",},},
     {"id":{"name":"plane_apex_zero","path":"objects/plane_apex_zero/plane_apex_zero.yy",},},

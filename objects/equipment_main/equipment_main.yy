@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"equipment_test",
+  "%Name":"equipment_main",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"equipment_test",
+  "name":"equipment_main",
   "overriddenProperties":[],
   "parent":{
     "name":"物体",

@@ -642,7 +642,7 @@
     {"name":"enemy_damagetest","order":12,"path":"objects/enemy_damagetest/enemy_damagetest.yy",},
     {"name":"enemy_test_1","order":2,"path":"objects/enemy_test_1/enemy_test_1.yy",},
     {"name":"equipment_agent","order":2,"path":"objects/equipment_agent/equipment_agent.yy",},
-    {"name":"equipment_test","order":6,"path":"objects/equipment_test/equipment_test.yy",},
+    {"name":"equipment_main","order":6,"path":"objects/equipment_main/equipment_main.yy",},
     {"name":"obj_gmlive","order":4,"path":"objects/obj_gmlive/obj_gmlive.yy",},
     {"name":"plane_agent","order":7,"path":"objects/plane_agent/plane_agent.yy",},
     {"name":"plane_assault_zero","order":2,"path":"objects/plane_assault_zero/plane_assault_zero.yy",},
