@@ -114,3 +114,28 @@ SetPosition = function(xx,yy){
 		subweapon_inst.SetPosition(xx,yy);
 	}
 }
+
+SetEnabled = function(enabled){
+	with(plane_inst){
+		if(instance_exists(bullet_emitter_inst)){
+			bullet_emitter_inst.enabled = enabled;
+		}
+	}
+	for(i=0;i<array_length(wingman_left);i+=1){
+		with(wingman_left_inst[i]){
+			if(instance_exists(bullet_emitter_inst)){
+				bullet_emitter_inst.enabled = enabled;
+			}
+		}
+	}
+	for(i=0;i<array_length(wingman_right);i+=1){
+		with(wingman_right_inst[i]){
+			if(instance_exists(bullet_emitter_inst)){
+				bullet_emitter_inst.enabled = enabled;
+			}
+		}
+	}
+	if(instance_exists(subweapon_inst)){
+		subweapon_inst.enabled = enabled;
+	}
+}
