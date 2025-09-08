@@ -79,6 +79,10 @@ SetSurfEnabled = function(enabled){
 
 	var scrEnd = function(){
 		if (event_number != ev_draw_normal) return;
+		
+		gpu_set_blendmode_ext(bm_dest_alpha, bm_inv_src_alpha);
+	    draw_surface_ext(surf_effect, 0, 0, 1, 1, 0, c_white, 1);
+		
 		if(surf_enabled = true&&surface_exists(surf))surface_reset_target();
 		shader_reset();
 		gpu_set_blendmode(bm_normal);

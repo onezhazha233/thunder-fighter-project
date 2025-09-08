@@ -1,5 +1,6 @@
 live;
 if(surface_exists(surf))surface_free(surf);
+if(surface_exists(surf_effect))surface_free(surf_effect);
 layer_sequence_destroy(enemy_sequence)
 layer_sequence_destroy(flame_lower_sequence)
 layer_sequence_destroy(flame_upper_sequence)

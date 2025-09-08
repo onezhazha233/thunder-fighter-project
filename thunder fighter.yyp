@@ -2804,6 +2804,8 @@
     {"id":{"name":"spr_spr_enemy_minion_5c0_gun_up","path":"sprites/spr_spr_enemy_minion_5c0_gun_up/spr_spr_enemy_minion_5c0_gun_up.yy",},},
     {"id":{"name":"spr_spr_enemy_minion_5c0_innerside","path":"sprites/spr_spr_enemy_minion_5c0_innerside/spr_spr_enemy_minion_5c0_innerside.yy",},},
     {"id":{"name":"spr_spr_enemy_minion_5c0_side","path":"sprites/spr_spr_enemy_minion_5c0_side/spr_spr_enemy_minion_5c0_side.yy",},},
+    {"id":{"name":"spr_texture_fire","path":"sprites/spr_texture_fire/spr_texture_fire.yy",},},
+    {"id":{"name":"spr_texture_ice","path":"sprites/spr_texture_ice/spr_texture_ice.yy",},},
     {"id":{"name":"spr_ui_hpbar_boss_bar","path":"sprites/spr_ui_hpbar_boss_bar/spr_ui_hpbar_boss_bar.yy",},},
     {"id":{"name":"spr_ui_hpbar_boss_bg","path":"sprites/spr_ui_hpbar_boss_bg/spr_ui_hpbar_boss_bg.yy",},},
     {"id":{"name":"spr_ui_hpbar_boss_name","path":"sprites/spr_ui_hpbar_boss_name/spr_ui_hpbar_boss_name.yy",},},

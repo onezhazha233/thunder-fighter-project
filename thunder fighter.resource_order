@@ -2312,6 +2312,8 @@
     {"name":"spr_spr_enemy_minion_5c0_gun_up","order":5,"path":"sprites/spr_spr_enemy_minion_5c0_gun_up/spr_spr_enemy_minion_5c0_gun_up.yy",},
     {"name":"spr_spr_enemy_minion_5c0_innerside","order":3,"path":"sprites/spr_spr_enemy_minion_5c0_innerside/spr_spr_enemy_minion_5c0_innerside.yy",},
     {"name":"spr_spr_enemy_minion_5c0_side","order":4,"path":"sprites/spr_spr_enemy_minion_5c0_side/spr_spr_enemy_minion_5c0_side.yy",},
+    {"name":"spr_texture_fire","order":14,"path":"sprites/spr_texture_fire/spr_texture_fire.yy",},
+    {"name":"spr_texture_ice","order":15,"path":"sprites/spr_texture_ice/spr_texture_ice.yy",},
     {"name":"spr_ui_hpbar_boss_bar","order":2,"path":"sprites/spr_ui_hpbar_boss_bar/spr_ui_hpbar_boss_bar.yy",},
     {"name":"spr_ui_hpbar_boss_bg","order":1,"path":"sprites/spr_ui_hpbar_boss_bg/spr_ui_hpbar_boss_bg.yy",},
     {"name":"spr_ui_hpbar_player_deepred","order":2,"path":"sprites/spr_ui_hpbar_player_deepred/spr_ui_hpbar_player_deepred.yy",},
