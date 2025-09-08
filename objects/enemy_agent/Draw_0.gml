@@ -21,8 +21,13 @@ if(surf_enabled = true){
     draw_clear_alpha(c_black,0);
     for(i=0;i<5;i+=1){
 		for(j=0;j<5;j+=1){
-			for(k=0;k<512;k+=1){
-				draw_sprite_part_ext(spr_texture_ice,0,0,k,512,1,512*i+sin(k/30+0/20)*20,512*j+k,1,1,-1,0.7);
+			if(effect_type = 0){
+				draw_sprite_ext(spr_texture_ice,0,512*i,512*j,1,1,0,-1,effect_alpha);
+			}
+			if(effect_type = 1){
+				for(k=0;k<512;k+=1){
+					draw_sprite_part_ext(spr_texture_fire,0,0,k,512,1,512*i+sin(k/30+time/20)*20,512*j+k,1,1,-1,effect_alpha);
+				}
 			}
 		}
 	}

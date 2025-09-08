@@ -43,3 +43,5 @@ move_duration = [80,120]
 move_interval = [20,30]
 move_state = 0//0为静止 1为移动中
 move_targetpos = [x,y]
+
+burn_target = 120

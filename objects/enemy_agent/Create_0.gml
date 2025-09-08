@@ -54,17 +54,17 @@ explosion = -1
 alarm[0] = 1
 event_user(0)
 
-surf_enabled = 1
+surf_enabled = true
 surf = -1
 surf_x = 0
 surf_y = 0
 surf_width = 720
 surf_height = 1280
 
-surf_effect = surface_create(720,1280);
+surf_effect = -1
+effect_type = 0//0为冰冻 1为灼烧
+effect_alpha = 0
 
-//le = "enemies"
-//lel = "enemies_lower"
 layer_enemy = layer_create(depth)
 layer_enemy_lower = layer_create(depth+1)
 layer_enemy_upper = layer_create(depth-1)
@@ -85,3 +85,9 @@ items = []//掉落道具列表，格式为[[[道具0,道具1],权重],[[道具0,
 last_bullet = noone
 
 tracks = ds_map_create()//被子弹锁定的数量
+
+burn_amount = 0
+burn_target = 60
+burn_damage = 0
+burn_time = 0
+burn_duration = 0

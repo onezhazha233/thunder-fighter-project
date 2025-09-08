@@ -21,7 +21,7 @@ boss = {
 	boss_list : [boss_red_heavy],
 	
 	Create : function(){
-		enemy = instance_create_depth(room_width/2,-200,0,boss_red_heavy);
+		enemy = instance_create_depth(room_width/2,-200,DEPTH_BATTLE.ENEMIES,boss_red_heavy);
 		return enemy;
 	}
 }
