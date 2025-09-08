@@ -54,12 +54,12 @@ explosion = -1
 alarm[0] = 1
 event_user(0)
 
-surf_enabled = false
-surf = -1;
-surf_x = 0
+surf_enabled = 0
+surf = -1
+surf_x = 50
 surf_y = 200
-surf_width = 720
-surf_height = 500
+surf_width = 600
+surf_height = 200
 
 //le = "enemies"
 //lel = "enemies_lower"

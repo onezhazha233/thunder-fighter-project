@@ -79,17 +79,17 @@ SetSurfEnabled = function(enabled){
 
 	var scrEnd = function(){
 		if (event_number != ev_draw_normal) return;
+		if(surf_enabled = true&&surface_exists(surf))surface_reset_target();
 		shader_reset();
-		draw_set_color(c_red)
+		gpu_set_blendmode(bm_normal);
+		draw_set_color(c_red);
 		if(collision_type = 0){
 			draw_rectangle(x-left*image_xscale,y-up*image_yscale,x+right*image_xscale,y+down*image_yscale,1);
 		}
 		if(collision_type = 1){
 			draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,1);
 		}
-		draw_set_color(-1)
-		gpu_set_blendmode(bm_normal);
-		if(surf_enabled = true&&surface_exists(surf))surface_reset_target();
+		draw_set_color(-1);
 	}
 	layer_script_begin(le, scrBegin);
 	layer_script_end(le, scrEnd);
