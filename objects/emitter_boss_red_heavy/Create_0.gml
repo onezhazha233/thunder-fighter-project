@@ -188,12 +188,7 @@ function attack_1(attack,exarg=0){//散狙 120
 		}
 	}
 	if(attack.time mod 20 = 0){
-		with(mark){
-			layer_sequence_destroy(enemy_sequence);
-			enemy_sequence = layer_sequence_create(le,x,y,seq_enemy_boss_mini_0_attack_0);
-			layer_sequence_xscale(enemy_sequence,image_xscale);
-			layer_sequence_yscale(enemy_sequence,image_yscale);
-		}
+		mark.SetSequence(seq_enemy_boss_mini_0_attack_0);
 		tt = attack.time div 20;
 		switch(tt){
 			case 1:
@@ -219,12 +214,7 @@ function attack_1(attack,exarg=0){//散狙 120
 function attack_2(attack,exarg=0){//侧双斜散射 120
 	if(attack.time = 1){
 		mark.SetMoveEnabled(false);
-		with(mark){
-			layer_sequence_destroy(enemy_sequence);
-			enemy_sequence = layer_sequence_create(le,x,y,seq_enemy_boss_mini_0_attack_1);
-			layer_sequence_xscale(enemy_sequence,image_xscale);
-			layer_sequence_yscale(enemy_sequence,image_yscale);
-		}
+		mark.SetSequence(seq_enemy_boss_mini_0_attack_1);
 		for(i=0;i<15;i+=1){
 			a = MakeEnemyBullet(x-125-20,y+80,bullet_enemy_red,spr_bullet_enemy_red_0);
 			a.image_xscale = 2;
@@ -302,20 +292,10 @@ function attack_2(attack,exarg=0){//侧双斜散射 120
 function attack_3(attack,exarg=0){//中心散射 230
 	if(attack.time = 1){
 		mark.SetMoveEnabled(false);
-		with(mark){
-			layer_sequence_destroy(enemy_sequence);
-			enemy_sequence = layer_sequence_create(le,x,y,seq_enemy_boss_mini_0_uncover);
-			layer_sequence_xscale(enemy_sequence,image_xscale);
-			layer_sequence_yscale(enemy_sequence,image_yscale);
-		}
+		mark.SetSequence(seq_enemy_boss_mini_0_uncover);
 	}
 	if(attack.time = 60){
-		with(mark){
-			layer_sequence_destroy(enemy_sequence);
-			enemy_sequence = layer_sequence_create(le,x,y,seq_enemy_boss_mini_0_uncover_attack);
-			layer_sequence_xscale(enemy_sequence,image_xscale);
-			layer_sequence_yscale(enemy_sequence,image_yscale);
-		}
+		mark.SetSequence(seq_enemy_boss_mini_0_uncover_attack);
 	}
 	if(attack.time > 60&&attack.time < 110){
 		if(attack.time mod 3 = 0){
@@ -382,12 +362,7 @@ function attack_3(attack,exarg=0){//中心散射 230
 		}
 	}
 	if(attack.time = 200){
-		with(mark){
-			layer_sequence_destroy(enemy_sequence);
-			enemy_sequence = layer_sequence_create(le,x,y,seq_enemy_boss_mini_0_cover);
-			layer_sequence_xscale(enemy_sequence,image_xscale);
-			layer_sequence_yscale(enemy_sequence,image_yscale);
-		}
+		mark.SetSequence(seq_enemy_boss_mini_0_cover);
 	}
 	if(attack.time = 230){
 		attack.End();

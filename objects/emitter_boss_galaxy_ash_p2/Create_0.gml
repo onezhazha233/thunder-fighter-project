@@ -146,7 +146,7 @@ function attack_2(attack,exarg=0){//机枪 60
 	if(attack.time = 1){
 		with(mark){
 			layer_sequence_destroy(enemy_sequence);
-			enemy_sequence = layer_sequence_create(le,x,y,seq_enemy_boss_large_1_p2_attack_0);
+			enemy_sequence = layer_sequence_create(layer_enemy,x,y,seq_enemy_boss_large_1_p2_attack_0);
 			layer_sequence_xscale(enemy_sequence,image_xscale);
 			layer_sequence_yscale(enemy_sequence,image_yscale);
 		}
