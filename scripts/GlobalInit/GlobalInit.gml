@@ -1,7 +1,7 @@
 function GlobalInit(){
 	global.hpmax = 10;
 	global.hp = 10;
-	global.atk_plane = 0.1;
+	global.atk_plane = 1;
 	global.atk_wingman = 1;
 	global.atk_subweapon = 1;
 	global.inv_hurt = 0;

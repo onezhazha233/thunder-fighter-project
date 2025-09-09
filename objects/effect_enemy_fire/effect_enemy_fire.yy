@@ -1,22 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"enemy_damagetest",
+  "%Name":"effect_enemy_fire",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"enemy_damagetest",
+  "name":"effect_enemy_fire",
   "overriddenProperties":[],
   "parent":{
     "name":"enemy",
-    "path":"folders/物体/enemy.yy",
+    "path":"folders/物体/effect/enemy.yy",
   },
-  "parentObjectId":{
-    "name":"enemy_agent",
-    "path":"objects/enemy_agent/enemy_agent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_effect_enemy_fire",
+    "path":"sprites/spr_effect_enemy_fire/spr_effect_enemy_fire.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

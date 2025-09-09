@@ -1,6 +1,4 @@
 live;
-SetPosition(x,y)
-
 if(burn_amount >= burn_target){
 	burn_duration = burn_time;
 	burn_amount = 0;
@@ -15,7 +13,9 @@ if(burn_duration > 0){
 	burn_duration -= 1;
 	effect_type = 1;
 	effect_alpha += (0.7-effect_alpha)/2;
-	if(inv_damage = false)hp -= burn_damage;
+	var dmg = burn_damage;
+	var now = time;
+	ds_list_add(damage_history, [now, dmg]);
 	if(burn_duration mod 5 = 0){
 		for(i=0;i<irandom_range(1,3);i+=1){
 			xx = random_range(bbox_left,bbox_right);
