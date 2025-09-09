@@ -6,12 +6,12 @@ SetState = function(s){
 			draw_plane = 1;
 		}
 		if(idle_mode = 1){
-			plane_sequence = layer_sequence_create("planes",x,y,idle_sequence);
+			plane_sequence = layer_sequence_create(layer_plane,x,y,idle_sequence);
 			layer_sequence_xscale(plane_sequence,image_xscale);
 			layer_sequence_yscale(plane_sequence,image_yscale);
 		}
 		if(idle_mode = 2){
-			plane_sequence = layer_sequence_create("planes",x,y,idle_sequence);
+			plane_sequence = layer_sequence_create(layer_plane,x,y,idle_sequence);
 			layer_sequence_xscale(plane_sequence,image_xscale);
 			layer_sequence_yscale(plane_sequence,image_yscale);
 			layer_sequence_headpos(plane_sequence,0);
@@ -21,7 +21,7 @@ SetState = function(s){
 	if(s = 1){
 		if(sequence_exists(rampage_intro)){
 			layer_sequence_destroy(plane_sequence);
-			plane_sequence = layer_sequence_create("planes",x,y,rampage_intro);
+			plane_sequence = layer_sequence_create(layer_plane,x,y,rampage_intro);
 			layer_sequence_xscale(plane_sequence,image_xscale);
 			layer_sequence_yscale(plane_sequence,image_yscale);
 			draw_plane = 0;
@@ -30,7 +30,7 @@ SetState = function(s){
 	if(s = 2){
 		if(sequence_exists(rampage)){
 			layer_sequence_destroy(plane_sequence);
-			plane_sequence = layer_sequence_create("planes",x,y,rampage);
+			plane_sequence = layer_sequence_create(layer_plane,x,y,rampage);
 			layer_sequence_xscale(plane_sequence,image_xscale);
 			layer_sequence_yscale(plane_sequence,image_yscale);
 			draw_plane = 0;
@@ -40,14 +40,14 @@ SetState = function(s){
 		layer_sequence_destroy(plane_sequence);
 		if(rampage_outro_mode = 0){
 			if(sequence_exists(rampage_outro)){
-				plane_sequence = layer_sequence_create("planes",x,y,rampage_outro);
+				plane_sequence = layer_sequence_create(layer_plane,x,y,rampage_outro);
 				layer_sequence_xscale(plane_sequence,image_xscale);
 				layer_sequence_yscale(plane_sequence,image_yscale);
 			}
 		}
 		if(rampage_outro_mode = 1){
 			if(sequence_exists(rampage_intro)){
-				plane_sequence = layer_sequence_create("planes",x,y,rampage_intro);
+				plane_sequence = layer_sequence_create(layer_plane,x,y,rampage_intro);
 				layer_sequence_xscale(plane_sequence,image_xscale);
 				layer_sequence_yscale(plane_sequence,image_yscale);
 				layer_sequence_headdir(plane_sequence,seqdir_left);
@@ -72,14 +72,14 @@ SetSurfEnabled = function(enabled){
 		gpu_set_blendmode(bm_normal);
 		if(surf_enabled = true&&surface_exists(surf))surface_reset_target();
 	}
-	layer_script_begin("planes", scrBegin);
-	layer_script_end("planes", scrEnd);
+	layer_script_begin(layer_plane, scrBegin);
+	layer_script_end(layer_plane, scrEnd);
 
-	layer_script_begin("planes_lower", scrBegin);
-	layer_script_end("planes_lower", scrEnd);
+	layer_script_begin(layer_plane_lower, scrBegin);
+	layer_script_end(layer_plane_lower, scrEnd);
 	
-	layer_script_begin("planes_upper", scrBegin);
-	layer_script_end("planes_upper", scrEnd);
+	layer_script_begin(layer_plane_upper, scrBegin);
+	layer_script_end(layer_plane_upper, scrEnd);
 	
 	SetPosition(x,y);
 }
@@ -92,21 +92,21 @@ SetPosition = function(xx,yy){
 		bullet_emitter_inst.SetPosition(x,y);
 	}
 	
-	if(layer_sequence_exists("planes",plane_sequence)){
+	if(layer_sequence_exists(layer_plane,plane_sequence)){
 		layer_sequence_x(plane_sequence,x-surf_x*surf_enabled);
 		layer_sequence_y(plane_sequence,y-surf_y*surf_enabled);
 		layer_sequence_xscale(plane_sequence,(state == 0&&roll_state != 0 ? 0 : image_xscale));
 		layer_sequence_yscale(plane_sequence,image_yscale);
 		layer_sequence_angle(plane_sequence,image_angle);
 	}
-	if(layer_sequence_exists("planes_lower",flame_lower_sequence)){
+	if(layer_sequence_exists(layer_plane_lower,flame_lower_sequence)){
 		layer_sequence_x(flame_lower_sequence,x+lengthdir_x(flame_lower_x_offset,image_angle)*image_xscale-surf_x*surf_enabled+lengthdir_x(flame_lower_y_offset,image_angle-90)*image_xscale);
 		layer_sequence_y(flame_lower_sequence,y+lengthdir_y(flame_lower_x_offset,image_angle)*image_yscale-surf_y*surf_enabled+lengthdir_y(flame_lower_y_offset,image_angle-90)*image_yscale);
 		layer_sequence_xscale(flame_lower_sequence,image_xscale);
 		layer_sequence_yscale(flame_lower_sequence,image_yscale);
 		layer_sequence_angle(flame_lower_sequence,image_angle);
 	}
-	if(layer_sequence_exists("planes_upper",flame_upper_sequence)){
+	if(layer_sequence_exists(layer_plane_upper,flame_upper_sequence)){
 		layer_sequence_x(flame_upper_sequence,x+lengthdir_x(flame_upper_x_offset,image_angle)*image_xscale-surf_x*surf_enabled+lengthdir_x(flame_upper_y_offset,image_angle-90)*image_xscale);
 		layer_sequence_y(flame_upper_sequence,y+lengthdir_y(flame_upper_x_offset,image_angle)*image_yscale-surf_y*surf_enabled+lengthdir_y(flame_upper_y_offset,image_angle-90)*image_yscale);
 		layer_sequence_xscale(flame_upper_sequence,image_xscale);

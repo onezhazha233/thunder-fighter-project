@@ -11,7 +11,7 @@ image_angle = direction - 90;
 
 if(layer_sequence_is_finished(bullet_sequence)){
 	layer_sequence_destroy(bullet_sequence);
-	bullet_sequence = layer_sequence_create("bullets_player",x,y,idle);
+	bullet_sequence = layer_sequence_create(global.layer_bullets_player,x,y,idle);
 }
 
 rot_rate = min(rot_rate+0.005,0.3)

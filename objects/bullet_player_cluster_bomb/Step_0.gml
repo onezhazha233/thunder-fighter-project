@@ -29,4 +29,4 @@ if(aa > 0){
 
 duration -= 1
 
-Sequence_PlayByFrame("bullets_player")
+Sequence_PlayByFrame(global.layer_bullets_player)

@@ -68,9 +68,6 @@ effect_alpha = 0
 layer_enemy = layer_create(depth)
 layer_enemy_lower = layer_create(depth+1)
 layer_enemy_upper = layer_create(depth-1)
-le = layer_enemy
-lel = layer_enemy_lower
-leu = layer_enemy_upper
 
 damage = 2
 

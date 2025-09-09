@@ -31,7 +31,7 @@ for (var i = 0; i < 10; i++) {
     var final_x = x + lengthdir_x(len, final_dir)*scale_x;
     var final_y = y + lengthdir_y(len, final_dir)*scale_y;
         
-    a = instance_create_depth(final_x, final_y, DEPTH_BATTLE.EFFECT,bullet_effect_blade_slash_point);
+    a = instance_create_depth(final_x, final_y, DEPTH_BATTLE.EFFECTS,bullet_effect_blade_slash_point);
 	a.sprite_index = point_sprite;
 	a.direction = dir + image_angle + r;
 	a.speed = point_distance(x,y,final_x,final_y)/3;

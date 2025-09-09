@@ -1,5 +1,5 @@
 live;
-depth = 0
+depth = DEPTH_BATTLE.ITEMS
 
 detect_range = 180
 detect_amount = 0

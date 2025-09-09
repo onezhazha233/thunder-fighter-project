@@ -12,7 +12,7 @@ if(hp <= 0){
 	
 	if(array_length(boss_list) = 0){
 		if!(die_sequence = -1){
-			layer_sequence_create("enemies",x,y,die_sequence);
+			layer_sequence_create(global.layer_enemies_die,x,y,die_sequence);
 		}
 		if(object_exists(explosion)){
 			instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,explosion);

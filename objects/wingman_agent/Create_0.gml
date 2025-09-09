@@ -35,3 +35,6 @@ surf_x = 50
 surf_y = 50
 surf_width = 800
 surf_height = 600
+
+layer_wingman = layer_create(depth)
+layer_wingman_lower = layer_create(depth+1)

@@ -1,4 +1,4 @@
-if(layer_sequence_exists("bullets_enemy",bullet_sequence)){
+if(layer_sequence_exists(global.layer_bullets_enemy,bullet_sequence)){
 	layer_sequence_destroy(bullet_sequence);
 }
 

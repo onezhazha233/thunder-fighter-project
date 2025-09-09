@@ -42,6 +42,10 @@ surf_y = 720
 surf_width = 720
 surf_height = 300
 
+layer_plane = layer_create(depth)
+layer_plane_lower = layer_create(depth+1)
+layer_plane_upper = layer_create(depth-1)
+
 speed_x = 0
 
 roll_state = 0;// 侧翻状态：-3到3（0为水平，负为左翻，正为右翻）

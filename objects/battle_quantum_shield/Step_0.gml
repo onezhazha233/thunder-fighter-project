@@ -9,7 +9,7 @@ else{
 if(duration <= 0){
 	if(duration = 0){
 		layer_sequence_destroy(shield_sequence);
-		layer_sequence_create("item_effects",x,y,seq_battle_quantum_shield_fade);
+		layer_sequence_create(global.layer_item_effects,x,y,seq_battle_quantum_shield_fade);
 	}
 	with(bullet_enemy){
 		destroy_type = 1;

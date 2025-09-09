@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Layer_Init",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Layer_Init",
+  "parent":{
+    "name":"Sequence",
+    "path":"folders/脚本/Sequence.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -16,7 +16,7 @@ function MakePlayerBullet(){
 	bullet.scale_y = scale_y;
 	if(argument_count >= 4){
 		with(bullet){
-			bullet_sequence = layer_sequence_create("bullets_player",x,y,SEQ);
+			bullet_sequence = layer_sequence_create(global.layer_bullets_player,x,y,SEQ);
 			layer_sequence_xscale(bullet_sequence,scale_x);
 			layer_sequence_yscale(bullet_sequence,scale_y);
 		}

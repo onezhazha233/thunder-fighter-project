@@ -4,4 +4,4 @@ if(layer_sequence_is_finished(seq)){
 	instance_destroy();
 }
 
-Sequence_PlayByFrame("effects")
+Sequence_PlayByFrame(global.layer_effects)

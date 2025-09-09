@@ -3,10 +3,13 @@ function Macro_Depth(){
 		UI = -1000,
 		INSTANCES_UPPER = -100,
 		BULLETS_PLAYER = 600,
-		EFFECT = -200,
+		EFFECTS = -200,
 		BULLETS_ENEMY = -300,
 		EXPLOSION = -400,
+		ITEMS = 0,
+		ITEM_EFFECTS = -400,
 		ENEMIES = 700,
+		ENEMIES_DIE = 700,
 		BG = 900
 	}
 }

@@ -7,7 +7,7 @@ if(mouse_check_button(mb_right)){
 }
 
 if(hp <= 0){
-	layer_sequence_create("enemies",x,y,seq_enemy_boss_mini_2_die);
+	layer_sequence_create(global.layer_enemies_die,x,y,seq_enemy_boss_mini_2_die);
 }
 
 time += 1

@@ -19,7 +19,7 @@ function MakeEnemyBullet(){
 		}
 		if(sequence_exists(SPR_OR_SEQ)){
 			with(bullet){
-				bullet_sequence = layer_sequence_create("bullets_enemy",x,y,SPR_OR_SEQ);
+				bullet_sequence = layer_sequence_create(global.layer_bullets_enemy,x,y,SPR_OR_SEQ);
 				layer_sequence_xscale(bullet_sequence,scale_x);
 				layer_sequence_yscale(bullet_sequence,scale_y);
 			}
