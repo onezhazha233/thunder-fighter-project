@@ -183,3 +183,9 @@ Hurt = function(){
 		Anim_Create(id,"blend_b",0,0,0,255,4);
 	}
 }
+
+SetMoveEnabled = function(enabled){
+	move_enabled = enabled;
+	Anim_Pause(id,"x",!enabled);
+	Anim_Pause(id,"y",!enabled);
+}

@@ -74,6 +74,7 @@ damage = 2
 time = 0
 
 mover = function(){}
+move_enabled = true
 
 Anim_Create(id,"inv_damage",0,0,1,-1,0,30)
 

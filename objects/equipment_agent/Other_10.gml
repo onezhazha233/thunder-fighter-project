@@ -116,6 +116,7 @@ SetPosition = function(xx,yy){
 }
 
 SetEnabled = function(enabled){
+	self.enabled = enabled;
 	with(plane_inst){
 		if(instance_exists(bullet_emitter_inst)){
 			bullet_emitter_inst.enabled = enabled;

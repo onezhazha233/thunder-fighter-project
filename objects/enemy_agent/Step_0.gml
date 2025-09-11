@@ -31,9 +31,10 @@ if(layer_sequence_is_finished(enemy_sequence)){
 	}
 }
 
-time += 1
-
-mover()
+if(move_enabled = true){
+	time += 1;
+	mover();
+}
 
 if(inv_collision = false){
 	if(collision_type = 0){

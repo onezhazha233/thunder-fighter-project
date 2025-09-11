@@ -1,11 +1,7 @@
 live;
 if(visible = true){
-	if(place_meeting(x,y,bullet_enemy)&&global.inv_hurt = 0&&global.inv_shield = 0){
+	if(place_meeting(x,y,bullet_enemy)&&global.inv_hurt = 0&&global.inv_shield = 0&&global.inv_cutscene = 0){
 		event_user(0);
-	}
-	
-	if(instance_exists(equipment)){
-		//equipment.SetEnabled(false);
 	}
 
 	if(mouse_check_button(mb_left)){
@@ -15,9 +11,6 @@ if(visible = true){
 	    x += dx;
 	    y += dy;
 		
-		if(instance_exists(equipment)){
-			//equipment.SetEnabled(true);
-		}
 	}
 
 	touch_start_x = (mouse_x-camera._shake_pos_x);
@@ -28,12 +21,6 @@ if(visible = true){
 	
 	x = clamp(20,x,room_width-20);
 	y = clamp(20,y,room_height-20);
-	
-	if(keyboard_check(ord("Z"))){
-		if(instance_exists(equipment)){
-			//equipment.SetEnabled(true);
-		}
-	}
 	
 	if(instance_exists(battle_quantum_shield)){
 		battle_quantum_shield.x = x;
