@@ -7,6 +7,8 @@ shield_sequence = layer_sequence_create(sl,x,y,seq_battle_quantum_shield)
 duration = global.quantum_shield_duration
 global.inv_shield = 1
 
+type = 1
+
 fade = 0
 fade_time = 0
 

@@ -16,3 +16,7 @@ enemy_0 = new Enemy(enemy_4b,emitter_enemy_b,function(){
 })*/
 
 ds_queue_enqueue(enemies,[[enemy_0],200])
+
+instance_create_depth(360,400,0,battle_item_quantum_shield)
+instance_create_depth(360,400,0,battle_item_quantum_shield)
+instance_create_depth(360,400,0,battle_item_quantum_shield)
