@@ -25,3 +25,6 @@ if(player_point_enabled = true){
 if!(subweapon = -1){
 	subweapon_inst = instance_create_depth(x,y,DEPTH_BATTLE.BULLETS_PLAYER,subweapon);
 }
+if!(armor = -1){
+	armor_inst = instance_create_depth(0,0,0,armor);
+}

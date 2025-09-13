@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Player_SetWeaponLevel",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Player_SetWeaponLevel",
+  "parent":{
+    "name":"Player",
+    "path":"folders/脚本/Player.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

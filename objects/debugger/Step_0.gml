@@ -24,24 +24,18 @@ if(keyboard_check_pressed(ord("C"))){
 
 if(instance_exists(player)){
 	if(keyboard_check_pressed(vk_space)){
-		if(player.rampage_duration > 0){
-			player.SetRampageDuration(0);
+		if(Player_GetRampage() = 0){
+			Player_SetRampage(global.rampage_duration,true);
 		}
 		else{
-			player.SetRampageDuration(global.rampage_duration);
-			layer_sequence_create(global.layer_item_effects,player.x,player.y,seq_battle_item_effect_rampage);
+			Player_SetRampage(0,false);
 		}
 	}
 
 	if(keyboard_check_pressed(ord("W"))){
-		if(player.equipment.weapon_level < 3){
-			player.equipment.SetWeaponLevel(min(3,player.equipment.weapon_level+1));
-			layer_sequence_create(global.layer_item_effects,player.x,player.y,seq_battle_item_effect_weapon_upgrade);
-		}
+		Player_UpgradeWeapon();
 	}
 	if(keyboard_check_pressed(ord("S"))){
-		if(player.equipment.weapon_level > 0){
-			player.equipment.SetWeaponLevel(max(0,player.equipment.weapon_level-1));
-		}
+		Player_SetWeaponLevel(max(0,Player_GetWeaponLevel()-1));
 	}
 }

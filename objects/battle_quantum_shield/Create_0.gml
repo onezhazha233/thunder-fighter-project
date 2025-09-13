@@ -2,7 +2,7 @@ live;
 event_inherited()
 
 depth = -50
-sl = layer_create(-50)
+sl = layer_create(depth)
 shield_sequence = layer_sequence_create(sl,x,y,seq_battle_quantum_shield)
 duration = global.quantum_shield_duration
 global.inv_shield = 1
