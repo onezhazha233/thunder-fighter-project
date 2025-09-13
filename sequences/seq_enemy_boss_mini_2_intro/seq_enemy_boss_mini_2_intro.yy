@@ -147,7 +147,7 @@
             {"$GMClipMask_Mask":"","%Name":"mask","builtinName":12,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"modifiers":[],"name":"mask","resourceType":"GMClipMask_Mask","resourceVersion":"2.0","trackColour":4294068345,"tracks":[
                 {"$GMInstanceTrack":"","%Name":"pp","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetInstanceKeyframe>":"","Keyframes":[
                       {"$Keyframe<AssetInstanceKeyframe>":"","Channels":{
-                          "0":{"$AssetInstanceKeyframe":"","Id":{"name":"pp","path":"objects/pp/pp.yy",},"resourceType":"AssetInstanceKeyframe","resourceVersion":"2.0",},
+                          "0":{"$AssetInstanceKeyframe":"","Id":{"name":"pixel_mask_for_sequence","path":"objects/pixel_mask_for_sequence/pixel_mask_for_sequence.yy",},"resourceType":"AssetInstanceKeyframe","resourceVersion":"2.0",},
                         },"Disabled":false,"id":"f6cffe53-1bdf-4886-8733-b7baf9c75f79","IsCreationKey":false,"Key":0.0,"Length":60.0,"resourceType":"Keyframe<AssetInstanceKeyframe>","resourceVersion":"2.0","Stretch":false,},
                     ],"resourceType":"KeyframeStore<AssetInstanceKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"pp","resourceType":"GMInstanceTrack","resourceVersion":"2.0","trackColour":4294068345,"tracks":[
                     {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
@@ -671,7 +671,7 @@
             {"$GMClipMask_Mask":"","%Name":"mask","builtinName":12,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"modifiers":[],"name":"mask","resourceType":"GMClipMask_Mask","resourceVersion":"2.0","trackColour":4294068345,"tracks":[
                 {"$GMInstanceTrack":"","%Name":"pp","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetInstanceKeyframe>":"","Keyframes":[
                       {"$Keyframe<AssetInstanceKeyframe>":"","Channels":{
-                          "0":{"$AssetInstanceKeyframe":"","Id":{"name":"pp","path":"objects/pp/pp.yy",},"resourceType":"AssetInstanceKeyframe","resourceVersion":"2.0",},
+                          "0":{"$AssetInstanceKeyframe":"","Id":{"name":"pixel_mask_for_sequence","path":"objects/pixel_mask_for_sequence/pixel_mask_for_sequence.yy",},"resourceType":"AssetInstanceKeyframe","resourceVersion":"2.0",},
                         },"Disabled":false,"id":"17348cc4-d78f-4bc9-9ca4-e686e9c40da5","IsCreationKey":false,"Key":0.0,"Length":60.0,"resourceType":"Keyframe<AssetInstanceKeyframe>","resourceVersion":"2.0","Stretch":false,},
                     ],"resourceType":"KeyframeStore<AssetInstanceKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"pp","resourceType":"GMInstanceTrack","resourceVersion":"2.0","trackColour":4294068345,"tracks":[
                     {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[

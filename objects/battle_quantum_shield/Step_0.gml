@@ -30,10 +30,3 @@ else{
 Sequence_PlayByFrame(sl);
 
 SetPosition(x,y)
-
-/*with(bullet_enemy){
-	if(point_distance(x,y,other.x,other.y) <= other.shield_range){
-		destroy_type = 1;
-		instance_destroy();
-	}
-}

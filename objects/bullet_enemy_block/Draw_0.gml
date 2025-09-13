@@ -9,5 +9,3 @@ if(instance_exists(bullet)){
 		instance_destroy();
 	}
 }
-
-//draw_self()

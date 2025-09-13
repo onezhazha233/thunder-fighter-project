@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"pp",
+  "%Name":"pixel_mask_for_sequence",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"pp",
+  "name":"pixel_mask_for_sequence",
   "overriddenProperties":[],
   "parent":{
     "name":"物体",
