@@ -1,6 +1,6 @@
 live;
 global.hp += heal/duration
-if(global.hp >= global.hpmax){
+if(global.hp >= global.hp_max){
 	instance_destroy();
 }
 time += 1

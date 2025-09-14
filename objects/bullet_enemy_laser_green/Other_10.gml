@@ -1,2 +1,2 @@
 live;
-global.hp -= damage
+Player_Hurt(damage)

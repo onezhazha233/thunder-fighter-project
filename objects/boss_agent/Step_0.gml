@@ -20,6 +20,8 @@ if(hp <= 0){
 		battle_ui.boss_hpbar_hp = 0;
 		Anim_Create(battle_ui,"boss_hpbar_enabled",0,0,1,-1,0,180);
 		Anim_Create(battle_wave,"enabled",0,0,0,1,0,240);
+		global.inv_cutscene = 1;
+		player.equipment.SetEnabled(false);
 	}
 	else{
 		instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,effect_explosion_big);

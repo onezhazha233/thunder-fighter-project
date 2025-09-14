@@ -56,6 +56,10 @@ if(visible = true){
 				}
 			}
 		}
+		
+		if(instance_exists(equipment.armor_inst)){
+			equipment.armor_inst.ArmorAbility(0);
+		}
 	}
 	global.inv_hurt = max(0,global.inv_hurt-1);
 
@@ -66,5 +70,7 @@ if(visible = true){
 		instance_create_depth(x,y,0,effect_explosion_ring_white);
 		//instance_destroy();
 		instance_destroy(equipment_main);
+		repeat(4)instance_create_depth(x,y,0,battle_item_weapon_upgrade);
+		instance_create_depth(x,y,0,battle_item_quantum_shield);
 	}
 }

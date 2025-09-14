@@ -1,2 +1,3 @@
 live;
 Player_SetShield(global.quantum_shield_duration)
+Player_SetLastItem(self)

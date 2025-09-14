@@ -1,5 +1,5 @@
 function GlobalInit(){
-	global.hpmax = 10;
+	global.hp_max = 10;
 	global.hp = 10;
 	global.atk_plane = 1;
 	global.atk_wingman = 1;
@@ -10,4 +10,7 @@ function GlobalInit(){
 	global.rampage_duration = 300;
 	global.quantum_shield_duration = 300;
 	randomize();
+	
+	global.debug_bullet_player_collision_display = false;
+	global.debug_enemy_collision_display = false;
 }

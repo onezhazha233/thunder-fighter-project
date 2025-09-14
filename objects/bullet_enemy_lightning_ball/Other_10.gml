@@ -1,4 +1,3 @@
 live;
 destroy_type = 2
-
-global.hp -= damage
+Player_Hurt(damage)

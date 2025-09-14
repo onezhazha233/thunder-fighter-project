@@ -3,7 +3,7 @@ function Player_UpgradeWeapon(){
 		if(Player_GetRampage() = 0){
 			if(Player_GetWeaponLevel() < 3){
 				Player_SetWeaponLevel(Player_GetWeaponLevel()+1);
-				layer_sequence_create(global.layer_item_effects,x,y,seq_battle_item_effect_weapon_upgrade);
+				layer_sequence_create(global.layer_item_effects,player.x,player.y,seq_battle_item_effect_weapon_upgrade);
 			}
 			else{
 				Player_SetRampage(global.rampage_duration,true);

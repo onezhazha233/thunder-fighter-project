@@ -2,11 +2,12 @@ event_inherited();
 
 xscale = 1
 yscale = 1
-plane = plane_fire
+plane = plane_assault_zero
 wingman_left = []
 wingman_right = []
 wingman_y_offset = []
 //subweapon = subweapon_nano_splitter
+armor = armor_gold_d
 
 /*for(i=0;i<8;i+=1){
 	wingman_left[i] = plane_aurora_phantom;
