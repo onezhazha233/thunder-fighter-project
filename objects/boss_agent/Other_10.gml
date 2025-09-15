@@ -156,11 +156,12 @@ CreateItem = function(){
         if (rand < current_weight) {
             var selected_items = items[i][0];
             for (var j = 0; j < array_length(selected_items); j++) {
-                instance_create_depth(x,y,0,selected_items[j]);
+                item_inst[j] = instance_create_depth(x,y,0,selected_items[j]);
             }
             break;
         }
     }
+	return item_inst;
 }
 
 Hurt = function(){

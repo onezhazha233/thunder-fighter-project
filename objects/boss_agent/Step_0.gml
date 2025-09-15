@@ -6,7 +6,10 @@ if!(depth_previous = depth){
 }
 
 if(hp <= 0){
-	CreateItem();
+	ii = CreateItem();
+	for(i=0;i<array_length(ii);i+=1){
+		ii[i].direction = random_range(-135,-45);
+	}
 	alarm[2] = 1;
 	active = false;
 	
