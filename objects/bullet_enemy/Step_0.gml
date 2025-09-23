@@ -8,7 +8,7 @@ if(duration = 0){
 	instance_destroy();
 }
 
-if(instance_exists(player)&&player.visible = true){
+if(Player_IsEnabled()){
 	if(global.inv_hurt = 0&&global.inv_shield = 0&&global.inv_cutscene = 0){
 		if(collision_mask_enabled = true){
 			if(place_meeting(x,y,player)){

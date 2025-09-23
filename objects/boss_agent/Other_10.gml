@@ -147,6 +147,7 @@ CreateItem = function(){
     for (var i = 0; i < array_length(items); i++) {
         total_weight += items[i][1];
     }
+	item_inst = [];
     
     var rand = random(total_weight);
     var current_weight = 0;

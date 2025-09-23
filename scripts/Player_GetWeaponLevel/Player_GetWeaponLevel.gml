@@ -1,5 +1,5 @@
 function Player_GetWeaponLevel(){
-	if(instance_exists(player)&&instance_exists(player.equipment)){
+	if(Player_IsEnabled()){
 		return player.equipment.weapon_level;
 	}
 	else{

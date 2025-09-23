@@ -29,7 +29,7 @@ if(state >= 2){
 		find_player = laser_find_width(x,y,image_angle,length,10,player,true,true);
 		if(instance_exists(find[1])){
 			if(laser_scale > 0.2){
-				if(instance_exists(player)&&player.visible = true){
+				if(Player_IsEnabled()){
 					if(global.inv_hurt = 0&&global.inv_shield = 0){
 						event_user(0);
 						Player_CallHurtEvent();

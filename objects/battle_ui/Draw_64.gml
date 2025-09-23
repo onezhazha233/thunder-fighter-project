@@ -1,5 +1,8 @@
 live;
 draw_sprite(spr_ui_hpbar_player,0,0,0)
+for(i=1;i<string_length(global.score)+1;i+=1){
+	draw_sprite_ext(spr_ui_score_number,real(string_char_at(global.score,i)),200+i*16,4,0.8,0.8,0,-1,1);
+}
 if(global.hp <= global.hp_max*0.25){
 	hp_red_time += 1;
 	draw_sprite_part_ext(spr_ui_hpbar_player_red,0,0,0,sprite_get_width(spr_ui_hpbar_player_red),sprite_get_height(spr_ui_hpbar_player_red),114,30,1,1,-1,0.25-cos(hp_red_time/10)*0.25);

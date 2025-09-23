@@ -7,9 +7,6 @@ if!(depth_previous = depth){
 
 if(hp <= 0){
 	ii = CreateItem();
-	for(i=0;i<array_length(ii);i+=1){
-		ii[i].direction = random_range(-135,-45);
-	}
 	alarm[2] = 1;
 	active = false;
 	
@@ -36,7 +33,9 @@ if(hp <= 0){
 		battle_ui.boss_hpbar_hp_max = 1;
 		array_delete(boss_list,0,1);
 		a.boss_list = boss_list;
-		
+		for(i=0;i<array_length(ii);i+=1){
+			ii[i].direction = random_range(-135,-45);
+		}
 	}
 }
 

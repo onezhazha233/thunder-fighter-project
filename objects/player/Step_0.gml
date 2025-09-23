@@ -4,17 +4,44 @@ if(visible = true){
 		event_user(0);
 	}
 
-	if(mouse_check_button(mb_left)){
-	    var dx = (mouse_x-camera._shake_pos_x) - touch_start_x;
-	    var dy = (mouse_y-camera._shake_pos_y) - touch_start_y;
+	/*if(device_mouse_check_button(0,mb_left)){
+	    var dx = (device_mouse_x(0)-camera._shake_pos_x) - touch_start_x;
+	    var dy = (device_mouse_y(0)-camera._shake_pos_y) - touch_start_y;
     
 	    x += dx;
 	    y += dy;
 		
 	}
 
-	touch_start_x = (mouse_x-camera._shake_pos_x);
-	touch_start_y = (mouse_y-camera._shake_pos_y);
+	touch_start_x = (device_mouse_x(0)-camera._shake_pos_x);
+	touch_start_y = (device_mouse_y(0)-camera._shake_pos_y);
+	*/
+	
+	var touch_index = 0; // 使用第一个触摸点（在手机上 device_mouse 对应触摸点）
+
+	// 检测是否正在触摸（按下）
+	var is_touching = device_mouse_check_button(touch_index, mb_left);
+
+	if (is_touching) {
+	    // 如果尚未绑定触摸，初始化记录
+	    if (!variable_struct_exists(id, "touch_active") || !touch_active) {
+	        touch_active = true;
+	        touch_start_x = device_mouse_x(touch_index);
+	        touch_start_y = device_mouse_y(touch_index);
+	        obj_start_x = x;
+	        obj_start_y = y;
+	    }
+
+	    // 计算滑动偏移量并应用1:1移动
+	    var dx = device_mouse_x(touch_index) - touch_start_x;
+	    var dy = device_mouse_y(touch_index) - touch_start_y;
+	    x = obj_start_x + dx;
+	    y = obj_start_y + dy;
+
+	} else {
+	    // 没有触摸时，清除状态
+	    touch_active = false;
+	}
 	
 	x += (keyboard_check(vk_right) - keyboard_check(vk_left))*8/(1+keyboard_check(vk_lshift));
 	y += (keyboard_check(vk_down) - keyboard_check(vk_up))*8/(1+keyboard_check(vk_lshift));

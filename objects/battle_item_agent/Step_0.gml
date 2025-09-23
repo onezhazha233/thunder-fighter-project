@@ -1,5 +1,5 @@
 live;
-if(player.visible = true){
+if(Player_IsEnabled()){
 	if(point_distance(x,y,player.x,player.y) <= detect_range){
 		detect_amount = min(detect_target,detect_amount+1);
 		if(detect_amount >= detect_target){

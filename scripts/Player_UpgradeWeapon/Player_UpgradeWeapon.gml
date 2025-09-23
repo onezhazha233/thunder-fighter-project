@@ -1,5 +1,5 @@
 function Player_UpgradeWeapon(){
-	if(instance_exists(player)&&instance_exists(player.equipment)){
+	if(Player_IsEnabled()){
 		if(Player_GetRampage() = 0){
 			if(Player_GetWeaponLevel() < 3){
 				Player_SetWeaponLevel(Player_GetWeaponLevel()+1);

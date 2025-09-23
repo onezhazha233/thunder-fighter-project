@@ -1,5 +1,5 @@
 function Player_GetRampage(){
-	if(instance_exists(player)&&instance_exists(player.equipment)){
+	if(Player_IsEnabled()){
 		return player.rampage_duration;
 	}
 	else{
