@@ -2,12 +2,12 @@ event_inherited();
 
 xscale = 1
 yscale = 1
-plane = plane_assault_zero
-wingman_left = [wingman_lightarc_b,wingman_lightarc_a]
-wingman_right = [wingman_lightarc_c,wingman_lightarc_d]
+plane = plane_agent
+wingman_left = []
+wingman_right = []
 wingman_x_offset = [130,250]
 wingman_y_offset = [0,0]
-//subweapon = subweapon_nano_splitter
+subweapon = subweapon_ultra_cluster_bomb
 armor = armor_alloy_d
 
 /*for(i=0;i<8;i+=1){

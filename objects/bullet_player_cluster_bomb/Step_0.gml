@@ -2,9 +2,12 @@ live;
 if(duration <= 0){
 	layer_sequence_speedscale(bullet_sequence,game_get_speed(gamespeed_fps)/60);
 }
-if(collision_point(x,y,enemy_agent,true,true)){
+if(collision_point(x,y,enemy_agent,true,true)&&aa = 0){
 	hspeed = 0;
+	//vspeed = -10;
 	Anim_Destroy(id,"hspeed");
+	Anim_Destroy(id,"vspeed");
+	Anim_Destroy(id,"y");
 	layer_sequence_speedscale(bullet_sequence,game_get_speed(gamespeed_fps)/60);
 	duration = -1;
 }

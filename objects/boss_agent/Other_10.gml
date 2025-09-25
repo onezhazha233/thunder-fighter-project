@@ -32,7 +32,7 @@ SetState = function(s){
 			bullet_emitter_inst.enabled = true;
 		}
 		global.inv_cutscene = 0;
-		player.equipment.SetEnabled(true);
+		if(Player_IsEnabled())player.equipment.SetEnabled(true);
 		inv_collision = false;
 		SetFlame(flame_lower,flame_upper);
 		if(idle_mode = 0){
