@@ -3,9 +3,10 @@ event_inherited();
 xscale = 1
 yscale = 1
 plane = plane_assault_zero
-wingman_left = [wingman_lightarc_a]
-wingman_right = [wingman_lightarc_a]
-wingman_y_offset = [0]
+wingman_left = [wingman_lightarc_b,wingman_lightarc_a]
+wingman_right = [wingman_lightarc_c,wingman_lightarc_d]
+wingman_x_offset = [130,250]
+wingman_y_offset = [0,0]
 //subweapon = subweapon_nano_splitter
 armor = armor_alloy_d
 

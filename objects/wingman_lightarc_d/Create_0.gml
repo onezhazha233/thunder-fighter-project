@@ -9,4 +9,4 @@ rampage = seq_lightarc_a_rampage
 rampage_outro_mode = 0
 rampage_outro = seq_lightarc_a_rampage_outro
 
-bullet_emitter = emitter_wingman_lightarc_a
+bullet_emitter = emitter_wingman_lightarc_d
