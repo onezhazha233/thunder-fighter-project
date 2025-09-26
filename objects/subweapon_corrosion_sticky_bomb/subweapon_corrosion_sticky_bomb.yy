@@ -1,19 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"wingman_lightarc_d",
+  "%Name":"subweapon_corrosion_sticky_bomb",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":11,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"wingman_lightarc_d",
+  "name":"subweapon_corrosion_sticky_bomb",
   "overriddenProperties":[],
   "parent":{
-    "name":"lightarc",
-    "path":"folders/物体/wingman/lightarc.yy",
+    "name":"sticky_bomb",
+    "path":"folders/物体/subweapon/sticky_bomb.yy",
   },
   "parentObjectId":{
-    "name":"wingman_agent",
-    "path":"objects/wingman_agent/wingman_agent.yy",
+    "name":"emitter_player",
+    "path":"objects/emitter_player/emitter_player.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

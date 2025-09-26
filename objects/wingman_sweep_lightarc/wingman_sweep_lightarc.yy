@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"wingman_lightarc_a",
+  "%Name":"wingman_sweep_lightarc",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"wingman_lightarc_a",
+  "name":"wingman_sweep_lightarc",
   "overriddenProperties":[],
   "parent":{
     "name":"lightarc",

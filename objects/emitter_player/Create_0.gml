@@ -6,6 +6,8 @@ time_interval_rampage = 4
 dir = 0//0为右 1为左
 alarm[0] = 1
 follow_inst = []
+scale_x = 1
+scale_y = 1
 
 SetPosition = function(xx,yy){
 	x = xx;
