@@ -2,7 +2,7 @@ live;
 damage = 0.375*global.atk_plane
 
 rampage_time += 1
-a = MakePlayerBullet(x,y,bullet_player_fire);
+a = MakePlayerBullet(x,y,bullet_player_plane_fire);
 a.rotate = sin(rampage_time*1919)*3;
 a.image_angle = cos(rampage_time*1919)*180;
 a.direction = 90 + sin(rampage_time*1145)*7;

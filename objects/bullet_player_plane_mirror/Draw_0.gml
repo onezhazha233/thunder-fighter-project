@@ -1,0 +1,2 @@
+live;
+draw_self()

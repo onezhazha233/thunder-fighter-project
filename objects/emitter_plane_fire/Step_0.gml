@@ -19,7 +19,7 @@ if(enabled = true){
 	if(rampage = false){
 		attack_time = max(0,attack_time-1);
 		if(attack_time > 0){
-			a = MakePlayerBullet(x,y,bullet_player_fire);
+			a = MakePlayerBullet(x,y,bullet_player_plane_fire);
 			a.rotate = sin(attack_time*1919)*3;
 			a.image_angle = cos(attack_time*1919)*180;
 			a.direction = 90 + sin(attack_time*1145)*(4+weapon_level*0.5);
