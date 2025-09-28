@@ -1,10 +1,11 @@
 live;
-// 更新偏移量，保持在背景高度的范围内
-bg_offset += scroll_speed;
+for(var i=0;i<array_length(bg_images);i+=1){
+	bg_offset[i] += scroll_speed[i];
 
-// 保持偏移在 0 到 bg_h 之间（向上和向下都支持）
-if (bg_offset >= GetBgHeight()) {
-    bg_offset -= GetBgHeight();
-} else if (bg_offset < 0) {
-    bg_offset += GetBgHeight();
+	if(bg_offset[i] >= bg_height[i]){
+	    bg_offset[i] -= bg_height[i];
+	}
+	else if(bg_offset[i] < 0){
+	    bg_offset[i] += bg_height[i];
+	}
 }
