@@ -35,7 +35,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_battle_item_rampage",
+    "path":"sprites/spr_battle_item_rampage/spr_battle_item_rampage.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

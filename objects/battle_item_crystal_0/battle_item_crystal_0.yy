@@ -1,14 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"battle_item_quantum_shield",
+  "%Name":"battle_item_crystal_0",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"battle_item_quantum_shield",
+  "name":"battle_item_crystal_0",
   "overriddenProperties":[],
   "parent":{
     "name":"item",
@@ -36,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_battle_item_quantum_shield",
-    "path":"sprites/spr_battle_item_quantum_shield/spr_battle_item_quantum_shield.yy",
+    "name":"spr_battle_item_crystal_0",
+    "path":"sprites/spr_battle_item_crystal_0/spr_battle_item_crystal_0.yy",
   },
   "spriteMaskId":null,
   "visible":true,

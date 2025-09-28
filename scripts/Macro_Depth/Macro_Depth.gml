@@ -7,6 +7,7 @@ function Macro_Depth(){
 		BULLETS_ENEMY = -300,
 		EXPLOSION = -400,
 		ITEMS = 0,
+		ITEMS_CRYSTAL = -100,
 		ITEM_EFFECTS = -400,
 		ENEMIES = 700,
 		ENEMIES_DIE = 700,

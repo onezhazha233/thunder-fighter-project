@@ -35,7 +35,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_battle_item_weapon_upgrade",
+    "path":"sprites/spr_battle_item_weapon_upgrade/spr_battle_item_weapon_upgrade.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

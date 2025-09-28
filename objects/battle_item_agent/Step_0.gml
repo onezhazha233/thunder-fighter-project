@@ -8,7 +8,7 @@ if(Player_IsEnabled()){
 	}
 	if(chase = 1){
 		direction = point_direction(x,y,player.x,player.y);
-		speed = min(20,speed+4);
+		speed = min(chase_speed_max,speed+chase_acceleration);
 	}
 	if(point_distance(x,y,player.x,player.y) <= speed*2){
 		event_user(0);

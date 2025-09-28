@@ -35,7 +35,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_battle_quantum_shield_circle",
+    "path":"sprites/spr_battle_quantum_shield_circle/spr_battle_quantum_shield_circle.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

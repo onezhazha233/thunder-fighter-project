@@ -35,7 +35,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_battle_item_hp_recovery_cross",
+    "path":"sprites/spr_battle_item_hp_recovery_cross/spr_battle_item_hp_recovery_cross.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
