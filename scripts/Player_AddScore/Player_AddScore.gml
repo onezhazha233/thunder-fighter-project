@@ -1,3 +1,3 @@
-function Player_AddScore(sco){
-	Player_SetScore(Player_GetScore()+sco);
+function Player_AddScore(sc){
+	Player_SetScore(Player_GetScore()+sc);
 }

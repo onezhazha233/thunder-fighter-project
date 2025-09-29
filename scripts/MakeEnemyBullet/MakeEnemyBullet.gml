@@ -11,7 +11,7 @@ function MakeEnemyBullet(){
 		SPR_OR_SEQ = argument[3];
 	}
 	
-	bullet = instance_create_depth(X,Y,depth,OBJ);
+	var bullet = instance_create_depth(X,Y,depth,OBJ);
 	bullet.mark = mark;
 	if(argument_count >= 4){
 		if(sprite_exists(SPR_OR_SEQ)){

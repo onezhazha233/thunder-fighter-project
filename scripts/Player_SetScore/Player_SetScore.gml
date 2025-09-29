@@ -1,3 +1,3 @@
-function Player_SetScore(sco){
-	global.score = sco;
+function Player_SetScore(sc){
+	global.score = sc;
 }

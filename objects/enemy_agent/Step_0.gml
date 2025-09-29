@@ -10,6 +10,7 @@ Sequence_PlayByFrame(layer_enemy_lower);
 Sequence_PlayByFrame(layer_enemy_upper);
 
 if(hp <= 0){
+	OnDie();
 	if(object_exists(explosion)){
 		instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,explosion);
 	}

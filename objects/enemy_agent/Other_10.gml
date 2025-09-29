@@ -191,3 +191,7 @@ SetMoveEnabled = function(enabled){
 	Anim_Pause(id,"x",!enabled);
 	Anim_Pause(id,"y",!enabled);
 }
+
+OnDie = function(){
+	
+}

@@ -11,7 +11,7 @@ function MakePlayerBullet(){
 		SEQ = argument[3];
 	}
 	
-	bullet = instance_create_depth(X,Y,depth,OBJ);
+	var bullet = instance_create_depth(X,Y,depth,OBJ);
 	bullet.scale_x = scale_x;
 	bullet.scale_y = scale_y;
 	if(argument_count >= 4){

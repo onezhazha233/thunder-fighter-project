@@ -191,3 +191,7 @@ SetSequence = function(seq){
 	layer_sequence_xscale(enemy_sequence,image_xscale);
 	layer_sequence_yscale(enemy_sequence,image_yscale);
 }
+
+OnDie = function(){
+	
+}
