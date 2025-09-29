@@ -1,10 +1,10 @@
 live;
 event_inherited();
-depth = DEPTH_BATTLE.ITEMS_CRYSTAL
+depth = DEPTH_BATTLE.ITEMS_CRYSTAL-10
 
 enabled = false
 
-detect_range = 320
+detect_range = 340
 chase_acceleration = 2
 chase_speed_max = 18
 

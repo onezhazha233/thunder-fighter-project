@@ -28,5 +28,3 @@ else{
 }
 
 Sequence_PlayByFrame(sl);
-
-SetPosition(x,y)
