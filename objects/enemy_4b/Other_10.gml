@@ -9,9 +9,9 @@ OnDie = function(){
 	}
 	Player_AddScore(90*multipler);
 	repeat(2){
-		a = MakeCrystal(x,y+random_range(bbox_top-y,bbox_bottom-y)*2.5,2);
+		crystal = MakeCrystal(x,y+random_range(bbox_top-y,bbox_bottom-y)*2.5,2);
 		spd = random_range(4,10);
-		Anim_Create(a,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.x,random_range(bbox_left-x,bbox_right-x)*1.5,spd*2);
-		a.vspeed = -spd;
+		Anim_Create(crystal,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,crystal.x,random_range(bbox_left-x,bbox_right-x)*1.5,spd*2);
+		crystal.vspeed = -spd;
 	}
 }

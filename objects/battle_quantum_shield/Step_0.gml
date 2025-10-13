@@ -1,10 +1,12 @@
 live;
-duration -= 1
-if(duration < 70){
-	fade = 1;
-}
-else{
-	fade = 0;
+if(equipment.enabled = true){
+	duration -= 1;
+	if(duration < 70){
+		fade = 1;
+	}
+	else{
+		fade = 0;
+	}
 }
 if(duration <= 0){
 	if(duration = 0){
