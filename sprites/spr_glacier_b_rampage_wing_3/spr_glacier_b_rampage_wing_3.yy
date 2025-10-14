@@ -23,7 +23,7 @@
   ],
   "name":"spr_glacier_b_rampage_wing_3",
   "nineSlice":null,
-  "origin":0,
+  "origin":2,
   "parent":{
     "name":"storm_glacier",
     "path":"folders/精灵/plane/glacier/storm_glacier.yy",
@@ -75,7 +75,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":77,
     "yorigin":0,
   },
   "swatchColours":null,
