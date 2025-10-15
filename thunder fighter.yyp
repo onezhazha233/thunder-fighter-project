@@ -1393,6 +1393,7 @@
     {"id":{"name":"seq_glacier_b_rampage","path":"sequences/seq_glacier_b_rampage/seq_glacier_b_rampage.yy",},},
     {"id":{"name":"seq_glacier_c_idle","path":"sequences/seq_glacier_c_idle/seq_glacier_c_idle.yy",},},
     {"id":{"name":"seq_glacier_c_rampage_intro","path":"sequences/seq_glacier_c_rampage_intro/seq_glacier_c_rampage_intro.yy",},},
+    {"id":{"name":"seq_glacier_c_rampage","path":"sequences/seq_glacier_c_rampage/seq_glacier_c_rampage.yy",},},
     {"id":{"name":"seq_guardian_a_idle","path":"sequences/seq_guardian_a_idle/seq_guardian_a_idle.yy",},},
     {"id":{"name":"seq_guardian_a_rampage_intro","path":"sequences/seq_guardian_a_rampage_intro/seq_guardian_a_rampage_intro.yy",},},
     {"id":{"name":"seq_guardian_a_rampage","path":"sequences/seq_guardian_a_rampage/seq_guardian_a_rampage.yy",},},
