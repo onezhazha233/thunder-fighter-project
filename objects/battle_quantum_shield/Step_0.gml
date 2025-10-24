@@ -1,5 +1,5 @@
 live;
-if(equipment.enabled = true){
+if(player.equipment.enabled = true){
 	duration -= 1;
 	if(duration < 70){
 		fade = 1;

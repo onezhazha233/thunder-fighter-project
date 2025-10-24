@@ -2,7 +2,7 @@ event_inherited();
 
 xscale = 1
 yscale = 1
-plane = plane_storm_glacier
+plane = plane_x_wing_glacier
 wingman_left = []
 wingman_right = []
 wingman_x_offset = [130,250]
