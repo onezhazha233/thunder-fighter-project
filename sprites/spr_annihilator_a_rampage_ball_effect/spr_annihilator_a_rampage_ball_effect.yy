@@ -12,16 +12,16 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d9783c6d-28e3-419e-ae0d-f06af6994359","name":"d9783c6d-28e3-419e-ae0d-f06af6994359","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"ec52455e-cb37-404e-b452-3ba72474dc7b","name":"ec52455e-cb37-404e-b452-3ba72474dc7b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"3968bfe1-7b56-49c6-831e-7aaca533d377","name":"3968bfe1-7b56-49c6-831e-7aaca533d377","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"76d35103-01a2-43bc-ba7e-936dc713060d","name":"76d35103-01a2-43bc-ba7e-936dc713060d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"ee542441-85bc-4b91-92d3-1e747394a753","name":"ee542441-85bc-4b91-92d3-1e747394a753","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"517fd770-0941-4d6d-9333-5e451e62be94","name":"517fd770-0941-4d6d-9333-5e451e62be94","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":18,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"f39e3b42-2453-424d-aa33-85828947865e","blendMode":0,"displayName":"default","isLocked":false,"name":"f39e3b42-2453-424d-aa33-85828947865e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"bd2e3160-21ae-48a1-8100-b71f3129fa8f","blendMode":0,"displayName":"default","isLocked":false,"name":"bd2e3160-21ae-48a1-8100-b71f3129fa8f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_annihilator_a_rampage_ball_effect",
   "nineSlice":null,
@@ -71,14 +71,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d9783c6d-28e3-419e-ae0d-f06af6994359","path":"sprites/spr_annihilator_a_rampage_ball_effect/spr_annihilator_a_rampage_ball_effect.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2a384afc-20d5-487e-8af8-0ffc6ed43283","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"76d35103-01a2-43bc-ba7e-936dc713060d","path":"sprites/spr_annihilator_a_rampage_ball_effect/spr_annihilator_a_rampage_ball_effect.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"30cb8665-d743-4eb7-ad6b-56d3bd8ff218","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ec52455e-cb37-404e-b452-3ba72474dc7b","path":"sprites/spr_annihilator_a_rampage_ball_effect/spr_annihilator_a_rampage_ball_effect.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"190e12d3-ada5-4e23-b319-554b4fce222f","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ee542441-85bc-4b91-92d3-1e747394a753","path":"sprites/spr_annihilator_a_rampage_ball_effect/spr_annihilator_a_rampage_ball_effect.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"02897b27-3930-469e-aa03-4f361ab1429e","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3968bfe1-7b56-49c6-831e-7aaca533d377","path":"sprites/spr_annihilator_a_rampage_ball_effect/spr_annihilator_a_rampage_ball_effect.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b548121c-acb7-48c9-9825-908bc17e5376","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"517fd770-0941-4d6d-9333-5e451e62be94","path":"sprites/spr_annihilator_a_rampage_ball_effect/spr_annihilator_a_rampage_ball_effect.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c9a79825-1378-4b7d-9357-14a4ad32f727","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

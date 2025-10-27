@@ -1,3 +1,5 @@
+depth = 200
+
 xscale = 2
 yscale = 2
 angle = 0

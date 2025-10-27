@@ -1,5 +1,5 @@
 live;
-depth = -600
+depth = DEPTH_BATTLE.ITEM_EFFECTS
 image_xscale = 0
 image_yscale = 0
 
