@@ -79,110 +79,110 @@ function attack_0(attack,exarg=0){//散射+六向直线 240
 	}
 }
 
-function attack_1(attack,exarg=0){//散狙 120
+function attack_1(attack,exarg=0){//散射 120
 	at = attack.time;
 	if(attack.time = 1){
 		mark.SetMoveEnabled(false);
 		a3 = function(){
 			for(i=0;i<4;i+=1){
-				dir = [point_direction(x-75,y+100,player.x,player.y),point_direction(x+75,y+100,player.x,player.y)];
+				dir = [-90,-90];//[point_direction(x-75,y+100,player.x,player.y),point_direction(x+75,y+100,player.x,player.y)];
 				for(j=0;j<3;j+=1){
 					if(i = 0){
 						a = MakeEnemyBullet(x-75,y+100,bullet_enemy_red,spr_bullet_enemy_red_1);
 						a.image_angle = dir[0]-21+j*21;
 						a.direction = dir[0]-21+j*21;
-						Anim_Create(a,"speed",0,0,0,12,30);
+						Anim_Create(a,"speed",0,0,0,10,30);
 						a = MakeEnemyBullet(x+75,y+100,bullet_enemy_red,spr_bullet_enemy_red_1);
 						a.image_angle = dir[1]-21+j*21;
 						a.direction = dir[1]-21+j*21;
-						Anim_Create(a,"speed",0,0,0,12,30);
+						Anim_Create(a,"speed",0,0,0,10,30);
 					}
 					else{
 						a = MakeEnemyBullet(x-75,y+100,bullet_enemy_red,spr_bullet_enemy_red_1);
 						a.image_angle = dir[0]-i*3-21+j*21;
 						a.direction = dir[0]-i*3-21+j*21;
-						Anim_Create(a,"speed",0,0,0,12-i,30);
+						Anim_Create(a,"speed",0,0,0,10-i,30);
 						a = MakeEnemyBullet(x-75,y+100,bullet_enemy_red,spr_bullet_enemy_red_1);
 						a.image_angle = dir[0]+i*3-21+j*21;
 						a.direction = dir[0]+i*3-21+j*21;
-						Anim_Create(a,"speed",0,0,0,12-i,30);
+						Anim_Create(a,"speed",0,0,0,10-i,30);
 						a = MakeEnemyBullet(x+75,y+100,bullet_enemy_red,spr_bullet_enemy_red_1);
 						a.image_angle = dir[1]-i*3-21+j*21;
 						a.direction = dir[1]-i*3-21+j*21;
-						Anim_Create(a,"speed",0,0,0,12-i,30);
+						Anim_Create(a,"speed",0,0,0,10-i,30);
 						a = MakeEnemyBullet(x+75,y+100,bullet_enemy_red,spr_bullet_enemy_red_1);
 						a.image_angle = dir[1]+i*3-21+j*21;
 						a.direction = dir[1]+i*3-21+j*21;
-						Anim_Create(a,"speed",0,0,0,12-i,30);
+						Anim_Create(a,"speed",0,0,0,10-i,30);
 					}
 				}
 			}
 		}
 		a2 = function(){
 			for(i=0;i<4;i+=1){
-				dir = [point_direction(x-75,y+100,player.x,player.y),point_direction(x+75,y+100,player.x,player.y)];
+				dir = [-90,-90];//[point_direction(x-75,y+100,player.x,player.y),point_direction(x+75,y+100,player.x,player.y)];
 				for(j=0;j<2;j+=1){
 					if(i = 0){
 						a = MakeEnemyBullet(x-75,y+100,bullet_enemy_red,spr_bullet_enemy_red_1);
 						a.image_angle = dir[0]-10.5+j*21;
 						a.direction = dir[0]-10.5+j*21;
-						Anim_Create(a,"speed",0,0,0,12,30);
+						Anim_Create(a,"speed",0,0,0,10,30);
 						a = MakeEnemyBullet(x+75,y+100,bullet_enemy_red,spr_bullet_enemy_red_1);
 						a.image_angle = dir[1]-10.5+j*21;
 						a.direction = dir[1]-10.5+j*21;
-						Anim_Create(a,"speed",0,0,0,12,30);
+						Anim_Create(a,"speed",0,0,0,10,30);
 					}
 					else{
 						a = MakeEnemyBullet(x-75,y+100,bullet_enemy_red,spr_bullet_enemy_red_1);
 						a.image_angle = dir[0]-i*3-10.5+j*21;
 						a.direction = dir[0]-i*3-10.5+j*21;
-						Anim_Create(a,"speed",0,0,0,12-i,30);
+						Anim_Create(a,"speed",0,0,0,10-i,30);
 						a = MakeEnemyBullet(x-75,y+100,bullet_enemy_red,spr_bullet_enemy_red_1);
 						a.image_angle = dir[0]+i*3-10.5+j*21;
 						a.direction = dir[0]+i*3-10.5+j*21;
-						Anim_Create(a,"speed",0,0,0,12-i,30);
+						Anim_Create(a,"speed",0,0,0,10-i,30);
 						a = MakeEnemyBullet(x+75,y+100,bullet_enemy_red,spr_bullet_enemy_red_1);
 						a.image_angle = dir[1]-i*3-10.5+j*21;
 						a.direction = dir[1]-i*3-10.5+j*21;
-						Anim_Create(a,"speed",0,0,0,12-i,30);
+						Anim_Create(a,"speed",0,0,0,10-i,30);
 						a = MakeEnemyBullet(x+75,y+100,bullet_enemy_red,spr_bullet_enemy_red_1);
 						a.image_angle = dir[1]+i*3-10.5+j*21;
 						a.direction = dir[1]+i*3-10.5+j*21;
-						Anim_Create(a,"speed",0,0,0,12-i,30);
+						Anim_Create(a,"speed",0,0,0,10-i,30);
 					}
 				}
 			}
 		}
 		a1 = function(){
 			for(i=0;i<4;i+=1){
-				dir = [point_direction(x-75,y+100,player.x,player.y),point_direction(x+75,y+100,player.x,player.y)];
+				dir = [-90,-90];//[point_direction(x-75,y+100,player.x,player.y),point_direction(x+75,y+100,player.x,player.y)];
 				if(i = 0){
 					a = MakeEnemyBullet(x-75,y+100,bullet_enemy_red,spr_bullet_enemy_red_1);
 					a.image_angle = dir[0];
 					a.direction = dir[0];
-					Anim_Create(a,"speed",0,0,0,12,30);
+					Anim_Create(a,"speed",0,0,0,10,30);
 					a = MakeEnemyBullet(x+75,y+100,bullet_enemy_red,spr_bullet_enemy_red_1);
 					a.image_angle = dir[1];
 					a.direction = dir[1];
-					Anim_Create(a,"speed",0,0,0,12,30);
+					Anim_Create(a,"speed",0,0,0,10,30);
 				}
 				else{
 					a = MakeEnemyBullet(x-75,y+100,bullet_enemy_red,spr_bullet_enemy_red_1);
 					a.image_angle = dir[0]-i*3;
 					a.direction = dir[0]-i*3;
-					Anim_Create(a,"speed",0,0,0,12-i,30);
+					Anim_Create(a,"speed",0,0,0,10-i,30);
 					a = MakeEnemyBullet(x-75,y+100,bullet_enemy_red,spr_bullet_enemy_red_1);
 					a.image_angle = dir[0]+i*3;
 					a.direction = dir[0]+i*3;
-					Anim_Create(a,"speed",0,0,0,12-i,30);
+					Anim_Create(a,"speed",0,0,0,10-i,30);
 					a = MakeEnemyBullet(x+75,y+100,bullet_enemy_red,spr_bullet_enemy_red_1);
 					a.image_angle = dir[1]-i*3;
 					a.direction = dir[1]-i*3;
-					Anim_Create(a,"speed",0,0,0,12-i,30);
+					Anim_Create(a,"speed",0,0,0,10-i,30);
 					a = MakeEnemyBullet(x+75,y+100,bullet_enemy_red,spr_bullet_enemy_red_1);
 					a.image_angle = dir[1]+i*3;
 					a.direction = dir[1]+i*3;
-					Anim_Create(a,"speed",0,0,0,12-i,30);
+					Anim_Create(a,"speed",0,0,0,10-i,30);
 				}
 			}
 		}
@@ -222,7 +222,7 @@ function attack_2(attack,exarg=0){//侧双斜散射 120
 			Anim_Create(a,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.x,-i*5,30+i);
 			Anim_Create(a,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.y,40*i+20,30+i);
 			a.direction = i*30-90;
-			Anim_Create(a,"speed",0,0,0,10,40,60+i*2);
+			Anim_Create(a,"speed",0,0,0,9-(i/2.5),40,60+i*2.5);
 			
 			a = MakeEnemyBullet(x-125+20,y+80,bullet_enemy_red,spr_bullet_enemy_red_0);
 			a.image_xscale = 2;
@@ -230,7 +230,7 @@ function attack_2(attack,exarg=0){//侧双斜散射 120
 			Anim_Create(a,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.x,-i*5,30+i);
 			Anim_Create(a,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.y,40*i+20,30+i);
 			a.direction = i*10-90;
-			Anim_Create(a,"speed",0,0,0,12,40,70+i*2);
+			Anim_Create(a,"speed",0,0,0,11-(i/2.5),40,90+i*2.5);
 			
 			a = MakeEnemyBullet(x-125-20,y+80,bullet_enemy_red,spr_bullet_enemy_red_0);
 			a.image_xscale = 2;
@@ -238,7 +238,7 @@ function attack_2(attack,exarg=0){//侧双斜散射 120
 			Anim_Create(a,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.x,i*5,30+i);
 			Anim_Create(a,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.y,40*i+20,30+i);
 			a.direction = i*20-90;
-			Anim_Create(a,"speed",0,0,0,10,40,60+i*2);
+			Anim_Create(a,"speed",0,0,0,9-(i/2.5),40,60+i*2.5);
 			
 			a = MakeEnemyBullet(x-125+20,y+80,bullet_enemy_red,spr_bullet_enemy_red_0);
 			a.image_xscale = 2;
@@ -246,7 +246,7 @@ function attack_2(attack,exarg=0){//侧双斜散射 120
 			Anim_Create(a,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.x,i*5,30+i);
 			Anim_Create(a,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.y,40*i+20,30+i);
 			a.direction = i*25-90;
-			Anim_Create(a,"speed",0,0,0,12,40,70+i*2);
+			Anim_Create(a,"speed",0,0,0,11-(i/2.5),40,90+i*2.5);
 		}
 		for(i=0;i<15;i+=1){
 			a = MakeEnemyBullet(x+125+20,y+80,bullet_enemy_red,spr_bullet_enemy_red_0);
@@ -255,7 +255,7 @@ function attack_2(attack,exarg=0){//侧双斜散射 120
 			Anim_Create(a,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.x,i*5,30+i);
 			Anim_Create(a,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.y,40*i+20,30+i);
 			a.direction = -i*30-90;
-			Anim_Create(a,"speed",0,0,0,10,40,60+i*2);
+			Anim_Create(a,"speed",0,0,0,9-(i/2.5),40,60+i*2.5);
 			
 			a = MakeEnemyBullet(x+125-20,y+80,bullet_enemy_red,spr_bullet_enemy_red_0);
 			a.image_xscale = 2;
@@ -263,7 +263,7 @@ function attack_2(attack,exarg=0){//侧双斜散射 120
 			Anim_Create(a,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.x,i*5,30+i);
 			Anim_Create(a,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.y,40*i+20,30+i);
 			a.direction = -i*10-90;
-			Anim_Create(a,"speed",0,0,0,12,40,70+i*2);
+			Anim_Create(a,"speed",0,0,0,11-(i/2.5),40,90+i*2.5);
 			
 			a = MakeEnemyBullet(x+125+20,y+80,bullet_enemy_red,spr_bullet_enemy_red_0);
 			a.image_xscale = 2;
@@ -271,7 +271,7 @@ function attack_2(attack,exarg=0){//侧双斜散射 120
 			Anim_Create(a,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.x,-i*5,30+i);
 			Anim_Create(a,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.y,40*i+20,30+i);
 			a.direction = -i*20-90;
-			Anim_Create(a,"speed",0,0,0,10,40,60+i*2);
+			Anim_Create(a,"speed",0,0,0,9-(i/2.5),40,60+i*2.5);
 			
 			a = MakeEnemyBullet(x+125-20,y+80,bullet_enemy_red,spr_bullet_enemy_red_0);
 			a.image_xscale = 2;
@@ -279,7 +279,7 @@ function attack_2(attack,exarg=0){//侧双斜散射 120
 			Anim_Create(a,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.x,-i*5,30+i);
 			Anim_Create(a,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.y,40*i+20,30+i);
 			a.direction = -i*25-90;
-			Anim_Create(a,"speed",0,0,0,12,40,70+i*2);
+			Anim_Create(a,"speed",0,0,0,11-(i/2),40,90+i*2.5);
 		}
 	}
 	if(time = 120){
@@ -309,7 +309,7 @@ function attack_3(attack,exarg=0){//中心散射 230
 				Anim_Create(a,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.x,ex,30+i*2);
 				Anim_Create(a,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.y,ey,30+i*2);
 				a.direction = i*(360/6)+tt*5;
-				Anim_Create(a,"speed",0,0,0,-15,40,90);
+				Anim_Create(a,"speed",0,0,0,-12,40,90);
 			}
 		}
 	}
@@ -325,7 +325,7 @@ function attack_3(attack,exarg=0){//中心散射 230
 				Anim_Create(a,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.x,ex,30+i*2);
 				Anim_Create(a,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.y,ey,30+i*2);
 				a.direction = -i*(360/7)-tt*5;
-				Anim_Create(a,"speed",0,0,0,-15,40,90);
+				Anim_Create(a,"speed",0,0,0,-12,40,90);
 			}
 		}
 	}
@@ -341,13 +341,13 @@ function attack_3(attack,exarg=0){//中心散射 230
 				Anim_Create(a,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.x,ex,30+i*2);
 				Anim_Create(a,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.y,ey,30+i*2);
 				a.direction = i*45-tt*5;
-				Anim_Create(a,"speed",0,0,0,-15,40,90);
+				Anim_Create(a,"speed",0,0,0,-12,50,90);
 			}
 		}
 	}
-	if(attack.time > 180&&attack.time < 196){
+	if(attack.time > 180&&attack.time < 190){
 		if(attack.time mod 1 = 0){
-			tt = (attack.time-160) div 1;
+			tt = (attack.time-180) div 1;
 			for(i=0;i<9;i+=1){
 				a = MakeEnemyBullet(x,y+25,bullet_enemy_red,spr_bullet_enemy_red_0);
 				a.image_xscale = 2;
@@ -357,7 +357,7 @@ function attack_3(attack,exarg=0){//中心散射 230
 				Anim_Create(a,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.x,ex,30+i*2);
 				Anim_Create(a,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.y,ey,30+i*2);
 				a.direction = -i*(360/9)-tt*5;
-				Anim_Create(a,"speed",0,0,0,-15,40,90);
+				Anim_Create(a,"speed",0,0,0,-12,60,90);
 			}
 		}
 	}

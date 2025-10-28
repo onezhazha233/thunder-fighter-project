@@ -15,4 +15,4 @@ ds_queue_enqueue(waves,wave_7)
 ds_queue_enqueue(waves,wave_boss_red_heavy)
 //ds_queue_enqueue(waves,wave_boss_galaxy_ash)
 
-enabled = true
+alarm[0] = 2

@@ -1,4 +1,7 @@
 live;
+global.inv_cutscene = 1
+player.equipment.SetEnabled(false)
+
 if!(layer_sequence_exists(ll,warning)){
 	instance_destroy();
 }

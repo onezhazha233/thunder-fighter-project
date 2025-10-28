@@ -5,6 +5,3 @@ warning_text = instance_create_depth(room_width/2,560-168,DEPTH_BATTLE.UI,battle
 boss = noone
 lv = 1
 name = "testname"
-
-global.inv_cutscene = 1
-player.equipment.SetEnabled(false)
