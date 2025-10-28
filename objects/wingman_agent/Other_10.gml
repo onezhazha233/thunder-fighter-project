@@ -6,45 +6,51 @@ SetState = function(s){
 			draw_wingman = 1;
 		}
 		if(idle_mode = 1){
-			wingman_sequence = layer_sequence_create(layer_wingman,x,y,idle_sequence);
+			SetSequence(idle_sequence);
+			/*wingman_sequence = layer_sequence_create(layer_wingman,x,y,idle_sequence);
 			layer_sequence_xscale(wingman_sequence,image_xscale*(flip=1 ? -1 : 1));
-			layer_sequence_yscale(wingman_sequence,image_yscale);
+			layer_sequence_yscale(wingman_sequence,image_yscale);*/
 		}
 		if(idle_mode = 2){
-			wingman_sequence = layer_sequence_create(layer_wingman,x,y,rampage_intro);
+			SetSequence(idle_sequence,0);
+			/*wingman_sequence = layer_sequence_create(layer_wingman,x,y,rampage_intro);
 			layer_sequence_xscale(wingman_sequence,image_xscale*(flip=1 ? -1 : 1));
 			layer_sequence_yscale(wingman_sequence,image_yscale);
 			layer_sequence_speedscale(wingman_sequence,0);
-			layer_sequence_headpos(wingman_sequence,0);
+			layer_sequence_headpos(wingman_sequence,0);*/
 		}
 	}
 	if(s = 1){
-		layer_sequence_destroy(wingman_sequence);
+		SetSequence(rampage_intro);
+		/*layer_sequence_destroy(wingman_sequence);
 		wingman_sequence = layer_sequence_create(layer_wingman,x,y,rampage_intro);
 		layer_sequence_xscale(wingman_sequence,image_xscale*(flip=1 ? -1 : 1));
-		layer_sequence_yscale(wingman_sequence,image_yscale);
+		layer_sequence_yscale(wingman_sequence,image_yscale);*/
 		draw_wingman = 0;
 	}
 	if(s = 2){
-		layer_sequence_destroy(wingman_sequence);
+		SetSequence(rampage);
+		/*layer_sequence_destroy(wingman_sequence);
 		wingman_sequence = layer_sequence_create(layer_wingman,x,y,rampage);
 		layer_sequence_xscale(wingman_sequence,image_xscale*(flip=1 ? -1 : 1));
-		layer_sequence_yscale(wingman_sequence,image_yscale);
+		layer_sequence_yscale(wingman_sequence,image_yscale);*/
 		draw_wingman = 0;
 	}
 	if(s = 3){
-		layer_sequence_destroy(wingman_sequence);
+		//layer_sequence_destroy(wingman_sequence);
 		if(rampage_outro_mode = 0){
-			wingman_sequence = layer_sequence_create(layer_wingman,x,y,rampage_outro);
+			SetSequence(rampage_outro);
+			/*wingman_sequence = layer_sequence_create(layer_wingman,x,y,rampage_outro);
 			layer_sequence_xscale(wingman_sequence,image_xscale*(flip=1 ? -1 : 1));
-			layer_sequence_yscale(wingman_sequence,image_yscale);
+			layer_sequence_yscale(wingman_sequence,image_yscale);*/
 		}
 		if(rampage_outro_mode = 1){
-			wingman_sequence = layer_sequence_create(layer_wingman,x,y,rampage_intro);
+			SetSequence(rampage_intro,1,1,seqdir_left);
+			/*wingman_sequence = layer_sequence_create(layer_wingman,x,y,rampage_intro);
 			layer_sequence_xscale(wingman_sequence,image_xscale*(flip=1 ? -1 : 1));
 			layer_sequence_yscale(wingman_sequence,image_yscale);
 			layer_sequence_headdir(wingman_sequence,seqdir_left);
-			layer_sequence_headpos(wingman_sequence,layer_sequence_get_length(wingman_sequence));
+			layer_sequence_headpos(wingman_sequence,layer_sequence_get_length(wingman_sequence));*/
 		}
 	}
 }
@@ -96,4 +102,16 @@ SetPosition = function(xx,yy){
 		layer_sequence_yscale(flame_sequence,image_yscale);
 		layer_sequence_angle(flame_sequence,image_angle);
 	}
+}
+
+SetSequence = function(seq,spd=1,pos=0,dir=seqdir_right){
+	layer_sequence_destroy(wingman_sequence);
+	wingman_sequence = layer_sequence_create(layer_wingman,x,y,seq);
+	layer_sequence_xscale(wingman_sequence,image_xscale*(flip=1 ? -1 : 1));
+	layer_sequence_yscale(wingman_sequence,image_yscale);
+	layer_sequence_speedscale(wingman_sequence,spd);
+	if(pos = 0)p = 0;
+	if(pos = 1)p = layer_sequence_get_length(wingman_sequence);
+	layer_sequence_headpos(wingman_sequence,p);
+	layer_sequence_headdir(wingman_sequence,dir);
 }

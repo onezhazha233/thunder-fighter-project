@@ -6,52 +6,33 @@ SetState = function(s){
 			draw_plane = 1;
 		}
 		if(idle_mode = 1){
-			plane_sequence = layer_sequence_create(layer_plane,x,y,idle_sequence);
-			layer_sequence_xscale(plane_sequence,image_xscale);
-			layer_sequence_yscale(plane_sequence,image_yscale);
+			SetSequence(idle_sequence);
 		}
 		if(idle_mode = 2){
-			plane_sequence = layer_sequence_create(layer_plane,x,y,idle_sequence);
-			layer_sequence_xscale(plane_sequence,image_xscale);
-			layer_sequence_yscale(plane_sequence,image_yscale);
-			layer_sequence_headpos(plane_sequence,0);
-			layer_sequence_speedscale(plane_sequence,0);
+			SetSequence(idle_sequence,0);
 		}
 	}
 	if(s = 1){
 		if(sequence_exists(rampage_intro)){
-			layer_sequence_destroy(plane_sequence);
-			plane_sequence = layer_sequence_create(layer_plane,x,y,rampage_intro);
-			layer_sequence_xscale(plane_sequence,image_xscale);
-			layer_sequence_yscale(plane_sequence,image_yscale);
+			SetSequence(rampage_intro);
 			draw_plane = 0;
 		}
 	}
 	if(s = 2){
 		if(sequence_exists(rampage)){
-			layer_sequence_destroy(plane_sequence);
-			plane_sequence = layer_sequence_create(layer_plane,x,y,rampage);
-			layer_sequence_xscale(plane_sequence,image_xscale);
-			layer_sequence_yscale(plane_sequence,image_yscale);
+			SetSequence(rampage);
 			draw_plane = 0;
 		}
 	}
 	if(s = 3){
-		layer_sequence_destroy(plane_sequence);
 		if(rampage_outro_mode = 0){
 			if(sequence_exists(rampage_outro)){
-				plane_sequence = layer_sequence_create(layer_plane,x,y,rampage_outro);
-				layer_sequence_xscale(plane_sequence,image_xscale);
-				layer_sequence_yscale(plane_sequence,image_yscale);
+				SetSequence(rampage_outro);
 			}
 		}
 		if(rampage_outro_mode = 1){
 			if(sequence_exists(rampage_intro)){
-				plane_sequence = layer_sequence_create(layer_plane,x,y,rampage_intro);
-				layer_sequence_xscale(plane_sequence,image_xscale);
-				layer_sequence_yscale(plane_sequence,image_yscale);
-				layer_sequence_headdir(plane_sequence,seqdir_left);
-				layer_sequence_headpos(plane_sequence,layer_sequence_get_length(plane_sequence));
+				SetSequence(rampage_intro,1,1,seqdir_left);
 			}
 		}
 	}
@@ -113,4 +94,16 @@ SetPosition = function(xx,yy){
 		layer_sequence_yscale(flame_upper_sequence,image_yscale);
 		layer_sequence_angle(flame_upper_sequence,image_angle);
 	}
+}
+
+SetSequence = function(seq,spd=1,pos=0,dir=seqdir_right){
+	layer_sequence_destroy(plane_sequence);
+	plane_sequence = layer_sequence_create(layer_plane,x,y,seq);
+	layer_sequence_xscale(plane_sequence,image_xscale);
+	layer_sequence_yscale(plane_sequence,image_yscale);
+	layer_sequence_speedscale(plane_sequence,spd);
+	if(pos = 0)p = 0;
+	if(pos = 1)p = layer_sequence_get_length(plane_sequence);
+	layer_sequence_headpos(plane_sequence,p);
+	layer_sequence_headdir(plane_sequence,dir);
 }
