@@ -4,52 +4,58 @@ SetState = function(s){
 	if(display_mode = DISPLAY_MODE.SEQUENCE){
 		if(s = ENEMY_STATE.PRE){
 			if(pre_mode = PRE_MODE.START_FRAME){
-				layer_sequence_destroy(enemy_sequence);
+				SetSequence(intro_sequence,0);
+				/*layer_sequence_destroy(enemy_sequence);
 				enemy_sequence = layer_sequence_create(layer_enemy,x,y,intro_sequence);
 				layer_sequence_xscale(enemy_sequence,image_xscale);
 				layer_sequence_yscale(enemy_sequence,image_yscale);
 				layer_sequence_speedscale(enemy_sequence,0);
-				layer_sequence_headpos(enemy_sequence,0);
+				layer_sequence_headpos(enemy_sequence,0);*/
 			}
 			if(pre_mode = PRE_MODE.SEQUENCE){
-				layer_sequence_destroy(enemy_sequence);
+				SetSequence(pre_sequence);
+				/*layer_sequence_destroy(enemy_sequence);
 				enemy_sequence = layer_sequence_create(layer_enemy,x,y,pre_sequence);
 				layer_sequence_xscale(enemy_sequence,image_xscale);
-				layer_sequence_yscale(enemy_sequence,image_yscale);
+				layer_sequence_yscale(enemy_sequence,image_yscale);*/
 			}
 		}
 		if(s = ENEMY_STATE.INTRO){
-			layer_sequence_destroy(enemy_sequence);
+			SetSequence(intro_sequence);
+			/*layer_sequence_destroy(enemy_sequence);
 			enemy_sequence = layer_sequence_create(layer_enemy,x,y,intro_sequence);
 			layer_sequence_xscale(enemy_sequence,image_xscale);
-			layer_sequence_yscale(enemy_sequence,image_yscale);
+			layer_sequence_yscale(enemy_sequence,image_yscale);*/
 		}
 		if(s = ENEMY_STATE.IDLE){
 			if(instance_exists(bullet_emitter_inst)){
 				bullet_emitter_inst.enabled = true;
 			}
 			if(idle_mode = IDLE_MODE.END_FRAME){
-				layer_sequence_destroy(enemy_sequence);
+				SetSequence(intro_sequence,0,1);
+				/*layer_sequence_destroy(enemy_sequence);
 				enemy_sequence = layer_sequence_create(layer_enemy,x,y,intro_sequence);
 				layer_sequence_xscale(enemy_sequence,image_xscale);
 				layer_sequence_yscale(enemy_sequence,image_yscale);
 				layer_sequence_speedscale(enemy_sequence,0);
-				layer_sequence_headpos(enemy_sequence,layer_sequence_get_length(enemy_sequence));
+				layer_sequence_headpos(enemy_sequence,layer_sequence_get_length(enemy_sequence));*/
 			}
 			if(idle_mode = IDLE_MODE.SEQUENCE){
-				layer_sequence_destroy(enemy_sequence);
+				SetSequence(idle_sequence);
+				/*layer_sequence_destroy(enemy_sequence);
 				enemy_sequence = layer_sequence_create(layer_enemy,x,y,idle_sequence);
 				layer_sequence_xscale(enemy_sequence,image_xscale);
-				layer_sequence_yscale(enemy_sequence,image_yscale);
+				layer_sequence_yscale(enemy_sequence,image_yscale);*/
 			}
 		}
 		if(s = ENEMY_STATE.WITHDRAW){
-			layer_sequence_destroy(enemy_sequence);
+			SetSequence(intro_sequence,1,1,seqdir_left);
+			/*layer_sequence_destroy(enemy_sequence);
 			enemy_sequence = layer_sequence_create(layer_enemy,x,y,intro_sequence);
 			layer_sequence_xscale(enemy_sequence,image_xscale);
 			layer_sequence_yscale(enemy_sequence,image_yscale);
 			layer_sequence_headdir(enemy_sequence,seqdir_left);
-			layer_sequence_headpos(enemy_sequence,layer_sequence_get_length(enemy_sequence));
+			layer_sequence_headpos(enemy_sequence,layer_sequence_get_length(enemy_sequence));*/
 		}
 	}
 	else{
@@ -186,12 +192,22 @@ Hurt = function(){
 	}
 }
 
+SetSequence = function(seq,spd=1,pos=0,dir=seqdir_right){
+	layer_sequence_destroy(enemy_sequence);
+	enemy_sequence = layer_sequence_create(layer_enemy,x,y,seq);
+	layer_sequence_xscale(enemy_sequence,image_xscale);
+	layer_sequence_yscale(enemy_sequence,image_yscale);
+	layer_sequence_speedscale(enemy_sequence,spd);
+	if(pos = 0)p = 0;
+	if(pos = 1)p = layer_sequence_get_length(enemy_sequence);
+	layer_sequence_headpos(enemy_sequence,p);
+	layer_sequence_headdir(enemy_sequence,dir);
+}
+
 SetMoveEnabled = function(enabled){
 	move_enabled = enabled;
 	Anim_Pause(id,"x",!enabled);
 	Anim_Pause(id,"y",!enabled);
 }
 
-OnDie = function(){
-	
-}
+OnDie = function(){}
