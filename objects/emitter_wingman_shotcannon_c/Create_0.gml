@@ -9,6 +9,4 @@ scale_y = 1
 
 weapon_level = 0
 
-fire = noone
-
 time = 0

@@ -12,8 +12,6 @@ for(i=0;i<10;i+=1){
 	ball[i] = noone;
 }
 
-fire = noone
-
 damage = 1
 
 rampage_time = 0
