@@ -48,14 +48,24 @@ layer_plane_upper = layer_create(depth-1)
 
 speed_x = 0
 
-roll_state = 0;// 侧翻状态：-3到3（0为水平，负为左翻，正为右翻）
+roll_mode = 0//0为贴图 1为序列
+roll_state = 0;//侧翻状态：-3到3（0为水平，负为左翻，正为右翻）
+roll_state_previous = 0
 
-// 侧翻贴图设置
-sprite_roll_left = -1;  // 左翻贴图（3帧：轻微、中等、完全）
-sprite_roll_right = -1; // 右翻贴图（3帧：轻微、中等、完全）
+sprite_roll_left = -1;
+sprite_roll_right = -1;
 sprite_roll_flip = false//是否使用左倾贴图翻转作为右倾贴图
 
-// 常量定义
-ROLL_THRESHOLD = 3;   // 开始侧翻的速度阈值
-MAX_ROLL_SPEED = 30;  // 最大侧翻速度
-ROLL_CHANGE_SPEED = 0.6; // 侧翻状态变化速度
+roll_sequence = []
+roll_real = 0;
+roll_target = 0;
+roll_state = 0;
+
+roll_smooth_base  = 0.10;
+roll_smooth_scale = 0.20;
+roll_smooth_max   = 0.50;
+roll_sensitivity  = 0.5;
+roll_deadzone     = 0.5;
+
+roll_hist = ds_queue_create();
+roll_hist_max = 5;

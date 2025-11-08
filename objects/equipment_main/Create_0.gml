@@ -3,8 +3,8 @@ event_inherited();
 xscale = 1
 yscale = 1
 plane = plane_x_wing_glacier
-wingman_left = [wingman_final_annihilator]
-wingman_right = [wingman_final_annihilator]
+wingman_left = []
+wingman_right = []
 wingman_x_offset = [130,250]
 wingman_y_offset = [0,0]
 //subweapon = subweapon_annihilation_sticky_bomb

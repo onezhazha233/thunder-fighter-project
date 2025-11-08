@@ -76,7 +76,18 @@ SetPosition = function(xx,yy){
 	if(layer_sequence_exists(layer_plane,plane_sequence)){
 		layer_sequence_x(plane_sequence,x-surf_x*surf_enabled);
 		layer_sequence_y(plane_sequence,y-surf_y*surf_enabled);
-		layer_sequence_xscale(plane_sequence,(state == 0&&roll_state != 0 ? 0 : image_xscale));
+		xscale = image_xscale;
+		if(state = 0){
+			if!(roll_state = 0){
+				if(roll_mode = 0){
+					xscale = 0;
+				}
+				else{
+					xscale = image_xscale*sign(roll_state);
+				}
+			}
+		}
+		layer_sequence_xscale(plane_sequence,xscale);
 		layer_sequence_yscale(plane_sequence,image_yscale);
 		layer_sequence_angle(plane_sequence,image_angle);
 	}
