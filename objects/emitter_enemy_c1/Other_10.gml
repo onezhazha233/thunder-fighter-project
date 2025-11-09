@@ -1,6 +1,4 @@
 live;
-event_inherited();
-
 if(time >= 1&&time <= 1+4){
 	if((time-1) mod 4 = 0){
 		switch((time-1) div 4){

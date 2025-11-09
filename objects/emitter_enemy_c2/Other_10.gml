@@ -1,6 +1,4 @@
 live;
-event_inherited();
-
 if(time = 1){
 	for(i=0;i<6;i+=1){
 		b[0,i] = MakeEnemyBullet(x-130,y+40,bullet_enemy_red,spr_bullet_enemy_red_0);

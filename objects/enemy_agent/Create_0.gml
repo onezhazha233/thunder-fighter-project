@@ -87,5 +87,10 @@ tracks = ds_map_create()//被子弹锁定的数量
 burn_amount = 0
 burn_target = 60
 burn_damage = 0
-burn_time = 0
-burn_duration = 0
+burn_time = -1
+burn_duration = -1
+
+frozen_amount = 0
+frozen_target = 60
+frozen_time = 120
+frozen_duration = -1

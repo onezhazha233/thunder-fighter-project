@@ -5,27 +5,13 @@ SetState = function(s){
 		if(s = ENEMY_STATE.PRE){
 			if(pre_mode = PRE_MODE.START_FRAME){
 				SetSequence(intro_sequence,0);
-				/*layer_sequence_destroy(enemy_sequence);
-				enemy_sequence = layer_sequence_create(layer_enemy,x,y,intro_sequence);
-				layer_sequence_xscale(enemy_sequence,image_xscale);
-				layer_sequence_yscale(enemy_sequence,image_yscale);
-				layer_sequence_speedscale(enemy_sequence,0);
-				layer_sequence_headpos(enemy_sequence,0);*/
 			}
 			if(pre_mode = PRE_MODE.SEQUENCE){
 				SetSequence(pre_sequence);
-				/*layer_sequence_destroy(enemy_sequence);
-				enemy_sequence = layer_sequence_create(layer_enemy,x,y,pre_sequence);
-				layer_sequence_xscale(enemy_sequence,image_xscale);
-				layer_sequence_yscale(enemy_sequence,image_yscale);*/
 			}
 		}
 		if(s = ENEMY_STATE.INTRO){
 			SetSequence(intro_sequence);
-			/*layer_sequence_destroy(enemy_sequence);
-			enemy_sequence = layer_sequence_create(layer_enemy,x,y,intro_sequence);
-			layer_sequence_xscale(enemy_sequence,image_xscale);
-			layer_sequence_yscale(enemy_sequence,image_yscale);*/
 		}
 		if(s = ENEMY_STATE.IDLE){
 			if(instance_exists(bullet_emitter_inst)){
@@ -33,29 +19,13 @@ SetState = function(s){
 			}
 			if(idle_mode = IDLE_MODE.END_FRAME){
 				SetSequence(intro_sequence,0,1);
-				/*layer_sequence_destroy(enemy_sequence);
-				enemy_sequence = layer_sequence_create(layer_enemy,x,y,intro_sequence);
-				layer_sequence_xscale(enemy_sequence,image_xscale);
-				layer_sequence_yscale(enemy_sequence,image_yscale);
-				layer_sequence_speedscale(enemy_sequence,0);
-				layer_sequence_headpos(enemy_sequence,layer_sequence_get_length(enemy_sequence));*/
 			}
 			if(idle_mode = IDLE_MODE.SEQUENCE){
 				SetSequence(idle_sequence);
-				/*layer_sequence_destroy(enemy_sequence);
-				enemy_sequence = layer_sequence_create(layer_enemy,x,y,idle_sequence);
-				layer_sequence_xscale(enemy_sequence,image_xscale);
-				layer_sequence_yscale(enemy_sequence,image_yscale);*/
 			}
 		}
 		if(s = ENEMY_STATE.WITHDRAW){
 			SetSequence(intro_sequence,1,1,seqdir_left);
-			/*layer_sequence_destroy(enemy_sequence);
-			enemy_sequence = layer_sequence_create(layer_enemy,x,y,intro_sequence);
-			layer_sequence_xscale(enemy_sequence,image_xscale);
-			layer_sequence_yscale(enemy_sequence,image_yscale);
-			layer_sequence_headdir(enemy_sequence,seqdir_left);
-			layer_sequence_headpos(enemy_sequence,layer_sequence_get_length(enemy_sequence));*/
 		}
 	}
 	else{
@@ -211,3 +181,36 @@ SetMoveEnabled = function(enabled){
 }
 
 OnDie = function(){}
+
+SetBurn = function(b){
+	burn_duration = b;
+	if(b > 0){
+		for(i=0;i<irandom_range(3,5);i+=1){
+			xx = random_range(bbox_left,bbox_right);
+			yy = random_range(bbox_top,bbox_bottom);
+			instance_create_depth(xx,yy,depth-1,effect_enemy_fire);
+		}
+	}
+	else{
+		Anim_Create(id,"effect_alpha",0,0,effect_alpha,-effect_alpha,10);
+		Anim_Create(id,"effect_type",0,0,effect_type,-effect_type,0,10);
+	}
+}
+
+SetFrozen = function(f){
+	frozen_duration = f;
+	SetMoveEnabled(!f);
+	bullet_emitter.enabled = !f;
+	if(f > 0){
+		effect_type = 0;
+		effect_alpha = 0.5;
+		SetFlame(-1,-1);
+		layer_sequence_speedscale(enemy_sequence,0);
+		frozen_time = 120;
+	}
+	else{
+		effect_alpha = 0;
+		SetFlame(flame_lower,flame_upper);
+		layer_sequence_speedscale(enemy_sequence,1);
+	}
+}
