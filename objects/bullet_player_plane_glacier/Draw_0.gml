@@ -25,9 +25,9 @@ if(glow_offset > -1){
 }
 gpu_set_blendmode(bm_normal)
 if(light_image > 0)draw_laser(laser_sprite,light_image,x+lengthdir_x(20*scale_x,image_angle),y+lengthdir_y(20*scale_y,image_angle),0,image_angle,len-20,true,image_xscale*scale_x,image_yscale*scale_y,light_alpha);
-
+gpu_set_blendmode(bm_add);
 draw_laser(start_sprite,0,x,y,12*(size=1),image_angle,len,0,image_xscale*scale_x,image_yscale*scale_y,image_alpha,true)
-
+gpu_set_blendmode(bm_normal)
 if(instance_exists(find[1])&&find[1].inv_collision = false){
 	enemy = find[1];
 	CollideSingleEnemy(enemy);

@@ -26,8 +26,8 @@
   },
   "name":"seq_bullet_effect_apex",
   "parent":{
-    "name":"plane",
-    "path":"folders/序列/effect/bullet_player/plane.yy",
+    "name":"apex",
+    "path":"folders/序列/effect/bullet_player/plane/apex.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

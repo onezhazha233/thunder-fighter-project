@@ -156,7 +156,7 @@ function attack_3(attack,exarg=0){//侧闪电球 60
 			a.direction = a.image_angle-90;
 			Anim_Create(a,"speed",0,0,15,-9+i*4,20);
 			Anim_Create(a,"speed",0,0,6+i*4,20,60,20);
-			Anim_Create(a,"image_angle",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,+40,-60+i*15,30,10);
+			Anim_Create(a,"image_angle",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,40,-60+i*15,30,10);
 			Anim_Create(a,"direction",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,-90+40,-60+i*15,30,10);
 			a = MakeEnemyBullet(x,y+120,bullet_enemy_lightning_ball,-1);
 			a.image_angle = -40;

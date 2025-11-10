@@ -26,8 +26,8 @@
   },
   "name":"seq_bullet_effect_assault",
   "parent":{
-    "name":"plane",
-    "path":"folders/序列/effect/bullet_player/plane.yy",
+    "name":"assault",
+    "path":"folders/序列/effect/bullet_player/plane/assault.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

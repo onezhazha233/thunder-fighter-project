@@ -26,8 +26,8 @@
   },
   "name":"seq_bullet_effect_shotcannon",
   "parent":{
-    "name":"wingman",
-    "path":"folders/序列/effect/bullet_player/wingman.yy",
+    "name":"shotcannon_and_gatling",
+    "path":"folders/序列/effect/bullet_player/wingman/shotcannon_and_gatling.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,
