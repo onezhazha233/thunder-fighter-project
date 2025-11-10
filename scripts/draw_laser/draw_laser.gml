@@ -1,11 +1,11 @@
-function draw_laser(spr,img,xx,yy,offset,dir,length,flip,xscale,yscale,alpha){
-	w = sprite_get_width(spr)*xscale;
-	h = sprite_get_height(spr)*yscale;
-    surf = surface_create(w,1500);
+function draw_laser(spr,img,xx,yy,offset,dir,length,flip,xscale,yscale,alpha,one=false){
+	var w = sprite_get_width(spr)*xscale;
+	var h = sprite_get_height(spr)*yscale;
+    var surf = surface_create(w,1500);
 	surface_set_target(surf);
 	draw_clear_alpha(0,0);
-	count = 1500 div h + 1;
-	for(i=(flip=true ? -2 : -1);i<count;i+=1){
+	var count = (one = true ? 1 : (1500 div h + 1));
+	for(var i=(flip=true ? -2 : -1);i<count;i+=1){
 		if(i mod 2 = 0&&flip = true){
 			draw_sprite_ext(spr,img,w/2,h*(i+1)+offset,xscale,-yscale,180,-1,1);
 		}

@@ -10,4 +10,4 @@ rampage_outro = seq_glacier_b_rampage_outro
 roll_mode = 1
 roll_sequence = [seq_glacier_b_roll_right_0,seq_glacier_b_roll_right_1,seq_glacier_b_roll_right_2]
 
-bullet_emitter = emitter_plane_dawn_b
+bullet_emitter = emitter_plane_glacier_b
