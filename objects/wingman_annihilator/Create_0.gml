@@ -6,4 +6,4 @@ rampage_intro = seq_annihilator_a_rampage_intro
 rampage = seq_annihilator_a_rampage
 rampage_outro = seq_annihilator_a_rampage_outro
 
-bullet_emitter = emitter_wingman_shotcannon_a
+bullet_emitter = emitter_wingman_annihilator_a

@@ -9,7 +9,7 @@ function GlobalInit(){
 	global.inv_cutscene = 0;
 	global.rampage_duration = 300;
 	global.quantum_shield_duration = 300;
-	global.score = 6952;
+	global.score = 0;
 	randomize();
 	
 	global.debug_bullet_player_collision_display = false;
