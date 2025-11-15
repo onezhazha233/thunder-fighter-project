@@ -14,31 +14,30 @@ acceleration = min(acceleration+0.2*(rampage = false ? 1 : 2),0.9+rampage)
 image_angle = direction - 90;*/
 
 var currentDis = 100
-if(track_inst != noone){
+if(instance_exists(track_inst)){
 	var targetDir = point_direction(x, y, track_inst.x, track_inst.y);
-	var delta = angle_difference(targetDir, dir);
+	var delta = angle_difference(targetDir, direction);
 	var nearPerc = max(1 - (currentDis / bestDis), 0)
 	
 	
 	if(abs(delta) > 90){
-		spd *= 0.995;
-		spd = max(spd, 0)
+		speed *= 0.995;
+		speed = max(speed, 0)
 	}else{
-		spd *= 1.05;
-		spd = min(spd, 60)
+		speed *= 1.05;
+		speed = min(speed, 60)
 	}
 	
-	dir += delta * min(dirSpd + nearPerc, 1);
+	direction += delta * min(dirSpd + nearPerc, 1);
 	
 	dirSpd *= 1.1
 	dirSpd = min(dirSpd, 1)
 }
 else{
-	spd *= 1.01
+	speed *= 1.05;
 }
 
-x += lengthdir_x(min(spd, currentDis), dir);
-y += lengthdir_y(min(spd, currentDis), dir);
+speed = min(speed, currentDis)
 
 image_angle = direction - 90;
 

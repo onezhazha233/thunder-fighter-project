@@ -10,7 +10,7 @@ track_inst = noone
 
 acceleration = 0
 
-//speed = 5
+speed = 5
 
 rampage = false
 
@@ -28,10 +28,7 @@ function CollideSingleEnemy(enemy){
 	effect.damage = damage;
 }
 
-dir = 0
-spd = 5
-
 baseDirSpd = 0.01;
 dirSpd = baseDirSpd;
 
-bestDis = 500;
+bestDis = 50;

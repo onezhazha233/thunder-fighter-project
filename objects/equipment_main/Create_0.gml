@@ -3,11 +3,11 @@ event_inherited();
 xscale = 1
 yscale = 1
 plane = plane_agent
-wingman_left = []
-wingman_right = []
+wingman_left = [wingman_final_annihilator]
+wingman_right = [wingman_final_annihilator]
 wingman_x_offset = [130,250]
 wingman_y_offset = [0,0]
-subweapon = subweapon_lightning_nova
+//subweapon = subweapon_lightning_nova
 armor = armor_alloy_d
 
 /*for(i=0;i<8;i+=1){
