@@ -34,4 +34,4 @@ spd = 5
 baseDirSpd = 0.01;
 dirSpd = baseDirSpd;
 
-bestDis = 500;
+bestDis = 50;
