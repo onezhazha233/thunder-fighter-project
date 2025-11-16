@@ -29,7 +29,7 @@ if(enabled = true){
 			    target_y = player.y-800;
 			}
 			if(number[tt] = 1){
-				ang = (dir=0 ? 0 : 180)+(dir=0 ? -1 : 1)*(tt*7);
+				ang = (dir=0 ? 0 : 180)+(dir=0 ? -1 : 1)*(tt*2);
 				blt = MakePlayerBullet(x,y-17,bullet_player_annihilator);
 				blt.direction = ang;
 				blt.image_angle = ang - 90;
@@ -45,7 +45,7 @@ if(enabled = true){
 			}
 			else{
 				for(i=0;i<number[tt];i+=1){
-					ang = (dir=0 ? 0 : 180)+(dir=0 ? -1 : 1)*(tt*7+i*50);
+					ang = (dir=0 ? 0 : 180)+(dir=0 ? -1 : 1)*(tt*7+i*60);
 					blt = MakePlayerBullet(x,y-17,bullet_player_annihilator);
 					blt.direction = ang;
 					blt.image_angle = ang - 90;

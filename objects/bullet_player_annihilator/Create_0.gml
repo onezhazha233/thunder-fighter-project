@@ -29,4 +29,4 @@ target_y = player.y-800;
 baseDirSpd = 0.01;
 dirSpd = baseDirSpd;
 
-bestDis = 50;
+bestDis = 100;

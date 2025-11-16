@@ -24,9 +24,11 @@ if(instance_exists(track_inst)){
 	var nearPerc = max(1 - (currentDis / bestDis), 0)
 	
 	
-	if(abs(delta) > 90){
-		speed *= 0.99;
+	if(abs(delta) > 45){
+		speed *= 0.98;
 		speed = max(speed, 0)
+	}else if(abs(delta) > 45){
+		
 	}else{
 		speed *= 1.5;
 		speed = min(speed, 60)
@@ -34,7 +36,7 @@ if(instance_exists(track_inst)){
 	
 	direction += delta * min(dirSpd + nearPerc, 1);
 	
-	dirSpd *= 1.1
+	dirSpd *= 1.2
 	dirSpd = min(dirSpd, 1)
 }
 else{
