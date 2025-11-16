@@ -36,7 +36,7 @@ if(instance_exists(track_inst)){
 	}else if(abs(delta) > 45){
 		
 	}else{
-		speed *= 1.5;
+		speed *= 1.5+rampage*0.1;
 		speed = min(speed, 60)
 	}
 	
@@ -49,7 +49,7 @@ else{
 	if(point_distance(x,y,tx,ty) < 50)pass_target = 1;
 	
 	if(pass_target = 0){
-		var targetDir = point_direction(x, y, target_x, target_x);
+		var targetDir = point_direction(x, y, target_x, target_y);
 		var delta = angle_difference(targetDir, direction);
 		var nearPerc = max(1 - (currentDis / bestDis), 0)
 	
@@ -60,7 +60,7 @@ else{
 		}else if(abs(delta) > 45){
 		
 		}else{
-			speed *= 1.5;
+			speed *= 1.2+rampage*0.1;
 			speed = min(speed, 60)
 		}
 	

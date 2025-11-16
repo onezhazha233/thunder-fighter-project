@@ -19,8 +19,8 @@ if(instance_exists(find[1])&&find[1].inv_collision = false){
 	draw_sprite_ext(spr_bullet_player_blade_abcd_point,0,ex,ey,0.5*scale_x,scale_y,0,-1,1);
 	if(edge_state = 2){
 		instance_destroy(edge_sequence);
-		slash_x = find[1].x;
-		slash_y = find[1].y;
+		slash_x = ex + lengthdir_x(20,image_angle)*scale_x;
+		slash_y = ey + lengthdir_y(20,image_angle)*scale_y;
 		if(edge_attack_sequence_enabled = true){
 			if(rampage = true){
 				edge_attack_sequence = layer_sequence_create(layer_edge,edge_x,edge_y,seq_bullet_player_blade_c_edge_attack_rampage);

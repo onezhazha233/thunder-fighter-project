@@ -20,3 +20,5 @@ if(global.debug_bullet_player_collision_display = true){
 	}
 	draw_set_color(-1);
 }
+
+//if(sprite_index = spr_pixel2x)draw_self();

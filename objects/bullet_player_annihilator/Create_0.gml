@@ -5,7 +5,7 @@ image_speed = 0
 tail_scale = 0
 tail_image = 1
 
-Anim_Create(id,"tail_scale",0,0,0,2,15,15)
+Anim_Create(id,"tail_scale",0,0,0,2.5,15,15)
 
 collision_type = COLLISION_TYPE.SPRITE
 

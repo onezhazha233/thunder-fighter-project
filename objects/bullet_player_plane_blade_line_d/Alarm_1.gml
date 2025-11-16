@@ -9,18 +9,18 @@ a.scale_y = scale_y;
 a.rampage = rampage;
 a.damage = slash_damage
 
-if(edge_sequence_enabled = true){
+if(edge_attack_sequence_enabled = true){
 	if(rampage = false){
-		a = instance_create_depth(edge_x+lengthdir_x(120,image_angle+90),edge_y+lengthdir_y(120,image_angle+90),0,bullet_player);
-		a.image_xscale = 50;
-		a.image_yscale = 120;
+		a = instance_create_depth(edge_x+lengthdir_x(120,image_angle),edge_y+lengthdir_y(120,image_angle),0,bullet_player);
+		a.image_xscale = 120;
+		a.image_yscale = 110;
 	}
 	else{
-		a = instance_create_depth(edge_x+lengthdir_x(150,image_angle+90),edge_y+lengthdir_y(150,image_angle+90),0,bullet_player);
-		a.image_xscale = 100;
-		a.image_yscale = 150;
+		a = instance_create_depth(edge_x+lengthdir_x(140,image_angle),edge_y+lengthdir_y(140,image_angle),0,bullet_player);
+		a.image_xscale = 140;
+		a.image_yscale = 170;
 	}
-	a.mask_index = spr_pixel2x;
+	a.sprite_index = spr_pixel2x;
 	a.duration = 1;
 	a.image_angle = image_angle;
 	a.collision_type = COLLISION_TYPE.SPRITE;
@@ -28,5 +28,5 @@ if(edge_sequence_enabled = true){
 	a.collision_destroy = false;
 	a.damage_type = 1;
 	a.damage_interval = 999;
-	a.damage = 10;
+	a.damage = slash_damage;
 }

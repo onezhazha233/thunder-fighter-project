@@ -15,7 +15,7 @@ if(instance_exists(target)){
 	target_y = 100;
 }
 if(number[tt] = 1){
-	ang = (dir=0 ? 0 : 180)+(dir=0 ? -1 : 1)*(tt*7);
+	ang = (dir=0 ? 0 : 180)+(dir=0 ? -1 : 1)*(tt*15);
 	blt = MakePlayerBullet(x,y-17,bullet_player_annihilator);
 	blt.direction = ang;
 	blt.image_angle = ang - 90;
@@ -29,7 +29,7 @@ if(number[tt] = 1){
 }
 else{
 	for(i=0;i<2;i+=1){
-		ang = (dir=0 ? 0 : 180)+(dir=0 ? -1 : 1)*(tt*7+i*30);
+		ang = (dir=0 ? 0 : 180)+(dir=0 ? -1 : 1)*(tt*15+i*40);
 		blt = MakePlayerBullet(x,y-17,bullet_player_annihilator);
 		blt.direction = ang;
 		blt.image_angle = ang - 90;

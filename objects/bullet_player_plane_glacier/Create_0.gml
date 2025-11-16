@@ -11,7 +11,7 @@ collision_destroy = false
 start_sprite = spr_bullet_player_glacier_abc_start
 laser_sprite = spr_bullet_player_glacier_abcd
 
-damage = 0//0.125
+damage = 1
 
 range = 1500
 
@@ -20,6 +20,7 @@ duration = -1
 size = 0//0为小 1为大
 light_alpha = 0
 light_image = 0
+start_light = 0
 
 frozen_damage = 2//攻击敌人时每帧增加的冻结值
 

@@ -22,3 +22,5 @@ SetPosition = function(xx,yy){
 		}
 	}
 }
+
+damages = [0.0676,0.0961,0.1214,0.101,0.10977]

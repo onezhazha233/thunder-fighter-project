@@ -1,6 +1,9 @@
 enabled = true
 rampage = false
 weapon_level = 0
+damages = [1,1.3,1.7,2,2]
+damage = 0
+type = 0//0为战机 1为僚机 2为副武器
 time_interval_idle = [8,8,8,8]
 time_interval_rampage = 4
 dir = 0//0为右 1为左

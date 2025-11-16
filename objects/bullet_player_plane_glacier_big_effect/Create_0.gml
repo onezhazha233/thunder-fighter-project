@@ -27,7 +27,7 @@ Anim_Create(id, "offset_y", 0,0, -50, 10, 0, 6);
 
 Anim_Create(id, "offset_y", 0,0, -40, -20, 0, 7);
 
-Anim_Create(id, "offset_y", 0,0, -60, -50, 8, 8);
+Anim_Create(id, "offset_y", ANIM_TWEEN.QUAD,ANIM_EASE.OUT, -60, -30, 8, 8);
 
 Anim_Create(id, "offset_x", 0,0, 0, 12, 0, 6);
 
