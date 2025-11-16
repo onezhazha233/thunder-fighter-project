@@ -26,6 +26,11 @@ turn_timer = 40;
 target_x = player.x;
 target_y = player.y-800;
 
+target_x_previous = target_x
+target_y_previous = target_y
+
+pass_target = 0
+
 baseDirSpd = 0.01;
 dirSpd = baseDirSpd;
 
