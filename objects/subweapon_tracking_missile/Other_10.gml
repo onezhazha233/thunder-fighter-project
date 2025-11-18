@@ -1,12 +1,4 @@
 live;
-damage = 5
-switch(weapon_level){
-	case 0:damage = 5*global.atk_subweapon;break;
-	case 1:damage = 5.85*global.atk_subweapon;break;
-	case 2:damage = 6.5875*global.atk_subweapon;break;
-	case 3:damage = 6.5*global.atk_subweapon;break;
-}
-
 angle = 45
 a = MakePlayerBullet(x,y+60*scale_y,bullet_player_missile,seq_missile_ab_intro)
 layer_sequence_angle(a.bullet_sequence,angle-90);

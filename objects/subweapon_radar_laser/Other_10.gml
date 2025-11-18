@@ -1,12 +1,4 @@
 live;
-damage = 4.0625
-switch(weapon_level){
-	case 0:damage = 4.0625*global.atk_subweapon;break;
-	case 1:damage = 4.55*global.atk_subweapon;break;
-	case 2:damage = 4.78125*global.atk_subweapon;break;
-	case 3:damage = 4.5*global.atk_subweapon;break;
-}
-
 a = MakePlayerBullet(x-35*scale_x,y,bullet_player_laser)
 a.sprite_index = spr_laser_b
 a.direction = 90

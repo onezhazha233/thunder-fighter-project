@@ -1,12 +1,4 @@
 live;
-damage = 1.741
-switch(weapon_level){
-	case 0:damage = 1.741*global.atk_subweapon;break;
-	case 1:damage = 1.95*global.atk_subweapon;break;
-	case 2:damage = 2.05*global.atk_subweapon;break;
-	case 3:damage = 1.928*global.atk_subweapon;break;
-}
-
 a = MakePlayerBullet(x-35*scale_x,y,bullet_player_splitter,seq_splitter_c_intro)
 a.idle = seq_splitter_c
 a.small_sequence = seq_splitter_c_small

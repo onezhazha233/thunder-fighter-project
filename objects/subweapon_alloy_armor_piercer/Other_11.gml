@@ -1,6 +1,4 @@
 live;
-damage = 0.4305*global.atk_subweapon
-
 a = MakePlayerBullet(x,y-10*scale_y,bullet_player_armor_piercer,seq_armor_piercer_b_rampage_intro)
 a.idle = seq_armor_piercer_b_rampage
 a.collision_effect_sequence = seq_bullet_effect_armor_piercer_bc

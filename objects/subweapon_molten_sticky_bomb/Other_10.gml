@@ -3,14 +3,6 @@ xoff = [80,160,120,200]
 yoff = [0,0,-50,-50]
 spd = [0,0,1,1]
 
-damage = 1
-switch(weapon_level){
-	case 0:damage = 0.054688*global.atk_subweapon;break;
-	case 1:damage = 0.060938*global.atk_subweapon;break;
-	case 2:damage = 0.039844*global.atk_subweapon;break;
-	case 3:damage = 0.046875*global.atk_subweapon;break;
-}
-
 for(i=0;i<weapon_level+1;i+=1){
 	sb = MakePlayerBullet(x,y,bullet_player_sticky_bomb);
 	sb.sprite_index = spr_sticky_bomb_c;

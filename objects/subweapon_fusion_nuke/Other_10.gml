@@ -1,12 +1,4 @@
 live;
-damage = 0.75/2
-switch(weapon_level){
-	case 0:damage = 0.75/2*global.atk_subweapon;break;
-	case 1:damage = 0.8125/2*global.atk_subweapon;break;
-	case 2:damage = 0.85/2*global.atk_subweapon;break;
-	case 3:damage = 0.75/2*global.atk_subweapon;break;
-}
-
 a = MakePlayerBullet(x,y-10*scale_y,bullet_player_nuke,seq_nuke_cd_intro)
 a.idle = seq_nuke_cd
 a.collision_effect_sequence = seq_nuke_d_explosion

@@ -1,12 +1,4 @@
 live;
-damage = 0.26786
-switch(weapon_level){
-	case 0:damage = 0.26786*global.atk_subweapon;break;
-	case 1:damage = 0.31339*global.atk_subweapon;break;
-	case 2:damage = 0.36429*global.atk_subweapon;break;
-	case 3:damage = 0.375*global.atk_subweapon;break;
-}
-
 a = MakePlayerBullet(x,y-10*scale_y,bullet_player_armor_piercer,seq_armor_piercer_cd_intro)
 a.idle = seq_armor_piercer_cd
 a.collision_effect_sequence = seq_bullet_effect_armor_piercer_bc

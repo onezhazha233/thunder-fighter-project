@@ -1,6 +1,4 @@
 live;
-damage = 1.714*global.atk_subweapon
-
 a = MakePlayerBullet(x-35*scale_x,y,bullet_player_splitter,seq_splitter_b_intro_rampage)
 a.idle = seq_splitter_b_rampage
 a.small_sequence = seq_splitter_b_small_rampage

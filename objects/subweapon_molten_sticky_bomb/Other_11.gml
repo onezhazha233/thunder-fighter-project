@@ -3,8 +3,6 @@ xoff = [80,160,120,200]
 yoff = [0,0,-50,-50]
 spd = [0,0,1,1]
 
-damage = 0.046875*global.atk_subweapon
-
 for(i=0;i<4;i+=1){
 	sb = MakePlayerBullet(x,y,bullet_player_sticky_bomb);
 	sb.sprite_index = spr_sticky_bomb_c;

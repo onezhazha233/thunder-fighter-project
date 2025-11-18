@@ -1,12 +1,4 @@
 live;
-damage = 1.9167
-switch(weapon_level){
-	case 0:damage = 1.9167*global.atk_subweapon;break;
-	case 1:damage = 2.2208*global.atk_subweapon;break;
-	case 2:damage = 2.55*global.atk_subweapon;break;
-	case 3:damage = 2.667*global.atk_subweapon;break;
-}
-
 a = MakePlayerBullet(x,y-10*scale_y,bullet_player_cluster_bomb,seq_cluster_bomb_b)
 layer_sequence_speedscale(a.bullet_sequence,0)
 a.collision_effect_sequence = seq_bullet_effect_missile_b

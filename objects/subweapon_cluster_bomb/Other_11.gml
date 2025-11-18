@@ -1,6 +1,4 @@
 live;
-damage = 2.667*global.atk_subweapon
-
 a = MakePlayerBullet(x,y-10*scale_y,bullet_player_cluster_bomb,seq_cluster_bomb_a)
 layer_sequence_speedscale(a.bullet_sequence,0)
 a.scale_x = scale_x

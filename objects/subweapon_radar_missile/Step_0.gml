@@ -6,14 +6,6 @@ if(enabled = true){
 	if(time <= 0)time = 0;
 	if(time mod 4 = 1){
 		if(rampage = false){
-			damage = 4.5;
-			switch(weapon_level){
-				case 0:damage = 4.5*global.atk_subweapon;break;
-				case 1:damage = 2.925*global.atk_subweapon;break;
-				case 2:damage = 3.29375*global.atk_subweapon;break;
-				case 3:damage = 3.25*global.atk_subweapon;break;
-			}
-			
 			if(bb = 0){
 				angle = 45;
 				a = MakePlayerBullet(x,y+60*scale_y,bullet_player_missile,seq_missile_ab_intro);
@@ -54,7 +46,6 @@ if(enabled = true){
 			}
 		}
 		else{
-			damage = 6.5*global.atk_subweapon;
 			if(bb = 0){
 				angle = 45;
 				a = MakePlayerBullet(x,y+60*scale_y,bullet_player_missile,seq_missile_ab_rampage_intro);

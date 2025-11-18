@@ -1,6 +1,4 @@
 live;
-damage = 5.167*global.atk_subweapon
-
 if(bb = false){
 	angle = -90;
 }

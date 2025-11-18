@@ -1,6 +1,4 @@
 live;
-damage = 13*global.atk_subweapon
-
 angle = 45
 a = MakePlayerBullet(x,y+60*scale_y,bullet_player_missile,seq_missile_ab_rampage_intro)
 a.idle = seq_missile_ab_rampage
