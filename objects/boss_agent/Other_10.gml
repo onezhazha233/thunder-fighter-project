@@ -195,3 +195,36 @@ SetSequence = function(seq){
 OnDie = function(){
 	
 }
+
+SetBurn = function(b){
+	burn_duration = b;
+	if(b > 0){
+		for(i=0;i<irandom_range(3,5);i+=1){
+			xx = random_range(bbox_left,bbox_right);
+			yy = random_range(bbox_top,bbox_bottom);
+			instance_create_depth(xx,yy,depth-1,effect_enemy_fire);
+		}
+	}
+	else{
+		Anim_Create(id,"effect_alpha",0,0,effect_alpha,-effect_alpha,10);
+		Anim_Create(id,"effect_type",0,0,effect_type,-effect_type,0,10);
+	}
+}
+
+SetFrozen = function(f){
+	frozen_duration = f;
+	SetMoveEnabled(!f);
+	bullet_emitter.enabled = !f;
+	if(f > 0){
+		effect_type = 0;
+		effect_alpha = 0.5;
+		SetFlame(-1,-1);
+		layer_sequence_speedscale(enemy_sequence,0);
+		frozen_time = 120;
+	}
+	else{
+		effect_alpha = 0;
+		SetFlame(flame_lower,flame_upper);
+		layer_sequence_speedscale(enemy_sequence,1);
+	}
+}

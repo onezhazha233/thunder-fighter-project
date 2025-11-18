@@ -4,7 +4,6 @@ image_yscale = scale_y*0.7
 
 if(track_inst_exists = 1){
 	if(!instance_exists(track_inst)){
-		//turn_timer = 0;
 		target_x = target_x_previous;
 		target_y = target_y_previous;
 	}
@@ -20,8 +19,6 @@ if(instance_exists(track_inst)){
 
 var tx = target_x;
 var ty = target_y;
-
-turn_timer -= 1
 
 var currentDis = 100
 if(instance_exists(track_inst)){

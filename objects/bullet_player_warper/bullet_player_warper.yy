@@ -1,18 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"bullet_player_sticky_bomb",
+  "%Name":"bullet_player_warper",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"bullet_player_sticky_bomb",
+  "name":"bullet_player_warper",
   "overriddenProperties":[],
   "parent":{
-    "name":"sticky_bomb",
-    "path":"folders/物体/bullet_player/subweapon/sticky_bomb.yy",
+    "name":"warper",
+    "path":"folders/物体/bullet_player/subweapon/warper.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",
@@ -36,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_sticky_bomb_a",
-    "path":"sprites/spr_sticky_bomb_a/spr_sticky_bomb_a.yy",
+    "name":"spr_warper_abcd",
+    "path":"sprites/spr_warper_abcd/spr_warper_abcd.yy",
   },
   "spriteMaskId":null,
   "visible":true,

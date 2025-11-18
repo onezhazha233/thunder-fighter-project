@@ -38,6 +38,7 @@ if(enabled = true){
 				blt.target_x = target_x;
 				blt.target_y = target_y;
 				blt.damage = damage;
+				blt.collision_effect_sequence = seq_bullet_effect_dawn_d;
 				blt.sprite_index = spr_bullet_player_annihilator_cd;
 				blt.image_index = 1;
 				Anim_Create(blt,"image_index",0,0,1,1,0,5);
@@ -54,6 +55,7 @@ if(enabled = true){
 					blt.target_x = target_x;
 					blt.target_y = target_y;
 					blt.damage = damage;
+					blt.collision_effect_sequence = seq_bullet_effect_dawn_d;
 					blt.sprite_index = spr_bullet_player_annihilator_cd;
 					blt.image_index = 1;
 					Anim_Create(blt,"image_index",0,0,1,1,0,5);

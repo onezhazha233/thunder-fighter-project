@@ -124,12 +124,14 @@ SetFlame = function(lower,upper){
 		layer_sequence_xscale(flame_lower_sequence,image_xscale);
 		layer_sequence_yscale(flame_lower_sequence,image_yscale);
 		layer_sequence_angle(flame_lower_sequence,image_angle);
+		layer_sequence_speedscale(flame_lower_sequence,1);
 	}
 	if(sequence_exists(upper)){
 		flame_upper_sequence = layer_sequence_create(layer_enemy_upper,x+lengthdir_x(flame_upper_x_offset-surf_x*surf_enabled,image_angle),y+lengthdir_y(flame_upper_y_offset-surf_y*surf_enabled,image_angle),upper);
 		layer_sequence_xscale(flame_upper_sequence,image_xscale);
 		layer_sequence_yscale(flame_upper_sequence,image_yscale);
 		layer_sequence_angle(flame_upper_sequence,image_angle);
+		layer_sequence_speedscale(flame_upper_sequence,1);
 	}
 }
 
