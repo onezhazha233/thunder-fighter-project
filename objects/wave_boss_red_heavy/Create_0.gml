@@ -26,5 +26,6 @@ boss = {
 	}
 }
 
+ds_queue_enqueue(enemies,[[],60])
 ds_queue_enqueue(enemies,[[warning],200])
 ds_queue_enqueue(enemies,[[boss],200])

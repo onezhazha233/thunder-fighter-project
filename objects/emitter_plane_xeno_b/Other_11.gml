@@ -1,6 +1,4 @@
 live;
-damage = 0.125*global.atk_plane
-
 if(bb mod 4 = 3){
 	a = MakePlayerBullet(x-12*scale_x,y,bullet_player_plane_xeno,seq_bullet_player_xeno_b_rampage);
 	a.sprite_index = spr_bullet_player_xeno_b;

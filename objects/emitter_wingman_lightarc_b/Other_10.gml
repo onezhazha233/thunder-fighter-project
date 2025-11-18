@@ -1,11 +1,4 @@
 live;
-switch(weapon_level){
-	case 0:damage = 0.234375*global.atk_wingman;break;
-	case 1:damage = 0.24375*global.atk_wingman;break;
-	case 2:damage = 0.2390625*global.atk_wingman;break;
-	case 3:damage = 0.1875*global.atk_wingman;break;
-}
-
 laser[0] = MakePlayerBullet(x,y,bullet_player_wingman_lightarc_a);
 laser[0].image_angle = 90
 laser[0].damage = damage;

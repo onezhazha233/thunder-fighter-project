@@ -1,12 +1,4 @@
 live;
-damage = 0.125
-switch(weapon_level){
-	case 0:damage = 0.125*global.atk_plane;break;
-	case 1:damage = 0.125*1.3*global.atk_plane;break;
-	case 2:damage = 0.125*1.7*global.atk_plane;break;
-	case 3:damage = 0.25*global.atk_plane;break;
-}
-
 laser_scale_target = laser_scale_level[weapon_level]
 if(abs(laser_scale - laser_scale_target) > 0.01){
 	laser_scale += (laser_scale_target - laser_scale)/5;

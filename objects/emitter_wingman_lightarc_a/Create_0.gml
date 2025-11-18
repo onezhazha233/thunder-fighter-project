@@ -4,19 +4,17 @@ event_inherited();
 time_interval_idle = [60*2.5,60*2,60*1.5,60]
 time_interval_rampage = 1
 
-scale_x = 1
-scale_y = 1
-
 for(i=0;i<10;i+=1){
 	laser[i] = noone;
 	ball[i] = noone;
 }
 
-damage = 1
-
 rampage_time = 0
 
 angle_range = 10
+
+damages = [0.234375,0.24375,0.2390625,0.1875,0.25]
+type = 1
 
 SetPosition = function(xx,yy){
 	x = xx;

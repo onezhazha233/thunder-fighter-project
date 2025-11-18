@@ -1,12 +1,4 @@
 live;
-damage = 0.5;
-switch(weapon_level){
-	case 0:damage = 0.5*global.atk_plane;break;
-	case 1:damage = 0.325*global.atk_plane;break;
-	case 2:damage = 0.284*global.atk_plane;break;
-	case 3:damage = 0.25*global.atk_plane;break;
-}
-
 if(bb mod 4 = 3){
 	a = MakePlayerBullet(x-12*scale_x,y,bullet_player_plane_raptor,seq_bullet_player_raptor_d);
 	a.sprite_index = spr_bullet_player_raptor_d;

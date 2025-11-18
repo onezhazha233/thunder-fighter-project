@@ -1,12 +1,4 @@
 live;
-damage = 1;
-switch(weapon_level){
-	case 0:damage = 1*global.atk_plane;break;
-	case 1:damage = 1.3*global.atk_plane;break;
-	case 2:damage = 1.7*global.atk_plane;break;
-	case 3:damage = 2*global.atk_plane;break;
-}
-
 switch(weapon_level){
 	case 0:
 		if(l1b = 0){

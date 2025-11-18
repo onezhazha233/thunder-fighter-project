@@ -1,7 +1,6 @@
 live;
 rtime += 1
 spd = 39
-damage = 0.382*global.atk_plane
 a = MakePlayerBullet(x,y,bullet_player_plane_dawn_big);
 a.sprite_index = spr_bullet_player_dawn_b_big;
 a.collision_effect_sequence = seq_bullet_effect_dawn_b;

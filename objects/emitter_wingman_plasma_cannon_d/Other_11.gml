@@ -1,5 +1,4 @@
 live;
-damage = 0.25*global.atk_wingman
 for(i=0;i<1;i+=1){
 	if!(instance_exists(laser[i])){
 		laser[i] = instance_create_depth(x,y,depth,bullet_player_wingman_plasma_cannon_rampage);

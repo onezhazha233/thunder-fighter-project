@@ -9,14 +9,6 @@ if(enabled = true){
 	if(time > 0){
 		time -= 1;
 		if((time-1) mod 5 = 0){
-			damage = 2.4375;
-			switch(weapon_level){
-				case 0:damage = 1.95/2*global.atk_subweapon;break;
-				case 1:damage = 2.1125/2*global.atk_subweapon;break;
-				case 2:damage = 2.367857/2*global.atk_subweapon;break;
-				case 3:damage = 2.4375/2*global.atk_subweapon;break;
-			}
-			
 			tt = 3 - ((time-1) div 5);
 			
 			target = instance_nearest(player.x,player.y,enemy_agent);

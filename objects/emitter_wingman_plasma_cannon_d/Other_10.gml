@@ -1,12 +1,4 @@
 live;
-damage = 18.75/2
-switch(weapon_level){
-	case 0:damage = 18.75/2*global.atk_wingman;break;
-	case 1:damage = 19.5/2*global.atk_wingman;break;
-	case 2:damage = 19.125/2*global.atk_wingman;break;
-	case 3:damage = 15/2*global.atk_wingman;break;
-}
-
 for(i=0;i<1;i+=1){
 	if!(instance_exists(laser[i])){
 		laser[i] = instance_create_depth(x,y,depth,bullet_player_wingman_plasma_cannon);

@@ -1,7 +1,6 @@
 live;
 rtime += 1
 spd = 28
-damage = 0.57*global.atk_plane
 a = MakePlayerBullet(x,y,bullet_player_plane_dawn_big);
 a.sprite_index = spr_bullet_player_dawn_a_big;
 a.image_index = 2;

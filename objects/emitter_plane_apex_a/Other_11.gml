@@ -1,6 +1,4 @@
 live;
-damage = 2*global.atk_plane
-
 MakePlayerBullet(x,y+20*scale_y,bullet_player_plane_apex_a_4).damage = damage;
 fire = instance_create_depth(x,y,DEPTH_BATTLE.BULLETS_PLAYER-10,bullet_player_apex_fire);
 fire.sprite_index = spr_bullet_player_apex_abc_fire

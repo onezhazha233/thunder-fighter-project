@@ -2,12 +2,12 @@ event_inherited();
 
 xscale = 1
 yscale = 1
-plane = plane_x_wing_glacier
-wingman_left = [wingman_final_annihilator]
-wingman_right = [wingman_final_annihilator]
+plane = plane_dawn_zero
+wingman_left = []
+wingman_right = []
 wingman_x_offset = [130,250]
 wingman_y_offset = [0,0]
-subweapon = subweapon_condensed_warper
+//subweapon = subweapon_nano_splitter
 armor = armor_alloy_d
 
 /*for(i=0;i<8;i+=1){

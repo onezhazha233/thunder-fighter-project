@@ -4,9 +4,6 @@ event_inherited();
 time_interval_idle = [1,1,1,1]
 time_interval_rampage = 1
 
-scale_x = 1
-scale_y = 1
-
 edge_cds = [45,27,15,11]
 damages = [4.6875,4.6318,4.781,5.125,4.28]
 

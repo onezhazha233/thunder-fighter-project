@@ -1,6 +1,4 @@
 live;
-damage = 0.5*global.atk_plane
-
 laser_scale = 1
 
 for(i=0;i<1;i+=1){

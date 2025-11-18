@@ -212,19 +212,20 @@ SetBurn = function(b){
 }
 
 SetFrozen = function(f){
-	frozen_duration = f;
-	SetMoveEnabled(!f);
-	bullet_emitter.enabled = !f;
-	if(f > 0){
-		effect_type = 0;
-		effect_alpha = 0.5;
-		SetFlame(-1,-1);
-		layer_sequence_speedscale(enemy_sequence,0);
-		frozen_time = 120;
-	}
-	else{
-		effect_alpha = 0;
-		SetFlame(flame_lower,flame_upper);
-		layer_sequence_speedscale(enemy_sequence,1);
-	}
+    frozen_duration = f;
+    SetMoveEnabled(!f);
+    bullet_emitter.enabled = !f;
+    if(f > 0){
+        effect_type = 0;
+        effect_alpha = 0.5;
+        layer_sequence_speedscale(enemy_sequence,0);
+        SetFlame(-1,-1);
+        frozen_time = 120;
+    }
+    else{
+        frozen_duration = -1;
+        effect_alpha = 0;
+        layer_sequence_speedscale(enemy_sequence,1);
+        SetFlame(flame_lower,flame_upper);  // 重新创建尾焰（默认速度就是1）
+    }
 }

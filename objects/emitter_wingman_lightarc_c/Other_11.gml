@@ -1,6 +1,4 @@
 live;
-damage = 0.25*global.atk_wingman
-
 rampage_time += 1
 if!(instance_exists(laser[2])){
 	laser[2] = MakePlayerBullet(x,y,bullet_player_wingman_lightarc_a);

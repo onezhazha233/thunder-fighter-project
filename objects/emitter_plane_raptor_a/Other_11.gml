@@ -1,6 +1,4 @@
 live
-damage = 0.25*global.atk_plane
-
 if(bb mod 4 = 3){
 	a = MakePlayerBullet(x-12*scale_x,y,bullet_player_plane_raptor,seq_bullet_player_raptor_a_rampage);
 	a.vspeed = -16*2;

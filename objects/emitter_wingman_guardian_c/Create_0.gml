@@ -4,11 +4,6 @@ event_inherited();
 time_interval_idle = [31,31,31,31]
 time_interval_rampage = 16
 
-scale_x = 1
-scale_y = 1
-
-weapon_level = 0
-
 time = 0
 
 block_inst = noone
@@ -20,3 +15,6 @@ block_width = 44
 block_height = 24
 block_width_rampage = 70
 block_height_rampage = 42
+
+damages = [0.645833,0.6296875,0.65875,0.645833,2/3]
+type = 1

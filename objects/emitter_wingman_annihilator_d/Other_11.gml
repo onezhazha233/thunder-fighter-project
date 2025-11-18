@@ -3,7 +3,6 @@ rtime += 1
 number = [2,2,2,2]
 
 tt = (rtime-1) mod 4;
-damage = 1.25/2*global.atk_subweapon;
 
 target = instance_nearest(player.x,player.y,enemy_agent);
 if(instance_exists(target)){

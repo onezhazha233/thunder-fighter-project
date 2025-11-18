@@ -1,11 +1,4 @@
 live;
-switch(weapon_level){
-	case 0:damage = 9.375/21*global.atk_wingman;break;
-	case 1:damage = 9.75/21*global.atk_wingman;break;
-	case 2:damage = 9.5625/21*global.atk_wingman;break;
-	case 3:damage = 7.5/21*global.atk_wingman;break;
-}
-
 for(i=0;i<1;i+=1){
 	if!(instance_exists(ball[i])){
 		ball[i] = instance_create_depth(x,y,depth,bullet_player_wingman_mega_ball);

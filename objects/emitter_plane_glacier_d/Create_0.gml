@@ -1,8 +1,6 @@
 live;
 event_inherited();
 
-weapon_level = 0
-
 time_interval_idle = [90,85,80,80]
 time_interval_rampage = 1
 

@@ -4,9 +4,7 @@ event_inherited();
 time_interval_idle = [26,24,22,20]
 time_interval_rampage = 6
 
-scale_x = 1
-scale_y = 1
-
-weapon_level = 0
-
 time = 0
+
+damages = [0.271,0.325,0.39,0.417,0.75]
+type = 1

@@ -6,13 +6,6 @@ if(enabled = true){
 	if(time <= 0)time = 0;
 	if(time > 0){
 		if(rampage = false){
-			damage = 1.9375;
-			switch(weapon_level){
-				case 0:damage = 1.9375*global.atk_wingman;break;
-				case 1:damage = 1.259375*global.atk_wingman;break;
-				case 2:damage = 1.097917*global.atk_wingman;break;
-				case 3:damage = 0.96875*global.atk_wingman;break;
-			}
 			if(bb <= weapon_level){
 				if(dir = 0){
 					a = MakePlayerBullet(x,y,bullet_player_wingman_guardian);
@@ -28,7 +21,6 @@ if(enabled = true){
 			}
 		}
 		else{
-			damage = 2*global.atk_wingman;
 			if(dir = 0){
 				a = MakePlayerBullet(x,y,bullet_player_wingman_guardian_rampage);
 				a.image_angle = -bb*10;

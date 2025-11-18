@@ -1,12 +1,4 @@
 live;
-damage = 1.1365
-switch(weapon_level){
-	case 0:damage = 1.1365*global.atk_wingman;break;
-	case 1:damage = 1.2926*global.atk_wingman;break;
-	case 2:damage = 1.4489*global.atk_wingman;break;
-	case 3:damage = 1.4205*global.atk_wingman;break;
-}
-
 a = instance_create_depth(x,y,depth,bullet_player_wingman_spinblade_cannon)
 a.dir = dir
 with(a){
