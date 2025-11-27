@@ -15,6 +15,7 @@ for(i=0;i<array_length(find);i+=1){
 		break;
 	}
 }
+root_enemy = noone
 
 fire_image += 0.25
 gpu_set_blendmode(bm_add)
