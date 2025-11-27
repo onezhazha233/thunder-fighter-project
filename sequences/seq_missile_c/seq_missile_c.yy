@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_missile_c",
   "autoRecord":true,
   "backdropHeight":768,

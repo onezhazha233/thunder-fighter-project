@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_battle_item_effect_quantum_shield",
   "bboxMode":0,
   "bbox_bottom":46,
@@ -12,10 +12,10 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c55698af-ad1b-4ac7-a5d9-40bd398ef0fa","name":"c55698af-ad1b-4ac7-a5d9-40bd398ef0fa","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"801db86d-1b6f-4620-a09d-aa210acd51bb","name":"801db86d-1b6f-4620-a09d-aa210acd51bb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"ccd0c6ae-b508-41e7-a241-f4159cc49c3c","name":"ccd0c6ae-b508-41e7-a241-f4159cc49c3c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"94472380-dba2-4861-869c-a61b75a40b3f","name":"94472380-dba2-4861-869c-a61b75a40b3f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c55698af-ad1b-4ac7-a5d9-40bd398ef0fa","name":"c55698af-ad1b-4ac7-a5d9-40bd398ef0fa","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"801db86d-1b6f-4620-a09d-aa210acd51bb","name":"801db86d-1b6f-4620-a09d-aa210acd51bb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ccd0c6ae-b508-41e7-a241-f4159cc49c3c","name":"ccd0c6ae-b508-41e7-a241-f4159cc49c3c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"94472380-dba2-4861-869c-a61b75a40b3f","name":"94472380-dba2-4861-869c-a61b75a40b3f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -35,7 +35,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"spr_battle_item_effect_quantum_shield",
     "autoRecord":true,
     "backdropHeight":768,
@@ -71,18 +71,10 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c55698af-ad1b-4ac7-a5d9-40bd398ef0fa","path":"sprites/spr_battle_item_effect_quantum_shield/spr_battle_item_effect_quantum_shield.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"eeb9e653-840c-449c-9f0a-65e12ac470a1","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"801db86d-1b6f-4620-a09d-aa210acd51bb","path":"sprites/spr_battle_item_effect_quantum_shield/spr_battle_item_effect_quantum_shield.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"6b92c2f1-f1de-49d3-934f-46e600e7c492","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ccd0c6ae-b508-41e7-a241-f4159cc49c3c","path":"sprites/spr_battle_item_effect_quantum_shield/spr_battle_item_effect_quantum_shield.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"aae91aba-0fce-4e73-96c4-62fa692fd922","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"94472380-dba2-4861-869c-a61b75a40b3f","path":"sprites/spr_battle_item_effect_quantum_shield/spr_battle_item_effect_quantum_shield.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0c6956ca-cc9a-4812-831a-bcf95b7c2d17","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"c55698af-ad1b-4ac7-a5d9-40bd398ef0fa","path":"sprites/spr_battle_item_effect_quantum_shield/spr_battle_item_effect_quantum_shield.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"eeb9e653-840c-449c-9f0a-65e12ac470a1","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"801db86d-1b6f-4620-a09d-aa210acd51bb","path":"sprites/spr_battle_item_effect_quantum_shield/spr_battle_item_effect_quantum_shield.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"6b92c2f1-f1de-49d3-934f-46e600e7c492","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"ccd0c6ae-b508-41e7-a241-f4159cc49c3c","path":"sprites/spr_battle_item_effect_quantum_shield/spr_battle_item_effect_quantum_shield.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"aae91aba-0fce-4e73-96c4-62fa692fd922","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"94472380-dba2-4861-869c-a61b75a40b3f","path":"sprites/spr_battle_item_effect_quantum_shield/spr_battle_item_effect_quantum_shield.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"0c6956ca-cc9a-4812-831a-bcf95b7c2d17","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

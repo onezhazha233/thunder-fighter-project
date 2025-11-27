@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_glacier_d_roll_right_1",
   "autoRecord":true,
   "backdropHeight":768,

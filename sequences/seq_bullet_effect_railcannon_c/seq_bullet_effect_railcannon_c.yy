@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_bullet_effect_railcannon_c",
   "autoRecord":true,
   "backdropHeight":768,

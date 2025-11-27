@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_glacier_b_rampage_light_1",
   "bboxMode":0,
   "bbox_bottom":73,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7736fd46-f37e-4893-9cdb-949dbd8ae0fd","name":"7736fd46-f37e-4893-9cdb-949dbd8ae0fd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"a663c0b0-2413-4960-b9b8-1b89408140af","name":"a663c0b0-2413-4960-b9b8-1b89408140af","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7736fd46-f37e-4893-9cdb-949dbd8ae0fd","name":"7736fd46-f37e-4893-9cdb-949dbd8ae0fd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a663c0b0-2413-4960-b9b8-1b89408140af","name":"a663c0b0-2413-4960-b9b8-1b89408140af","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -33,7 +33,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"spr_glacier_b_rampage_light_1",
     "autoRecord":true,
     "backdropHeight":768,

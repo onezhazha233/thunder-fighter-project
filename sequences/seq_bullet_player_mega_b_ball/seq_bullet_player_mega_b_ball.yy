@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_bullet_player_mega_b_ball",
   "autoRecord":true,
   "backdropHeight":768,

@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_bullet_player_plasma_cannon_b",
   "autoRecord":true,
   "backdropHeight":1280,

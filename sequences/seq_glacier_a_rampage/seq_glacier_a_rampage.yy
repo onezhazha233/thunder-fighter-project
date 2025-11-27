@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_glacier_a_rampage",
   "autoRecord":true,
   "backdropHeight":768,

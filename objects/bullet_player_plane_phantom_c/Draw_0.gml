@@ -4,11 +4,17 @@ if(laser_offset >= sprite_get_height(laser_sprite)*2)laser_offset = 0;
 if(laser_offset <= -sprite_get_height(laser_sprite)*2)laser_offset = 0;
 
 find = laser_find_width(x,y,image_angle,range,sprite_get_width(laser_sprite)*image_xscale*scale_x*0.4,enemy_agent,true,true)
-len = find[0]
-if(instance_exists(find[1])&&find[1].inv_collision = true){
-	len = range;
+len = range
+find_enemy = noone
+for(i=0;i<array_length(find);i+=1){
+    var _inst = find[i][0];
+    var _dist = find[i][1];
+    if(_inst.inv_collision = false){
+		len = _dist;
+		find_enemy = _inst;
+		break;
+	}
 }
-if(len = -1)len = range;
 
 fire_image += 0.25
 gpu_set_blendmode(bm_add)
@@ -38,8 +44,8 @@ if(rampage = false){
 	}
 }
 
-if(instance_exists(find[1])&&find[1].inv_collision = false){
-	enemy = find[1];
+if(instance_exists(find_enemy)){
+	enemy = find_enemy;
 	CollideSingleEnemy(enemy);
 	if(rampage = false){
 		effect_xscale = (1.865 + 0.035 * sin(fire_image*4));

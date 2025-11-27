@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_dawn_ab_flame_1",
   "autoRecord":true,
   "backdropHeight":768,

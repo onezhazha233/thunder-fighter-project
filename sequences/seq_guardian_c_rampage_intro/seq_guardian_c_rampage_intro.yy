@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_guardian_c_rampage_intro",
   "autoRecord":true,
   "backdropHeight":768,

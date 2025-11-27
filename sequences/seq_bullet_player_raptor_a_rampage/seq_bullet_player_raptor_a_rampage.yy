@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_bullet_player_raptor_a_rampage",
   "autoRecord":true,
   "backdropHeight":768,

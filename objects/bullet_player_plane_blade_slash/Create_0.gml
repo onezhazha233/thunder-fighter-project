@@ -1,5 +1,5 @@
 live;
-depth = DEPTH_BATTLE.BULLETS_PLAYER
+depth = DEPTH_BATTLE.BULLETS_PLAYER - 10
 l = layer_create(depth)
 var scrBegin = function () {
 	if (event_number != ev_draw_normal) return;

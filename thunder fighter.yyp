@@ -1,8 +1,8 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"thunder fighter",
   "AudioGroups":[
-    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -600,6 +600,9 @@
     {"$GMFolder":"","%Name":"Sequence","folderPath":"folders/脚本/Sequence.yy","name":"Sequence","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"路径","folderPath":"folders/路径.yy","name":"路径","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[
+    {"link":"io.gamemaker.sdfshaders-1.0.0","name":"io.gamemaker.sdfshaders-1.0.0","path":"io.gamemaker.sdfshaders-1.0.0.yyp",},
+  ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"gcmt-dll.dll","CopyToMask":-1,"filePath":"datafiles/GMLive","name":"gcmt-dll.dll","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"gmlive-server-alt.exe","CopyToMask":-1,"filePath":"datafiles/GMLive","name":"gmlive-server-alt.exe","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -631,7 +634,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.14.1.210",
   },
   "name":"thunder fighter",
   "resources":[
@@ -770,6 +773,7 @@
     {"id":{"name":"bullet_player_plane_phantom_c","path":"objects/bullet_player_plane_phantom_c/bullet_player_plane_phantom_c.yy",},},
     {"id":{"name":"bullet_player_plane_phantom_d","path":"objects/bullet_player_plane_phantom_d/bullet_player_plane_phantom_d.yy",},},
     {"id":{"name":"bullet_player_plane_raptor","path":"objects/bullet_player_plane_raptor/bullet_player_plane_raptor.yy",},},
+    {"id":{"name":"bullet_player_plane_refraction","path":"objects/bullet_player_plane_refraction/bullet_player_plane_refraction.yy",},},
     {"id":{"name":"bullet_player_plane_xeno","path":"objects/bullet_player_plane_xeno/bullet_player_plane_xeno.yy",},},
     {"id":{"name":"bullet_player_raptor_explosion","path":"objects/bullet_player_raptor_explosion/bullet_player_raptor_explosion.yy",},},
     {"id":{"name":"bullet_player_raptor_fire","path":"objects/bullet_player_raptor_fire/bullet_player_raptor_fire.yy",},},
@@ -852,6 +856,7 @@
     {"id":{"name":"emitter_plane_raptor_b","path":"objects/emitter_plane_raptor_b/emitter_plane_raptor_b.yy",},},
     {"id":{"name":"emitter_plane_raptor_c","path":"objects/emitter_plane_raptor_c/emitter_plane_raptor_c.yy",},},
     {"id":{"name":"emitter_plane_raptor_d","path":"objects/emitter_plane_raptor_d/emitter_plane_raptor_d.yy",},},
+    {"id":{"name":"emitter_plane_refraction","path":"objects/emitter_plane_refraction/emitter_plane_refraction.yy",},},
     {"id":{"name":"emitter_plane_xeno_a","path":"objects/emitter_plane_xeno_a/emitter_plane_xeno_a.yy",},},
     {"id":{"name":"emitter_plane_xeno_b","path":"objects/emitter_plane_xeno_b/emitter_plane_xeno_b.yy",},},
     {"id":{"name":"emitter_plane_xeno_c","path":"objects/emitter_plane_xeno_c/emitter_plane_xeno_c.yy",},},
@@ -902,6 +907,7 @@
     {"id":{"name":"enemy_damagetest","path":"objects/enemy_damagetest/enemy_damagetest.yy",},},
     {"id":{"name":"equipment_agent","path":"objects/equipment_agent/equipment_agent.yy",},},
     {"id":{"name":"equipment_main","path":"objects/equipment_main/equipment_main.yy",},},
+    {"id":{"name":"laser_detector","path":"objects/laser_detector/laser_detector.yy",},},
     {"id":{"name":"obj_gmlive","path":"objects/obj_gmlive/obj_gmlive.yy",},},
     {"id":{"name":"pixel_mask_for_sequence","path":"objects/pixel_mask_for_sequence/pixel_mask_for_sequence.yy",},},
     {"id":{"name":"plane_agent","path":"objects/plane_agent/plane_agent.yy",},},
@@ -928,6 +934,7 @@
     {"id":{"name":"plane_pulse_apex","path":"objects/plane_pulse_apex/plane_pulse_apex.yy",},},
     {"id":{"name":"plane_pulse_assault","path":"objects/plane_pulse_assault/plane_pulse_assault.yy",},},
     {"id":{"name":"plane_raptor_zero","path":"objects/plane_raptor_zero/plane_raptor_zero.yy",},},
+    {"id":{"name":"plane_refraction","path":"objects/plane_refraction/plane_refraction.yy",},},
     {"id":{"name":"plane_squall_phantom","path":"objects/plane_squall_phantom/plane_squall_phantom.yy",},},
     {"id":{"name":"plane_steel_xeno","path":"objects/plane_steel_xeno/plane_steel_xeno.yy",},},
     {"id":{"name":"plane_storm_glacier","path":"objects/plane_storm_glacier/plane_storm_glacier.yy",},},
@@ -1094,7 +1101,6 @@
     {"id":{"name":"Lang_LoadString","path":"scripts/Lang_LoadString/Lang_LoadString.yy",},},
     {"id":{"name":"Lang_Uninit","path":"scripts/Lang_Uninit/Lang_Uninit.yy",},},
     {"id":{"name":"laser_find_width","path":"scripts/laser_find_width/laser_find_width.yy",},},
-    {"id":{"name":"laser_find","path":"scripts/laser_find/laser_find.yy",},},
     {"id":{"name":"Layer_Init","path":"scripts/Layer_Init/Layer_Init.yy",},},
     {"id":{"name":"Macro_Depth","path":"scripts/Macro_Depth/Macro_Depth.yy",},},
     {"id":{"name":"Macro_EnemyAnim","path":"scripts/Macro_EnemyAnim/Macro_EnemyAnim.yy",},},
@@ -3217,6 +3223,8 @@
     {"id":{"name":"spr_spinblade_cannon_d_top_side_light","path":"sprites/spr_spinblade_cannon_d_top_side_light/spr_spinblade_cannon_d_top_side_light.yy",},},
     {"id":{"name":"spr_spinblade_cannon_d_top_side_right","path":"sprites/spr_spinblade_cannon_d_top_side_right/spr_spinblade_cannon_d_top_side_right.yy",},},
     {"id":{"name":"spr_spinblade_cannon_d_top","path":"sprites/spr_spinblade_cannon_d_top/spr_spinblade_cannon_d_top.yy",},},
+    {"id":{"name":"spr_spine_glacier_lord","path":"sprites/spr_spine_glacier_lord/spr_spine_glacier_lord.yy",},},
+    {"id":{"name":"spr_spine_x_wing_glacier","path":"sprites/spr_spine_x_wing_glacier/spr_spine_x_wing_glacier.yy",},},
     {"id":{"name":"spr_splitter_a_rampage","path":"sprites/spr_splitter_a_rampage/spr_splitter_a_rampage.yy",},},
     {"id":{"name":"spr_splitter_a_small_rampage","path":"sprites/spr_splitter_a_small_rampage/spr_splitter_a_small_rampage.yy",},},
     {"id":{"name":"spr_splitter_a_small","path":"sprites/spr_splitter_a_small/spr_splitter_a_small.yy",},},
@@ -3339,7 +3347,6 @@
     {"id":{"name":"spr_xeno_d_roll_left","path":"sprites/spr_xeno_d_roll_left/spr_xeno_d_roll_left.yy",},},
     {"id":{"name":"spr_xeno_d_roll_right","path":"sprites/spr_xeno_d_roll_right/spr_xeno_d_roll_right.yy",},},
     {"id":{"name":"spr_xeno_d_side_gun","path":"sprites/spr_xeno_d_side_gun/spr_xeno_d_side_gun.yy",},},
-    {"id":{"name":"Sprite1540","path":"sprites/Sprite1540/Sprite1540.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

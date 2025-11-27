@@ -48,7 +48,7 @@ function CollideEnemies(){
 			if(enemy.inv_collision = false){
 				if(enemy.collision_type = COLLISION_TYPE.SPRITE){
 					dirr = point_direction(x,y,enemy_list[|i].x,enemy_list[|i].y);
-					find = laser_find(x,y,dirr,range*scale_x,enemy_list[|i],1,1);
+					find = laser_find_old(x,y,dirr,range*scale_x,enemy_list[|i],1,1);
 					len = find[0];
 					enemy = find[1];
 					CollideSingleEnemy(enemy);

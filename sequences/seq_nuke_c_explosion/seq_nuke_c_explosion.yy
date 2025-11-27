@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_nuke_c_explosion",
   "autoRecord":true,
   "backdropHeight":768,

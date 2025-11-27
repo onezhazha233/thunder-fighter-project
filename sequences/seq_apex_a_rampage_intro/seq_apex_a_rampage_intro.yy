@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_apex_a_rampage_intro",
   "autoRecord":true,
   "backdropHeight":768,
@@ -34,6 +34,8 @@
   "playbackSpeedType":0,
   "resourceType":"GMSequence",
   "resourceVersion":"2.0",
+  "seqHeight":199.85115,
+  "seqWidth":131.10382,
   "showBackdrop":true,
   "showBackdropImage":false,
   "spriteId":null,

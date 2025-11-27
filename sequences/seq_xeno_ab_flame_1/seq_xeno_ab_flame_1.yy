@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_xeno_ab_flame_1",
   "autoRecord":true,
   "backdropHeight":768,

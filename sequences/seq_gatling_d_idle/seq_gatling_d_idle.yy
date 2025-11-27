@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_gatling_d_idle",
   "autoRecord":true,
   "backdropHeight":768,

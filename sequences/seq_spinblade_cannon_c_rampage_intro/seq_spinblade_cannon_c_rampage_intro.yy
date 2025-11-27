@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_spinblade_cannon_c_rampage_intro",
   "autoRecord":true,
   "backdropHeight":768,

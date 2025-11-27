@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_battle_item_effect_weapon_upgrade",
   "autoRecord":true,
   "backdropHeight":768,

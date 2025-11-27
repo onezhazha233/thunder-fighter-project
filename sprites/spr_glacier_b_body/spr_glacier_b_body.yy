@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_glacier_b_body",
   "bboxMode":0,
   "bbox_bottom":144,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"942e278d-2a2f-42d4-842b-80cbf3792603","name":"942e278d-2a2f-42d4-842b-80cbf3792603","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"942e278d-2a2f-42d4-842b-80cbf3792603","name":"942e278d-2a2f-42d4-842b-80cbf3792603","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -32,7 +32,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"spr_glacier_b_body",
     "autoRecord":true,
     "backdropHeight":768,

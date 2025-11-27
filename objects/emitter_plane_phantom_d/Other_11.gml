@@ -1,5 +1,5 @@
 live;
-laser_scale = 1
+laser_scale_target = 1
 
 for(i=0;i<1;i+=1){
 	if!(instance_exists(laser[i])){

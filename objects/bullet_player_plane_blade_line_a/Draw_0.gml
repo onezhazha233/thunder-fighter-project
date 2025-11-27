@@ -3,9 +3,18 @@ laser_offset += offset_speed
 if(laser_offset >= sprite_get_height(spr_bullet_player_blade_abcd_line_point))laser_offset = 0;
 if(laser_offset <= -sprite_get_height(spr_bullet_player_blade_abcd_line_point))laser_offset = 0;
 
-find = laser_find(x+x_offset,y+y_offset,image_angle,range,enemy_agent,true,false)
-len = find[0]
-if(len = -1)len = range;
+find = laser_find_width(x+x_offset,y+y_offset,image_angle,range,1,enemy_agent,true,false)
+len = range
+find_enemy = noone
+for(i=0;i<array_length(find);i+=1){
+    var _inst = find[i][0];
+    var _dist = find[i][1];
+    if(_inst.inv_collision = false){
+		len = _dist;
+		find_enemy = _inst;
+		break;
+	}
+}
 
 gpu_set_blendmode(bm_add)
 draw_laser(laser_sprite,0,x+x_offset,y+y_offset,0,image_angle,len,false,image_xscale*scale_x,image_yscale*scale_y,image_alpha)
@@ -13,7 +22,7 @@ draw_laser(laser_sprite,0,x+x_offset,y+y_offset,0,image_angle,len,false,image_xs
 draw_laser(spr_bullet_player_blade_abcd_line_point,0,x+x_offset,y+y_offset,laser_offset,image_angle,len,false,image_xscale*scale_x,image_yscale*scale_y,image_alpha/2)
 gpu_set_blendmode(bm_normal)
 
-if(instance_exists(find[1])&&find[1].inv_collision = false){
+if(instance_exists(find_enemy)){
 	ex = x + x_offset + lengthdir_x(len,image_angle);
 	ey = y + y_offset + lengthdir_y(len,image_angle);
 	draw_sprite_ext(spr_bullet_player_blade_abcd_point,0,ex,ey,0.5*scale_x,scale_y,0,-1,1);

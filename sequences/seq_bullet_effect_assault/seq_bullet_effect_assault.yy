@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_bullet_effect_assault",
   "autoRecord":true,
   "backdropHeight":768,

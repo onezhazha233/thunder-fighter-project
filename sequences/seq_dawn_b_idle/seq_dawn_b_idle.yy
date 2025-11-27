@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_dawn_b_idle",
   "autoRecord":true,
   "backdropHeight":768,

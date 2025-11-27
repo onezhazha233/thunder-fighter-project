@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_splitter_b_small",
   "autoRecord":true,
   "backdropHeight":768,

@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_bullet_player_blade_c_slash_rampage",
   "autoRecord":true,
   "backdropHeight":768,

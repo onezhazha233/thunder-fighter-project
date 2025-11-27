@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_bullet_enemy_lightning_ball_light_0",
   "bboxMode":0,
   "bbox_bottom":86,
@@ -12,9 +12,9 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"66e908e8-8d2f-4547-9d9b-41411f3484ab","name":"66e908e8-8d2f-4547-9d9b-41411f3484ab","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"95fe9b9e-dc34-498d-8c9d-5216bf0a8069","name":"95fe9b9e-dc34-498d-8c9d-5216bf0a8069","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"f9ce8229-af83-4c11-a809-4c06b18ec220","name":"f9ce8229-af83-4c11-a809-4c06b18ec220","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"66e908e8-8d2f-4547-9d9b-41411f3484ab","name":"66e908e8-8d2f-4547-9d9b-41411f3484ab","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"95fe9b9e-dc34-498d-8c9d-5216bf0a8069","name":"95fe9b9e-dc34-498d-8c9d-5216bf0a8069","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f9ce8229-af83-4c11-a809-4c06b18ec220","name":"f9ce8229-af83-4c11-a809-4c06b18ec220","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -34,7 +34,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"spr_bullet_enemy_lightning_ball_light_0",
     "autoRecord":true,
     "backdropHeight":768,
@@ -70,15 +70,9 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"66e908e8-8d2f-4547-9d9b-41411f3484ab","path":"sprites/spr_bullet_enemy_lightning_ball_light_0/spr_bullet_enemy_lightning_ball_light_0.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"87502495-f5cd-4785-b9eb-8ab69b0e79c4","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"95fe9b9e-dc34-498d-8c9d-5216bf0a8069","path":"sprites/spr_bullet_enemy_lightning_ball_light_0/spr_bullet_enemy_lightning_ball_light_0.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d3d7fd6a-d031-4a95-ba14-684c23ddb2ec","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f9ce8229-af83-4c11-a809-4c06b18ec220","path":"sprites/spr_bullet_enemy_lightning_ball_light_0/spr_bullet_enemy_lightning_ball_light_0.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"6769d1f6-6f4b-474f-86eb-1ea658ca10cc","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"66e908e8-8d2f-4547-9d9b-41411f3484ab","path":"sprites/spr_bullet_enemy_lightning_ball_light_0/spr_bullet_enemy_lightning_ball_light_0.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"87502495-f5cd-4785-b9eb-8ab69b0e79c4","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"95fe9b9e-dc34-498d-8c9d-5216bf0a8069","path":"sprites/spr_bullet_enemy_lightning_ball_light_0/spr_bullet_enemy_lightning_ball_light_0.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"d3d7fd6a-d031-4a95-ba14-684c23ddb2ec","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"f9ce8229-af83-4c11-a809-4c06b18ec220","path":"sprites/spr_bullet_enemy_lightning_ball_light_0/spr_bullet_enemy_lightning_ball_light_0.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"6769d1f6-6f4b-474f-86eb-1ea658ca10cc","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

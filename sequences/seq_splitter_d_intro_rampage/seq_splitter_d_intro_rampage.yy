@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_splitter_d_intro_rampage",
   "autoRecord":true,
   "backdropHeight":768,

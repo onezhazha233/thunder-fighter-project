@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_battle_quantum_shield",
   "autoRecord":true,
   "backdropHeight":768,

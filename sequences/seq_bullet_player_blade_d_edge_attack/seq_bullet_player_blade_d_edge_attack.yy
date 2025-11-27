@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_bullet_player_blade_d_edge_attack",
   "autoRecord":true,
   "backdropHeight":768,

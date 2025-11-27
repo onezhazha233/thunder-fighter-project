@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_cluster_bomb_b",
   "autoRecord":true,
   "backdropHeight":768,

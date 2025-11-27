@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_enemy_minion_0c0",
   "autoRecord":true,
   "backdropHeight":768,

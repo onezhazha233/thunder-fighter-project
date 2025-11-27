@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_phantom_b_rampage",
   "autoRecord":true,
   "backdropHeight":768,

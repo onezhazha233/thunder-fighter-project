@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_annihilator_c_idle",
   "autoRecord":true,
   "backdropHeight":768,

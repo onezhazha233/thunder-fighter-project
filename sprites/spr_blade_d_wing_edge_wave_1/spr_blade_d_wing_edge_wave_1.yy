@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_blade_d_wing_edge_wave_1",
   "bboxMode":0,
   "bbox_bottom":31,
@@ -12,9 +12,9 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"99ddcbf2-c5c7-4a46-8787-0d7bc42fda17","name":"99ddcbf2-c5c7-4a46-8787-0d7bc42fda17","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"a6634237-7c41-4e4f-bef5-a50c256ab90a","name":"a6634237-7c41-4e4f-bef5-a50c256ab90a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"1526aeed-f5ce-428e-9cff-e6cecd6c5d6b","name":"1526aeed-f5ce-428e-9cff-e6cecd6c5d6b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"99ddcbf2-c5c7-4a46-8787-0d7bc42fda17","name":"99ddcbf2-c5c7-4a46-8787-0d7bc42fda17","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a6634237-7c41-4e4f-bef5-a50c256ab90a","name":"a6634237-7c41-4e4f-bef5-a50c256ab90a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1526aeed-f5ce-428e-9cff-e6cecd6c5d6b","name":"1526aeed-f5ce-428e-9cff-e6cecd6c5d6b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -34,7 +34,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"spr_blade_d_wing_edge_wave_1",
     "autoRecord":true,
     "backdropHeight":768,
@@ -70,15 +70,9 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"99ddcbf2-c5c7-4a46-8787-0d7bc42fda17","path":"sprites/spr_blade_d_wing_edge_wave_1/spr_blade_d_wing_edge_wave_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"6d277ddc-8ea6-4d60-982f-9f511ebf8cf8","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a6634237-7c41-4e4f-bef5-a50c256ab90a","path":"sprites/spr_blade_d_wing_edge_wave_1/spr_blade_d_wing_edge_wave_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"17baca13-b616-4b53-ab1d-529a0cf155c0","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1526aeed-f5ce-428e-9cff-e6cecd6c5d6b","path":"sprites/spr_blade_d_wing_edge_wave_1/spr_blade_d_wing_edge_wave_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3ceacce3-4af4-403c-8efa-42af12f7f6f5","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"99ddcbf2-c5c7-4a46-8787-0d7bc42fda17","path":"sprites/spr_blade_d_wing_edge_wave_1/spr_blade_d_wing_edge_wave_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"6d277ddc-8ea6-4d60-982f-9f511ebf8cf8","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"a6634237-7c41-4e4f-bef5-a50c256ab90a","path":"sprites/spr_blade_d_wing_edge_wave_1/spr_blade_d_wing_edge_wave_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"17baca13-b616-4b53-ab1d-529a0cf155c0","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"1526aeed-f5ce-428e-9cff-e6cecd6c5d6b","path":"sprites/spr_blade_d_wing_edge_wave_1/spr_blade_d_wing_edge_wave_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"3ceacce3-4af4-403c-8efa-42af12f7f6f5","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

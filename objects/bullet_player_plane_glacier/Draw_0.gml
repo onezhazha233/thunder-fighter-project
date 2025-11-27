@@ -4,11 +4,17 @@ if(duration = 0)instance_destroy();
 time += 1
 
 find = laser_find_width(x,y,image_angle,range,sprite_get_width(laser_sprite)*image_xscale*scale_x*(9/25),enemy_agent,true,true)
-len = find[0]
-if(instance_exists(find[1])&&find[1].inv_collision = true){
-	len = range;
+len = range
+find_enemy = noone
+for(i=0;i<array_length(find);i+=1){
+    var _inst = find[i][0];
+    var _dist = find[i][1];
+    if(_inst.inv_collision = false){
+		len = _dist;
+		find_enemy = _inst;
+		break;
+	}
 }
-if(len = -1)len = range;
 
 if(size = 0){
 	gpu_set_blendmode(bm_add);
@@ -28,8 +34,8 @@ if(light_image > 0)draw_laser(laser_sprite,light_image,x+lengthdir_x(20*scale_x,
 if(size = 0)gpu_set_blendmode(bm_add);
 draw_laser(start_sprite,0,x,y,12*(size=1),image_angle,len,0,image_xscale*scale_x,image_yscale*scale_y,image_alpha,true)
 gpu_set_blendmode(bm_normal)
-if(instance_exists(find[1])&&find[1].inv_collision = false){
-	enemy = find[1];
+if(instance_exists(find_enemy)){
+	enemy = find_enemy;
 	CollideSingleEnemy(enemy);
 	enemy.frozen_amount += frozen_damage;
 	ex = x + lengthdir_x(len,image_angle);
@@ -47,5 +53,3 @@ if(instance_exists(find[1])&&find[1].inv_collision = false){
 		gpu_set_blendmode(bm_normal);
 	}
 }
-
-if(size = 1)draw_text(x+100,y,depth)

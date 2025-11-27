@@ -25,9 +25,11 @@ SetRampage = function(rampage){
 	if(rampage = true){
 		alarm[0] = -1;
 		alarm[1] = 1;
+		laser_scale = laser_scale_level[weapon_level]*0.7;
 	}
 	else{
 		alarm[0] = 1;
 		alarm[1] = -1;
+		laser_scale = 1;
 	}
 }

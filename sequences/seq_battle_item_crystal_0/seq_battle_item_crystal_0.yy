@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_battle_item_crystal_0",
   "autoRecord":true,
   "backdropHeight":768,

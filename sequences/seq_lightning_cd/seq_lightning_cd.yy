@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_lightning_cd",
   "autoRecord":true,
   "backdropHeight":768,

@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_gatling_d_rampage_intro",
   "autoRecord":true,
   "backdropHeight":768,

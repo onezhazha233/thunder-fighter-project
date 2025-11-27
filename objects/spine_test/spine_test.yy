@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite1540",
-    "path":"sprites/Sprite1540/Sprite1540.yy",
+    "name":"spr_spine_x_wing_glacier",
+    "path":"sprites/spr_spine_x_wing_glacier/spr_spine_x_wing_glacier.yy",
   },
   "spriteMaskId":null,
   "visible":true,

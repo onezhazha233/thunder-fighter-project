@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_glacier_c_idle",
   "autoRecord":true,
   "backdropHeight":768,

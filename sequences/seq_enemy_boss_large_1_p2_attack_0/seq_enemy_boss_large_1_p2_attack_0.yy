@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_enemy_boss_large_1_p2_attack_0",
   "autoRecord":true,
   "backdropHeight":768,

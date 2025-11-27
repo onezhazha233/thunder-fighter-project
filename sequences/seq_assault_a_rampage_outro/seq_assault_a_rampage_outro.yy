@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_assault_a_rampage_outro",
   "autoRecord":true,
   "backdropHeight":768,

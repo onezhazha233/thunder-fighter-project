@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_bullet_player_spinblade_cannon_c",
   "autoRecord":true,
   "backdropHeight":768,

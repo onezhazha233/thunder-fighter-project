@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_glacier_b_hexagon_2",
   "bboxMode":0,
   "bbox_bottom":20,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"574399bd-a04f-4f37-9f10-bac8000fe920","name":"574399bd-a04f-4f37-9f10-bac8000fe920","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"83d96b23-54d6-4e99-884b-4f3217ba646a","name":"83d96b23-54d6-4e99-884b-4f3217ba646a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"574399bd-a04f-4f37-9f10-bac8000fe920","name":"574399bd-a04f-4f37-9f10-bac8000fe920","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"83d96b23-54d6-4e99-884b-4f3217ba646a","name":"83d96b23-54d6-4e99-884b-4f3217ba646a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -33,7 +33,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"spr_glacier_b_hexagon_0",
     "autoRecord":true,
     "backdropHeight":768,

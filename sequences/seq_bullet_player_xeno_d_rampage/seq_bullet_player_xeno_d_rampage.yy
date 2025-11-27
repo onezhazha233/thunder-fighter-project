@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_bullet_player_xeno_d_rampage",
   "autoRecord":true,
   "backdropHeight":768,

@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_shotcannon_cd_flame",
   "autoRecord":true,
   "backdropHeight":768,

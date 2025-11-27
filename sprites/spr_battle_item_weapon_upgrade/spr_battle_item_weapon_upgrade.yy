@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_battle_item_weapon_upgrade",
   "bboxMode":0,
   "bbox_bottom":71,
@@ -12,13 +12,13 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"bc8266c8-0840-469e-a4e0-7aa456fd8e33","name":"bc8266c8-0840-469e-a4e0-7aa456fd8e33","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"4e1cdd17-811a-4cea-9388-2eadda208efb","name":"4e1cdd17-811a-4cea-9388-2eadda208efb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"77fda5dc-0bf0-4cf5-ad20-d4a17956ba6e","name":"77fda5dc-0bf0-4cf5-ad20-d4a17956ba6e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"a29c1eb2-0d62-49ef-a7ca-1e3498a9492d","name":"a29c1eb2-0d62-49ef-a7ca-1e3498a9492d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"1e21d02a-9205-4889-a9ba-421520064a45","name":"1e21d02a-9205-4889-a9ba-421520064a45","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"d2d5af32-1d43-4cd9-b7b2-b402629f1260","name":"d2d5af32-1d43-4cd9-b7b2-b402629f1260","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"28d0b4d3-c49c-44c7-a5b3-a5555b1b840b","name":"28d0b4d3-c49c-44c7-a5b3-a5555b1b840b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bc8266c8-0840-469e-a4e0-7aa456fd8e33","name":"bc8266c8-0840-469e-a4e0-7aa456fd8e33","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4e1cdd17-811a-4cea-9388-2eadda208efb","name":"4e1cdd17-811a-4cea-9388-2eadda208efb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"77fda5dc-0bf0-4cf5-ad20-d4a17956ba6e","name":"77fda5dc-0bf0-4cf5-ad20-d4a17956ba6e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a29c1eb2-0d62-49ef-a7ca-1e3498a9492d","name":"a29c1eb2-0d62-49ef-a7ca-1e3498a9492d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1e21d02a-9205-4889-a9ba-421520064a45","name":"1e21d02a-9205-4889-a9ba-421520064a45","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d2d5af32-1d43-4cd9-b7b2-b402629f1260","name":"d2d5af32-1d43-4cd9-b7b2-b402629f1260","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"28d0b4d3-c49c-44c7-a5b3-a5555b1b840b","name":"28d0b4d3-c49c-44c7-a5b3-a5555b1b840b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -38,7 +38,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"spr_battle_item_weapon_upgrade",
     "autoRecord":true,
     "backdropHeight":768,
@@ -74,27 +74,13 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bc8266c8-0840-469e-a4e0-7aa456fd8e33","path":"sprites/spr_battle_item_weapon_upgrade/spr_battle_item_weapon_upgrade.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"26ad2da4-4ce7-48a2-bf77-4e7dc9b7194f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4e1cdd17-811a-4cea-9388-2eadda208efb","path":"sprites/spr_battle_item_weapon_upgrade/spr_battle_item_weapon_upgrade.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"4b668936-2fce-48cc-ba9e-8c6cb1ff16c6","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"77fda5dc-0bf0-4cf5-ad20-d4a17956ba6e","path":"sprites/spr_battle_item_weapon_upgrade/spr_battle_item_weapon_upgrade.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"bb5af9d1-4232-4403-97a4-fd6b50b51fcd","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a29c1eb2-0d62-49ef-a7ca-1e3498a9492d","path":"sprites/spr_battle_item_weapon_upgrade/spr_battle_item_weapon_upgrade.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2a671478-880e-4f9b-be32-d30de7a3a0e9","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1e21d02a-9205-4889-a9ba-421520064a45","path":"sprites/spr_battle_item_weapon_upgrade/spr_battle_item_weapon_upgrade.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"915af5ac-bef2-475d-a51c-7b0cab18a77f","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d2d5af32-1d43-4cd9-b7b2-b402629f1260","path":"sprites/spr_battle_item_weapon_upgrade/spr_battle_item_weapon_upgrade.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2c530849-fd50-49a6-ba18-f1c3d18728b7","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"28d0b4d3-c49c-44c7-a5b3-a5555b1b840b","path":"sprites/spr_battle_item_weapon_upgrade/spr_battle_item_weapon_upgrade.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"61a89500-0126-41d1-be64-82cd5d680f38","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"bc8266c8-0840-469e-a4e0-7aa456fd8e33","path":"sprites/spr_battle_item_weapon_upgrade/spr_battle_item_weapon_upgrade.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"26ad2da4-4ce7-48a2-bf77-4e7dc9b7194f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"4e1cdd17-811a-4cea-9388-2eadda208efb","path":"sprites/spr_battle_item_weapon_upgrade/spr_battle_item_weapon_upgrade.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"4b668936-2fce-48cc-ba9e-8c6cb1ff16c6","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"77fda5dc-0bf0-4cf5-ad20-d4a17956ba6e","path":"sprites/spr_battle_item_weapon_upgrade/spr_battle_item_weapon_upgrade.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"bb5af9d1-4232-4403-97a4-fd6b50b51fcd","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"a29c1eb2-0d62-49ef-a7ca-1e3498a9492d","path":"sprites/spr_battle_item_weapon_upgrade/spr_battle_item_weapon_upgrade.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"2a671478-880e-4f9b-be32-d30de7a3a0e9","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"1e21d02a-9205-4889-a9ba-421520064a45","path":"sprites/spr_battle_item_weapon_upgrade/spr_battle_item_weapon_upgrade.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"915af5ac-bef2-475d-a51c-7b0cab18a77f","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"d2d5af32-1d43-4cd9-b7b2-b402629f1260","path":"sprites/spr_battle_item_weapon_upgrade/spr_battle_item_weapon_upgrade.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"2c530849-fd50-49a6-ba18-f1c3d18728b7","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"28d0b4d3-c49c-44c7-a5b3-a5555b1b840b","path":"sprites/spr_battle_item_weapon_upgrade/spr_battle_item_weapon_upgrade.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"61a89500-0126-41d1-be64-82cd5d680f38","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
