@@ -43,8 +43,8 @@ if(visible = true){
 	    touch_active = false;
 	}
 	
-	x += (keyboard_check(vk_right) - keyboard_check(vk_left))*8/(1+keyboard_check(vk_lshift));
-	y += (keyboard_check(vk_down) - keyboard_check(vk_up))*8/(1+keyboard_check(vk_lshift));
+	x += (keyboard_check(vk_right) - keyboard_check(vk_left))*global.player_move_speed/(1+keyboard_check(vk_lshift));
+	y += (keyboard_check(vk_down) - keyboard_check(vk_up))*global.player_move_speed/(1+keyboard_check(vk_lshift));
 	
 	x = clamp(20,x,room_width-20);
 	y = clamp(20,y,room_height-20);

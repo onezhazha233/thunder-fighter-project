@@ -48,4 +48,4 @@ burn_target = 120
 frozen_target = 240
 
 global.inv_cutscene = 1
-player.equipment.SetEnabled(false)
+if(Player_IsEnabled())player.equipment.SetEnabled(false);

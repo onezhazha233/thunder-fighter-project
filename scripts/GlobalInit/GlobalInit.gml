@@ -1,4 +1,5 @@
 function GlobalInit(){
+	global.player_move_speed = 12;
 	global.hp_max = 10;
 	global.hp = 10;
 	global.atk_plane = 1;
@@ -7,7 +8,7 @@ function GlobalInit(){
 	global.inv_hurt = 0;
 	global.inv_shield = 0;
 	global.inv_cutscene = 0;
-	global.rampage_duration = 3000;
+	global.rampage_duration = 300;
 	global.quantum_shield_duration = 300;
 	global.score = 0;
 	randomize();

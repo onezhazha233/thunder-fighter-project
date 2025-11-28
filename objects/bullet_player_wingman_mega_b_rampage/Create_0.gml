@@ -11,6 +11,7 @@ scale_x = 1
 scale_y = 1
 
 length = 1500
+range = 1500
 width = 15*1.1
 
 damage = 1
