@@ -2,9 +2,9 @@ event_inherited();
 
 xscale = 1
 yscale = 1
-plane = plane_agent
-wingman_left = [wingman_particle_cannon,wingman_beam_cannon]
-wingman_right = [wingman_mega_particle_cannon,wingman_mega_giant_cannon]
+plane = plane_refraction
+wingman_left = []
+wingman_right = []
 wingman_x_offset = [130,250]
 wingman_y_offset = [0,0]
 //subweapon = subweapon_annihilation_sticky_bomb

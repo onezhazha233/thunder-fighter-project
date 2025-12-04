@@ -9,3 +9,10 @@ if(enabled = false){
 	}
 	follow_inst = [];
 }
+
+if(abs(laser_scale - laser_scale_target) > 0.01){
+	laser_scale += (laser_scale_target - laser_scale)/5;
+}
+else{
+	laser_scale = laser_scale_target;
+}

@@ -29,3 +29,10 @@ start = true
 root_enemy = noone
 
 ignoreInstances = [];
+
+refraction_amount = 3
+refraction_amount_valid = 0
+refraction_angle = [0,0,0,0,0,0]
+refraction_start_x = [x]
+refraction_start_y = [y]
+refraction_length = [range]
