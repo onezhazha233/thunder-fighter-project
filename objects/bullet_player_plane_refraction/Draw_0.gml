@@ -3,7 +3,7 @@ laser_offset += offset_speed
 if(laser_offset >= sprite_get_height(laser_sprite)*2)laser_offset = 0;
 if(laser_offset <= -sprite_get_height(laser_sprite)*2)laser_offset = 0;
 
-find = laser_find_width(x,y,image_angle,range,sprite_get_width(laser_sprite)*image_xscale*scale_x*0.4,enemy_agent,true,true)
+find = laser_find_width(x,y,image_angle,range,sprite_get_width(laser_sprite)*image_xscale*scale_x*0.4,enemy_agent,true,true,ignoreInstances)
 len = range
 find_enemy = noone
 for(i=0;i<array_length(find);i+=1){
@@ -64,22 +64,24 @@ if(instance_exists(find_enemy)){
 		a.friction = 0.2*scale;
 	}*/
 }
-
+show_debug_message(find_enemy)
 if(extra_laser_enabled = true){
 	if(extra_laser = true){
 		if!(instance_exists(extra_laser_inst)){
 			extra_laser_inst = MakePlayerBullet(ex,ey,bullet_player_plane_refraction);
+			extra_laser_inst.ignoreInstances = [find_enemy]
 			extra_laser_inst.scale_x = scale_x;
 			extra_laser_inst.scale_y = scale_y;
-			extra_laser_inst.image_angle = -45-90;
+			extra_laser_inst.image_angle = 135 + irandom_range(-15, 15);
 			extra_laser_inst.laser_sprite = spr_bullet_player_phantom_a;
 			extra_laser_inst.offset_speed = 15;
 			extra_laser_inst.start = false;
-			extra_laser_inst.extra_laser_enabled = false;
+			// extra_laser_inst.extra_laser_enabled = false;
 			extra_laser_inst.damage = damage;
 			extra_laser_inst.root_enemy = find_enemy;
 		}
 		else{
+			extra_laser_inst.ignoreInstances = [find_enemy]
 			extra_laser_inst.x = ex;
 			extra_laser_inst.y = ey;
 			extra_laser_inst.scale_x = scale_x;

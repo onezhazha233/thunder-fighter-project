@@ -1,4 +1,4 @@
-function laser_find_width(_ox, _oy, _dir, _range, _width, _object, _prec, _notme) {
+function laser_find_width(_ox, _oy, _dir, _range, _width, _object, _prec, _notme, _ignoreInstances = []) {
     
     // --- 1. 静态资源池 ---
     // 即使有一百万次调用，这里也只会在第一次运行分配内存
@@ -46,6 +46,12 @@ function laser_find_width(_ox, _oy, _dir, _range, _width, _object, _prec, _notme
         var _inst = _collision_list[| i];
         
         // 极速跳过无效实例
+		var shouldIgnore = false;
+		for(var j = 0; j < array_length(_ignoreInstances);j++){
+			var _element = _ignoreInstances[j];
+			if(_element == _inst) shouldIgnore = true;
+		}
+		if(shouldIgnore) continue;
         if (!instance_exists(_inst)) continue;
         if (_notme && _inst == _caller_id) continue;
         

@@ -27,3 +27,5 @@ extra_laser_inst = noone
 start = true
 
 root_enemy = noone
+
+ignoreInstances = [];
