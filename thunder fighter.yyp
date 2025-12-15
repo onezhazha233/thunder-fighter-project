@@ -432,8 +432,6 @@
     {"$GMFolder":"","%Name":"phantom","folderPath":"folders/精灵/effect/bullet_player/plane/phantom.yy","name":"phantom","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"aurora_phantom","folderPath":"folders/精灵/effect/bullet_player/plane/phantom/aurora_phantom.yy","name":"aurora_phantom","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"phantom_zero","folderPath":"folders/精灵/effect/bullet_player/plane/phantom/phantom_zero.yy","name":"phantom_zero","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"squall_phantom","folderPath":"folders/精灵/effect/bullet_player/plane/phantom/squall_phantom.yy","name":"squall_phantom","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"void_phantom","folderPath":"folders/精灵/effect/bullet_player/plane/phantom/void_phantom.yy","name":"void_phantom","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"raptor","folderPath":"folders/精灵/effect/bullet_player/plane/raptor.yy","name":"raptor","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"subweapon","folderPath":"folders/精灵/effect/bullet_player/subweapon.yy","name":"subweapon","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"armor_piercer","folderPath":"folders/精灵/effect/bullet_player/subweapon/armor_piercer.yy","name":"armor_piercer","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -634,7 +632,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.1.210",
+    "IDEVersion":"2024.14.2.212",
   },
   "name":"thunder fighter",
   "resources":[
@@ -2010,8 +2008,8 @@
     {"id":{"name":"spr_bullet_effect_missile_cd_ring","path":"sprites/spr_bullet_effect_missile_cd_ring/spr_bullet_effect_missile_cd_ring.yy",},},
     {"id":{"name":"spr_bullet_effect_phantom_a_point","path":"sprites/spr_bullet_effect_phantom_a_point/spr_bullet_effect_phantom_a_point.yy",},},
     {"id":{"name":"spr_bullet_effect_phantom_a","path":"sprites/spr_bullet_effect_phantom_a/spr_bullet_effect_phantom_a.yy",},},
-    {"id":{"name":"spr_bullet_effect_phantom_b_point","path":"sprites/spr_bullet_effect_phantom_b_point/spr_bullet_effect_phantom_b_point.yy",},},
-    {"id":{"name":"spr_bullet_effect_phantom_b","path":"sprites/spr_bullet_effect_phantom_b/spr_bullet_effect_phantom_b.yy",},},
+    {"id":{"name":"spr_bullet_effect_phantom_bc_point","path":"sprites/spr_bullet_effect_phantom_bc_point/spr_bullet_effect_phantom_bc_point.yy",},},
+    {"id":{"name":"spr_bullet_effect_phantom_bc","path":"sprites/spr_bullet_effect_phantom_bc/spr_bullet_effect_phantom_bc.yy",},},
     {"id":{"name":"spr_bullet_effect_phantom_cd_point","path":"sprites/spr_bullet_effect_phantom_cd_point/spr_bullet_effect_phantom_cd_point.yy",},},
     {"id":{"name":"spr_bullet_effect_phantom_cd","path":"sprites/spr_bullet_effect_phantom_cd/spr_bullet_effect_phantom_cd.yy",},},
     {"id":{"name":"spr_bullet_effect_phantom_d_point_rampage","path":"sprites/spr_bullet_effect_phantom_d_point_rampage/spr_bullet_effect_phantom_d_point_rampage.yy",},},

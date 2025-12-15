@@ -2,12 +2,11 @@ live;
 event_inherited();
 
 if(enabled = false){
-	for(i=0;i<array_length(laser);i+=1){
-		if(instance_exists(laser[i])){
-			instance_destroy(laser[i]);
+	for(i=0;i<array_length(follow_inst);i+=1){
+		if(instance_exists(follow_inst[i,0])){
+			instance_destroy(follow_inst[i,0]);
 		}
 	}
-	follow_inst = [];
 }
 
 if(abs(laser_scale - laser_scale_target) > 0.01){

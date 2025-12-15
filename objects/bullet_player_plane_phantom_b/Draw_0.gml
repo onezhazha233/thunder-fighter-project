@@ -43,10 +43,10 @@ if(instance_exists(find_enemy)){
 	}
 	ex = x + lengthdir_x(len,image_angle);
 	ey = y + lengthdir_y(len,image_angle);
-	draw_sprite_ext(spr_bullet_effect_phantom_b,0,ex,ey,effect_xscale*image_xscale*scale_x,effect_yscale*image_xscale*scale_y,0,-1,1);
+	draw_sprite_ext(spr_bullet_effect_phantom_bc,0,ex,ey,effect_xscale*image_xscale*scale_x,effect_yscale*image_xscale*scale_y,0,-1,1);
 	if(fire_image mod 0.5 = 0){
 		a = instance_create_depth(ex,ey,0,bullet_effect_phantom_point);
-		a.sprite_index = spr_bullet_effect_phantom_b_point;
+		a.sprite_index = spr_bullet_effect_phantom_bc_point;
 		a.direction = random_range(-20,-160);
 		if(rampage = false){
 			scale = image_xscale*scale_x;

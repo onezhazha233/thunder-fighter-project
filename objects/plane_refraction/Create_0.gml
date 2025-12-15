@@ -1,16 +1,16 @@
 live;
 event_inherited();
 
-idle_mode = 2
-idle_sequence = seq_phantom_a_rampage_intro
+idle_mode = 0
+idle_sprite = spr_apex_d_base
 flame_lower_enabled = 1
-flame_lower = seq_phantom_a_flame
-rampage_intro = seq_phantom_a_rampage_intro
-rampage = seq_phantom_a_rampage
-rampage_outro_mode = 1
-rampage_outro = seq_phantom_a_rampage_intro
+flame_lower = seq_apex_abcd_flame
+rampage_intro = seq_apex_d_rampage_intro
+rampage = seq_apex_d_rampage
+rampage_outro_mode = 0
+rampage_outro = seq_apex_d_rampage_outro
 
-sprite_roll_left = spr_phantom_a_roll_left
+sprite_roll_left = spr_apex_d_roll_left
 sprite_roll_flip = true
 
 bullet_emitter = emitter_plane_refraction
