@@ -26,6 +26,7 @@ enemy_2 = new Enemy(enemy_damagetest,noone,function(){
 ds_queue_enqueue(enemies,[[enemy_0,enemy_1,enemy_2],200])
 //ds_queue_enqueue(enemies,[[enemy_0],200])
 
+instance_create_depth(300,300,0,battle_item_rampage)
 instance_create_depth(300,300,0,battle_item_hp_recovery)
 instance_create_depth(300,300,0,battle_item_weapon_upgrade)
 instance_create_depth(300,300,0,battle_item_quantum_shield)

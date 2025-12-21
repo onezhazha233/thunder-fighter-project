@@ -632,7 +632,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.2.212",
+    "IDEVersion":"2024.14.2.213",
   },
   "name":"thunder fighter",
   "resources":[
@@ -657,9 +657,11 @@
     {"id":{"name":"battle_bg_part","path":"objects/battle_bg_part/battle_bg_part.yy",},},
     {"id":{"name":"battle_bg_starry","path":"objects/battle_bg_starry/battle_bg_starry.yy",},},
     {"id":{"name":"battle_bg","path":"objects/battle_bg/battle_bg.yy",},},
+    {"id":{"name":"battle_effect_score_x2","path":"objects/battle_effect_score_x2/battle_effect_score_x2.yy",},},
     {"id":{"name":"battle_healer","path":"objects/battle_healer/battle_healer.yy",},},
     {"id":{"name":"battle_item_agent","path":"objects/battle_item_agent/battle_item_agent.yy",},},
     {"id":{"name":"battle_item_crystal","path":"objects/battle_item_crystal/battle_item_crystal.yy",},},
+    {"id":{"name":"battle_item_effect_rampage","path":"objects/battle_item_effect_rampage/battle_item_effect_rampage.yy",},},
     {"id":{"name":"battle_item_hp_recovery","path":"objects/battle_item_hp_recovery/battle_item_hp_recovery.yy",},},
     {"id":{"name":"battle_item_quantum_shield","path":"objects/battle_item_quantum_shield/battle_item_quantum_shield.yy",},},
     {"id":{"name":"battle_item_rampage","path":"objects/battle_item_rampage/battle_item_rampage.yy",},},
@@ -815,7 +817,6 @@
     {"id":{"name":"effect_explosion_ring_white","path":"objects/effect_explosion_ring_white/effect_explosion_ring_white.yy",},},
     {"id":{"name":"effect_explosion_small","path":"objects/effect_explosion_small/effect_explosion_small.yy",},},
     {"id":{"name":"effect_explosion_smoke","path":"objects/effect_explosion_smoke/effect_explosion_smoke.yy",},},
-    {"id":{"name":"effect_score_x2","path":"objects/effect_score_x2/effect_score_x2.yy",},},
     {"id":{"name":"emitter_boss_galaxy_ash_p1","path":"objects/emitter_boss_galaxy_ash_p1/emitter_boss_galaxy_ash_p1.yy",},},
     {"id":{"name":"emitter_boss_galaxy_ash_p2","path":"objects/emitter_boss_galaxy_ash_p2/emitter_boss_galaxy_ash_p2.yy",},},
     {"id":{"name":"emitter_boss_red_heavy","path":"objects/emitter_boss_red_heavy/emitter_boss_red_heavy.yy",},},

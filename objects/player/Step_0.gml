@@ -50,9 +50,13 @@ if(visible = true){
 	y = clamp(20,y,room_height-20);
 	
 	if(instance_exists(battle_quantum_shield)){
-		battle_quantum_shield.x = x;
-		battle_quantum_shield.y = y;
 		battle_quantum_shield.SetPosition(x,y);
+	}
+	
+	if(instance_exists(battle_item_effect_rampage)){
+		with(battle_item_effect_rampage){
+			SetPosition(player.x,player.y);
+		}
 	}
 	
 	if(instance_exists(equipment)){
