@@ -5,3 +5,5 @@ warning_text = instance_create_depth(room_width/2,560-168,DEPTH_BATTLE.UI,battle
 boss = noone
 lv = 1
 name = "testname"
+
+audio_play_sound(snd_warning_boss,0,0)

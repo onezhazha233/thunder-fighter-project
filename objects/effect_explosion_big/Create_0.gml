@@ -20,6 +20,7 @@ for(i=0;i<3;i+=1){
 		a = instance_create_depth(x,y,depth-1,effect_explosion_big_small);
 		a.direction = dir + 360/3*i + random_range(-40,40);
 		a.speed = 8;
+		a.sound = false;
 		Anim_Create(a,"speed",0,0,a.speed,-a.speed,24);
 	}
 	else{
@@ -27,6 +28,7 @@ for(i=0;i<3;i+=1){
 		a.sprite_index = spr_effect_explosion_big
 		a.direction = dir + 360/3*i + random_range(-40,40);
 		a.speed = 8;
+		a.sound = false;
 	}
 }
 Anim_Create(a,"speed",0,0,a.speed,-a.speed,24)
@@ -45,3 +47,5 @@ Anim_Create(a,"image_yscale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,1,2,30)
 a.delay = 10
 
 alarm[0] = 24
+
+audio_play_sound(snd_explosion,0,0)

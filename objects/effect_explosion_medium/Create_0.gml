@@ -22,3 +22,5 @@ a = instance_create_depth(x,y,depth+2,effect_explosion_smoke)
 a.image_xscale = image_xscale*2
 a.image_yscale = image_yscale*2
 a.delay = 10
+
+audio_play_sound(snd_explosion,0,0)
