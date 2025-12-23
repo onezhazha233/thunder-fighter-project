@@ -1318,6 +1318,7 @@
     {"name":"snd_crystal","order":1,"path":"sounds/snd_crystal/snd_crystal.yy",},
     {"name":"snd_explosion","order":8,"path":"sounds/snd_explosion/snd_explosion.yy",},
     {"name":"snd_hp_recovery","order":4,"path":"sounds/snd_hp_recovery/snd_hp_recovery.yy",},
+    {"name":"snd_plane_fire","order":11,"path":"sounds/snd_plane_fire/snd_plane_fire.yy",},
     {"name":"snd_plane_glacier_laser_big","order":9,"path":"sounds/snd_plane_glacier_laser_big/snd_plane_glacier_laser_big.yy",},
     {"name":"snd_plane_glacier_laser_small","order":10,"path":"sounds/snd_plane_glacier_laser_small/snd_plane_glacier_laser_small.yy",},
     {"name":"snd_plane_shoot","order":7,"path":"sounds/snd_plane_shoot/snd_plane_shoot.yy",},

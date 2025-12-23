@@ -1671,6 +1671,7 @@
     {"id":{"name":"snd_crystal","path":"sounds/snd_crystal/snd_crystal.yy",},},
     {"id":{"name":"snd_explosion","path":"sounds/snd_explosion/snd_explosion.yy",},},
     {"id":{"name":"snd_hp_recovery","path":"sounds/snd_hp_recovery/snd_hp_recovery.yy",},},
+    {"id":{"name":"snd_plane_fire","path":"sounds/snd_plane_fire/snd_plane_fire.yy",},},
     {"id":{"name":"snd_plane_glacier_laser_big","path":"sounds/snd_plane_glacier_laser_big/snd_plane_glacier_laser_big.yy",},},
     {"id":{"name":"snd_plane_glacier_laser_small","path":"sounds/snd_plane_glacier_laser_small/snd_plane_glacier_laser_small.yy",},},
     {"id":{"name":"snd_plane_shoot","path":"sounds/snd_plane_shoot/snd_plane_shoot.yy",},},
