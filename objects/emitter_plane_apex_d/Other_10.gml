@@ -6,3 +6,4 @@ fire.sprite_index = spr_bullet_player_apex_d_fire
 fire.scale_x = scale_x;
 fire.scale_y = scale_y;
 follow_inst = [fire]
+audio_play_sound(snd_plane_shoot,0,0)

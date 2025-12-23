@@ -74,6 +74,8 @@ if(rtime mod 18 = 0){
 	effect.scale_x = -scale_x*0.7;
 	effect.scale_y = scale_y*0.7;
 	array_push(follow_inst,[effect,50,0]);
+	
+	audio_play_sound(snd_plane_glacier_laser_big,0,0);
 }
 if(rtime mod 18 = 0){
 	laser = MakePlayerBullet(x-50,y,bullet_player_plane_glacier);
@@ -95,6 +97,8 @@ if(rtime mod 18 = 0){
 	Anim_Create(laser,"image_angle",ANIM_TWEEN.QUAD,ANIM_EASE.IN,40,50,75);
 	Anim_Create(laser,"image_xscale",0,0,1,-0.8,10,65);
 	array_push(follow_inst,[laser,50,0]);
+	
+	audio_play_sound(snd_plane_glacier_laser_small,0,0);
 }
 
 rtime += 1

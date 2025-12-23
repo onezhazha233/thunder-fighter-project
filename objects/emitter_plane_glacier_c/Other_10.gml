@@ -77,3 +77,5 @@ switch(weapon_level){
 		break;
 }
 alarm[2] = 48-(weapon_level=3 ? 5 : 0)
+
+audio_play_sound(snd_plane_glacier_laser_small,0,0);

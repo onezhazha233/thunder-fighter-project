@@ -34,3 +34,5 @@ effect = instance_create_depth(x+50,y,depth-5,bullet_player_plane_glacier_big_ef
 effect.scale_x = -scale_x*0.7;
 effect.scale_y = scale_y*0.7;
 array_push(follow_inst,[effect,50,0]);
+
+audio_play_sound(snd_plane_glacier_laser_big,0,0);

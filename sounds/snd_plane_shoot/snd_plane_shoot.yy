@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_explosion",
+  "%Name":"snd_plane_shoot",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.8159864,
+  "duration":0.21600907,
   "exportDir":"",
-  "name":"snd_explosion",
+  "name":"snd_plane_shoot",
   "parent":{
     "name":"sfx",
     "path":"folders/声音/sfx.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_explosion.mp3",
-  "volume":1.0,
+  "soundFile":"snd_plane_shoot.mp3",
+  "volume":0.4,
 }

@@ -26,3 +26,4 @@ fire = instance_create_depth(x,y,DEPTH_BATTLE.BULLETS_PLAYER-10,bullet_player_as
 fire.scale_x = scale_x;
 fire.scale_y = scale_y;
 follow_inst = [fire]
+audio_play_sound(snd_plane_shoot,0,0)

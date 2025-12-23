@@ -20,3 +20,5 @@ laser.laser_sprite = spr_bullet_player_glacier_ab_big
 Anim_Create(laser,"image_xscale",ANIM_TWEEN.QUAD,ANIM_EASE.IN,1.5,-1.4,18)
 Anim_Create(laser,"light_alpha",0,0,1,-1,6)
 array_push(follow_inst,[laser,50,0])
+
+audio_play_sound(snd_plane_glacier_laser_big,0,0)

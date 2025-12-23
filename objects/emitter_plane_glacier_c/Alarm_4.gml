@@ -14,3 +14,5 @@ laser.damage = damage
 Anim_Create(laser,"image_angle",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,60,30,34);
 Anim_Create(laser,"image_xscale",0,0,1,-0.8,10,24);
 array_push(follow_inst,[laser,50,0]);
+
+audio_play_sound(snd_plane_glacier_laser_small,0,0);

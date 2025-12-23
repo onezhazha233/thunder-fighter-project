@@ -7,3 +7,4 @@ fire.scale_x = scale_x;
 fire.scale_y = scale_y;
 fire.y_offset = 8
 follow_inst = [fire]
+audio_play_sound(snd_plane_shoot,0,0)
