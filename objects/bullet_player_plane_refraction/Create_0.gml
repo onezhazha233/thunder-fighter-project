@@ -8,7 +8,7 @@ right = 0
 
 collision_destroy = false
 
-laser_sprite = spr_bullet_player_phantom_a
+laser_sprite = spr_bullet_player_refraction
 laser_offset = 0
 offset_speed = 15
 
