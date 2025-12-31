@@ -9,6 +9,9 @@ if(hp <= 0){
 	ii = CreateItem();
 	alarm[2] = 1;
 	active = false;
+	with(enemy_agent)hp = 0;
+	Swarm_SetEnabled(false);
+	with(battle_wave_swarm)instance_destroy();
 	
 	if(array_length(boss_list) = 0){
 		if!(die_sequence = -1){

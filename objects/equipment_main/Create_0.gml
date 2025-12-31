@@ -2,7 +2,7 @@ event_inherited();
 
 xscale = 1
 yscale = 1
-plane = plane_fire
+plane = plane_refraction
 wingman_left = []
 wingman_right = []
 wingman_x_offset = [130,250]

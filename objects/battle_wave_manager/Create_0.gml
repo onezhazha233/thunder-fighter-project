@@ -3,6 +3,7 @@ enabled = false
 wave = -1
 waves = ds_queue_create()
 wave_inst = noone
+boss_waves = [8]
 
 ds_queue_enqueue(waves,wave_0)
 ds_queue_enqueue(waves,wave_1)

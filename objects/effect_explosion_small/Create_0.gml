@@ -25,3 +25,5 @@ a.image_yscale = image_yscale*1.5
 a.delay = 10
 
 alarm[0] = 24
+
+audio_play_sound(snd_explosion,0,0)
