@@ -1,7 +1,7 @@
 live;
 event_inherited();
 
-test = 0
+test = 1
 if(test = 0){
 	enemy_0 = new Enemy(enemy_4b,emitter_enemy_b,function(){
 		EnemyMove_Pre([360, -200], [360, 320], 40);
@@ -32,7 +32,7 @@ else{
 	ds_queue_enqueue(enemies,[[enemy_0,enemy_1,enemy_2],200]);
 }
 
-instance_create_depth(300,300,0,battle_item_rampage)
-instance_create_depth(300,300,0,battle_item_hp_recovery)
-instance_create_depth(300,300,0,battle_item_weapon_upgrade)
-instance_create_depth(300,300,0,battle_item_quantum_shield)
+//instance_create_depth(300,300,0,battle_item_rampage)
+//instance_create_depth(300,300,0,battle_item_hp_recovery)
+//instance_create_depth(300,300,0,battle_item_weapon_upgrade)
+//instance_create_depth(300,300,0,battle_item_quantum_shield)

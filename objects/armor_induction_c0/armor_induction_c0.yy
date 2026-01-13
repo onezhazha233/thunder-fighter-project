@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"armor_alloy_b",
+  "%Name":"armor_induction_c0",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"armor_alloy_b",
+  "name":"armor_induction_c0",
   "overriddenProperties":[],
   "parent":{
-    "name":"Alloy",
-    "path":"folders/物体/armor/Alloy.yy",
+    "name":"Induction",
+    "path":"folders/物体/armor/Induction.yy",
   },
   "parentObjectId":{
     "name":"armor_agent",

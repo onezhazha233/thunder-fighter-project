@@ -2,13 +2,13 @@ event_inherited();
 
 xscale = 1
 yscale = 1
-plane = plane_refraction
+plane = plane_agent
 wingman_left = []
 wingman_right = []
 wingman_x_offset = [130,250]
 wingman_y_offset = [0,0]
 //subweapon = subweapon_annihilation_sticky_bomb
-armor = armor_alloy_d
+armor = armor_induction_d
 
 /*for(i=0;i<8;i+=1){
 	wingman_left[i] = plane_aurora_phantom;
@@ -18,3 +18,5 @@ armor = armor_alloy_d
 	wingman_y_offset[i] = 0-cos(i/8*pi)*100;
 }
 */
+
+MakeEnemyBullet(200,900+random(10),bullet_enemy_red,spr_bullet_enemy_red_0);
