@@ -12,8 +12,8 @@
     "path":"folders/物体/armor/Induction.yy",
   },
   "parentObjectId":{
-    "name":"armor_agent",
-    "path":"objects/armor_agent/armor_agent.yy",
+    "name":"armor_induction_a",
+    "path":"objects/armor_induction_a/armor_induction_a.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

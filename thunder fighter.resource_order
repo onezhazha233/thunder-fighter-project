@@ -1900,6 +1900,7 @@
     {"name":"spr_effect_explosion_line","order":2,"path":"sprites/spr_effect_explosion_line/spr_effect_explosion_line.yy",},
     {"name":"spr_effect_explosion_ring","order":4,"path":"sprites/spr_effect_explosion_ring/spr_effect_explosion_ring.yy",},
     {"name":"spr_effect_explosion_smoke","order":3,"path":"sprites/spr_effect_explosion_smoke/spr_effect_explosion_smoke.yy",},
+    {"name":"spr_effect_graze_rating","order":6,"path":"sprites/spr_effect_graze_rating/spr_effect_graze_rating.yy",},
     {"name":"spr_effect_graze","order":5,"path":"sprites/spr_effect_graze/spr_effect_graze.yy",},
     {"name":"spr_effect_texture_fire","order":1,"path":"sprites/spr_effect_texture_fire/spr_effect_texture_fire.yy",},
     {"name":"spr_effect_texture_ice","order":2,"path":"sprites/spr_effect_texture_ice/spr_effect_texture_ice.yy",},

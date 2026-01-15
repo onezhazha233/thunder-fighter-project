@@ -2,7 +2,7 @@ event_inherited();
 
 xscale = 1
 yscale = 1
-plane = plane_agent
+plane = plane_assault_zero
 wingman_left = []
 wingman_right = []
 wingman_x_offset = [130,250]
@@ -19,4 +19,4 @@ armor = armor_induction_d
 }
 */
 
-MakeEnemyBullet(200,900+random(10),bullet_enemy_red,spr_bullet_enemy_red_0);
+tb = MakeEnemyBullet(200,900+random(10),bullet_enemy_red,spr_bullet_enemy_red_0);
