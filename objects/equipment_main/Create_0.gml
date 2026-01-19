@@ -2,8 +2,8 @@ event_inherited();
 
 xscale = 1
 yscale = 1
-plane = plane_assault_zero
-wingman_left = []
+plane = plane_agent
+wingman_left = [wingman_quantum_spinblade_cannon]
 wingman_right = []
 wingman_x_offset = [130,250]
 wingman_y_offset = [0,0]

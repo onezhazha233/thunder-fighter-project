@@ -19,11 +19,7 @@ if(mode < 2){
 		if(instance_exists(enemy)){
 			if(enemy.inv_collision = false){
 				if(enemy.collision_type = COLLISION_TYPE.SPRITE){
-					mode = 2;
-					layer_sequence_destroy(bullet_sequence);
-					bullet_sequence = layer_sequence_create(ll,x,y,edge_intro);
-					layer_sequence_xscale(bullet_sequence,scale_x*(dir = 1 ? -1 : 1));
-					speed = 0;
+					active();
 				}
 			}
 		}
@@ -31,11 +27,11 @@ if(mode < 2){
 	
 	move_duration -= 1;
 	if(move_duration = 0){
-		mode = 2;
-		layer_sequence_destroy(bullet_sequence);
-		bullet_sequence = layer_sequence_create(ll,x,y,edge_intro);
-		layer_sequence_xscale(bullet_sequence,scale_x*(dir = 1 ? -1 : 1));
-		speed = 0;
+		active();
+	}
+	
+	if(y <= 10){
+		active();
 	}
 }
 if(mode >= 2){

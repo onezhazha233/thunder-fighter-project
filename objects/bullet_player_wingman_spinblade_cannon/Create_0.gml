@@ -48,9 +48,9 @@ function CollideEnemies(){
 			if(enemy.inv_collision = false){
 				if(enemy.collision_type = COLLISION_TYPE.SPRITE){
 					dirr = point_direction(x,y,enemy_list[|i].x,enemy_list[|i].y);
-					find = laser_find_old(x,y,dirr,range*scale_x,enemy_list[|i],1,1);
-					len = find[0];
-					enemy = find[1];
+					find = laser_find_width(x,y,dirr,range*scale_x,1,enemy_list[|i],1,1);
+					len = find[0][1];
+					enemy = find[0][0];
 					CollideSingleEnemy(enemy);
 				}
 			}
@@ -71,4 +71,12 @@ function CollideSingleEnemy(enemy){
 			effect.image_yscale = scale_y*0.6;
 		}
 	}
+}
+
+function active(){
+	mode = 2;
+	layer_sequence_destroy(bullet_sequence);
+	bullet_sequence = layer_sequence_create(ll,x,y,edge_intro);
+	layer_sequence_xscale(bullet_sequence,scale_x*(dir = 1 ? -1 : 1));
+	speed = 0;
 }
