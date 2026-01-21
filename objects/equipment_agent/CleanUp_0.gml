@@ -8,3 +8,4 @@ for(i=0;i<array_length(wingman_right_inst);i+=1){
 }
 instance_destroy(subweapon_inst)
 layer_sequence_destroy(player_point)
+layer_sequence_destroy(armor_inst)

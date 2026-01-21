@@ -26,7 +26,12 @@ if(fade = 1){
 }
 else{
 	fade_time = 0;
-	image_alpha = 1;
+	if(abs(1-image_alpha) < 0.01){
+		image_alpha = 1;
+	}
+	else{
+		image_alpha += (1-image_alpha)/3;
+	}
 }
 
 Sequence_PlayByFrame(sl);

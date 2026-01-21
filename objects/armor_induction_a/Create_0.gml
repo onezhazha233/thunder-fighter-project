@@ -17,7 +17,7 @@ graze_current_rating = 0
 graze_clear_time = 30
 
 ArmorAbility = function(type,exarg=0){
-	if(type = 0) {
+	if(type = 0){
 		var _total_heat_gain_this_frame = 0;
 		
 	    var px = player.x;

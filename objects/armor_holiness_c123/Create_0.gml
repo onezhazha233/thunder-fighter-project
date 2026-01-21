@@ -7,6 +7,6 @@ ArmorAbility = function(type,exarg=0){
 				exarg = global.hp -1;
 			}
 		}
+		return exarg;
 	}
-	return exarg;
 }

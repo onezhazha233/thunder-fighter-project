@@ -49,9 +49,11 @@ function CollideEnemies(){
 				if(enemy.collision_type = COLLISION_TYPE.SPRITE){
 					dirr = point_direction(x,y,enemy_list[|i].x,enemy_list[|i].y);
 					find = laser_find_width(x,y,dirr,range*scale_x,1,enemy_list[|i],1,1);
-					len = find[0][1];
-					enemy = find[0][0];
-					CollideSingleEnemy(enemy);
+					if(array_length(find) > 0){
+						len = find[0][1];
+						enemy = find[0][0];
+						CollideSingleEnemy(enemy);
+					}
 				}
 			}
 		}
