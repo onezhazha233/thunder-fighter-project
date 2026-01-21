@@ -8,4 +8,4 @@ if(keyboard_check_pressed(ord("E"))){
 	SetEnabled(enabled);
 }
 
-if(instance_exists(tb))tb.y += sin(current_time/50)*8
+//if(instance_exists(tb))tb.y += sin(current_time/50)*8

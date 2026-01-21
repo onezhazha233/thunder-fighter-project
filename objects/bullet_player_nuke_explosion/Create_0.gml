@@ -24,6 +24,7 @@ damage = 1
 damage_type = 1
 damage_interval = 1
 collision_destroy = false
+collision_single = false
 
 duration = 10
 radius = 80

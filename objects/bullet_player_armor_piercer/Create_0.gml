@@ -10,6 +10,7 @@ collision_effect_sequence = seq_bullet_effect_armor_piercer_a
 
 collision_destroy = false
 damage_type = 0
+collision_single = false
 
 ospd = 0
 time = random(5)

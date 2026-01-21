@@ -24,3 +24,4 @@ damage = 1
 damage_type = 1
 damage_interval = 999
 collision_destroy = false
+collision_single = false

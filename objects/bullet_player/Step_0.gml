@@ -13,7 +13,7 @@ if(damage_type = 1){
 	}
 }
 
-if(collision_single = true){
+if(collision_single = false){
 	if(collision_type = COLLISION_TYPE.RECTANGLE){
 		enemy_num = collision_rectangle_list(x-left*scale_x,y-up*scale_y,x+right*scale_x,y+down*scale_y,enemy_agent,1,1,enemy_list,false);
 		if(enemy_num > 0){
@@ -34,6 +34,9 @@ else{
 			if(enemy.inv_collision = false){
 				if(enemy.collision_type = COLLISION_TYPE.SPRITE){
 					CollideSingleEnemy(enemy);
+					if(collision_destroy = true){
+						instance_destroy();
+					}
 				}
 			}
 		}
@@ -44,6 +47,9 @@ else{
 			if(enemy.inv_collision = false){
 				if(enemy.collision_type = COLLISION_TYPE.SPRITE){
 					CollideSingleEnemy(enemy);
+					if(collision_destroy = true){
+						instance_destroy();
+					}
 				}
 			}
 		}

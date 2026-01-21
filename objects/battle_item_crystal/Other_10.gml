@@ -6,3 +6,4 @@ switch(type){
 }
 Player_AddScore(sc)
 audio_play_sound(snd_crystal,0,0)
+player.equipment.armor_inst.ArmorAbility(5,type);

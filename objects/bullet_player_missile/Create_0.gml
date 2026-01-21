@@ -14,8 +14,6 @@ rot_rate = 0
 
 speed = 3
 
-collision_single = true
-
 function CollideSingleEnemy(enemy){
 	enemy.last_bullet = id;
 	event_user(0);
