@@ -9,8 +9,8 @@
   "name":"bullet_enemy_block",
   "overriddenProperties":[],
   "parent":{
-    "name":"guardian",
-    "path":"folders/物体/wingman/guardian.yy",
+    "name":"物体",
+    "path":"folders/物体.yy",
   },
   "parentObjectId":null,
   "persistent":false,

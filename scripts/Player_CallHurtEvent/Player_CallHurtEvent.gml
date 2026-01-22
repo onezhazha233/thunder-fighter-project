@@ -1,3 +1,5 @@
 function Player_CallHurtEvent(){
-	with(player)event_user(0);
+	with(player){
+		event_user(0);
+	}
 }

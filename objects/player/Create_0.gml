@@ -16,3 +16,8 @@ SetRampageDuration = function(time){
 		}
 	}
 }
+
+hurt_shake_camera = true
+hurt_inv = 120
+hurt_downgrade_weapon = true
+hurt_skip_recover = true

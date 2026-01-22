@@ -1,4 +1,5 @@
 live;
+//induction armor
 event_inherited();
 
 graze_radius = 65

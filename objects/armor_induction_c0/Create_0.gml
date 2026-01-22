@@ -1,4 +1,5 @@
 live;
+//induction bastion
 event_inherited();
 
 graze_radius = 70

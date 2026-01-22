@@ -421,7 +421,7 @@
                             {"th0":0.0,"th1":0.1,"tv0":0.0,"tv1":0.0,"x":0.0,"y":360.0,},
                             {"th0":-0.1,"th1":0.040184997,"tv0":0.0,"tv1":0.0,"x":0.5,"y":360.0,},
                             {"th0":-0.07571762,"th1":0.07542259,"tv0":323.83963,"tv1":-322.57782,"x":0.74999875,"y":180.0,},
-                            {"th0":-0.040184997,"th1":0.062499687,"tv0":0.0,"tv1":0.0,"x":0.9999975,"y":0.0,},
+                            {"th0":-0.040184997,"th1":0.062499687,"tv0":0.0,"tv1":0.0,"x":1.0,"y":0.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                       ],"function":2,"name":"旋转","resourceType":"GMAnimCurve","resourceVersion":"2.0",},"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
                 },"Disabled":false,"id":"4b97a08d-4a7b-4703-a097-ee2e42f3ce13","IsCreationKey":false,"Key":0.0,"Length":40.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},

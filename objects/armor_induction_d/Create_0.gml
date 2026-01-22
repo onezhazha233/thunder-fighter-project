@@ -1,4 +1,5 @@
 live;
+//induction light
 event_inherited();
 
 graze_radius = 80

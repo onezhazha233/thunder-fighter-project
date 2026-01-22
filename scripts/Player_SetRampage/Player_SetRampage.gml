@@ -1,10 +1,12 @@
 function Player_SetRampage(duration,text_effect=true){
 	if(Player_IsEnabled()){
-		if(Player_GetRampage() = 0){
-			audio_play_sound(snd_rampage,0,0);
-		}
-		else{
-			audio_play_sound(snd_weapon_upgrade,0,0);
+		if(duration > 0){
+			if(Player_GetRampage() = 0){
+				audio_play_sound(snd_rampage,0,0);
+			}
+			else{
+				audio_play_sound(snd_weapon_upgrade,0,0);
+			}
 		}
 		player.SetRampageDuration(duration);
 		if(duration > 0){

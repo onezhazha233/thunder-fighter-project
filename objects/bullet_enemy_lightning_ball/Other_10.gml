@@ -1,3 +1,4 @@
 live;
+event_inherited();
+
 destroy_type = 2
-Player_Hurt(damage)

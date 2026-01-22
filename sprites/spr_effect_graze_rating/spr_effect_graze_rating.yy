@@ -30,8 +30,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"effect",
-    "path":"folders/精灵/effect.yy",
+    "name":"induction",
+    "path":"folders/精灵/effect/armor/induction.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -63,6 +63,9 @@ if(visible = true){
 				}
 			}
 		}
+		else{
+			equipment.image_alpha = 1;
+		}
 		
 		if(rampage_duration > 0){
 			if(equipment.enabled = true){
