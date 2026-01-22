@@ -1,0 +1,2 @@
+live;
+game_restart()

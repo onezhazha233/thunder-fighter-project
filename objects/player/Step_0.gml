@@ -95,5 +95,6 @@ if(visible = true){
 		instance_destroy(equipment_main);
 		repeat(4)instance_create_depth(x,y,0,battle_item_weapon_upgrade);
 		instance_create_depth(x,y,0,battle_item_quantum_shield);
+		world.alarm[0] = 120;
 	}
 }
