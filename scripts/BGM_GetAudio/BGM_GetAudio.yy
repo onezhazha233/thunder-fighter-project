@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"BGM_GetAudio",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"BGM_GetAudio",
+  "parent":{
+    "name":"BGM",
+    "path":"folders/脚本/BGM.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
