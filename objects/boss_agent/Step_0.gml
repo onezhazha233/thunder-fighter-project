@@ -1,4 +1,14 @@
 live;
+if!(layer_exists(layer_enemy)){
+	layer_enemy = layer_create(depth);
+}
+if!(layer_exists(layer_enemy_lower)){
+	layer_enemy_lower = layer_create(depth+1);
+}
+if!(layer_exists(layer_enemy_upper)){
+	layer_enemy_upper = layer_create(depth-1);
+}
+
 if!(depth_previous = depth){
 	layer_depth(layer_enemy,depth);
 	layer_depth(layer_enemy_lower,depth+1);
@@ -25,6 +35,8 @@ if(hp <= 0){
 		Anim_Create(battle_wave,"enabled",0,0,0,1,0,240);
 		global.inv_cutscene = 1;
 		if(Player_IsEnabled())player.equipment.SetEnabled(false);
+		BGM_SetVolume(1,0,60);
+		battle.alarm[1] = 240;
 	}
 	else{
 		instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,effect_explosion_big);

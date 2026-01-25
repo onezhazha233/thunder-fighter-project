@@ -1,4 +1,6 @@
 live;
+moveable = false
+
 touch_start_x = x;
 touch_start_y = y;
 

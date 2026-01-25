@@ -28,3 +28,4 @@ if!(subweapon = -1){
 if!(armor = -1){
 	armor_inst = instance_create_depth(0,0,0,armor);
 }
+SetEnabled(enabled)

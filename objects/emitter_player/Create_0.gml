@@ -1,4 +1,4 @@
-enabled = true
+enabled = false
 rampage = false
 weapon_level = 0
 damages = [1,1.3,1.7,2,2]

@@ -9,11 +9,5 @@ speed = 23
 
 damage = 1
 
-function CollideSingleEnemy(enemy){
-	enemy.last_bullet = id;
-	event_user(0);
-	enemy.Hurt();
-	effect = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
-	effect.image_xscale = scale_x*1.5;
-	effect.image_yscale = scale_y*1.5;
-}
+collision_effect_scale_x = 1.5
+collision_effect_scale_y = 1.5

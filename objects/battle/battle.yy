@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"bullet_effect_apex",
+  "%Name":"battle",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"bullet_effect_apex",
+  "name":"battle",
   "overriddenProperties":[],
   "parent":{
-    "name":"plane",
-    "path":"folders/物体/effect/bullet_player/plane.yy",
+    "name":"物体",
+    "path":"folders/物体.yy",
   },
   "parentObjectId":null,
   "persistent":false,

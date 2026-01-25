@@ -25,7 +25,7 @@
           "0":{"$MomentsEventKeyframe":"","Events":[
               "Sequence_AutoDestroy",
             ],"resourceType":"MomentsEventKeyframe","resourceVersion":"2.0",},
-        },"Disabled":false,"id":"bd76842d-bc38-4f6c-863c-3be9cdc2c36f","IsCreationKey":false,"Key":17.9999,"Length":1.0,"resourceType":"Keyframe<MomentsEventKeyframe>","resourceVersion":"2.0","Stretch":false,},
+        },"Disabled":false,"id":"7c233a81-6ebe-45a8-8765-e5699f0a27a1","IsCreationKey":false,"Key":17.9999,"Length":1.0,"resourceType":"Keyframe<MomentsEventKeyframe>","resourceVersion":"2.0","Stretch":false,},
     ],
     "resourceType":"KeyframeStore<MomentsEventKeyframe>",
     "resourceVersion":"2.0",
@@ -40,6 +40,8 @@
   "playbackSpeedType":0,
   "resourceType":"GMSequence",
   "resourceVersion":"2.0",
+  "seqHeight":46.15,
+  "seqWidth":111.51,
   "showBackdrop":true,
   "showBackdropImage":false,
   "spriteId":null,

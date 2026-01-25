@@ -1,14 +1,16 @@
 event_inherited();
 
+enabled = false
+
 xscale = 1
 yscale = 1
-plane = plane_x_wing_glacier
-wingman_left = [wingman_final_annihilator]
-wingman_right = [wingman_final_annihilator]
-wingman_x_offset = [130,250]
+plane = plane_apex_zero
+wingman_left = []
+wingman_right = []
+wingman_x_offset = [60,180]
 wingman_y_offset = [0,0]
-subweapon = subweapon_condensed_warper
-armor = armor_frost_d
+//subweapon = subweapon_cruise_missile
+armor = armor_agent
 
 /*for(i=0;i<8;i+=1){
 	wingman_left[i] = plane_aurora_phantom;

@@ -1,40 +1,38 @@
 live;
 if(visible = true){
 	if(place_meeting(x,y,bullet_enemy)&&global.inv_hurt = 0&&global.inv_shield = 0&&global.inv_cutscene = 0){
-		event_user(0);
+		//event_user(0);
 	}
 	
-	var touch_index = 0; // 使用第一个触摸点（在手机上 device_mouse 对应触摸点）
+	if(moveable = true){
+		var touch_index = 0;
+		var is_touching = device_mouse_check_button(touch_index, mb_left);
 
-	// 检测是否正在触摸（按下）
-	var is_touching = device_mouse_check_button(touch_index, mb_left);
+		if(is_touching){
+		    if(!variable_struct_exists(id, "touch_active")||!touch_active){
+		        touch_active = true;
+		        touch_start_x = device_mouse_x(touch_index);
+		        touch_start_y = device_mouse_y(touch_index);
+		        obj_start_x = x;
+		        obj_start_y = y;
+		    }
 
-	if (is_touching) {
-	    // 如果尚未绑定触摸，初始化记录
-	    if (!variable_struct_exists(id, "touch_active") || !touch_active) {
-	        touch_active = true;
-	        touch_start_x = device_mouse_x(touch_index);
-	        touch_start_y = device_mouse_y(touch_index);
-	        obj_start_x = x;
-	        obj_start_y = y;
-	    }
+		    var dx = device_mouse_x(touch_index) - touch_start_x;
+		    var dy = device_mouse_y(touch_index) - touch_start_y;
+		    x = obj_start_x + dx;
+		    y = obj_start_y + dy;
 
-	    // 计算滑动偏移量并应用1:1移动
-	    var dx = device_mouse_x(touch_index) - touch_start_x;
-	    var dy = device_mouse_y(touch_index) - touch_start_y;
-	    x = obj_start_x + dx;
-	    y = obj_start_y + dy;
-
-	} else {
-	    // 没有触摸时，清除状态
-	    touch_active = false;
+		}
+		else{
+		    touch_active = false;
+		}
+	
+		x += (keyboard_check(vk_right) - keyboard_check(vk_left))*global.player_move_speed/(1+keyboard_check(vk_lshift));
+		y += (keyboard_check(vk_down) - keyboard_check(vk_up))*global.player_move_speed/(1+keyboard_check(vk_lshift));
+	
+		x = clamp(20,x,room_width-20);
+		y = clamp(20,y,room_height-20);
 	}
-	
-	x += (keyboard_check(vk_right) - keyboard_check(vk_left))*global.player_move_speed/(1+keyboard_check(vk_lshift));
-	y += (keyboard_check(vk_down) - keyboard_check(vk_up))*global.player_move_speed/(1+keyboard_check(vk_lshift));
-	
-	x = clamp(20,x,room_width-20);
-	y = clamp(20,y,room_height-20);
 	
 	if(instance_exists(battle_quantum_shield)){
 		with(battle_quantum_shield){

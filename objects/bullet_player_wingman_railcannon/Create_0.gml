@@ -15,15 +15,5 @@ image_speed = 0
 rampage = false
 time = 0
 
-function CollideSingleEnemy(enemy){
-	if!(ds_map_exists(collision_enemy,enemy)){
-		ds_map_add(collision_enemy,enemy,damage_interval);
-		enemy.last_bullet = id;
-		event_user(0);
-		enemy.Hurt();
-		effect = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
-		effect.sequence = collision_effect_sequence;
-		effect.image_xscale = scale_x*(rampage = true ? 1.5 : 1);
-		effect.image_yscale = scale_y*(rampage = true ? 1.5 : 1);
-	}
-}
+collision_effect_scale_x = rampage = true ? 1.5 : 1
+collision_effect_scale_y = rampage = true ? 1.5 : 1

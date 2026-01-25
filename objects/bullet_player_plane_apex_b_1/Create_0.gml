@@ -15,4 +15,4 @@ damage_type = 1
 damage_interval = 999
 collision_destroy = false
 
-collision_effect = bullet_effect_apex
+collision_effect = seq_bullet_effect_apex

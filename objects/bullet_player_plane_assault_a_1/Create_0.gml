@@ -6,7 +6,7 @@ down = 30
 left = 35
 right = 35
 
-collision_effect = bullet_effect_assault
+collision_effect = seq_bullet_effect_assault
 
 image_xscale = 0.5
 image_yscale = 0.75

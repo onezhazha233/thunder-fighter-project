@@ -6,8 +6,10 @@ down = 30
 left = 70
 right = 70
 
-collision_effect = bullet_effect_assault
-
 vspeed = -45
 
 damage = 2
+
+collision_effect = seq_bullet_effect_assault
+collision_effect_scale_x = 1.5
+collision_effect_scale_y = 1.5

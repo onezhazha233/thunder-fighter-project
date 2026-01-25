@@ -5,9 +5,9 @@ collision_type = COLLISION_TYPE.SPRITE
 
 rampage = false
 
-collision_effect = bullet_player_raptor_explosion
-
 damage = 0.25
+
+collision_effect = bullet_player_raptor_explosion
 
 function CollideSingleEnemy(enemy){
 	instance_destroy();

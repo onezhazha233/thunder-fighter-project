@@ -1,4 +1,4 @@
 live;
-//event_inherited();
+event_inherited();
 
 draw_self()

@@ -16,7 +16,7 @@ layer_script_end(global.layer_effects, scrEnd);
 
 seq = -1
 
-sequence = seq_nuke_a_explosion
+bullet_sequence = seq_nuke_a_explosion
 
 alarm[1] = 1
 

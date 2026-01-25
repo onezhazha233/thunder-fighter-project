@@ -33,9 +33,11 @@ if(instance_exists(find_enemy)){
 		if(edge_attack_sequence_enabled = true){
 			if(rampage = true){
 				edge_attack_sequence = layer_sequence_create(layer_edge,edge_x,edge_y,seq_bullet_player_blade_d_edge_attack_rampage);
+				audio_play_sound(snd_blade_shoot_rampage,0,0);
 			}
 			else{
 				edge_attack_sequence = layer_sequence_create(layer_edge,edge_x,edge_y,seq_bullet_player_blade_d_edge_attack);
+				audio_play_sound(snd_blade_shoot_idle,0,0);
 			}
 		}
 		

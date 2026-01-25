@@ -75,7 +75,7 @@ function CollideSingleEnemy(enemy){
 	}
 }
 
-function active(){
+active = function(){
 	mode = 2;
 	layer_sequence_destroy(bullet_sequence);
 	bullet_sequence = layer_sequence_create(ll,x,y,edge_intro);

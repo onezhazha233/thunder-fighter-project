@@ -30,7 +30,7 @@ if(enabled = true){
 				blt.target_x = target_x;
 				blt.target_y = target_y;
 				blt.damage = damage;
-				blt.collision_effect_sequence = seq_bullet_effect_dawn_d;
+				blt.collision_effect = seq_bullet_effect_dawn_d;
 				blt.sprite_index = spr_bullet_player_annihilator_cd;
 				blt.tail_image = 3;
 			}
@@ -45,7 +45,7 @@ if(enabled = true){
 					blt.target_x = target_x;
 					blt.target_y = target_y;
 					blt.damage = damage;
-					blt.collision_effect_sequence = seq_bullet_effect_dawn_d;
+					blt.collision_effect = seq_bullet_effect_dawn_d;
 					blt.sprite_index = spr_bullet_player_annihilator_cd;
 					blt.tail_image = 3;
 				}

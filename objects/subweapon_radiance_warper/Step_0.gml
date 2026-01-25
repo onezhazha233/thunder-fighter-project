@@ -9,7 +9,7 @@ if(enabled = true){
 		blt.speed = 15;
 		blt.image_angle = blt.direction - 90;
 		blt.image_index = 2;
-		blt.collision_effect_sequence = seq_bullet_effect_dawn_c;
+		blt.collision_effect = seq_bullet_effect_dawn_c;
 		blt.damage = damage;
 
 		blt = MakePlayerBullet(x,y,bullet_player_warper);
@@ -17,7 +17,7 @@ if(enabled = true){
 		blt.speed = 15;
 		blt.image_angle = blt.direction - 90;
 		blt.image_index = 2;
-		blt.collision_effect_sequence = seq_bullet_effect_dawn_c;
+		blt.collision_effect = seq_bullet_effect_dawn_c;
 		blt.damage = damage;
 		
 		blt = MakePlayerBullet(x,y,bullet_player_warper);
@@ -25,7 +25,7 @@ if(enabled = true){
 		blt.speed = 15;
 		blt.image_angle = blt.direction - 90;
 		blt.image_index = 2;
-		blt.collision_effect_sequence = seq_bullet_effect_dawn_c;
+		blt.collision_effect = seq_bullet_effect_dawn_c;
 		blt.damage = damage;
 
 		blt = MakePlayerBullet(x,y,bullet_player_warper);
@@ -33,7 +33,7 @@ if(enabled = true){
 		blt.speed = 15;
 		blt.image_angle = blt.direction - 90;
 		blt.image_index = 2;
-		blt.collision_effect_sequence = seq_bullet_effect_dawn_c;
+		blt.collision_effect = seq_bullet_effect_dawn_c;
 		blt.damage = damage;
 		
 		blt = MakePlayerBullet(x,y,bullet_player_warper);
@@ -41,7 +41,7 @@ if(enabled = true){
 		blt.speed = 15;
 		blt.image_angle = blt.direction - 90;
 		blt.image_index = 2;
-		blt.collision_effect_sequence = seq_bullet_effect_dawn_c;
+		blt.collision_effect = seq_bullet_effect_dawn_c;
 		blt.damage = damage;
 
 		blt = MakePlayerBullet(x,y,bullet_player_warper);
@@ -49,7 +49,7 @@ if(enabled = true){
 		blt.speed = 15;
 		blt.image_angle = blt.direction - 90;
 		blt.image_index = 2;
-		blt.collision_effect_sequence = seq_bullet_effect_dawn_c;
+		blt.collision_effect = seq_bullet_effect_dawn_c;
 		blt.damage = damage;
 	}
 	if(rtime > 0)rtime -= 1;
@@ -60,7 +60,7 @@ if(enabled = true){
 		blt.image_angle = blt.direction - 90;
 		blt.rampage = true;
 		blt.image_index = 2;
-		blt.collision_effect_sequence = seq_bullet_effect_dawn_c;
+		blt.collision_effect = seq_bullet_effect_dawn_c;
 		blt.damage = damage;
 
 		blt = MakePlayerBullet(x,y,bullet_player_warper);
@@ -69,7 +69,7 @@ if(enabled = true){
 		blt.image_angle = blt.direction - 90;
 		blt.rampage = true;
 		blt.image_index = 2;
-		blt.collision_effect_sequence = seq_bullet_effect_dawn_c;
+		blt.collision_effect = seq_bullet_effect_dawn_c;
 		blt.damage = damage;
 		
 		blt = MakePlayerBullet(x,y,bullet_player_warper);
@@ -78,7 +78,7 @@ if(enabled = true){
 		blt.image_angle = blt.direction - 90;
 		blt.rampage = true;
 		blt.image_index = 2;
-		blt.collision_effect_sequence = seq_bullet_effect_dawn_c;
+		blt.collision_effect = seq_bullet_effect_dawn_c;
 		blt.damage = damage;
 
 		blt = MakePlayerBullet(x,y,bullet_player_warper);
@@ -87,7 +87,7 @@ if(enabled = true){
 		blt.image_angle = blt.direction - 90;
 		blt.rampage = true;
 		blt.image_index = 2;
-		blt.collision_effect_sequence = seq_bullet_effect_dawn_c;
+		blt.collision_effect = seq_bullet_effect_dawn_c;
 		blt.damage = damage;
 		
 		blt = MakePlayerBullet(x,y,bullet_player_warper);
@@ -96,7 +96,7 @@ if(enabled = true){
 		blt.image_angle = blt.direction - 90;
 		blt.rampage = true;
 		blt.image_index = 2;
-		blt.collision_effect_sequence = seq_bullet_effect_dawn_c;
+		blt.collision_effect = seq_bullet_effect_dawn_c;
 		blt.damage = damage;
 
 		blt = MakePlayerBullet(x,y,bullet_player_warper);
@@ -105,7 +105,7 @@ if(enabled = true){
 		blt.image_angle = blt.direction - 90;
 		blt.rampage = true;
 		blt.image_index = 2;
-		blt.collision_effect_sequence = seq_bullet_effect_dawn_c;
+		blt.collision_effect = seq_bullet_effect_dawn_c;
 		blt.damage = damage;
 	}
 }

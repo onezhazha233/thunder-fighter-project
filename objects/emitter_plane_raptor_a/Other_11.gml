@@ -44,6 +44,7 @@ if(bb mod 4 = 0){
 	fire.scale_x = scale_x;
 	fire.scale_y = scale_y;
 	follow_inst = [fire];
+	audio_play_sound(snd_plane_shoot,0,0);
 }
 
 bb += 1

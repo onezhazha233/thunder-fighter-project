@@ -1,5 +1,7 @@
 Anim_Init()
 
+BGM_Init()
+
 Lang_Init()
 Lang_LoadList()
 Lang_LoadString(0)

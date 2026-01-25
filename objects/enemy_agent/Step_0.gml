@@ -1,4 +1,14 @@
 live;
+if!(layer_exists(layer_enemy)){
+	layer_enemy = layer_create(depth);
+}
+if!(layer_exists(layer_enemy_lower)){
+	layer_enemy_lower = layer_create(depth+1);
+}
+if!(layer_exists(layer_enemy_upper)){
+	layer_enemy_upper = layer_create(depth-1);
+}
+
 if!(depth_previous = depth){
 	layer_depth(layer_enemy,depth);
 	layer_depth(layer_enemy_lower,depth+1);
