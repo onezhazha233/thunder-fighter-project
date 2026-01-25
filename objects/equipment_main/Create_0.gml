@@ -10,7 +10,7 @@ wingman_right = []
 wingman_x_offset = [60,180]
 wingman_y_offset = [0,0]
 //subweapon = subweapon_cruise_missile
-armor = armor_agent
+armor = armor_frost_d
 
 /*for(i=0;i<8;i+=1){
 	wingman_left[i] = plane_aurora_phantom;

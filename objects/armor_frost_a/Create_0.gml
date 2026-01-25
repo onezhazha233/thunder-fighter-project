@@ -9,8 +9,8 @@ ArmorAbility = function(type,exarg=0){
 			player.hurt_inv = 6;
 			player.hurt_downgrade_weapon = false;
 			player.hurt_skip_recover = false;
-			with(effect_frost)instance_destroy();
-			instance_create_depth(player.x,player.y,0,effect_frost);
+			with(effect_frost_splash)instance_destroy();
+			instance_create_depth(player.x,player.y,0,effect_frost_splash);
 			acd = 5;
 			return 0;
 		}
