@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"bullet_effect_railcannon",
+  "%Name":"bullet_effect_normal",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"bullet_effect_railcannon",
+  "name":"bullet_effect_normal",
   "overriddenProperties":[],
   "parent":{
-    "name":"wingman",
-    "path":"folders/物体/effect/bullet_player/wingman.yy",
+    "name":"effect",
+    "path":"folders/物体/effect.yy",
   },
   "parentObjectId":null,
   "persistent":false,

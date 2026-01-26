@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_rampage",
+  "%Name":"snd_rampage_1",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":2.3040135,
+  "duration":3.3840137,
   "exportDir":"",
-  "name":"snd_rampage",
+  "name":"snd_rampage_1",
   "parent":{
     "name":"sfx",
     "path":"folders/声音/sfx.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_rampage.mp3",
+  "soundFile":"snd_rampage_1.mp3",
   "volume":1.0,
 }

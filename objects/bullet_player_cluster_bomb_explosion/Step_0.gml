@@ -19,9 +19,5 @@ if(enemy_num > 0){
 	CollideEnemies();
 }
 
-if(layer_sequence_is_finished(seq)){
-	layer_sequence_destroy(seq);
-	instance_destroy();
-}
-
-Sequence_PlayByFrame(global.layer_effects)
+duration -= 1
+if(duration = 0)instance_destroy();

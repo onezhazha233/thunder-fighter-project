@@ -13,6 +13,7 @@ scale_x = 1
 scale_y = 1
 
 collision_effect = noone
+collision_effect_add = true//是否为加法混合
 collision_effect_scale_x = 1
 collision_effect_scale_y = 1
 //用于暴走子弹的大尺寸特效
@@ -55,7 +56,8 @@ function CollideSingleEnemy(enemy){
 			event_user(0);
 			enemy.Hurt();
 			if!(collision_effect = noone){
-				if(object_exists(collision_effect)){
+				MakeEffect(x,y,collision_effect,scale_x*collision_effect_scale_x,scale_y*collision_effect_scale_y,collision_effect_add);
+				/*if(object_exists(collision_effect)){
 					effect = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
 					effect.image_xscale = scale_x*collision_effect_scale_x;
 					effect.image_yscale = scale_y*collision_effect_scale_y;
@@ -64,7 +66,7 @@ function CollideSingleEnemy(enemy){
 					effect = layer_sequence_create(global.layer_effects,x,y,collision_effect);
 					layer_sequence_xscale(effect,scale_x*collision_effect_scale_x);
 					layer_sequence_yscale(effect,scale_y*collision_effect_scale_y);
-				}
+				}*/
 			}
 		}
 	}
@@ -73,7 +75,8 @@ function CollideSingleEnemy(enemy){
 		event_user(0);
 		enemy.Hurt();
 		if!(collision_effect = noone){
-			if(object_exists(collision_effect)){
+			MakeEffect(x,y,collision_effect,scale_x*collision_effect_scale_x,scale_y*collision_effect_scale_y,collision_effect_add);
+			/*if(object_exists(collision_effect)){
 				effect = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
 				effect.image_xscale = scale_x*collision_effect_scale_x;
 				effect.image_yscale = scale_y*collision_effect_scale_y;
@@ -82,7 +85,7 @@ function CollideSingleEnemy(enemy){
 				effect = layer_sequence_create(global.layer_effects,x,y,collision_effect);
 				layer_sequence_xscale(effect,scale_x*collision_effect_scale_x);
 				layer_sequence_yscale(effect,scale_y*collision_effect_scale_y);
-			}
+			}*/
 		}
 	}
 }

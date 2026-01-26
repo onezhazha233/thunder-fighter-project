@@ -21,7 +21,7 @@ subweapon = -1
 subweapon_inst = noone
 alarm[0] = 1
 
-armor = -1
+armor = armor_agent
 armor_inst = noone
 
 event_user(0)

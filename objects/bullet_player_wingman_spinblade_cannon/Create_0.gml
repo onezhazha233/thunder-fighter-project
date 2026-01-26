@@ -68,9 +68,10 @@ function CollideSingleEnemy(enemy){
 			enemy.last_bullet = id;
 			event_user(0);
 			enemy.Hurt();
-			effect = instance_create_depth(x+lengthdir_x(len+random_range(0,10)*scale_x,dirr),y+lengthdir_y(len+random_range(0,10)*scale_y,dirr),DEPTH_BATTLE.INSTANCES_UPPER,bullet_effect_xeno);
-			effect.image_xscale = scale_x*0.6;
-			effect.image_yscale = scale_y*0.6;
+			MakeEffect(x+lengthdir_x(len+random_range(0,10)*scale_x,dirr),y+lengthdir_y(len+random_range(0,10)*scale_y,dirr),bullet_effect_xeno,scale_x*0.6,scale_y*0.6);
+			//effect = instance_create_depth(x+lengthdir_x(len+random_range(0,10)*scale_x,dirr),y+lengthdir_y(len+random_range(0,10)*scale_y,dirr),DEPTH_BATTLE.INSTANCES_UPPER,bullet_effect_xeno);
+			//effect.image_xscale = scale_x*0.6;
+			//effect.image_yscale = scale_y*0.6;
 		}
 	}
 }

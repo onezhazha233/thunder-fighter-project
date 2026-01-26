@@ -2,7 +2,7 @@ live;
 a = MakePlayerBullet(x-35*scale_x,y,bullet_player_splitter,seq_splitter_d_intro_rampage)
 a.idle = seq_splitter_d_rampage
 a.small_sequence = seq_splitter_d_small_rampage
-a.collision_effect_sequence = seq_bullet_effect_dawn_d
+a.collision_effect = seq_bullet_effect_dawn_d
 a.direction = 90
 enemy = find_priority_enemy(bullet_player_splitter)
 if(instance_exists(enemy)){
@@ -16,7 +16,7 @@ a.damage = damage
 a = MakePlayerBullet(x+35*scale_x,y,bullet_player_splitter,seq_splitter_d_intro_rampage)
 a.idle = seq_splitter_d_rampage
 a.small_sequence = seq_splitter_d_small_rampage
-a.collision_effect_sequence = seq_bullet_effect_dawn_d
+a.collision_effect = seq_bullet_effect_dawn_d
 a.direction = 90
 enemy = find_priority_enemy(bullet_player_splitter)
 if(instance_exists(enemy)){

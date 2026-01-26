@@ -6,7 +6,7 @@ idle = seq_splitter_a
 collision_type = COLLISION_TYPE.SPRITE
 
 small_sequence = seq_splitter_a_small
-collision_effect_sequence = seq_bullet_effect_dawn_a
+collision_effect = seq_bullet_effect_dawn_a
 
 track_inst = noone
 
@@ -18,10 +18,8 @@ function CollideSingleEnemy(enemy){
 	enemy.Hurt();
 	xx = x+lengthdir_x(18,direction+90);
 	yy = y+lengthdir_x(18,direction+90);
-	effect = instance_create_depth(xx,yy,DEPTH_BATTLE.INSTANCES_UPPER,bullet_effect_dawn);
-	effect.sequence = collision_effect_sequence;
-	effect.image_xscale = scale_x;
-	effect.image_yscale = scale_y;
+	
+	MakeEffect(xx,yy,collision_effect,scale_x,scale_y);
 	
 	small = MakePlayerBullet(x,y,bullet_player_splitter_small,small_sequence);
 	small.direction = 90;
