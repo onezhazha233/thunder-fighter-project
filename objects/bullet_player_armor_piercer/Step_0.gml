@@ -1,4 +1,4 @@
 live;
-vspeed = ospd;
+vspeed = ospd
 
 event_inherited();

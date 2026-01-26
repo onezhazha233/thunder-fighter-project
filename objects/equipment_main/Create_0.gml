@@ -75,7 +75,7 @@ wingman_left = []//[get_random_child(wingman_agent)]
 wingman_right = []//[get_random_child(wingman_agent)]
 wingman_x_offset = [130,180]
 wingman_y_offset = [0,0]
-subweapon = subweapon_du_armor_piercer //get_random_child("subweapon")
+subweapon = subweapon_tungsten_armor_piercer //get_random_child("subweapon")
 //armor = get_random_child(armor_agent)
 
 /*for(i=0;i<8;i+=1){

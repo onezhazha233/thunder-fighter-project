@@ -611,6 +611,7 @@
     {"name":"bullet_enemy_red","order":1,"path":"objects/bullet_enemy_red/bullet_enemy_red.yy",},
     {"name":"bullet_enemy_star","order":5,"path":"objects/bullet_enemy_star/bullet_enemy_star.yy",},
     {"name":"bullet_player_apex_fire","order":1,"path":"objects/bullet_player_apex_fire/bullet_player_apex_fire.yy",},
+    {"name":"bullet_player_armor_piercer","order":2,"path":"objects/bullet_player_armor_piercer/bullet_player_armor_piercer.yy",},
     {"name":"bullet_player_assault_fire","order":2,"path":"objects/bullet_player_assault_fire/bullet_player_assault_fire.yy",},
     {"name":"bullet_player_cluster_bomb_explosion","order":1,"path":"objects/bullet_player_cluster_bomb_explosion/bullet_player_cluster_bomb_explosion.yy",},
     {"name":"bullet_player_enemy","order":2,"path":"objects/bullet_player_enemy/bullet_player_enemy.yy",},
