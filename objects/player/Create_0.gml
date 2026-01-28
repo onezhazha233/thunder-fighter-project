@@ -20,6 +20,6 @@ SetRampageDuration = function(time){
 }
 
 hurt_shake_camera = true
-hurt_inv = 120
+hurt_inv = global.inv_duration
 hurt_downgrade_weapon = true
 hurt_skip_recover = true

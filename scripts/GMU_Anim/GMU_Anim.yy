@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Anim_IsPaused",
+  "%Name":"GMU_Anim",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Anim_IsPaused",
+  "name":"GMU_Anim",
   "parent":{
     "name":"Anim",
     "path":"folders/脚本/GMU/Anim.yy",

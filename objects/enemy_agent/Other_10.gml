@@ -182,6 +182,7 @@ SetMoveEnabled = function(enabled){
 	move_enabled = enabled;
 	Anim_Pause(id,"x",!enabled);
 	Anim_Pause(id,"y",!enabled);
+	Anim_Pause(id,"__PATH__",!enabled);
 }
 
 OnDie = function(){}
@@ -204,7 +205,7 @@ SetBurn = function(b){
 SetFrozen = function(f){
     frozen_duration = f;
     SetMoveEnabled(!f);
-    bullet_emitter.enabled = !f;
+    if(instance_exists(bullet_emitter))bullet_emitter.enabled = !f;
     if(f > 0){
         effect_type = 0;
         effect_alpha = 0.5;

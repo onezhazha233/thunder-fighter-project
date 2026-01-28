@@ -9,6 +9,7 @@ Lang_LoadSprite(0)
 Lang_LoadFont(0)
 
 GlobalInit()
+randomize()
 
 instance_create_depth(0,0,0,camera)
 

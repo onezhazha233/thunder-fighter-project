@@ -70,12 +70,12 @@ function get_random_child(base) {
 
 xscale = 1
 yscale = 1
-plane = plane_agent //get_random_child(plane_agent)
+plane = plane_x_wing_glacier //get_random_child(plane_agent)
 wingman_left = []//[get_random_child(wingman_agent)]
 wingman_right = []//[get_random_child(wingman_agent)]
 wingman_x_offset = [130,180]
 wingman_y_offset = [0,0]
-subweapon = subweapon_tungsten_armor_piercer //get_random_child("subweapon")
+//subweapon = subweapon_tungsten_armor_piercer //get_random_child("subweapon")
 //armor = get_random_child(armor_agent)
 
 /*for(i=0;i<8;i+=1){
