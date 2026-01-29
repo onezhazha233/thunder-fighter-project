@@ -1,22 +1,18 @@
 live;
 event_inherited();
 
-enemy = new Enemy(enemy_0a,noone,function(){
+enemy = new Enemy(enemy_2a,noone,function(){
 	if(time = 1){
-		x = 791+ox;
-		y = 369+oy;
-		// --- 高阶路径 (支持画外坐标) ---
-		var _p = Bezier_Path_Create(x, y, 753+ox, -89+oy);
-
-		Bezier_Path_Add_Point(_p, 247+ox, 822+oy);
-		Bezier_Path_Add_Point(_p, 84+ox, 438+oy);
-
-		// 应用于动画：
-		Anim_Path_Create(id, _p, ANIM_TWEEN.SINE, ANIM_EASE.OUT, 300);
+		x = -80+ox;
+		y = -50+oy;
+		var _p = Bezier_Path_Create(x,y,780+ox,600+oy);
+		Bezier_Path_Add_Point(_p,160+ox,650+oy);
+		Bezier_Path_Add_Point(_p,380+ox,-150+oy);
+		Anim_Path_Create(id,_p,0,0,120);
 		xp = x;
 		yp = y;
 	}
-	if(time = 300){
+	if(time = 120){
 		instance_destroy();
 	}
 	image_angle = point_direction(x,y,xp,yp) - 90;

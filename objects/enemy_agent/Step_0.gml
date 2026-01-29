@@ -13,6 +13,7 @@ if!(depth_previous = depth){
 	layer_depth(layer_enemy,depth);
 	layer_depth(layer_enemy_lower,depth+1);
 	layer_depth(layer_enemy_upper,depth-1);
+	depth_previous = depth;
 }
 
 Sequence_PlayByFrame(layer_enemy);

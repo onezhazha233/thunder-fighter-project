@@ -6,7 +6,7 @@ function Anim_Init() {
         paused: false
     };
 
-    enum ANIM_TWEEN { LINEAR, SINE, QUAD, CUBIC, QUART, QUINT, EXPO, CIRC, BACK, ELASTIC, BOUNCE };
+    enum ANIM_TWEEN { LINEAR, SINE, QUAD, CUBIC, QUART, QUINT, EXPO, CIRC, BACK, ELASTIC, BOUNCE,BEZIER};
     enum ANIM_EASE { IN, OUT, IN_OUT };
 }
 
@@ -463,6 +463,12 @@ function Anim_GetValue() {
 					break;
 			}
 			break;
+				// 在 Anim_GetValue 的 switch(TWEEN) 中添加：
+		case ANIM_TWEEN.BEZIER:
+		    var _coords = is_array(ARG_0) ? ARG_0 : [0.42, 0, 0.58, 1]; // 默认值
+		    // 调用我们之前写的牛顿迭代求解器
+		    return _Anim_Bezier_Solver(_coords[0], _coords[1], _coords[2], _coords[3], TIME);
+			break;
 	}
 
 	return r;
@@ -674,4 +680,43 @@ function Anim_Path_Create(_target, _path_obj, _tween, _ease, _duration, _delay =
 
     array_push(global._gmu_anim_system.animations, _anim);
     return _anim.id;
+}
+
+/// @desc 贝塞尔缓动求解器 (用于实现自定义快慢节奏)
+/// @param _x1 控制点1的X
+/// @param _y1 控制点1的Y
+/// @param _x2 控制点2的X
+/// @param _y2 控制点2的Y
+/// @param _time 当前进度 (0-1)
+function _Anim_Bezier_Solver(_x1, _y1, _x2, _y2, _time) {
+    // 边界处理
+    if (_time <= 0) return 0;
+    if (_time >= 1) return 1;
+
+    // 三次贝塞尔曲线系数 (简化版，假设 P0=0, P3=1)
+    var _cx = 3.0 * _x1;
+    var _bx = 3.0 * (_x2 - _x1) - _cx;
+    var _ax = 1.0 - _cx - _bx;
+
+    var _cy = 3.0 * _y1;
+    var _by = 3.0 * (_y2 - _y1) - _cy;
+    var _ay = 1.0 - _cy - _by;
+
+    // 利用牛顿迭代法 (Newton-Raphson) 求解时间对应的参数 t
+    // 迭代 8 次足以达到极高的视觉精度
+    var _t = _time;
+    for (var i = 0; i < 8; i++) {
+        // 当前估算的 x 值: x(t) = ((ax*t + bx)*t + cx)*t
+        var _current_x = ((_ax * _t + _bx) * _t + _cx) * _t;
+        // 计算导数 (斜率): x'(t) = (3*ax*t + 2*bx)*t + cx
+        var _derivative = (3.0 * _ax * _t + 2.0 * _bx) * _t + _cx;
+        
+        if (abs(_derivative) < 0.0001) break;
+        
+        _t -= (_current_x - _time) / _derivative;
+    }
+
+    // 根据求得的参数 t，计算对应的 y 值 (即动画进度)
+    // y(t) = ((ay*t + by)*t + cy)*t
+    return ((_ay * _t + _by) * _t + _cy) * _t;
 }

@@ -1,5 +1,5 @@
 live;
-if(surf_enabled = 1){
+if(surf_enabled = true){
 	if(!surface_exists(surf))surf = surface_create(surf_width,surf_height);
 	if(!surface_exists(surf_effect))surf_effect = surface_create(720,1280);
 
