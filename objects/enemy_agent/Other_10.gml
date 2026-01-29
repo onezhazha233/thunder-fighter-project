@@ -57,7 +57,7 @@ SetSurfEnabled = function(enabled){
 		if (event_number != ev_draw_normal) return;
 		
 		gpu_set_blendmode_ext(bm_dest_alpha, bm_inv_src_alpha);
-	    draw_surface_ext(surf_effect, 0, 0, 1, 1, 0, c_white, 1);
+	    draw_surface_ext(surf_effect,0,0,1,1,0,c_white,1);
 		
 		if(surf_enabled = true&&surface_exists(surf))surface_reset_target();
 		shader_reset();
@@ -73,6 +73,52 @@ SetSurfEnabled = function(enabled){
 			draw_set_color(-1);
 		}
 	}
+	// 仅在 layer_enemy_upper 的 end 里把 surface 画到屏幕，保证“下层尾焰→本体→上层尾焰”都画完后再显示，避免改 depth 后同深度绘制顺序不确定导致只显示尾焰
+	var scrEndUpper = function(){
+		if (event_number != ev_draw_normal) return;
+		
+		gpu_set_blendmode_ext(bm_dest_alpha, bm_inv_src_alpha);
+	    draw_surface_ext(surf_effect,0,0,1,1,0,c_white,1);
+		
+		if(surf_enabled = true&&surface_exists(surf))surface_reset_target();
+		shader_reset();
+		gpu_set_blendmode(bm_normal);
+		if(global.debug_enemy_collision_display = true){
+			draw_set_color(c_red);
+			if(collision_type = 0){
+				draw_rectangle(x-left*image_xscale,y-up*image_yscale,x+right*image_xscale,y+down*image_yscale,1);
+			}
+			if(collision_type = 1){
+				draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,1);
+			}
+			draw_set_color(-1);
+		}
+		// 三个 layer 都已画到 surf 后再把 surface 显示到屏幕
+		if(surf_enabled = true){
+			gpu_set_blendmode_ext_sepalpha(bm_one,bm_inv_src_alpha,bm_one,bm_one);
+			draw_surface(surf,surf_x,surf_y);
+			gpu_set_blendmode(bm_normal);
+			surface_set_target(surf_effect);
+			draw_clear_alpha(c_black,0);
+			for(var i=0;i<5;i+=1){
+				for(var j=0;j<5;j+=1){
+					if(effect_type = 0){
+						draw_sprite_ext(spr_effect_texture_ice,0,512*i,512*j,1,1,0,-1,effect_alpha);
+					}
+					if(effect_type = 1){
+						for(var k=0;k<512;k+=1){
+							draw_sprite_part_ext(spr_effect_texture_fire,0,0,k,512,1,512*i+sin(k/30+time/20)*20,512*j+k,1,1,-1,effect_alpha);
+						}
+					}
+				}
+			}
+			surface_reset_target();
+		}
+		if(hpbar_enabled = true&&hurt_time > 0){
+			draw_sprite_ext(spr_ui_hpbar_enemy,0,x,y+hpbar_yoffset*image_yscale,image_xscale,image_yscale,0,-1,1);
+			draw_sprite_part_ext(spr_ui_hpbar_enemy,1,0,0,sprite_get_width(spr_ui_hpbar_enemy)*hp/hp_max,sprite_get_height(spr_ui_hpbar_enemy),x-sprite_get_xoffset(spr_ui_hpbar_enemy),y-sprite_get_yoffset(spr_ui_hpbar_enemy)+hpbar_yoffset*image_yscale,image_xscale,image_yscale,-1,1);
+		}
+	}
 	layer_script_begin(layer_enemy, scrBegin);
 	layer_script_end(layer_enemy, scrEnd);
 
@@ -80,7 +126,7 @@ SetSurfEnabled = function(enabled){
 	layer_script_end(layer_enemy_lower, scrEnd);
 
 	layer_script_begin(layer_enemy_upper, scrBegin);
-	layer_script_end(layer_enemy_upper, scrEnd);
+	layer_script_end(layer_enemy_upper, scrEndUpper);
 	
 	SetPosition(x,y);
 }

@@ -12,28 +12,5 @@ if(display_mode = 0){
 	}
 }
 
-if(surf_enabled = true){
-	gpu_set_blendmode_ext_sepalpha(bm_one,bm_inv_src_alpha,bm_one,bm_one);
-	draw_surface(surf,surf_x,surf_y);
-	gpu_set_blendmode(bm_normal);
-	
-	surface_set_target(surf_effect);
-	draw_clear_alpha(c_black,0);
-	for(i=0;i<5;i+=1){
-		for(j=0;j<5;j+=1){
-			if(effect_type = 0){
-				draw_sprite_ext(spr_effect_texture_ice,0,512*i,512*j,1,1,0,-1,effect_alpha);
-			}
-			if(effect_type = 1){
-				for(k=0;k<512;k+=1){
-					draw_sprite_part_ext(spr_effect_texture_fire,0,0,k,512,1,512*i+sin(k/30+time/20)*20,512*j+k,1,1,-1,effect_alpha);
-				}
-			}
-		}
-	}
-	surface_reset_target();
-}
-if(hpbar_enabled = true&&hurt_time > 0){
-	draw_sprite_ext(spr_ui_hpbar_enemy,0,x,y+hpbar_yoffset*image_yscale,image_xscale,image_yscale,0,-1,1);
-	draw_sprite_part_ext(spr_ui_hpbar_enemy,1,0,0,sprite_get_width(spr_ui_hpbar_enemy)*hp/hp_max,sprite_get_height(spr_ui_hpbar_enemy),x-sprite_get_xoffset(spr_ui_hpbar_enemy),y-sprite_get_yoffset(spr_ui_hpbar_enemy)+hpbar_yoffset*image_yscale,image_xscale,image_yscale,-1,1);
-}
+// surface 显示、surf_effect 与 hpbar 已移到 layer_enemy_upper 的 layer_script_end（scrEndUpper），
+// 保证在三个 layer（下层尾焰→本体→上层尾焰）都画完 surface 后再显示，避免修改 depth 后同深度绘制顺序不确定导致只显示尾焰

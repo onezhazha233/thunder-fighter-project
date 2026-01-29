@@ -9,6 +9,8 @@ right = 150
 
 Anim_Destroy(id,"inv_damage")
 
+hpbar_enabled = false
+
 damage_history = ds_list_create();
 dpss = ds_list_create();
 
