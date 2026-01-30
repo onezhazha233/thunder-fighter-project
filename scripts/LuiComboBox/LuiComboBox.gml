@@ -115,7 +115,7 @@ function LuiComboBox(_params = {}) : LuiButton(_params) constructor {
 			if self.deactivated {
 				_blend_color = merge_color(_blend_color, c_black, 0.5);
 			}
-			draw_sprite_ext(self.style.sprite_combobox_arrow, 0, self.x + self.width - _x_offset, self.y + self.height div 2, 1, is_open ? -1 : 1, 0, _blend_color, 1);
+			draw_sprite_ext(self.style.sprite_combobox_arrow, 0, self.x + self.width - _x_offset, self.y + self.height div 2, 1, self.is_open ? -1 : 1, 0, _blend_color, 1);
 		}
 		
 		//Text
