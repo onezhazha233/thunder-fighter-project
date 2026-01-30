@@ -70,13 +70,13 @@ function get_random_child(base) {
 
 xscale = 1
 yscale = 1
-plane = plane_x_wing_glacier //get_random_child(plane_agent)
-wingman_left = []//[get_random_child(wingman_agent)]
-wingman_right = []//[get_random_child(wingman_agent)]
-wingman_x_offset = [130,180]
-wingman_y_offset = [0,0]
-//subweapon = subweapon_tungsten_armor_piercer //get_random_child("subweapon")
-//armor = get_random_child(armor_agent)
+plane = global.current_equipment.plane //plane_x_wing_glacier //get_random_child(plane_agent)
+wingman_left = global.current_equipment.wingman_left //[get_random_child(wingman_agent)]
+wingman_right = global.current_equipment.wingman_right //[get_random_child(wingman_agent)]
+wingman_x_offset = global.current_equipment.wingman_x_offset
+wingman_y_offset = global.current_equipment.wingman_y_offset
+subweapon = global.current_equipment.subweapon //get_random_child("subweapon")
+armor = global.current_equipment.armor
 
 /*for(i=0;i<8;i+=1){
 	wingman_left[i] = plane_aurora_phantom;

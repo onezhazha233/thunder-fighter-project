@@ -21,3 +21,4 @@ sprite_index = spr_enemy_minion_0a
 items = [[[battle_item_hp_recovery],1],[[battle_item_quantum_shield],1],[[battle_item_weapon_upgrade],1],[[battle_item_rampage],1],[[],12]]
 
 Anim_Destroy(id,"inv_damage")
+inv_damage = false
