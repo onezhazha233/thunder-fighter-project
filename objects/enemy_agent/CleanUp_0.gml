@@ -9,3 +9,4 @@ layer_destroy(layer_enemy_lower)
 layer_destroy(layer_enemy_upper)
 instance_destroy(bullet_emitter_inst)
 if(sprite_exists(mask_sprite))sprite_delete(mask_sprite);
+ds_map_destroy(tracks)
