@@ -3,15 +3,21 @@ function Swarm_IsEnabled(){
 }
 
 function Swarm_SetEnabled(enabled){
-	battle_swarm_manager.enabled = enabled;
+	if(instance_exists(battle_swarm_manager)){
+		battle_swarm_manager.enabled = enabled;
+	}
 }
 
 function Swarm_GetInterval(){
-	return battle_swarm_manager.interval;
+	if(instance_exists(battle_swarm_manager)){
+		return battle_swarm_manager.interval;
+	}
 }
 	
 function Swarm_SetInterval(interval){
-	battle_swarm_manager.interval = interval;
+	if(instance_exists(battle_swarm_manager)){
+		battle_swarm_manager.interval = interval;
+	}
 }
 
 function Swarm(swarm,number,interval,xoff,yoff) constructor{

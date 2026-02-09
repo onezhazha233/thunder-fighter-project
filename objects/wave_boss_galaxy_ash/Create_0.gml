@@ -3,13 +3,15 @@ event_inherited();
 
 warning = {
 	obj : battle_warning_boss,
-	lv : 10,
-	name : "asd",
+	lv : 9178,
+	name : "牢布的银烬",
 	
 	Create : function(){
 		ww = instance_create_depth(0,0,DEPTH_BATTLE.UI,obj);
 		ww.lv = lv;
 		ww.name = name;
+		battle_ui.boss_hpbar_lv = lv;
+		battle_ui.boss_hpbar_name = name;
 		
 		return ww;
 	}
@@ -27,5 +29,6 @@ boss = {
 	}
 }
 
+ds_queue_enqueue(enemies,[[],60])
 ds_queue_enqueue(enemies,[[warning],200])
 ds_queue_enqueue(enemies,[[boss],200])

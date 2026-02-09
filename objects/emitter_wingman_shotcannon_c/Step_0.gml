@@ -6,26 +6,26 @@ if(enabled = true){
 	if(time <= 0)time = 0;
 	if(time mod 5 = 1){
 		hspd = 0.8;
-		a = MakePlayerBullet(x,y-40,bullet_player_wingman_shotcannon);
-		a.sprite_index = spr_bullet_player_shotcannon_abc;
-		a.hspeed = -hspd*3;
-		a.image_angle = 6;
-		a.damage = damage;
-		a = MakePlayerBullet(x,y-40,bullet_player_wingman_shotcannon);
-		a.sprite_index = spr_bullet_player_shotcannon_abc;
-		a.hspeed = -hspd;
-		a.image_angle = 2;
-		a.damage = damage;
-		a = MakePlayerBullet(x,y-40,bullet_player_wingman_shotcannon);
-		a.sprite_index = spr_bullet_player_shotcannon_abc;
-		a.hspeed = hspd;
-		a.image_angle = -2;
-		a.damage = damage;
-		a = MakePlayerBullet(x,y-40,bullet_player_wingman_shotcannon);
-		a.sprite_index = spr_bullet_player_shotcannon_abc;
-		a.hspeed = hspd*3;
-		a.image_angle = -6;
-		a.damage = damage;
+		blt = MakePlayerBullet(x,y-40,bullet_player_wingman_shotcannon);
+		blt.sprite_index = spr_bullet_player_shotcannon_abc;
+		blt.hspeed = -hspd*3;
+		blt.image_angle = 6;
+		blt.damage = damage;
+		blt = MakePlayerBullet(x,y-40,bullet_player_wingman_shotcannon);
+		blt.sprite_index = spr_bullet_player_shotcannon_abc;
+		blt.hspeed = -hspd;
+		blt.image_angle = 2;
+		blt.damage = damage;
+		blt = MakePlayerBullet(x,y-40,bullet_player_wingman_shotcannon);
+		blt.sprite_index = spr_bullet_player_shotcannon_abc;
+		blt.hspeed = hspd;
+		blt.image_angle = -2;
+		blt.damage = damage;
+		blt = MakePlayerBullet(x,y-40,bullet_player_wingman_shotcannon);
+		blt.sprite_index = spr_bullet_player_shotcannon_abc;
+		blt.hspeed = hspd*3;
+		blt.image_angle = -6;
+		blt.damage = damage;
 	}
 }
 else{

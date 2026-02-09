@@ -1,4 +1,6 @@
 live;
 SetState(1);
 
-BGM_Play(1,bgm_boss_mini)
+if(!BGM_IsPlaying(1)||!BGM_GetAudio(1) = bgm){
+	BGM_Play(1,bgm);
+}

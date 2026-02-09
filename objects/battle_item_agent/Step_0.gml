@@ -1,5 +1,5 @@
 live;
-if(Player_IsEnabled()){
+if(Player_IsEnabled()&&!instance_exists(battle_ui_victory)){
 	if(point_distance(x,y,player.x,player.y) <= detect_range){
 		detect_amount = min(detect_target,detect_amount+1);
 		if(detect_amount >= detect_target){

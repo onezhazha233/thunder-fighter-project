@@ -11,4 +11,4 @@ s3 = new Swarm(swarm_3,5,10,0,0)
 s4 = new Swarm(swarm_4,5,10,0,0)
 
 //array_push(swarm_list,s0)
-array_push(swarm_list,[s0,s1,s2,s3,s4])
+//array_push(swarm_list,[s0,s1,s2,s3,s4])

@@ -12,6 +12,7 @@ GlobalInit()
 randomize()
 
 instance_create_depth(0,0,0,camera)
+instance_create_depth(0,0,0,fader)
 
 instance_create_depth(0,0,0,debugger)
 

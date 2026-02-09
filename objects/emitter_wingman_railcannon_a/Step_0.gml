@@ -6,20 +6,20 @@ if(enabled = true){
 	if(time <= 0)time = 0;
 	if(time mod 5 = 1){
 		hspd = 1;
-		a = MakePlayerBullet(x,y,bullet_player_wingman_railcannon);
-		a.sprite_index = spr_bullet_player_railcannon_a;
-		a.rampage = true;
+		blt = MakePlayerBullet(x,y,bullet_player_wingman_railcannon);
+		blt.sprite_index = spr_bullet_player_railcannon_a;
+		blt.rampage = true;
 		if(dir = 0){
-			a.image_angle += 7+10*bb;
-			a.x += 6*bb;
+			blt.image_angle += 7+10*bb;
+			blt.x += 6*bb;
 		}
 		else{
-			a.image_angle -= 7+10*bb;
-			a.x -= 6*bb;
+			blt.image_angle -= 7+10*bb;
+			blt.x -= 6*bb;
 		}
-		a.direction = a.image_angle + 90;
-		a.speed = 45;
-		a.damage = damage;
+		blt.direction = blt.image_angle + 90;
+		blt.speed = 45;
+		blt.damage = damage;
 		bb += 1;
 	}
 }

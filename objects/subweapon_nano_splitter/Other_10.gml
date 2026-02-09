@@ -1,28 +1,28 @@
 live;
-a = MakePlayerBullet(x-35*scale_x,y,bullet_player_splitter,seq_splitter_d_intro)
-a.idle = seq_splitter_d
-a.small_sequence = seq_splitter_d_small
-a.collision_effect = seq_bullet_effect_dawn_d
-a.direction = 90
+blt = MakePlayerBullet(x-35*scale_x,y,bullet_player_splitter,seq_splitter_d_intro)
+blt.idle = seq_splitter_d
+blt.small_sequence = seq_splitter_d_small
+blt.collision_effect = seq_bullet_effect_dawn_d
+blt.direction = 90
 enemy = find_priority_enemy(bullet_player_splitter)
 if(instance_exists(enemy)){
-	a.direction = point_direction(a.x,a.y,enemy.x,enemy.y);
+	blt.direction = point_direction(blt.x,blt.y,enemy.x,enemy.y);
 }
-a.image_angle = a.direction - 90
-a.speed = 20
-a.track_inst = enemy
-a.damage = damage
+blt.image_angle = blt.direction - 90
+blt.speed = 20
+blt.track_inst = enemy
+blt.damage = damage
 
-a = MakePlayerBullet(x+35*scale_x,y,bullet_player_splitter,seq_splitter_d_intro)
-a.idle = seq_splitter_d
-a.small_sequence = seq_splitter_d_small
-a.collision_effect = seq_bullet_effect_dawn_d
-a.direction = 90
+blt = MakePlayerBullet(x+35*scale_x,y,bullet_player_splitter,seq_splitter_d_intro)
+blt.idle = seq_splitter_d
+blt.small_sequence = seq_splitter_d_small
+blt.collision_effect = seq_bullet_effect_dawn_d
+blt.direction = 90
 enemy = find_priority_enemy(bullet_player_splitter)
 if(instance_exists(enemy)){
-	a.direction = point_direction(a.x,a.y,enemy.x,enemy.y);
+	blt.direction = point_direction(blt.x,blt.y,enemy.x,enemy.y);
 }
-a.image_angle = a.direction - 90
-a.speed = 20
-a.track_inst = enemy
-a.damage = damage
+blt.image_angle = blt.direction - 90
+blt.speed = 20
+blt.track_inst = enemy
+blt.damage = damage

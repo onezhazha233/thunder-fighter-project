@@ -1,21 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"emitter_player_test",
+  "%Name":"plane_boomerang",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"emitter_player_test",
+  "name":"plane_boomerang",
   "overriddenProperties":[],
   "parent":{
-    "name":"emitter",
-    "path":"folders/物体/bullet_player/plane/emitter.yy",
+    "name":"plane",
+    "path":"folders/物体/plane.yy",
   },
   "parentObjectId":{
-    "name":"emitter_player",
-    "path":"objects/emitter_player/emitter_player.yy",
+    "name":"plane_agent",
+    "path":"objects/plane_agent/plane_agent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

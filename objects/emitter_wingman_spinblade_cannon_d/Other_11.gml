@@ -1,15 +1,15 @@
 live;
-a = instance_create_depth(x,y,depth,bullet_player_wingman_spinblade_cannon)
-a.idle = seq_bullet_player_spinblade_cannon_d
-a.edge_intro = seq_bullet_player_spinblade_cannon_d_edge_intro
-a.edge = seq_bullet_player_spinblade_cannon_d_edge
-a.dir = dir
-a.scale_x = 1.5
-a.scale_y = 1.5
-with(a){
+blt = instance_create_depth(x,y,depth,bullet_player_wingman_spinblade_cannon)
+blt.idle = seq_bullet_player_spinblade_cannon_d
+blt.edge_intro = seq_bullet_player_spinblade_cannon_d_edge_intro
+blt.edge = seq_bullet_player_spinblade_cannon_d_edge
+blt.dir = dir
+blt.scale_x = 1.5
+blt.scale_y = 1.5
+with(blt){
 	bullet_sequence = layer_sequence_create(ll,x,y,seq_bullet_player_spinblade_cannon_d_intro);
 }
-a.move_duration -= 25
-a.direction = 90
-a.speed = 12
-a.damage = damage
+blt.move_duration -= 25
+blt.direction = 90
+blt.speed = 12
+blt.damage = damage

@@ -16,8 +16,12 @@ flame_upper = seq_enemy_boss_large_1_p1_flame_1
 
 explosion = effect_explosion_boss
 
+bgm = bgm_boss_large
+
 hp_max = 400
-hp = hp_max
+hp = 1
+
+Anim_Create(id,"hp",0,0,hp,hp_max-hp,40)
 
 x = 360
 y = -500

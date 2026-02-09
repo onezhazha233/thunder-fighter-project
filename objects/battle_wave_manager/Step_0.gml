@@ -8,6 +8,7 @@ if(enabled = true){
 		}
 		else{
 			enabled = false;
+			alarm[1] = 60;
 		}
 	}
 }

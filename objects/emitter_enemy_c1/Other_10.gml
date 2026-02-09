@@ -155,22 +155,22 @@ if(time >= 90&&time <= 90+4){
 if(time >= 200&&time <= 200+10*3){
 	if((time-200) mod 10 = 0){
 		for(i=0;i<4;i+=1){
-			a = instance_create_depth(x,y,0,bullet_enemy_red);
-			a.sprite_index = spr_bullet_enemy_red_0;
-			a.image_xscale = 2;
-			a.image_yscale = 2;
-			a.mark = mark;
-			a.direction = -90 + i*10;
-			a.speed = 8 - (i mod 2)*2;
+			blt = instance_create_depth(x,y,0,bullet_enemy_red);
+			blt.sprite_index = spr_bullet_enemy_red_0;
+			blt.image_xscale = 2;
+			blt.image_yscale = 2;
+			blt.mark = mark;
+			blt.direction = -90 + i*10;
+			blt.speed = 8 - (i mod 2)*2;
 		}
 		for(i=1;i<4;i+=1){
-			a = instance_create_depth(x,y,0,bullet_enemy_red);
-			a.sprite_index = spr_bullet_enemy_red_0;
-			a.image_xscale = 2;
-			a.image_yscale = 2;
-			a.mark = mark;
-			a.direction = -90 - i*10;
-			a.speed = 8 - (i mod 2)*2;
+			blt = instance_create_depth(x,y,0,bullet_enemy_red);
+			blt.sprite_index = spr_bullet_enemy_red_0;
+			blt.image_xscale = 2;
+			blt.image_yscale = 2;
+			blt.mark = mark;
+			blt.direction = -90 - i*10;
+			blt.speed = 8 - (i mod 2)*2;
 		}
 	}
 }
@@ -178,11 +178,11 @@ if(time >= 300&&time <= 300+3*20){
 	if((time-300) mod 3 = 0){
 		for(i=0;i<3;i+=1){
 			dd = 120*i - 90 + ((time-300) div 3)*6;
-			a = instance_create_depth(x,y,0,bullet_enemy_red);
-			a.sprite_index = spr_bullet_enemy_red_1;
-			a.image_angle = dd;
-			a.direction = dd;
-			Anim_Create(a,"speed",0,0,-5,14,60-(((time-300) div 3) mod 3)*10);
+			blt = instance_create_depth(x,y,0,bullet_enemy_red);
+			blt.sprite_index = spr_bullet_enemy_red_1;
+			blt.image_angle = dd;
+			blt.direction = dd;
+			Anim_Create(blt,"speed",0,0,-5,14,60-(((time-300) div 3) mod 3)*10);
 		}
 	}
 }
@@ -190,19 +190,19 @@ if(time >= 450&&time <= 450+3*10){
 	if((time-450) mod 3 = 0){
 		for(i=0;i<3;i+=1){
 			dd = -90 + ((time-450) div 3)*5+2;
-			a = instance_create_depth(x,y,0,bullet_enemy_red);
-			a.sprite_index = spr_bullet_enemy_red_0;
-			a.image_angle = dd;
-			a.direction = dd;
-			a.speed = 3 + i;
+			blt = instance_create_depth(x,y,0,bullet_enemy_red);
+			blt.sprite_index = spr_bullet_enemy_red_0;
+			blt.image_angle = dd;
+			blt.direction = dd;
+			blt.speed = 3 + i;
 		}
 		for(i=0;i<3;i+=1){
 			dd = -90 - ((time-450) div 3)*5-2;
-			a = instance_create_depth(x,y,0,bullet_enemy_red);
-			a.sprite_index = spr_bullet_enemy_red_0;
-			a.image_angle = dd;
-			a.direction = dd;
-			a.speed = 3 + i;
+			blt = instance_create_depth(x,y,0,bullet_enemy_red);
+			blt.sprite_index = spr_bullet_enemy_red_0;
+			blt.image_angle = dd;
+			blt.direction = dd;
+			blt.speed = 3 + i;
 		}
 	}
 }

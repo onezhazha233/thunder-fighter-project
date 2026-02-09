@@ -8,30 +8,30 @@ if(enabled = true){
 		if(rampage = false){
 			if(bb <= weapon_level+1){
 				if(dir = 0){
-					a = MakePlayerBullet(x,y,bullet_player_wingman_guardian);
-					a.image_angle = -bb*10;
-					a.direction = 90 - bb*10;
+					blt = MakePlayerBullet(x,y,bullet_player_wingman_guardian);
+					blt.image_angle = -bb*10;
+					blt.direction = 90 - bb*10;
 				}
 				else{
-					a = MakePlayerBullet(x,y,bullet_player_wingman_guardian);
-					a.image_angle = bb*10;
-					a.direction = 90 + bb*10;
+					blt = MakePlayerBullet(x,y,bullet_player_wingman_guardian);
+					blt.image_angle = bb*10;
+					blt.direction = 90 + bb*10;
 				}
-				a.damage = damage;
+				blt.damage = damage;
 			}
 		}
 		else{
 			if(dir = 0){
-				a = MakePlayerBullet(x,y,bullet_player_wingman_guardian_rampage);
-				a.image_angle = -bb*10;
-				a.direction = 90 - bb*10;
+				blt = MakePlayerBullet(x,y,bullet_player_wingman_guardian_rampage);
+				blt.image_angle = -bb*10;
+				blt.direction = 90 - bb*10;
 			}
 			else{
-				a = MakePlayerBullet(x,y,bullet_player_wingman_guardian_rampage);
-				a.image_angle = bb*10;
-				a.direction = 90 + bb*10;
+				blt = MakePlayerBullet(x,y,bullet_player_wingman_guardian_rampage);
+				blt.image_angle = bb*10;
+				blt.direction = 90 + bb*10;
 			}
-			a.damage = damage;
+			blt.damage = damage;
 		}
 		bb += 1;
 	}

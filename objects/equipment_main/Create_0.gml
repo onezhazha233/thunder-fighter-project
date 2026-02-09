@@ -70,12 +70,13 @@ function get_random_child(base) {
 
 xscale = 1
 yscale = 1
-plane = global.current_equipment.plane //plane_x_wing_glacier //get_random_child(plane_agent)
-wingman_left = global.current_equipment.wingman_left //[get_random_child(wingman_agent)]
-wingman_right = global.current_equipment.wingman_right //[get_random_child(wingman_agent)]
+//plane = plane_assault_zero
+plane = global.current_equipment.plane
+wingman_left = global.current_equipment.wingman_left
+wingman_right = global.current_equipment.wingman_right
 wingman_x_offset = global.current_equipment.wingman_x_offset
 wingman_y_offset = global.current_equipment.wingman_y_offset
-subweapon = global.current_equipment.subweapon //get_random_child("subweapon")
+subweapon = global.current_equipment.subweapon
 armor = global.current_equipment.armor
 
 /*for(i=0;i<8;i+=1){

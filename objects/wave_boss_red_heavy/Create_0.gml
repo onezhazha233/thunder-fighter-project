@@ -4,14 +4,14 @@ event_inherited();
 warning = {
 	obj : battle_warning_boss,
 	lv : 1225,
-	name : "Red Heavy",
+	name : "呼啸重装机",
 	
 	Create : function(){
 		ww = instance_create_depth(0,0,DEPTH_BATTLE.UI,obj);
 		ww.lv = lv;
 		ww.name = name;
-		battle_ui.boss_hpbar_lv = 1225;
-		battle_ui.boss_hpbar_name = "Red Heavy";
+		battle_ui.boss_hpbar_lv = lv;
+		battle_ui.boss_hpbar_name = name;
 		
 		return ww;
 	}

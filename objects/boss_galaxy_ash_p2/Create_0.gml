@@ -16,6 +16,8 @@ flame_upper = seq_enemy_boss_large_1_p2_flame_1
 
 explosion = effect_explosion_boss
 
+bgm = bgm_boss_large
+
 hp_max = 400
 hp = hp_max
 

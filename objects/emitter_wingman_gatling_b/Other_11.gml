@@ -1,15 +1,15 @@
 live;
 hspd = 1;
-a = MakePlayerBullet(x,y-30,bullet_player_wingman_gatling_rampage);
-a.sprite_index = spr_bullet_player_gatling_abc_rampage;
+blt = MakePlayerBullet(x,y-30,bullet_player_wingman_gatling_rampage);
+blt.sprite_index = spr_bullet_player_gatling_abc_rampage;
 if(dir = 0){
-	a.hspeed = hspd*r*2;
-	a.image_angle = -2*r;
+	blt.hspeed = hspd*r*2;
+	blt.image_angle = -2*r;
 }
 else{
-	a.hspeed = -hspd*r*2;
-	a.image_angle = 2*r;
+	blt.hspeed = -hspd*r*2;
+	blt.image_angle = 2*r;
 }
-a.damage = damage;
+blt.damage = damage;
 r += 1
 if(r > 2)r = 0;

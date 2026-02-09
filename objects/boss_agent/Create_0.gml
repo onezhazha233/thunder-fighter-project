@@ -28,6 +28,8 @@ time = 0
 
 name = ""
 
+bgm = bgm_boss_mini
+
 move_start_duration = 60
 
 items = [[[battle_item_quantum_shield,battle_item_weapon_upgrade],1]]

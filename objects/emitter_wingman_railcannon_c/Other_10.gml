@@ -1,13 +1,13 @@
 live;
-a = MakePlayerBullet(x,y,bullet_player_wingman_railcannon)
-a.sprite_index = spr_bullet_player_railcannon_c
-a.collision_effect = seq_bullet_effect_railcannon_c;
+blt = MakePlayerBullet(x,y,bullet_player_wingman_railcannon)
+blt.sprite_index = spr_bullet_player_railcannon_c
+blt.collision_effect = seq_bullet_effect_railcannon_c;
 if(dir = 0){
-	a.image_angle += 17;
+	blt.image_angle += 17;
 }
 else{
-	a.image_angle -= 17;
+	blt.image_angle -= 17;
 }
-a.direction = a.image_angle + 90
-a.speed = 45
-a.damage = damage
+blt.direction = blt.image_angle + 90
+blt.speed = 45
+blt.damage = damage
