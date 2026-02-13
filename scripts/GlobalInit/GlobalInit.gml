@@ -18,7 +18,7 @@ function GlobalInit(){
 		wingman_left: [wingman_double_shotcannon],
 		wingman_right: [wingman_double_shotcannon],
 		wingman_x_offset: [130],
-		wingman_y_offset: [50],
+		wingman_y_offset: [0],
 		subweapon: subweapon_tracking_missile,
 		armor: armor_alloy_a
 	}

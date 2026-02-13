@@ -1,3 +1,5 @@
+depth = -100
+
 // 确保当前装备已初始化
 if (!variable_struct_exists(global, "current_equipment")) {
 	GlobalInit();
@@ -10,7 +12,11 @@ if (!variable_struct_exists(global, "_current_equipment_select")) {
 		current_obj: -1,
 		equip_key: "",
 		placeholder: "",
-		caller_btn: undefined
+		caller_btn: undefined,
+		preview_inst: noone,
+		preview_x: room_width / 2,
+		preview_y: 320,
+		preview_scale: 1
 	};
 }
 
@@ -43,6 +49,35 @@ demo_style_modern = new LuiStyle()
 	.setSounds(sndBasicClick)
 	.setScrollSliderWidth(20)
 main_ui.setStyle(demo_style_modern).centerContent();
+
+// 预览：创建/刷新装备实例
+function _refresh_preview() {
+	if (instance_exists(global._current_equipment_select.preview_inst)) {
+		instance_destroy(global._current_equipment_select.preview_inst);
+	}
+	var px = global._current_equipment_select.preview_x;
+	var py = global._current_equipment_select.preview_y;
+	var sc = global._current_equipment_select.preview_scale;
+	var inst = instance_create_depth(px, py, 0, equipment_agent);
+	inst.player_point_enabled = false;
+	inst.enabled = false;
+	inst.xscale = sc;
+	inst.yscale = sc;
+	inst.angle = 0;
+	inst.plane = global.current_equipment.plane;
+	inst.wingman_left = global.current_equipment.wingman_left;
+	inst.wingman_right = global.current_equipment.wingman_right;
+	inst.wingman_x_offset = global.current_equipment.wingman_x_offset;
+	inst.wingman_y_offset = global.current_equipment.wingman_y_offset;
+	inst.subweapon = global.current_equipment.subweapon;
+	inst.armor = global.current_equipment.armor;
+	inst.alarm[0] = 1;
+	inst.depth = 0;
+	if (variable_instance_exists(inst, "SetPosition")) {
+		inst.SetPosition(px, py);
+	}
+	global._current_equipment_select.preview_inst = inst;
+}
 
 // 辅助：创建装备选择按钮
 function _make_equipment_button(_options, _current_obj, _equip_key, _placeholder) {
@@ -124,6 +159,8 @@ function _create_equipment_selection_window() {
 			var _caller_btn = _el.data.caller_btn;
 			_caller_btn.setText(_el.data.name);
 			_caller_btn.current_obj = v; // 更新当前对象引用
+
+			_refresh_preview();
 			
 			// 关闭窗口
 			_el.data.window.closeWindow();
@@ -210,4 +247,10 @@ _col.addContent([_title, _row_plane, _row_wl, _row_wr, _row_sub, _row_armor, _en
 var _panel = new LuiPanel({ width: 600, height: LUI_AUTO }).setPadding(16);
 _panel.addContent(_col);
 
+_panel.setPositionAbsolute();
+_panel.setPosX((room_width - 600) / 2);
+_panel.setPosY(540);
+
 main_ui.addContent(_panel);
+
+_refresh_preview();
