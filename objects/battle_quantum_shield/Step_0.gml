@@ -9,15 +9,22 @@ if(player.equipment.enabled = true){
 	}
 }
 if(duration <= 0){
-	if(duration = 0){
+	destroy_time += 1;
+	if(destroy_time = 1){
 		layer_sequence_destroy(shield_sequence);
 		layer_sequence_create(global.layer_item_effects,x,y,seq_battle_quantum_shield_fade);
 	}
-	with(bullet_enemy){
-		destroy_type = 1;
+	if(destroy_time > 0){
+		with(bullet_enemy){
+			if!(object_index = bullet_enemy_laser_green){
+				destroy_type = 1;
+				instance_destroy();
+			}
+		}
+	}
+	if(destroy_time >= 10){
 		instance_destroy();
 	}
-	if(duration <= -10)instance_destroy();
 }
 
 if(fade = 1){

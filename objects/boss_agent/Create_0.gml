@@ -20,6 +20,8 @@ display_mode = 1
 flame_lower_pre = -1
 flame_upper_pre = -1
 
+die_sequence = -1
+
 hpbar_enabled = false
 boss_hpbar_enabled = true
 

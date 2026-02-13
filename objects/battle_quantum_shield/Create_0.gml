@@ -12,6 +12,8 @@ type = 1
 fade = 0
 fade_time = 0
 
+destroy_time = 0
+
 range = 75
 
 mask_surf = surface_create(range*2,range*2);

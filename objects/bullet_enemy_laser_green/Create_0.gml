@@ -29,11 +29,10 @@ state = 0//0为蓄力 1为开始发射 2为发射中 3为发射结束
 
 time = 0
 
-pause = 80
+delay = 80
 duration = 15
 
 SetState = function(s){
 	state = s;
 	time = 0;
 }
-

@@ -1,5 +1,4 @@
 live;
-
 for(i=0;i<ds_list_size(attack_list);i+=1){
 	attack = attack_list[|i];
 	if(attack.active = true){

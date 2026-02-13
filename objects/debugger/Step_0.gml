@@ -31,6 +31,15 @@ if(instance_exists(player)){
 			Player_SetRampage(0,false);
 		}
 	}
+	
+	if(keyboard_check_pressed(ord("Q"))){
+		if(Player_GetShield() = 0){
+			Player_SetShield(global.quantum_shield_duration)
+		}
+		else{
+			with(battle_quantum_shield)duration = 1;
+		}
+	}
 
 	if(keyboard_check_pressed(ord("W"))){
 		Player_UpgradeWeapon();

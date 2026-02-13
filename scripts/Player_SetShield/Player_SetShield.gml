@@ -6,7 +6,7 @@ function Player_SetShield(duration){
 			shield.duration = duration;
 		}
 		else if(Player_GetShield() > 0){
-			battle_quantum_shield.duration = duration;
+			with(battle_quantum_shield)duration = duration;
 		}
 		return true;
 	}

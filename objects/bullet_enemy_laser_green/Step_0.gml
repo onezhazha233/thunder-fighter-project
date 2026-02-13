@@ -4,8 +4,8 @@ for(i=0;i<3;i+=1){
 	effect_dist[i] = max(0,effect_dist[i]-7);
 }
 if(state = 0){
-	pause -= 1;
-	if(pause = 0){
+	delay -= 1;
+	if(delay = 0){
 		SetState(1);
 	}
 	if(time mod 16 = 1){

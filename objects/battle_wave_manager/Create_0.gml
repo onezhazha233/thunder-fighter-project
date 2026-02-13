@@ -13,7 +13,8 @@ boss_waves = [8]
 //ds_queue_enqueue(waves,wave_5)
 //ds_queue_enqueue(waves,wave_6)
 //ds_queue_enqueue(waves,wave_7)
-ds_queue_enqueue(waves,wave_boss_red_heavy)
-ds_queue_enqueue(waves,wave_boss_galaxy_ash)
+//ds_queue_enqueue(waves,wave_boss_red_heavy)
+//ds_queue_enqueue(waves,wave_boss_galaxy_ash)
+ds_queue_enqueue(waves,wave_boss_dark_assault)
 
 alarm[0] = 2
