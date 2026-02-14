@@ -4,10 +4,10 @@ event_inherited();
 collision_type = COLLISION_TYPE.SPRITE
 mask_index = spr_enemy_boss_large_15_base
 
-pre_sequence = seq_enemy_boss_large_15_p1_intro
-intro_sequence = seq_enemy_boss_large_15_p1_intro
-idle_sequence = seq_enemy_boss_large_15_p1_idle
-flame_lower = seq_enemy_boss_large_15_p1_flame
+pre_sequence = seq_enemy_boss_large_15_p2_intro
+intro_sequence = seq_enemy_boss_large_15_p2_intro
+idle_sequence = seq_enemy_boss_large_15_p2_idle
+flame_lower = seq_enemy_boss_large_15_p2_flame
 
 explosion = effect_explosion_boss
 

@@ -42,7 +42,7 @@ if(hp <= 0){
 		instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,effect_explosion_big);
 		a = instance_create_depth(x,y,depth,boss_list[0]);
 		a.move_start_duration = 30;
-		a.skip = true;
+		a.ApplySpawnFromPrevious(x,y);
 		a.phase = phase + 1;
 		battle_ui.boss_hpbar_hp = 1;
 		battle_ui.boss_hpbar_hp_max = 1;
@@ -60,6 +60,9 @@ image_blend = make_color_rgb(blend_r,blend_g,blend_b)
 
 if(active = true){
 	if(boss_hpbar_enabled = true){
+		var _total_phases = array_length(boss_list) + 1;
+		if(_total_phases < 1) _total_phases = 1;
+		battle_ui.boss_hpbar_phase = _total_phases - 1;
 		battle_ui.boss_hpbar_hp_max = hp_max;
 		battle_ui.boss_hpbar_hp = hp;
 	}
@@ -106,7 +109,7 @@ if(active = true){
 				    }
 				}
 				else if(move_state = 1){
-				    if((x <= move_range[0]||x >= move_range[2]||y <= move_range[1]||y >= move_range[3])||(!Anim_IsExists(id))){
+				    if((x <= move_range[0]||x >= move_range[2]||y <= move_range[1]||y >= move_range[3])||(!Anim_IsExists(id,"x")&&!Anim_IsExists(id,"y"))){
 				        x = clamp(x, move_range[0], move_range[2]);
 					    y = clamp(y, move_range[1], move_range[3]);
     

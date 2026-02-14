@@ -10,6 +10,10 @@ Anim_Destroy(id,"inv_damage")
 inv_damage = false
 inv_collision = true
 
+spawn_from_previous = false
+spawn_prev_x = x
+spawn_prev_y = y
+
 skip = false//为0时为第一阶段，否则创建即变形
 
 x_target = 360//出场时目标x位置

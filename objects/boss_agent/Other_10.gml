@@ -169,6 +169,17 @@ SetPosition = function(xx,yy){
 	}
 }
 
+ApplySpawnFromPrevious = function(prev_x, prev_y){
+	skip = true;
+	spawn_from_previous = true;
+	spawn_prev_x = prev_x;
+	spawn_prev_y = prev_y;
+	x = prev_x;
+	y = prev_y;
+	move_targetpos = [x,y];
+	Anim_Destroy(id,"hp",true);
+}
+
 SetFlame = function(lower,upper){
 	layer_sequence_destroy(flame_lower_sequence);
 	layer_sequence_destroy(flame_upper_sequence);

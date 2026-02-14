@@ -18,10 +18,13 @@ warning = {
 }
 
 boss = {
-	boss_list : [boss_dark_assault_p1],
+	boss_list : [boss_dark_assault_p1,boss_dark_assault_p2,boss_dark_assault_p1,boss_red_heavy,boss_galaxy_ash_p2],
 	
 	Create : function(){
-		enemy = instance_create_depth(room_width/2,-200,DEPTH_BATTLE.ENEMIES,boss_list[0]);
+		enemy = instance_create_depth(room_width/2,-200,0,boss_list[0]);
+		array_delete(boss_list,0,1);
+		enemy.boss_list = boss_list;
+		
 		return enemy;
 	}
 }
