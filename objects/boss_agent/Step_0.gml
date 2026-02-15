@@ -36,7 +36,7 @@ if(hp <= 0){
 		global.inv_cutscene = 1;
 		if(Player_IsEnabled())player.equipment.SetEnabled(false);
 		BGM_SetVolume(1,0,60);
-		battle.alarm[1] = 240;
+		battle.alarm[2] = 240;
 	}
 	else{
 		instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,effect_explosion_big);
@@ -48,6 +48,7 @@ if(hp <= 0){
 		battle_ui.boss_hpbar_hp_max = 1;
 		array_delete(boss_list,0,1);
 		a.boss_list = boss_list;
+		Swarm_SetEnabled(true);
 		for(i=0;i<array_length(ii);i+=1){
 			ii[i].direction = random_range(-135,-45);
 		}

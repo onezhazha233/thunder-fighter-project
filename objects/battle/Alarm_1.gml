@@ -1,4 +1,6 @@
 live;
-BGM_Stop(1)
-BGM_Resume(0)
-BGM_SetVolume(0,1,30)
+player_inst.moveable = true
+player_inst.equipment.SetEnabled(true);
+
+instance_create_depth(0,0,0,battle_wave_manager)
+instance_create_depth(0,0,0,battle_swarm_manager)

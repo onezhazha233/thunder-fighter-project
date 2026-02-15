@@ -1,6 +1,8 @@
 live;
 event_inherited()
 
+inv_block = false
+
 damage = 1.5
 
 sprite_ball = spr_bullet_enemy_laser_green_ball
@@ -29,7 +31,7 @@ state = 0//0为蓄力 1为开始发射 2为发射中 3为发射结束
 
 time = 0
 
-delay = 80
+delay = 60
 duration = 15
 
 SetState = function(s){

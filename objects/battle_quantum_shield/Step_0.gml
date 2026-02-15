@@ -16,7 +16,7 @@ if(duration <= 0){
 	}
 	if(destroy_time > 0){
 		with(bullet_enemy){
-			if!(object_index = bullet_enemy_laser_green){
+			if(inv_block = true){
 				destroy_type = 1;
 				instance_destroy();
 			}

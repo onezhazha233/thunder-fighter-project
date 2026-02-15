@@ -11,6 +11,7 @@ a1 = 0
 rdm_attack = 0
 rdm_attack_time = -1
 rdm_attack_duration = -1
+last_attack = -1
 
 attack_list = ds_list_create()
 
@@ -185,6 +186,7 @@ function attack_4(attack,exarg=0){//中闪电球（触底反弹散射） 100
 						a.image_angle = 180-60+i*120/6;
 						a.direction = 90-60+i*120/6;
 						a.speed = 8+(i mod 2 = 0 ? 3 : 0);
+						a.mark = other.mark;
 					}
 				}
 			}

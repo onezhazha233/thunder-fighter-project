@@ -29,7 +29,17 @@ if(time = 900){
 if(time >= 900){
 	rdm_attack_time -= 1;
 	if(rdm_attack_time <= 0){
-		rdm_attack = irandom(3);
+		var _count = array_length(rdm_attack_duration);
+		if(_count <= 1){
+			rdm_attack = 0;
+		}
+		else{
+			rdm_attack = irandom(_count-1);
+			while(rdm_attack = last_attack){
+				rdm_attack = irandom(_count-1);
+			}
+		}
+		last_attack = rdm_attack;
 		rdm_attack_time = rdm_attack_duration[rdm_attack];
 		switch(rdm_attack){
 			case 0: start_attack(0); break;

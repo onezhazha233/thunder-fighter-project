@@ -14,7 +14,7 @@ die_sequence = seq_enemy_boss_mini_0_die
 
 explosion = effect_explosion_boss
 
-hp_max = 300
+hp_max = 500
 hp = 1
 
 Anim_Create(id,"hp",0,0,hp,hp_max-hp,40)

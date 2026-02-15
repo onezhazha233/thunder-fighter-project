@@ -1,7 +1,7 @@
 function GlobalInit(){
 	global.player_move_speed = 12;
-	global.hp_max = 10;
-	global.hp = 10;
+	global.hp_max = 6;
+	global.hp = 6;
 	global.atk_plane = 1;
 	global.atk_wingman = 1;
 	global.atk_subweapon = 1;
@@ -24,5 +24,6 @@ function GlobalInit(){
 	}
 	
 	global.debug_bullet_player_collision_display = false;
+	global.debug_bullet_enemy_collision_display = false;
 	global.debug_enemy_collision_display = false;
 }

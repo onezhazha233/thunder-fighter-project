@@ -13,6 +13,9 @@ function Player_SetRampage(duration,text_effect=true){
 		if(duration > 0){
 			player.equipment.armor_inst.ArmorAbility(3);
 			if(text_effect=true){
+				if(instance_exists(battle_item_effect_rampage)){
+					with(battle_item_effect_rampage) instance_destroy();
+				}
 				instance_create_depth(player.x,player.y,-600,battle_item_effect_rampage);
 			}
 		}

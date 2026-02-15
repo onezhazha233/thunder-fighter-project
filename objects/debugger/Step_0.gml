@@ -17,7 +17,12 @@ if(keyboard_check_pressed(vk_f3)){
 
 if(keyboard_check_pressed(ord("C"))){
 	with(bullet_enemy){
-		destroy_type = 0;
+		if(inv_block = true){
+			destroy_type = 4;
+		}
+		else{
+			destroy_type = 0;
+		}
 		instance_destroy();
 	}
 }

@@ -1,5 +1,5 @@
 depth = DEPTH_BATTLE.BULLETS_ENEMY
-collision_mask_enabled = true//0为spr碰撞 1为自定义碰撞
+collision_mask_enabled = true//0为自定义碰撞 1为spr碰撞
 collision_mask_type = 0//0为矩形 1为圆形
 up = 10
 down = 10
@@ -11,11 +11,12 @@ bullet_sequence = -1
 collision_destroy = true
 auto_destroy = true
 auto_destroy_delay = 60
-destroy_type = 0//0为被守卫抵挡 1为被护盾消除 2为碰到玩家判定点 3为无特效直接消失
+destroy_type = 0//0为被守卫抵挡 1为被护盾消除 2为碰到玩家判定点 3为无特效直接消失 4为被调试清屏或boss切换阶段等强制销毁
 destroy_effect = noone
 damage = 1
 mark = noone
 duration = -1
+inv_block = false//是否免疫守卫护盾等清除效果，适用于激光器等
 
 scale_x = 1
 scale_y = 1

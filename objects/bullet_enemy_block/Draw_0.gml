@@ -5,7 +5,9 @@ y += y_offset
 bullet = instance_place(x,y,bullet_enemy)
 if(instance_exists(bullet)){
 	with(bullet){
-		destroy_type = other.type;
-		instance_destroy();
+		if(inv_block = true){
+			destroy_type = other.type;
+			instance_destroy();
+		}
 	}
 }

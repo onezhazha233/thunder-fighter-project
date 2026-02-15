@@ -1,20 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"emitter_boss_dark_assault",
+  "%Name":"bullet_enemy_dark_assault_shotcannon_bullet",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"emitter_boss_dark_assault",
+  "name":"bullet_enemy_dark_assault_shotcannon_bullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"enemy",
-    "path":"folders/物体/enemy.yy",
+    "name":"bullet_enemy",
+    "path":"folders/物体/bullet_enemy.yy",
   },
   "parentObjectId":{
-    "name":"emitter_enemy",
-    "path":"objects/emitter_enemy/emitter_enemy.yy",
+    "name":"bullet_enemy",
+    "path":"objects/bullet_enemy/bullet_enemy.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,7 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_bullet_enemy_darkred_1",
+    "path":"sprites/spr_bullet_enemy_darkred_1/spr_bullet_enemy_darkred_1.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

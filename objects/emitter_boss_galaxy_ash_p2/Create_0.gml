@@ -11,6 +11,7 @@ a1 = 0
 rdm_attack = 0
 rdm_attack_time = -1
 rdm_attack_duration = -1
+last_attack = -1
 
 attack_list = ds_list_create()
 

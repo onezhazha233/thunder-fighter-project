@@ -3,8 +3,8 @@ event_inherited();
 
 warning = {
 	obj : battle_warning_boss,
-	lv : 123,
-	name : "暗黑突击",
+	lv : 114514,
+	name : "暗黑突击和它的朋友们",
 	
 	Create : function(){
 		ww = instance_create_depth(0,0,DEPTH_BATTLE.UI,obj);
@@ -18,7 +18,7 @@ warning = {
 }
 
 boss = {
-	boss_list : [boss_dark_assault_p1,boss_dark_assault_p2,boss_dark_assault_p1,boss_red_heavy,boss_galaxy_ash_p2],
+	boss_list : [boss_dark_assault_p1,boss_dark_assault_p2,boss_galaxy_ash_p1,boss_galaxy_ash_p2,boss_red_heavy],
 	
 	Create : function(){
 		enemy = instance_create_depth(room_width/2,-200,0,boss_list[0]);

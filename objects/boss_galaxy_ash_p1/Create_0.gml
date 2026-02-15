@@ -18,7 +18,7 @@ explosion = effect_explosion_boss
 
 bgm = bgm_boss_large
 
-hp_max = 400
+hp_max = 500
 hp = 1
 
 Anim_Create(id,"hp",0,0,hp,hp_max-hp,40)
