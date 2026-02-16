@@ -5,7 +5,8 @@ waves = ds_queue_create()
 wave_inst = noone
 boss_waves = [8]
 
-//ds_queue_enqueue(waves,wave_0)
+ds_queue_enqueue(waves,wave_8)
+ds_queue_enqueue(waves,wave_9)
 //ds_queue_enqueue(waves,wave_1)
 //ds_queue_enqueue(waves,wave_2)
 //ds_queue_enqueue(waves,wave_3)
