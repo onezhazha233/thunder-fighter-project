@@ -8,7 +8,10 @@ time = 0
 
 mark = noone
 
+delay = 0
 duration = 60
+
+interval = 20
 
 inv_block = true
 

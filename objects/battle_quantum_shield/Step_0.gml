@@ -16,7 +16,7 @@ if(duration <= 0){
 	}
 	if(destroy_time > 0){
 		with(bullet_enemy){
-			if(inv_block = true){
+			if(inv_block = false){
 				destroy_type = 1;
 				instance_destroy();
 			}

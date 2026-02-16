@@ -1,7 +1,7 @@
 function GlobalInit(){
 	global.player_move_speed = 12;
-	global.hp_max = 6;
-	global.hp = 6;
+	global.hp_max = 10;
+	global.hp = 10;
 	global.atk_plane = 1;
 	global.atk_wingman = 1;
 	global.atk_subweapon = 1;
@@ -13,7 +13,7 @@ function GlobalInit(){
 	global.inv_duration = 120;
 	global.score = 0;
 	
-	global.current_equipment = {
+	/*global.current_equipment = {
 		plane: plane_assault_zero,
 		wingman_left: [wingman_double_shotcannon],
 		wingman_right: [wingman_double_shotcannon],
@@ -21,6 +21,15 @@ function GlobalInit(){
 		wingman_y_offset: [0],
 		subweapon: subweapon_tracking_missile,
 		armor: armor_alloy_a
+	}*/
+	global.current_equipment = {
+		plane: plane_thunder_assault,
+		wingman_left: [wingman_scatter_shotcannon],
+		wingman_right: [wingman_scatter_shotcannon],
+		wingman_x_offset: [130],
+		wingman_y_offset: [0],
+		subweapon: subweapon_cruise_missile,
+		armor: armor_alloy_d
 	}
 	
 	global.debug_bullet_player_collision_display = false;

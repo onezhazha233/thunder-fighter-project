@@ -15,7 +15,7 @@ explosion = effect_explosion_boss
 
 bgm = bgm_boss_large
 
-hp_max = 500
+hp_max = 1000
 hp = 1
 
 Anim_Create(id,"hp",0,0,hp,hp_max-hp,40)
@@ -26,7 +26,7 @@ y = -500
 battle_ui.boss_hpbar_enabled = true
 battle_wave.enabled = false
 
-bullet_emitter = emitter_boss_dark_assault_p1
+bullet_emitter = emitter_boss_dark_assault_p2
 
 intro_move_started = false
 intro_move_done = false
@@ -42,4 +42,4 @@ move_interval = [0,5]
 move_state = 0//0为静止 1为移动中
 move_targetpos = [x,y]
 
-items = [[[battle_item_quantum_shield,battle_item_weapon_upgrade],1]]
+items = []
