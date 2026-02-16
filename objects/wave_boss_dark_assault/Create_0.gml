@@ -18,7 +18,7 @@ warning = {
 }
 
 boss = {
-	boss_list : [boss_dark_assault_p1,boss_dark_assault_p2],
+	boss_list : [boss_dark_assault_p2],
 	
 	Create : function(){
 		enemy = instance_create_depth(room_width/2,-200,0,boss_list[0]);

@@ -8,7 +8,7 @@ if(enabled = true){
 		}
 		else{
 			enabled = false;
-			alarm[1] = 60;
+			alarm[1] = 10;
 		}
 	}
 }

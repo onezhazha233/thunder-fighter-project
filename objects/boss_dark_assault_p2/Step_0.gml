@@ -37,6 +37,7 @@ if(hp <= 0){
 		if(Player_IsEnabled())player.equipment.SetEnabled(false);
 		BGM_SetVolume(1,0,60);
 		battle.alarm[2] = 240;
+		OnDie();
 	}
 	else{
 		instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,effect_explosion_big);

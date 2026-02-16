@@ -20,4 +20,6 @@ shine_alpha = 0
 
 gravity_enabled = true
 
+auto_destroy = false
+
 alarm[0] = 1
