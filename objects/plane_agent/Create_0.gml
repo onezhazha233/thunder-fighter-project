@@ -56,7 +56,9 @@ sprite_roll_left = -1;
 sprite_roll_right = -1;
 sprite_roll_flip = false//是否使用左倾贴图翻转作为右倾贴图
 
-roll_sequence = []
+roll_sequence_left = []
+roll_sequence_right = []
+roll_sequence_flip = true//是否更对序列使用方向翻转
 roll_real = 0;
 roll_target = 0;
 roll_state = 0;

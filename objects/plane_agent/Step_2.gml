@@ -30,7 +30,12 @@ if(state = 0){
 	if(roll_mode = 1&&roll_state_previous != roll_state){
 		if!(roll_state = 0){
 			rs = abs(roll_state)-1;
-			SetSequence(roll_sequence[rs]);
+			if(roll_state < 0){
+				SetSequence(roll_sequence_left[rs]);
+			}
+			else{
+				SetSequence(roll_sequence_right[rs]);
+			}
 		}
 		else{
 			SetSequence(idle_sequence);

@@ -83,7 +83,12 @@ SetPosition = function(xx,yy){
 					xscale = 0;
 				}
 				else{
-					xscale = image_xscale*sign(roll_state);
+					if(roll_sequence_flip = true){
+						xscale = image_xscale*sign(roll_state);
+					}
+					else{
+						xscale = image_xscale;
+					}
 				}
 			}
 		}
