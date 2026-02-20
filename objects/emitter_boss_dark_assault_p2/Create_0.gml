@@ -209,20 +209,20 @@ function attack_4(attack,exarg=0){//收缩移动激光 160
 	if(attack.time = 1){
 		mark.move_range[3] -= 700;
 		for(i=0;i<4;i+=1){
-			l[i] = MakeEnemyBullet(x,y+85,bullet_enemy_laser_green);
-			l[i].delay = 60;
-			l[i].duration = 60;
+			blt[i] = MakeEnemyBullet(x,y+85,bullet_enemy_laser_green);
+			blt[i].delay = 60;
+			blt[i].duration = 60;
 		}
-		Anim_Create(l[0],"image_angle",0,0,l[0].image_angle-90,60,60,60);
-		Anim_Create(l[1],"image_angle",0,0,l[1].image_angle-30,20,60,60);
-		Anim_Create(l[2],"image_angle",0,0,l[2].image_angle+30,-20,60,60);
-		Anim_Create(l[3],"image_angle",0,0,l[3].image_angle+90,-60,60,60);
+		Anim_Create(blt[0],"image_angle",0,0,blt[0].image_angle-90,60,60,60);
+		Anim_Create(blt[1],"image_angle",0,0,blt[1].image_angle-30,20,60,60);
+		Anim_Create(blt[2],"image_angle",0,0,blt[2].image_angle+30,-20,60,60);
+		Anim_Create(blt[3],"image_angle",0,0,blt[3].image_angle+90,-60,60,60);
 	}
 	if(attack.time > 1){
 		for(i=0;i<4;i+=1){
-			if(instance_exists(l[i])){
-				l[i].x = xprevious;
-				l[i].y = yprevious + 85;
+			if(instance_exists(blt[i])){
+				blt[i].x = xprevious;
+				blt[i].y = yprevious + 85;
 			}
 		}
 	}
