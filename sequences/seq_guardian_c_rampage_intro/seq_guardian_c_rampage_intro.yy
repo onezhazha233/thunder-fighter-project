@@ -26,8 +26,8 @@
   },
   "name":"seq_guardian_c_rampage_intro",
   "parent":{
-    "name":"steel_guardian",
-    "path":"folders/序列/wingman/guardian/steel_guardian.yy",
+    "name":"steel_guard",
+    "path":"folders/序列/wingman/guardian/steel_guard.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

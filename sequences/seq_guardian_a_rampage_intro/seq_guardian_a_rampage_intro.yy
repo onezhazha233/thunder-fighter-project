@@ -26,8 +26,8 @@
   },
   "name":"seq_guardian_a_rampage_intro",
   "parent":{
-    "name":"charging_guardian",
-    "path":"folders/序列/wingman/guardian/charging_guardian.yy",
+    "name":"charging_guard",
+    "path":"folders/序列/wingman/guardian/charging_guard.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

@@ -9,8 +9,8 @@
   "name":"bullet_player_wingman_guardian",
   "overriddenProperties":[],
   "parent":{
-    "name":"guardian",
-    "path":"folders/物体/bullet_player/wingman/bullet/guardian.yy",
+    "name":"guard",
+    "path":"folders/物体/bullet_player/wingman/bullet/guard.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

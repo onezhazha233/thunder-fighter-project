@@ -8,8 +8,8 @@
   "name":"wingman_golden_guardian",
   "overriddenProperties":[],
   "parent":{
-    "name":"guardian",
-    "path":"folders/物体/wingman/guardian.yy",
+    "name":"guard",
+    "path":"folders/物体/wingman/guard.yy",
   },
   "parentObjectId":{
     "name":"wingman_agent",

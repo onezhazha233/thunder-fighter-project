@@ -26,8 +26,8 @@
   },
   "name":"seq_guardian_d_rampage",
   "parent":{
-    "name":"doom_guardian",
-    "path":"folders/序列/wingman/guardian/doom_guardian.yy",
+    "name":"doom_guard",
+    "path":"folders/序列/wingman/guardian/doom_guard.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,
