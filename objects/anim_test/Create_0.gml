@@ -1,5 +1,5 @@
 live;
-seq_array = [seq_overwatcher_d_rampage_intro_1,seq_overwatcher_d_rampage_1,seq_overwatcher_d_rampage_outro_1]
+seq_array = [seq_sentinel_a_idle,seq_sentinel_a_rampage_intro,seq_sentinel_a_rampage,seq_sentinel_a_rampage_outro,seq_sentinel_a_idle]
 seq_index = 0
 ll = layer_create(depth)
 seq_instances = array_create(array_length(seq_array), noone);
