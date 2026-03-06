@@ -1,5 +1,5 @@
 live;
-seq_array = [seq_sentinel_b_rampage_intro,seq_sentinel_b_rampage,seq_sentinel_b_rampage_outro,seq_sentinel_b_idle]
+seq_array = [seq_sentinel_c_rampage_intro,seq_sentinel_c_rampage,seq_sentinel_c_rampage_outro,seq_sentinel_c_idle]
 seq_index = 0
 ll = layer_create(depth)
 seq_instances = array_create(array_length(seq_array), noone);
