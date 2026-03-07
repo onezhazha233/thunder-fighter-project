@@ -416,21 +416,21 @@
                   "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":{"$GMAnimCurve":"","%Name":"位置","channels":[
                         {"$GMAnimCurveChannel":"","%Name":"X","colour":4290799884,"name":"X","points":[
                             {"th0":-0.099998765,"th1":2.0954498E-09,"tv0":0.0,"tv1":0.0,"x":0.0,"y":-15.0,},
-                            {"th0":-0.4999938,"th1":0.099998765,"tv0":0.0,"tv1":0.0,"x":0.9999876,"y":-18.0,},
+                            {"th0":-0.4999938,"th1":0.099998765,"tv0":0.0,"tv1":0.0,"x":1.0,"y":-18.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                         {"$GMAnimCurveChannel":"","%Name":"Y","colour":4281083598,"name":"Y","points":[
                             {"th0":-0.099998765,"th1":2.0954498E-09,"tv0":0.0,"tv1":0.0,"x":0.0,"y":-16.0,},
-                            {"th0":-0.4999938,"th1":0.099998765,"tv0":0.0,"tv1":0.0,"x":0.9999876,"y":-17.0,},
+                            {"th0":-0.4999938,"th1":0.099998765,"tv0":0.0,"tv1":0.0,"x":1.0,"y":-17.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                       ],"function":2,"name":"位置","resourceType":"GMAnimCurve","resourceVersion":"2.0",},"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
                   "1":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":{"$GMAnimCurve":"","%Name":"位置","channels":[
                         {"$GMAnimCurveChannel":"","%Name":"X","colour":4290799884,"name":"X","points":[
                             {"th0":-0.099998765,"th1":2.0954498E-09,"tv0":0.0,"tv1":0.0,"x":0.0,"y":-15.0,},
-                            {"th0":-0.4999938,"th1":0.099998765,"tv0":0.0,"tv1":0.0,"x":0.9999876,"y":-18.0,},
+                            {"th0":-0.4999938,"th1":0.099998765,"tv0":0.0,"tv1":0.0,"x":1.0,"y":-18.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                         {"$GMAnimCurveChannel":"","%Name":"Y","colour":4281083598,"name":"Y","points":[
                             {"th0":-0.099998765,"th1":2.0954498E-09,"tv0":0.0,"tv1":0.0,"x":0.0,"y":-16.0,},
-                            {"th0":-0.4999938,"th1":0.099998765,"tv0":0.0,"tv1":0.0,"x":0.9999876,"y":-17.0,},
+                            {"th0":-0.4999938,"th1":0.099998765,"tv0":0.0,"tv1":0.0,"x":1.0,"y":-17.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                       ],"function":2,"name":"位置","resourceType":"GMAnimCurve","resourceVersion":"2.0",},"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
                 },"Disabled":false,"id":"b4a3fd10-85d7-4407-a0d6-5ab9f8fe5e01","IsCreationKey":false,"Key":32.0,"Length":8.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
@@ -454,7 +454,7 @@
       ],"traits":0,},
     {"$GMGraphicTrack":"","%Name":"spr_sentinel_bc_ring","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_sentinel_bc_ring","path":"sprites/spr_sentinel_bc_ring/spr_sentinel_bc_ring.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_sentinel_bcd_ring","path":"sprites/spr_sentinel_bcd_ring/spr_sentinel_bcd_ring.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
             },"Disabled":false,"id":"6348ba54-8f3f-48aa-85c8-d0991ed6ba71","IsCreationKey":false,"Key":0.0,"Length":6.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_sentinel_bc_ring","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4282943730,"tracks":[
         {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
@@ -499,7 +499,7 @@
       ],"traits":0,},
     {"$GMGraphicTrack":"","%Name":"spr_sentinel_bc_ring","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_sentinel_bc_ring","path":"sprites/spr_sentinel_bc_ring/spr_sentinel_bc_ring.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_sentinel_bcd_ring","path":"sprites/spr_sentinel_bcd_ring/spr_sentinel_bcd_ring.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
             },"Disabled":false,"id":"a55b02db-f48c-42be-926d-563425f845a2","IsCreationKey":false,"Key":0.0,"Length":10.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_sentinel_bc_ring","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4282943730,"tracks":[
         {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
@@ -585,7 +585,7 @@
       ],"traits":0,},
     {"$GMGraphicTrack":"","%Name":"spr_sentinel_c_top_effect_wave","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_sentinel_c_top_effect_wave","path":"sprites/spr_sentinel_c_top_effect_wave/spr_sentinel_c_top_effect_wave.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_sentinel_cd_top_effect_wave","path":"sprites/spr_sentinel_cd_top_effect_wave/spr_sentinel_cd_top_effect_wave.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
             },"Disabled":false,"id":"6feb6e43-bc17-4a13-84e1-5590db4ff7c3","IsCreationKey":false,"Key":32.0,"Length":8.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_sentinel_c_top_effect_wave","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4285592136,"tracks":[
         {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
@@ -1155,7 +1155,7 @@
                             {"th0":-0.060000002,"th1":3.1432132E-10,"tv0":0.0,"tv1":0.0,"x":0.55,"y":-15.0,},
                             {"th0":-0.07499999,"th1":0.020000005,"tv0":0.0,"tv1":0.0,"x":0.7,"y":-1.0,},
                             {"th0":-0.020000005,"th1":4.1908987E-10,"tv0":0.0,"tv1":0.0,"x":0.8,"y":-1.0,},
-                            {"th0":-0.09999874,"th1":0.019999748,"tv0":0.0,"tv1":0.0,"x":0.9999975,"y":-2.0,},
+                            {"th0":-0.09999874,"th1":0.019999748,"tv0":0.0,"tv1":0.0,"x":1.0,"y":-2.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                         {"$GMAnimCurveChannel":"","%Name":"Y","colour":4281083598,"name":"Y","points":[
                             {"th0":0.0,"th1":0.030000001,"tv0":0.0,"tv1":0.0,"x":0.0,"y":-4.0,},
@@ -1164,7 +1164,7 @@
                             {"th0":-0.060000002,"th1":3.1432132E-10,"tv0":0.0,"tv1":0.0,"x":0.55,"y":11.0,},
                             {"th0":-0.07499999,"th1":0.020000005,"tv0":0.0,"tv1":0.0,"x":0.7,"y":13.0,},
                             {"th0":-0.020000005,"th1":4.1908987E-10,"tv0":0.0,"tv1":0.0,"x":0.8,"y":13.0,},
-                            {"th0":-0.09999874,"th1":0.019999748,"tv0":0.0,"tv1":0.0,"x":0.9999975,"y":2.0,},
+                            {"th0":-0.09999874,"th1":0.019999748,"tv0":0.0,"tv1":0.0,"x":1.0,"y":2.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                       ],"function":2,"name":"位置","resourceType":"GMAnimCurve","resourceVersion":"2.0",},"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
                   "1":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":{"$GMAnimCurve":"","%Name":"位置","channels":[
@@ -1175,7 +1175,7 @@
                             {"th0":-0.060000002,"th1":3.1432132E-10,"tv0":0.0,"tv1":0.0,"x":0.55,"y":-15.0,},
                             {"th0":-0.07499999,"th1":0.020000005,"tv0":0.0,"tv1":0.0,"x":0.7,"y":-1.0,},
                             {"th0":-0.020000005,"th1":4.1908987E-10,"tv0":0.0,"tv1":0.0,"x":0.8,"y":-1.0,},
-                            {"th0":-0.09999874,"th1":0.019999748,"tv0":0.0,"tv1":0.0,"x":0.9999975,"y":-2.0,},
+                            {"th0":-0.09999874,"th1":0.019999748,"tv0":0.0,"tv1":0.0,"x":1.0,"y":-2.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                         {"$GMAnimCurveChannel":"","%Name":"Y","colour":4281083598,"name":"Y","points":[
                             {"th0":0.0,"th1":0.030000001,"tv0":0.0,"tv1":0.0,"x":0.0,"y":-4.0,},
@@ -1184,7 +1184,7 @@
                             {"th0":-0.060000002,"th1":3.1432132E-10,"tv0":0.0,"tv1":0.0,"x":0.55,"y":11.0,},
                             {"th0":-0.07499999,"th1":0.020000005,"tv0":0.0,"tv1":0.0,"x":0.7,"y":13.0,},
                             {"th0":-0.020000005,"th1":4.1908987E-10,"tv0":0.0,"tv1":0.0,"x":0.8,"y":13.0,},
-                            {"th0":-0.09999874,"th1":0.019999748,"tv0":0.0,"tv1":0.0,"x":0.9999975,"y":2.0,},
+                            {"th0":-0.09999874,"th1":0.019999748,"tv0":0.0,"tv1":0.0,"x":1.0,"y":2.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                       ],"function":2,"name":"位置","resourceType":"GMAnimCurve","resourceVersion":"2.0",},"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
                 },"Disabled":false,"id":"fea20d35-fe3e-4e1c-b7fc-b0c3c18d66a9","IsCreationKey":false,"Key":0.0,"Length":40.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
