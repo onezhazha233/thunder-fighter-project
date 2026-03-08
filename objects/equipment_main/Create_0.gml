@@ -71,12 +71,12 @@ function get_random_child(base) {
 xscale = 1
 yscale = 1
 //plane = plane_assault_zero
-plane = plane_starriver_overwatcher //global.current_equipment.plane
-wingman_left = [wingman_incandescent_sentinel]//global.current_equipment.wingman_left
-wingman_right = [wingman_incandescent_sentinel]//global.current_equipment.wingman_right
+plane = plane_agent //global.current_equipment.plane
+wingman_left = []//global.current_equipment.wingman_left
+wingman_right = []//global.current_equipment.wingman_right
 wingman_x_offset = global.current_equipment.wingman_x_offset
 wingman_y_offset = global.current_equipment.wingman_y_offset
-//subweapon = global.current_equipment.subweapon
+subweapon = subweapon_daybreak_bolide//global.current_equipment.subweapon
 armor = global.current_equipment.armor
 
 /*for(i=0;i<8;i+=1){

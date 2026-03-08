@@ -1,4 +1,8 @@
 live;
+if(!variable_instance_exists(id,"bgm_mute")){
+	bgm_mute = false;
+	bgm_prev_gain = array_create(6,1);
+}
 if(keyboard_check_pressed(vk_f2)){
 	game_restart();
 }
@@ -12,6 +16,29 @@ if(keyboard_check_pressed(vk_f3)){
 	}
 	else if(game_get_speed(gamespeed_fps) = 3){
 		game_set_speed(60,gamespeed_fps);
+	}
+}
+
+if(keyboard_check_pressed(ord("M"))){
+	if(bgm_mute = false){
+		for(var i=0;i<6;i+=1){
+			if(BGM_IsPlaying(i)){
+				bgm_prev_gain[i] = audio_sound_get_gain(BGM_GetID(i));
+				BGM_SetVolume(i,0,0);
+			}else{
+				bgm_prev_gain[i] = 1;
+			}
+		}
+		bgm_mute = true;
+	}else{
+		for(var i=0;i<6;i+=1){
+			var vol = bgm_prev_gain[i];
+			if(is_undefined(vol))vol = 1;
+			if(BGM_IsPlaying(i)){
+				BGM_SetVolume(i,vol,0);
+			}
+		}
+		bgm_mute = false;
 	}
 }
 
