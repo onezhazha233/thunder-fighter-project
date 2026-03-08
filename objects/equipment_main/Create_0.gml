@@ -71,9 +71,9 @@ function get_random_child(base) {
 xscale = 1
 yscale = 1
 //plane = plane_assault_zero
-plane = plane_starfield_overwatcher //global.current_equipment.plane
-wingman_left = [wingman_luster_sentinel]//global.current_equipment.wingman_left
-wingman_right = [wingman_luster_sentinel]//global.current_equipment.wingman_right
+plane = plane_starriver_overwatcher //global.current_equipment.plane
+wingman_left = [wingman_incandescent_sentinel]//global.current_equipment.wingman_left
+wingman_right = [wingman_incandescent_sentinel]//global.current_equipment.wingman_right
 wingman_x_offset = global.current_equipment.wingman_x_offset
 wingman_y_offset = global.current_equipment.wingman_y_offset
 //subweapon = global.current_equipment.subweapon
