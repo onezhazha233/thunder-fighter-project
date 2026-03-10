@@ -19,6 +19,12 @@ function drone_add() {
     var new_drone = instance_create_depth(x, y, depth+10, emitter_plane_overwatcher_drone_a);
     var mid = floor(array_length(drones) / 2);
     array_insert(drones, mid, new_drone);
+	for (var i = 0; i < array_length(drones); i++) {
+	    if (instance_exists(drones[i])) {
+			drones[i].alarm[0] = drones[0].alarm[0];
+			drones[i].alarm[1] = drones[0].alarm[1];
+		}
+	}
 }
 
 function drone_remove() {
@@ -27,5 +33,11 @@ function drone_remove() {
         instance_destroy(drones[mid]);
         array_delete(drones, mid, 1);
     }
+	for (var i = 0; i < array_length(drones); i++) {
+	    if (instance_exists(drones[i])) {
+			drones[i].alarm[0] = drones[0].alarm[0];
+			drones[i].alarm[1] = drones[0].alarm[1];
+		}
+	}
 }
 

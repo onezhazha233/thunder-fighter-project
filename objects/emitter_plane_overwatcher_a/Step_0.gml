@@ -43,7 +43,9 @@ if (nearest_enemy != noone) {
 	target_rotation = 90;
 }
 
-if(angle_difference(target_rotation,current_rotation) > rotate_spd){
+target_rotation = clamp(target_rotation,90-detect_angle/2,90+detect_angle/2);
+
+if(abs(angle_difference(target_rotation,current_rotation)) > rotate_spd){
 	current_rotation += sign(angle_difference(target_rotation,current_rotation))*rotate_spd;
 }
 else{
@@ -66,3 +68,4 @@ for (var i = 0; i < count; i++) {
 		drones[i].rampage = rampage;
     }
 }
+
