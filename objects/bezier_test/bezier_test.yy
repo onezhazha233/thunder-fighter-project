@@ -14,8 +14,8 @@
   "name":"bezier_test",
   "overriddenProperties":[],
   "parent":{
-    "name":"物体",
-    "path":"folders/物体.yy",
+    "name":"test",
+    "path":"folders/物体/test.yy",
   },
   "parentObjectId":null,
   "persistent":false,
