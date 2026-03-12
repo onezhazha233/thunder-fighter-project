@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"GMLive",
   "parent":{
-    "name":"Internal",
-    "path":"folders/扩展/GMLive/Internal.yy",
+    "name":"GMLive",
+    "path":"folders/扩展/GMLive.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

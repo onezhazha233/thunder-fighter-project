@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"GMLiveAPI_js",
   "parent":{
-    "name":"Misc",
-    "path":"folders/扩展/GMLive/Internal/Misc.yy",
+    "name":"GMLive",
+    "path":"folders/扩展/GMLive.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
