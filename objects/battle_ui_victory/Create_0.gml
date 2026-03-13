@@ -6,5 +6,9 @@ layer_sequence_yscale(seq,1.2)
 audio_play_sound(snd_victory,0,0)
 Fader_Fade(0,0.5,20)
 player.moveable = false;
+with(battle_item_weapon_upgrade)chase = 1;
+with(battle_item_hp_recovery)chase = 1;
+with(battle_item_quantum_shield)chase = 1;
+with(battle_item_rampage)chase = 1;
 
 flyaway = 0

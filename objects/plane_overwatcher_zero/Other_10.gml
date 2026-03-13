@@ -40,7 +40,7 @@ SetState = function(s){
 		}
 	}
 	if(s = 3){
-		rampage_mode = 1//choose(0,1);
+		rampage_mode = choose(0,1);
 		if(rampage_outro_mode = 0){
 			if(sequence_exists(rampage_outro)){
 				SetSequence(rampage_outro);

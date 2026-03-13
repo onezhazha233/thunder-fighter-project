@@ -1,7 +1,16 @@
 live;
 event_inherited();
 
-time_interval_rampage = 45
+time_interval_rampage = 45;
+
+damages = [0,0,0,0,0.1082]
+
+flame_list = [];
+flame_interval = 8;
+flame_timer = random(flame_interval);
+flame_speed = 3;
+flame_scale = 2;
+flame_alpha = 1;
 
 SetPosition = function(xx,yy){
 	x = xx;
@@ -9,8 +18,10 @@ SetPosition = function(xx,yy){
 	
 	for(i=0;i<array_length(follow_inst);i+=1){
 		if(instance_exists(follow_inst[i,0])){
-			follow_inst[i,0].x = xx + lengthdir_x(follow_inst[i,1],image_angle+90);
-			follow_inst[i,0].y = yy + lengthdir_y(follow_inst[i,1],image_angle+90);
+			var item = follow_inst[i];
+			var off = follow_inst[i,1];
+			follow_inst[i,0].x = xx + lengthdir_x(off,image_angle+90);
+			follow_inst[i,0].y = yy + lengthdir_y(off,image_angle+90);
 			follow_inst[i,0].image_angle = image_angle + 90;
 		}
 		else{
