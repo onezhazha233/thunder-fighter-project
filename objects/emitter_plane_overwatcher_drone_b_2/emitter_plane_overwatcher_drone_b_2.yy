@@ -1,17 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"emitter_plane_overwatcher_drone_a_1",
+  "%Name":"emitter_plane_overwatcher_drone_b_2",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":11,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"emitter_plane_overwatcher_drone_a_1",
+  "name":"emitter_plane_overwatcher_drone_b_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"overwatcher_zero",
-    "path":"folders/物体/bullet_player/plane/emitter/overwatcher/overwatcher_zero.yy",
+    "name":"stellar_overwatcher",
+    "path":"folders/物体/bullet_player/plane/emitter/overwatcher/stellar_overwatcher.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",
@@ -35,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bullet_player_overwatcher_a_drone_1",
-    "path":"sprites/spr_bullet_player_overwatcher_a_drone_1/spr_bullet_player_overwatcher_a_drone_1.yy",
+    "name":"spr_bullet_player_overwatcher_b_drone_2",
+    "path":"sprites/spr_bullet_player_overwatcher_b_drone_2/spr_bullet_player_overwatcher_b_drone_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

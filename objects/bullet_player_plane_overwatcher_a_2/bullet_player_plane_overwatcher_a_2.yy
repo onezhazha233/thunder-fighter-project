@@ -10,8 +10,8 @@
   "name":"bullet_player_plane_overwatcher_a_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"overwatcher",
-    "path":"folders/物体/bullet_player/plane/bullet/overwatcher.yy",
+    "name":"overwatcher_zero",
+    "path":"folders/物体/bullet_player/plane/bullet/overwatcher/overwatcher_zero.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

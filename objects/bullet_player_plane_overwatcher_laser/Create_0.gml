@@ -36,9 +36,11 @@ Anim_Create(id,"image_alpha",0,0,0.8,-0.3,3,10)
 Anim_Create(id,"start1_xscale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0,1,3)
 Anim_Create(id,"start1_xscale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,1,-1,20,7)
 Anim_Create(id,"start1_yscale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0,1,3)
-Anim_Create(id,"color_r",0,0,color_r,color[0,0]-color_r,4,3)
-Anim_Create(id,"color_g",0,0,color_g,color[0,1]-color_g,4,3)
-Anim_Create(id,"color_b",0,0,color_b,color[0,2]-color_b,4,3)
-Anim_Create(id,"color_r",0,0,color[0,0],color[1,0]-color[0,0],10,7)
-Anim_Create(id,"color_g",0,0,color[0,1],color[1,1]-color[0,1],10,7)
-Anim_Create(id,"color_b",0,0,color[0,2],color[1,2]-color[0,2],10,7)
+Anim_Create(id,"color_r",0,0,color_r,0,0,1,function(){
+	Anim_Create(id,"color_r",0,0,color_r,color[0,0]-color_r,4,3);
+	Anim_Create(id,"color_g",0,0,color_g,color[0,1]-color_g,4,3);
+	Anim_Create(id,"color_b",0,0,color_b,color[0,2]-color_b,4,3);
+	Anim_Create(id,"color_r",0,0,color[0,0],color[1,0]-color[0,0],10,7);
+	Anim_Create(id,"color_g",0,0,color[0,1],color[1,1]-color[0,1],10,7);
+	Anim_Create(id,"color_b",0,0,color[0,2],color[1,2]-color[0,2],10,7);
+})

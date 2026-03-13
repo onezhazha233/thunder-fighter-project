@@ -12,6 +12,7 @@ SetState = function(s){
 		rampage = rampage_list[1];
 		rampage_outro = rampage_outro_list[1];
 	}
+	bullet_emitter_inst.rampage_mode = rampage_mode;
 
 	state = s;
 	if(s = 0){
@@ -39,7 +40,7 @@ SetState = function(s){
 		}
 	}
 	if(s = 3){
-		rampage_mode = !rampage_mode;
+		rampage_mode = choose(0,1);
 		if(rampage_outro_mode = 0){
 			if(sequence_exists(rampage_outro)){
 				SetSequence(rampage_outro);
