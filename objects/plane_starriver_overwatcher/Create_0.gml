@@ -14,4 +14,4 @@ roll_sequence_right = [seq_overwatcher_d_roll_right_0,seq_overwatcher_d_roll_rig
 roll_sequence_left = [seq_overwatcher_d_roll_left_0,seq_overwatcher_d_roll_left_1,seq_overwatcher_d_roll_left_2]
 roll_sequence_flip = false
 
-bullet_emitter = emitter_player
+bullet_emitter = emitter_plane_overwatcher_d
