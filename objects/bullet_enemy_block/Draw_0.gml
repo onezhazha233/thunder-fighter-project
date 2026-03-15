@@ -12,3 +12,5 @@ if(instance_exists(bullet)){
 		}
 	}
 }
+
+draw_self()
