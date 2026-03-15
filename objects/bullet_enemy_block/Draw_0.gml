@@ -7,6 +7,7 @@ if(instance_exists(bullet)){
 	with(bullet){
 		if(inv_block = false){
 			destroy_type = other.type;
+			other.OnBlock();
 			instance_destroy();
 		}
 	}

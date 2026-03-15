@@ -50,6 +50,7 @@ if(collision_mask_enabled = true){
 	blk = instance_place(x,y,bullet_enemy_block);
 	if(instance_exists(blk)){
 		destroy_type = blk.type;
+		blk.OnBlock();
 		instance_destroy();
 	}
 }
@@ -59,6 +60,7 @@ else{
 			blk = collision_rectangle(x-left*scale_x,y-up*scale_y,x+right*scale_x,y+down*scale_y,bullet_enemy_block,0,1);
 			if(instance_exists(blk)){
 				destroy_type = blk.type;
+				blk.OnBlock();
 				instance_destroy();
 			}
 			break;
@@ -66,6 +68,7 @@ else{
 			blk = collision_ellipse(x-radius*scale_x,y-radius*scale_y,x+radius*scale_x,y+radius*scale_y,bullet_enemy_block,0,1);
 			if(instance_exists(blk)){
 				destroy_type = blk.type;
+				blk.OnBlock();
 				instance_destroy();
 			}
 			break;

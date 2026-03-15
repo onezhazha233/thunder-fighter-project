@@ -5,3 +5,7 @@ x_offset = 0
 y_offset = 0
 
 type = 0//0为守卫 1为护盾
+
+OnBlock = function(){
+	show_message(1);
+}

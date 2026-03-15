@@ -72,9 +72,9 @@ function get_random_child(base) {
 xscale = 1
 yscale = 1
 //plane = plane_assault_zero
-plane = plane_starriver_overwatcher //global.current_equipment.plane
-wingman_left = []//global.current_equipment.wingman_left
-wingman_right = []//global.current_equipment.wingman_right
+plane = plane_agent //global.current_equipment.plane
+wingman_left = [wingman_doom_guard]//global.current_equipment.wingman_left
+wingman_right = [wingman_doom_guard]//global.current_equipment.wingman_right
 wingman_x_offset = global.current_equipment.wingman_x_offset
 wingman_y_offset = global.current_equipment.wingman_y_offset
 //subweapon = subweapon_daybreak_bolide//global.current_equipment.subweapon
@@ -89,4 +89,7 @@ armor = global.current_equipment.armor
 }
 */
 
-//tb = MakeEnemyBullet(200,900+random(10),bullet_enemy_red,spr_bullet_enemy_red_0);
+for(i=0;i<20;i+=1){
+	tb = MakeEnemyBullet(100+i*20,300+random(10),bullet_enemy_red,spr_bullet_enemy_red_0);
+	tb = MakeEnemyBullet(130+i*20,500+random(10),bullet_enemy_red,spr_bullet_enemy_red_0);
+}
