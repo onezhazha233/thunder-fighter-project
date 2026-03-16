@@ -77,7 +77,7 @@ wingman_left = [wingman_incandescent_sentinel]//global.current_equipment.wingman
 wingman_right = [wingman_incandescent_sentinel]//global.current_equipment.wingman_right
 wingman_x_offset = [130,200]//global.current_equipment.wingman_x_offset
 wingman_y_offset = [0,0]//global.current_equipment.wingman_y_offset
-//subweapon = subweapon_daybreak_bolide//global.current_equipment.subweapon
+subweapon = subweapon_daybreak_bolide//global.current_equipment.subweapon
 armor = global.current_equipment.armor
 
 /*for(i=0;i<8;i+=1){

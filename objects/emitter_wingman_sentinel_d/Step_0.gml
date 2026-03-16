@@ -30,6 +30,9 @@ else{
 	if(instance_exists(laser)){
 		instance_destroy(laser);
 	}
+	if(instance_exists(rampage_laser)){
+		instance_destroy(rampage_laser);
+	}
 }
 
 if(rampage = false){
