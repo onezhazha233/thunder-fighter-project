@@ -19,7 +19,9 @@ if(enabled = true){
 	time -= 1;
 	if(time <= 0)time = 0;
 	if(time mod 5 = 1){
-		blt = MakePlayerBullet(x-sign(0.5-dir)*18*scale_x,y,bullet_player_wingman_sentinel);
+		blt = MakePlayerBullet(x-sign(0.5-dir)*14*scale_x,y,bullet_player_wingman_sentinel);
+		blt.image_index = 1;
+		blt.colors = [[255,255,255],[150,200,80],[140,80,180]];
 		blt.damage = damage;
 	}
 }
@@ -41,7 +43,7 @@ if(rampage = false){
 		if(rampage_laser.fade_out){
 			rampage_laser.fade_time += 1;
 			var ft = min(rampage_laser.fade_time/6,1);
-			rampage_laser.image_xscale = lerp(0.8,0,ft);
+			rampage_laser.image_xscale = lerp(0.9,0,ft);
 		} 
 	}else {
 		rampage_laser = noone;
@@ -139,7 +141,7 @@ if(instance_exists(master)){
 				ring.color = [55,106,154];
 				laser = MakePlayerBullet(x,y,bullet_player_wingman_sentinel_laser);
 				laser.image_angle = 90;
-				laser.image_blend = make_color_rgb(160,220,160);
+				laser.image_blend = c_white;
 				laser.damage = damages[4];
 				array_push(follow_inst,[laser,-sign(0.5-dir)*10*scale_x,-20]);
 				break;

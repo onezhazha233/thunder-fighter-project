@@ -141,8 +141,8 @@ function drone_1_create(){
 			init_drone_base(inst,dir,i,off_x,off_y,base_angle);
 			inst.alarm[1] = 1;
 			drone_1_setup_swing(inst,dir,i);
+			Anim_Create(inst,"depth",0,0,inst.depth,-40,5);
 			array_push(drones_1,inst);
-			Anim_Create(inst,"depth",0,0,inst.depth,-20,5);
 		}
 	}
 }
@@ -173,7 +173,7 @@ function drone_2_create(){
 			var fire_index = (dir == -1 ? (drone_2_number-1-i) : (drone_2_number+i));
 			inst.fire_index = fire_index;
 			inst.alarm[1] = 30+(9*fire_index) mod 45;
-			Anim_Create(inst,"depth",0,0,inst.depth,-20,5);
+			Anim_Create(inst,"depth",0,0,inst.depth,-40,5);
 			array_push(drones_2,inst);
 		}
 	}

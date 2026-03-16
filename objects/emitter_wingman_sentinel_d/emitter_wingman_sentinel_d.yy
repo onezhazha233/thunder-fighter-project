@@ -1,16 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"emitter_plane_overwatcher_a",
+  "%Name":"emitter_wingman_sentinel_d",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":11,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"emitter_plane_overwatcher_a",
+  "name":"emitter_wingman_sentinel_d",
   "overriddenProperties":[],
   "parent":{
-    "name":"overwatcher_zero",
-    "path":"folders/物体/bullet_player/plane/emitter/overwatcher/overwatcher_zero.yy",
+    "name":"sentinel",
+    "path":"folders/物体/bullet_player/wingman/emitter/sentinel.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

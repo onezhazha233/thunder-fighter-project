@@ -20,6 +20,7 @@ if(enabled = true){
 	if(time <= 0)time = 0;
 	if(time mod 5 = 1){
 		blt = MakePlayerBullet(x-sign(0.5-dir)*18*scale_x,y,bullet_player_wingman_sentinel);
+		blt.colors = [[100,200,200],[60,150,40],[80,70,170]];
 		blt.damage = damage;
 	}
 }
@@ -139,7 +140,7 @@ if(instance_exists(master)){
 				ring.color = [55,106,154];
 				laser = MakePlayerBullet(x,y,bullet_player_wingman_sentinel_laser);
 				laser.image_angle = 90;
-				laser.image_blend = make_color_rgb(160,220,160);
+				laser.image_blend = make_color_rgb(50,200,200);
 				laser.damage = damages[4];
 				array_push(follow_inst,[laser,-sign(0.5-dir)*10*scale_x,-20]);
 				break;

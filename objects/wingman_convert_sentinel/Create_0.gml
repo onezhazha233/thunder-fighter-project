@@ -6,4 +6,4 @@ rampage_intro = seq_sentinel_b_rampage_intro
 rampage = seq_sentinel_b_rampage
 rampage_outro = seq_sentinel_b_rampage_outro
 
-bullet_emitter = emitter_player
+bullet_emitter = emitter_wingman_sentinel_b

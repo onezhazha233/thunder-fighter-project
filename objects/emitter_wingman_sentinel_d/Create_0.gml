@@ -8,12 +8,12 @@ time = 0
 
 block_inst = noone
 block_xoffset = 0
-block_yoffset = -16
-block_xoffset_rampage = -4
-block_yoffset_rampage = -8
-block_width = 50
+block_yoffset = -20
+block_xoffset_rampage = -8
+block_yoffset_rampage = -10
+block_width = 70
 block_height = 30
-block_width_rampage = 60
+block_width_rampage = 90
 block_height_rampage = 40
 
 damages = [1.75,1.3,1.59375,1.3333,0.25]
