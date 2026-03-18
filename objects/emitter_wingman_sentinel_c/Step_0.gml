@@ -23,6 +23,10 @@ if(enabled = true){
 		blt.colors = [[150,220,160],[60,150,40],[80,70,120]];
 		blt.damage = damage;
 	}
+	if(pending_laser && !instance_exists(laser)){
+		FireLaser();
+		pending_laser = false;
+	}
 }
 else{
 	time = 0;
@@ -117,6 +121,7 @@ if(is_master){
 				block_count = other.block_count;
 				block_count_cd = other.block_count_cd;
 				block_level = other.block_level;
+				pending_laser = other.pending_laser;
 			}
 		}
 	}
@@ -125,6 +130,7 @@ if(is_master){
 		block_count = master.block_count;
 		block_count_cd = master.block_count_cd;
 		block_level = master.block_level;
+		pending_laser = master.pending_laser;
 	}
 }
 
@@ -141,11 +147,11 @@ if(instance_exists(master)){
 				break;
 			case 2:
 				ring.color = [55,106,154];
-				laser = MakePlayerBullet(x,y,bullet_player_wingman_sentinel_laser);
-				laser.image_angle = 90;
-				laser.image_blend = make_color_rgb(100,150,255);
-				laser.damage = damages[4];
-				array_push(follow_inst,[laser,-sign(0.5-dir)*10*scale_x,-20]);
+				if(enabled = true){
+					FireLaser();
+				} else {
+					pending_laser = true;
+				}
 				break;
 		}
 		array_push(follow_inst,[ring,-10*sign(0.5-dir),-3]);

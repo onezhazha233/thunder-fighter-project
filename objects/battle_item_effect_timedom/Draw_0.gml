@@ -1,23 +1,27 @@
 live;
-rand_angle_offset -= 0.55
-
 var light1_kfs=[{f:18,c:16777215},{f:27,c:4294967295},{f:54,c:16777215}];
 var light2_kfs=[{f:0,c:16777215},{f:9,c:4294967295},{f:25,c:4294967295},{f:54,c:16777215}];
 var ring_white_kfs=[{f:85,c:16777215},{f:96,c:4294967295},{f:110,c:16777215}];
 var ring_blue3_kfs=[{f:0,c:4294967295},{f:42,c:4294967295},{f:60,c:16777215}];
-if(time>=18&&time<=54){
+if(time>=0&&time<=54){
     gpu_set_blendmode(bm_add);
-    var sc=lerp(0,0.66,clamp((time-18)/9,0,1));
-    var ro=lerp(30,-60,(time-18)/36);
-    var al=get_alpha_kf(light1_kfs,time);
+    var sc=0;
+    if(time<=9){sc=lerp(0.3,0.75,Anim_GetValue(ANIM_TWEEN.QUAD, ANIM_EASE.OUT,time/9));}
+    else if(time<=16){sc=lerp(0.75,0.66,Anim_GetValue(ANIM_TWEEN.QUAD, ANIM_EASE.IN_OUT,(time-9)/7));}
+    else{sc=0.66;}
+    var ro=lerp(0,90,time/54)+rand_angle_offset[2];
+    var al=get_alpha_kf(light2_kfs,time);
     draw_sprite_ext(spr_effect_timedom_light,-1,x,y,sc,sc,ro,c_white,al/255);
     gpu_set_blendmode(bm_normal);
 }
-if(time>=0&&time<=54){
+if(time>=18&&time<=54){
     gpu_set_blendmode(bm_add);
-    var sc=lerp(0,0.66,clamp((time-0)/9,0,1));
-    var ro=lerp(0,90,(time-0)/54);
-    var al=get_alpha_kf(light2_kfs,time);
+    var sc=0;
+    if(time<=27){sc=lerp(0.3,0.75,Anim_GetValue(ANIM_TWEEN.QUAD, ANIM_EASE.OUT,(time-18)/9));}
+    else if(time<=34){sc=lerp(0.75,0.66,Anim_GetValue(ANIM_TWEEN.QUAD, ANIM_EASE.IN_OUT,(time-27)/7));}
+    else{sc=0.66;}
+    var ro=lerp(30,-60,(time-18)/36)+rand_angle_offset[1];
+    var al=get_alpha_kf(light1_kfs,time);
     draw_sprite_ext(spr_effect_timedom_light,-1,x,y,sc,sc,ro,c_white,al/255);
     gpu_set_blendmode(bm_normal);
 }
@@ -42,7 +46,7 @@ for(var i=0;i<array_length(ring_parts);i++){
         if(time>=86){
             al=lerp(255,0,clamp((time-86)/10,0,1));
         }
-        var ro=p.r+rand_angle_offset;
+        var ro=p.r+rand_angle_offset[0];
         draw_sprite_ext(spr_effect_timedom_ring_part,-1,x,y,sc,sc,ro,c_white,al/255);
     }
 }

@@ -1,11 +1,12 @@
 live;
-depth = DEPTH_BATTLE.ITEMS
+depth = DEPTH_BATTLE.INSTANCES_UPPER
 
 item = battle_item_weapon_upgrade
+item_duration = 510
 
 time = 0
 
-rand_angle_offset = random(360);
+rand_angle_offset = [random(360),random(360),random(360)];
 ring_parts=[
     {s:49,r:48},
     {s:47,r:24},

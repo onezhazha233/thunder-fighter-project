@@ -78,7 +78,7 @@ wingman_right = [wingman_incandescent_sentinel]//global.current_equipment.wingma
 wingman_x_offset = [130,200]//global.current_equipment.wingman_x_offset
 wingman_y_offset = [0,0]//global.current_equipment.wingman_y_offset
 subweapon = subweapon_daybreak_bolide//global.current_equipment.subweapon
-armor = global.current_equipment.armor
+armor = armor_timedom_d //global.current_equipment.armor
 
 /*for(i=0;i<8;i+=1){
 	wingman_left[i] = plane_aurora_phantom;
@@ -89,7 +89,8 @@ armor = global.current_equipment.armor
 }
 */
 
-for(i=0;i<40;i+=1){
+MakeItem(100,800,battle_item_quantum_shield)
+/*(for(i=0;i<40;i+=1){
 	for(j=0;j<5;j+=1){
 		tb = MakeEnemyBullet(0+i*20,500+j*40,bullet_enemy_red,spr_bullet_enemy_red_0);
 	}

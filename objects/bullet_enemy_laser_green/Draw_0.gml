@@ -17,6 +17,9 @@ if(state >= 2){
 		length = 1500;
 		if(array_length(find) > 0){
 			length = find[0][1];
+			if(time mod 5 = 0){
+				find[0][0].OnBlock();
+			}
 		}
 		draw_surface_general(surf,0,0,sprite_get_width(sprite_laser_start),length,x+lengthdir_x(sprite_get_width(sprite_laser_start)/2,image_angle+90),y+lengthdir_y(sprite_get_width(sprite_laser_start)/2,image_angle+90),1,-1,image_angle-90,-1,-1,-1,-1,image_alpha);
 		if(array_length(find) > 0){

@@ -26,10 +26,19 @@ block_level = 0//0为蓝 1为绿 2为橙
 
 laser = noone
 rampage_laser = noone
+pending_laser = false
 block_event_seen = 0
 block_tick = 0
 block_event_level = 0
 create_index = current_time
+
+FireLaser = function(){
+	laser = MakePlayerBullet(x,y,bullet_player_wingman_sentinel_laser);
+	laser.image_angle = 90;
+	laser.image_blend = make_color_rgb(50,200,200);
+	laser.damage = damages[4];
+	array_push(follow_inst,[laser,-sign(0.5-dir)*10*scale_x,-20]);
+}
 
 SetPosition = function(xx,yy){
 	x = xx;

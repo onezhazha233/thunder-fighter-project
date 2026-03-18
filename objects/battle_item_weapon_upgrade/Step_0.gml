@@ -18,3 +18,18 @@ if(!(instance_exists(battle_ui_victory) && chase == 1)){
 		direction *= -1;
 	}
 }
+
+if(player.equipment.enabled = true)duration -= 1;
+if(duration = 0)instance_destroy();
+
+if(duration > 0&&duration < 116){
+	var cycle_pos = (116 - duration) mod 12;
+
+	if (cycle_pos < 8) {
+	    image_alpha = 1 - cycle_pos / 8;
+	} else {
+	    image_alpha = (cycle_pos - 8) / 4;
+	}
+}
+
+Sequence_PlayByFrame(ll);
