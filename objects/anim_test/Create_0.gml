@@ -1,5 +1,5 @@
 live;
-seq_array = [seq_sentinel_d_rampage_intro,seq_sentinel_d_rampage,seq_sentinel_d_rampage_outro,seq_sentinel_d_idle]
+seq_array = [seq_azurewing_d_rampage_intro,seq_azurewing_d_rampage,seq_sentinel_d_rampage_outro,seq_sentinel_d_idle]
 seq_index = 0
 ll = layer_create(depth)
 seq_instances = array_create(array_length(seq_array), noone);
