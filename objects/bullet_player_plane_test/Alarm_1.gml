@@ -1,2 +1,0 @@
-live;
-instance_destroy()

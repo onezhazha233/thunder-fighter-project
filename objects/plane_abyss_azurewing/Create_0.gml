@@ -10,4 +10,4 @@ rampage_outro = seq_azurewing_d_rampage_intro
 sprite_roll_left = spr_azurewing_d_roll_left
 sprite_roll_flip = true
 
-bullet_emitter = emitter_plane_test
+bullet_emitter = emitter_plane_azurewing
