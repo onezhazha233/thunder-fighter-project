@@ -18,9 +18,6 @@ if(clduration > 0&&enabled == true){
 			cc = 1;
 		}
 	}
-	if(cltime = 40){
-		MakePlayerBullet(x,y,bullet_player_plane_azurewing_vertical);
-	}
 	if(cltime > clduration){
 		cltime = 0;
 		clduration = -1;

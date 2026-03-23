@@ -14,11 +14,8 @@ dir = 0
 scale = 1
 angle = 0
 
-Anim_Create(id,"image_index",0,0,0,4,12)
-Anim_Create(id,"image_index",0,0,4,1,12,2)
-Anim_Create(id,"angle",0,0,30,-60,9)
-Anim_Create(id,"angle",0,0,-30,-10,7,9)
+Anim_Create(id,"image_index",0,0,0,7,7)
 
 image_xscale = 0
 
-duration = 16
+duration = 8
