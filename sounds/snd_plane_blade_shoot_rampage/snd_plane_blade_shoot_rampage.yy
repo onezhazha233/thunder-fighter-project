@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_blade_shoot_idle",
+  "%Name":"snd_plane_blade_shoot_rampage",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.6,
+  "duration":0.96,
   "exportDir":"",
-  "name":"snd_blade_shoot_idle",
+  "name":"snd_plane_blade_shoot_rampage",
   "parent":{
     "name":"sfx",
     "path":"folders/声音/sfx.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_blade_shoot_idle.mp3",
+  "soundFile":"snd_plane_blade_shoot_rampage.mp3",
   "volume":1.0,
 }

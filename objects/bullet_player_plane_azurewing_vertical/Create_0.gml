@@ -5,7 +5,8 @@ collision_type = COLLISION_TYPE.SPRITE
 
 image_xscale = 2
 image_yscale = 1
-vspeed = -22.5
+hspeed = 0
+vspeed = 0
 
 damage = 1
 damage_type = 1
