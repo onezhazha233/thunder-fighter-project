@@ -41,7 +41,7 @@
   "tracks":[
     {"$GMGraphicTrack":"","%Name":"spr_enemy_boss_large_tail","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_large_tail","path":"sprites/spr_enemy_boss_large_tail/spr_enemy_boss_large_tail.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_large_1_tail","path":"sprites/spr_enemy_boss_large_1_tail/spr_enemy_boss_large_1_tail.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
             },"Disabled":false,"id":"aed88581-0636-4f70-be54-7dc4e2d65789","IsCreationKey":false,"Key":0.0,"Length":53.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_large_tail","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4282970718,"tracks":[
         {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
@@ -70,7 +70,7 @@
       ],"traits":0,},
     {"$GMGraphicTrack":"","%Name":"spr_enemy_boss_large_tail","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_large_tail","path":"sprites/spr_enemy_boss_large_tail/spr_enemy_boss_large_tail.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_large_1_tail","path":"sprites/spr_enemy_boss_large_1_tail/spr_enemy_boss_large_1_tail.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
             },"Disabled":false,"id":"d2e21b06-c56c-4df1-b043-47f7fffaa827","IsCreationKey":false,"Key":0.0,"Length":53.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_large_tail","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4282970718,"tracks":[
         {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
