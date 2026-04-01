@@ -72,7 +72,7 @@ function get_random_child(base) {
 xscale = 1
 yscale = 1
 //plane = plane_assault_zero
-plane = plane_abyss_azurewing //global.current_equipment.plane
+plane = plane_starriver_overwatcher //global.current_equipment.plane
 wingman_left = []//global.current_equipment.wingman_left
 wingman_right = []//global.current_equipment.wingman_right
 wingman_x_offset = [130,200]//global.current_equipment.wingman_x_offset

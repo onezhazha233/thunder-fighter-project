@@ -6,10 +6,10 @@ mask_index = spr_enemy_boss_large_og0_base
 
 idle_mode = IDLE_MODE.SEQUENCE
 
-pre_sequence = seq_enemy_boss_large_og0_p1_intro
-intro_sequence = seq_enemy_boss_large_og0_p1_intro
-idle_sequence = seq_enemy_boss_large_og0_p1_idle
-flame_lower = seq_enemy_boss_large_og0_p1_flame
+pre_sequence = seq_enemy_boss_large_og0_p2_intro
+intro_sequence = seq_enemy_boss_large_og0_p2_intro
+idle_sequence = seq_enemy_boss_large_og0_p2_idle
+flame_lower = seq_enemy_boss_large_og0_p2_flame
 
 explosion = effect_explosion_boss
 
@@ -26,7 +26,7 @@ y = -500
 battle_ui.boss_hpbar_enabled = true
 battle_wave.enabled = false
 
-bullet_emitter = emitter_boss_dark_assault_p1
+bullet_emitter = emitter_boss_dark_assault_p2
 
 intro_move_started = false
 intro_move_done = false
@@ -42,4 +42,4 @@ move_interval = [0,5]
 move_state = 0//0为静止 1为移动中
 move_targetpos = [x,y]
 
-items = [[[battle_item_quantum_shield,battle_item_weapon_upgrade],1]]
+items = []

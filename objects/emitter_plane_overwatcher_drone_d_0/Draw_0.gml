@@ -44,11 +44,13 @@ var light_a_y = y + lengthdir_y(light_a_off,image_angle-90);
 var light_b_x = x + lengthdir_x(light_b_off,image_angle-90);
 var light_b_y = y + lengthdir_y(light_b_off,image_angle-90);
 
-
+gpu_set_blendmode(bm_add);
 for(var i = 0; i < array_length(flame_list); i++){
 	var f = flame_list[i];
 	draw_sprite_ext(spr_bullet_player_overwatcher_drone_flame,0,x+f.ox,y+f.oy,f.scale*scale_x,f.scale*scale_y,image_angle,c_white,f.alpha);
 }
+gpu_set_blendmode(bm_normal);
+
 draw_self();
 
 gpu_set_blendmode(bm_add);
@@ -58,5 +60,5 @@ if(light_a_alpha > 0){
 if(light_b_alpha > 0){
 	draw_sprite_ext(spr_bullet_player_overwatcher_d_drone_0_light,0,light_b_x,light_b_y,scale_x,scale_y,image_angle,c_white,image_alpha*light_b_alpha);
 }
-gpu_set_blendmode(bm_normal);
 
+gpu_set_blendmode(bm_normal);
