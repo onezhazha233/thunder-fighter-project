@@ -5,8 +5,19 @@ function find_priority_enemy(obj) {
     // Create a priority queue to store instances sorted by priority
     var pq = ds_priority_create();
     
+    // Prefer any non-blockbullet enemies if present
+    var has_non_blockbullet = false;
+    with (enemy_agent) {
+        if (object_index != enemy_blockbullet) {
+            has_non_blockbullet = true;
+        }
+    }
+
     // Find all enemy_agent instances
     with (enemy_agent) {
+        if (has_non_blockbullet && object_index == enemy_blockbullet) {
+            continue;
+        }
         var dist = point_distance(x, y, other.x, other.y); // Calculate distance to caller's position
         var priority = dist; // Base priority is distance
         
