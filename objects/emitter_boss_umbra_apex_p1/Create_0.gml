@@ -6,7 +6,7 @@ loop = false
 
 rdm_attack = 0
 rdm_attack_time = -1
-rdm_attack_duration = [50,50,50,210,120,180,50]
+rdm_attack_duration = [60,60,50,210,120,180,120]
 last_attack = -1
 
 attack_list = ds_list_create()
@@ -52,13 +52,29 @@ function run_attack(attack){
 	}
 }
 
-function attack_0(attack,exarg=0){//四向散射 40
-	if(attack.time < 40&&attack.time mod 6 = 1){
-		for(i=0;i<4;i+=1){
-			for(j=0;j<3;j+=1){
-				blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkpurple_0);
-				blt.direction = i*90+45+j*5+time*10;
-				blt.speed = 15-j;
+function attack_0(attack,exarg=0){//三四五六向散射狙 40
+	if(attack.time < 40&&attack.time mod 12 = 1){
+		num = attack.time div 12+3;
+		for(j=0;j<num;j+=1){
+			pd = -90;
+			if(Player_IsEnabled()){
+				pd = point_direction(x,y,player.x,player.y);
+			}
+			dd = 360/num*j+pd;
+			for(i=0;i<4;i+=1){
+				if(i = 0){
+					blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkpurple_0);
+					blt.direction = 0+dd;
+					blt.speed = 12;
+				}
+				else{
+					blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkpurple_0);
+					blt.direction = i*3+dd;
+					blt.speed = 12-i/2;
+					blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkpurple_0);
+					blt.direction = -i*3+dd;
+					blt.speed = 12-i/2;
+				}
 			}
 		}
 	}
@@ -67,9 +83,9 @@ function attack_0(attack,exarg=0){//四向散射 40
 	}
 }
 
-function attack_1(attack,exarg=0){//延迟散射 40
+function attack_1(attack,exarg=0){//延迟狙 40
 	if(attack.time >= 1&&attack.time <= 31&&attack.time mod 5 = 1){
-		var dir = 90;
+		var dir = -90;
 		if(Player_IsEnabled()){
 			dir = point_direction(x,y,player.x,player.y);
 		}
@@ -84,11 +100,17 @@ function attack_1(attack,exarg=0){//延迟散射 40
 		with(blt){
 			custom_function = function(){
 				if(duration = 1){
-					for(var i=0;i<6;i+=1){
+					for(var i=0;i<10;i+=1){
 						var s = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkpurple_0);
 						s.mark = other.mark;
-						s.direction = i*60+ii*10;
-						s.speed = 10;
+						dd = -90;
+						if(Player_IsEnabled())dd = point_direction(x,y,player.x,player.y);
+						td = 200;
+						if(Player_IsEnabled())td = point_distance(x,y,player.x,player.y);
+						Anim_Create(s,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,x,lengthdir_x(max(td/10,30)*(i+1),dd),30);
+						Anim_Create(s,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,y,lengthdir_y(max(td/10,30)*(i+1),dd),30);
+						s.direction = dd;
+						Anim_Create(s,"speed",0,0,0,10+i,20,50);
 					}
 				}
 			}
@@ -99,18 +121,29 @@ function attack_1(attack,exarg=0){//延迟散射 40
 	}
 }
 
-function attack_2(attack,exarg=0){//连射狙 40
+function attack_2(attack,exarg=0){//连射斜线狙 40
 	if(attack.time = 1){
 		mark.SetMoveEnabled(false);
 	}
-	if(attack.time >= 1&&attack.time <= 31&&attack.time mod 5 = 1){
-		var dir = 90;
+	if(attack.time >= 1&&attack.time <= 31&&attack.time mod 10 = 1){
+		var dir = -90;
 		if(Player_IsEnabled()){
 			dir = point_direction(x,y,player.x,player.y);
 		}
-		var blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkpurple_0);
-		blt.direction = dir;
-		blt.speed = 15;
+		if((attack.time div 10) mod 2 = 0){
+			for(i=0;i<5;i+=1){
+				var blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkpurple_0);
+				blt.direction = dir+i*3;
+				blt.speed = 13-i;
+			}
+		}
+		else{
+			for(i=0;i<5;i+=1){
+				var blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkpurple_0);
+				blt.direction = dir-i*3;
+				blt.speed = 13-i;
+			}
+		}
 	}
 	if(attack.time = 40){
 		mark.SetMoveEnabled(true);
@@ -187,21 +220,71 @@ function attack_5(attack,exarg=0){//机关炮 50
 	}
 }
 
-function attack_6(attack,exarg=0){//中心散射 40
+function attack_6(attack,exarg=0){//等边三角散射 90
 	if(attack.time = 1){
 		mark.SetMoveEnabled(false);
 	}
 	if(attack.time = 20){
-		for(i=0;i<12;i+=1){
-			for(j=0;j<3;j+=1){
-				blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkpurple_0);
-				blt.direction = 30*i;
-				blt.speed = 18-j;
-				Anim_Create(blt,"speed",0,0,18-j,-5-j,0,10);
-			}
+		for (var i = 0; i < 12; i += 1){
+		    var t = i / 11;
+		    var px = lerp(0, 0.8660254, t);
+		    var py = lerp(-1, 0.5, t);
+		    blt = MakeEnemyBullet(x, y, bullet_enemy_red, spr_bullet_enemy_darkpurple_0);
+		    blt.direction = point_direction(0, 0, px, py)+180;
+			Anim_Create(blt,"speed",0,0,blt.speed,point_distance(0,0,px,py)*18,60);
+		    px = lerp(0.8660254, -0.8660254, t);
+		    py = lerp(0.5, 0.5, t);
+		    blt = MakeEnemyBullet(x, y, bullet_enemy_red, spr_bullet_enemy_darkpurple_0);
+		    blt.direction = point_direction(0, 0, px, py)+180;
+			Anim_Create(blt,"speed",0,0,blt.speed,point_distance(0,0,px,py)*18,60);
+		    px = lerp(-0.8660254, 0, t);
+		    py = lerp(0.5, -1, t);
+		    blt = MakeEnemyBullet(x, y, bullet_enemy_red, spr_bullet_enemy_darkpurple_0);
+		    blt.direction = point_direction(0, 0, px, py)+180;
+			Anim_Create(blt,"speed",0,0,blt.speed,point_distance(0,0,px,py)*18,60);
 		}
 	}
 	if(attack.time = 40){
+		for (var i = 0; i < 12; i += 1){
+		    var t = i / 11;
+		    var px = lerp(0, 0.8660254, t);
+		    var py = lerp(-1, 0.5, t);
+		    blt = MakeEnemyBullet(x, y, bullet_enemy_red, spr_bullet_enemy_darkpurple_0);
+		    blt.direction = point_direction(0, 0, px, py);
+		    Anim_Create(blt,"speed",0,0,blt.speed,point_distance(0,0,px,py)*15,60);
+		    px = lerp(0.8660254, -0.8660254, t);
+		    py = lerp(0.5, 0.5, t);
+		    blt = MakeEnemyBullet(x, y, bullet_enemy_red, spr_bullet_enemy_darkpurple_0);
+		    blt.direction = point_direction(0, 0, px, py);
+		    Anim_Create(blt,"speed",0,0,blt.speed,point_distance(0,0,px,py)*15,60);
+		    px = lerp(-0.8660254, 0, t);
+		    py = lerp(0.5, -1, t);
+		    blt = MakeEnemyBullet(x, y, bullet_enemy_red, spr_bullet_enemy_darkpurple_0);
+		    blt.direction = point_direction(0, 0, px, py);
+		    Anim_Create(blt,"speed",0,0,blt.speed,point_distance(0,0,px,py)*15,60);
+		}
+	}
+	if(attack.time = 60){
+		for (var i = 0; i < 12; i += 1){
+		    var t = i / 11;
+		    var px = lerp(0, 0.8660254, t);
+		    var py = lerp(-1, 0.5, t);
+		    blt = MakeEnemyBullet(x, y, bullet_enemy_red, spr_bullet_enemy_darkpurple_0);
+		    blt.direction = point_direction(0, 0, px, py)+180;
+		    Anim_Create(blt,"speed",0,0,blt.speed,point_distance(0,0,px,py)*12,60);
+		    px = lerp(0.8660254, -0.8660254, t);
+		    py = lerp(0.5, 0.5, t);
+		    blt = MakeEnemyBullet(x, y, bullet_enemy_red, spr_bullet_enemy_darkpurple_0);
+		    blt.direction = point_direction(0, 0, px, py)+180;
+		    Anim_Create(blt,"speed",0,0,blt.speed,point_distance(0,0,px,py)*12,60);
+		    px = lerp(-0.8660254, 0, t);
+		    py = lerp(0.5, -1, t);
+		    blt = MakeEnemyBullet(x, y, bullet_enemy_red, spr_bullet_enemy_darkpurple_0);
+		    blt.direction = point_direction(0, 0, px, py)+180;
+		    Anim_Create(blt,"speed",0,0,blt.speed,point_distance(0,0,px,py)*12,60);
+		}
+	}
+	if(attack.time = 90){
 		mark.SetMoveEnabled(true);
 		attack.End();
 	}

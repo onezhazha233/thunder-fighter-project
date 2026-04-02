@@ -19,7 +19,7 @@ if(!(instance_exists(battle_ui_victory) && chase == 1)){
 	}
 }
 
-if(player.equipment.enabled = true)duration -= 1;
+if(Player_IsEnabled())if(player.equipment.enabled = true)duration -= 1;
 if(duration = 0)instance_destroy();
 
 if(duration > 0&&duration < 116){

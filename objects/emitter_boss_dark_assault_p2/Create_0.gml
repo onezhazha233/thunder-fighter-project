@@ -6,7 +6,7 @@ loop = false
 
 rdm_attack = 0
 rdm_attack_time = -1
-rdm_attack_duration = [80,80,60,220,160,250,150,350,430]
+rdm_attack_duration = [90,90,60,250,160,250,150,350,430]
 last_attack = -1
 
 attack_list = ds_list_create()
@@ -237,22 +237,22 @@ function attack_5(attack,exarg=0){//机关炮 50
 		mark.move_range[3] -= 500;
 	}
 	if(attack.time = 20){
-		sc0 = MakeEnemyBullet(x-130,y,bullet_enemy_dark_assault_shotcannon);
+		sc0 = MakeEnemyBullet(x-100,y,bullet_enemy_dark_assault_shotcannon);
 		sc0.duration = 120;
 		sc0.interval = 10;
-		sc1 = MakeEnemyBullet(x+130,y,bullet_enemy_dark_assault_shotcannon);
+		sc1 = MakeEnemyBullet(x+100,y,bullet_enemy_dark_assault_shotcannon);
 		sc1.duration = 115;
 		sc1.interval = 10;
 		sc1.delay = 5;
 	}
 	if(attack.time = 50){
 		if(x < room_width/2){
-			sc0.hspeed = 1.5;
-			sc1.hspeed = 1.5;
+			sc0.hspeed = 1.8;
+			sc1.hspeed = 1.8;
 		}
 		else{
-			sc0.hspeed = -1.5;
-			sc1.hspeed = -1.5;
+			sc0.hspeed = -1.8;
+			sc1.hspeed = -1.8;
 		}
 		mark.move_range[3] += 500;
 		attack.End();

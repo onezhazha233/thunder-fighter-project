@@ -7,6 +7,8 @@ if(keyboard_check_pressed(vk_f2)){
 	game_restart();
 }
 
+if(keyboard_check_pressed(vk_tab))debug_display = !debug_display;
+
 if(keyboard_check_pressed(vk_f3)){
 	if(game_get_speed(gamespeed_fps) = 60){
 		game_set_speed(10,gamespeed_fps);
