@@ -6,7 +6,7 @@ loop = false
 
 rdm_attack = 0
 rdm_attack_time = -1
-rdm_attack_duration = [60,60,50,210,120,180,120]
+rdm_attack_duration = [60,60,50,210,120,180,150]
 last_attack = -1
 
 attack_list = ds_list_create()

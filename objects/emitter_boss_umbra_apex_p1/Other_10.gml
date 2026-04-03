@@ -40,27 +40,13 @@ if (time >= 520){
         rdm_attack_time = rdm_attack_duration[rdm_attack];
         
         switch (rdm_attack){
-            case 0:
-                start_attack(0);
-                break;
-            case 1:
-                start_attack(1);
-                break;
-            case 2:
-                start_attack(2);
-                break;
-            case 3:
-                start_attack(3);
-                break;
-            case 4:
-                start_attack(4);
-                break;
-            case 5:
-                start_attack(5);
-                break;
-            case 6:
-                start_attack(6);
-                break;
+            case 0: start_attack(0);break;
+            case 1: start_attack(1);break;
+            case 2: start_attack(2);break;
+            case 3: start_attack(3);break;
+            case 4: start_attack(4);break;
+            case 5: start_attack(5);break;
+            case 6: start_attack(6);break;
         }
     }
 }
