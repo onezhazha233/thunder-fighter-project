@@ -12,7 +12,7 @@ if(inv_collision = false){
 	if(global.inv_cutscene = 0){
 		if(place_meeting(x,y,player)){
 			if(global.inv_hurt = 0&&global.inv_shield = 0){
-				event_user(0);
+				event_user(1);
 				Player_CallHurtEvent();
 				if(collision_destroy = true){
 					destroy_type = 2;
@@ -44,7 +44,7 @@ if(duration = 0){
 if(Player_IsEnabled()){
 	if(global.inv_hurt = 0&&global.inv_shield = 0&&global.inv_cutscene = 0){
 		if(place_meeting(x,y,player)){
-			event_user(0);
+			event_user(1);
 			Player_CallHurtEvent();
 			if(collision_destroy = true){
 				destroy_type = 2;

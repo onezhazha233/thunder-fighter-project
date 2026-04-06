@@ -6,7 +6,7 @@ loop = false
 
 rdm_attack = 0
 rdm_attack_time = -1
-rdm_attack_duration = [60,60,50,210,120,180,150]
+rdm_attack_duration = [60,100,50,210,120,180,150]
 last_attack = -1
 
 attack_list = ds_list_create()
@@ -83,7 +83,7 @@ function attack_0(attack,exarg=0){//三四五六向散射狙 40
 	}
 }
 
-function attack_1(attack,exarg=0){//延迟狙 40
+function attack_1(attack,exarg=0){//延迟狙 90
 	if(attack.time >= 1&&attack.time <= 31&&attack.time mod 5 = 1){
 		var dir = -90;
 		if(Player_IsEnabled()){
@@ -116,7 +116,7 @@ function attack_1(attack,exarg=0){//延迟狙 40
 			}
 		}
 	}
-	if(attack.time = 40){
+	if(attack.time = 90){
 		attack.End();
 	}
 }
@@ -200,21 +200,19 @@ function attack_4(attack,exarg=0){//激光 80
 	}
 }
 
-function attack_5(attack,exarg=0){//机关炮 50
+function attack_5(attack,exarg=0){//米加 90
 	if(attack.time = 1){
 		mark.move_range[3] -= 500;
 	}
-	if(attack.time = 20){
-		sc = MakeEnemyBullet(x,y,bullet_enemy_dark_assault_shotcannon);
-		sc.duration = 120;
+	if(attack.time mod 20 = 1){
+		rl = random_range(60,200);
+		ra = random(360);
+		xx = clamp(player.x + lengthdir_x(rl,ra),10,710);
+		yy = clamp(player.y + lengthdir_y(rl,ra),10,1270);
+		mg = MakeEnemyBullet(xx,yy,bullet_enemy_umbra_apex_mega);
+		mg.image_angle = point_direction(xx,yy,player.x,player.y);
 	}
-	if(attack.time = 50){
-		if(sc.x < room_width/2){
-			sc.hspeed = 2;
-		}
-		else{
-			sc.hspeed = -2;
-		}
+	if(attack.time = 90){
 		mark.move_range[3] += 500;
 		attack.End();
 	}

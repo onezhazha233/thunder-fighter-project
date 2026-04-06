@@ -15,7 +15,7 @@ explosion = effect_explosion_boss
 
 bgm = bgm_boss_large
 
-hp_max = 7
+hp_max = 500
 hp = 1
 
 Anim_Create(id,"hp",0,0,hp,hp_max-hp,40)
@@ -36,9 +36,9 @@ move_enabled = true
 move_range = [150,150,570,1000]
 move_starttime = 0
 move_nexttime = 0
-move_distance = [200,600]
+move_distance = [200,500]
 move_duration = [20,30]
-move_interval = [0,5]
+move_interval = [5,10]
 move_state = 0//0为静止 1为移动中
 move_targetpos = [x,y]
 

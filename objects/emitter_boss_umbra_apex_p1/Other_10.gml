@@ -23,7 +23,7 @@ if(time = 400){
     start_attack(4);
     last_attack = 2;
 }
-if (time >= 520){
+if(time >= 520){
     rdm_attack_time -= 1;
     if (rdm_attack_time <= 0){
         var _count = array_length(rdm_attack_duration);
