@@ -1,5 +1,6 @@
 live;
 Anim_Step()
+global._gmu_anim_step_done = true;
 
 BGM_Step()
 

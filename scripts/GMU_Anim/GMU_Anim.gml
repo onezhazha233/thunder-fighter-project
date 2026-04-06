@@ -581,6 +581,30 @@ function Anim_Step() {
 
         if (_anim.delay > 0) { _anim.delay--; continue; }
 
+        if (_anim.duration <= 0) {
+            if (_anim.var_name == "__PATH__") {
+                var _final_pos = _anim.path_data.end_point;
+                _anim.target.x = _final_pos[0];
+                _anim.target.y = _final_pos[1];
+            } else {
+                var _final_value = _anim.start + _anim.change;
+                if (_anim.target == global) {
+                    variable_global_set(_anim.var_name, _final_value);
+                } else if (is_struct(_anim.target)) {
+                    variable_struct_set(_anim.target, _anim.var_name, _final_value);
+                } else {
+                    variable_instance_set(_anim.target, _anim.var_name, _final_value);
+                }
+            }
+
+            var _cb0 = _anim.on_complete;
+            array_delete(_anims, i, 1);
+            if (!is_undefined(_cb0)) {
+                method(_anim.target, _cb0)();
+            }
+            continue;
+        }
+
         _anim.time++;
         var _progress = min(_anim.time / _anim.duration, 1);
         

@@ -6,7 +6,7 @@ loop = false
 
 rdm_attack = 0
 rdm_attack_time = -1
-rdm_attack_duration = [90,90,60,250,160,250,150,350,430]
+rdm_attack_duration = [90,120,60,250,160,250,150,350,430]
 last_attack = -1
 
 attack_list = ds_list_create()
@@ -73,8 +73,8 @@ function attack_0(attack,exarg=0){//六向散射 60
 	}
 }
 
-function attack_1(attack,exarg=0){//延迟散射 60
-	if(attack.time = 1||attack.time = 20||attack.time = 40||attack.time = 60){
+function attack_1(attack,exarg=0){//延迟散射 120
+	if(attack.time = 1||attack.time = 30||attack.time = 60){
 		var dir = 90;
 		if(Player_IsEnabled()){
 			dir = point_direction(x,y,player.x,player.y);
@@ -133,7 +133,7 @@ function attack_1(attack,exarg=0){//延迟散射 60
 			}
 		}
 	}
-	if(attack.time = 60){
+	if(attack.time = 120){
 		attack.End();
 	}
 }
@@ -162,7 +162,7 @@ function attack_2(attack,exarg=0){//连射扇形狙 40
 function attack_3(attack,exarg=0){//机炮加机关炮 210
 	if(attack.time = 1){
 		mark.move_range[3] -= 500;
-		mark.SetSequence(seq_enemy_boss_large_15_p1_attack_intro);
+		mark.SetSequence(seq_enemy_boss_large_15_p2_attack_intro);
 		dd = choose(0,1);
 		sc = noone;
 		if(dd = 0){
@@ -188,7 +188,7 @@ function attack_3(attack,exarg=0){//机炮加机关炮 210
 		}
 	}
 	if(attack.time = 60){
-		mark.SetSequence(seq_enemy_boss_large_15_p1_attack);
+		mark.SetSequence(seq_enemy_boss_large_15_p2_attack);
 	}
 	if(attack.time > 60 && attack.time < 180){
 		if(attack.time mod 4 = 0){
@@ -307,7 +307,7 @@ function attack_6(attack,exarg=0){//中心散射加狙 40
 function attack_7(attack,exarg=0){//导弹 180
 	if(attack.time = 1){
 		aa = 0;
-		mark.SetSequence(seq_enemy_boss_large_15_p1_attack_intro);
+		mark.SetSequence(seq_enemy_boss_large_15_p2_attack_intro);
 	}
 	if(attack.time > 60&&attack.time mod 30 = 1&&attack.time < 180){
 		aa = !aa;
@@ -327,7 +327,9 @@ function attack_7(attack,exarg=0){//导弹 180
 				custom_function = function(){
 					age += 1;
 					if(age <= track_time && Player_IsEnabled()){
-						direction += (point_direction(x,y,player.x,player.y) - direction)/10;
+						//direction += (point_direction(x,y,player.x,player.y) - direction)/10;
+						target_angle = point_direction(x,y,player.x,player.y);
+						direction += angle_difference(target_angle,direction)/10;
 						image_angle = direction - 90;
 					}
 					if(age >= track_time){
@@ -355,7 +357,7 @@ function attack_8(attack,exarg=0){//散射导弹 400
 	
 	if(attack.time = 1){
 		mark.SetMoveEnabled(false);
-		mark.SetSequence(seq_enemy_boss_large_15_p1_attack_intro);
+		mark.SetSequence(seq_enemy_boss_large_15_p2_attack_intro);
 		var tx = room_width/2;
 		var ty = room_height*0.2;
 		Anim_Destroy(mark,"x");

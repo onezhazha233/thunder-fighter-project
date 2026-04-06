@@ -1,7 +1,7 @@
 live;
 if(Player_IsEnabled()){
 	if(player.equipment.enabled = true){
-		duration -= 1;
+		if(duration > 0)duration -= 1;
 		if(duration < 70){
 			fade = 1;
 		}
@@ -9,11 +9,17 @@ if(Player_IsEnabled()){
 			fade = 0;
 		}
 	}
+	else{
+		if(duration < 0)duration -= 1;
+	}
 	if(duration <= 0){
 		destroy_time += 1;
 		if(destroy_time = 1){
-			layer_sequence_destroy(shield_sequence);
 			layer_sequence_create(global.layer_item_effects,x,y,seq_battle_quantum_shield_fade);
+			layer_sequence_destroy(shield_sequence);
+		}
+		if(destroy_time = 2){
+			layer_sequence_destroy(shield_sequence);
 		}
 		if(destroy_time > 0){
 			with(bullet_enemy){

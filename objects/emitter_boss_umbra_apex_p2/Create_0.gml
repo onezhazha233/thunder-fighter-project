@@ -327,7 +327,9 @@ function attack_7(attack,exarg=0){//导弹 180
 				custom_function = function(){
 					age += 1;
 					if(age <= track_time && Player_IsEnabled()){
-						direction += (point_direction(x,y,player.x,player.y) - direction)/10;
+						//direction += (point_direction(x,y,player.x,player.y) - direction)/10;
+						target_angle = point_direction(x,y,player.x,player.y);
+						direction += angle_difference(target_angle,direction);
 						image_angle = direction - 90;
 					}
 					if(age >= track_time){
