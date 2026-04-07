@@ -8,3 +8,5 @@ damage = 1.5
 inv_damage = true
 inv_block = true
 collision_destroy = false
+
+bullet_sequence = -1

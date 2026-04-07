@@ -21,11 +21,10 @@ if(time = 270){
 }
 if(time = 400){
     start_attack(6);
-    last_attack = 2;
 }
-if(time = 550){
+if(time = 560){
     start_attack(4);
-    last_attack = 2;
+    last_attack = 4;
 }
 if(time >= 670){
     rdm_attack_time -= 1;

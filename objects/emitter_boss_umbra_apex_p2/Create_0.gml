@@ -6,7 +6,7 @@ loop = false
 
 rdm_attack = 0
 rdm_attack_time = -1
-rdm_attack_duration = [90,90,60,250,160,250,150,350,430]
+rdm_attack_duration = [140,90,120,250,160,250,120,240,430]
 last_attack = -1
 
 attack_list = ds_list_create()
@@ -54,20 +54,79 @@ function run_attack(attack){
 	}
 }
 
-function attack_0(attack,exarg=0){//六向散射 60
+function attack_0(attack,exarg=0){//六向散射 120
 	if(attack.time = 1){
 		mark.SetMoveEnabled(false);
 	}
-	if(attack.time < 60&&attack.time mod 8 = 1){
+	if(attack.time = 2){
+		dd = 0;
+		Anim_Create(id,"dd",0,0,-1,10,9);
+		Anim_Create(id,"dd",ANIM_TWEEN.QUAD,ANIM_EASE.IN,9,-9,9,9);
+	}
+	if(attack.time >= 2&&attack.time < 22&&attack.time mod 3 = 0){
 		for(i=0;i<6;i+=1){
-			for(j=0;j<4;j+=1){
-				blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkred_0);
-				blt.direction = i*60+45+j*5+time*5;
-				blt.speed = 15-j;
-			}
+			blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkpurple_0);
+			blt.direction = dd+60*i+90;
+			Anim_Create(blt,"direction",0,0,blt.direction,-dd,20,20);
+			Anim_Create(blt,"speed",0,0,0,13,6);
+			blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkpurple_0);
+			blt.direction = -dd+60*i+90;
+			Anim_Create(blt,"direction",0,0,blt.direction,dd,20,20);
+			Anim_Create(blt,"speed",0,0,0,13,6);
 		}
 	}
-	if(attack.time = 60){
+	if(attack.time = 2+18){
+		dd = 0;
+		Anim_Create(id,"dd",0,0,-1,10,9);
+		Anim_Create(id,"dd",ANIM_TWEEN.QUAD,ANIM_EASE.IN,9,-9,9,9);
+	}
+	if(attack.time >= 2+18&&attack.time < 22+18&&attack.time mod 3 = 0){
+		for(i=0;i<6;i+=1){
+			blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkpurple_0);
+			blt.direction = dd+60*i+70;
+			Anim_Create(blt,"direction",0,0,blt.direction,-dd,20,20);
+			Anim_Create(blt,"speed",0,0,0,14,6);
+			blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkpurple_0);
+			blt.direction = -dd+60*i+70;
+			Anim_Create(blt,"direction",0,0,blt.direction,dd,20,20);
+			Anim_Create(blt,"speed",0,0,0,14,6);
+		}
+	}
+	if(attack.time = 2+36){
+		dd = 0;
+		Anim_Create(id,"dd",0,0,-1,10,9);
+		Anim_Create(id,"dd",ANIM_TWEEN.QUAD,ANIM_EASE.IN,9,-9,9,9);
+	}
+	if(attack.time >= 2+36&&attack.time < 22+36&&attack.time mod 3 = 0){
+		for(i=0;i<6;i+=1){
+			blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkpurple_0);
+			blt.direction = dd+60*i+50;
+			Anim_Create(blt,"direction",0,0,blt.direction,-dd,20,20);
+			Anim_Create(blt,"speed",0,0,0,15,6);
+			blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkpurple_0);
+			blt.direction = -dd+60*i+50;
+			Anim_Create(blt,"direction",0,0,blt.direction,dd,20,20);
+			Anim_Create(blt,"speed",0,0,0,15,6);
+		}
+	}
+	if(attack.time = 2+54){
+		dd = 0;
+		Anim_Create(id,"dd",0,0,-1,10,9);
+		Anim_Create(id,"dd",ANIM_TWEEN.QUAD,ANIM_EASE.IN,9,-9,9,9);
+	}
+	if(attack.time >= 2+54&&attack.time < 22+54&&attack.time mod 3 = 0){
+		for(i=0;i<6;i+=1){
+			blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkpurple_0);
+			blt.direction = dd+60*i+30;
+			Anim_Create(blt,"direction",0,0,blt.direction,-dd,20,20);
+			Anim_Create(blt,"speed",0,0,0,16,6);
+			blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkpurple_0);
+			blt.direction = -dd+60*i+30;
+			Anim_Create(blt,"direction",0,0,blt.direction,dd,20,20);
+			Anim_Create(blt,"speed",0,0,0,16,6);
+		}
+	}
+	if(attack.time = 90){
 		mark.SetMoveEnabled(true);
 		attack.End();
 	}
@@ -79,11 +138,11 @@ function attack_1(attack,exarg=0){//延迟散射 60
 		if(Player_IsEnabled()){
 			dir = point_direction(x,y,player.x,player.y);
 		}
-		for(var k=0;k<3;k+=1){
-			var a = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkred_0);
+		for(var k=0;k<4;k+=1){
+			var a = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkpurple_0);
 			a.image_xscale = 2;
 			a.image_yscale = 2;
-			a.direction = dir + k*120;
+			a.direction = dir + k*90;
 			a.image_angle = a.direction;
 			a.speed = 3;
 			a.duration = -1;
@@ -95,11 +154,11 @@ function attack_1(attack,exarg=0){//延迟散射 60
 					age += 1;
 					if(age >= 30){
 						if((age-30) mod 5 = 0 && burst_count < 3){
-							for(var i=0;i<3;i+=1){
-								var s = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkred_0);
+							for(var i=0;i<2;i+=1){
+								var s = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkpurple_0);
 								s.image_xscale = 1;
 								s.image_yscale = 1;
-								s.direction = fire_dir + (i-1)*30;
+								s.direction = fire_dir + (i-0.5)*20;
 								s.image_angle = s.direction;
 								s.speed = 12;
 								s.bounced = false;
@@ -138,7 +197,7 @@ function attack_1(attack,exarg=0){//延迟散射 60
 	}
 }
 
-function attack_2(attack,exarg=0){//连射扇形狙 40
+function attack_2(attack,exarg=0){//连射扫射扇形狙 90
 	if(attack.time = 1){
 		mark.SetMoveEnabled(false);
 		dir = -90;
@@ -146,14 +205,29 @@ function attack_2(attack,exarg=0){//连射扇形狙 40
 			dir = point_direction(x,y,player.x,player.y);
 		}
 	}
-	if(attack.time >= 1&&attack.time <= 31&&attack.time mod 5 = 1){
-		for(i=0;i<9;i+=1){
-			var blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkred_0);
-			blt.direction = dir-90+i*20;
-			blt.speed = 15;
+	if(attack.time >= 1&&attack.time <= 21&&attack.time mod 4 = 1){
+		for(i=0;i<10;i+=1){
+			var blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkpurple_0);
+			blt.direction = dir-90+i*20+30-((attack.time-1) div 4)*10;
+			Anim_Create(blt,"speed",0,0,10,-8,20);
+			Anim_Create(blt,"speed",0,0,2,15,30,30);
 		}
 	}
-	if(attack.time = 40){
+	if(attack.time = 30){
+		dir = -90;
+		if(Player_IsEnabled()){
+			dir = point_direction(x,y,player.x,player.y);
+		}
+	}
+	if(attack.time >= 30&&attack.time <= 51&&attack.time mod 4 = 1){
+		for(i=0;i<10;i+=1){
+			var blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkpurple_0);
+			blt.direction = dir-90+i*20-30+((attack.time-30) div 4)*10;
+			Anim_Create(blt,"speed",0,0,10,-8,20);
+			Anim_Create(blt,"speed",0,0,2,15,30,30);
+		}
+	}
+	if(attack.time = 60){
 		mark.SetMoveEnabled(true);
 		attack.End();
 	}
@@ -162,37 +236,37 @@ function attack_2(attack,exarg=0){//连射扇形狙 40
 function attack_3(attack,exarg=0){//机炮加机关炮 210
 	if(attack.time = 1){
 		mark.move_range[3] -= 500;
-		mark.SetSequence(seq_enemy_boss_large_15_p1_attack_intro);
+		mark.SetSequence(seq_enemy_boss_large_og0_p2_attack_intro);
 		dd = choose(0,1);
-		sc = noone;
+		mg = noone;
 		if(dd = 0){
-			sc = MakeEnemyBullet(x+130,y,bullet_enemy_dark_assault_shotcannon);
+			mg = MakeEnemyBullet(x+130,y,bullet_enemy_umbra_apex_mega);
 		}
 		else{
-			sc = MakeEnemyBullet(x-130,y,bullet_enemy_dark_assault_shotcannon);
+			mg = MakeEnemyBullet(x-130,y,bullet_enemy_umbra_apex_mega);
 		}
-		sc.duration = 120;
-		sc.delay = 30;
-		sc.interval = 10;
+		mg.image_angle = -90;
+		mg.duration = 120;
+		mg.delay = 20;
 		
 	}
 	if(attack.time > 1){
-		if(instance_exists(sc)){
+		if(instance_exists(mg)){
 			if(dd = 0){
-				sc.x = x + 130;
+				mg.x = x + 130;
 			}
 			else{
-				sc.x = x + 130;
+				mg.x = x + 130;
 			}
-			sc.y = y;
+			mg.y = y;
 		}
 	}
 	if(attack.time = 60){
-		mark.SetSequence(seq_enemy_boss_large_15_p1_attack);
+		mark.SetSequence(seq_enemy_boss_large_og0_p2_attack);
 	}
 	if(attack.time > 60 && attack.time < 180){
 		if(attack.time mod 4 = 0){
-			var blt = MakeEnemyBullet(x,y,bullet_enemy_dark_assault);
+			var blt = MakeEnemyBullet(x,y,bullet_enemy_umbra_apex);
 			blt.vspeed = 45;
 		}
 	}
@@ -208,21 +282,36 @@ function attack_3(attack,exarg=0){//机炮加机关炮 210
 function attack_4(attack,exarg=0){//收缩移动激光 160
 	if(attack.time = 1){
 		mark.move_range[3] -= 700;
-		for(i=0;i<4;i+=1){
-			blt[i] = MakeEnemyBullet(x,y+85,bullet_enemy_laser_green);
-			blt[i].delay = 60;
-			blt[i].duration = 60;
+		for(i=0;i<2;i+=1){
+			blt[i,0] = MakeEnemyBullet(x-32,y+25,bullet_enemy_laser_green);
+			blt[i,0].delay = 60;
+			blt[i,0].duration = 60;
+			blt[i,0].sprite_ball = spr_bullet_enemy_laser_red_ball;
+			blt[i,0].sprite_ring = spr_bullet_enemy_laser_red_ring;
+			blt[i,0].sprite_laser_start = spr_bullet_enemy_laser_red_start;
+			blt[i,0].sprite_laser = spr_bullet_enemy_laser_red;
+			blt[i,0].sprite_effect = spr_bullet_enemy_effect_laser_red;
+			blt[i,1] = MakeEnemyBullet(x+32,y+25,bullet_enemy_laser_green);
+			blt[i,1].delay = 60;
+			blt[i,1].duration = 60;
+			blt[i,1].sprite_ball = spr_bullet_enemy_laser_red_ball;
+			blt[i,1].sprite_ring = spr_bullet_enemy_laser_red_ring;
+			blt[i,1].sprite_laser_start = spr_bullet_enemy_laser_red_start;
+			blt[i,1].sprite_laser = spr_bullet_enemy_laser_red;
+			blt[i,1].sprite_effect = spr_bullet_enemy_effect_laser_red;
 		}
-		Anim_Create(blt[0],"image_angle",0,0,blt[0].image_angle-90,60,60,60);
-		Anim_Create(blt[1],"image_angle",0,0,blt[1].image_angle-30,20,60,60);
-		Anim_Create(blt[2],"image_angle",0,0,blt[2].image_angle+30,-20,60,60);
-		Anim_Create(blt[3],"image_angle",0,0,blt[3].image_angle+90,-60,60,60);
+		Anim_Create(blt[0,0],"image_angle",0,0,blt[0,0].image_angle-90,30,60,60);
+		Anim_Create(blt[1,0],"image_angle",0,0,blt[1,0].image_angle-60,40,60,60);
+		Anim_Create(blt[0,1],"image_angle",0,0,blt[0,1].image_angle+60,-40,60,60);
+		Anim_Create(blt[1,1],"image_angle",0,0,blt[1,1].image_angle+90,-30,60,60);
 	}
 	if(attack.time > 1){
-		for(i=0;i<4;i+=1){
-			if(instance_exists(blt[i])){
-				blt[i].x = xprevious;
-				blt[i].y = yprevious + 85;
+		for(i=0;i<2;i+=1){
+			if(instance_exists(blt[i,0])){
+				blt[i,0].x = xprevious - 32;
+				blt[i,0].y = yprevious + 25;
+				blt[i,1].x = xprevious + 32;
+				blt[i,1].y = yprevious + 25;
 			}
 		}
 	}
@@ -232,73 +321,134 @@ function attack_4(attack,exarg=0){//收缩移动激光 160
 	}
 }
 
-function attack_5(attack,exarg=0){//机关炮 50
+function attack_5(attack,exarg=0){//米加 180
 	if(attack.time = 1){
 		mark.move_range[3] -= 500;
 	}
 	if(attack.time = 20){
-		sc0 = MakeEnemyBullet(x-100,y,bullet_enemy_dark_assault_shotcannon);
-		sc0.duration = 120;
-		sc0.interval = 10;
-		sc1 = MakeEnemyBullet(x+100,y,bullet_enemy_dark_assault_shotcannon);
-		sc1.duration = 115;
-		sc1.interval = 10;
-		sc1.delay = 5;
+		px = 360;
+		py = 860;
+		if(Player_IsEnabled()){
+			px = player.x;
+			py = player.y;
+		}
+		mg = MakeEnemyBullet(px+200,py,bullet_enemy_umbra_apex_mega);
+		mg.image_angle = 180;
+		mg.delay = 60;
+		mg.duration = 90;
+		Anim_Create(mg,"hspeed",0,0,0,1,0,60);
+		Anim_Create(mg,"vspeed",0,0,0,1,0,60);
+	}
+	if(attack.time = 30){
+		mg = MakeEnemyBullet(px,py-200,bullet_enemy_umbra_apex_mega);
+		mg.image_angle = -90;
+		mg.delay = 50;
+		mg.duration = 90;
+		Anim_Create(mg,"hspeed",0,0,0,-1,0,50);
+		Anim_Create(mg,"vspeed",0,0,0,-1,0,50);
+	}
+	if(attack.time = 40){
+		mg = MakeEnemyBullet(px-200,py,bullet_enemy_umbra_apex_mega);
+		mg.image_angle = 0;
+		mg.delay = 40;
+		mg.duration = 90;
+		Anim_Create(mg,"hspeed",0,0,0,-1,0,40);
+		Anim_Create(mg,"vspeed",0,0,0,-1,0,40);
 	}
 	if(attack.time = 50){
-		if(x < room_width/2){
-			sc0.hspeed = 1.8;
-			sc1.hspeed = 1.8;
-		}
-		else{
-			sc0.hspeed = -1.8;
-			sc1.hspeed = -1.8;
-		}
+		mg = MakeEnemyBullet(px,py+200,bullet_enemy_umbra_apex_mega);
+		mg.image_angle = 90;
+		mg.delay = 30;
+		mg.duration = 90;
+		Anim_Create(mg,"hspeed",0,0,0,1,0,30);
+		Anim_Create(mg,"vspeed",0,0,0,1,0,30);
+	}
+	
+	if(attack.time = 180){
 		mark.move_range[3] += 500;
 		attack.End();
 	}
 }
 
-function attack_6(attack,exarg=0){//中心散射加狙 40
+function attack_6(attack,exarg=0){//六芒星 90
 	if(attack.time = 1){
 		mark.SetMoveEnabled(false);
-	}
-	if(attack.time = 20){
-		for(i=0;i<12;i+=1){
-			for(j=0;j<3;j+=1){
-				blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkred_0);
-				blt.direction = 30*i;
-				blt.speed = 15-j;
-				Anim_Create(blt,"speed",0,0,15-j,-7-j,0,10);
-				if(j = 1&&i mod 2 = 0){
-					with(blt){
-						duration = 45;
-						custom_function = function(){
-							if(duration = 1){
-								destroy_type = 3;
-								for(i=0;i<4;i+=1){
-									bb = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkred_0);
-									Anim_Create(bb,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,x,lengthdir_x(60,45+i*90),20);
-									Anim_Create(bb,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,y,lengthdir_y(60,45+i*90),20);
-									with(bb){
-										duration = 20;
-										custom_function = function(){
-											if(duration = 1){
-												duration = -1;
-												direction = point_direction(x,y,player.x,player.y);
-												Anim_Create(id,"speed",0,0,0,20,10);
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
+		star_size = 200;
+		point_count = 15;
+
+		pos_list_a = [];
+		pos_list_b = [];
+		cx = x; cy = y;
+
+		// 生成六芒星坐标的辅助函数
+		var add_line = function(list, x1, y1, x2, y2) {
+			for(var i=0; i<point_count; i++) {
+			    var px = x1 + (x2 - x1) * (i / point_count);
+			    var py = y1 + (y2 - y1) * (i / point_count);
+			    // 如果距离中心点较近，标记为内圈（黄色区域）
+			    var dist = point_distance(px, py, cx, cy);
+			    array_push(list, {px: px, py: py, is_inner: (dist < (star_size * 0.6))});
 			}
-		}
+		};
+
+		// 计算六个顶点
+		var v1 = {x:cx, y:cy+star_size}; var v2 = {x:cx+star_size*0.866, y:cy-star_size/2}; var v3 = {x:cx-star_size*0.866, y:cy-star_size/2};
+		var v4 = {x:cx, y:cy-star_size}; var v5 = {x:cx-star_size*0.866, y:cy+star_size/2}; var v6 = {x:cx+star_size*0.866, y:cy+star_size/2};
+
+		// 构建六芒星路径
+		add_line(pos_list_a, v1.x, v1.y, v2.x, v2.y); add_line(pos_list_a, v2.x, v2.y, v3.x, v3.y); add_line(pos_list_a, v3.x, v3.y, v1.x, v1.y);
+		add_line(pos_list_b, v4.x, v4.y, v5.x, v5.y); add_line(pos_list_b, v5.x, v5.y, v6.x, v6.y); add_line(pos_list_b, v6.x, v6.y, v4.x, v4.y);
+
+		all_bullets = array_create(array_length(pos_list_a) + array_length(pos_list_b), noone);
+		build_len = max(array_length(pos_list_a), array_length(pos_list_b));
 	}
-	if(attack.time = 40){
+	if (attack.time >= 10 && attack.time < 10 + build_len) {
+	    var idx = attack.time - 10;
+	    if (idx < array_length(pos_list_a)) {
+	        var p = pos_list_a[idx];
+	        var inst = MakeEnemyBullet(p.px, p.py, bullet_enemy_red, spr_bullet_enemy_darkpurple_0);
+	        with(inst) {
+	            is_inner = p.is_inner;
+	            speed = 0;
+	        }
+	        all_bullets[idx] = inst;
+	    }
+	    if (idx < array_length(pos_list_b)) {
+	        var p2 = pos_list_b[idx];
+	        var inst2 = MakeEnemyBullet(p2.px, p2.py, bullet_enemy_red, spr_bullet_enemy_darkpurple_0);
+	        with(inst2) {
+	            is_inner = p2.is_inner;
+	            speed = 0;
+	        }
+	        all_bullets[array_length(pos_list_a) + idx] = inst2;
+	    }
+	}
+
+	var end_time = 10 + build_len;
+	if (attack.time == end_time) {
+	    for (var i = 0; i < array_length(all_bullets); i++) {
+	        if (instance_exists(all_bullets[i]) && all_bullets[i].is_inner) {
+	            with(all_bullets[i]) {
+	                direction = point_direction(x, y, other.x, other.y);
+	                Anim_Create(id,"speed",0,0,0,15,30);
+					Anim_Create(id,"direction",0,0,direction,-30,40);
+	            }
+	        }
+	    }
+	}
+
+	if (attack.time == end_time+5) {
+	    for (var i = 0; i < array_length(all_bullets); i++) {
+	        if (instance_exists(all_bullets[i]) && !all_bullets[i].is_inner) {
+	            with(all_bullets[i]) {
+	                direction = point_direction(x, y, other.x, other.y);
+	                Anim_Create(id,"speed",0,0,0,15,40);
+	                Anim_Create(id,"direction",0,0,direction,30,40);
+	            }
+	        }
+	    }
+	}
+	if(attack.time = 90){
 		mark.SetMoveEnabled(true);
 		attack.End();
 	}
@@ -307,37 +457,37 @@ function attack_6(attack,exarg=0){//中心散射加狙 40
 function attack_7(attack,exarg=0){//导弹 180
 	if(attack.time = 1){
 		aa = 0;
-		mark.SetSequence(seq_enemy_boss_large_15_p1_attack_intro);
+		mark.SetSequence(seq_enemy_boss_large_og0_p2_attack_intro);
 	}
-	if(attack.time > 60&&attack.time mod 30 = 1&&attack.time < 180){
-		aa = !aa;
-		var base_dir = 90;
-		if(Player_IsEnabled()){
-			base_dir = point_direction(x,y,player.x,player.y);
-		}
-		for(var k=0;k<4;k+=1){
-			var m = MakeEnemyBullet(x,y,bullet_enemy_dark_assault_missile);
-			m.direction = base_dir + k*90+aa*45;
-			m.image_angle = m.direction - 90;
-			m.speed = 12;
-			m.duration = 200;
-			with(m){
-				track_time = 60;
-				age = 0;
-				custom_function = function(){
-					age += 1;
-					if(age <= track_time && Player_IsEnabled()){
-						//direction += (point_direction(x,y,player.x,player.y) - direction)/10;
-						target_angle = point_direction(x,y,player.x,player.y);
-						direction += angle_difference(target_angle,direction);
-						image_angle = direction - 90;
-					}
-					if(age >= track_time){
-						speed += 0.1;
-					}
-				}
-			}
-		}
+	if(attack.time > 60&&attack.time mod 20 = 1&&attack.time < 180){
+		a = MakeEnemyBullet(x,y,bullet_enemy_umbra_apex_ap);
+		a.direction = 0;
+		a.image_angle = -90;
+		a.speed = 10;
+		Anim_Create(a,"image_angle",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.image_angle,-90,30);
+		Anim_Create(a,"direction",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.direction,-90,30);
+		Anim_Create(a,"speed",0,0,10,8,20,30);
+		a = MakeEnemyBullet(x,y,bullet_enemy_umbra_apex_ap);
+		a.direction = 0-50;
+		a.image_angle = -90-50;
+		a.speed = 5;
+		Anim_Create(a,"image_angle",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.image_angle,-90+50,30);
+		Anim_Create(a,"direction",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.direction,-90+50,30);
+		Anim_Create(a,"speed",0,0,5,18,10,30);
+		a = MakeEnemyBullet(x,y,bullet_enemy_umbra_apex_ap);
+		a.direction = 180;
+		a.image_angle = 90;
+		a.speed = 10;
+		Anim_Create(a,"image_angle",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.image_angle,90,30);
+		Anim_Create(a,"direction",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.direction,90,30);
+		Anim_Create(a,"speed",0,0,10,8,20,30);
+		a = MakeEnemyBullet(x,y,bullet_enemy_umbra_apex_ap);
+		a.direction = 180+50;
+		a.image_angle = 90+50;
+		a.speed = 5;
+		Anim_Create(a,"image_angle",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.image_angle,90-50,30);
+		Anim_Create(a,"direction",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,a.direction,90-50,30);
+		Anim_Create(a,"speed",0,0,5,18,10,30);
 	}
 	if(attack.time = 180){
 		mark.SetState(ENEMY_STATE.IDLE);
@@ -356,14 +506,14 @@ function attack_8(attack,exarg=0){//散射导弹 400
 	var end_time = 400;
 	
 	if(attack.time = 1){
-		mark.SetMoveEnabled(false);
-		mark.SetSequence(seq_enemy_boss_large_15_p1_attack_intro);
+		//mark.SetMoveEnabled(false);
+		//mark.SetSequence(seq_enemy_boss_large_og0_p2_attack_intro);
 		var tx = room_width/2;
 		var ty = room_height*0.2;
-		Anim_Destroy(mark,"x");
-		Anim_Destroy(mark,"y");
-		Anim_Create(mark,"x",ANIM_TWEEN.LINEAR,ANIM_EASE.IN,mark.x,tx-mark.x,move_time);
-		Anim_Create(mark,"y",ANIM_TWEEN.LINEAR,ANIM_EASE.IN,mark.y,ty-mark.y,move_time);
+		//Anim_Destroy(mark,"x");
+		//Anim_Destroy(mark,"y");
+		//Anim_Create(mark,"x",ANIM_TWEEN.LINEAR,ANIM_EASE.IN,mark.x,tx-mark.x,move_time);
+		//Anim_Create(mark,"y",ANIM_TWEEN.LINEAR,ANIM_EASE.IN,mark.y,ty-mark.y,move_time);
 	}
 	if(attack.time >= side_fire_start && attack.time <= side_fire_end){
 		if((attack.time - side_fire_start) mod side_interval = 0){

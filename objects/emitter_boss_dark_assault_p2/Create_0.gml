@@ -147,7 +147,7 @@ function attack_2(attack,exarg=0){//连射扇形狙 40
 		}
 	}
 	if(attack.time >= 1&&attack.time <= 31&&attack.time mod 5 = 1){
-		for(i=0;i<9;i+=1){
+		for(i=0;i<10;i+=1){
 			var blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_darkred_0);
 			blt.direction = dir-90+i*20;
 			blt.speed = 15;

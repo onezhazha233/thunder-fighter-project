@@ -21,7 +21,7 @@ if(time = 270){
 }
 if(time = 400){
     start_attack(4);
-    last_attack = 2;
+    last_attack = 4;
 }
 if(time >= 520){
     rdm_attack_time -= 1;

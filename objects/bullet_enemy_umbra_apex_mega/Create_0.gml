@@ -15,7 +15,8 @@ interval = 20
 
 inv_block = true
 
-mgseq = layer_sequence_create(ll,x,y,seq_bullet_enemy_umbra_apex_mega_intro)
+mgseq0 = layer_sequence_create(ll,x,y,seq_bullet_enemy_umbra_apex_mega_intro)
+mgseq = -1
 
 dd = 0
 
