@@ -6,7 +6,7 @@ wave_inst = noone
 boss_waves = [8]
 
 ds_queue_enqueue(waves,wave_boss_umbra_apex)
-ds_queue_enqueue(waves,wave_0)
+/*ds_queue_enqueue(waves,wave_0)
 //ds_queue_enqueue(waves,wave_8)
 //ds_queue_enqueue(waves,wave_9)
 ds_queue_enqueue(waves,wave_1)
@@ -18,6 +18,6 @@ ds_queue_enqueue(waves,wave_6)
 ds_queue_enqueue(waves,wave_7)
 ds_queue_enqueue(waves,wave_boss_dark_assault)
 //ds_queue_enqueue(waves,wave_boss_galaxy_ash)
-//ds_queue_enqueue(waves,wave_boss_red_heavy)
+//ds_queue_enqueue(waves,wave_boss_red_heavy)*/
 
 alarm[0] = 2

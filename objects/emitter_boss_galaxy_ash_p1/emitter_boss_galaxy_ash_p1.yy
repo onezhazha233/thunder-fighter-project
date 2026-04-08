@@ -9,8 +9,8 @@
   "name":"emitter_boss_galaxy_ash_p1",
   "overriddenProperties":[],
   "parent":{
-    "name":"enemy",
-    "path":"folders/物体/enemy.yy",
+    "name":"0",
+    "path":"folders/物体/enemy/boss/0.yy",
   },
   "parentObjectId":{
     "name":"emitter_enemy",

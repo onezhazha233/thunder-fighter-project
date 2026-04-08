@@ -11,20 +11,6 @@ last_attack = -1
 
 attack_list = ds_list_create()
 
-Clear = function(){
-	with(bullet_enemy){
-		if(mark = other.mark){
-			if(inv_block = true){
-				destroy_type = 4;
-			}
-			else{
-				destroy_type = 1;
-			}
-			instance_destroy();
-		}
-	}
-}
-
 function start_attack(attack_type,arg=0){
 	attack = {
 		type : attack_type,
@@ -182,7 +168,7 @@ function attack_3(attack,exarg=0){//机炮加机关炮 210
 				sc.x = x + 130;
 			}
 			else{
-				sc.x = x + 130;
+				sc.x = x - 130;
 			}
 			sc.y = y;
 		}

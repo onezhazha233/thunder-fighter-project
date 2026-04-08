@@ -91,7 +91,7 @@ OnDie = function(){
 		Anim_Create(c,"chase",0,0,0,1,0,30,function(){
 			chase = 1;
 			gravity = 0;
-			Anim_Create(id,"speed",0,0,0,chase_speed_max,30);
+			Anim_Create(id,"speed",0,0,5,chase_speed_max-5,10);
 		});
 		
 		if(t = 2) remaining_type2 -= 1;

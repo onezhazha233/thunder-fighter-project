@@ -7,8 +7,8 @@ pre_mode = PRE_MODE.SEQUENCE
 pre_sequence = seq_enemy_minion_12a
 flame_lower = seq_enemy_minion_12a_flame
 
-hp_max = 2
-hp = 2
+hp_max = 1
+hp = 1
 
 hpbar_enabled = false
 

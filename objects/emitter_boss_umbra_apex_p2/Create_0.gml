@@ -6,24 +6,10 @@ loop = false
 
 rdm_attack = 0
 rdm_attack_time = -1
-rdm_attack_duration = [140,90,120,250,160,250,120,240,430]
+rdm_attack_duration = [140,180,120,250,160,250,120,240,750]
 last_attack = -1
 
 attack_list = ds_list_create()
-
-Clear = function(){
-	with(bullet_enemy){
-		if(mark = other.mark){
-			if(inv_block = true){
-				destroy_type = 4;
-			}
-			else{
-				destroy_type = 1;
-			}
-			instance_destroy();
-		}
-	}
-}
 
 function start_attack(attack_type,arg=0){
 	attack = {
@@ -233,7 +219,7 @@ function attack_2(attack,exarg=0){//连射扫射扇形狙 90
 	}
 }
 
-function attack_3(attack,exarg=0){//机炮加机关炮 210
+function attack_3(attack,exarg=0){//机炮加米加 210
 	if(attack.time = 1){
 		mark.move_range[3] -= 500;
 		mark.SetSequence(seq_enemy_boss_large_og0_p2_attack_intro);
@@ -256,7 +242,7 @@ function attack_3(attack,exarg=0){//机炮加机关炮 210
 				mg.x = x + 130;
 			}
 			else{
-				mg.x = x + 130;
+				mg.x = x - 130;
 			}
 			mg.y = y;
 		}
@@ -454,7 +440,7 @@ function attack_6(attack,exarg=0){//六芒星 90
 	}
 }
 
-function attack_7(attack,exarg=0){//导弹 180
+function attack_7(attack,exarg=0){//穿甲弹 180
 	if(attack.time = 1){
 		aa = 0;
 		mark.SetSequence(seq_enemy_boss_large_og0_p2_attack_intro);
@@ -495,39 +481,39 @@ function attack_7(attack,exarg=0){//导弹 180
 	}
 }
 
-function attack_8(attack,exarg=0){//散射导弹 400
+function attack_8(attack,exarg=0){//穿甲弹加米加狙 700
 	var move_time = 20;
 	var side_fire_start = 60;
 	var side_fire_end = 100;
 	var side_interval = 3;
 	var bottom_fire_start = 100;
-	var bottom_fire_end = 300;
+	var bottom_fire_end = 600;
 	var bottom_interval = 4;
-	var end_time = 400;
+	var end_time = 700;
 	
 	if(attack.time = 1){
-		//mark.SetMoveEnabled(false);
-		//mark.SetSequence(seq_enemy_boss_large_og0_p2_attack_intro);
+		mark.SetMoveEnabled(false);
+		mark.SetSequence(seq_enemy_boss_large_og0_p2_attack_intro);
 		var tx = room_width/2;
 		var ty = room_height*0.2;
-		//Anim_Destroy(mark,"x");
-		//Anim_Destroy(mark,"y");
-		//Anim_Create(mark,"x",ANIM_TWEEN.LINEAR,ANIM_EASE.IN,mark.x,tx-mark.x,move_time);
-		//Anim_Create(mark,"y",ANIM_TWEEN.LINEAR,ANIM_EASE.IN,mark.y,ty-mark.y,move_time);
+		Anim_Destroy(mark,"x");
+		Anim_Destroy(mark,"y");
+		Anim_Create(mark,"x",ANIM_TWEEN.LINEAR,ANIM_EASE.IN,mark.x,tx-mark.x,move_time);
+		Anim_Create(mark,"y",ANIM_TWEEN.LINEAR,ANIM_EASE.IN,mark.y,ty-mark.y,move_time);
 	}
 	if(attack.time >= side_fire_start && attack.time <= side_fire_end){
 		if((attack.time - side_fire_start) mod side_interval = 0){
 			var spread = 20;
 			var off0 = sin((attack.time+11)*987)*spread;
 			var off1 = sin((attack.time+37)*987)*spread;
-			var bl = MakeEnemyBullet(x,y,bullet_enemy_dark_assault_missile);
-			bl.direction = 180 + off0;
+			var bl = MakeEnemyBullet(x,y,bullet_enemy_umbra_apex_ap);
+			bl.direction = 120 + off0;
 			bl.image_angle = bl.direction - 90;
 			bl.speed = 16;
 			bl.inv_block = true;
 			bl.duration = 60;
-			var br = MakeEnemyBullet(x,y,bullet_enemy_dark_assault_missile);
-			br.direction = 0 + off1;
+			var br = MakeEnemyBullet(x,y,bullet_enemy_umbra_apex_ap);
+			br.direction = 60 + off1;
 			br.image_angle = br.direction - 90;
 			br.speed = 16;
 			br.inv_block = true;
@@ -536,28 +522,28 @@ function attack_8(attack,exarg=0){//散射导弹 400
 	}
 	if(attack.time = bottom_fire_start){
 		mark.SetState(ENEMY_STATE.IDLE);
+		at = 20;
+		att = 20;
 	}
 	if(attack.time >= bottom_fire_start && attack.time <= bottom_fire_end){
-		if((attack.time - bottom_fire_start) mod bottom_interval = 0){
-			var base_dir = point_direction(0,room_height,room_width/2,800);
-			var spread = 20;
-			var offset0 = sin((attack.time+0)*1234)*spread;
-			var offset1 = sin((attack.time+7)*1234)*spread;
-			var b0 = MakeEnemyBullet(-400,room_height+400,bullet_enemy_dark_assault_missile);
-			b0.direction = base_dir + offset0;
-			b0.image_angle = b0.direction - 90;
-			b0.speed = 14;
-			b0.inv_block = true;
-			b0.duration = 200;
-			var b1 = MakeEnemyBullet(room_width+400,room_height+400,bullet_enemy_dark_assault_missile);
-			b1.direction = 180-base_dir + offset1;
-			b1.image_angle = b1.direction - 90;
-			b1.speed = 14;
-			b1.inv_block = true;
-			b1.duration = 200;
+		if(attack.time mod 80 = 0){
+			MakeEnemyBullet(player.x,400,bullet_enemy_umbra_apex_mega).image_angle = -90;
+		}
+		at -= 1;
+		if(at = 0){
+			xx = room_width/2+sin(attack.time*26687+6755131)*260;
+			for(i=0;i<7;i+=1){
+				ap = MakeEnemyBullet(xx-105+30*i,-90,bullet_enemy_umbra_apex_ap);
+				ap.image_angle = 180;
+				ap.vspeed = 8;
+				Anim_Create(ap,"vspeed",0,0,ap.vspeed,-ap.vspeed,40);
+				Anim_Create(ap,"vspeed",0,0,0,25,10,abs(i-3)*2+40);
+			}
+			at = att;
+			att -= 1;
+			if(att < 10)att = 10;
 		}
 	}
-	
 	if(attack.time = end_time){
 		mark.SetMoveEnabled(true);
 		attack.End();

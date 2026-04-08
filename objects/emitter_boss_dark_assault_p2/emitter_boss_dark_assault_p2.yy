@@ -9,8 +9,8 @@
   "name":"emitter_boss_dark_assault_p2",
   "overriddenProperties":[],
   "parent":{
-    "name":"enemy",
-    "path":"folders/物体/enemy.yy",
+    "name":"12",
+    "path":"folders/物体/enemy/boss/12.yy",
   },
   "parentObjectId":{
     "name":"emitter_enemy",

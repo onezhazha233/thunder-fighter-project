@@ -1,6 +1,6 @@
 live;
 if(Player_IsEnabled()){
-	if(player.equipment.state = 1){
+	if(Player_GetRampage() > 0){
 		Clear();
 	}
 }

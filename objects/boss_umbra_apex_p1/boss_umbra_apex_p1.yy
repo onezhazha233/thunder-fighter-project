@@ -9,8 +9,8 @@
   "name":"boss_umbra_apex_p1",
   "overriddenProperties":[],
   "parent":{
-    "name":"enemy",
-    "path":"folders/物体/enemy.yy",
+    "name":"original",
+    "path":"folders/物体/enemy/boss/original.yy",
   },
   "parentObjectId":{
     "name":"boss_agent",
