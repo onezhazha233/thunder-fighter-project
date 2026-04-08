@@ -63,7 +63,7 @@ function get_random_child(base) {
     
     // 如果没找到：
     // 如果是特殊模式 "subweapon"，返回 noone (因为返回字符串会导致生成报错)
-    if (base == "subweapon") return subweapon_tracking_missile;
+    if (base == "subweapon") return subweapon_missile_a;
     
     // 普通模式下维持你原有的逻辑，返回 base 本身
     return base;

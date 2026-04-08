@@ -81,7 +81,7 @@ function _refresh_preview() {
 
 // 辅助：创建装备选择按钮
 function _make_equipment_button(_options, _current_obj, _equip_key, _placeholder) {
-	var _current_name = _current_obj != -1 && _current_obj != noone && object_exists(_current_obj) ? object_get_name(_current_obj) : _placeholder;
+	var _current_name = _current_obj != -1 && _current_obj != noone && object_exists(_current_obj) ? Equipment_GetName(_current_obj) : _placeholder;
 	var _btn = new LuiButton({ text: _current_name, width: 450, height: 36 });
 	_btn.original_text = _current_name; // 保存原始文本
 	_btn.equip_key = _equip_key; // 保存装备键
@@ -195,25 +195,25 @@ function _create_equipment_selection_window() {
 
 // 战机
 var _current_plane = global.current_equipment.plane;
-var _btn_plane = _make_equipment_button(_planes, _current_plane, "plane", "选择战机");
+var _btn_plane = _make_equipment_button(_planes, _current_plane, "plane", Lang_GetString("ui.select.plane"));
 
 // 左僚机（current 为数组第一个）
 var _wl = global.current_equipment.wingman_left;
 var _current_wl = (is_array(_wl) && array_length(_wl) > 0) ? _wl[0] : -1;
-var _btn_wingman_left = _make_equipment_button(_wingmans, _current_wl, "wingman_left", "选择左僚机");
+var _btn_wingman_left = _make_equipment_button(_wingmans, _current_wl, "wingman_left", Lang_GetString("ui.select.wingman.left"));
 
 // 右僚机
 var _wr = global.current_equipment.wingman_right;
 var _current_wr = (is_array(_wr) && array_length(_wr) > 0) ? _wr[0] : -1;
-var _btn_wingman_right = _make_equipment_button(_wingmans, _current_wr, "wingman_right", "选择右僚机");
+var _btn_wingman_right = _make_equipment_button(_wingmans, _current_wr, "wingman_right", Lang_GetString("ui.select.wingman.right"));
 
 // 副武器
 var _current_sub = global.current_equipment.subweapon;
-var _btn_subweapon = _make_equipment_button(_subweapons, _current_sub, "subweapon", "选择副武器");
+var _btn_subweapon = _make_equipment_button(_subweapons, _current_sub, "subweapon", Lang_GetString("ui.select.subweapon"));
 
 // 装甲
 var _current_armor = global.current_equipment.armor;
-var _btn_armor = _make_equipment_button(_armors, _current_armor, "armor", "选择装甲");
+var _btn_armor = _make_equipment_button(_armors, _current_armor, "armor", Lang_GetString("ui.select.armor"));
 
 // “进入战斗”按钮：应用当前选择并跳转战斗房间
 var _btn_enter = new LuiButton({ text: "进入战斗", width: 200, height: 44 }).setFlexAlignSelf(flexpanel_align.center);
@@ -222,25 +222,25 @@ _btn_enter.addEvent(LUI_EV_CLICK, function(_el) {
 });
 
 // 标题与布局
-var _title = new LuiText({ value: "装备选择" }).setTextHalign(fa_center);
+var _title = new LuiText({ value: Lang_GetString("ui.select.equipment") }).setTextHalign(fa_center);
 var _row_plane = new LuiRow().addContent([
-	new LuiText({ value: "战机", width: 80 }),
+	new LuiText({ value: Lang_GetString("ui.plane"), width: 80 }),
 	_btn_plane
 ]);
 var _row_wl = new LuiRow().addContent([
-	new LuiText({ value: "左僚机", width: 80 }),
+	new LuiText({ value: Lang_GetString("ui.wingman.left"), width: 80 }),
 	_btn_wingman_left
 ]);
 var _row_wr = new LuiRow().addContent([
-	new LuiText({ value: "右僚机", width: 80 }),
+	new LuiText({ value: Lang_GetString("ui.wingman.right"), width: 80 }),
 	_btn_wingman_right
 ]);
 var _row_sub = new LuiRow().addContent([
-	new LuiText({ value: "副武器", width: 80 }),
+	new LuiText({ value: Lang_GetString("ui.subweapon"), width: 80 }),
 	_btn_subweapon
 ]);
 var _row_armor = new LuiRow().addContent([
-	new LuiText({ value: "装甲", width: 80 }),
+	new LuiText({ value: Lang_GetString("ui.armor"), width: 80 }),
 	_btn_armor
 ]);
 

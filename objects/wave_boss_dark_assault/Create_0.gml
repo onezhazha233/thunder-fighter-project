@@ -4,7 +4,7 @@ event_inherited();
 warning = {
 	obj : battle_warning_boss,
 	lv : 114514,
-	name : "超级暗黑突击",
+	name : Lang_GetString("boss.dark_assault"),
 	
 	Create : function(){
 		ww = instance_create_depth(0,0,DEPTH_BATTLE.UI,obj);

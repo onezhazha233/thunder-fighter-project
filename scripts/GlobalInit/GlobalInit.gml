@@ -14,12 +14,12 @@ function GlobalInit(){
 	global.score = 0;
 	
 	global.current_equipment = {
-		plane: plane_assault_zero,
-		wingman_left: [wingman_double_shotcannon],
-		wingman_right: [wingman_double_shotcannon],
+		plane: plane_assault_a,
+		wingman_left: [wingman_shotcannon_a],
+		wingman_right: [wingman_shotcannon_a],
 		wingman_x_offset: [130],
 		wingman_y_offset: [0],
-		subweapon: subweapon_tracking_missile,
+		subweapon: subweapon_missile_a,
 		armor: armor_alloy_a
 	}
 	

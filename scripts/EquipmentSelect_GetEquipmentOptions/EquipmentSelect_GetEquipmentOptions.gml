@@ -13,7 +13,8 @@ function EquipmentSelect_GetEquipmentOptions(_parent_obj, _name_prefix = "") {
 				var _name = object_get_name(_i);
 				var _ok = (_name_prefix == "" || string_pos(_name_prefix, _name) == 1);
 				if (_ok) {
-					array_push(_list, { obj: _i, name: _name });
+					_display_name = Equipment_GetName(_i);
+					array_push(_list, { obj: _i, name: _display_name });
 				}
 			}
 		} else {

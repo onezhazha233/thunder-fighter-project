@@ -4,7 +4,7 @@ event_inherited();
 warning = {
 	obj : battle_warning_boss,
 	lv : 1225,
-	name : "呼啸重装机",
+	name : Lang_GetString("boss.red_heavy"),
 	
 	Create : function(){
 		ww = instance_create_depth(0,0,DEPTH_BATTLE.UI,obj);

@@ -1,0 +1,13 @@
+{
+    "ui.plane": "战机",
+    "ui.wingman.left": "左僚机",
+    "ui.wingman.right": "右僚机",
+    "ui.subweapon": "副武器",
+    "ui.armor": "装甲",
+    "ui.select.equipment": "装备选择",
+    "ui.select.plane": "选择战机",
+    "ui.select.wingman.left": "选择左僚机",
+    "ui.select.wingman.right": "选择右僚机",
+    "ui.select.subweapon": "选择副武器",
+    "ui.select.armor": "选择装甲"
+}

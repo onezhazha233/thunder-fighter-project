@@ -4,7 +4,7 @@ event_inherited();
 warning = {
 	obj : battle_warning_boss,
 	lv : 1919810,
-	name : "逆光尖峰",
+	name : Lang_GetString("boss.umbra_apex"),
 	
 	Create : function(){
 		ww = instance_create_depth(0,0,DEPTH_BATTLE.UI,obj);
