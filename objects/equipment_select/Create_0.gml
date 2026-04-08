@@ -114,6 +114,12 @@ function _create_equipment_selection_window() {
 	
 	// 创建窗口
 	var _window = new LuiWindow({ title: _placeholder, width: 600, height: 500 });
+	var _gui_w = display_get_gui_width();
+	var _gui_h = display_get_gui_height();
+	var _pos_x = max(0, (_gui_w - _window.width) * 0.5);
+	var _pos_y = max(0, (_gui_h - _window.height) * 0.5);
+	_window.setPosX(_pos_x);
+	_window.setPosY(_pos_y);
 	
 	// 创建滚动面板
 	var _scroll_panel = new LuiScrollPanel({ width: 560, height: 400 });

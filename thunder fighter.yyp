@@ -4130,9 +4130,9 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"room_init","path":"rooms/room_init/room_init.yy",},},
+    {"roomId":{"name":"room_preparation","path":"rooms/room_preparation/room_preparation.yy",},},
     {"roomId":{"name":"room_battle","path":"rooms/room_battle/room_battle.yy",},},
     {"roomId":{"name":"room_test","path":"rooms/room_test/room_test.yy",},},
-    {"roomId":{"name":"room_preparation","path":"rooms/room_preparation/room_preparation.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
