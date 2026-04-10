@@ -617,9 +617,9 @@
     {"name":"Anim","order":1,"path":"folders/脚本/GMU/Anim.yy",},
     {"name":"Laser","order":7,"path":"folders/脚本/Laser.yy",},
     {"name":"Macro","order":4,"path":"folders/脚本/Macro.yy",},
+    {"name":"Pause","order":18,"path":"folders/脚本/Pause.yy",},
     {"name":"Player","order":5,"path":"folders/脚本/Player.yy",},
     {"name":"Sequence","order":8,"path":"folders/脚本/Sequence.yy",},
-    {"name":"Pause","order":18,"path":"folders/脚本/Pause.yy",},
     {"name":"路径","order":3,"path":"folders/路径.yy",},
   ],
   "ResourceOrderSettings":[

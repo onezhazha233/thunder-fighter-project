@@ -693,9 +693,9 @@
     {"$GMFolder":"","%Name":"Lang","folderPath":"folders/脚本/GMU/Lang.yy","name":"Lang","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Laser","folderPath":"folders/脚本/Laser.yy","name":"Laser","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Macro","folderPath":"folders/脚本/Macro.yy","name":"Macro","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Pause","folderPath":"folders/脚本/Pause.yy","name":"Pause","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/脚本/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sequence","folderPath":"folders/脚本/Sequence.yy","name":"Sequence","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Pause","folderPath":"folders/脚本/Pause.yy","name":"Pause","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"路径","folderPath":"folders/路径.yy","name":"路径","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[

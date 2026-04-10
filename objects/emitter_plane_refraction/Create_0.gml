@@ -8,11 +8,12 @@ for(i=0;i<10;i+=1){
 	follow_inst[i,0] = noone;
 }
 
+laser = []
 laser_scale = 1
 laser_scale_target = 1
 laser_scale_level = [1,1.19,1.39,1.59]
 
-damages = [0.125,0.125*1.3,0.125*1.7,0.25,0.5]
+damages = [0.125/2,0.125*1.3/2,0.125*1.7/2,0.25/2,0.5/2]
 
 SetPosition = function(xx,yy){
 	x = xx;

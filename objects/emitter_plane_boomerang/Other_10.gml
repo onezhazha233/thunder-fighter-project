@@ -4,3 +4,5 @@ fire_count = 2 + weapon_level;
 fire_step = 0;
 fire_timer = 0;
 fire_reverse = !fire_reverse;
+
+rtime = 0

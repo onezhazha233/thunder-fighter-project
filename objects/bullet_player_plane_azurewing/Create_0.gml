@@ -6,7 +6,7 @@ collision_destroy = false
 
 damage = 1
 damage_type = 1
-damage_interval = 5
+damage_interval = 999
 
 image_speed = 0
 

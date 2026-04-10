@@ -175,7 +175,6 @@ function _create_equipment_selection_window() {
 			var v = _el.data.value;
 			if (k == "choicebosswave") {
 				global.choicebosswave = asset_get_index("wave_"+v.name);
-				show_message(global.choicebosswave)
 			} else if (k == "wingman_left") {
 				global.current_equipment.wingman_left = [v];
 			} else if (k == "wingman_right") {

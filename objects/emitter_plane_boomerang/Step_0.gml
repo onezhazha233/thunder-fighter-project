@@ -16,6 +16,7 @@ if(enabled = true){
 			blt.speed = 50-abs(dir-90)/5;
 			blt.acceleration = 1.8;
 			blt.spd_start = blt.speed;
+			blt.damage = damage;
 
 			fire_step += 1;
 			if (fire_step >= total) {

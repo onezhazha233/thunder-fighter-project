@@ -19,7 +19,7 @@ if(clduration > 0&&enabled == true){
 		}
 	}
 	if(cltime == 40){
-		MakePlayerBullet(x,y,bullet_player_plane_azurewing_vertical);
+		MakePlayerBullet(x,y,bullet_player_plane_azurewing_vertical).damage = damage*2;
 	}
 	if(cltime > clduration){
 		cltime = 0;
