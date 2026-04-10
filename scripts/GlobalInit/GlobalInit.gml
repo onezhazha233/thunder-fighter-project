@@ -22,6 +22,7 @@ function GlobalInit(){
 		subweapon: subweapon_missile_a,
 		armor: armor_alloy_a
 	}
+	global.choicebosswave = wave_boss_dark_assault;
 	
 	global.debug_bullet_player_collision_display = false;
 	global.debug_bullet_enemy_collision_display = false;

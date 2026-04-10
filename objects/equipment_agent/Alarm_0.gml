@@ -20,6 +20,7 @@ for(i=0;i<array_length(wingman_right);i+=1){
 	wingman_right_inst[i].image_angle = angle;
 }
 if(player_point_enabled = true){
+	if!(layer_exists(global.layer_instances_upper))global.layer_instances_upper = layer_create(DEPTH_BATTLE.INSTANCES_UPPER);
 	player_point = layer_sequence_create(global.layer_instances_upper,x,y,seq_player_point);
 }
 if!(subweapon = -1){

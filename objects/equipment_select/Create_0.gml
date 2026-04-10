@@ -81,7 +81,23 @@ function _refresh_preview() {
 
 // 辅助：创建装备选择按钮
 function _make_equipment_button(_options, _current_obj, _equip_key, _placeholder) {
-	var _current_name = _current_obj != -1 && _current_obj != noone && object_exists(_current_obj) ? Equipment_GetName(_current_obj) : _placeholder;
+	var _current_name = _placeholder;
+	if (_current_obj != -1 && _current_obj != noone && object_exists(_current_obj)) {
+		if (_equip_key == "choicebosswave") {
+			// 对于boss对象，提取boss名称并使用Lang_GetString
+			var _obj_name = object_get_name(_current_obj);
+			if (string_pos("wave_boss_", _obj_name) == 1) {
+				var _boss_name = string_delete(_obj_name, 1, 10);
+				_current_name = Lang_GetString("boss." + _boss_name);
+			} else {
+				_current_name = Equipment_GetName(_current_obj);
+			}
+		} else {
+			// 对于其他装备，使用Equipment_GetName
+			_current_name = Equipment_GetName(_current_obj);
+		}
+	}
+	//var _current_name = _current_obj != -1 && _current_obj != noone && object_exists(_current_obj) ? Equipment_GetName(_current_obj) : _placeholder;
 	var _btn = new LuiButton({ text: _current_name, width: 450, height: 36 });
 	_btn.original_text = _current_name; // 保存原始文本
 	_btn.equip_key = _equip_key; // 保存装备键
@@ -157,9 +173,16 @@ function _create_equipment_selection_window() {
 		_option_btn.addEvent(LUI_EV_CLICK, function(_el) {
 			var k = _el.data.key;
 			var v = _el.data.value;
-			if (k == "wingman_left") global.current_equipment.wingman_left = [v];
-			else if (k == "wingman_right") global.current_equipment.wingman_right = [v];
-			else variable_struct_set(global.current_equipment, k, v);
+			if (k == "choicebosswave") {
+				global.choicebosswave = asset_get_index("wave_"+v.name);
+				show_message(global.choicebosswave)
+			} else if (k == "wingman_left") {
+				global.current_equipment.wingman_left = [v];
+			} else if (k == "wingman_right") {
+				global.current_equipment.wingman_right = [v];
+			} else {
+				variable_struct_set(global.current_equipment, k, v);
+			}
 			
 			// 更新按钮文本和当前对象引用
 			var _caller_btn = _el.data.caller_btn;
@@ -193,6 +216,35 @@ function _create_equipment_selection_window() {
 	main_ui.addContent(_window);
 }
 
+_boss_objects = [];
+var _all_objects = EquipmentSelect_GetEquipmentOptions(battle_wave,"wave_boss")
+for (var i = 0; i < array_length(_all_objects); i++) {
+    var _obj = _all_objects[i];
+    var _obj_name = _obj.name;
+    if (string_pos("boss_", _obj_name) == 1) {
+        // 提取boss名称（去掉boss_前缀）
+        var _boss_name = string_delete(_obj_name, 1, 5);
+        
+        // 添加到boss选项列表
+        array_push(_boss_objects, {
+            obj: _obj,
+            name: Lang_GetString("boss." + _boss_name)
+        });
+    }
+}
+ 
+// 如果没有找到boss对象，添加一个默认选项
+if (array_length(_boss_objects) == 0) {
+    array_push(_boss_objects, {
+        obj: -1,
+        name: "无可用boss"
+    });
+}
+ 
+// Boss选择
+_current_boss = variable_global_exists("choicebosswave") ? global.choicebosswave : -1;
+_btn_boss = _make_equipment_button(_boss_objects, _current_boss, "choicebosswave", Lang_GetString("ui.select.boss"));
+
 // 战机
 var _current_plane = global.current_equipment.plane;
 var _btn_plane = _make_equipment_button(_planes, _current_plane, "plane", Lang_GetString("ui.select.plane"));
@@ -222,7 +274,11 @@ _btn_enter.addEvent(LUI_EV_CLICK, function(_el) {
 });
 
 // 标题与布局
-var _title = new LuiText({ value: Lang_GetString("ui.select.equipment") }).setTextHalign(fa_center);
+var _title = new LuiText({ value: Lang_GetString("ui.select.preparation") }).setTextHalign(fa_center);
+var _row_boss = new LuiRow().addContent([
+	new LuiText({ value: "Boss", width: 80 }),
+	_btn_boss
+]);
 var _row_plane = new LuiRow().addContent([
 	new LuiText({ value: Lang_GetString("ui.plane"), width: 80 }),
 	_btn_plane
@@ -248,7 +304,7 @@ var _enter_btn_container = new LuiContainer().setFlexAlignSelf(flexpanel_align.c
 _enter_btn_container.addContent(_btn_enter);
 
 var _col = new LuiColumn().setPadding(8);
-_col.addContent([_title, _row_plane, _row_wl, _row_wr, _row_sub, _row_armor, _enter_btn_container]);
+_col.addContent([_title, _row_boss,_row_plane, _row_wl, _row_wr, _row_sub, _row_armor, _enter_btn_container]);
 
 var _panel = new LuiPanel({ width: 600, height: LUI_AUTO }).setPadding(16);
 _panel.addContent(_col);
