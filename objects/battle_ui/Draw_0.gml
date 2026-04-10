@@ -2,7 +2,7 @@ live;
 draw_sprite(spr_ui_hpbar_player,0,camera._shake_pos_x+0,camera._shake_pos_y+0)
 sco = floor(global.score)
 for(i=1;i<string_length(sco)+1;i+=1){
-	draw_sprite_ext(spr_ui_score_number,real(string_char_at(sco,i)),camera._shake_pos_x+200+i*16,camera._shake_pos_y+4,0.8,0.8,0,-1,1);
+	draw_sprite_ext(spr_ui_hpbar_score_number,real(string_char_at(sco,i)),camera._shake_pos_x+200+i*16,camera._shake_pos_y+4,0.8,0.8,0,-1,1);
 }
 if(global.hp <= global.hp_max*0.25){
 	hp_red_time += 1;
@@ -31,4 +31,8 @@ if(boss_hpbar_enabled = true){
 		length = clamp(length,0,537);
 		draw_sprite_ext(spr_ui_hpbar_boss_bar,i,camera._shake_pos_x+360-273+5,camera._shake_pos_y+110,length,1,0,-1,1);
 	}
+}
+
+if (variable_struct_exists(self, "main_ui") && !is_undefined(main_ui)) {
+	main_ui.render();
 }

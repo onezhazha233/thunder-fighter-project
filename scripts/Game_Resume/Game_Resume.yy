@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Game_Resume",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Game_Resume",
+  "parent":{
+    "name":"Pause",
+    "path":"folders/脚本/Pause.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
