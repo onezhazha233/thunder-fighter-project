@@ -1,7 +1,9 @@
 live;
 SetSurfEnabled(surf_enabled)
 
-SetState(0);
+SetState(ENEMY_STATE.PRE);
+
+SetMoveInfo()
 
 Anim_Create(id,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,x,x_target-x,move_start_duration);
 Anim_Create(id,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,y,y_target-y,move_start_duration);

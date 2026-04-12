@@ -115,26 +115,26 @@ if(time >= 150&&time <= 150+7*6){
 	}
 }
 if(time >= 220&&time <= 220+20){
-		dir = 0;
-		n0 = 4;
-		n1 = 20;
-		j = (time-220);
-		for(i=0;i<n0;i+=1){
-			blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_red_0);
-			blt.direction = 360/n0*i;
-			blt.image_angle = blt.direction;
-			Anim_Create(blt,"speed",0,0,10,-10,30);
-			Anim_Create(blt,"direction",0,0,0,blt.direction-180+j*360/n1,0,30);
-			Anim_Create(blt,"image_angle",0,0,0,blt.image_angle-180+j*360/n1,0,30);
-			Anim_Create(blt,"speed",0,0,3+j/5,-10-j/3,60+j*3,30);
-		}
-		for(i=0;i<n0;i+=1){
-			blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_red_0);
-			blt.direction = 360/n0*i;
-			blt.image_angle = blt.direction;
-			Anim_Create(blt,"speed",0,0,-10,10,30);
-			Anim_Create(blt,"direction",0,0,0,blt.direction-180+j*360/n1,0,30);
-			Anim_Create(blt,"image_angle",0,0,0,blt.image_angle-180+j*360/n1,0,30);
-			Anim_Create(blt,"speed",0,0,3+j/5,-10-j/3,60+j*3,30);
-		}
+	dir = 0;
+	n0 = 4;
+	n1 = 20;
+	j = (time-220);
+	for(i=0;i<n0;i+=1){
+		blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_red_0);
+		blt.direction = 360/n0*i;
+		blt.image_angle = blt.direction;
+		Anim_Create(blt,"speed",0,0,10,-10,30);
+		Anim_Create(blt,"direction",0,0,0,blt.direction-180+j*360/n1,0,30);
+		Anim_Create(blt,"image_angle",0,0,0,blt.image_angle-180+j*360/n1,0,30);
+		Anim_Create(blt,"speed",0,0,3+j/5,-10-j/3,60+j*3,30);
+	}
+	for(i=0;i<n0;i+=1){
+		blt = MakeEnemyBullet(x,y,bullet_enemy_red,spr_bullet_enemy_red_0);
+		blt.direction = 360/n0*i;
+		blt.image_angle = blt.direction;
+		Anim_Create(blt,"speed",0,0,-10,10,30);
+		Anim_Create(blt,"direction",0,0,0,blt.direction-180+j*360/n1,0,30);
+		Anim_Create(blt,"image_angle",0,0,0,blt.image_angle-180+j*360/n1,0,30);
+		Anim_Create(blt,"speed",0,0,3+j/5,-10-j/3,60+j*3,30);
+	}
 }

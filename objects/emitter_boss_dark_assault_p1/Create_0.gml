@@ -119,8 +119,8 @@ function attack_3(attack,exarg=0){//机炮 210
 		}
 	}
 	if(attack.time = 180){
-		mark.move_range[3] += 500;
-		mark.SetState(ENEMY_STATE.IDLE);
+		mark.SetMoveInfo();
+		mark.SetIdle();
 	}
 	if(attack.time = 210){
 		attack.End();
@@ -155,7 +155,7 @@ function attack_5(attack,exarg=0){//机关炮 50
 		else{
 			sc.hspeed = -2;
 		}
-		mark.move_range[3] += 500;
+		mark.SetMoveInfo();
 		attack.End();
 	}
 }

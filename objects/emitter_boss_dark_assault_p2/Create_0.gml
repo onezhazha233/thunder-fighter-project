@@ -183,8 +183,8 @@ function attack_3(attack,exarg=0){//机炮加机关炮 210
 		}
 	}
 	if(attack.time = 180){
-		mark.move_range[3] += 500;
-		mark.SetState(ENEMY_STATE.IDLE);
+		mark.SetMoveInfo();
+		mark.SetIdle();
 	}
 	if(attack.time = 210){
 		attack.End();
@@ -213,7 +213,7 @@ function attack_4(attack,exarg=0){//收缩移动激光 160
 		}
 	}
 	if(attack.time = 160){
-		mark.move_range[3] += 700;
+		mark.SetMoveInfo();
 		attack.End();
 	}
 }
@@ -240,7 +240,7 @@ function attack_5(attack,exarg=0){//机关炮 50
 			sc0.hspeed = -1.8;
 			sc1.hspeed = -1.8;
 		}
-		mark.move_range[3] += 500;
+		mark.SetMoveInfo();
 		attack.End();
 	}
 }
@@ -326,7 +326,7 @@ function attack_7(attack,exarg=0){//导弹 180
 		}
 	}
 	if(attack.time = 180){
-		mark.SetState(ENEMY_STATE.IDLE);
+		mark.SetIdle();
 		attack.End();
 	}
 }
@@ -371,7 +371,7 @@ function attack_8(attack,exarg=0){//散射导弹 400
 		}
 	}
 	if(attack.time = bottom_fire_start){
-		mark.SetState(ENEMY_STATE.IDLE);
+		mark.SetIdle();
 	}
 	if(attack.time >= bottom_fire_start && attack.time <= bottom_fire_end){
 		if((attack.time - bottom_fire_start) mod bottom_interval = 0){

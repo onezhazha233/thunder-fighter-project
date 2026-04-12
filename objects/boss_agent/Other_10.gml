@@ -1,7 +1,7 @@
 live;
 SetState = function(s){
 	state = s;
-	if(s = 0){
+	if(s = ENEMY_STATE.PRE){
 		SetFlame(flame_lower_pre,flame_upper_pre);
 		if(pre_mode = 0){
 			layer_sequence_destroy(enemy_sequence);
@@ -18,7 +18,7 @@ SetState = function(s){
 			layer_sequence_yscale(enemy_sequence,image_yscale);
 		}
 	}
-	if(s = 1){
+	if(s = ENEMY_STATE.INTRO){
 		layer_sequence_destroy(flame_lower_sequence);
 		layer_sequence_destroy(flame_upper_sequence);
 		layer_sequence_destroy(enemy_sequence);
@@ -26,7 +26,7 @@ SetState = function(s){
 		layer_sequence_xscale(enemy_sequence,image_xscale);
 		layer_sequence_yscale(enemy_sequence,image_yscale);
 	}
-	if(s = 2){
+	if(s = ENEMY_STATE.IDLE){
 		start = 1;
 		if(instance_exists(bullet_emitter_inst)){
 			bullet_emitter_inst.enabled = true;
@@ -268,11 +268,17 @@ SetBurn = function(b){
 
 SetFrozen = function(f){
     frozen_duration = f;
-	if(f > 0){
+	SetMoveEnabled(!f);
+	/*if(f > 0){
 	    frozen_moving = move_enabled;
 	}
-	SetMoveEnabled(f <= 0 ? frozen_moving : false);
-    bullet_emitter.enabled = !f;
+	SetMoveEnabled(f <= 0 ? frozen_moving : false);*/
+	if(instance_exists(bullet_emitter_inst)){
+		if(f > 0){
+			bullet_emitter_inst.end_attack();
+		}
+	bullet_emitter_inst.enabled = !f;
+	}
     if(f > 0){
         effect_type = 0;
         effect_alpha = 0.5;
@@ -285,5 +291,18 @@ SetFrozen = function(f){
         effect_alpha = 0;
         layer_sequence_speedscale(enemy_sequence,1);
         SetFlame(flame_lower,flame_upper);  // 重新创建尾焰（默认速度就是1）
+		SetIdle();
     }
+}
+
+SetIdle = function(){
+	SetState(ENEMY_STATE.IDLE);
+	SetMoveInfo();
+}
+	
+SetMoveInfo = function(){
+	move_range = [200,250,720-200,350];
+	move_distance = [100,160];
+	move_duration = [80,120];
+	move_interval = [20,30];
 }

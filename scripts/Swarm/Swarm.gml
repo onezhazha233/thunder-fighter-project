@@ -1,5 +1,10 @@
 function Swarm_IsEnabled(){
-	return battle_swarm_manager.enabled;
+	if(instance_exists(battle_swarm_manager)){
+		return battle_swarm_manager.enabled;
+	}
+	else{
+		return false;
+	}
 }
 
 function Swarm_SetEnabled(enabled){
@@ -11,6 +16,9 @@ function Swarm_SetEnabled(enabled){
 function Swarm_GetInterval(){
 	if(instance_exists(battle_swarm_manager)){
 		return battle_swarm_manager.interval;
+	}
+	else{
+		return -1;
 	}
 }
 	

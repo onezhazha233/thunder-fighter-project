@@ -145,12 +145,7 @@ function attack_1(attack,exarg=0){//中3散弹 150
 	
 function attack_2(attack,exarg=0){//机枪 60
 	if(attack.time = 1){
-		with(mark){
-			layer_sequence_destroy(enemy_sequence);
-			enemy_sequence = layer_sequence_create(layer_enemy,x,y,seq_enemy_boss_large_1_p2_attack_0);
-			layer_sequence_xscale(enemy_sequence,image_xscale);
-			layer_sequence_yscale(enemy_sequence,image_yscale);
-		}
+		mark.SetSequence(seq_enemy_boss_large_1_p2_attack_0);
 	}
 	if(attack.time mod 3 = 0){
 		tt = attack.time div 3;
@@ -180,7 +175,7 @@ function attack_2(attack,exarg=0){//机枪 60
 		}
 	}
 	if(attack.time = 59){
-		mark.SetState(ENEMY_STATE.IDLE);
+		mark.SetIdle();
 	}
 	if(attack.time = 60)attack.End();
 }
@@ -241,16 +236,7 @@ function attack_4(attack,exarg=0){//侧狙 40
 	if(attack.time = 1){
 		dir0 = point_direction(x-220,y+200,player.x,player.y);
 		dir1 = point_direction(x+220,y+200,player.x,player.y);
-		with(mark){
-			move_enabled = !move_enabled;
-			if(move_enabled = true){
-				move_nexttime = time;
-				move_state = 0;
-			}
-			else{
-				Anim_Destroy(id);
-			}
-		}
+		mark.SetMoveEnabled(false);
 	}
 	if(attack.time mod 4 = 0){
 		a = MakeEnemyBullet(x-220,y+200,bullet_enemy_red,spr_bullet_enemy_red_2);
@@ -296,15 +282,6 @@ function attack_4(attack,exarg=0){//侧狙 40
 	}
 	if(attack.time = 40){
 		attack.End();
-		with(mark){
-			move_enabled = !move_enabled;
-			if(move_enabled = true){
-				move_nexttime = time;
-				move_state = 0;
-			}
-			else{
-				Anim_Destroy(id);
-			}
-		}
+		mark.SetMoveEnabled(true);
 	}
 }

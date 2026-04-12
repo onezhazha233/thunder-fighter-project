@@ -26,20 +26,10 @@ y = -500
 battle_ui.boss_hpbar_enabled = true
 battle_wave.enabled = false
 
-bullet_emitter = emitter_boss_umbra_apex_p1
+bullet_emitter = emitter_boss_umbra_apex_p1_new
 
 intro_move_started = false
 intro_move_done = false
 intro_move_timer = 0
-
-move_enabled = true
-move_range = [150,150,570,1000]
-move_starttime = 0
-move_nexttime = 0
-move_distance = [200,500]
-move_duration = [20,30]
-move_interval = [5,10]
-move_state = 0//0为静止 1为移动中
-move_targetpos = [x,y]
 
 items = [[[battle_item_quantum_shield,battle_item_weapon_upgrade],1]]

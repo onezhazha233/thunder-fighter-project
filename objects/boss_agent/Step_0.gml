@@ -126,8 +126,17 @@ if(active = true){
 
 if(layer_sequence_is_finished(enemy_sequence)){
 	if(layer_sequence_get_headdir(enemy_sequence) = seqdir_right){
-		if(state = 1){
-			SetState(2);
+		if(state = ENEMY_STATE.INTRO){
+			SetIdle();
+		}
+		if(state = ENEMY_STATE.IDLE){
+			for(i=0;i<array_length(auto_idle_sequence);i+=1){
+				ss = sequence_get(auto_idle_sequence[i]);
+				if(layer_sequence_get_sequence(enemy_sequence) = ss){
+					SetIdle();
+					break;
+				}
+			}
 		}
 	}
 }

@@ -29,18 +29,8 @@ y = -500
 battle_ui.boss_hpbar_enabled = true;
 battle_wave.enabled = false
 
-bullet_emitter = emitter_boss_galaxy_ash_p2
+bullet_emitter = emitter_boss_galaxy_ash_p2_new
 
 die_sequence = seq_enemy_boss_large_1_die_black
-
-move_enabled = true
-move_range = [250,250,720-250,350]
-move_starttime = 0
-move_nexttime = 0
-move_distance = [80,180]
-move_duration = [40,80]
-move_interval = [10,20]
-move_state = 0//0为静止 1为移动中
-move_targetpos = [x,y]
 
 items = []

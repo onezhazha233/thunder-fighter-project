@@ -152,8 +152,8 @@ function attack_3(attack,exarg=0){//机炮 210
 		}
 	}
 	if(attack.time = 180){
-		mark.move_range[3] += 500;
-		mark.SetState(ENEMY_STATE.IDLE);
+		mark.mark.SetMoveInfo();
+		mark.SetIdle();
 	}
 	if(attack.time = 210){
 		attack.End();
@@ -199,7 +199,7 @@ function attack_5(attack,exarg=0){//米加 90
 		mg.image_angle = point_direction(xx,yy,player.x,player.y);
 	}
 	if(attack.time = 90){
-		mark.move_range[3] += 500;
+		mark.SetMoveInfo();
 		attack.End();
 	}
 }

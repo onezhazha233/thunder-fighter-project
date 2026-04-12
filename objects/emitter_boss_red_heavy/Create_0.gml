@@ -208,7 +208,7 @@ function attack_1(attack,exarg=0){//散射 120
 	if(attack.time = 120){
 		attack.End();
 		mark.SetMoveEnabled(true);
-		mark.SetState(ENEMY_STATE.IDLE);
+		mark.SetIdle();
 	}
 }
 
@@ -283,10 +283,10 @@ function attack_2(attack,exarg=0){//侧双斜散射 120
 			Anim_Create(a,"speed",0,0,0,11-(i/2),40,90+i*2.5);
 		}
 	}
-	if(time = 120){
+	if(attack.time = 120){
 		attack.End();
 		mark.SetMoveEnabled(true);
-		mark.SetState(ENEMY_STATE.IDLE);
+		mark.SetIdle();
 	}
 }
 

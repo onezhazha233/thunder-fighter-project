@@ -3,9 +3,10 @@ enabled = false
 wave = -1
 waves = ds_queue_create()
 wave_inst = noone
-boss_waves = [8]
+boss_waves = []
 
-ds_queue_enqueue(waves,global.choicebosswave)
+ds_queue_enqueue(waves,wave_boss_dark_assault)
+//ds_queue_enqueue(waves,global.choicebosswave)
 //ds_queue_enqueue(waves,wave_boss_umbra_apex)
 /*ds_queue_enqueue(waves,wave_0)
 //ds_queue_enqueue(waves,wave_8)

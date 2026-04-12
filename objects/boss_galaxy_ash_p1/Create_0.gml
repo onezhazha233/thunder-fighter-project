@@ -29,16 +29,6 @@ y = -500
 battle_ui.boss_hpbar_enabled = true
 battle_wave.enabled = false
 
-bullet_emitter = emitter_boss_galaxy_ash_p1
-
-move_enabled = true
-move_range = [200,250,720-200,1350]
-move_starttime = 0
-move_nexttime = 0
-move_distance = [100,160]
-move_duration = [80,120]
-move_interval = [20,30]
-move_state = 0//0为静止 1为移动中
-move_targetpos = [x,y]
+bullet_emitter = emitter_boss_galaxy_ash_p1_new
 
 items = [[[battle_item_quantum_shield,battle_item_weapon_upgrade],1]]

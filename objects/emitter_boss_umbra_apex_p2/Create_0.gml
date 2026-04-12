@@ -257,8 +257,8 @@ function attack_3(attack,exarg=0){//机炮加米加 210
 		}
 	}
 	if(attack.time = 180){
-		mark.move_range[3] += 500;
-		mark.SetState(ENEMY_STATE.IDLE);
+		mark.SetMoveInfo();
+		mark.SetIdle();
 	}
 	if(attack.time = 210){
 		attack.End();
@@ -302,7 +302,7 @@ function attack_4(attack,exarg=0){//收缩移动激光 160
 		}
 	}
 	if(attack.time = 160){
-		mark.move_range[3] += 700;
+		mark.SetMoveInfo();
 		attack.End();
 	}
 }
@@ -351,7 +351,7 @@ function attack_5(attack,exarg=0){//米加 180
 	}
 	
 	if(attack.time = 180){
-		mark.move_range[3] += 500;
+		mark.SetMoveInfo();
 		attack.End();
 	}
 }
@@ -476,7 +476,7 @@ function attack_7(attack,exarg=0){//穿甲弹 180
 		Anim_Create(a,"speed",0,0,5,18,10,30);
 	}
 	if(attack.time = 180){
-		mark.SetState(ENEMY_STATE.IDLE);
+		mark.SetIdle();
 		attack.End();
 	}
 }
@@ -521,7 +521,7 @@ function attack_8(attack,exarg=0){//穿甲弹加米加狙 700
 		}
 	}
 	if(attack.time = bottom_fire_start){
-		mark.SetState(ENEMY_STATE.IDLE);
+		mark.SetIdle();
 		at = 20;
 		att = 20;
 	}
