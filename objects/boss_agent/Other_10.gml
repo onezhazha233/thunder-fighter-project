@@ -268,7 +268,10 @@ SetBurn = function(b){
 
 SetFrozen = function(f){
     frozen_duration = f;
-    SetMoveEnabled(!f);
+	if(f > 0){
+	    frozen_moving = move_enabled;
+	}
+	SetMoveEnabled(f <= 0 ? frozen_moving : false);
     bullet_emitter.enabled = !f;
     if(f > 0){
         effect_type = 0;

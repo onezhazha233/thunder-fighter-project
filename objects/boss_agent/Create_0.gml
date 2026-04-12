@@ -54,6 +54,7 @@ move_targetpos = [x,y]
 
 burn_target = 120
 frozen_target = 240
+frozen_moving = true
 
 global.inv_cutscene = 1
 if(Player_IsEnabled())player.equipment.SetEnabled(false);
