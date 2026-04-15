@@ -31,6 +31,6 @@ battle_wave.enabled = false
 
 bullet_emitter = emitter_boss_galaxy_ash_p2_new
 
-die_sequence = seq_enemy_boss_large_1_die_black
+die_sequence = seq_enemy_boss_large_1_die
 
 items = []

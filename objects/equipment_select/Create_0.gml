@@ -269,6 +269,7 @@ var _btn_armor = _make_equipment_button(_armors, _current_armor, "armor", Lang_G
 // “进入战斗”按钮：应用当前选择并跳转战斗房间
 var _btn_enter = new LuiButton({ text: "进入战斗", width: 200, height: 44 }).setFlexAlignSelf(flexpanel_align.center);
 _btn_enter.addEvent(LUI_EV_CLICK, function(_el) {
+	global.score = 0;
 	room_goto(room_battle);
 });
 

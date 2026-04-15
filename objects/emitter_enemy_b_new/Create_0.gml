@@ -3,6 +3,105 @@ event_inherited();
 
 mode = EMITTER_MODE.FIXED;
 
+function attack_slice(){
+	if(attack_time = 30){
+		dd = -800;
+		sx = room_width;
+		sy = 200;
+		ex = 0;
+		ey = 200+100;
+		var inst = instance_create_depth((sx+ex)/2,(sy+ey)/2,dd,camera_split);
+	    inst.image_angle = point_direction(sx,sy,ex,ey)+90;
+		Anim_Create(inst,"offset",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0,30,30);
+		Anim_Create(inst,"offset",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,30,-30,30,90);
+		var inst = instance_create_depth((sx+ex)/2,(sy+ey)/2,dd,camera_split);
+	    inst.image_angle = point_direction(sx,sy,ex,ey)-90;
+		Anim_Create(inst,"offset",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0,30,30);
+		Anim_Create(inst,"offset",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,30,-30,30,90);
+		inst.duration = 150;
+		for(i=0;i<40;i+=1){
+			a = MakeEnemyBullet(sx+(ex-sx)/40*i,sy+(ey-sy)/40*i,bullet_enemy_red,spr_bullet_enemy_red_0);
+			a.direction = i*9;
+			Anim_Create(a,"speed",0,0,-3,10,20,30+i);
+			a = MakeEnemyBullet(sx+(ex-sx)/40*i,sy+(ey-sy)/40*i,bullet_enemy_red,spr_bullet_enemy_red_0);
+			a.direction = -i*9;
+			Anim_Create(a,"speed",0,0,-3,10,20,30+i);
+		}
+	}
+	if(attack_time = 40){
+		dd = -801;
+		sx = 0;
+		sy = 300;
+		ex = room_width;
+		ey = 300+100;
+		var inst = instance_create_depth((sx+ex)/2,(sy+ey)/2,dd,camera_split);
+	    inst.image_angle = point_direction(sx,sy,ex,ey)+90;
+		Anim_Create(inst,"offset",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0,30,30);
+		Anim_Create(inst,"offset",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,30,-30,30,80);
+		var inst = instance_create_depth((sx+ex)/2,(sy+ey)/2,dd,camera_split);
+	    inst.image_angle = point_direction(sx,sy,ex,ey)-90;
+		Anim_Create(inst,"offset",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0,30,30);
+		Anim_Create(inst,"offset",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,30,-30,30,80);
+		inst.duration = 150;
+		for(i=0;i<40;i+=1){
+			a = MakeEnemyBullet(sx+(ex-sx)/40*i,sy+(ey-sy)/40*i,bullet_enemy_red,spr_bullet_enemy_red_0);
+			a.direction = i*9;
+			Anim_Create(a,"speed",0,0,-3,10,20,30+i);
+			a = MakeEnemyBullet(sx+(ex-sx)/40*i,sy+(ey-sy)/40*i,bullet_enemy_red,spr_bullet_enemy_red_0);
+			a.direction = -i*9;
+			Anim_Create(a,"speed",0,0,-3,10,20,30+i);
+		}
+	}
+	if(attack_time = 50){
+		dd = -802;
+		sx = room_width;
+		sy = 400;
+		ex = 0;
+		ey = 400+100;
+		var inst = instance_create_depth((sx+ex)/2,(sy+ey)/2,dd,camera_split);
+	    inst.image_angle = point_direction(sx,sy,ex,ey)+90;
+		Anim_Create(inst,"offset",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0,30,30);
+		Anim_Create(inst,"offset",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,30,-30,30,70);
+		var inst = instance_create_depth((sx+ex)/2,(sy+ey)/2,dd,camera_split);
+	    inst.image_angle = point_direction(sx,sy,ex,ey)-90;
+		Anim_Create(inst,"offset",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0,30,30);
+		Anim_Create(inst,"offset",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,30,-30,30,70);
+		inst.duration = 150;
+		for(i=0;i<40;i+=1){
+			a = MakeEnemyBullet(sx+(ex-sx)/40*i,sy+(ey-sy)/40*i,bullet_enemy_red,spr_bullet_enemy_red_0);
+			a.direction = i*9;
+			Anim_Create(a,"speed",0,0,-3,10,20,30+i);
+			a = MakeEnemyBullet(sx+(ex-sx)/40*i,sy+(ey-sy)/40*i,bullet_enemy_red,spr_bullet_enemy_red_0);
+			a.direction = -i*9;
+			Anim_Create(a,"speed",0,0,-3,10,20,30+i);
+		}
+	}
+	if(attack_time = 60){
+		dd = -801;
+		sx = 0;
+		sy = 500;
+		ex = room_width;
+		ey = 500+100;
+		var inst = instance_create_depth((sx+ex)/2,(sy+ey)/2,dd,camera_split);
+	    inst.image_angle = point_direction(sx,sy,ex,ey)+90;
+		Anim_Create(inst,"offset",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0,30,30);
+		Anim_Create(inst,"offset",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,30,-30,30,60);
+		var inst = instance_create_depth((sx+ex)/2,(sy+ey)/2,dd,camera_split);
+	    inst.image_angle = point_direction(sx,sy,ex,ey)-90;
+		Anim_Create(inst,"offset",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0,30,30);
+		Anim_Create(inst,"offset",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,30,-30,30,60);
+		inst.duration = 150;
+		for(i=0;i<40;i+=1){
+			a = MakeEnemyBullet(sx+(ex-sx)/40*i,sy+(ey-sy)/40*i,bullet_enemy_red,spr_bullet_enemy_red_0);
+			a.direction = i*9;
+			Anim_Create(a,"speed",0,0,-3,10,20,30+i);
+			a = MakeEnemyBullet(sx+(ex-sx)/40*i,sy+(ey-sy)/40*i,bullet_enemy_red,spr_bullet_enemy_red_0);
+			a.direction = -i*9;
+			Anim_Create(a,"speed",0,0,-3,10,20,30+i);
+		}
+	}
+}
+
 function attack_0(){
     // 处理第一部分
     if (attack_time >= 1 && attack_time <= 26) {

@@ -82,3 +82,33 @@ if(instance_exists(player)){
 		Player_SetWeaponLevel(max(0,Player_GetWeaponLevel()-1));
 	}
 }
+
+if(keyboard_check_pressed(ord("K"))){
+	with(enemy_agent){
+		hp = 0;
+	}
+}
+
+/*if (mouse_check_button_pressed(mb_right)) {
+    is_drawing = true;
+    start_x = mouse_x;
+    start_y = mouse_y;
+}
+
+/// 拖动更新终点
+if (is_drawing) {
+    end_x = mouse_x;
+    end_y = mouse_y;
+}
+
+/// 松开生成切割对象
+if (mouse_check_button_released(mb_right) && is_drawing) {
+    is_drawing = false;
+
+    var inst = instance_create_depth(start_x, start_y, dd, camera_split);
+    inst.image_angle = point_direction(start_x, start_y, end_x, end_y)+90;
+	Anim_Create(inst,"offset",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0,30,30);
+	Anim_Create(inst,"offset",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,30,-30,30,120);
+	inst.duration = 150;
+	dd -= 1;
+}*/

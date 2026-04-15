@@ -28,4 +28,6 @@ battle_wave.enabled = false
 
 bullet_emitter = emitter_boss_dark_assault_p2_new
 
+die_sequence = seq_enemy_boss_large_15_die
+
 items = []

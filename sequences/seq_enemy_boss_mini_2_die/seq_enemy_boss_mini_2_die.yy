@@ -44,14 +44,14 @@
     {"$GMGraphicTrack":"","%Name":"spr_enemy_boss_mini_2_wing","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
               "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_2_wing","path":"sprites/spr_enemy_boss_mini_2_wing/spr_enemy_boss_mini_2_wing.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
-            },"Disabled":false,"id":"3d927f6f-693e-4f11-8899-1a3d3c35b031","IsCreationKey":false,"Key":64.0,"Length":110.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            },"Disabled":false,"id":"3d927f6f-693e-4f11-8899-1a3d3c35b031","IsCreationKey":false,"Key":64.0,"Length":26.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_wing","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068332,"tracks":[
         {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
                 },"Disabled":false,"id":"53ab416a-6db2-4bfa-baff-7ba10e08ff8b","IsCreationKey":false,"Key":64.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
                 },"Disabled":false,"id":"288feb5a-809c-4f46-b4ae-56681adae0ef","IsCreationKey":false,"Key":80.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
               {"$Keyframe<ColourKeyframe>":"","Channels":{
                   "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":16777215,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
@@ -73,40 +73,40 @@
               {"$Keyframe<RealKeyframe>":"","Channels":{
                   "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":{"$GMAnimCurve":"","%Name":"位置","channels":[
                         {"$GMAnimCurveChannel":"","%Name":"X","colour":4290799884,"name":"X","points":[
-                            {"th0":-0.023636363,"th1":4.9529425E-10,"tv0":0.0,"tv1":0.0,"x":0.0,"y":138.0,},
-                            {"th0":-0.11818182,"th1":0.15272728,"tv0":0.0,"tv1":0.0,"x":0.23636363,"y":228.0,},
-                            {"th0":-0.15272728,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":228.0,},
+                            {"th0":-0.0962963,"th1":2.0178657E-09,"tv0":0.0,"tv1":0.0,"x":0.0,"y":138.0,},
+                            {"th0":-0.4814815,"th1":0.007407403,"tv0":0.0,"tv1":0.0,"x":0.962963,"y":228.0,},
+                            {"th0":-0.007407403,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":228.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                         {"$GMAnimCurveChannel":"","%Name":"Y","colour":4281083598,"name":"Y","points":[
-                            {"th0":-0.023636363,"th1":4.9529425E-10,"tv0":0.0,"tv1":0.0,"x":0.0,"y":-6.0,},
-                            {"th0":-0.11818182,"th1":0.15272728,"tv0":0.0,"tv1":0.0,"x":0.23636363,"y":-86.0,},
-                            {"th0":-0.15272728,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":-86.0,},
+                            {"th0":-0.0962963,"th1":2.0178657E-09,"tv0":0.0,"tv1":0.0,"x":0.0,"y":-6.0,},
+                            {"th0":-0.4814815,"th1":0.007407403,"tv0":0.0,"tv1":0.0,"x":0.962963,"y":-86.0,},
+                            {"th0":-0.007407403,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":-86.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                       ],"function":2,"name":"位置","resourceType":"GMAnimCurve","resourceVersion":"2.0",},"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
                   "1":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":{"$GMAnimCurve":"","%Name":"位置","channels":[
                         {"$GMAnimCurveChannel":"","%Name":"X","colour":4290799884,"name":"X","points":[
-                            {"th0":-0.023636363,"th1":4.9529425E-10,"tv0":0.0,"tv1":0.0,"x":0.0,"y":138.0,},
-                            {"th0":-0.11818182,"th1":0.15272728,"tv0":0.0,"tv1":0.0,"x":0.23636363,"y":228.0,},
-                            {"th0":-0.15272728,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":228.0,},
+                            {"th0":-0.0962963,"th1":2.0178657E-09,"tv0":0.0,"tv1":0.0,"x":0.0,"y":138.0,},
+                            {"th0":-0.4814815,"th1":0.007407403,"tv0":0.0,"tv1":0.0,"x":0.962963,"y":228.0,},
+                            {"th0":-0.007407403,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":228.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                         {"$GMAnimCurveChannel":"","%Name":"Y","colour":4281083598,"name":"Y","points":[
-                            {"th0":-0.023636363,"th1":4.9529425E-10,"tv0":0.0,"tv1":0.0,"x":0.0,"y":-6.0,},
-                            {"th0":-0.11818182,"th1":0.15272728,"tv0":0.0,"tv1":0.0,"x":0.23636363,"y":-86.0,},
-                            {"th0":-0.15272728,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":-86.0,},
+                            {"th0":-0.0962963,"th1":2.0178657E-09,"tv0":0.0,"tv1":0.0,"x":0.0,"y":-6.0,},
+                            {"th0":-0.4814815,"th1":0.007407403,"tv0":0.0,"tv1":0.0,"x":0.962963,"y":-86.0,},
+                            {"th0":-0.007407403,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":-86.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                       ],"function":2,"name":"位置","resourceType":"GMAnimCurve","resourceVersion":"2.0",},"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
-                },"Disabled":false,"id":"4ba5412a-58b0-446b-8243-de7809a21879","IsCreationKey":false,"Key":64.0,"Length":110.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                },"Disabled":false,"id":"cf71b813-06ea-46d3-9b02-b1ba30df431d","IsCreationKey":false,"Key":64.0,"Length":27.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
             ],"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"position","resourceType":"GMRealTrack","resourceVersion":"2.0","trackColour":4294068332,"tracks":[],"traits":0,},
         {"$GMRealTrack":"","%Name":"rotation","builtinName":8,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
               {"$Keyframe<RealKeyframe>":"","Channels":{
                   "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":{"$GMAnimCurve":"","%Name":"旋转","channels":[
                         {"$GMAnimCurveChannel":"","%Name":"角度","colour":4290799884,"name":"角度","points":[
-                            {"th0":-0.023636363,"th1":4.9529425E-10,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.0,},
-                            {"th0":-0.11818182,"th1":0.15272728,"tv0":0.0,"tv1":0.0,"x":0.23636363,"y":-300.0,},
-                            {"th0":-0.15272728,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":-300.0,},
+                            {"th0":-0.0962963,"th1":2.0178657E-09,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.0,},
+                            {"th0":-0.4814815,"th1":0.007407403,"tv0":0.0,"tv1":0.0,"x":0.962963,"y":-300.0,},
+                            {"th0":-0.007407403,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":-300.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                       ],"function":2,"name":"旋转","resourceType":"GMAnimCurve","resourceVersion":"2.0",},"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
-                },"Disabled":false,"id":"a3707a87-2ab2-476f-abee-39659f926a13","IsCreationKey":false,"Key":64.0,"Length":110.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                },"Disabled":false,"id":"b1d7f7c2-f30f-4ea8-93bb-a01f256afc4b","IsCreationKey":false,"Key":64.0,"Length":27.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
             ],"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"rotation","resourceType":"GMRealTrack","resourceVersion":"2.0","trackColour":4294068332,"tracks":[],"traits":0,},
         {"$GMRealTrack":"","%Name":"scale","builtinName":15,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
               {"$Keyframe<RealKeyframe>":"","Channels":{
@@ -118,29 +118,29 @@
               {"$Keyframe<RealKeyframe>":"","Channels":{
                   "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":{"$GMAnimCurve":"","%Name":"缩放","channels":[
                         {"$GMAnimCurveChannel":"","%Name":"X","colour":4290799884,"name":"X","points":[
-                            {"th0":-0.023636363,"th1":4.9529425E-10,"tv0":0.0,"tv1":0.0,"x":0.0,"y":1.0,},
-                            {"th0":-0.11818182,"th1":0.15272728,"tv0":0.0,"tv1":0.0,"x":0.23636363,"y":2.0,},
-                            {"th0":-0.15272728,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":2.0,},
+                            {"th0":-0.0962963,"th1":2.0178657E-09,"tv0":0.0,"tv1":0.0,"x":0.0,"y":1.0,},
+                            {"th0":-0.4814815,"th1":0.007407403,"tv0":0.0,"tv1":0.0,"x":0.962963,"y":2.0,},
+                            {"th0":-0.007407403,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":2.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                         {"$GMAnimCurveChannel":"","%Name":"Y","colour":4281083598,"name":"Y","points":[
-                            {"th0":-0.023636363,"th1":4.9529425E-10,"tv0":0.0,"tv1":0.0,"x":0.0,"y":1.0,},
-                            {"th0":-0.11818182,"th1":0.15272728,"tv0":0.0,"tv1":0.0,"x":0.23636363,"y":2.0,},
-                            {"th0":-0.15272728,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":2.0,},
+                            {"th0":-0.0962963,"th1":2.0178657E-09,"tv0":0.0,"tv1":0.0,"x":0.0,"y":1.0,},
+                            {"th0":-0.4814815,"th1":0.007407403,"tv0":0.0,"tv1":0.0,"x":0.962963,"y":2.0,},
+                            {"th0":-0.007407403,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":2.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                       ],"function":2,"name":"缩放","resourceType":"GMAnimCurve","resourceVersion":"2.0",},"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
                   "1":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":{"$GMAnimCurve":"","%Name":"缩放","channels":[
                         {"$GMAnimCurveChannel":"","%Name":"X","colour":4290799884,"name":"X","points":[
-                            {"th0":-0.023636363,"th1":4.9529425E-10,"tv0":0.0,"tv1":0.0,"x":0.0,"y":1.0,},
-                            {"th0":-0.11818182,"th1":0.15272728,"tv0":0.0,"tv1":0.0,"x":0.23636363,"y":2.0,},
-                            {"th0":-0.15272728,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":2.0,},
+                            {"th0":-0.0962963,"th1":2.0178657E-09,"tv0":0.0,"tv1":0.0,"x":0.0,"y":1.0,},
+                            {"th0":-0.4814815,"th1":0.007407403,"tv0":0.0,"tv1":0.0,"x":0.962963,"y":2.0,},
+                            {"th0":-0.007407403,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":2.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                         {"$GMAnimCurveChannel":"","%Name":"Y","colour":4281083598,"name":"Y","points":[
-                            {"th0":-0.023636363,"th1":4.9529425E-10,"tv0":0.0,"tv1":0.0,"x":0.0,"y":1.0,},
-                            {"th0":-0.11818182,"th1":0.15272728,"tv0":0.0,"tv1":0.0,"x":0.23636363,"y":2.0,},
-                            {"th0":-0.15272728,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":2.0,},
+                            {"th0":-0.0962963,"th1":2.0178657E-09,"tv0":0.0,"tv1":0.0,"x":0.0,"y":1.0,},
+                            {"th0":-0.4814815,"th1":0.007407403,"tv0":0.0,"tv1":0.0,"x":0.962963,"y":2.0,},
+                            {"th0":-0.007407403,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":2.0,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                       ],"function":2,"name":"缩放","resourceType":"GMAnimCurve","resourceVersion":"2.0",},"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
-                },"Disabled":false,"id":"c71309f5-45c9-4ba9-8cf5-2f3d4c0972de","IsCreationKey":false,"Key":64.0,"Length":110.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                },"Disabled":false,"id":"388a5f80-c50e-4b7e-8030-39b8f16f7595","IsCreationKey":false,"Key":64.0,"Length":27.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
             ],"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"scale","resourceType":"GMRealTrack","resourceVersion":"2.0","trackColour":4294068332,"tracks":[],"traits":0,},
       ],"traits":0,},
     {"$GMGroupTrack":"","%Name":"gun","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"modifiers":[],"name":"gun","resourceType":"GMGroupTrack","resourceVersion":"2.0","trackColour":4294068332,"tracks":[
@@ -198,13 +198,13 @@
             ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_gun","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068332,"tracks":[
             {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
                   {"$Keyframe<ColourKeyframe>":"","Channels":{
-                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
                     },"Disabled":false,"id":"20190edd-82bd-44ac-822e-2e66f9cd809e","IsCreationKey":false,"Key":80.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                   {"$Keyframe<ColourKeyframe>":"","Channels":{
-                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
                     },"Disabled":false,"id":"1cdfea43-d63e-4360-b21e-e850c10e5317","IsCreationKey":false,"Key":94.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                   {"$Keyframe<ColourKeyframe>":"","Channels":{
-                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":16777215,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":8421504,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
                     },"Disabled":false,"id":"1fbf1d83-31b9-4b20-8436-8ed63f0dde5a","IsCreationKey":false,"Key":102.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                 ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068332,"tracks":[],"traits":0,},
             {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
@@ -253,14 +253,14 @@
             ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_barrel_0","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068332,"tracks":[
             {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
                   {"$Keyframe<ColourKeyframe>":"","Channels":{
-                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                    },"Disabled":false,"id":"b3b3503e-7f26-44fc-a20d-515402b68357","IsCreationKey":false,"Key":80.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                    },"Disabled":false,"id":"d52f9aef-0d8a-446b-b4c0-80850660a20e","IsCreationKey":false,"Key":80.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                   {"$Keyframe<ColourKeyframe>":"","Channels":{
-                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                    },"Disabled":false,"id":"2074d4bf-5a5f-46f7-b91e-7e2a19a1257e","IsCreationKey":false,"Key":94.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                    },"Disabled":false,"id":"bc2016bb-3752-450c-b6aa-fc2106db0507","IsCreationKey":false,"Key":94.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                   {"$Keyframe<ColourKeyframe>":"","Channels":{
-                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":16777215,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                    },"Disabled":false,"id":"379e0904-ba71-41ce-abed-3dd76b49c9ab","IsCreationKey":false,"Key":102.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":8421504,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                    },"Disabled":false,"id":"d8c8922a-4491-4d32-86ad-ca229927f67c","IsCreationKey":false,"Key":102.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                 ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068332,"tracks":[],"traits":0,},
             {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
                   {"$Keyframe<RealKeyframe>":"","Channels":{
@@ -308,14 +308,14 @@
             ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_barrel_1","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068332,"tracks":[
             {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
                   {"$Keyframe<ColourKeyframe>":"","Channels":{
-                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                    },"Disabled":false,"id":"b3a771fa-262e-4b12-b11b-e8190ce091e8","IsCreationKey":false,"Key":80.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                    },"Disabled":false,"id":"b505ce33-7c5d-4147-8cd3-90b63db13ac1","IsCreationKey":false,"Key":80.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                   {"$Keyframe<ColourKeyframe>":"","Channels":{
-                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                    },"Disabled":false,"id":"e2321b7c-e335-4e2c-85ed-a270dab2a050","IsCreationKey":false,"Key":94.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                    },"Disabled":false,"id":"54a388ed-76dd-445e-8396-b9b5e529b95a","IsCreationKey":false,"Key":94.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                   {"$Keyframe<ColourKeyframe>":"","Channels":{
-                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":16777215,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                    },"Disabled":false,"id":"11ebf162-a0be-4d28-9bc0-46a03a1e0f9c","IsCreationKey":false,"Key":102.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":8421504,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                    },"Disabled":false,"id":"915443b0-824f-42b8-96ba-3f46cba3cc51","IsCreationKey":false,"Key":102.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                 ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068332,"tracks":[],"traits":0,},
             {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
                   {"$Keyframe<RealKeyframe>":"","Channels":{
@@ -380,14 +380,14 @@
             ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_gun","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068332,"tracks":[
             {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
                   {"$Keyframe<ColourKeyframe>":"","Channels":{
-                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                    },"Disabled":false,"id":"74b637bf-509b-41c8-8ccf-6b7b42ae1f8b","IsCreationKey":false,"Key":158.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                    },"Disabled":false,"id":"e9329dc6-891b-46b3-a78e-af338325ff48","IsCreationKey":false,"Key":158.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                   {"$Keyframe<ColourKeyframe>":"","Channels":{
-                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                    },"Disabled":false,"id":"80199fc4-444b-4045-9947-8086f58158a0","IsCreationKey":false,"Key":170.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                    },"Disabled":false,"id":"9ee3d2a8-6508-4f0a-9497-8cf67ade793b","IsCreationKey":false,"Key":170.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                   {"$Keyframe<ColourKeyframe>":"","Channels":{
-                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":16777215,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                    },"Disabled":false,"id":"ffa2b3d7-2ec9-489b-8b3d-54fc91623f84","IsCreationKey":false,"Key":173.9999,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":8421504,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                    },"Disabled":false,"id":"11eaf41e-ea5e-4165-bde0-e4175f7a7a65","IsCreationKey":false,"Key":174.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                 ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068332,"tracks":[],"traits":0,},
             {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
                   {"$Keyframe<RealKeyframe>":"","Channels":{
@@ -429,14 +429,14 @@
             ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_barrel_0","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068332,"tracks":[
             {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
                   {"$Keyframe<ColourKeyframe>":"","Channels":{
-                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                    },"Disabled":false,"id":"5260f356-c1ea-4ae2-9ea0-5a802a71202b","IsCreationKey":false,"Key":158.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                    },"Disabled":false,"id":"a377c0a4-a5bb-4eb2-b384-9b76441dc504","IsCreationKey":false,"Key":158.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                   {"$Keyframe<ColourKeyframe>":"","Channels":{
-                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                    },"Disabled":false,"id":"df46acdb-8ba1-4b61-8637-ee03fd4d5e43","IsCreationKey":false,"Key":170.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                    },"Disabled":false,"id":"09fe28a3-7331-4612-a2b4-86de5628ba5d","IsCreationKey":false,"Key":170.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                   {"$Keyframe<ColourKeyframe>":"","Channels":{
-                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":16777215,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                    },"Disabled":false,"id":"21598bfd-f2cb-4631-ab0d-51028295fda2","IsCreationKey":false,"Key":173.9999,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":8421504,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                    },"Disabled":false,"id":"3637e47c-7c48-4b8a-b62d-acedd5c2eb94","IsCreationKey":false,"Key":174.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                 ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068332,"tracks":[],"traits":0,},
             {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
                   {"$Keyframe<RealKeyframe>":"","Channels":{
@@ -478,14 +478,14 @@
             ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_barrel_1","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068332,"tracks":[
             {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
                   {"$Keyframe<ColourKeyframe>":"","Channels":{
-                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                    },"Disabled":false,"id":"90b1391f-e5da-42e3-a656-83824f0b62b7","IsCreationKey":false,"Key":158.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                    },"Disabled":false,"id":"f28a3149-c73e-4cb7-b35a-cebd62a353ba","IsCreationKey":false,"Key":158.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                   {"$Keyframe<ColourKeyframe>":"","Channels":{
-                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                    },"Disabled":false,"id":"66b2a255-d907-42c1-a269-33c9c2d6531f","IsCreationKey":false,"Key":170.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                    },"Disabled":false,"id":"e45cf919-384d-4e7f-9da3-e454e9832508","IsCreationKey":false,"Key":170.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                   {"$Keyframe<ColourKeyframe>":"","Channels":{
-                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":16777215,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                    },"Disabled":false,"id":"9da62f43-64c0-4920-a2d9-6606e89c4c34","IsCreationKey":false,"Key":173.9999,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                      "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":8421504,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                    },"Disabled":false,"id":"c8c87401-d8ed-4ed2-b729-608e1b981415","IsCreationKey":false,"Key":174.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                 ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068332,"tracks":[],"traits":0,},
             {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
                   {"$Keyframe<RealKeyframe>":"","Channels":{
@@ -790,13 +790,13 @@
                     ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_side","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[
                     {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
                           {"$Keyframe<ColourKeyframe>":"","Channels":{
-                              "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                              "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
                             },"Disabled":false,"id":"57402042-af1f-4c0f-8b1b-47a5a816141d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                           {"$Keyframe<ColourKeyframe>":"","Channels":{
-                              "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                              "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
                             },"Disabled":false,"id":"a81dd2b5-a591-4b42-9c1f-13db09a4c0a6","IsCreationKey":false,"Key":164.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                           {"$Keyframe<ColourKeyframe>":"","Channels":{
-                              "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":16777215,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                              "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":8421504,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
                             },"Disabled":false,"id":"e9a3c2db-085e-490c-8773-47f92414903e","IsCreationKey":false,"Key":173.9999,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                         ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
                     {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
@@ -834,6 +834,11 @@
                           "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_2_wing","path":"sprites/spr_enemy_boss_mini_2_wing/spr_enemy_boss_mini_2_wing.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                         },"Disabled":false,"id":"bc118e66-5ccf-4abc-b769-31fb401d63a9","IsCreationKey":false,"Key":0.0,"Length":64.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                     ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_wing","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[
+                    {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
+                          {"$Keyframe<ColourKeyframe>":"","Channels":{
+                              "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                            },"Disabled":false,"id":"3da30a9a-a480-41eb-a6ba-afa68d23f216","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                        ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
                     {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
                           {"$Keyframe<RealKeyframe>":"","Channels":{
                               "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
@@ -889,6 +894,11 @@
                               "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_2_gun","path":"sprites/spr_enemy_boss_mini_2_gun/spr_enemy_boss_mini_2_gun.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                             },"Disabled":false,"id":"701a568b-3e51-42e0-96df-4bf6b09fb12e","IsCreationKey":false,"Key":0.0,"Length":158.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_gun","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[
+                        {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
+                              {"$Keyframe<ColourKeyframe>":"","Channels":{
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                },"Disabled":false,"id":"27dd16bf-5366-4157-a480-0cf3adc6c726","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                            ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
                         {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
                               {"$Keyframe<RealKeyframe>":"","Channels":{
                                   "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
@@ -918,6 +928,11 @@
                               "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_2_barrel_0","path":"sprites/spr_enemy_boss_mini_2_barrel_0/spr_enemy_boss_mini_2_barrel_0.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                             },"Disabled":false,"id":"cb5e64f6-cb5b-47f0-938d-427cfbf5b9cb","IsCreationKey":false,"Key":0.0,"Length":158.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_barrel_0","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[
+                        {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
+                              {"$Keyframe<ColourKeyframe>":"","Channels":{
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                },"Disabled":false,"id":"900c3c60-16f6-43e7-87ac-d975e6696daa","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                            ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
                         {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
                               {"$Keyframe<RealKeyframe>":"","Channels":{
                                   "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
@@ -947,6 +962,11 @@
                               "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_2_barrel_1","path":"sprites/spr_enemy_boss_mini_2_barrel_1/spr_enemy_boss_mini_2_barrel_1.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                             },"Disabled":false,"id":"2b029404-5a0a-4530-8558-c9b83fec67b3","IsCreationKey":false,"Key":0.0,"Length":158.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_barrel_1","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[
+                        {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
+                              {"$Keyframe<ColourKeyframe>":"","Channels":{
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                },"Disabled":false,"id":"46c388b3-ff7e-4c57-b9e8-a022a881361a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                            ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
                         {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
                               {"$Keyframe<RealKeyframe>":"","Channels":{
                                   "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
@@ -991,13 +1011,13 @@
                         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_gun","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[
                         {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
                               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
                                 },"Disabled":false,"id":"405aab10-516f-4b45-a161-2bac129caf33","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
                                 },"Disabled":false,"id":"c7a31d72-24fc-45b1-98de-84852eaca0e2","IsCreationKey":false,"Key":164.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":16777215,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":8421504,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
                                 },"Disabled":false,"id":"fd6bbd0c-3655-4e24-a942-0de2c59c54cb","IsCreationKey":false,"Key":173.9999,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                             ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
                         {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
@@ -1031,14 +1051,14 @@
                         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_barrel_0","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[
                         {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
                               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                                },"Disabled":false,"id":"961c474e-1a9a-4756-9e2f-279ba00af19a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                },"Disabled":false,"id":"6c69ae44-0c4e-4d50-95e5-401839c7abf0","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                                },"Disabled":false,"id":"7e2d642d-1214-412a-b504-87ca2841a564","IsCreationKey":false,"Key":164.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                },"Disabled":false,"id":"daf3f3aa-82fe-4a1b-8128-92e80b3a0b34","IsCreationKey":false,"Key":164.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":16777215,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                                },"Disabled":false,"id":"7bc020a8-61b3-45c1-a5ee-d92af0df3b23","IsCreationKey":false,"Key":173.9999,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":8421504,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                },"Disabled":false,"id":"24e66fcd-792c-4a4f-abbe-34eab3dc8bc8","IsCreationKey":false,"Key":173.9999,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                             ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
                         {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
                               {"$Keyframe<RealKeyframe>":"","Channels":{
@@ -1071,14 +1091,14 @@
                         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_barrel_1","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[
                         {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
                               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                                },"Disabled":false,"id":"92e3c228-a446-447d-b166-1c9ff79166b3","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                },"Disabled":false,"id":"4ff82c60-d214-4894-95a4-8254b000d384","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                                },"Disabled":false,"id":"1d6ed77d-1f3e-48ab-a590-2036afe68c0c","IsCreationKey":false,"Key":164.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                },"Disabled":false,"id":"f0a8de3f-4b0b-4e5e-9345-d98e2c842444","IsCreationKey":false,"Key":164.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":16777215,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                                },"Disabled":false,"id":"932253f4-20d6-40e9-8c3a-6940713d580a","IsCreationKey":false,"Key":173.9999,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":8421504,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                },"Disabled":false,"id":"6cebb2fd-5ea5-44c9-b763-e435157ced05","IsCreationKey":false,"Key":173.9999,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                             ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
                         {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
                               {"$Keyframe<RealKeyframe>":"","Channels":{
@@ -1131,14 +1151,14 @@
                     ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_side","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[
                     {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
                           {"$Keyframe<ColourKeyframe>":"","Channels":{
-                              "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                            },"Disabled":false,"id":"9eef6d5b-2ef0-4d29-9f7b-a48f5f5a7696","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                              "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                            },"Disabled":false,"id":"20ce6765-bbd1-4053-96c0-c1572c1e5945","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                           {"$Keyframe<ColourKeyframe>":"","Channels":{
-                              "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                            },"Disabled":false,"id":"ebc5879a-1752-4bec-b52f-e5969ae10868","IsCreationKey":false,"Key":164.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                              "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                            },"Disabled":false,"id":"47b400e5-436b-4866-be19-f0302b48e9fb","IsCreationKey":false,"Key":164.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                           {"$Keyframe<ColourKeyframe>":"","Channels":{
-                              "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":16777215,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                            },"Disabled":false,"id":"14e938b6-852b-4278-a742-05906e79a2cd","IsCreationKey":false,"Key":173.9999,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                              "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":8421504,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                            },"Disabled":false,"id":"2feb6576-6fb2-48c1-85af-c2ffdcbb3922","IsCreationKey":false,"Key":173.9999,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                         ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
                     {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
                           {"$Keyframe<RealKeyframe>":"","Channels":{
@@ -1175,7 +1195,11 @@
                           "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_2_wing","path":"sprites/spr_enemy_boss_mini_2_wing/spr_enemy_boss_mini_2_wing.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                         },"Disabled":false,"id":"35ecfe0c-1a07-4275-a622-a0f876d30f68","IsCreationKey":false,"Key":0.0,"Length":98.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                     ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_wing","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[
-                    {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
+                    {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
+                          {"$Keyframe<ColourKeyframe>":"","Channels":{
+                              "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                            },"Disabled":false,"id":"9ce0c115-a6ca-4565-9e82-ac5c6d70d519","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                        ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
                     {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
                           {"$Keyframe<RealKeyframe>":"","Channels":{
                               "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
@@ -1221,6 +1245,11 @@
                               "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_2_gun","path":"sprites/spr_enemy_boss_mini_2_gun/spr_enemy_boss_mini_2_gun.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                             },"Disabled":false,"id":"b8e35d60-d42b-4137-a2f3-98de2e91e17b","IsCreationKey":false,"Key":0.0,"Length":80.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_gun","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[
+                        {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
+                              {"$Keyframe<ColourKeyframe>":"","Channels":{
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                },"Disabled":false,"id":"8811e8d6-9a89-4a7f-afe7-61cb17a606af","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                            ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
                         {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
                               {"$Keyframe<RealKeyframe>":"","Channels":{
                                   "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
@@ -1250,6 +1279,11 @@
                               "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_2_barrel_0","path":"sprites/spr_enemy_boss_mini_2_barrel_0/spr_enemy_boss_mini_2_barrel_0.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                             },"Disabled":false,"id":"b1d17fed-db7d-4666-b7d0-f976de53d02b","IsCreationKey":false,"Key":0.0,"Length":80.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_barrel_0","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[
+                        {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
+                              {"$Keyframe<ColourKeyframe>":"","Channels":{
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                },"Disabled":false,"id":"53513cf7-d7f4-4031-8ae6-19a3da2cb1a8","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                            ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
                         {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
                               {"$Keyframe<RealKeyframe>":"","Channels":{
                                   "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
@@ -1279,6 +1313,11 @@
                               "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_2_barrel_1","path":"sprites/spr_enemy_boss_mini_2_barrel_1/spr_enemy_boss_mini_2_barrel_1.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                             },"Disabled":false,"id":"3744eb36-659e-40dc-8888-bd4b9926b7d6","IsCreationKey":false,"Key":0.0,"Length":80.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_barrel_1","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[
+                        {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
+                              {"$Keyframe<ColourKeyframe>":"","Channels":{
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                },"Disabled":false,"id":"35e5b61e-4620-4b62-9c4f-adb519084c0f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                            ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
                         {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
                               {"$Keyframe<RealKeyframe>":"","Channels":{
                                   "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
@@ -1337,13 +1376,13 @@
                         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_gun","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[
                         {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
                               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
                                 },"Disabled":false,"id":"d52c7aa1-0e1c-4c64-821a-ca3b2c17a65b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
                                 },"Disabled":false,"id":"954e4afa-b4d7-4e84-920a-69467138964b","IsCreationKey":false,"Key":164.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":16777215,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":8421504,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
                                 },"Disabled":false,"id":"de261a9e-c93b-48d3-a192-92acc4525701","IsCreationKey":false,"Key":173.9999,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                             ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
                         {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
@@ -1377,14 +1416,14 @@
                         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_barrel_0","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[
                         {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
                               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                                },"Disabled":false,"id":"3bc9d719-08a6-4cb0-acda-f55e635a4493","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                },"Disabled":false,"id":"b3f2290a-6811-4561-851d-c51b712ceec8","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                                },"Disabled":false,"id":"a1eb38b6-0767-40d3-be96-2c393b37bd58","IsCreationKey":false,"Key":164.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                },"Disabled":false,"id":"67cfba9e-5bea-413b-a881-8c29e84a77cc","IsCreationKey":false,"Key":164.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":16777215,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                                },"Disabled":false,"id":"f9b68e4a-980c-4327-a238-057f25dd2a59","IsCreationKey":false,"Key":173.9999,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":8421504,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                },"Disabled":false,"id":"306dfd61-05ec-4c46-abc5-cad32fc254e6","IsCreationKey":false,"Key":173.9999,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                             ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
                         {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
                               {"$Keyframe<RealKeyframe>":"","Channels":{
@@ -1417,14 +1456,14 @@
                         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_barrel_1","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[
                         {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
                               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                                },"Disabled":false,"id":"cfe08442-8df1-4a38-8de8-7401388949aa","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                },"Disabled":false,"id":"004d405a-1d9a-4eb5-bc75-adb36b4e92b2","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                                },"Disabled":false,"id":"aab0a4d5-78c8-4593-a020-576e75bb2c13","IsCreationKey":false,"Key":164.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                },"Disabled":false,"id":"5a86f179-4d00-42ce-a623-63c082cfbf6c","IsCreationKey":false,"Key":164.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":16777215,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
-                                },"Disabled":false,"id":"ec043b7f-7335-472a-8194-a36244448056","IsCreationKey":false,"Key":173.9999,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":8421504,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                                },"Disabled":false,"id":"e2ff81d1-2440-4eac-bdd5-a91de442bbb9","IsCreationKey":false,"Key":173.9999,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
                             ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
                         {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
                               {"$Keyframe<RealKeyframe>":"","Channels":{
@@ -1461,10 +1500,13 @@
         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_2_wing","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[
         {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4294967295,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                },"Disabled":false,"id":"6bd16718-0093-4f8f-ab1d-5d5437ddd446","IsCreationKey":false,"Key":98.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              {"$Keyframe<ColourKeyframe>":"","Channels":{
+                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4286611584,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
                 },"Disabled":false,"id":"922015cf-ab13-4545-bbb6-f2e867b2b017","IsCreationKey":false,"Key":114.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":16777215,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":8421504,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
                 },"Disabled":false,"id":"b4d7da6f-6d42-4597-8c4c-3a3143f63656","IsCreationKey":false,"Key":120.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
             ],"resourceType":"KeyframeStore<ColourKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"blend_multiply","resourceType":"GMColourTrack","resourceVersion":"2.0","trackColour":4294068411,"tracks":[],"traits":0,},
         {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
