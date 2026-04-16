@@ -1,6 +1,80 @@
 {
     "boss.red_heavy": "红色重装机",
+    "boss.breaker_iii": "破坏者III",
+    "boss.wildraubtier": "猛禽",
     "boss.galaxy_ash": "银河灰烬",
+
+    "boss.huckebein": "凶鸟",
+    "boss.red_wolf": "赤色之狼",
+
+    "boss.gespenst_r": "亡灵·R",
+    "boss.armored_lizard": "铁甲蜥蜴",
+    "boss.primitive": "太空原种",
+
+    "boss.breaker_iv": "破坏者IV",
+    "boss.darl_saucer": "暗黑魔碟",
+
+    "boss.breaker_iv_plus": "破坏者IV改",
+
+    "boss.gespenst_s": "亡灵·S",
+    "boss.phantom": "幻影",
+    "boss.daybreak_thor": "破晓雷神",
+
+    "boss.rumbling_horse": "轰天乌驹",
+    "boss.soulgain": "夺魂者",
+    "boss.silver_fox": "白银之狐",
+
+    "boss.phantom_vii": "幻影VII",
+    "boss.steel_beetle": "钢铁甲虫",
+    "boss.primitive_evolution": "原种进化体",
+
+    "boss.golden_dawn": "金光拂晓",
+
+    "boss.zweizergain_X": "夺权者X",
+
+    "boss.spikx_thunderpeal": "刺针·雷鸣",
+    "boss.spikx_hellflame": "刺针·烈焰",
+    "boss.hera_lord": "赫拉之神",
+
+    "boss.spikx_blastfire": "刺针·爆炎",
+    "boss.spikx_violetbolt": "刺针·紫电",
+    "boss.infernal_lord": "炼狱魔神",
+
+    "boss.galaxy_heart_pirate": "银河之心海盗团",
+    "boss.dual_omega": "双面Ω",
+    "boss.lightning_guard": "闪电护卫",
     "boss.dark_assault": "暗黑突击",
-    "boss.umbra_apex": "逆光尖峰"
+
+    "boss.dark_heavy": "暗黑重装机",
+    "boss.dark_wolf_king": "暗黑狼王",
+    "boss.infected_a": "感染者A",
+    "boss.hunter_prototype": "猎杀原型体",
+
+    "boss.dove_replica": "白鸽舰赝品",
+    "boss.galaxy_reverberation": "银河残响",
+    "boss.annihilation_crystal": "湮灭结晶",
+    "boss.made_in_amethyst": "紫晶制造",
+
+    "boss.spikx_jadesprout": "刺针·翠牙",
+    "boss.quad_compass": "四象罗盘",
+    "boss.phantom_mk_omega": "幻影MK-Ω",
+    "boss.entropy_lord": "熵主",
+
+    "boss.magic_ball": "魔球",
+    "boss.supreme_hera_lord": "至尊赫拉之神",
+    "boss.invader": "侵袭者",
+    "boss.execution_machine": "处刑机器",
+
+    "boss.vortex": "涡旋",
+    "boss.hunter_sequence_i": "猎杀序列·I",
+    "boss.hundred_eyes": "百目",
+    "boss.deceit_crown": "虚妄之冠",
+
+    "boss.sentry_kite": "哨鸢",
+    "boss.death_calling_feather": "告死锋翎",
+    "boss.blazing_praetorian": "炼狱禁卫",
+    "boss.order_cage": "秩序牢笼",
+
+    "boss.umbra_apex": "逆光尖峰",
+    "boss.spikx_flarebolt": "刺针·炎雷"
 }
