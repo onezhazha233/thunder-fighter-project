@@ -10,7 +10,7 @@ s2 = new Swarm(swarm_2,5,10,0,0)
 s3 = new Swarm(swarm_3,5,10,0,0)
 s4 = new Swarm(swarm_4,5,10,0,0)
 
-/*
+
 array_push(swarm_list,[s0])
 array_push(swarm_list,[s1])
 array_push(swarm_list,[s2])

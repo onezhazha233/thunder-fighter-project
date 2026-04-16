@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bullet_enemy_red_4",
-    "path":"sprites/spr_bullet_enemy_red_4/spr_bullet_enemy_red_4.yy",
+    "name":"spr_bullet_enemy_normal_4",
+    "path":"sprites/spr_bullet_enemy_normal_4/spr_bullet_enemy_normal_4.yy",
   },
   "spriteMaskId":null,
   "visible":true,

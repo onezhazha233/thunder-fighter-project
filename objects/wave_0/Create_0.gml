@@ -3,7 +3,7 @@ event_inherited();
 
 test = 0
 if(test = 0){
-	enemy_0 = new Enemy(enemy_4b,emitter_enemy_b_new,function(){
+	enemy_0 = new Enemy(enemy_4b,emitter_enemy_b,function(){
 		EnemyMove_Pre([360, -200], [360, 320], 40);
 		EnemyMove_Intro(60);
 		if(time = 100){

@@ -12,8 +12,8 @@
     "path":"folders/物体/enemy.yy",
   },
   "parentObjectId":{
-    "name":"emitter_enemy",
-    "path":"objects/emitter_enemy/emitter_enemy.yy",
+    "name":"emitter_enemy_old",
+    "path":"objects/emitter_enemy_old/emitter_enemy_old.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

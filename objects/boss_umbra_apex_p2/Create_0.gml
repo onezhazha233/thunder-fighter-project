@@ -26,7 +26,7 @@ y = -500
 battle_ui.boss_hpbar_enabled = true
 battle_wave.enabled = false
 
-bullet_emitter = emitter_boss_umbra_apex_p2_new
+bullet_emitter = emitter_boss_umbra_apex_p2
 
 intro_move_started = false
 intro_move_done = false

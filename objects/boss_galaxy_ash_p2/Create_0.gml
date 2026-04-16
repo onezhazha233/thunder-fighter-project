@@ -29,7 +29,7 @@ y = -500
 battle_ui.boss_hpbar_enabled = true;
 battle_wave.enabled = false
 
-bullet_emitter = emitter_boss_galaxy_ash_p2_new
+bullet_emitter = emitter_boss_galaxy_ash_p2
 
 die_sequence = seq_enemy_boss_large_1_die
 
