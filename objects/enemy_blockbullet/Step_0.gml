@@ -1,6 +1,8 @@
 live;
 image_angle += rotate
 
+custom_function()
+
 if(hp <= 0){
 	if(inv_damage = false){
 		destroy_type = 5;

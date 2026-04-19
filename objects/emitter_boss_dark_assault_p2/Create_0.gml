@@ -162,7 +162,7 @@ attack_4 = function(){//收缩移动激光 160
 	if(attack_time = 1){
 		mark.move_range[3] -= 700;
 		for(i=0;i<4;i+=1){
-			blt[i] = MakeEnemyBullet(x,y+85,bullet_enemy_laser_green);
+			blt[i] = MakeEnemyBullet(x,y+85,bullet_enemy_laser_small);
 			blt[i].delay = 60;
 			blt[i].duration = 60;
 		}

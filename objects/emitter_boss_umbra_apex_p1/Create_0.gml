@@ -132,7 +132,7 @@ attack_3 = function(){//机炮 210
 attack_4 = function(){//激光 80
 	if(attack_time = 1){
 		mark.SetMoveEnabled(false);
-		l = MakeEnemyBullet(x-32,y+25,bullet_enemy_laser_green);
+		l = MakeEnemyBullet(x-32,y+25,bullet_enemy_laser_small);
 		l.delay = 40;
 		l.duration = 30;
 		l.sprite_ball = spr_bullet_enemy_laser_red_ball;
@@ -140,7 +140,7 @@ attack_4 = function(){//激光 80
 		l.sprite_laser_start = spr_bullet_enemy_laser_red_start;
 		l.sprite_laser = spr_bullet_enemy_laser_red;
 		l.sprite_effect = spr_bullet_enemy_effect_laser_red;
-		l = MakeEnemyBullet(x+32,y+25,bullet_enemy_laser_green);
+		l = MakeEnemyBullet(x+32,y+25,bullet_enemy_laser_small);
 		l.delay = 40;
 		l.duration = 30;
 		l.sprite_ball = spr_bullet_enemy_laser_red_ball;

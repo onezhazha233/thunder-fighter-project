@@ -99,7 +99,7 @@ attack_3 = function(){//机炮 210
 attack_4 = function(){//激光 80
 	if(attack_time = 1){
 		mark.SetMoveEnabled(false);
-		l = MakeEnemyBullet(x,y+85,bullet_enemy_laser_green);
+		l = MakeEnemyBullet(x,y+85,bullet_enemy_laser_small);
 		l.delay = 40;
 		l.duration = 30;
 	}

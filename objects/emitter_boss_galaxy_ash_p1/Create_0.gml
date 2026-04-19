@@ -163,7 +163,7 @@ attack_3 = function(){//侧闪电球+中闪电球（触底反弹散射） 160
 	}
 }
 	
-function attack_4(exarg=0){//长侧封位弹（触侧反弹） 180+exarg
+attack_4 = function(exarg=0){//长侧封位弹（触侧反弹） 180+exarg
 	if(attack_time mod 5 = 0){
 		a = MakeEnemyBullet(x-145,y+160,bullet_enemy_normal,spr_bullet_enemy_normal_2);
 		a.image_angle = -90;

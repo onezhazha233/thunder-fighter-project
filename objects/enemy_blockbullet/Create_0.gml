@@ -34,3 +34,5 @@ auto_destroy_delay = 60
 
 scale_x = 1
 scale_y = 1
+
+custom_function = function(){}

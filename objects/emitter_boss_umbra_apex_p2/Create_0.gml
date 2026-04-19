@@ -236,7 +236,7 @@ attack_4 = function(){//收缩移动激光 160
 	if(attack_time = 1){
 		mark.move_range[3] -= 700;
 		for(i=0;i<2;i+=1){
-			blt[i,0] = MakeEnemyBullet(x-32,y+25,bullet_enemy_laser_green);
+			blt[i,0] = MakeEnemyBullet(x-32,y+25,bullet_enemy_laser_small);
 			blt[i,0].delay = 60;
 			blt[i,0].duration = 60;
 			blt[i,0].sprite_ball = spr_bullet_enemy_laser_red_ball;
@@ -244,7 +244,7 @@ attack_4 = function(){//收缩移动激光 160
 			blt[i,0].sprite_laser_start = spr_bullet_enemy_laser_red_start;
 			blt[i,0].sprite_laser = spr_bullet_enemy_laser_red;
 			blt[i,0].sprite_effect = spr_bullet_enemy_effect_laser_red;
-			blt[i,1] = MakeEnemyBullet(x+32,y+25,bullet_enemy_laser_green);
+			blt[i,1] = MakeEnemyBullet(x+32,y+25,bullet_enemy_laser_small);
 			blt[i,1].delay = 60;
 			blt[i,1].duration = 60;
 			blt[i,1].sprite_ball = spr_bullet_enemy_laser_red_ball;
