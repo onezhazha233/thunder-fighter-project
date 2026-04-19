@@ -1,13 +1,13 @@
 live;
 event_inherited();
 
-function attack_empty_80(){//80帧前摇
+attack_empty_80 = function(){//80帧前摇
 	if(attack_time = 80){
 		end_attack();
 	}
 }
 
-function attack_0(){//四向散射 40
+attack_0 = function(){//四向散射 40
 	if(attack_time < 40&&attack_time mod 6 = 1){
 		for(i=0;i<4;i+=1){
 			for(j=0;j<3;j+=1){
@@ -22,7 +22,7 @@ function attack_0(){//四向散射 40
 	}
 }
 
-function attack_1(){//延迟散射 40
+attack_1 = function(){//延迟散射 40
 	if(attack_time >= 1&&attack_time <= 31&&attack_time mod 5 = 1){
 		var dir = 90;
 		if(Player_IsEnabled()){
@@ -54,7 +54,7 @@ function attack_1(){//延迟散射 40
 	}
 }
 
-function attack_2(){//连射狙 40
+attack_2 = function(){//连射狙 40
 	if(attack_time = 1){
 		mark.SetMoveEnabled(false);
 	}
@@ -73,7 +73,7 @@ function attack_2(){//连射狙 40
 	}
 }
 
-function attack_3(){//机炮 210
+attack_3 = function(){//机炮 210
 	if(attack_time = 1){
 		mark.move_range[3] -= 500;
 		mark.SetSequence(seq_enemy_boss_large_15_p1_attack_intro);
@@ -96,7 +96,7 @@ function attack_3(){//机炮 210
 	}
 }
 
-function attack_4(){//激光 80
+attack_4 = function(){//激光 80
 	if(attack_time = 1){
 		mark.SetMoveEnabled(false);
 		l = MakeEnemyBullet(x,y+85,bullet_enemy_laser_green);
@@ -109,7 +109,7 @@ function attack_4(){//激光 80
 	}
 }
 
-function attack_5(){//机关炮 50
+attack_5 = function(){//机关炮 50
 	if(attack_time = 1){
 		mark.move_range[3] -= 500;
 	}
@@ -129,7 +129,7 @@ function attack_5(){//机关炮 50
 	}
 }
 
-function attack_6(){//中心散射 40
+attack_6 = function(){//中心散射 40
 	if(attack_time = 1){
 		mark.SetMoveEnabled(false);
 	}

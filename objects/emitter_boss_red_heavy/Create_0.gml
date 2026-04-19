@@ -1,7 +1,7 @@
 live;
 event_inherited();
 
-function attack_0(){//散射+六向直线 240
+attack_0 = function(){//散射+六向直线 240
 	if(attack_time = 1){
 		mark.SetMoveEnabled(false);
 	}
@@ -46,7 +46,7 @@ function attack_0(){//散射+六向直线 240
 	}
 }
 	
-function attack_1(){//散射 120
+attack_1 = function(){//散射 120
 	at = attack_time;
 	if(attack_time = 1){
 		mark.SetMoveEnabled(false);
@@ -178,7 +178,7 @@ function attack_1(){//散射 120
 	}
 }
 
-function attack_2(){//侧双斜散射 120
+attack_2 = function(){//侧双斜散射 120
 	if(attack_time = 1){
 		mark.SetMoveEnabled(false);
 		mark.SetSequence(seq_enemy_boss_mini_0_attack_1);
@@ -256,7 +256,7 @@ function attack_2(){//侧双斜散射 120
 	}
 }
 
-function attack_3(){//中心散射 230
+attack_3 = function(){//中心散射 230
 	if(attack_time = 1){
 		mark.SetMoveEnabled(false);
 		mark.SetSequence(seq_enemy_boss_mini_0_uncover);

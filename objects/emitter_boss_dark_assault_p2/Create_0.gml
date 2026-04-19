@@ -1,13 +1,13 @@
 live;
 event_inherited();
 
-function attack_empty_60(){//60帧前摇
+attack_empty_60 = function(){//60帧前摇
 	if(attack_time = 60){
 		end_attack();
 	}
 }
 
-function attack_0(){//六向散射 60
+attack_0 = function(){//六向散射 60
 	if(attack_time = 1){
 		mark.SetMoveEnabled(false);
 	}
@@ -26,7 +26,7 @@ function attack_0(){//六向散射 60
 	}
 }
 
-function attack_1(){//延迟散射 90
+attack_1 = function(){//延迟散射 90
 	if(attack_time = 1||attack_time = 30||attack_time = 60){
 		var dir = 90;
 		if(Player_IsEnabled()){
@@ -91,7 +91,7 @@ function attack_1(){//延迟散射 90
 	}
 }
 
-function attack_2(){//连射扇形狙 40
+attack_2 = function(){//连射扇形狙 40
 	if(attack_time = 1){
 		mark.SetMoveEnabled(false);
 		dir = -90;
@@ -112,7 +112,7 @@ function attack_2(){//连射扇形狙 40
 	}
 }
 
-function attack_3(){//机炮加机关炮 210
+attack_3 = function(){//机炮加机关炮 210
 	if(attack_time = 1){
 		mark.move_range[3] -= 500;
 		mark.SetSequence(seq_enemy_boss_large_15_p2_attack_intro);
@@ -158,7 +158,7 @@ function attack_3(){//机炮加机关炮 210
 	}
 }
 
-function attack_4(){//收缩移动激光 160
+attack_4 = function(){//收缩移动激光 160
 	if(attack_time = 1){
 		mark.move_range[3] -= 700;
 		for(i=0;i<4;i+=1){
@@ -185,7 +185,7 @@ function attack_4(){//收缩移动激光 160
 	}
 }
 
-function attack_5(){//机关炮 50
+attack_5 = function(){//机关炮 50
 	if(attack_time = 1){
 		mark.move_range[3] -= 500;
 	}
@@ -212,7 +212,7 @@ function attack_5(){//机关炮 50
 	}
 }
 
-function attack_6(){//中心散射加狙 40
+attack_6 = function(){//中心散射加狙 40
 	if(attack_time = 1){
 		mark.SetMoveEnabled(false);
 	}
@@ -257,7 +257,7 @@ function attack_6(){//中心散射加狙 40
 	}
 }
 
-function attack_7(){//导弹 180
+attack_7 = function(){//导弹 180
 	if(attack_time = 1){
 		aa = 0;
 		mark.SetSequence(seq_enemy_boss_large_15_p2_attack_intro);
@@ -298,7 +298,7 @@ function attack_7(){//导弹 180
 	}
 }
 
-function attack_8(){//散射导弹 400
+attack_8 = function(){//散射导弹 400
 	var move_time = 20;
 	var side_fire_start = 60;
 	var side_fire_end = 100;

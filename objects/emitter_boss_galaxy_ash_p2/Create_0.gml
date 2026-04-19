@@ -1,13 +1,13 @@
 live;
 event_inherited();
 
-function attack_empty_30(){//30帧前摇
+attack_empty_30 = function(){//30帧前摇
 	if(attack_time = 30){
 		end_attack();
 	}
 }
 
-function attack_0(){//中4散弹 60
+attack_0 = function(){//中4散弹 60
 	if(attack_time = 1){
 		for(i=0;i<6;i+=1){
 			a = MakeEnemyBullet(x,y+160,bullet_enemy_normal,spr_bullet_enemy_normal_2);
@@ -91,7 +91,7 @@ function attack_0(){//中4散弹 60
 	if(attack_time = 60)end_attack();
 }
 
-function attack_1(){//中3散弹 150
+attack_1 = function(){//中3散弹 150
 	if(attack_time mod 3 = 0){
 		tt = attack_time div 3;
 		a = MakeEnemyBullet(x,y+160,bullet_enemy_normal,spr_bullet_enemy_normal_2);
@@ -110,7 +110,7 @@ function attack_1(){//中3散弹 150
 	if(attack_time = 150)end_attack();
 }
 	
-function attack_2(){//机枪 60
+attack_2 = function(){//机枪 60
 	if(attack_time = 1){
 		mark.SetSequence(seq_enemy_boss_large_1_p2_attack_0);
 	}
@@ -147,7 +147,7 @@ function attack_2(){//机枪 60
 	if(attack_time = 60)end_attack();
 }
 	
-function attack_3(){//长侧封位弹（触侧反弹） 180+exarg
+attack_3 = function(){//长侧封位弹（触侧反弹） 180+exarg
 	if(attack_time mod 5 = 0){
 		a = MakeEnemyBullet(x-220,y+200,bullet_enemy_normal,spr_bullet_enemy_normal_2);
 		a.image_angle = -90;
@@ -199,7 +199,7 @@ function attack_3(){//长侧封位弹（触侧反弹） 180+exarg
 	if(attack_time = 180)end_attack();
 }
 	
-function attack_4(){//侧狙 40
+attack_4 = function(){//侧狙 40
 	if(attack_time = 1){
 		dir0 = point_direction(x-220,y+200,player.x,player.y);
 		dir1 = point_direction(x+220,y+200,player.x,player.y);

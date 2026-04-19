@@ -3,7 +3,7 @@ event_inherited();
 
 mode = EMITTER_MODE.FIXED;
 
-function attack_slice(){
+attack_slice = function(){
 	if(attack_time = 30){
 		dd = -800;
 		sx = room_width;
@@ -102,7 +102,7 @@ function attack_slice(){
 	}
 }
 
-function attack_0(){
+attack_0 = function(){
     // 处理第一部分
     if (attack_time >= 1 && attack_time <= 26) {
         if ((attack_time - 1) % 5 == 0) {
@@ -135,7 +135,7 @@ function attack_0(){
     if (attack_time >= 50) end_attack(); // 增加等待时间补齐 250 帧分配
 }
 
-function attack_1(){
+attack_1 = function(){
     if (attack_time == 1) pd = point_direction(x, y, player.x, player.y);
     
     // 顺时针
@@ -167,7 +167,7 @@ function attack_1(){
     if (attack_time >= 50) end_attack();
 }
 
-function attack_2(){
+attack_2 = function(){
     if (attack_time == 1) pd = point_direction(x, y, player.x, player.y);
     if (attack_time >= 1 && attack_time <= 46) {
         if ((attack_time - 1) % 15 == 0) {

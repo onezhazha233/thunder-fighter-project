@@ -3,7 +3,7 @@ event_inherited();
 
 mode = EMITTER_MODE.FIXED
 
-function attack_0(){
+attack_0 = function(){
 	if(attack_time >= 1&&attack_time <= 1+4){
 		if((attack_time-1) mod 4 = 0){
 			switch((attack_time-1) div 4){
@@ -137,7 +137,7 @@ function attack_0(){
 	}
 }
 	
-function attack_1(){
+attack_1 = function(){
 	if(attack_time >= 1&&attack_time <= 10*3+1){
 		if(attack_time mod 10 = 1){
 			for(i=0;i<4;i+=1){
@@ -161,7 +161,7 @@ function attack_1(){
 	}
 }
 	
-function attack_2(){
+attack_2 = function(){
 	if(attack_time >= 1&&attack_time <= 3*20+1){
 		if(attack_time mod 3 = 1){
 			for(i=0;i<3;i+=1){
@@ -178,7 +178,7 @@ function attack_2(){
 	}
 }
 	
-function attack_3(){
+attack_3 = function(){
 	if(attack_time >= 1&&attack_time <= 3*10+1){
 		if((time-1) mod 3 = 0){
 			for(i=0;i<3;i+=1){

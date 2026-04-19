@@ -3,7 +3,7 @@ event_inherited();
 
 mode = EMITTER_MODE.FIXED
 
-function attack_0(){
+attack_0 = function(){
 	if(attack_time = 1){
 		for(i=0;i<6;i+=1){
 			b[0,i] = MakeEnemyBullet(x-130,y+40,bullet_enemy_normal,spr_bullet_enemy_normal_0);
@@ -79,7 +79,7 @@ function attack_0(){
 	}
 }
 	
-function attack_1(){
+attack_1 = function(){
 	if(attack_time mod 4 = 1){
 		tt = attack_time div 2;
 		for(i=0;i<3;i+=1){
@@ -106,7 +106,7 @@ function attack_1(){
 	}
 }
 	
-function attack_2(){
+attack_2 = function(){
 	if(attack_time = 1){
 		for (var side = 0; side < 2; side++) {
 		    var cx = x + (side == 0 ? 130 : -130);
@@ -158,7 +158,7 @@ function attack_2(){
 	}
 }
 	
-function attack_3(){
+attack_3 = function(){
 	if(attack_time = 1){
 		for(i=0;i<10;i+=1){
 			a = MakeEnemyBullet(x-72,y+85,bullet_enemy_normal,spr_bullet_enemy_normal_2);

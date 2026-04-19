@@ -1,13 +1,13 @@
 live;
 event_inherited();
 
-function attack_empty_30(){//30帧前摇
+attack_empty_30 = function(){//30帧前摇
 	if(attack_time = 30){
 		end_attack();
 	}
 }
 
-function attack_0(){//短散弹 60
+attack_0 = function(){//短散弹 60
 	if(attack_time < 30){
 		if(attack_time mod 5 = 0){
 			tt = (attack_time div 5);
@@ -63,7 +63,7 @@ function attack_0(){//短散弹 60
 	}
 }
 	
-function attack_1(){//长中散弹 150
+attack_1 = function(){//长中散弹 150
 	if(attack_time = 1){
 		num0 = 3;
 		angle_range = 90;
@@ -97,7 +97,7 @@ function attack_1(){//长中散弹 150
 	}
 }
 	
-function attack_2(){//两侧封位弹 120
+attack_2 = function(){//两侧封位弹 120
 	if(attack_time = 1){
 		a1 = 0;
 	}
@@ -121,7 +121,7 @@ function attack_2(){//两侧封位弹 120
 	}
 }
 	
-function attack_3(){//侧闪电球+中闪电球（触底反弹散射） 160
+attack_3 = function(){//侧闪电球+中闪电球（触底反弹散射） 160
 	if(attack_time = 1){
 		for(i=0;i<3;i+=1){
 			a = MakeEnemyBullet(x,y+120,bullet_enemy_lightning_ball,-1);
@@ -209,7 +209,7 @@ function attack_4(exarg=0){//长侧封位弹（触侧反弹） 180+exarg
 	}
 }
 	
-function attack_41(){
+attack_41 = function(){
 	if(attack_time mod 5 = 0&&attack_time < 220){
 		a = MakeEnemyBullet(x-145,y+160,bullet_enemy_normal,spr_bullet_enemy_normal_2);
 		a.image_angle = -90;

@@ -3,7 +3,7 @@ event_inherited();
 
 mode = EMITTER_MODE.FIXED
 
-function attack_0(){
+attack_0 = function(){
 	if(attack_time >= 1&&attack_time <= 1+6*7){
 		if((attack_time-1) mod 6 = 0){
 			switch((attack_time-1) div 6){
@@ -53,7 +53,7 @@ function attack_0(){
 	}
 }
 	
-function attack_1(){
+attack_1 = function(){
 	if(attack_time >= 1&&attack_time <= 2*30){
 		if((attack_time-1) div 2 = 0){
 			dir = 0;
@@ -79,7 +79,7 @@ function attack_1(){
 	}
 }
 	
-function attack_2(){
+attack_2 = function(){
 	if(attack_time >= 1&&attack_time <= 7*6){
 		if((attack_time-1) mod 7 = 0){
 			blt = MakeEnemyBullet(x,y,bullet_enemy_normal,spr_bullet_enemy_normal_3);
@@ -136,7 +136,7 @@ function attack_2(){
 	}
 }
 	
-function attack_3(){
+attack_3 = function(){
 	if(attack_time >= 1&&attack_time <= 20){
 		dir = 0;
 		n0 = 4;
