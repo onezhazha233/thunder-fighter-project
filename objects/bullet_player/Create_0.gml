@@ -7,6 +7,7 @@ bullet_sequence = -1
 collision_destroy = true
 auto_destroy = true
 auto_destroy_delay = 60
+type = 0//0为战机 1为僚机 2为副武器
 damage = 1
 
 scale_x = 1
@@ -43,9 +44,6 @@ function CollideEnemies(){
 		}
 	}
 	if(ds_exists(enemy_list,ds_type_list))ds_list_clear(enemy_list);
-	/*if(collision_destroy = true){
-		instance_destroy();
-	}*/
 }
 
 function CollideSingleEnemy(enemy){
@@ -57,16 +55,6 @@ function CollideSingleEnemy(enemy){
 			enemy.Hurt();
 			if!(collision_effect = noone){
 				MakeEffect(x,y,collision_effect,scale_x*collision_effect_scale_x,scale_y*collision_effect_scale_y,collision_effect_add);
-				/*if(object_exists(collision_effect)){
-					effect = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
-					effect.image_xscale = scale_x*collision_effect_scale_x;
-					effect.image_yscale = scale_y*collision_effect_scale_y;
-				}
-				if(sequence_exists(collision_effect)){
-					effect = layer_sequence_create(global.layer_effects,x,y,collision_effect);
-					layer_sequence_xscale(effect,scale_x*collision_effect_scale_x);
-					layer_sequence_yscale(effect,scale_y*collision_effect_scale_y);
-				}*/
 			}
 		}
 	}
@@ -76,16 +64,6 @@ function CollideSingleEnemy(enemy){
 		enemy.Hurt();
 		if!(collision_effect = noone){
 			MakeEffect(x,y,collision_effect,scale_x*collision_effect_scale_x,scale_y*collision_effect_scale_y,collision_effect_add);
-			/*if(object_exists(collision_effect)){
-				effect = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,collision_effect);
-				effect.image_xscale = scale_x*collision_effect_scale_x;
-				effect.image_yscale = scale_y*collision_effect_scale_y;
-			}
-			if(sequence_exists(collision_effect)){
-				effect = layer_sequence_create(global.layer_effects,x,y,collision_effect);
-				layer_sequence_xscale(effect,scale_x*collision_effect_scale_x);
-				layer_sequence_yscale(effect,scale_y*collision_effect_scale_y);
-			}*/
 		}
 	}
 }

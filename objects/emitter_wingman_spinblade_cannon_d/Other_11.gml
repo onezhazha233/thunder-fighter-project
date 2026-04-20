@@ -9,6 +9,7 @@ blt.scale_y = 1.5
 with(blt){
 	bullet_sequence = layer_sequence_create(ll,x,y,seq_bullet_player_spinblade_cannon_d_intro);
 }
+blt.type = type
 blt.move_duration -= 25
 blt.direction = 90
 blt.speed = 12

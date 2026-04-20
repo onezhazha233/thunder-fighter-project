@@ -14,6 +14,7 @@ function MakePlayerBullet(){
 	var bullet = instance_create_depth(X,Y,depth,OBJ);
 	bullet.scale_x = scale_x;
 	bullet.scale_y = scale_y;
+	bullet.type = type;
 	if(argument_count >= 4){
 		with(bullet){
 			bullet_sequence = layer_sequence_create(global.layer_bullets_player,x,y,SEQ);

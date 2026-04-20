@@ -7,6 +7,7 @@ blt.dir = dir
 with(blt){
 	bullet_sequence = layer_sequence_create(ll,x,y,seq_bullet_player_spinblade_cannon_c_intro);
 }
+blt.type = type
 blt.move_duration += 25*weapon_level
 blt.direction = 90
 blt.speed = 5.5
