@@ -23,6 +23,8 @@ function GlobalInit(){
 		armor: armor_alloy_a
 	}
 	global.choicebosswave = wave_boss_dark_assault;
+	global.boss_hp_ratio = 1;
+	global.enemy_damage_ratio = 1;
 	
 	global.debug_bullet_player_collision_display = false;
 	global.debug_bullet_enemy_collision_display = false;

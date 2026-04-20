@@ -7,7 +7,7 @@ if(mouse_check_button_pressed(mb_left)){
 if(aa = 1){
 	time += 1;
 	if(time mod 3 = 1){
-		bn = MakeEnemyBullet(x,y,bullet_enemy_normal,spr_bullet_enemy_blueneedle,1);
+		bn = MakeEnemyBullet(x,y,bullet_enemy_blueneedle);
 		bn.direction = dir;
 		bn.image_angle = bn.direction;
 		bn.image_xscale = 0.25;

@@ -244,6 +244,44 @@ if (array_length(_boss_objects) == 0) {
 _current_boss = variable_global_exists("choicebosswave") ? global.choicebosswave : -1;
 _btn_boss = _make_equipment_button(_boss_objects, _current_boss, "choicebosswave", Lang_GetString("ui.select.boss"));
 
+// Boss血量比率滑动条
+var _boss_hp_ratio_slider = new LuiSlider({
+    value: variable_global_exists("boss_hp_ratio") ? global.boss_hp_ratio : 1.0,
+    min_value: 0.5,
+    max_value: 3.0,
+    rounding: 0.1,
+    width: 350,
+    height: 24
+});
+_boss_hp_ratio_slider.addEvent(LUI_EV_VALUE_UPDATE, function(_el) {
+    global.boss_hp_ratio = _el.get();
+});
+ 
+var _boss_hp_ratio_row = new LuiRow().addContent([
+    new LuiText({ value: Lang_GetString("ui.boss.hp.ratio"), width: 120 }),
+    _boss_hp_ratio_slider,
+    new LuiText({ value: string_format(variable_global_exists("boss_hp_ratio") ? global.boss_hp_ratio : 1.0, 1, 1) + "x", width: 40 })
+]);
+ 
+// 敌人伤害比率滑动条
+var _enemy_damage_ratio_slider = new LuiSlider({
+    value: variable_global_exists("enemy_damage_ratio") ? global.enemy_damage_ratio : 1.0,
+    min_value: 0.5,
+    max_value: 3.0,
+    rounding: 0.1,
+    width: 350,
+    height: 24
+});
+_enemy_damage_ratio_slider.addEvent(LUI_EV_VALUE_UPDATE, function(_el) {
+    global.enemy_damage_ratio = _el.get();
+});
+ 
+var _enemy_damage_ratio_row = new LuiRow().addContent([
+    new LuiText({ value: Lang_GetString("ui.enemy.damage.ratio"), width: 120 }),
+    _enemy_damage_ratio_slider,
+    new LuiText({ value: string_format(variable_global_exists("enemy_damage_ratio") ? global.enemy_damage_ratio : 1.0, 1, 1) + "x", width: 40 })
+]);
+
 // 战机
 var _current_plane = global.current_equipment.plane;
 var _btn_plane = _make_equipment_button(_planes, _current_plane, "plane", Lang_GetString("ui.select.plane"));
@@ -281,6 +319,14 @@ var _row_boss = new LuiRow().addContent([
 	new LuiText({ value: "Boss", width: 80 }),
 	_btn_boss
 ]);
+var _row_boss_hp = new LuiRow().addContent([
+	new LuiText({ value: Lang_GetString("ui.boss.hp.ratio"), width: 180 }),
+	_boss_hp_ratio_slider
+]);
+var _row_enemy_dmg = new LuiRow().addContent([
+	new LuiText({ value: Lang_GetString("ui.enemy.damage.ratio"), width: 180 }),
+	_enemy_damage_ratio_slider
+]);
 var _row_plane = new LuiRow().addContent([
 	new LuiText({ value: Lang_GetString("ui.plane"), width: 80 }),
 	_btn_plane
@@ -306,7 +352,7 @@ var _enter_btn_container = new LuiContainer().setFlexAlignSelf(flexpanel_align.c
 _enter_btn_container.addContent(_btn_enter);
 
 var _col = new LuiColumn().setPadding(8);
-_col.addContent([_title, _row_boss,_row_plane, _row_wl, _row_wr, _row_sub, _row_armor, _enter_btn_container]);
+_col.addContent([_title, _row_boss, _row_boss_hp, _row_enemy_dmg, _row_plane, _row_wl, _row_wr, _row_sub, _row_armor, _enter_btn_container]);
 
 var _panel = new LuiPanel({ width: 600, height: LUI_AUTO }).setPadding(16);
 _panel.addContent(_col);

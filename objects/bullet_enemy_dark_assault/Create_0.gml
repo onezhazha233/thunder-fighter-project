@@ -10,4 +10,4 @@ down = 20
 yscale = 0
 Anim_Create(id,"yscale",0,0,0,1,4)
 
-damage = 1.5
+damage = 1.5*global.enemy_damage_ratio

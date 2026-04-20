@@ -1,13 +1,14 @@
 {
   "$GMObject":"",
-  "%Name":"bullet_enemy_normal",
+  "%Name":"bullet_enemy_blueneedle",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"bullet_enemy_normal",
+  "name":"bullet_enemy_blueneedle",
   "overriddenProperties":[],
   "parent":{
     "name":"bullet_enemy",
@@ -35,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bullet_enemy_normal_0",
-    "path":"sprites/spr_bullet_enemy_normal_0/spr_bullet_enemy_normal_0.yy",
+    "name":"spr_bullet_enemy_blueneedle",
+    "path":"sprites/spr_bullet_enemy_blueneedle/spr_bullet_enemy_blueneedle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

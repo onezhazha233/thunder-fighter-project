@@ -1,13 +1,15 @@
 live;
 event_inherited();
 
+damage = 2*global.enemy_damage_ratio
+
 line_length = 0
 
 laser = function(){
 	speed = 0;
 	Anim_Destroy(id,"speed");
 	for(i=0;i<3;i+=1){
-		for(j=0;j<25;j+=1){
+		for(j=0;j<20;j+=1){
 			blt = MakeEnemyBullet(x,y,bullet_enemy_normal,spr_bullet_enemy_normal_2);
 			blt.image_angle = i*120 + 30;
 			Anim_Create(blt,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,x,lengthdir_x(60*j,blt.image_angle),30);
@@ -15,7 +17,7 @@ laser = function(){
 			blt.direction = blt.image_angle;
 			Anim_Create(blt,"speed",0,0,0,30-i,60,60);
 		}
-		for(j=0;j<25;j+=1){
+		for(j=0;j<20;j+=1){
 			blt = MakeEnemyBullet(x,y,bullet_enemy_normal,spr_bullet_enemy_normal_2);
 			blt.image_angle = i*120 - 30;
 			Anim_Create(blt,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,x,lengthdir_x(60*j,blt.image_angle),30);

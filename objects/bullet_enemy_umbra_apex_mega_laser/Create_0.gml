@@ -18,3 +18,5 @@ alarm[0] = 1
 
 siner = 0
 time = 0
+
+damage = 2*global.enemy_damage_ratio

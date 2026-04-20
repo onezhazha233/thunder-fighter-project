@@ -3,7 +3,7 @@ event_inherited();
 
 collision_type = COLLISION_TYPE.SPRITE
 
-damage = 1.5
+damage = 1.5*global.enemy_damage_ratio
 
 inv_damage = true
 inv_block = true

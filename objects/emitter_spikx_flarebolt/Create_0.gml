@@ -1,6 +1,27 @@
 //live;
 event_inherited();
 
+Clear = function(){
+	with(bullet_enemy){
+		if(mark = other.mark){
+			destroy_type = 4;
+			instance_destroy();
+		}
+	}
+	with(enemy_blockbullet){
+		if(mark = other.mark){
+			destroy_type = 4;
+			instance_destroy();
+		}
+	}
+	with(bullet_enemy_ring){
+		if(mark = other.mark){
+			destroy_type = 4;
+			instance_destroy();
+		}
+	}
+}
+
 attack_0 = function(laser=0){//旋转散射加反弹闪电球
 	live_name = "emitter_spikx_flarebolt:attack_0";
 	live;
@@ -170,6 +191,7 @@ attack_1 = function(){//绕点旋转子弹阵列
 	}
 	if(attack_time < 200&&attack_time mod 3 = 0){
 		br = instance_create_depth(x,y,0,bullet_enemy_ring);
+		br.mark = mark;
 		br.number = 3;
 		br.size = 0;
 		br.rott = -90+attack_time*1.8;
@@ -289,7 +311,7 @@ attack_3 = function(){//散射红黄子弹加蓝针狙
 			}
 		}
 		if(bntime mod 3 = 1){
-			bn = MakeEnemyBullet(x+bnx,y+70,bullet_enemy_normal,spr_bullet_enemy_blueneedle,1);
+			bn = MakeEnemyBullet(x+bnx,y+70,bullet_enemy_blueneedle);
 			bn.direction = dir;
 			bn.image_angle = bn.direction;
 			bn.image_xscale = 0.25;
@@ -380,13 +402,13 @@ attack_4 = function(){//斜四向红黄子弹加蓝针狙
 				}
 			}
 			if(bntime mod 3 = 1){
-				bn = MakeEnemyBullet(x+42,y+120,bullet_enemy_normal,spr_bullet_enemy_blueneedle,1);
+				bn = MakeEnemyBullet(x+42,y+120,bullet_enemy_blueneedle);
 				bn.direction = dirl;
 				bn.image_angle = bn.direction;
 				bn.image_xscale = 0.25;
 				Anim_Create(bn,"speed",0,0,25,-8,15);
 				Anim_Create(bn,"image_xscale",0,0,bn.image_xscale,2.7-bn.image_xscale,15);
-				bn = MakeEnemyBullet(x-42,y+120,bullet_enemy_normal,spr_bullet_enemy_blueneedle,1);
+				bn = MakeEnemyBullet(x-42,y+120,bullet_enemy_blueneedle);
 				bn.direction = dirr;
 				bn.image_angle = bn.direction;
 				bn.image_xscale = 0.25;

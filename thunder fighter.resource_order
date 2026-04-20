@@ -704,6 +704,7 @@
     {"name":"bullet_effect_phantom_point","order":5,"path":"objects/bullet_effect_phantom_point/bullet_effect_phantom_point.yy",},
     {"name":"bullet_effect_xeno","order":6,"path":"objects/bullet_effect_xeno/bullet_effect_xeno.yy",},
     {"name":"bullet_enemy_block","order":20,"path":"objects/bullet_enemy_block/bullet_enemy_block.yy",},
+    {"name":"bullet_enemy_blueneedle","order":18,"path":"objects/bullet_enemy_blueneedle/bullet_enemy_blueneedle.yy",},
     {"name":"bullet_enemy_dark_assault_missile","order":9,"path":"objects/bullet_enemy_dark_assault_missile/bullet_enemy_dark_assault_missile.yy",},
     {"name":"bullet_enemy_dark_assault_shotcannon_bullet","order":8,"path":"objects/bullet_enemy_dark_assault_shotcannon_bullet/bullet_enemy_dark_assault_shotcannon_bullet.yy",},
     {"name":"bullet_enemy_dark_assault_shotcannon","order":7,"path":"objects/bullet_enemy_dark_assault_shotcannon/bullet_enemy_dark_assault_shotcannon.yy",},

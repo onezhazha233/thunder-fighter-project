@@ -6,6 +6,8 @@ depth = DEPTH_BATTLE.ENEMIES
 boss_list = []
 phase = 0
 
+damage = 114514
+
 Anim_Destroy(id,"inv_damage")
 inv_damage = false
 inv_collision = true
