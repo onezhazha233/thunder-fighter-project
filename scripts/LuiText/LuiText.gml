@@ -40,7 +40,7 @@ function LuiText(_params = {}) : LuiBase(_params) constructor {
 		return self;
 	}
 	
-	self.draw = function() {
+	self.draw = function(){
 		//Set font properties
 		if !is_undefined(self.style.font_default) {
 			draw_set_font(self.style.font_default);

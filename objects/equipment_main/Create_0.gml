@@ -6,7 +6,6 @@ enabled = false
 xscale = 1
 yscale = 1
 
-//plane = plane_phantom_c
 plane = global.current_equipment.plane
 wingman_left = global.current_equipment.wingman_left
 wingman_right = global.current_equipment.wingman_right

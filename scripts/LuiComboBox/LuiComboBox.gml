@@ -19,7 +19,7 @@ function LuiComboBox(_params = {}) : LuiButton(_params) constructor {
 	}
 	
 	///@ignore
-	static _calculateTextWidth = function() { //???// not used now
+	static _calculateTextWidth = function(){ //???// not used now
 		if !is_undefined(self.style) && !is_undefined(self.style.sprite_combobox_arrow) {
 			self.text_width = self.width - sprite_get_width(self.style.sprite_combobox_arrow)*4;
 		} else {
@@ -28,7 +28,7 @@ function LuiComboBox(_params = {}) : LuiButton(_params) constructor {
 	}
 	
 	///@ignore
-	static _initComboBoxPanel = function() {
+	static _initComboBoxPanel = function(){
 		var _item_count = array_length(self.items);
 		// Calculate panel sizes
 		var _width = self.width;
@@ -39,7 +39,7 @@ function LuiComboBox(_params = {}) : LuiButton(_params) constructor {
 	}
 	
 	///@ignore
-	static _initItems = function() {
+	static _initItems = function(){
 		var _item_count = array_length(self.items);
 		//Add items to this panel
 		if !is_array(self.items) self.items = [self.items];
@@ -53,7 +53,7 @@ function LuiComboBox(_params = {}) : LuiButton(_params) constructor {
 	}
 	
 	///@desc Toggle combobox open/close
-	static toggle = function() {
+	static toggle = function(){
 		if is_undefined(self.combobox_panel) {
 			self._initComboBoxPanel();
 			self._initItems();
@@ -91,7 +91,7 @@ function LuiComboBox(_params = {}) : LuiButton(_params) constructor {
         return self;
     }
 	
-	self.draw = function() {
+	self.draw = function(){
 		//Base
 		if !is_undefined(self.style.sprite_combobox) {
 			var _blend_color = self.style.color_secondary;
@@ -195,12 +195,12 @@ function LuiComboBoxItem(_params = {}) : LuiButton(_params) constructor {
 	self.combobox_parent = undefined;
 	
 	///@desc Set new combobox text and close combobox
-	static chooseItem = function() {
+	static chooseItem = function(){
 		self.combobox_parent.setText(self.text);
 		self.combobox_parent.toggle();
 	}
 	
-	self.draw = function() {
+	self.draw = function(){
 		
 		// Calculate positions
 		var _center_x = self.x + self.width / 2;

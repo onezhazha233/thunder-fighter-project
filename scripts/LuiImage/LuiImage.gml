@@ -54,7 +54,7 @@ function LuiImage(_params = {}) : LuiBase(_params) constructor {
 	}
 	
 	///@ignore
-	static _calcSpriteSize = function() {
+	static _calcSpriteSize = function(){
 		if !is_undefined(self.value) && sprite_exists(self.value) {
 			self.sprite_real_width = sprite_get_width(self.value);
 			self.sprite_real_height = sprite_get_height(self.value);
@@ -62,7 +62,7 @@ function LuiImage(_params = {}) : LuiBase(_params) constructor {
 		}
 	}
 	
-	self.draw = function() {
+	self.draw = function(){
 		//Calculate fit size
 		var _width = self.width;
 		var _height = self.height;

@@ -10,7 +10,7 @@ function LuiBox(_params = {}) : LuiColumn(_params) constructor {
 	self.color = _params[$ "color"] ?? c_black;
 	self.alpha = _params[$ "alpha"] ?? 0.5;
 	
-	self.draw = function() {
+	self.draw = function(){
 		draw_set_alpha(self.alpha);
 		draw_set_color(self.color);
 		draw_rectangle(self.x, self.y, self.x + self.width, self.y + self.height, false);

@@ -29,7 +29,7 @@ function LuiMain() : LuiBase() constructor {
 	
 	// Init Screen grid
 	///@ignore
-	static _recalculateScreenGrid = function() {
+	static _recalculateScreenGrid = function(){
 		for (var _x = 0, _width = ceil(display_get_gui_width() / LUI_GRID_SIZE); _x < _width; ++_x) {
 			for (var _y = 0, _height = ceil(display_get_gui_height() / LUI_GRID_SIZE); _y < _height; ++_y) {
 				var _key = string(_x) + "_" + string(_y);
@@ -81,19 +81,19 @@ function LuiMain() : LuiBase() constructor {
 	
 	///@desc Return true if we interacting with UI at the moment with mouse or keyboard
 	///@return {bool}
-	static isInteracting = function() {
+	static isInteracting = function(){
 		return self.isInteractingKeyboard() || self.isInteractingMouse();
 	}
 	
 	///@desc Return true if we interacting with UI at the moment with mouse
 	///@return {bool}
-	static isInteractingMouse = function() {
+	static isInteractingMouse = function(){
 		return self.visible && !self.deactivated && !is_undefined(self.topmost_hovered_element);
 	}
 	
 	///@desc Return true if we interacting with UI at the moment with keyboard
 	///@return {bool}
-	static isInteractingKeyboard = function() {
+	static isInteractingKeyboard = function(){
 		return self.visible && !self.deactivated && self.waiting_for_keyboard_input;
 	}
 	
@@ -112,7 +112,7 @@ function LuiMain() : LuiBase() constructor {
 	
 	// Update
 	self.base_update = method(self, update);
-	self.update = function() {
+	self.update = function(){
 		
 		// Update all elements
 		self.base_update();
@@ -278,7 +278,7 @@ function LuiMain() : LuiBase() constructor {
 	
 	// Render
 	self.base_render = method(self, render);
-	self.render = function() {
+	self.render = function(){
 		 
 		// Get previous alpha
 		var _prev_alpha = draw_get_alpha();
@@ -419,7 +419,7 @@ function LuiMain() : LuiBase() constructor {
 	
 	///@desc Draw debug grid info
 	///@ignore
-	static _drawScreenGrid = function() {
+	static _drawScreenGrid = function(){
 		draw_set_alpha(1);
 		draw_set_color(c_red);
 		draw_set_halign(fa_left);

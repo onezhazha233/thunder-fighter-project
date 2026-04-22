@@ -28,7 +28,7 @@ function LuiProgressRing(_params = {}) : LuiProgressBar(_params) constructor {
 		self.sprite_pos.scale = _scale;
 	}
 	
-	self.draw = function() {
+	self.draw = function(){
 		// Calculate colors
 		var _blend_back = self.style.color_back;
 		var _blend_accent = !is_undefined(self.bar_color) ? self.bar_color : self.style.color_accent;

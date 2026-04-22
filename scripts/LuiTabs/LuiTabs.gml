@@ -35,7 +35,7 @@ function LuiTabs(_params = {}) : LuiBase(_params) constructor {
 	
 	///@desc Create header container for tabs
 	///@ignore
-	static _initHeader = function() {
+	static _initHeader = function(){
 		if is_undefined(self.tabs_header) {
 			self.tabs_header = new LuiRow({height: self.tab_height}).setGap(self.tab_indent).setMinHeight(self.tab_height);
 		}
@@ -43,7 +43,7 @@ function LuiTabs(_params = {}) : LuiBase(_params) constructor {
 	
 	///@desc Create tabs
 	///@ignore
-	static _initTabs = function() {
+	static _initTabs = function(){
 		if !is_undefined(self.tabs) {
 			if !is_array(self.tabs) self.tabs = [self.tabs];
 			var _tab_count = array_length(self.tabs);
@@ -87,7 +87,7 @@ function LuiTabs(_params = {}) : LuiBase(_params) constructor {
 	}
 	
 	///@desc Deactivate all tabs
-	static tabDeactivateAll = function() {
+	static tabDeactivateAll = function(){
 		var _tab_count = array_length(self.tabs);
 		for (var i = 0; i < _tab_count; ++i) {
 		    //Get tab
@@ -105,7 +105,7 @@ function LuiTabs(_params = {}) : LuiBase(_params) constructor {
         return self;
     }
 	
-	self.draw = function() {
+	self.draw = function(){
 		//Base
 		if !is_undefined(self.style.sprite_tabs) {
 			var _blend_color = self.style.color_primary;//self.nesting_level == 0 ? self.style.color_primary : merge_color(self.style.color_primary, self.style.color_secondary, 0.25);
@@ -162,13 +162,13 @@ function LuiTab(_params = {}) : LuiButton(_params) constructor {
 	self.tab_container = undefined;
 	
 	///@desc Change getContainer function for compatibility with setFlex... functions
-	self.getContainer = function() {
+	self.getContainer = function(){
 		self._initContainer();
 		return self.container;
 	}
 	
 	///@ignore
-	static _initContainer = function() {
+	static _initContainer = function(){
 		if is_undefined(self.tab_container) {
 			self.tab_container = new LuiContainer({x: 0, y: 0}).setVisible(false).setFlexDisplay(flexpanel_display.none).setFlexGrow(1);
 			self.setContainer(self.tab_container);
@@ -187,12 +187,12 @@ function LuiTab(_params = {}) : LuiButton(_params) constructor {
 	}
 	
 	///@desc Activate current tab
-	static tabActivate = function() {
+	static tabActivate = function(){
 		self.setActiveState(true);
 	}
 	
 	///@desc Deactivate current tab
-	static tabDeactivate = function() {
+	static tabDeactivate = function(){
 		self.setActiveState(false);
 	}
 	
@@ -203,7 +203,7 @@ function LuiTab(_params = {}) : LuiButton(_params) constructor {
 		return self;
 	}
 	
-	self.draw = function() {
+	self.draw = function(){
 		// Calculate colors
 		var _blend_color = !is_undefined(self.button_color) ? self.button_color : self.style.color_primary;
 		var _blend_text = self.style.color_text;

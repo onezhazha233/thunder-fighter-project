@@ -29,7 +29,7 @@ function LuiInput(_params = {}) : LuiBase(_params) constructor {
     
     self.is_incorrect = false;
     self.cursor_pointer = "";
-    self.cursor_timer = time_source_create(time_source_game, 0.5, time_source_units_seconds, function() {
+    self.cursor_timer = time_source_create(time_source_game, 0.5, time_source_units_seconds, function(){
         if self.cursor_pointer == "" {
             self.cursor_pointer = self.style.input_cursor;
         } else {
@@ -169,7 +169,7 @@ function LuiInput(_params = {}) : LuiBase(_params) constructor {
         return false;
     }
     
-    self.draw = function() {
+    self.draw = function(){
         //Base
         if !is_undefined(self.style.sprite_input) {
             var _blend_color = self.style.color_back;

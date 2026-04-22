@@ -14,13 +14,13 @@ function getLimeResolutionManager() {
 		self.gui_scale = 1.0; // Default GUI scale
 
 		// Initialize resolution settings
-		static init = function() {
+		static init = function(){
 			updateResolution();
 			return self;
 		}
 
 		// Update resolution based on window or fullscreen mode
-		static updateResolution = function() {
+		static updateResolution = function(){
 			var win_width = window_get_width();
 			var win_height = window_get_height();
 
@@ -61,7 +61,7 @@ function getLimeResolutionManager() {
 		}
 
 		// Update GUI size based on screen resolution and scale
-		static updateGuiSize = function() {
+		static updateGuiSize = function(){
 			var render_width = getScreenWidth();
 			var render_height = getScreenHeight();
 
@@ -102,7 +102,7 @@ function getLimeResolutionManager() {
 		}
 
 		// Get current screen width
-		static getScreenWidth = function() {
+		static getScreenWidth = function(){
 			if (window_get_fullscreen()) {
 				if (self.screen_width == -1) {
 					return display_get_width();
@@ -115,7 +115,7 @@ function getLimeResolutionManager() {
 		}
 
 		// Get current screen height
-		static getScreenHeight = function() {
+		static getScreenHeight = function(){
 			if (window_get_fullscreen()) {
 				if (self.screen_height == -1) {
 					return display_get_height();
@@ -128,7 +128,7 @@ function getLimeResolutionManager() {
 		}
 
 		// Get current GUI width
-		static getGuiWidth = function() {
+		static getGuiWidth = function(){
 			if (self.gui_width == -1) {
 				return getScreenWidth() / self.gui_scale;
 			} else {
@@ -137,7 +137,7 @@ function getLimeResolutionManager() {
 		}
 
 		// Get current GUI height
-		static getGuiHeight = function() {
+		static getGuiHeight = function(){
 			if (self.gui_height == -1) {
 				return getScreenHeight() / self.gui_scale;
 			} else {
@@ -146,12 +146,12 @@ function getLimeResolutionManager() {
 		}
 
 		// Get current GUI scale
-		static getGuiScale = function() {
+		static getGuiScale = function(){
 			return self.gui_scale;
 		}
 
 		// Check and update resolution if window size or mode changed
-		static update = function() {
+		static update = function(){
 			if (self.last_window_width != window_get_width() || self.last_window_height != window_get_height()) {
 				updateResolution();
 			}

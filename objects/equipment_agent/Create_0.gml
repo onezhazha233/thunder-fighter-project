@@ -7,7 +7,7 @@ angle = 0
 player_point_enabled = true
 player_point = -1
 
-plane = -1
+plane = plane_agent
 plane_inst = noone
 
 wingman_left = []

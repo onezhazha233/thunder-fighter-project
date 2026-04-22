@@ -45,14 +45,14 @@ function LuiSurface(_params = {}) : LuiBase(_params) constructor {
 	}
 	
 	///@desc Update surface if visible (should be called from main object where you draw surface)
-	static updateSurface = function() {
+	static updateSurface = function(){
 		if self.is_visible_in_region && self.visible && !self.deactivated {
 			self.updateMainUiSurface();
 		}
 	}
 	
 	///@ignore
-	static _calcSurfaceSize = function() {
+	static _calcSurfaceSize = function(){
 		if surface_exists(self.value) {
 			self.surface_real_width = surface_get_width(self.value);
 			self.surface_real_height = surface_get_height(self.value);
@@ -60,7 +60,7 @@ function LuiSurface(_params = {}) : LuiBase(_params) constructor {
 		}
 	}
 	
-	self.draw = function() {
+	self.draw = function(){
 		if !surface_exists(self.value) return;
 		//Calculate fit size
 		var _width = self.width;

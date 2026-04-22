@@ -1,7 +1,7 @@
 live;
 event_inherited();
 
-enemy_0 = new Enemy(enemy_9c1, emitter_enemy_c2, function() {
+enemy_0 = new Enemy(enemy_9c1,emitter_enemy_c2,function(){
 	EnemyMove_Pre([-200, 700], [520, 360], 40);
 	EnemyMove_Intro(60);
 	if(time = 150){
@@ -11,7 +11,7 @@ enemy_0 = new Enemy(enemy_9c1, emitter_enemy_c2, function() {
 	EnemyMove_LoopLinear([360,580], [520,400], 250, 200);
 });
 
-enemy_1 = new Enemy(enemy_9c1, emitter_enemy_c2, function() {
+enemy_1 = new Enemy(enemy_9c1,emitter_enemy_c2,function(){
 	EnemyMove_Pre([920, 700], [200, 360], 40);
 	EnemyMove_Intro(60);
 	if(time = 150){

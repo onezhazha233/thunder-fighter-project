@@ -8,7 +8,7 @@ function LuiToggleButton(_params = {}) : LuiButton(_params) constructor {
 	
 	self.value = _params[$ "value"] ?? false;
 	
-	self.draw = function() {
+	self.draw = function(){
 		
 		// Calculate colors
 		var _blend_color = self.value == true ? self.style.color_accent : (!is_undefined(self.button_color) ? self.button_color : self.style.color_secondary);

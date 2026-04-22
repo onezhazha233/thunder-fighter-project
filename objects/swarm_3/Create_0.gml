@@ -1,7 +1,7 @@
 live;
 event_inherited();
 
-enemy = new Enemy(enemy_10a,noone,function(){
+enemy = new Enemy(enemy_og0a,noone,function(){
 	if(time = 1){
 		x = -100+ox;
 		y = 250+oy;

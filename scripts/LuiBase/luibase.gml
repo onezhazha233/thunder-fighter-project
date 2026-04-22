@@ -169,7 +169,7 @@ function LuiBase(_params = {}) constructor {
 	
 	///@desc Get value of this element
 	///@return {any} Value depends on element
-	static get = function() {
+	static get = function(){
 		return self.value;
 	}
 	
@@ -184,27 +184,27 @@ function LuiBase(_params = {}) constructor {
 	}
 	
 	///@desc Get style
-	static getStyle = function() {
+	static getStyle = function(){
 		return self.style;
 	}
 	
 	///@desc Get first element in content array
-	static getFirst = function() {
+	static getFirst = function(){
 		return array_first(self.content);
 	};
 	
 	///@desc Get last element in content array
-	static getLast = function() {
+	static getLast = function(){
 		return array_last(self.content);
 	};
 	
 	///@desc Get container element
-	self.getContainer = function() {
+	self.getContainer = function(){
 		return self.container;
 	}
 	
 	///@desc Get content array
-	self.getContent = function() {
+	self.getContent = function(){
 		return self.getContainer().content;
 	}
 	
@@ -259,7 +259,7 @@ function LuiBase(_params = {}) constructor {
 	}
 	
 	///@desc Shortcut method to make element position type absolute (eq. setPositionType(flexpanel_position_type.absolute))
-	static setPositionAbsolute = function() {
+	static setPositionAbsolute = function(){
 		self.setPositionType(flexpanel_position_type.absolute);
 		return self;
 	}
@@ -449,7 +449,7 @@ function LuiBase(_params = {}) constructor {
 	}
 	
 	//@desc Stretch element on all width and height of parent
-	static setFullSize = function() {
+	static setFullSize = function(){
 		flexpanel_node_style_set_width(self.flex_node, 100, flexpanel_unit.percent);
 		flexpanel_node_style_set_height(self.flex_node, 100, flexpanel_unit.percent);
 		return self;
@@ -689,7 +689,7 @@ function LuiBase(_params = {}) constructor {
 	}
 	
 	///@desc setFocus
-	static setFocus = function() {
+	static setFocus = function(){
 		self.has_focus = true;
 		self._dispatchEvent(LUI_EV_FOCUS_SET);
 		return self;
@@ -852,7 +852,7 @@ function LuiBase(_params = {}) constructor {
 	}
 	
 	///@desc Brings the element to the front by setting a new maximum z value
-	static bringToFront = function() {
+	static bringToFront = function(){
 		// Increment global.lui_max_z to get a new maximum z
 		global.lui_max_z++;
 		
@@ -866,7 +866,7 @@ function LuiBase(_params = {}) constructor {
 	
 	///@desc Init element variables
 	///@ignore
-	static _initElement = function() {
+	static _initElement = function(){
 		self.auto_x = self.x == LUI_AUTO && self.r == LUI_AUTO;
 		self.auto_y = self.y == LUI_AUTO && self.b == LUI_AUTO;
 		self.auto_width = self.width == LUI_AUTO;
@@ -877,7 +877,7 @@ function LuiBase(_params = {}) constructor {
 	
 	///@desc Initialize flex node
 	///@ignore
-	static _initFlexNode = function() {
+	static _initFlexNode = function(){
 		// Position X
 		if !self.auto_x {
 			if self.x != LUI_AUTO {
@@ -914,7 +914,7 @@ function LuiBase(_params = {}) constructor {
 	
 	///@desc Adds elements from a delayed array
 	///@ignore
-	static _addDelayedContent = function() {
+	static _addDelayedContent = function(){
 		if is_array(self.delayed_content) && array_length(self.delayed_content) > 0 {
 			self.getContainer().addContent(self.delayed_content);
 			self.delayed_content = -1;
@@ -1112,7 +1112,7 @@ function LuiBase(_params = {}) constructor {
 	};
 	
 	///@ignore
-	static _registerElementName = function() {
+	static _registerElementName = function(){
 		if !variable_struct_exists(self.main_ui.element_names, self.name) && self.name != LUI_AUTO_NAME {
 			variable_struct_set(self.main_ui.element_names, self.name, self);
 		} else {
@@ -1129,7 +1129,7 @@ function LuiBase(_params = {}) constructor {
 	}
 	
 	///@ignore
-	static _deleteElementName = function() {
+	static _deleteElementName = function(){
 		if !is_undefined(self.main_ui) && self != self.main_ui {
 			if variable_struct_exists(self.main_ui.element_names, self.name) {
 				variable_struct_remove(self.main_ui.element_names, self.name);
@@ -1141,7 +1141,7 @@ function LuiBase(_params = {}) constructor {
 	
 	///@desc Add element in system ui grid
 	///@ignore
-	static _addToScreenGrid = function() {
+	static _addToScreenGrid = function(){
 		if (!self.is_visible_in_region || !self.visible) {
 			return false;
 		}
@@ -1168,7 +1168,7 @@ function LuiBase(_params = {}) constructor {
 	
 	///@desc Delete element from system ui grid
 	///@ignore
-	static _deleteFromScreenGrid = function() {
+	static _deleteFromScreenGrid = function(){
 	    var _grid_location_length = array_length(self._grid_location);
 	    for (var i = 0; i < _grid_location_length; i++) {
 	        var _key = self._grid_location[i];
@@ -1185,20 +1185,20 @@ function LuiBase(_params = {}) constructor {
 	
 	///@desc Update element in system ui grid
 	///@ignore
-	static _updateScreenGrid = function() {
+	static _updateScreenGrid = function(){
 		self._deleteFromScreenGrid();
 		self._addToScreenGrid();
 	}
 	
 	///@desc Delete element from grid and clean up array
 	///@ignore
-	static _cleanupScreenGrid = function() {
+	static _cleanupScreenGrid = function(){
 		self._deleteFromScreenGrid();
 		self._grid_location = -1;
 	}
 	
 	///@ignore
-	static _updateViewRegion = function() {
+	static _updateViewRegion = function(){
     	
 		// Prevent this element from being updated if it has just been added
 		if self.start_x == -1 || self.start_y == -1 return false;
@@ -1242,7 +1242,7 @@ function LuiBase(_params = {}) constructor {
 	
 	///@desc Apply local and inherited styles to the flex node
 	///@ignore
-	static _applyStyles = function() {
+	static _applyStyles = function(){
 	    if (is_undefined(self.style)) return;
 		
 	    var _container_node = self.getContainer().flex_node;
@@ -1284,7 +1284,7 @@ function LuiBase(_params = {}) constructor {
 	
 	///@desc Calculate all sizes and positions of elements
 	///@ignore
-	static _calculateLayout = function() {
+	static _calculateLayout = function(){
 		if !is_undefined(self.main_ui) {
             flexpanel_calculate_layout(self.main_ui.flex_node, self.main_ui.width, self.main_ui.height, flexpanel_direction.LTR);
             return true;
@@ -1341,7 +1341,7 @@ function LuiBase(_params = {}) constructor {
 	
 	///@desc Update position, size and z depth of all elements with depth reset
 	///@deprecated
-	static flexUpdateAll = function() {
+	static flexUpdateAll = function(){
 		if !is_undefined(main_ui) {
 			// Update all elements
 			_updateFlex(self.main_ui.flex_node);
@@ -1350,7 +1350,7 @@ function LuiBase(_params = {}) constructor {
 	
 	///@desc Update element value from binded variable
 	///@ignore
-	static _updateFromBindedVariable = function() {
+	static _updateFromBindedVariable = function(){
 		var _source = self.binded_variable.source;
 		var _variable = self.binded_variable.variable;
 		if (_source != noone && variable_instance_exists(_source, _variable)) {
@@ -1364,7 +1364,7 @@ function LuiBase(_params = {}) constructor {
 	
 	///@desc Update binded variable from element value
 	///@ignore
-	static _updateToBindedVariable = function() {
+	static _updateToBindedVariable = function(){
 		var _source = self.binded_variable.source;
 		var _variable = self.binded_variable.variable;
 		if (_source != noone && variable_instance_exists(_source, _variable)) {
@@ -1395,7 +1395,7 @@ function LuiBase(_params = {}) constructor {
 	
 	///@desc Recalculates depth_array for the element and all its children
 	///@ignore
-	static _recalculateDepthArray = function() {
+	static _recalculateDepthArray = function(){
 	    // Rebuild depth_array: parent's depth_array + current z
 	    if (self.parent != undefined) {
 	        self.depth_array = array_concat(self.parent.depth_array, [self.z]);
@@ -1535,7 +1535,7 @@ function LuiBase(_params = {}) constructor {
 	}
 	
 	///@desc This function updates all nested elements
-	static update = function() {
+	static update = function(){
 	    if (!self.is_visible_in_region || !self.visible || self.deactivated) return false;
 	    
 	    // Define the list of items to be processed
@@ -1606,7 +1606,7 @@ function LuiBase(_params = {}) constructor {
 	}
 	
 	///@desc This function draws all nested elements
-	static render = function() {
+	static render = function(){
 		
 		if !is_array(self.content) return;
 		
@@ -1652,21 +1652,21 @@ function LuiBase(_params = {}) constructor {
 	}
 	 
 	///@desc Centers the content. Calls setFlexJustifyContent and setFlexAlignItems with centering
-	static centerContent = function() {
+	static centerContent = function(){
 		self.setFlexJustifyContent(flexpanel_justify.center)
 			.setFlexAlignItems(flexpanel_align.center);
 		return self;
 	}
 	
 	///@desc Remove focus from element
-	static removeFocus = function() {
+	static removeFocus = function(){
 		self.has_focus = false;
 		self._dispatchEvent(LUI_EV_FOCUS_REMOVE);
 		return self;
 	}
 	
 	///@desc Activate an element
-	static activate = function() {
+	static activate = function(){
 		self.deactivated = false;
 		if is_array(self.content)
 		array_foreach(self.content, function(_elm) {
@@ -1676,7 +1676,7 @@ function LuiBase(_params = {}) constructor {
 	}
 	
 	///@desc Deactivate an element
-	static deactivate = function() {
+	static deactivate = function(){
 		self.deactivated = true;
 		if is_array(self.content)
 		array_foreach(self.content, function(_elm) {
@@ -1686,26 +1686,26 @@ function LuiBase(_params = {}) constructor {
 	}
 	
 	///@desc Update main ui surface
-	static updateMainUiSurface = function() {
+	static updateMainUiSurface = function(){
 		if is_undefined(self.main_ui) return self;
 		self.main_ui.needs_redraw_surface = true;
 		return self;
 	}
 	
 	///@desc Update main ui flex
-	static updateMainUiFlex = function() {
+	static updateMainUiFlex = function(){
 		if is_undefined(self.main_ui) return self;
 		self.main_ui.needs_update_flex = true;
 		return self;
 	}
 	
 	///@desc Returns true if the mouse is hovered over this element
-	static isMouseHovered = function() {
+	static isMouseHovered = function(){
 		return self.is_mouse_hovered;
 	}
 	
 	///@desc Returns true if the mouse is hovered over this element, excluding all elements above it
-	static isMouseHoveredExc = function() {
+	static isMouseHoveredExc = function(){
 		if !self.visible return false;
 		var _mouse_x = device_mouse_x_to_gui(0);
 		var _mouse_y = device_mouse_y_to_gui(0);
@@ -1716,7 +1716,7 @@ function LuiBase(_params = {}) constructor {
 	}
 	
 	///@desc Returns true if the mouse is hovered over this element and its parent
-	static isMouseHoveredParents = function() {
+	static isMouseHoveredParents = function(){
 		if is_undefined(self.parent) return true;
 		if self.isMouseHoveredExc() {
 			return self.parent.isMouseHoveredParents();
@@ -1743,7 +1743,7 @@ function LuiBase(_params = {}) constructor {
 	}
 	
 	///@desc Returns true if the mouse is hovered over the descendants of this element
-	static isMouseHoveredChilds = function() {
+	static isMouseHoveredChilds = function(){
 		if !self.visible return false;
 		var _mouse_x = device_mouse_x_to_gui(0);
 		var _mouse_y = device_mouse_y_to_gui(0);
@@ -1758,19 +1758,19 @@ function LuiBase(_params = {}) constructor {
 	}
 	
 	///@desc Set visible to false and flex display to none
-	static hide = function() {
+	static hide = function(){
 		self.setVisible(false).setFlexDisplay(flexpanel_display.none);
 		return self;
 	}
 	
 	///@desc Set visible to true and flex display to flex
-	static show = function() {
+	static show = function(){
 		self.setVisible(true).setFlexDisplay(flexpanel_display.flex);
 		return self;
 	}
 	
 	///@desc Destroys all nested elements
-	static destroyContent = function() {
+	static destroyContent = function(){
 	    while (array_length(self.content) > 0) {
 	        var _element = array_pop(self.content);
 	        if (!is_undefined(_element)) {
@@ -1780,7 +1780,7 @@ function LuiBase(_params = {}) constructor {
 	}
 	
 	///@desc Destroys self and all nested elements
-	self.destroy = function() {
+	self.destroy = function(){
 		// Double-Destroy protection
 		if (self.is_destroyed) {
 			return;

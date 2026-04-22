@@ -16,7 +16,7 @@ function LuiSlider(_params = {}) : LuiProgressBar(_params) constructor {
 	self.knob_extender = _params[$ "knob_extender"] ?? 1;
 	
 	// Calculate knob width in constructor
-	static _initKnobWidth = function() {
+	static _initKnobWidth = function(){
 		if !is_undefined(self.style.sprite_slider_knob) {
 			var _slider_knob_nineslice = sprite_get_nineslice(self.style.sprite_slider_knob);
 			var _nineslice_left_right = _slider_knob_nineslice.left + _slider_knob_nineslice.right;
@@ -24,7 +24,7 @@ function LuiSlider(_params = {}) : LuiProgressBar(_params) constructor {
 		}
 	}
 	
-	self.draw = function() {
+	self.draw = function(){
 		// Calculate colors based on state
 		var _blend_back = self.style.color_back;
 		var _blend_accent = !is_undefined(self.bar_color) ? self.bar_color : self.style.color_accent;

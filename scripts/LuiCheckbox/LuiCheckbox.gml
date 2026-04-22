@@ -15,7 +15,7 @@ function LuiCheckbox(_params = {}) : LuiBase(_params) constructor {
 		return self;
 	}
 	
-	self.draw = function() {
+	self.draw = function(){
 		// Base
 		if !is_undefined(self.style.sprite_checkbox) {
 			var _blend_color = self.style.color_back;

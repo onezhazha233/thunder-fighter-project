@@ -71,7 +71,7 @@ function LuiProgressBar(_params = {}) : LuiBase(_params) constructor {
 		return clamp(_new_value, self.min_value, self.max_value);
 	}
 	
-	self.draw = function() {
+	self.draw = function(){
 		// Calculate colors
 		var _blend_back = self.style.color_back;
 		var _blend_accent = !is_undefined(self.bar_color) ? self.bar_color : self.style.color_accent;

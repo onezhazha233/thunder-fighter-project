@@ -13,14 +13,14 @@ function LuiScrollPanel(_params = {}) : LuiBase(_params) constructor {
 	self.scroll_container = undefined;
 	
 	///@desc Change getContainer function for compatibility with setFlex... functions
-	self.getContainer = function() {
+	self.getContainer = function(){
 		self._initScrollContainer();
 		return self.container;
 	}
 	
 	///@desc Create container
 	///@ignore
-	static _initScrollContainer = function() {
+	static _initScrollContainer = function(){
 		if is_undefined(self.scroll_container) {
 			self.scroll_container = new LuiAbsoluteContainer({x: 0, y: 0});
 			self.setContainer(self.scroll_container);
@@ -38,18 +38,18 @@ function LuiScrollPanel(_params = {}) : LuiBase(_params) constructor {
 	}
 	
 	///@desc Delete scroll panel content
-	static cleanScrollPanel = function() {
+	static cleanScrollPanel = function(){
 		self.scroll_container.destroyContent();
 		self.scroll_offset_y = 0;
 		self.scroll_target_offset_y = 0;
 	}
 	
 	///@ignore
-	static _applyScroll = function() {
+	static _applyScroll = function(){
 		self.scroll_container.setPosition(, self.scroll_offset_y);
 	}
 	
-	self.draw = function() {
+	self.draw = function(){
 		//Panel
 		if !is_undefined(self.style.sprite_panel) {
 			var _blend_color = self.style.color_primary;//self.nesting_level == 0 ? self.style.color_primary : merge_color(self.style.color_primary, self.style.color_secondary, 0.25);
@@ -81,7 +81,7 @@ function LuiScrollPanel(_params = {}) : LuiBase(_params) constructor {
 		}
 	}
 	
-	self.step = function() {
+	self.step = function(){
 		// Mouse wheel input
 		if self.isMouseHoveredExc() && self.isMouseHoveredChilds() {
 			var _wheel_up = mouse_wheel_up() ? 1 : 0;

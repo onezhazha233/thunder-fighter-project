@@ -54,7 +54,7 @@ function LuiButton(_params = {}) : LuiBase(_params) constructor {
 	}
 	
 	///@ignore
-	static _calcIconSize = function() {
+	static _calcIconSize = function(){
 		if sprite_exists(self.icon.sprite) {
 			var _spr_width = sprite_get_width(self.icon.sprite);
 			var _spr_height = sprite_get_height(self.icon.sprite);
@@ -104,7 +104,7 @@ function LuiButton(_params = {}) : LuiBase(_params) constructor {
 		}
 	}
 	
-	self.draw = function() {
+	self.draw = function(){
 		// Calculate colors
 		var _blend_color = !is_undefined(self.button_color) ? self.button_color : self.style.color_secondary;
 		var _blend_text = self.style.color_text;

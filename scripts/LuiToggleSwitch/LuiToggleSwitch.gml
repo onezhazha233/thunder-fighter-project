@@ -20,7 +20,7 @@ function LuiToggleSwitch(_params = {}) : LuiBase(_params) constructor {
 	}
 	
 	///@ignore
-	static _updateSlider = function() {
+	static _updateSlider = function(){
 		self.slider_size = min(self.width, self.height);
 		if self.value == false {
 			self.slider_color_value = 0;
@@ -32,7 +32,7 @@ function LuiToggleSwitch(_params = {}) : LuiBase(_params) constructor {
 		}
 	}
 	
-	self.draw = function() {
+	self.draw = function(){
 		self.slider_size = min(self.width, self.height);
 		var _draw_width = min(self.width, self.height) * 2;
 		var _draw_height = min(self.width, self.height);

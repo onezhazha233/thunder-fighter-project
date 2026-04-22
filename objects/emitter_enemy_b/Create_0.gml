@@ -143,7 +143,7 @@ attack_1 = function(){
         if ((attack_time - 1) % 3 == 0) {
             for(var i=0; i<5; i++){
                 var dd = pd + ((attack_time - 1) div 3) * 5;
-                var a = MakeEnemyBullet(x,y,bullet_enemy_normal,spr_bullet_enemy_normal_0);
+                var a = MakeEnemyBullet(x,y,bullet_enemy_normal,spr_bullet_enemy_normal_1);
                 a.image_angle = 72 * i + dd;
                 a.direction = a.image_angle;
                 a.speed = 20;
@@ -156,7 +156,7 @@ attack_1 = function(){
         if ((attack_time - 30) % 3 == 0) {
             for(var i=0; i<5; i++){
                 var dd = pd - ((attack_time - 30) div 3) * 5;
-                var a = MakeEnemyBullet(x,y,bullet_enemy_normal,spr_bullet_enemy_normal_0);
+                var a = MakeEnemyBullet(x,y,bullet_enemy_normal,spr_bullet_enemy_normal_1);
                 a.image_angle = 72 * i + dd;
                 a.direction = a.image_angle;
                 a.speed = 20;
@@ -178,7 +178,6 @@ attack_2 = function(){
 				a.direction = a.image_angle;
 				a.speed = 0;
 				Anim_Create(a,"speed",0,0,0,15+i*2,100);
-				a.mark = mark;
 				dd = pd - ((attack_time-1) div 15)*10-5;
 				a = MakeEnemyBullet(x,y,bullet_enemy_normal,spr_bullet_enemy_normal_2);
 				a.image_angle = dd;

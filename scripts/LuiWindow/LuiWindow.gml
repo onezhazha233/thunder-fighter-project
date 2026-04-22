@@ -24,7 +24,7 @@ function LuiWindow(_params = {}) : LuiPanel(_params) constructor {
 	}
 	
 	///@ignore
-	static _initHeader = function() {
+	static _initHeader = function(){
 		if is_undefined(self.window_header) {
 			self.window_header = new LuiWindowHeader({width: self.width, height: self.header_height, title: self.title})
 				.setGap(0).setPadding(8).setFlexDirection(flexpanel_flex_direction.row);
@@ -40,7 +40,7 @@ function LuiWindow(_params = {}) : LuiPanel(_params) constructor {
 	
 	///@desc Create container
 	///@ignore
-	static _initWindowContainer = function() {
+	static _initWindowContainer = function(){
 		if is_undefined(self.window_container) {
 			self.window_container = new LuiContainer().setFullSize();
 			self.setContainer(self.window_container);
@@ -48,7 +48,7 @@ function LuiWindow(_params = {}) : LuiPanel(_params) constructor {
 	}
 	
 	///@desc Change getContainer function for compatibility with setFlex... functions
-	self.getContainer = function() {
+	self.getContainer = function(){
 		self._initWindowContainer();
 		return self.container;
 	}
@@ -64,17 +64,17 @@ function LuiWindow(_params = {}) : LuiPanel(_params) constructor {
 	}
 	
 	///@desc Toggle window show or hide
-	static toggleWindow = function() {
+	static toggleWindow = function(){
 		self.window_container.setVisible(!self.window_container.visible);
 		self.ignore_mouse = !self.window_container.visible;
 	}
 	
 	///@desc Destroy window
-	static closeWindow = function() {
+	static closeWindow = function(){
 		self.destroy();
 	}
 	
-    self.draw = function() {
+    self.draw = function(){
 		if self.window_container.visible {
 			// Window
 			if !is_undefined(self.style.sprite_tabs) {
@@ -122,7 +122,7 @@ function LuiWindowHeader(_params = {}) : LuiBase(_params) constructor {
 	self.text_title = undefined;
 	self.parent_window = undefined;
 	
-	static _initControlButtons = function() {
+	static _initControlButtons = function(){
 		var _button_size = 32; //???//
 		var _close_button = new LuiButton().setSize(_button_size, _button_size).setText("X").setColor(self.style.color_semantic_error);
 		var _minimize_button = new LuiButton().setSize(_button_size, _button_size).setText("-");
@@ -136,7 +136,7 @@ function LuiWindowHeader(_params = {}) : LuiBase(_params) constructor {
 	}
 	
     // Draw method
-    self.draw = function() {
+    self.draw = function(){
         // Header
 		if !is_undefined(self.style.sprite_tab) {
             var _blend_color = merge_color(self.style.color_primary, c_black, 0.25);

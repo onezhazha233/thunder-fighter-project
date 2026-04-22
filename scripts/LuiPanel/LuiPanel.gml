@@ -24,7 +24,7 @@ function LuiPanel(_params = {}) : LuiBase(_params) constructor {
 	}
 	
 	///@ignore
-	static _initResizer = function() {
+	static _initResizer = function(){
 		if is_undefined(self.resizer) && self.allow_resize {
 			self.resizer = new LuiBox({r: 0, b: 0, w: 8, h: 8, color: c_red, alpha: 0}).setPositionAbsolute(); //???//
 			self.resizer.can_drag = true;
@@ -41,7 +41,7 @@ function LuiPanel(_params = {}) : LuiBase(_params) constructor {
 		}
 	}
 	
-	self.draw = function() {
+	self.draw = function(){
 		//Shadow
 		//var _left = (sprite_get_width(sUI_Square_21r_shadow) - sprite_get_width(self.style.sprite_panel)) div 2;
 		//var _right = (sprite_get_width(sUI_Square_21r_shadow) - sprite_get_width(self.style.sprite_panel)) div 2;
