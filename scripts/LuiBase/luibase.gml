@@ -1600,7 +1600,7 @@ function LuiBase(_params = {}) constructor {
 	        }
 	        
 	        // Execute custom step and recursive update
-	        if (is_method(_element.step)) _element.step();
+	        if (is_method(_element.step) && (!variable_global_exists("lui_interact_enabled") || global.lui_interact_enabled)) _element.step();
 	        _element.update();
 	    }
 	}

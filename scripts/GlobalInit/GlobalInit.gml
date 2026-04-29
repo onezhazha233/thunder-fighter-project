@@ -29,4 +29,6 @@ function GlobalInit(){
 	global.debug_bullet_player_collision_display = false;
 	global.debug_bullet_enemy_collision_display = false;
 	global.debug_enemy_collision_display = false;
+	
+	global.lui_interact_enabled = true;
 }

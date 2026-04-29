@@ -337,10 +337,10 @@ attack_3 = function(){//中心散射 230
 	}
 }
 
-var a0 = create_attack(0, attack_0, 1,120);
-var a1 = create_attack(1, attack_1, 1,40);
-var a2 = create_attack(2, attack_2, 1,60);
-var a3 = create_attack(3, attack_3, 1,70);
+var a0 = create_attack(0,attack_0,150);
+var a1 = create_attack(1,attack_1,90);
+var a2 = create_attack(2,attack_2,90);
+var a3 = create_attack(3,attack_3,90);
 
 fixed_sequence = [a0, a1, a2,a3];
 random_pool = [a0, a1, a2,a3]

@@ -116,13 +116,32 @@ function LuiMain() : LuiBase() constructor {
 		
 		// Update all elements
 		self.base_update();
+
+		var _interact_enabled = !variable_global_exists("lui_interact_enabled") || global.lui_interact_enabled;
+		if (!_interact_enabled) {
+			if (!is_undefined(self.topmost_hovered_element)) {
+				self.topmost_hovered_element.is_mouse_hovered = false;
+				self.topmost_hovered_element.is_pressed = false;
+			}
+			if (!is_undefined(self.element_in_focus)) {
+				self.element_in_focus.removeFocus();
+				self.element_in_focus = undefined;
+			}
+			if (!is_undefined(self.dragging_element)) {
+				self.dragging_element.is_dragging = false;
+				self.dragging_element = undefined;
+			}
+			self.prev_mouse_x = -1;
+			self.prev_mouse_y = -1;
+			self.topmost_hovered_element = undefined;
+		}
 			
 		// Mouse position
 		var _mouse_x = device_mouse_x_to_gui(0);
 		var _mouse_y = device_mouse_y_to_gui(0);
 			
 		// Mouse events
-		if self.visible && !self.deactivated && (_mouse_x >= 0 && _mouse_x < self.width && _mouse_y >= 0 && _mouse_y < self.height) {
+		if _interact_enabled && self.visible && !self.deactivated && (_mouse_x >= 0 && _mouse_x < self.width && _mouse_y >= 0 && _mouse_y < self.height) {
 			var _previous_hovered_element = self.topmost_hovered_element;
 			
 			// Prioritize dragging element if it exists and mouse is held
@@ -233,7 +252,7 @@ function LuiMain() : LuiBase() constructor {
 		}
 		
 		// Keyboard events
-		if self.visible && !self.deactivated && !is_undefined(self.element_in_focus) {
+		if _interact_enabled && self.visible && !self.deactivated && !is_undefined(self.element_in_focus) {
 			if keyboard_check(vk_anykey) {
 				self.element_in_focus._dispatchEvent(LUI_EV_KEYBOARD_INPUT);
 			}

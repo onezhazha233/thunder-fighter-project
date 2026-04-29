@@ -310,7 +310,9 @@ _btn_enter.addEvent(LUI_EV_CLICK, function(_el) {
 	global.score = 0;
 	global.hp_max = 10;
 	global.hp = 10;
-	room_goto(room_battle);
+	if (!instance_exists(battle_loading)) {
+		instance_create_depth(0,0,0,battle_loading);
+	}
 });
 
 // 标题与布局
