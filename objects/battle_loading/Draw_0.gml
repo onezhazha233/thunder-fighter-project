@@ -1,6 +1,5 @@
 live;
-
-if (preload_layer != noone) {
+if(layer_exists(preload_layer)) {
 	for (var i = 0; i < array_length(preload_active); i++) {
 		var _seq = preload_active[i];
 		if (layer_sequence_exists(preload_layer, _seq)) {
