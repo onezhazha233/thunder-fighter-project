@@ -7,7 +7,7 @@ switch (phase) {
 			phase = 1;
 			room_goto(room_battle_loading);
 		}*/
-		if(anim.state = 0&&anim.time = 30){
+		if(anim.state = 0&&!Anim_IsExists(anim,"up_y")){
 			phase = 1;
 			room_goto(room_battle_loading);
 		}
@@ -49,7 +49,6 @@ switch (phase) {
 		if(anim.state = 2&&anim.time = 70){
 			phase = 3;
 			room_goto(room_battle);
-			global.battle_loading_done = true;
 		}
 		/*fade_alpha = max(0, fade_alpha - fade_speed);
 		if (fade_alpha <= 0) {
@@ -58,7 +57,12 @@ switch (phase) {
 	break;
 
 	case 3:
-		if (room == room_battle) {
+		if(instance_exists(anim)){
+			if(anim.state = 2&&anim.time = 90){
+				global.battle_loading_done = true;
+			}
+		}
+		if!(instance_exists(anim)){
 			instance_destroy();
 		}
 	break;
