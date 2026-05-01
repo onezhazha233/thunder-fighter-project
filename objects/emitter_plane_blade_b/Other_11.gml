@@ -6,7 +6,7 @@ for(i=0;i<3;i+=1){
 		laser[i].x_offset = -laser_offset+laser_offset*i;
 		laser[i].edge_x = x;
 		laser[i].edge_y = y;
-		if!(i = 1)laser[i].laser_offset += 280;
+		if!(i = 1)laser[i].laser_offset += 280*scale_x;
 		laser[i].rampage = rampage;
 		laser[i].edge_sequence_enabled = false;
 		laser[i].slash_damage = damages[4]*global.atk_plane;
@@ -21,8 +21,8 @@ for(i=0;i<3;i+=1){
 		laser[i].rampage = rampage;
 		laser[i].slash_damage = damages[4]*global.atk_plane;
 		
-		laser_offset += (78-laser_offset)/12;
-		if(abs(78-laser_offset) < 0.1)laser_offset = 78;
+		laser_offset += (78*scale_x-laser_offset)/12;
+		if(abs(78*scale_x-laser_offset) < 0.1)laser_offset = 78*scale_x;
 		laser[i].x_offset = -laser_offset+laser_offset*i;
 	}
 }

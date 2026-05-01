@@ -12,8 +12,8 @@ SetPosition = function(xx,yy){
 	
 	for(i=0;i<array_length(follow_inst);i+=1){
 		if(instance_exists(follow_inst[i,0])){
-			follow_inst[i,0].x = xx + follow_inst[i,1];
-			follow_inst[i,0].y = yy + follow_inst[i,2];
+			follow_inst[i,0].x = xx + follow_inst[i,1]*scale_x;
+			follow_inst[i,0].y = yy + follow_inst[i,2]*scale_y
 		}
 		else{
 			array_delete(follow_inst,i,1);

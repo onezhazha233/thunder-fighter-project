@@ -43,7 +43,9 @@ if(instance_exists(find_enemy)){
 		
 		Sequence_PlayByFrame(layer_edge);
 		
-		instance_create_depth(slash_x,slash_y,0,bullet_effect_blade_slash_ring);
+		ring = instance_create_depth(slash_x,slash_y,0,bullet_effect_blade_slash_ring);
+		ring.scale_x = scale_x;
+		ring.scale_y = scale_y;
 		dir = -65/2+random_range(-30,30);
 		a = instance_create_depth(slash_x,slash_y,0,bullet_player_plane_blade_slash);
 		a.slash_sequence = seq_bullet_player_blade_b_slash;

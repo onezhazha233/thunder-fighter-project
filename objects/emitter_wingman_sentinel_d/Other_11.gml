@@ -9,7 +9,7 @@ if(!instance_exists(rampage_laser)){
 	rampage_laser.fade_time = 0;
 	rampage_laser.damage = damage;
 	Anim_Destroy(rampage_laser,"image_xscale");
-	array_push(follow_inst,[rampage_laser,-sign(0.5-dir)*20*scale_x,-30]);
+	array_push(follow_inst,[rampage_laser,-sign(0.5-dir)*20,-30]);
 }
 if(instance_exists(rampage_laser)){
 	if!(rampage_laser.fade_out){

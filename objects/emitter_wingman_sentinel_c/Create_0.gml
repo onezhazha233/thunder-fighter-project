@@ -37,7 +37,7 @@ FireLaser = function(){
 	laser.image_angle = 90;
 	laser.image_blend = make_color_rgb(100,150,255);
 	laser.damage = damages[4];
-	array_push(follow_inst,[laser,-sign(0.5-dir)*10*scale_x,-20]);
+	array_push(follow_inst,[laser,-sign(0.5-dir)*10,-20]);
 }
 
 SetPosition = function(xx,yy){
@@ -46,8 +46,8 @@ SetPosition = function(xx,yy){
 	
 	for(i=0;i<array_length(follow_inst);i+=1){
 		if(instance_exists(follow_inst[i,0])){
-			follow_inst[i,0].x = xx + follow_inst[i,1];
-			follow_inst[i,0].y = yy + follow_inst[i,2];
+			follow_inst[i,0].x = xx + follow_inst[i,1]*scale_x;
+			follow_inst[i,0].y = yy + follow_inst[i,2]*scale_y;
 		}
 		else{
 			array_delete(follow_inst,i,1);

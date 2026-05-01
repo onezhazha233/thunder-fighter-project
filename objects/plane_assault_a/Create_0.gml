@@ -13,3 +13,6 @@ sprite_roll_left = spr_assault_a_roll_left
 sprite_roll_right = spr_assault_a_roll_right
 
 bullet_emitter = emitter_plane_assault_a
+
+image_xscale = 2
+image_yscale = 2

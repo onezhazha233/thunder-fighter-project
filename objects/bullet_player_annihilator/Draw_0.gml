@@ -1,6 +1,8 @@
 live;
-image_xscale = scale_x*0.7
-image_yscale = scale_y*0.7
+image_xscale = scale_x*(0.7+scale_add)
+image_yscale = scale_y*(0.7+scale_add)
+
+scale_add += 0.01
 
 if(track_inst_exists = 1){
 	if(!instance_exists(track_inst)){

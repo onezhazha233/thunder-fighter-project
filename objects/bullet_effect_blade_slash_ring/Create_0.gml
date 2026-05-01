@@ -7,3 +7,6 @@ Anim_Create(id,"image_xscale",0,0,image_xscale,3.24-image_xscale,10)
 Anim_Create(id,"image_yscale",0,0,image_yscale,3.24-image_yscale,10)
 Anim_Create(id,"image_alpha",0,0,image_alpha,-image_alpha,10)
 alarm[0] = 10
+
+scale_x = 1
+scale_y = 1

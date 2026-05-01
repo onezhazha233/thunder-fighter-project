@@ -42,26 +42,26 @@ else{
 
 if!(instance_exists(block_inst)){
 	block_inst = instance_create_depth(x,y,0,bullet_enemy_block);
-	block_inst.image_xscale = block_width/2;
-	block_inst.image_yscale = block_height/2;
-	if(dir = 0)block_inst.x_offset = block_xoffset;
-	if(dir = 1)block_inst.x_offset = -block_xoffset;
-	block_inst.y_offset = -block_yoffset;
+	block_inst.image_xscale = block_width/2*scale_x;
+	block_inst.image_yscale = block_height/2*scale_y;
+	if(dir = 0)block_inst.x_offset = block_xoffset*scale_x;
+	if(dir = 1)block_inst.x_offset = -block_xoffset*scale_x;
+	block_inst.y_offset = block_yoffset*scale_y;
 	array_push(follow_inst,block_inst);
 }
 else{
 	if(rampage = false){
-		block_inst.image_xscale += (block_width/2 - block_inst.image_xscale)/3;
-		block_inst.image_yscale += (block_height/2 - block_inst.image_yscale)/3;
-		if(dir = 0)block_inst.x_offset += (block_xoffset - block_inst.x_offset)/3;
-		if(dir = 1)block_inst.x_offset += (-block_xoffset - block_inst.x_offset)/3;
-		block_inst.y_offset += (block_yoffset - block_inst.y_offset)/3;
+		block_inst.image_xscale += (block_width/2*scale_x - block_inst.image_xscale)/3;
+		block_inst.image_yscale += (block_height/2*scale_y - block_inst.image_yscale)/3;
+		if(dir = 0)block_inst.x_offset += (block_xoffset*scale_x - block_inst.x_offset)/3;
+		if(dir = 1)block_inst.x_offset += (-block_xoffset*scale_x - block_inst.x_offset)/3;
+		block_inst.y_offset += (block_yoffset*scale_y - block_inst.y_offset)/3;
 	}
 	else{
-		block_inst.image_xscale += (block_width_rampage/2 - block_inst.image_xscale)/3;
-		block_inst.image_yscale += (block_height_rampage/2 - block_inst.image_yscale)/3;
-		if(dir = 0)block_inst.x_offset += (block_xoffset_rampage - block_inst.x_offset)/3;
-		if(dir = 1)block_inst.x_offset += (-block_xoffset_rampage - block_inst.x_offset)/3;
-		block_inst.y_offset += (block_yoffset_rampage - block_inst.y_offset)/3;
+		block_inst.image_xscale += (block_width_rampage/2*scale_x - block_inst.image_xscale)/3;
+		block_inst.image_yscale += (block_height_rampage/2*scale_y - block_inst.image_yscale)/3;
+		if(dir = 0)block_inst.x_offset += (block_xoffset_rampage*scale_x - block_inst.x_offset)/3;
+		if(dir = 1)block_inst.x_offset += (-block_xoffset_rampage*scale_x - block_inst.x_offset)/3;
+		block_inst.y_offset += (block_yoffset_rampage*scale_y - block_inst.y_offset)/3;
 	}
 }

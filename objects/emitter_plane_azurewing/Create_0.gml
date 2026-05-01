@@ -15,10 +15,9 @@ yy = y
 clinfo = []
 
 MakeCleave = function(yoff,scale,dir=0,snd=0){
-	var cl = MakePlayerBullet(xx,yy+yoff,bullet_player_plane_azurewing);
+	var cl = MakePlayerBullet(xx,yy+yoff*scale_y,bullet_player_plane_azurewing);
 	cl.scale = scale;
 	cl.dir = dir;
-	// Force initial pose on the creation frame (before Anim_Step runs)
 	cl.angle = 30;
 	cl.image_angle = cl.angle * (cl.dir == 0 ? 1 : -1);
 	cl.damage = damage;

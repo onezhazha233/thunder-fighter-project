@@ -3,8 +3,8 @@ event_inherited();
 
 enabled = false
 
-xscale = 1
-yscale = 1
+xscale = 3
+yscale = 3
 
 plane = global.current_equipment.plane
 wingman_left = global.current_equipment.wingman_left

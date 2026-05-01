@@ -13,6 +13,8 @@ if(sequence_exists(flame_upper)){
 }
 if!(bullet_emitter = noone){
 	bullet_emitter_inst = instance_create_depth(x,y,DEPTH_BATTLE.BULLETS_PLAYER,bullet_emitter);
+	bullet_emitter_inst.scale_x = image_xscale;
+	bullet_emitter_inst.scale_y = image_yscale;
 }
 
 SetState(0)

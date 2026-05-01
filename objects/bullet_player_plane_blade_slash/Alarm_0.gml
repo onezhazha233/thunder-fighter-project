@@ -17,6 +17,8 @@ else{
 	bullet.damage = damage;
 }
 layer_sequence_angle(seq,image_angle);
+layer_sequence_xscale(seq,scale_x);
+layer_sequence_xscale(seq,scale_y);
 
 for (var i = 0; i < 10; i++) {
     var t = i * 360 / 10;

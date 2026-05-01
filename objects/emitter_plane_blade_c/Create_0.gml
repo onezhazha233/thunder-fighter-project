@@ -18,7 +18,7 @@ SetRampage = function(rampage){
 		laser_offset = 0;
 	}
 	else{
-		laser_offset = 78;
+		laser_offset = 78*scale_x;
 	}
 	self.rampage = rampage;
 	if(rampage = true){

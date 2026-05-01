@@ -1,7 +1,7 @@
 live;
 laser_offset += offset_speed
-if(laser_offset >= sprite_get_height(laser_sprite)*2)laser_offset = 0;
-if(laser_offset <= -sprite_get_height(laser_sprite)*2)laser_offset = 0;
+if(laser_offset >= sprite_get_height(laser_sprite)*2*scale_y)laser_offset = 0;
+if(laser_offset <= -sprite_get_height(laser_sprite)*2*scale_y)laser_offset = 0;
 
 find = laser_find_width(x,y,image_angle,range,sprite_get_width(laser_sprite)*image_xscale*scale_x*0.4,enemy_agent,true,true)
 len = range

@@ -29,3 +29,5 @@ baseDirSpd = 0.01;
 dirSpd = baseDirSpd;
 
 bestDis = 100;
+
+scale_add = 0

@@ -11,14 +11,14 @@ a.damage = slash_damage
 
 if(edge_attack_sequence_enabled = true){
 	if(rampage = false){
-		a = instance_create_depth(edge_x+lengthdir_x(100,image_angle),edge_y+lengthdir_y(100,image_angle),0,bullet_player);
-		a.image_xscale = 100;
-		a.image_yscale = 80;
+		a = instance_create_depth(edge_x+lengthdir_x(100,image_angle)*scale_x,edge_y+lengthdir_y(100,image_angle)*scale_y,0,bullet_player);
+		a.image_xscale = 100*scale_x;
+		a.image_yscale = 80*scale_y;
 	}
 	else{
-		a = instance_create_depth(edge_x+lengthdir_x(120,image_angle),edge_y+lengthdir_y(120,image_angle),0,bullet_player);
-		a.image_xscale = 120;
-		a.image_yscale = 150;
+		a = instance_create_depth(edge_x+lengthdir_x(120,image_angle)*scale_x,edge_y+lengthdir_y(120,image_angle)*scale_y,0,bullet_player);
+		a.image_xscale = 120*scale_x;
+		a.image_yscale = 150*scale_y;
 	}
 	a.sprite_index = spr_pixel2x;
 	a.duration = 1;

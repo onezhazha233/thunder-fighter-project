@@ -17,5 +17,8 @@ for(i=0;i<array_length(find);i+=1){
 	}
 }
 
-instance_create_depth(x+lengthdir_x(len,dirr),y+lengthdir_y(len,dirr),0,bullet_player_plane_blade).image_angle = image_angle-10*(dir=0 ? 1 : -1)
+a = instance_create_depth(x+lengthdir_x(len,dirr),y+lengthdir_y(len,dirr),0,bullet_player_plane_blade)
+a.scale_x = scale_x
+a.scale_y = scale_y
+a.image_angle = image_angle-10*(dir=0 ? 1 : -1)
 audio_play_sound(snd_plane_blade_shoot_idle,0,0)
