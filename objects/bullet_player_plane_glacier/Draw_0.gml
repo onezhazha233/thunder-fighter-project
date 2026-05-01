@@ -37,7 +37,9 @@ gpu_set_blendmode(bm_normal)
 if(instance_exists(find_enemy)){
 	enemy = find_enemy;
 	CollideSingleEnemy(enemy);
-	enemy.frozen_amount += frozen_damage;
+	if(enemy.frozen_cd <= 0){
+		enemy.frozen_amount += frozen_damage;
+	}
 	ex = x + lengthdir_x(len,image_angle);
 	ey = y + lengthdir_y(len,image_angle);
 	if(size = 0){

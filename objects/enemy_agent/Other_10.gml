@@ -270,6 +270,7 @@ SetFrozen = function(f){
         frozen_duration = -1;
         effect_alpha = 0;
         layer_sequence_speedscale(enemy_sequence,1);
-        SetFlame(flame_lower,flame_upper);  // 重新创建尾焰（默认速度就是1）
+        SetFlame(flame_lower,flame_upper);//重新创建尾焰
+		frozen_cd = frozen_cd_time;
     }
 }

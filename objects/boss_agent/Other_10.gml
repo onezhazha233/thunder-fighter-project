@@ -294,6 +294,7 @@ SetFrozen = function(f){
         layer_sequence_speedscale(enemy_sequence,1);
         SetFlame(flame_lower,flame_upper);  // 重新创建尾焰（默认速度就是1）
 		SetIdle();
+		frozen_cd = frozen_cd_time;
     }
 }
 

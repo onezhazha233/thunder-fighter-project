@@ -94,3 +94,5 @@ frozen_amount = 0
 frozen_target = 60
 frozen_time = 120
 frozen_duration = -1
+frozen_cd = 0
+frozen_cd_time = 120

@@ -22,7 +22,7 @@ light_alpha = 0
 light_image = 0
 start_light = 0
 
-frozen_damage = 2//攻击敌人时每帧增加的冻结值
+frozen_damage = 1//攻击敌人时每帧增加的冻结值
 
 glow_offset = -1//光泽位置 -1为不显示
 

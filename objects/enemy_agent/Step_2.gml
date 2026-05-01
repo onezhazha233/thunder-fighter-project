@@ -36,3 +36,6 @@ if(frozen_duration = 0){
 	frozen_duration = -1;
 	SetFrozen(0);
 }
+if(frozen_cd > 0){
+	frozen_cd -= 1;
+}

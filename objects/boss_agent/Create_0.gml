@@ -57,7 +57,8 @@ move_duration = [80,120]
 move_interval = [20,30]
 
 burn_target = 120
-frozen_target = 240
+frozen_target = 300
+frozen_cd_time = 200
 frozen_moving = true
 
 global.inv_cutscene = 1

@@ -7,7 +7,7 @@ switch (phase) {
 			phase = 1;
 			room_goto(room_battle_loading);
 		}*/
-		if(anim.state = 0&&!Anim_IsExists(anim,"up_y")){
+		if(anim.state = 1){
 			phase = 1;
 			room_goto(room_battle_loading);
 		}
