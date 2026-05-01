@@ -23,3 +23,5 @@ var othe = instance_find(object_index,0);
 if(instance_exists(othe) && othe != id){
 	anim_time = othe.anim_time;
 }
+
+play_shoot_sound = false;

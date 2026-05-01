@@ -29,7 +29,7 @@ function update_drone_pos(d){
 	d.x += (target_d_x-d.x)/3;
 	d.y += (target_d_y-d.y)/3;
 	d.rampage = rampage;
-	d.enabled = enabled;
+	 d.enabled = enabled;
 }
 
 // Update drone_1 positions and rotation.
@@ -150,7 +150,7 @@ if(abs(angle_difference(target_rotation,current_rotation)) > rotate_spd){
 var count = array_length(drones);
 for(var i = 0; i < count; i++){
 	if(instance_exists(drones[i])){
-		// 计算阵列角度: 中心偏移�?(i - (n-1)/2)
+		// 计算阵列角度: 中心偏移�?(i - (n-1)/2)
 		var offset = (i - (count - 1) / 2) * (spread_angle / max(1,count - 1));
 		var final_angle = current_rotation + offset;
 		
@@ -162,6 +162,7 @@ for(var i = 0; i < count; i++){
 		drones[i].enabled = enabled;
 		drones[i].weapon_level = weapon_level;
 		drones[i].rampage = rampage;
+		drones[i].play_shoot_sound = (i == 0);
 		if(enabled&&!rampage&&drones[i].alarm[0]==-1){
 			drones[i].alarm[0] = 1;
 		}

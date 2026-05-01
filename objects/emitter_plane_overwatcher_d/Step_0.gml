@@ -29,7 +29,7 @@ function update_drone_pos(d){
 	d.x += (target_d_x-d.x)/3;
 	d.y += (target_d_y-d.y)/3;
 	d.rampage = rampage;
-	d.enabled = enabled;
+	 d.enabled = enabled;
 }
 
 // Update drone_1 positions and rotation.
@@ -172,6 +172,7 @@ for(var i = 0; i < count; i++){
 		drones[i].enabled = enabled;
 		drones[i].weapon_level = weapon_level;
 		drones[i].rampage = rampage;
+		drones[i].play_shoot_sound = (i == 0);
 		if(enabled&&!rampage&&drones[i].alarm[0]==-1){
 			drones[i].alarm[0] = 1;
 		}

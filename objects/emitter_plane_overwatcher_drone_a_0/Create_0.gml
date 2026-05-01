@@ -13,3 +13,5 @@ flame_timer = random(flame_interval);
 flame_speed = 3;
 flame_scale = 2;
 flame_alpha = 1;
+
+play_shoot_sound = false;
