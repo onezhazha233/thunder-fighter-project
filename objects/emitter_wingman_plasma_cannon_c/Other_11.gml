@@ -3,7 +3,7 @@ for(i=0;i<1;i+=1){
 	if!(instance_exists(laser[i])){
 		laser[i] = instance_create_depth(x,y,depth,bullet_player_wingman_plasma_cannon_rampage);
 		laser[i].image_xscale = scale_x;
-		laser[i].image_xscale = scale_y;
+		laser[i].image_yscale = scale_y;
 		if(dir = 1)laser[i].image_xscale *= -1;
 		with(laser[i]){
 			bullet_sequence = layer_sequence_create(ll,x,y,seq_bullet_player_plasma_cannon_c_rampage);

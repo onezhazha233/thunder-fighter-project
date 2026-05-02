@@ -23,5 +23,5 @@ function CollideSingleEnemy(enemy){
 	effect.ring = collision_effect_ring;
 	effect.lightball = collision_effect_lightball;
 	effect.scale_x = scale_x;
-	effect.scale_x = scale_y;
+	effect.scale_y = scale_y;
 }

@@ -1,8 +1,8 @@
 live;
 blt = instance_create_depth(x,y,depth,bullet_player_wingman_spinblade_cannon)
 blt.dir = dir
-blt.scale_x = 1.5
-blt.scale_y = 1.5
+blt.scale_x = 1.5*scale_x
+blt.scale_y = 1.5*scale_y
 with(blt){
 	bullet_sequence = layer_sequence_create(ll,x,y,seq_bullet_player_spinblade_cannon_a_intro);
 }

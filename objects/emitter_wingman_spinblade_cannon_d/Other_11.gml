@@ -4,8 +4,8 @@ blt.idle = seq_bullet_player_spinblade_cannon_d
 blt.edge_intro = seq_bullet_player_spinblade_cannon_d_edge_intro
 blt.edge = seq_bullet_player_spinblade_cannon_d_edge
 blt.dir = dir
-blt.scale_x = 1.5
-blt.scale_y = 1.5
+blt.scale_x = 1.5*scale_x
+blt.scale_y = 1.5*scale_y
 with(blt){
 	bullet_sequence = layer_sequence_create(ll,x,y,seq_bullet_player_spinblade_cannon_d_intro);
 }
