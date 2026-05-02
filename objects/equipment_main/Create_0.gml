@@ -3,15 +3,15 @@ event_inherited();
 
 enabled = false
 
-xscale = 2
-yscale = 2
+xscale = 1
+yscale = 1
 
 plane = global.current_equipment.plane
 wingman_left = global.current_equipment.wingman_left
 wingman_right = global.current_equipment.wingman_right
 wingman_x_offset = global.current_equipment.wingman_x_offset
 wingman_y_offset = global.current_equipment.wingman_y_offset
-subweapon = subweapon_bolide_d //global.current_equipment.subweapon
+subweapon = global.current_equipment.subweapon
 armor = global.current_equipment.armor
 
 /*for(i=0;i<8;i+=1){
