@@ -1,2 +1,0 @@
-live;
-event_inherited();

@@ -27,7 +27,7 @@ if(rampage = false){
 	draw_sprite_ext(spr_bullet_player_phantom_bc_start,fire_image,x+lengthdir_x(-20,image_angle)*scale_x,y+lengthdir_y(-20,image_angle)*scale_y,(1.4-sin(fire_image*(3*pi/3))*0.12)*image_xscale*scale_x,(1+sin(fire_image*(3*pi/3))*0.1)*image_yscale*scale_y,image_angle-90,-1,1);
 }
 else{
-	draw_sprite_ext(spr_bullet_player_phantom_cd_start_rampage,fire_image,x+lengthdir_x(-20,image_angle)*scale_x,y+lengthdir_y(-20,image_angle)*scale_y,0.88-sin(fire_image*(2*pi/3))*0.12,1.6+sin(fire_image*(2*pi/3))*0.2,image_angle-90,-1,1);
+	draw_sprite_ext(spr_bullet_player_phantom_cd_start_rampage,fire_image,x+lengthdir_x(-20,image_angle)*scale_x,y+lengthdir_y(-20,image_angle)*scale_y,0.88-sin(fire_image*(2*pi/3))*0.12*scale_x,1.6+sin(fire_image*(2*pi/3))*0.2*scale_y,image_angle-90,-1,1);
 }
 
 if(rampage = false){
