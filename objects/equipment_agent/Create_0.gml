@@ -14,8 +14,8 @@ wingman_left = []
 wingman_right = []
 wingman_left_inst = []
 wingman_right_inst = []
-wingman_x_offset = [130]
-wingman_y_offset = [0]
+wingman_x_offset = [130,200]
+wingman_y_offset = [0,0]
 
 subweapon = -1
 subweapon_inst = noone

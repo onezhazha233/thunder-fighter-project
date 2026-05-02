@@ -13,8 +13,8 @@ base_yscale = 0.2
 max_xscale = 1.2
 max_yscale = 0.66
 
-image_xscale = base_xscale
-image_yscale = base_yscale
+image_xscale = base_xscale * scale_x
+image_yscale = base_yscale * scale_y
 time = 0
 
 damage = 1

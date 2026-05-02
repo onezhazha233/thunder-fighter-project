@@ -17,8 +17,8 @@ max_yscale = 1.0
 min_xscale = 0.3
 min_yscale = 0.8
 
-image_xscale = base_xscale
-image_yscale = base_yscale
+image_xscale = base_xscale * scale_x
+image_yscale = base_yscale * scale_y
 image_blend = c_white
 time = 0
 

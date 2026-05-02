@@ -17,8 +17,8 @@ function GlobalInit(){
 		plane: plane_assault_a,
 		wingman_left: [wingman_shotcannon_a],
 		wingman_right: [wingman_shotcannon_a],
-		wingman_x_offset: [130],
-		wingman_y_offset: [0],
+		wingman_x_offset: [130,200],
+		wingman_y_offset: [0,0],
 		subweapon: subweapon_missile_a,
 		armor: armor_alloy_a
 	}

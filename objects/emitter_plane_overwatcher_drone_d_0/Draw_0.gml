@@ -39,10 +39,10 @@ if(anim_time >= 6 && anim_time <= 16){
 	light_b_off = -10;
 }
 
-var light_a_x = x + lengthdir_x(light_a_off,image_angle-90);
-var light_a_y = y + lengthdir_y(light_a_off,image_angle-90);
-var light_b_x = x + lengthdir_x(light_b_off,image_angle-90);
-var light_b_y = y + lengthdir_y(light_b_off,image_angle-90);
+var light_a_x = x + lengthdir_x(light_a_off,image_angle-90)*scale_x;
+var light_a_y = y + lengthdir_y(light_a_off,image_angle-90)*scale_y;
+var light_b_x = x + lengthdir_x(light_b_off,image_angle-90)*scale_x;
+var light_b_y = y + lengthdir_y(light_b_off,image_angle-90)*scale_y;
 
 gpu_set_blendmode(bm_add);
 for(var i = 0; i < array_length(flame_list); i++){

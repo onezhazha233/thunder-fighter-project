@@ -16,8 +16,6 @@ width = 15*1.4
 
 damage = 1
 
-surf = surface_create(sprite_get_width(start_sprite),1500)
-
 image_xscale = 1.4
 Anim_Create(id,"image_xscale",0,0,image_xscale,-0.4,4)
 Anim_Create(id,"image_index",0,0,0,1,0,4)

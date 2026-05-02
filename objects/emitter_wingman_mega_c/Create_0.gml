@@ -17,11 +17,11 @@ SetPosition = function(xx,yy){
 	y = yy;
 	
 	for(i=0;i<array_length(follow_inst);i+=1){
-		if(instance_exists(follow_inst[i])){
-			follow_inst[i].x = xx;
-			follow_inst[i].y = yy;
+		if(instance_exists(follow_inst[i,0])){
+			follow_inst[i,0].x = xx;
+			follow_inst[i,0].y = yy + follow_inst[i,1]*scale_y;
 			
-			with(follow_inst[i]){
+			with(follow_inst[i,0]){
 				if(variable_instance_exists(id,"bullet_sequence")){
 					if(variable_instance_exists(id,"ll")){
 						layer_sequence_x(bullet_sequence,x);

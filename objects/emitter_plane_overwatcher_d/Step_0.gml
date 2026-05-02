@@ -19,19 +19,6 @@ if(current_drone_count < target_drone_count){
 }
 wlp = weapon_level;
 
-function update_drone_pos(d){
-	if(!d.returning){
-		d.offset_x += (d.target_offset_x-d.offset_x)/3;
-		d.offset_y += (d.target_offset_y-d.offset_y)/3;
-	}
-	var target_d_x = x + d.offset_x;
-	var target_d_y = y + d.offset_y;
-	d.x += (target_d_x-d.x)/3;
-	d.y += (target_d_y-d.y)/3;
-	d.rampage = rampage;
-	 d.enabled = enabled;
-}
-
 // Update drone_1 positions and rotation.
 for(var i = array_length(drones_1) - 1; i >= 0; i--){
 	var d = drones_1[i];
@@ -164,10 +151,12 @@ for(var i = 0; i < count; i++){
 		var offset = (i - (count - 1) / 2) * (spread_angle / max(1,count - 1));
 		var final_angle = current_rotation + offset;
 		
-		var target_x = x + lengthdir_x(drone_radius,final_angle);
-		var target_y = y + lengthdir_y(drone_radius,final_angle);
+		var target_x = x + lengthdir_x(drone_radius,final_angle)*scale_x;
+		var target_y = y + lengthdir_y(drone_radius,final_angle)*scale_y;
 		drones[i].x += (target_x-drones[i].x)/3;
 		drones[i].y += (target_y-drones[i].y)/3;
+		drones[i].scale_x = scale_x;
+		drones[i].scale_y = scale_y;
 		drones[i].image_angle = current_rotation-90;
 		drones[i].enabled = enabled;
 		drones[i].weapon_level = weapon_level;

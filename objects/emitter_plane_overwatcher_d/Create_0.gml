@@ -80,6 +80,8 @@ function init_drone_base(inst,dir,i,off_x,off_y,base_angle){
 
 function drone_add(){
 	var new_drone = instance_create_depth(x,y,depth+10,emitter_plane_overwatcher_drone_d_0);
+	new_drone.image_xscale = scale_x;
+	new_drone.image_yscale = scale_y;
 	var mid = floor(array_length(drones) / 2);
 	array_insert(drones,mid,new_drone);
 	sync_drone_alarms();
@@ -135,6 +137,8 @@ function drone_1_create(){
 		var dir = (side == 0 ? 1 : -1);
 		for(var i = 0; i < drone_1_number; i++){
 			var inst = instance_create_depth(x,y,depth+10,emitter_plane_overwatcher_drone_d_1);
+			inst.image_xscale = scale_x;
+			inst.image_yscale = scale_y;
 			var off_x = (115 + i*40) * dir;
 			var off_y = -110 + i*22;
 			var base_angle = (i == 0 ? 90 : 80);
@@ -167,6 +171,8 @@ function drone_2_create(){
 		var dir = (side == 0 ? 1 : -1);
 		for(var i = 0; i < drone_2_number; i++){
 			var inst = instance_create_depth(x,y,depth+10,emitter_plane_overwatcher_drone_d_2);
+			inst.image_xscale = scale_x;
+			inst.image_yscale = scale_y;
 			var off_x = (115 + i*55) * dir;
 			var off_y = -110 + i*35;
 			init_drone_base(inst,dir,i,off_x,off_y,90);
@@ -183,6 +189,21 @@ function drone_2_start_return(){
 	drones_2_returning = true;
 	drone_2_entering = false;
 	start_return_group(drones_2,drone_2_move_time);
+}
+
+function update_drone_pos(d){
+	if(!d.returning){
+		d.offset_x += (d.target_offset_x-d.offset_x)/3;
+		d.offset_y += (d.target_offset_y-d.offset_y)/3;
+	}
+	var target_d_x = x + d.offset_x * scale_x;
+	var target_d_y = y + d.offset_y * scale_y;
+	d.x += (target_d_x-d.x)/3;
+	d.y += (target_d_y-d.y)/3;
+	d.scale_x = scale_x;
+	d.scale_y = scale_y;
+	d.rampage = rampage;
+	d.enabled = enabled;
 }
 
 SetRampage = function(rampage){
