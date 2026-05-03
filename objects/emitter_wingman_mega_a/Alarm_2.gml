@@ -6,6 +6,7 @@ for(i=0;i<1;i+=1){
 	laser[i].damage = damage;
 	with(laser[i]){
 		image_alpha = 0.8;
+		image_xscale = 0.8;
 		Anim_Create(id,"image_alpha",0,0,0.8,0.2,2);
 		Anim_Create(id,"image_alpha",0,0,1,-1,6,16);
 		Anim_Create(id,"image_xscale",0,0,0.8,-0.8,20,2);

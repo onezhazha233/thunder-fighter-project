@@ -804,7 +804,6 @@
     {"name":"bullet_player_splitter_small","order":1,"path":"objects/bullet_player_splitter_small/bullet_player_splitter_small.yy",},
     {"name":"bullet_player_wingman_gatling_rampage","order":1,"path":"objects/bullet_player_wingman_gatling_rampage/bullet_player_wingman_gatling_rampage.yy",},
     {"name":"bullet_player_wingman_guard_rampage","order":1,"path":"objects/bullet_player_wingman_guard_rampage/bullet_player_wingman_guard_rampage.yy",},
-    {"name":"bullet_player_wingman_mega_b_rampage","order":1,"path":"objects/bullet_player_wingman_mega_b_rampage/bullet_player_wingman_mega_b_rampage.yy",},
     {"name":"bullet_player_wingman_mega_ball","order":1,"path":"objects/bullet_player_wingman_mega_ball/bullet_player_wingman_mega_ball.yy",},
     {"name":"bullet_player_wingman_mega_c_rampage","order":1,"path":"objects/bullet_player_wingman_mega_c_rampage/bullet_player_wingman_mega_c_rampage.yy",},
     {"name":"bullet_player_wingman_mega_d_rampage","order":1,"path":"objects/bullet_player_wingman_mega_d_rampage/bullet_player_wingman_mega_d_rampage.yy",},

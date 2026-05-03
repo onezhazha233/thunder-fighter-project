@@ -15,6 +15,7 @@ range = 1500
 width = 15
 
 damage = 0.125
+
 rampage = false
 rampage_state = 0//0为正常 1为渐出中
 

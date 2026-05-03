@@ -35,3 +35,15 @@ SetPosition = function(xx,yy){
 		}
 	}
 }
+
+SetRampage = function(rampage){
+	self.rampage = rampage;
+	if(rampage = true){
+		alarm[0] = -1;
+		alarm[1] = 1;
+	}
+	else{
+		alarm[0] = 20;
+		alarm[1] = -1;
+	}
+}
