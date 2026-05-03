@@ -1,7 +1,7 @@
 live;
 for(i=0;i<1;i+=1){
 	if!(instance_exists(laser[i])){
-		laser[i] = MakePlayerBullet(x,y,bullet_player_wingman_mega_a);
+		laser[i] = MakePlayerBullet(x,y,bullet_player_wingman_mega);
 		laser[i].image_angle = 36*i+90;
 		laser[i].damage = damage;
 		laser[i].rampage = true;

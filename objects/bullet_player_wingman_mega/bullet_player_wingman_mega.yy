@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"bullet_player_wingman_mega_a",
+  "%Name":"bullet_player_wingman_mega",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -8,11 +8,11 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"bullet_player_wingman_mega_a",
+  "name":"bullet_player_wingman_mega",
   "overriddenProperties":[],
   "parent":{
-    "name":"beam_cannon",
-    "path":"folders/物体/bullet_player/wingman/bullet/mega/beam_cannon.yy",
+    "name":"mega",
+    "path":"folders/物体/bullet_player/wingman/bullet/mega.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

@@ -1,5 +1,5 @@
 live;
-find = laser_find_width(x,y,image_angle,range,width*scale_x,enemy_agent,true,true)
+find = laser_find_width(x,y,image_angle,range,width*scale_x*xscale,enemy_agent,true,true)
 length = range
 find_enemy = noone
 for(i=0;i<array_length(find);i+=1){
