@@ -96,6 +96,11 @@ function LuiBase(_params = {}) constructor {
     self.drag_offset_x = 0;
     self.drag_offset_y = 0;
 	
+	self.text_outline = false;
+	self.text_outline_width = 1;
+	self.text_outline_color = c_white;
+	self.text_scale = 1;
+	
 	// Processing parameters from the structure
 	if is_struct(_params) {
 		self.x = _params[$ "x"] ?? LUI_AUTO;
@@ -1108,7 +1113,12 @@ function LuiBase(_params = {}) constructor {
 		}
 		
 		// Draw the final text
-		draw_text(_x, _y, _str_to_draw);
+		if(self.text_outline = true){
+			DrawTextOutlineTransformed(_x, _y, _str_to_draw,self.text_scale,self.text_scale,self.text_outline_width,self.text_outline_color,8);
+		}
+		else{
+			draw_text_transformed(_x, _y, _str_to_draw,self.text_scale,self.text_scale,0);
+		}
 	};
 	
 	///@ignore

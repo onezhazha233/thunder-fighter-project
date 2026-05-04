@@ -8,8 +8,8 @@
   "name":"armor_frost_c0",
   "overriddenProperties":[],
   "parent":{
-    "name":"Frost",
-    "path":"folders/物体/armor/Frost.yy",
+    "name":"frost",
+    "path":"folders/物体/armor/frost.yy",
   },
   "parentObjectId":{
     "name":"armor_frost_a",

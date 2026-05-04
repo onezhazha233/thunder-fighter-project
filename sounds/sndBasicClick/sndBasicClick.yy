@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":9,
   "conversionMode":0,
-  "duration":0.052245,
+  "duration":0.019070296,
   "exportDir":"",
   "name":"sndBasicClick",
   "parent":{

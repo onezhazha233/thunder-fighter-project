@@ -16,4 +16,6 @@ instance_create_depth(0,0,0,fader)
 
 instance_create_depth(0,0,0,debugger)
 
+instance_create_depth(0,0,0,oSteadyDeltaTime)
+
 room_goto_next()

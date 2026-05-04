@@ -4,6 +4,9 @@
     "ui.wingman.right": "右僚机",
     "ui.subweapon": "副武器",
     "ui.armor": "装甲",
+    "ui.ability": "特技",
+    "ui.equip": "装备",
+    "ui.equipped": "已装备",
     "ui.select.preparation": "战前准备",
     "ui.select.boss": "选择Boss",
     "ui.select.plane": "选择战机",
@@ -12,5 +15,6 @@
     "ui.select.subweapon": "选择副武器",
     "ui.select.armor": "选择装甲",
     "ui.boss.hp.ratio": "Boss血量倍率",
-    "ui.enemy.damage.ratio": "敌人伤害倍率"
+    "ui.enemy.damage.ratio": "敌人伤害倍率",
+    "ui.startbattle": "开始战斗"
 }

@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"doom_guard",
-    "path":"folders/精灵/wingman/guardian/doom_guard.yy",
+    "path":"folders/精灵/wingman/guard/doom_guard.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

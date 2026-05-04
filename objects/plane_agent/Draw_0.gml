@@ -44,5 +44,5 @@ else{
 if(surf_enabled = 1){
 	gpu_set_blendmode_ext_sepalpha(bm_one, bm_inv_src_alpha, bm_one, bm_one);
 	draw_surface(surf,surf_x,surf_y);
-	gpu_set_blendmode(bm_normal)
+	gpu_set_blendmode(bm_normal);
 }

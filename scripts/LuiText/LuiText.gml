@@ -12,6 +12,8 @@ function LuiText(_params = {}) : LuiBase(_params) constructor {
 	self.text_valign = _params[$ "text_valign"] ?? fa_middle;
 	self.scale_to_fit = _params[$ "scale_to_fit"] ?? false;
 	
+	self.color_override = undefined;
+	
 	///@desc Set text
 	///@arg {string} _text
 	static setText = function(_text) {
@@ -45,10 +47,19 @@ function LuiText(_params = {}) : LuiBase(_params) constructor {
 		if !is_undefined(self.style.font_default) {
 			draw_set_font(self.style.font_default);
 		}
-		if !self.deactivated {
-			draw_set_color(self.style.color_text);
-		} else {
-			draw_set_color(merge_color(self.style.color_text, c_black, 0.5));
+		if(is_undefined(self.color_override)){
+			if !self.deactivated {
+				draw_set_color(self.style.color_text);
+			} else {
+				draw_set_color(merge_color(self.style.color_text, c_black, 0.5));
+			}
+		}
+		else{
+			if !self.deactivated {
+				draw_set_color(self.color_override);
+			} else {
+				draw_set_color(merge_color(self.color_override, c_black, 0.5));
+			}
 		}
 		draw_set_alpha(1);
 		draw_set_halign(self.text_halign);

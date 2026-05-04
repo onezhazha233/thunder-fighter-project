@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Equipment_Subweapon",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Equipment_Subweapon",
+  "parent":{
+    "name":"Equipment",
+    "path":"folders/脚本/Equipment.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

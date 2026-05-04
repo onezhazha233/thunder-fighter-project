@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"charging_guard",
-    "path":"folders/精灵/wingman/guardian/charging_guard.yy",
+    "path":"folders/精灵/wingman/guard/charging_guard.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -443,7 +443,7 @@ function LuiMain() : LuiBase() constructor {
 		draw_set_color(c_red);
 		draw_set_halign(fa_left);
 		draw_set_valign(fa_top);
-		draw_set_font(fDebug);
+		draw_set_font(fModern);
 		
 		var gui_width = display_get_gui_width();
 		var gui_height = display_get_gui_height();

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"Equipment_GetName",
   "parent":{
-    "name":"脚本",
-    "path":"folders/脚本.yy",
+    "name":"Equipment",
+    "path":"folders/脚本/Equipment.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -8,8 +8,8 @@
   "name":"armor_nature_c123",
   "overriddenProperties":[],
   "parent":{
-    "name":"Nature",
-    "path":"folders/物体/armor/Nature.yy",
+    "name":"nature",
+    "path":"folders/物体/armor/nature.yy",
   },
   "parentObjectId":{
     "name":"armor_agent",

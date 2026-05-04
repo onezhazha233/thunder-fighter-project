@@ -8,8 +8,8 @@
   "name":"armor_induction_c123",
   "overriddenProperties":[],
   "parent":{
-    "name":"Induction",
-    "path":"folders/物体/armor/Induction.yy",
+    "name":"induction",
+    "path":"folders/物体/armor/induction.yy",
   },
   "parentObjectId":{
     "name":"armor_induction_a",

@@ -8,8 +8,8 @@
   "name":"armor_timedom_c0",
   "overriddenProperties":[],
   "parent":{
-    "name":"Timedom",
-    "path":"folders/物体/armor/Timedom.yy",
+    "name":"timedom",
+    "path":"folders/物体/armor/timedom.yy",
   },
   "parentObjectId":{
     "name":"armor_agent",

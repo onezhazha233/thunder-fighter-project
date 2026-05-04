@@ -8,8 +8,8 @@
   "name":"armor_gold_b",
   "overriddenProperties":[],
   "parent":{
-    "name":"Gold",
-    "path":"folders/物体/armor/Gold.yy",
+    "name":"gold",
+    "path":"folders/物体/armor/gold.yy",
   },
   "parentObjectId":{
     "name":"armor_agent",

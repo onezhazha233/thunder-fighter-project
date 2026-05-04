@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"steel_guard",
-    "path":"folders/精灵/wingman/guardian/steel_guard.yy",
+    "path":"folders/精灵/wingman/guard/steel_guard.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

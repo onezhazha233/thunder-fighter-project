@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":3,
   "parent":{
-    "name":"guardian",
-    "path":"folders/精灵/wingman/guardian.yy",
+    "name":"guard",
+    "path":"folders/精灵/wingman/guard.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

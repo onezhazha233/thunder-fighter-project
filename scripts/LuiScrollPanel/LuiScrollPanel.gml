@@ -12,6 +12,8 @@ function LuiScrollPanel(_params = {}) : LuiBase(_params) constructor {
 	self.scroll_smoothness = 0.02;
 	self.scroll_container = undefined;
 	
+	self.draw_base = true;
+	
 	///@desc Change getContainer function for compatibility with setFlex... functions
 	self.getContainer = function(){
 		self._initScrollContainer();
@@ -51,12 +53,14 @@ function LuiScrollPanel(_params = {}) : LuiBase(_params) constructor {
 	
 	self.draw = function(){
 		//Panel
-		if !is_undefined(self.style.sprite_panel) {
-			var _blend_color = self.style.color_primary;//self.nesting_level == 0 ? self.style.color_primary : merge_color(self.style.color_primary, self.style.color_secondary, 0.25);
-			if self.deactivated {
-				_blend_color = merge_color(_blend_color, c_black, 0.5);
+		if(self.draw_base = true){
+			if !is_undefined(self.style.sprite_panel) {
+				var _blend_color = self.style.color_primary;//self.nesting_level == 0 ? self.style.color_primary : merge_color(self.style.color_primary, self.style.color_secondary, 0.25);
+				if self.deactivated {
+					_blend_color = merge_color(_blend_color, c_black, 0.5);
+				}
+				draw_sprite_stretched_ext(self.style.sprite_panel, 0, self.x, self.y, self.width, self.height, _blend_color, 1);
 			}
-			draw_sprite_stretched_ext(self.style.sprite_panel, 0, self.x, self.y, self.width, self.height, _blend_color, 1);
 		}
 		//Scroll slider
 		if array_length(self.getContainer().content) > 0 {

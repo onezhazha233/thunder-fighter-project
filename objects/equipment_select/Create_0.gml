@@ -20,8 +20,6 @@ if (!variable_struct_exists(global, "_current_equipment_select")) {
 	};
 }
 
-instance_create_depth(0,0,0,oSteadyDeltaTime)
-
 // 获取各类装备选项列表
 var _planes = EquipmentSelect_GetEquipmentOptions(plane_agent, "");
 var _wingmans = EquipmentSelect_GetEquipmentOptions(wingman_agent, "");

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"精灵",
-    "path":"folders/精灵.yy",
+    "name":"alloy",
+    "path":"folders/精灵/effect/armor/alloy.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

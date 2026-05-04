@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Equipment_Plane",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Equipment_Plane",
+  "parent":{
+    "name":"Equipment",
+    "path":"folders/脚本/Equipment.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

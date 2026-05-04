@@ -14,8 +14,8 @@
   "name":"pauser",
   "overriddenProperties":[],
   "parent":{
-    "name":"物体",
-    "path":"folders/物体.yy",
+    "name":"ui",
+    "path":"folders/物体/ui.yy",
   },
   "parentObjectId":null,
   "persistent":true,

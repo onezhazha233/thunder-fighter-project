@@ -7,6 +7,7 @@ function LuiPanel(_params = {}) : LuiBase(_params) constructor {
 	self.allow_resize = _params[$ "allow_resize"] ?? false;
 	
 	self.resizer = undefined;
+	self.panel_sprite = undefined;
 	
 	///@desc Set allow to resize panel or not
 	///@arg {bool} _allow
@@ -49,16 +50,21 @@ function LuiPanel(_params = {}) : LuiBase(_params) constructor {
 		//var _bottom = (sprite_get_height(sUI_Square_21r_shadow) - sprite_get_height(self.style.sprite_panel)) div 2 + 1;
 		//draw_sprite_stretched_ext(sUI_Square_21r_shadow, 0, self.x - _left, self.y - _top, self.width + _right*2, self.height + _bottom*2, c_white, 1);
 		// Base
-		if !is_undefined(self.style.sprite_panel) {
-			var _blend_color = self.style.color_primary; //???// self.nesting_level == 1 ? self.style.color_primary : merge_color(self.style.color_primary, self.style.color_secondary, 0.25);
-			if self.deactivated {
-				_blend_color = merge_color(_blend_color, c_black, 0.5);
+		if(self.panel_sprite = undefined){
+			if !is_undefined(self.style.sprite_panel) {
+				var _blend_color = self.style.color_primary; //???// self.nesting_level == 1 ? self.style.color_primary : merge_color(self.style.color_primary, self.style.color_secondary, 0.25);
+				if self.deactivated {
+					_blend_color = merge_color(_blend_color, c_black, 0.5);
+				}
+				draw_sprite_stretched_ext(self.style.sprite_panel, 0, self.x, self.y, self.width, self.height, _blend_color, 1);
 			}
-			draw_sprite_stretched_ext(self.style.sprite_panel, 0, self.x, self.y, self.width, self.height, _blend_color, 1);
+			// Border
+			if !is_undefined(self.style.sprite_panel_border) {
+				draw_sprite_stretched_ext(self.style.sprite_panel_border, 0, self.x, self.y, self.width, self.height, self.style.color_border, 1);
+			}
 		}
-		// Border
-		if !is_undefined(self.style.sprite_panel_border) {
-			draw_sprite_stretched_ext(self.style.sprite_panel_border, 0, self.x, self.y, self.width, self.height, self.style.color_border, 1);
+		else{
+			draw_sprite(self.panel_sprite,0,self.x,self.y);
 		}
 	}
 	

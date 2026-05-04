@@ -8,8 +8,8 @@
   "name":"armor_holy_c0",
   "overriddenProperties":[],
   "parent":{
-    "name":"Holy",
-    "path":"folders/物体/armor/Holy.yy",
+    "name":"holy",
+    "path":"folders/物体/armor/holy.yy",
   },
   "parentObjectId":{
     "name":"armor_agent",
