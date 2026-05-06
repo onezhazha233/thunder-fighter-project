@@ -1,4 +1,4 @@
-function Equipment_plane(){
+function Equipment_Plane(){
 	return [
 	    // assault 系列
 	    {name: Lang_GetString("assault.a"), ability: Lang_GetString("ability.assault"), quality: 0, icon: "assault_a"},

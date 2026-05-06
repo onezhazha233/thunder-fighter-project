@@ -2,7 +2,6 @@
 /// Available parameters:
 /// value
 /// quality
-/// scale
 /// alpha
 /// maintain_aspect
 ///@arg {Struct} [_params] Struct with parameters
@@ -10,7 +9,6 @@ function LuiIcon(_params = {}) : LuiBase(_params) constructor {
 	
 	self.value = _params[$ "value"] ?? undefined;
 	self.quality = _params[$ "quality"] ?? -1;
-	self.scale = _params[$ "scale"] ?? 1;
 	self.alpha = _params[$ "alpha"] ?? 1;
 	self.maintain_aspect = _params[$ "maintain_aspect"] ?? true;
 	
@@ -77,10 +75,10 @@ function LuiIcon(_params = {}) : LuiBase(_params) constructor {
 		}
 		//Draw sprite
 		if !is_undefined(iconspr) && sprite_exists(iconspr) {
-			draw_icon(self.x,self.y,self.value,self.quality,self.scale,self.alpha);
+			draw_icon(self.x,self.y,self.value,self.quality,_width,self.alpha);
 		}
 		else{
-			draw_icon(self.x,self.y,"unknown",self.quality,self.scale,self.alpha);
+			draw_icon(self.x,self.y,"unknown",self.quality,_width,self.alpha);
 		}
 	}
 	

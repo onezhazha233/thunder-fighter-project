@@ -1,25 +1,6 @@
 live;
 depth = -100;
-
-if (!variable_struct_exists(global, "_current_equipment_select")) {
-	global._current_equipment_select = {
-		options: [],
-		current_obj: -1,
-		equip_key: "",
-		placeholder: "",
-		caller_btn: undefined,
-		window: undefined,
-		preview_inst: noone,
-		preview_x: room_width / 2,
-		preview_y: 320,
-		preview_scale: 1
-	};
-}
-
-var _planes = EquipmentSelect_GetEquipmentOptions(plane_agent, "");
-var _wingmans = EquipmentSelect_GetEquipmentOptions(wingman_agent, "");
-var _subweapons = EquipmentSelect_GetEquipmentOptions(emitter_player, "subweapon_");
-var _armors = EquipmentSelect_GetEquipmentOptions(armor_agent, "");
+preview_inst = noone
 
 main_ui = new LuiMain();
 demo_style_modern = new LuiStyle()
@@ -42,13 +23,17 @@ demo_style_modern = new LuiStyle()
 	.setScrollSliderWidth(10)
 main_ui.setStyle(demo_style_modern).centerContent();
 
-luiNextDebugMode()
+//luiNextDebugMode()
 
 main_window = new LuiPanel()
 main_window.panel_sprite = spr_ui_selectpanel
 main_window.setPositionAbsolute()
 main_window.setSize(588,697)
 main_window.y = 500
+
+var _gui_w = 720
+var _pos_x = max(0, (_gui_w - main_window.width) * 0.5);
+main_window.x = _pos_x;
 
 main_window_title = new LuiText({height: 50})
 .setText(Lang_GetString("ui.select.preparation"))
@@ -91,24 +76,92 @@ select_equipment_armor.panel_sprite = spr_ui_selectequipment
 select_equipment_armor.setSize(156,172)
 .x += 28
 
+button_select_armor = new LuiButton()
+with(button_select_armor){
+	x -= 9;
+	y -= 9;
+	width = 144;
+	height = 144;
+	draw = function(){
+		spr = other.equipment_obj2name(global.current_equipment.armor);
+		draw_icon(x,y,spr);
+	}
+}
+button_select_armor.addEvent(LUI_EV_CLICK,function(_el){
+	create_select_window(1);
+})
+select_equipment_armor.addContent(button_select_armor)
+
 select_equipment_subweapon = new LuiPanel()
 select_equipment_subweapon.panel_sprite = spr_ui_selectequipment
 select_equipment_subweapon.setSize(156,172)
 .x += 28
+
+button_select_subweapon = new LuiButton()
+with(button_select_subweapon){
+	x -= 9;
+	y -= 9;
+	width = 144;
+	height = 144;
+	draw = function(){
+		spr = other.equipment_obj2name(global.current_equipment.subweapon);
+		draw_icon(x,y,spr);
+	}
+}
+button_select_subweapon.addEvent(LUI_EV_CLICK,function(_el){
+	create_select_window(2);
+})
+select_equipment_subweapon.addContent(button_select_subweapon)
 
 select_equipment_wingman_left = new LuiPanel()
 select_equipment_wingman_left.panel_sprite = spr_ui_selectequipment
 select_equipment_wingman_left.setSize(156,172)
 .x += 114
 
+button_select_wingman_left = new LuiButton()
+with(button_select_wingman_left){
+	x -= 9;
+	y -= 9;
+	width = 144;
+	height = 144;
+	draw = function(){
+		spr = other.equipment_obj2name(global.current_equipment.wingman_left[0]);
+		draw_icon(x,y,spr);
+	}
+}
+button_select_wingman_left.addEvent(LUI_EV_CLICK,function(_el){
+	create_select_window(3);
+})
+select_equipment_wingman_left.addContent(button_select_wingman_left)
+
 select_equipment_wingman_right = new LuiPanel()
 select_equipment_wingman_right.panel_sprite = spr_ui_selectequipment
 select_equipment_wingman_right.setSize(156,172)
 .x += 114
 
+button_select_wingman_right = new LuiButton()
+with(button_select_wingman_right){
+	x -= 9;
+	y -= 9;
+	width = 144;
+	height = 144;
+	draw = function(){
+		spr = other.equipment_obj2name(global.current_equipment.wingman_right[0]);
+		draw_icon(x,y,spr);
+	}
+}
+button_select_wingman_right.addEvent(LUI_EV_CLICK,function(_el){
+	create_select_window(4);
+})
+select_equipment_wingman_right.addContent(button_select_wingman_right)
+
 button_select_boss = new LuiButton({text: Lang_GetString("ui.select.boss")}).setSize(300,56);
 button_select_boss.setFlexAlignSelf(flexpanel_align.center)
 .y += 60
+
+button_select_boss.addEvent(LUI_EV_CLICK,function(_el){
+	create_select_window(5);
+})
 with(button_select_boss){
 	draw = function(){
 		var subimg = 0;
@@ -126,6 +179,14 @@ with(button_select_boss){
 button_startbattle = new LuiButton({text: Lang_GetString("ui.startbattle")}).setSize(140,56);
 button_startbattle.setFlexAlignSelf(flexpanel_align.center)
 .y += 60
+button_startbattle.addEvent(LUI_EV_CLICK, function(_el) {
+	global.score = 0;
+	global.hp_max = 10;
+	global.hp = 10;
+	if (!instance_exists(battle_loading)) {
+		instance_create_depth(0,0,0,battle_loading);
+	}
+});
 with(button_startbattle){
 	draw = function(){
 		var subimg = 0;
@@ -149,19 +210,40 @@ main_window.addContent(button_startbattle)
 
 main_ui.addContent(main_window)
 
-create_select_window = function(type){//0为战机 1为装甲 2为副武器 3为左僚机 4为右僚机
+refresh_preview()
+
+create_select_window = function(type){//0为战机 1为装甲 2为副武器 3为左僚机 4为右僚机 5为boss
 	window_select = new LuiPanel()
 	.setSize(720,1000)
 	window_select.y += 50
+	window_select.black_alpha = 0;
+	with(window_select){
+		preDraw = function(){
+			if!(is_destroyed){
+				black_alpha += (0.5-black_alpha)/3;
+			}
+			else{
+				black_alpha += (0-black_alpha)/3;
+			}
+			draw_sprite_ext(spr_pixel2x,0,room_width/2,room_height/2,room_width/2,room_height/2,0,0,black_alpha);
+		}
+	}
+	window_select.addEvent(LUI_EV_CREATE,function(_el){
+		main_window.deactivate();
+	})
+	window_select.addEvent(LUI_EV_DESTROY,function(_el){
+		main_window.activate();
+	})
+	array_push(main_ui.pre_draw_list,window_select);
 
 	if(type = 0){
 		et = "plane";
-		equipments = Equipment_plane();
+		equipments = Equipment_Plane();
 		current_equipment = global.current_equipment.plane;
 	}
 	if(type = 1){
 		et = "armor";
-		equipments = Equipment_armor();
+		equipments = Equipment_Armor();
 		current_equipment = global.current_equipment.armor;
 	}
 	if(type = 2){
@@ -170,33 +252,45 @@ create_select_window = function(type){//0为战机 1为装甲 2为副武器 3为
 		current_equipment = global.current_equipment.subweapon;
 	}
 	if(type = 3){
-		et = "wingman_left";
+		et = "wingman.left";
 		current_equipment = global.current_equipment.wingman_left[0];
 	}
 	if(type = 4){
-		et = "wingman_right";
+		et = "wingman.right";
 		current_equipment = global.current_equipment.wingman_right[0];
 	}
-	if(type >= 3)equipments = Equipment_wingman();
+	if(type = 3||type = 4)equipments = Equipment_Wingman();
+	if(type = 5){
+		et = "boss";
+		equipments = BossList();
+		current_equipment = global.choicebosswave;
+	}
 	
 	window_select_title = new LuiText({height: 50})
-	.setText(Lang_GetString("ui."+et))
+	.setText(Lang_GetString("ui.select."+et))
 	.setTextHalign(fa_center)
-	window_select_title.text_scale = 1.4
-	window_select_title.text_outline = true
-	window_select_title.text_outline_width = 2
-	window_select_title.text_outline_color = make_color_rgb(0,65,140)
+	window_select_title.text_scale = 1.4;
+	window_select_title.text_outline = true;
+	window_select_title.text_outline_width = 2;
+	window_select_title.text_outline_color = make_color_rgb(0,65,140);
 
-	tr = new LuiRow().addContent(window_select_title)
-	tl = new LuiRow()
-	list = new LuiScrollPanel()
-	list.setSize(700,880)
-	list.draw_base = false
+	tr = new LuiRow().addContent(window_select_title);
+	tl = new LuiRow();
+	list = new LuiScrollPanel();
+	list.setSize(700,880);
+	list.draw_base = false;
 
 	ii = -1;
 	for (var i = 0; i < array_length(equipments); i++) {
-		selected = (equipment_obj2name(current_equipment)==equipments[i].icon)
-	    list.addContent(create_equipment_item(equipments[i],type,selected));
+		nn = equipments[i].icon;
+		if(variable_struct_exists(equipments[i],"obj"))nn = equipments[i].obj;
+		if(type = 5){
+			selected = (current_equipment==equipments[i].obj);
+		}
+		else{
+			selected = (equipment_obj2name(current_equipment,false)==nn);
+		}
+	    list.addContent(create_equipment_item(equipments[i],type,selected,(type==5)));
 		if(selected = true)ii = i;
 	}
 	
@@ -226,7 +320,7 @@ create_select_window = function(type){//0为战机 1为装甲 2为副武器 3为
 	main_ui.addContent(window_select);
 }
 
-function create_equipment_item(data,type,selected=0) {
+function create_equipment_item(data,type,selected=false,boss=false) {
     var rootp = new LuiPanel()
 		.setWidth(657)
         .setHeight(129)
@@ -235,11 +329,11 @@ function create_equipment_item(data,type,selected=0) {
 	rootp.panel_sprite = spr_ui_equipment_element;
 	var root = new LuiRow();
 
-    /// 左：头像 + 星级
+    /// 左：头像
     var left = new LuiColumn()
         .setWidth(90)
 	
-	equipment_icon = new LuiIcon({value: data.icon, quality: data.quality,scale: 90/144});
+	equipment_icon = new LuiIcon({value: data.icon, quality: data.quality});
 	equipment_icon.setSize(90,90);
 	equipment_icon.setPadding(0);
     left.addContent(equipment_icon);
@@ -249,28 +343,38 @@ function create_equipment_item(data,type,selected=0) {
         .setGap(12);
 
     center.addContent(new LuiText({value:data.name}));
-    center.addContent(new LuiText({value: Lang_GetString("ui.ability")+" "+ data.ability}));
+    if(boss = false)center.addContent(new LuiText({value: Lang_GetString("ui.ability")+" "+ data.ability}));
 
     /// 右：按钮或状态
     var right = new LuiColumn()
         .setWidth(120)
 		.setPosition(5,8);
 	if(selected = true){
-		btn = new LuiText({value: "已装备", x:20, y: 17});
+		btn = new LuiText({value: Lang_GetString("ui."+(boss = true ? "selected" : "equipped")), x:20, y: 17});
 		btn.color_override=c_green;
 	}
 	else{
-		btn = new LuiButton({text: Lang_GetString("ui.equip")}).setSize(118,73);
+		btn = new LuiButton({text: Lang_GetString("ui."+(boss = true ? "select" : "equip"))}).setSize(118,73);
 		btn.equipment_name = data.icon;
+		if(variable_struct_exists(data,"obj"))btn.equipment_name = data.obj;
 		btn.type = type;
+		btn.boss = boss;
 		btn.addEvent(LUI_EV_CLICK,function(_el){
-			te = equipment_name2obj(_el.equipment_name,_el.type);
+			if(_el.boss = false){
+				te = equipment_name2obj(_el.equipment_name,_el.type);
+			}
+			else{
+				te = _el.equipment_name;
+			}
 			if(_el.type = 0)global.current_equipment.plane = te;
 			if(_el.type = 1)global.current_equipment.armor = te;
 			if(_el.type = 2)global.current_equipment.subweapon = te;
 			if(_el.type = 3)global.current_equipment.wingman_left[0] = te;
 			if(_el.type = 4)global.current_equipment.wingman_right[0] = te;
+			if(_el.type = 5)global.choicebosswave = te;
 			window_select.destroy();
+			refresh_preview();
+			main_window.activate();
 		})
 		with(btn){
 			draw = function(){
@@ -297,7 +401,7 @@ function create_equipment_item(data,type,selected=0) {
     return rootp;
 }
 
-equipment_obj2name = function(obj){
+equipment_obj2name = function(obj,filter=true){
 	var name;
 	if!(is_string(obj)){
 		name = object_get_name(obj);
@@ -305,7 +409,12 @@ equipment_obj2name = function(obj){
 	else{
 		name = obj;
 	}
-	return string_copy(name,string_pos("_",name)+1,999);
+	str = string_copy(name,string_pos("_",name)+1,999);
+	if(filter = true){
+		str = string_replace(str,"_c0","_c");
+		str = string_replace(str,"_c123","_c");
+	}
+	return str;
 }
 
 equipment_name2obj = function(name,type){
@@ -316,6 +425,40 @@ equipment_name2obj = function(name,type){
 	if(type >= 3)prefix = "wingman_";
 	
 	return asset_get_index(prefix+name);
+}
+
+function refresh_preview(){
+	var px = room_width/2;
+	var py = 320;
+	var sc = 1;
+	if!(instance_exists(preview_inst)){
+		preview_inst = instance_create_depth(px,py,0,equipment_agent);
+		preview_inst.player_point_enabled = false;
+		preview_inst.enabled = false;
+		preview_inst.xscale = sc;
+		preview_inst.yscale = sc;
+		preview_inst.angle = 0;
+		preview_inst.plane = global.current_equipment.plane;
+		preview_inst.wingman_left = global.current_equipment.wingman_left;
+		preview_inst.wingman_right = global.current_equipment.wingman_right;
+		preview_inst.wingman_x_offset = global.current_equipment.wingman_x_offset;
+		preview_inst.wingman_y_offset = global.current_equipment.wingman_y_offset;
+		preview_inst.subweapon = global.current_equipment.subweapon;
+		preview_inst.armor = global.current_equipment.armor;
+		preview_inst.alarm[0] = 1;
+		preview_inst.depth = 0;
+		preview_inst.SetPosition(px, py);
+	}
+	else{
+		preview_inst.plane = global.current_equipment.plane;
+		preview_inst.wingman_left = global.current_equipment.wingman_left;
+		preview_inst.wingman_right = global.current_equipment.wingman_right;
+		preview_inst.wingman_x_offset = global.current_equipment.wingman_x_offset;
+		preview_inst.wingman_y_offset = global.current_equipment.wingman_y_offset;
+		preview_inst.subweapon = global.current_equipment.subweapon;
+		preview_inst.armor = global.current_equipment.armor;
+		preview_inst.alarm[0] = 1;
+	}
 }
 
 /*

@@ -1,5 +1,7 @@
 Anim_Init()
 
+display_set_gui_size(720,1280)
+
 BGM_Init()
 
 Lang_Init()

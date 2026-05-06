@@ -12,8 +12,8 @@ plane_inst = noone
 
 wingman_left = []
 wingman_right = []
-wingman_left_inst = []
-wingman_right_inst = []
+wingman_left_inst = [noone]
+wingman_right_inst = [noone]
 wingman_x_offset = [130,200]
 wingman_y_offset = [0,0]
 

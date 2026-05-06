@@ -7,6 +7,8 @@
     "ui.ability": "特技",
     "ui.equip": "装备",
     "ui.equipped": "已装备",
+    "ui.select": "选择",
+    "ui.selected": "已选择",
     "ui.select.preparation": "战前准备",
     "ui.select.boss": "选择Boss",
     "ui.select.plane": "选择战机",

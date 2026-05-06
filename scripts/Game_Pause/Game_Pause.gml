@@ -1,3 +1,3 @@
 function Game_Pause(){
-	pauser.Pause();
+	battle_ui_pause.Pause();
 }

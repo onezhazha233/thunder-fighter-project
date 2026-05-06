@@ -1,4 +1,4 @@
-function Equipment_wingman(){
+function Equipment_Wingman(){
 	return [
 		// shotcannon
 		{name: Lang_GetString("shotcannon.a"), ability: Lang_GetString("ability.shotcannon"), quality: 0, icon: "shotcannon_a"},
