@@ -65,5 +65,11 @@ function Equipment_Subweapon(){
 		{name: Lang_GetString("sticky_bomb.b"), ability: Lang_GetString("ability.sticky_bomb"), quality: 1, icon: "sticky_bomb_b"},
 		{name: Lang_GetString("sticky_bomb.c"), ability: Lang_GetString("ability.sticky_bomb"), quality: 2, icon: "sticky_bomb_c"},
 		{name: Lang_GetString("sticky_bomb.d"), ability: Lang_GetString("ability.sticky_bomb"), quality: 3, icon: "sticky_bomb_d"},
+
+		// serpentine_piercer
+		{name: Lang_GetString("serpentine_piercer.a"), ability: Lang_GetString("ability.serpentine_piercer"), quality: 0, icon: "serpentine_piercer_a"},
+		{name: Lang_GetString("serpentine_piercer.b"), ability: Lang_GetString("ability.serpentine_piercer"), quality: 1, icon: "serpentine_piercer_b"},
+		{name: Lang_GetString("serpentine_piercer.c"), ability: Lang_GetString("ability.serpentine_piercer"), quality: 2, icon: "serpentine_piercer_c"},
+		{name: Lang_GetString("serpentine_piercer.d"), ability: Lang_GetString("ability.serpentine_piercer"), quality: 3, icon: "serpentine_piercer_d"},
 	];
 }

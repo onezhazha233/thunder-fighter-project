@@ -171,6 +171,11 @@
     "sticky_bomb.c": "熔核黏附弹",
     "sticky_bomb.d": "湮灭黏附弹",
     "ability.sticky_bomb": "附着",
+    "serpentine_piercer.a": "双曲弹",
+    "serpentine_piercer.b": "矢量双曲弹",
+    "serpentine_piercer.c": "震荡双曲弹",
+    "serpentine_piercer.d": "超弦双曲弹",
+    "ability.serpentine_piercer": "曲迹",
 
     "alloy.a": "金刚护盾",
     "alloy.b": "金刚装甲",
