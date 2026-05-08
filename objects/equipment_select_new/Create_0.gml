@@ -229,6 +229,64 @@ main_ui.addContent(main_window)
 
 refresh_preview()
 
+if (!variable_global_exists("equipment_select_new_anim")) {
+	global.equipment_select_new_anim = {
+		set_mouse_block: function(_element, _blocked) {
+			if (is_undefined(_element) || _element.is_destroyed) return;
+			_element.ignore_mouse = _blocked;
+			_element.ignore_mouse_all = _blocked ? true : undefined;
+			if (is_array(_element.content)) {
+				for (var i = 0; i < array_length(_element.content); i++) {
+					global.equipment_select_new_anim.set_mouse_block(_element.content[i], _blocked);
+				}
+			}
+		},
+		capture_base_tree: function(_element) {
+			if (is_undefined(_element) || _element.is_destroyed) return;
+			_element.intro_base_x = _element.x;
+			if (is_array(_element.content)) {
+				for (var i = 0; i < array_length(_element.content); i++) {
+					global.equipment_select_new_anim.capture_base_tree(_element.content[i]);
+				}
+			}
+		},
+		apply_offset_tree: function(_element, _offset_x) {
+			if (is_undefined(_element) || _element.is_destroyed) return;
+			if (!variable_struct_exists(_element, "intro_base_x")) {
+				_element.intro_base_x = _element.x;
+			}
+			_element.x = _element.intro_base_x + _offset_x;
+			if (is_array(_element.content)) {
+				for (var i = 0; i < array_length(_element.content); i++) {
+					global.equipment_select_new_anim.apply_offset_tree(_element.content[i], _offset_x);
+				}
+			}
+		},
+		animate_tree_x: function(_element, _duration, _delay, _on_complete = undefined) {
+			if (is_undefined(_element) || _element.is_destroyed) return;
+			if (!variable_struct_exists(_element, "intro_base_x")) {
+				_element.intro_base_x = _element.x;
+			}
+			Anim_Create(_element, "x", ANIM_TWEEN.QUAD, ANIM_EASE.OUT, _element.x, _element.intro_base_x - _element.x, _duration, _delay, _on_complete);
+			if (is_array(_element.content)) {
+				for (var i = 0; i < array_length(_element.content); i++) {
+					global.equipment_select_new_anim.animate_tree_x(_element.content[i], _duration, _delay);
+				}
+			}
+		},
+		finish_card: function(_card) {
+			if (is_undefined(_card) || _card.is_destroyed) return;
+			if (is_undefined(_card.intro_window) || _card.intro_window.is_destroyed) return;
+			_card.intro_window.intro_remaining--;
+			if (_card.intro_window.intro_remaining <= 0 && !_card.intro_window.intro_finished) {
+				_card.intro_window.intro_finished = true;
+				global.equipment_select_new_anim.set_mouse_block(_card.intro_window, false);
+				_card.intro_window.updateMainUiSurface();
+			}
+		}
+	};
+}
+
 create_select_window = function(type){//0为战机 1为装甲 2为副武器 3为左僚机 4为右僚机 5为boss
 	window_select = new LuiPanel()
 	.setSize(720,1000)
@@ -252,6 +310,15 @@ create_select_window = function(type){//0为战机 1为装甲 2为副武器 3为
 		main_window.activate();
 	})
 	array_push(main_ui.pre_draw_list,window_select);
+	window_select.intro_frame = 0;
+	window_select.intro_duration = 10;
+	window_select.intro_shift = 700;
+	window_select.intro_initialized = false;
+	window_select.intro_finished = false;
+	window_select.intro_cards = [];
+	window_select.intro_scroll_panel = undefined;
+	window_select.ignore_mouse_all = true;
+	window_select.ignore_mouse = true;
 
 	if(type = 0){
 		et = "plane";
@@ -307,7 +374,9 @@ create_select_window = function(type){//0为战机 1为装甲 2为副武器 3为
 		else{
 			selected = (equipment_obj2name(current_equipment,false)==nn);
 		}
-	    list.addContent(create_equipment_item(equipments[i],type,selected,(type==5)));
+	    var _card = create_equipment_item(equipments[i],type,selected,(type==5));
+	    list.addContent(_card);
+	    array_push(window_select.intro_cards, _card);
 		if(selected = true)ii = i;
 	}
 	
@@ -338,6 +407,56 @@ create_select_window = function(type){//0为战机 1为装甲 2为副武器 3为
 	})
 	window_select.addContent(closebtn);
 	main_ui.addContent(window_select);
+
+	window_select.intro_scroll_panel = list;
+	with (window_select) {
+		preDraw = function() {
+			if!(is_destroyed){
+				black_alpha += (0.5-black_alpha)/3;
+			}
+			else{
+				black_alpha += (0-black_alpha)/3;
+			}
+			draw_sprite_ext(spr_pixel2x,0,room_width/2,room_height/2,room_width/2,room_height/2,0,0,black_alpha);
+
+			if (self.is_destroyed || self.intro_initialized) return;
+
+			var _scroll_top = self.intro_scroll_panel.y;
+			var _scroll_bottom = self.intro_scroll_panel.y + self.intro_scroll_panel.height;
+			var _visible_cards = [];
+			for (var i = 0; i < array_length(self.intro_cards); i++) {
+				var _card = self.intro_cards[i];
+				if (is_undefined(_card) || _card.is_destroyed) continue;
+				if (_card.y + _card.height < _scroll_top || _card.y > _scroll_bottom) continue;
+				array_push(_visible_cards, _card);
+			}
+
+			array_sort(_visible_cards, function(_a, _b) {
+				if (_a.y == _b.y) return _a.x - _b.x;
+				return _a.y - _b.y;
+			});
+
+			if (array_length(_visible_cards) == 0) {
+				self.intro_initialized = true;
+				self.intro_finished = true;
+				global.equipment_select_new_anim.set_mouse_block(self, false);
+				return;
+			}
+
+			self.intro_remaining = array_length(_visible_cards);
+			for (var i = 0; i < array_length(_visible_cards); i++) {
+				var _card = _visible_cards[i];
+				_card.intro_window = self;
+				global.equipment_select_new_anim.capture_base_tree(_card);
+				global.equipment_select_new_anim.apply_offset_tree(_card, self.intro_shift);
+				global.equipment_select_new_anim.animate_tree_x(_card, self.intro_duration, i, _card.intro_anim_done);
+			}
+
+			self.intro_initialized = true;
+			self.intro_finished = false;
+			self.updateMainUiSurface();
+		}
+	}
 }
 
 function create_equipment_item(data,type,selected=false,boss=false) {
@@ -349,8 +468,9 @@ function create_equipment_item(data,type,selected=false,boss=false) {
 	rootp.panel_sprite = spr_ui_equipment_element;
 	var root = new LuiRow();
 	with(rootp){
-		step = function(){
-			//setPosition(x+1);
+		intro_window = undefined;
+		intro_anim_done = function() {
+			global.equipment_select_new_anim.finish_card(self);
 		}
 	}
 

@@ -86,6 +86,9 @@ function LuiScrollPanel(_params = {}) : LuiBase(_params) constructor {
 	}
 	
 	self.step = function(){
+		if self.ignore_mouse {
+			return;
+		}
 		// Mouse wheel input
 		if self.isMouseHoveredExc() && self.isMouseHoveredChilds() {
 			var _wheel_up = mouse_wheel_up() ? 1 : 0;
