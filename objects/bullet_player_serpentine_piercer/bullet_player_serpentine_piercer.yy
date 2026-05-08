@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_serpentine_piercer_cd_body",
-    "path":"sprites/spr_serpentine_piercer_cd_body/spr_serpentine_piercer_cd_body.yy",
+    "name":"spr_serpentine_piercer_a_body",
+    "path":"sprites/spr_serpentine_piercer_a_body/spr_serpentine_piercer_a_body.yy",
   },
   "spriteMaskId":null,
   "visible":true,

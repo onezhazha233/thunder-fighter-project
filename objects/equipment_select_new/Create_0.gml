@@ -2,6 +2,8 @@ live;
 depth = -100;
 preview_inst = noone
 
+list = -1
+
 main_ui = new LuiMain();
 demo_style_modern = new LuiStyle()
 	.setMinSize(1,1)
@@ -65,6 +67,9 @@ with(button_select_plane){
 		spr = other.equipment_obj2name(global.current_equipment.plane);
 		draw_icon(x,y,spr);
 	}
+	step = function(){
+		updateMainUiSurface();
+	}
 }
 button_select_plane.addEvent(LUI_EV_CLICK,function(_el){
 	create_select_window(0);
@@ -85,6 +90,9 @@ with(button_select_armor){
 	draw = function(){
 		spr = other.equipment_obj2name(global.current_equipment.armor);
 		draw_icon(x,y,spr);
+	}
+	step = function(){
+		updateMainUiSurface();
 	}
 }
 button_select_armor.addEvent(LUI_EV_CLICK,function(_el){
@@ -107,6 +115,9 @@ with(button_select_subweapon){
 		spr = other.equipment_obj2name(global.current_equipment.subweapon);
 		draw_icon(x,y,spr);
 	}
+	step = function(){
+		updateMainUiSurface();
+	}
 }
 button_select_subweapon.addEvent(LUI_EV_CLICK,function(_el){
 	create_select_window(2);
@@ -128,6 +139,9 @@ with(button_select_wingman_left){
 		spr = other.equipment_obj2name(global.current_equipment.wingman_left[0]);
 		draw_icon(x,y,spr);
 	}
+	step = function(){
+		updateMainUiSurface();
+	}
 }
 button_select_wingman_left.addEvent(LUI_EV_CLICK,function(_el){
 	create_select_window(3);
@@ -148,6 +162,9 @@ with(button_select_wingman_right){
 	draw = function(){
 		spr = other.equipment_obj2name(global.current_equipment.wingman_right[0]);
 		draw_icon(x,y,spr);
+	}
+	step = function(){
+		updateMainUiSurface();
 	}
 }
 button_select_wingman_right.addEvent(LUI_EV_CLICK,function(_el){
@@ -277,10 +294,10 @@ create_select_window = function(type){//0为战机 1为装甲 2为副武器 3为
 	tr = new LuiRow().addContent(window_select_title);
 	tl = new LuiRow();
 	list = new LuiScrollPanel();
-	list.setSize(700,880);
+	list.setSize(675,880);
 	list.draw_base = false;
 
-	ii = -1;
+	var ii = -1;
 	for (var i = 0; i < array_length(equipments); i++) {
 		nn = equipments[i].icon;
 		if(variable_struct_exists(equipments[i],"obj"))nn = equipments[i].obj;
@@ -294,7 +311,10 @@ create_select_window = function(type){//0为战机 1为装甲 2为副武器 3为
 		if(selected = true)ii = i;
 	}
 	
-	list.scroll_target_offset_y = -(ii-2)*145;
+	aa = clamp(-(ii-2)*145, -(array_length(equipments)*145+16 - 800-80), 0);
+	list.scroll_target_offset_y = aa;
+	list.scroll_offset_y = aa;
+	list._applyScroll();
 
 	tl.addContent(new LuiColumn().addContent(list));
 	window_select.addContent([tr,tl]);
@@ -328,6 +348,11 @@ function create_equipment_item(data,type,selected=false,boss=false) {
         .setGap(10)
 	rootp.panel_sprite = spr_ui_equipment_element;
 	var root = new LuiRow();
+	with(rootp){
+		step = function(){
+			//setPosition(x+1);
+		}
+	}
 
     /// 左：头像
     var left = new LuiColumn()
