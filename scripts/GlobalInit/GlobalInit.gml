@@ -5,6 +5,10 @@ function GlobalInit(){
 	global.atk_plane = 1;
 	global.atk_wingman = 1;
 	global.atk_subweapon = 1;
+	global.atk_plane_bonus = [];
+	global.atk_wingman_bonus = [];
+	global.atk_subweapon_bonus = [];
+	global.atk_all_bonus = [];
 	global.inv_hurt = 0;
 	global.inv_shield = 0;
 	global.inv_cutscene = 0;

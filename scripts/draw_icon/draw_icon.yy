@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"draw_icon",
   "parent":{
-    "name":"脚本",
-    "path":"folders/脚本.yy",
+    "name":"Draw",
+    "path":"folders/脚本/Draw.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

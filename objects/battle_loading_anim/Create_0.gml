@@ -1,4 +1,6 @@
 live;
+depth = DEPTH_BATTLE.UI-20
+
 state = 0//0为渐入 1为加载中 2为渐出
 time = 0
 

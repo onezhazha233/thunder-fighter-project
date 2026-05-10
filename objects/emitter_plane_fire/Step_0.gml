@@ -7,14 +7,6 @@ else{
 	alarm[1] = -1;
 }
 
-damage = 0.201;
-switch(weapon_level){
-	case 0:damage = 0.201*global.atk_plane;break;
-	case 1:damage = 0.2464*global.atk_plane;break;
-	case 2:damage = 0.3029*global.atk_plane;break;
-	case 3:damage = 0.3333*global.atk_plane;break;
-}
-
 if(enabled = true){
 	if(rampage = false){
 		attack_time = max(0,attack_time-1);

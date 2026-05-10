@@ -236,5 +236,11 @@
     "lotus.c0": "红莲壁垒",
     "lotus.c123": "红莲壁垒+1/2/3",
     "lotus.d": "红莲圣铠",
-    "ability.lotus": "蓄能"
+    "ability.lotus": "蓄能",
+    "crystalis.a": "晶辉护盾",
+    "crystalis.b": "晶辉装甲",
+    "crystalis.c0": "晶辉壁垒",
+    "crystalis.c123": "晶辉壁垒+1/2/3",
+    "crystalis.d": "晶辉御锋",
+    "ability.crystalis": "溢能"
 }

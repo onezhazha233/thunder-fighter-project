@@ -61,7 +61,7 @@ function Equipment_Armor(){
 		{name: Lang_GetString("timedom.b"), ability: Lang_GetString("ability.timedom"), quality: 1, icon: "timedom_b"},
 		{name: Lang_GetString("timedom.c0"), ability: Lang_GetString("ability.timedom"), quality: 2, icon: "timedom_c", obj: "timedom_c0"},
 		{name: Lang_GetString("timedom.c123"), ability: Lang_GetString("ability.timedom"), quality: 2, icon: "timedom_c", obj: "timedom_c123"},
-		{name: Lang_GetString("timedom.d"), ability: Lang_GetString("ability.timedom"), quality: 3, icon: "timedom_d"}
+		{name: Lang_GetString("timedom.d"), ability: Lang_GetString("ability.timedom"), quality: 3, icon: "timedom_d"},
 
 		// lotus
 		/*{name: Lang_GetString("lotus.a"), ability: Lang_GetString("ability.lotus"), quality: 0, icon: "lotus_a"},
@@ -69,5 +69,12 @@ function Equipment_Armor(){
 		{name: Lang_GetString("lotus.c0"), ability: Lang_GetString("ability.lotus"), quality: 2, icon: "lotus_c", obj: "lotus_c0"},
 		{name: Lang_GetString("lotus.c123"), ability: Lang_GetString("ability.lotus"), quality: 2, icon: "lotus_c", obj: "lotus_c123"},
 		{name: Lang_GetString("lotus.d"), ability: Lang_GetString("ability.lotus"), quality: 3, icon: "lotus_d"},*/
+	
+		// crystalis
+		{name: Lang_GetString("crystalis.a"), ability: Lang_GetString("ability.crystalis"), quality: 0, icon: "crystalis_a"},
+		{name: Lang_GetString("crystalis.b"), ability: Lang_GetString("ability.crystalis"), quality: 1, icon: "crystalis_b"},
+		{name: Lang_GetString("crystalis.c0"), ability: Lang_GetString("ability.crystalis"), quality: 2, icon: "crystalis_c", obj: "crystalis_c0"},
+		{name: Lang_GetString("crystalis.c123"), ability: Lang_GetString("ability.crystalis"), quality: 2, icon: "crystalis_c", obj: "crystalis_c123"},
+		{name: Lang_GetString("crystalis.d"), ability: Lang_GetString("ability.crystalis"), quality: 3, icon: "crystalis_d"}
 	];
 }

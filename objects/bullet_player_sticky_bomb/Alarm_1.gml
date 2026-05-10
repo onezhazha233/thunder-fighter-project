@@ -4,6 +4,6 @@ effect.sequence = explosion_effect_sequence;
 effect.radius = explosion_effect_radius*explosion_effect_scale;
 effect.image_xscale = -scale_x*explosion_effect_scale;
 effect.image_yscale = scale_y*explosion_effect_scale;
-effect.damage = damage*global.atk_subweapon*10;
+effect.damage = damage*10;
 
 instance_destroy()

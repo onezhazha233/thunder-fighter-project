@@ -6,7 +6,7 @@ hp_red_time = 0
 boss_hpbar_enabled = false
 boss_hpbar_phase = 0
 boss_hpbar_lv = 0
-boss_hpbar_name = Lang_GetString("battle.testboss.name")
+boss_hpbar_name = "boss"
 boss_hpbar_hp = 10
 boss_hpbar_hp_max = 10
 
@@ -16,7 +16,9 @@ pause_button = new LuiButton({width: 110,height: 40});
 pause_button.setPositionAbsolute()
 pause_button.setPosX(0)
 pause_button.setPosY(20)
-pause_button.addEvent(LUI_EV_CLICK, function(_element) {
+pause_button.addEvent(LUI_EV_CLICK,function(_element) {
     Game_Pause();
 });
 main_ui.addContent([pause_button]);
+
+buff_list = ds_list_create()
