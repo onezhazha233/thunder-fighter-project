@@ -11,8 +11,8 @@
   "name":"effect_frost_splash",
   "overriddenProperties":[],
   "parent":{
-    "name":"effect",
-    "path":"folders/物体/effect.yy",
+    "name":"armor",
+    "path":"folders/物体/effect/armor.yy",
   },
   "parentObjectId":null,
   "persistent":false,

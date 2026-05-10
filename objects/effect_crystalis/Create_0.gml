@@ -1,5 +1,6 @@
 live;
 depth = DEPTH_BATTLE.EFFECTS
-scale = 0.5
-Anim_Create(id,"scale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,scale,2-scale,20)
-alpha = 1
+mode = 0//0为收缩 1为释放
+scale = 0
+enabled = false
+alarm[0] = 1

@@ -39,6 +39,7 @@ if(room = room_battle){
 				if(atkpower_level < atkpower_level_max){
 					if(atkpower >= 100){
 						atkpower_level += 1;
+						instance_create_depth(0,0,0,effect_crystalis).mode = 0;
 						if(atkpower_level < atkpower_level_max){
 							atkpower = 0;
 						}
@@ -46,7 +47,7 @@ if(room = room_battle){
 							atkpower = 100;
 						}
 					}
-					atkpower += atkpower_spd;
+					if(Player_IsEnabled())if(player.equipment.enabled = true)atkpower += atkpower_spd;
 				}
 			}
 			else{
@@ -61,11 +62,11 @@ if(room = room_battle){
 					atkpower = 0;
 					atkbonus_fadetime = 0;
 					if(atkpower_level > 0){
-						instance_create_depth(0,0,0,effect_crystalis);
+						instance_create_depth(0,0,0,effect_crystalis).mode = 1;
 					}
 				}
 				if(atkpower_level > 0){
-					atkbonus_fadetime += 1;
+					if(Player_IsEnabled())if(player.equipment.enabled = true)atkbonus_fadetime += 1;
 					if(atkbonus_fadetime >= 300){
 						atkpower_level -= 1;
 						atkbonus.value = 0.15*atkpower_level;

@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_effect_crystalis",
   "bboxMode":0,
-  "bbox_bottom":148,
+  "bbox_bottom":149,
   "bbox_left":0,
   "bbox_right":149,
   "bbox_top":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"2626807d-0600-4bb3-b82c-e2d8163b885f","name":"2626807d-0600-4bb3-b82c-e2d8163b885f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"be78a8a3-5772-4fd0-8533-36821b218d46","name":"be78a8a3-5772-4fd0-8533-36821b218d46","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":150,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"7eeb1363-7b65-4a5d-abd3-b49718ceb2db","blendMode":0,"displayName":"default","isLocked":false,"name":"7eeb1363-7b65-4a5d-abd3-b49718ceb2db","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"d93590b2-4664-4fc3-a7b9-5b17eee9a071","blendMode":0,"displayName":"default","isLocked":false,"name":"d93590b2-4664-4fc3-a7b9-5b17eee9a071","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_effect_crystalis",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2626807d-0600-4bb3-b82c-e2d8163b885f","path":"sprites/spr_effect_crystalis/spr_effect_crystalis.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"8d03c8a5-2024-44df-96db-475adfcea01e","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"be78a8a3-5772-4fd0-8533-36821b218d46","path":"sprites/spr_effect_crystalis/spr_effect_crystalis.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5490e58d-31a2-4c67-b45a-09e53bb14ba3","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
