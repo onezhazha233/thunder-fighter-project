@@ -1,7 +1,6 @@
 live;
 switch(weapon_level){
 	case 0:
-		case 0:
 		if(l1b = 0){
 			MakePlayerBullet(x,y,bullet_player_plane_assault_a_0).damage = damage;
 			MakePlayerBullet(room_width-x,y,bullet_player_plane_assault_a_0).damage = damage;
