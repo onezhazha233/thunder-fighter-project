@@ -1,3 +1,3 @@
 live;
-player.equipment.SetEnabled(false);
+Player_SetBreaktime(true)
 alarm[2] = 30

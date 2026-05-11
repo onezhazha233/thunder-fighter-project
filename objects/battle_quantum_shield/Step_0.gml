@@ -1,6 +1,6 @@
 live;
 if(Player_IsEnabled()){
-	if(player.equipment.enabled = true){
+	if!(Player_IsBreaktime()){
 		if(duration > 0)duration -= 1;
 		if(duration < 70){
 			fade = 1;

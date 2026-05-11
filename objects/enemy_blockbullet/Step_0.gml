@@ -11,7 +11,7 @@ if(hp <= 0){
 }
 
 if(inv_collision = false){
-	if(global.inv_cutscene = 0){
+	if!(Player_IsBreaktime()){
 		if(place_meeting(x,y,player)){
 			if(global.inv_hurt = 0&&global.inv_shield = 0){
 				event_user(1);
@@ -44,7 +44,7 @@ if(duration = 0){
 }
 
 if(Player_IsEnabled()){
-	if(global.inv_hurt = 0&&global.inv_shield = 0&&global.inv_cutscene = 0){
+	if(global.inv_hurt = 0&&global.inv_shield = 0&&!Player_IsBreaktime()){
 		if(place_meeting(x,y,player)){
 			event_user(1);
 			Player_CallHurtEvent();

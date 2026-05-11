@@ -1,6 +1,5 @@
 live;
-global.inv_cutscene = 1
-if(Player_IsEnabled())player.equipment.SetEnabled(false);
+Player_SetBreaktime(true)
 
 if!(layer_sequence_exists(ll,warning)){
 	instance_destroy();

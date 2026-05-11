@@ -47,7 +47,7 @@ if(room = room_battle){
 							atkpower = 100;
 						}
 					}
-					if(Player_IsEnabled())if(player.equipment.enabled = true)atkpower += atkpower_spd;
+					atkpower += atkpower_spd;
 				}
 			}
 			else{
@@ -66,7 +66,7 @@ if(room = room_battle){
 					}
 				}
 				if(atkpower_level > 0){
-					if(Player_IsEnabled())if(player.equipment.enabled = true)atkbonus_fadetime += 1;
+					atkbonus_fadetime += 1;
 					if(atkbonus_fadetime >= 300){
 						atkpower_level -= 1;
 						atkbonus.value = 0.15*atkpower_level;

@@ -5,7 +5,7 @@ if(burn_amount >= burn_target){
 	for(i=0;i<irandom_range(3,5);i+=1){
 		xx = random_range(bbox_left,bbox_right);
 		yy = random_range(bbox_top,bbox_bottom);
-		instance_create_depth(xx,yy,depth-1,effect_enemy_fire);
+		instance_create_depth(xx,yy,0,effect_enemy_fire);
 	}
 }
 if(burn_duration > 0){
@@ -20,7 +20,7 @@ if(burn_duration > 0){
 		for(i=0;i<irandom_range(1,3);i+=1){
 			xx = random_range(bbox_left,bbox_right);
 			yy = random_range(bbox_top,bbox_bottom);
-			instance_create_depth(xx,yy,depth-1,effect_enemy_fire);
+			instance_create_depth(xx,yy,0,effect_enemy_fire);
 		}
 	}
 }

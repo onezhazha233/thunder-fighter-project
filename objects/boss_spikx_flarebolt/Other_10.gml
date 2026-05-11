@@ -109,10 +109,10 @@ OnDie = function(){
 }
 
 SetIdle = function(){
-	if(layer_sequence_get_sequence(enemy_sequence) = sequence_get(seq_enemy_boss_mini_0_uncover)||layer_sequence_get_sequence(enemy_sequence) = sequence_get(seq_enemy_boss_mini_0_uncover_attack)){
-		SetSequence(seq_enemy_boss_mini_0_cover);
+	if(layer_sequence_get_sequence(enemy_sequence) = sequence_get(seq_enemy_boss_mini_og0_attack_1)||layer_sequence_get_sequence(enemy_sequence) = sequence_get(seq_enemy_boss_mini_og0_attack_1_intro)){
+		SetSequence(seq_enemy_boss_mini_og0_attack_1_outro);
 	}
-	else if!(layer_sequence_get_sequence(enemy_sequence) = sequence_get(seq_enemy_boss_mini_0_cover)){
+	else if!(layer_sequence_get_sequence(enemy_sequence) = sequence_get(seq_enemy_boss_mini_og0_attack_1_outro)){
 		SetState(ENEMY_STATE.IDLE);
 	}
 }

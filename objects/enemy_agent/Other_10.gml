@@ -241,7 +241,7 @@ SetBurn = function(b){
 		for(i=0;i<irandom_range(3,5);i+=1){
 			xx = random_range(bbox_left,bbox_right);
 			yy = random_range(bbox_top,bbox_bottom);
-			instance_create_depth(xx,yy,depth-1,effect_enemy_fire);
+			instance_create_depth(xx,yy,0,effect_enemy_fire);
 		}
 	}
 	else{
@@ -264,13 +264,14 @@ SetFrozen = function(f){
         effect_alpha = 0.5;
         layer_sequence_speedscale(enemy_sequence,0);
         SetFlame(-1,-1);
-        frozen_time = 120;
+		SpawnFrozenGrid(effect_enemy_ice, spr_effect_enemy_ice, 1, 1);
+		SpawnFrozenGrid(effect_enemy_snowflake_fog, spr_effect_enemy_fog, 1, 0.85);
     }
     else{
         frozen_duration = -1;
         effect_alpha = 0;
         layer_sequence_speedscale(enemy_sequence,1);
-        SetFlame(flame_lower,flame_upper);//重新创建尾焰
+        SetFlame(flame_lower,flame_upper);
 		frozen_cd = frozen_cd_time;
     }
 }

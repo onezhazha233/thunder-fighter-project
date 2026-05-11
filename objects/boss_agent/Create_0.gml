@@ -61,5 +61,4 @@ frozen_target = 300
 frozen_cd_time = 200
 frozen_moving = true
 
-global.inv_cutscene = 1
-if(Player_IsEnabled())player.equipment.SetEnabled(false);
+Player_SetBreaktime(true);

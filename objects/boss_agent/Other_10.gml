@@ -31,8 +31,7 @@ SetState = function(s){
 		if(instance_exists(bullet_emitter_inst)){
 			bullet_emitter_inst.enabled = true;
 		}
-		global.inv_cutscene = 0;
-		if(Player_IsEnabled())player.equipment.SetEnabled(true);
+		Player_SetBreaktime(false);
 		inv_collision = false;
 		SetFlame(flame_lower,flame_upper);
 		if(idle_mode = 0){
@@ -121,10 +120,7 @@ SetSurfEnabled = function(enabled){
 			}
 			surface_reset_target();
 		}
-		if(hpbar_enabled = true&&hurt_time > 0){
-			draw_sprite_ext(spr_ui_hpbar_enemy,0,x,y+hpbar_yoffset*image_yscale,image_xscale,image_yscale,0,-1,1);
-			draw_sprite_part_ext(spr_ui_hpbar_enemy,1,0,0,sprite_get_width(spr_ui_hpbar_enemy)*hp/hp_max,sprite_get_height(spr_ui_hpbar_enemy),x-sprite_get_xoffset(spr_ui_hpbar_enemy),y-sprite_get_yoffset(spr_ui_hpbar_enemy)+hpbar_yoffset*image_yscale,image_xscale,image_yscale,-1,1);
-		}
+		draw_text(mouse_x+50,mouse_y,frozen_duration)
 	}
 	layer_script_begin(layer_enemy, scrBegin);
 	layer_script_end(layer_enemy, scrEnd);
@@ -259,7 +255,7 @@ SetBurn = function(b){
 		for(i=0;i<irandom_range(3,5);i+=1){
 			xx = random_range(bbox_left,bbox_right);
 			yy = random_range(bbox_top,bbox_bottom);
-			instance_create_depth(xx,yy,depth-1,effect_enemy_fire);
+			instance_create_depth(xx,yy,0,effect_enemy_fire);
 		}
 	}
 	else{
@@ -270,12 +266,8 @@ SetBurn = function(b){
 
 SetFrozen = function(f){
     frozen_duration = f;
-	SetMoveEnabled(!f);
-	/*if(f > 0){
-	    frozen_moving = move_enabled;
-	}
-	SetMoveEnabled(f <= 0 ? frozen_moving : false);*/
-	if(instance_exists(bullet_emitter_inst)){
+    SetMoveEnabled(!f);
+    if(instance_exists(bullet_emitter_inst)){
 		if(f > 0){
 			bullet_emitter_inst.end_attack();
 		}
@@ -286,13 +278,14 @@ SetFrozen = function(f){
         effect_alpha = 0.5;
         layer_sequence_speedscale(enemy_sequence,0);
         SetFlame(-1,-1);
-        frozen_time = 120;
+		SpawnFrozenGrid(effect_enemy_ice, spr_effect_enemy_ice, 1, 1);
+		SpawnFrozenGrid(effect_enemy_snowflake_fog, spr_effect_enemy_fog, 1, 0.85);
     }
     else{
         frozen_duration = -1;
         effect_alpha = 0;
         layer_sequence_speedscale(enemy_sequence,1);
-        SetFlame(flame_lower,flame_upper);  // 重新创建尾焰（默认速度就是1）
+        SetFlame(flame_lower,flame_upper);
 		SetIdle();
 		frozen_cd = frozen_cd_time;
     }

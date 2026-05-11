@@ -9,7 +9,7 @@ if(duration = 0){
 }
 
 if(Player_IsEnabled()){
-	if(global.inv_hurt = 0&&global.inv_shield = 0&&global.inv_cutscene = 0){
+	if(global.inv_hurt = 0&&global.inv_shield = 0&&!Player_IsBreaktime()){
 		if(collision_mask_enabled = true){
 			if(place_meeting(x,y,player)){
 				event_user(0);

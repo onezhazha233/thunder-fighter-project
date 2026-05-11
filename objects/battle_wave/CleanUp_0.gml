@@ -13,15 +13,13 @@ if(instance_exists(battle_wave_manager)){
 }
 
 if (is_last_wave) {
-	global.inv_cutscene = 1;
+	Player_SetBreaktime(true);
 	if (Player_IsEnabled()) {
-		player.equipment.SetEnabled(false);
 		Swarm_SetEnabled(false);
 	}
 } else {
-	global.inv_cutscene = 0;
+	Player_SetBreaktime(false);
 	if (Player_IsEnabled()) {
-		player.equipment.SetEnabled(true);
 		Swarm_SetEnabled(true);
 	}
 }

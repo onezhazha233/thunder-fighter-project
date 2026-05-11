@@ -11,11 +11,11 @@ function GlobalInit(){
 	global.atk_all_bonus = [];
 	global.inv_hurt = 0;
 	global.inv_shield = 0;
-	global.inv_cutscene = 0;
 	global.rampage_duration = 300;
 	global.quantum_shield_duration = 300;
 	global.inv_duration = 120;
 	global.score = 0;
+	global.breaktime = true;//为true时涉及倒计时的机制会暂停
 	
 	global.current_equipment = {
 		plane: plane_assault_a,

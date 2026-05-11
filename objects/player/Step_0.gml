@@ -1,9 +1,5 @@
 live;
 if(visible = true){
-	if(place_meeting(x,y,bullet_enemy)&&global.inv_hurt = 0&&global.inv_shield = 0&&global.inv_cutscene = 0){
-		//event_user(0);
-	}
-	
 	if(moveable = true){
 		var touch_index = 0;
 		var is_touching = device_mouse_check_button(touch_index, mb_left);
@@ -66,7 +62,7 @@ if(visible = true){
 		}
 		
 		if(rampage_duration > 0){
-			if(equipment.enabled = true){
+			if!(Player_IsBreaktime()){
 				rampage_duration -= 1;
 			}
 		}

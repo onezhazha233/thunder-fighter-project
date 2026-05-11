@@ -15,7 +15,7 @@ if(burn_duration > 0){
 		for(i=0;i<irandom_range(1,3);i+=1){
 			xx = random_range(bbox_left,bbox_right);
 			yy = random_range(bbox_top,bbox_bottom);
-			instance_create_depth(xx,yy,depth-1,effect_enemy_fire);
+			instance_create_depth(xx,yy,0,effect_enemy_fire);
 		}
 	}
 }
@@ -31,6 +31,9 @@ if(frozen_amount >= frozen_target){
 if(frozen_duration > 0){
 	frozen_amount = 0;
 	frozen_duration -= 1;
+	if(frozen_duration mod 5 = 0){
+		SpawnFrozenGrid(effect_enemy_snowflake_fog, spr_effect_enemy_snowflake, 0.75, 0.02);
+	}
 }
 if(frozen_duration = 0){
 	frozen_duration = -1;

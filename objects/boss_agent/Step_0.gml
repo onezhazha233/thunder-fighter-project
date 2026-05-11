@@ -33,8 +33,7 @@ if(hp <= 0){
 		battle_ui.boss_hpbar_hp = 0;
 		Anim_Create(battle_ui,"boss_hpbar_enabled",0,0,1,-1,0,180);
 		Anim_Create(battle_wave,"enabled",0,0,0,1,0,240);
-		global.inv_cutscene = 1;
-		if(Player_IsEnabled())player.equipment.SetEnabled(false);
+		Player_SetBreaktime(true);
 		BGM_SetVolume(1,0,60);
 		battle.alarm[2] = 240;
 		OnDie();
@@ -142,7 +141,7 @@ if(layer_sequence_is_finished(enemy_sequence)){
 }
 
 if(inv_collision = false){
-	if(global.inv_cutscene = 0){
+	if!(Player_IsBreaktime()){
 		if(collision_type = 0){
 			player_point = collision_rectangle(x-left*image_xscale,y-up*image_yscale,x+right*image_xscale,y+down*image_yscale,player,1,1);
 			if(instance_exists(player_point)){
