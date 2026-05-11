@@ -6,8 +6,8 @@ display_mode = DISPLAY_MODE.SPRITE
 enemy_sprite = spr_enemy_minion_4b
 flame_lower = seq_enemy_minion_4b_flame
 
-hp_max = 15
-hp = 15
+hp_max = 30
+hp = 25
 
 hpbar_yoffset = 80
 
