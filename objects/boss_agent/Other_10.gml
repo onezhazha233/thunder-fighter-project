@@ -120,7 +120,6 @@ SetSurfEnabled = function(enabled){
 			}
 			surface_reset_target();
 		}
-		draw_text(mouse_x+50,mouse_y,frozen_duration)
 	}
 	layer_script_begin(layer_enemy, scrBegin);
 	layer_script_end(layer_enemy, scrEnd);

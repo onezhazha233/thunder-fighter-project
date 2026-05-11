@@ -1,10 +1,7 @@
 live;
 event_inherited();
 
-scale_x = 1
-scale_y = 1
-
-weapon_level = 0
+damages = [1/2,1.3/2,1.7/2,2/2,2/2]
 
 l1b = 0//两个不同的弹幕交替发射
 

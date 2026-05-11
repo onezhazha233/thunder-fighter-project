@@ -1,9 +1,6 @@
 live;
 event_inherited();
 
-scale_x = 1
-scale_y = 1
-
 damages = [0.201,0.2464,0.3029,0.3333,0.375]
 
 time_interval_idle = [90+60,80+60,70+60,60+60]
