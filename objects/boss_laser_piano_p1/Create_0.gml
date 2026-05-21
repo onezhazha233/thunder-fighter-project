@@ -25,6 +25,8 @@ Anim_Create(id,"hp",0,0,hp,hp_max-hp,40)
 x = 360
 y = -500
 
+y_target = 250
+
 battle_ui.boss_hpbar_enabled = true
 battle_wave.enabled = false
 

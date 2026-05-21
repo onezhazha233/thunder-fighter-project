@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"boss_laser_piano_p1",
+  "%Name":"battle_bg_factory",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"boss_laser_piano_p1",
+  "name":"battle_bg_factory",
   "overriddenProperties":[],
   "parent":{
-    "name":"original",
-    "path":"folders/物体/enemy/boss/original.yy",
+    "name":"battle",
+    "path":"folders/物体/bg/battle.yy",
   },
   "parentObjectId":{
-    "name":"boss_agent",
-    "path":"objects/boss_agent/boss_agent.yy",
+    "name":"battle_bg",
+    "path":"objects/battle_bg/battle_bg.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
