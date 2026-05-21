@@ -28,8 +28,4 @@ battle_wave.enabled = false
 
 bullet_emitter = emitter_boss_umbra_apex_p1
 
-intro_move_started = false
-intro_move_done = false
-intro_move_timer = 0
-
 items = [[[battle_item_quantum_shield,battle_item_weapon_upgrade],1]]

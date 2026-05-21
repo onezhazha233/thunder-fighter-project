@@ -28,10 +28,6 @@ battle_wave.enabled = false
 
 bullet_emitter = emitter_boss_umbra_apex_p2
 
-intro_move_started = false
-intro_move_done = false
-intro_move_timer = 0
-
 die_sequence = seq_enemy_boss_large_og0_die
 
 items = []

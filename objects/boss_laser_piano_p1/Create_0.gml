@@ -1,0 +1,33 @@
+live;
+event_inherited();
+
+up = 150
+down = 150
+left = 360
+right = 360
+
+idle_mode = IDLE_MODE.END_FRAME
+
+pre_sequence = seq_enemy_boss_large_og1_p1_intro
+intro_sequence = seq_enemy_boss_large_og1_p1_intro
+idle_sequence = seq_enemy_boss_large_og1_p1_intro
+flame_lower = seq_enemy_boss_large_og1_p1_flame
+
+explosion = effect_explosion_boss
+
+bgm = bgm_boss_large
+
+hp_max = 1000*global.boss_hp_ratio
+hp = 1
+
+Anim_Create(id,"hp",0,0,hp,hp_max-hp,40)
+
+x = 360
+y = -500
+
+battle_ui.boss_hpbar_enabled = true
+battle_wave.enabled = false
+
+bullet_emitter = noone
+
+items = [[[battle_item_quantum_shield,battle_item_weapon_upgrade],1]]
