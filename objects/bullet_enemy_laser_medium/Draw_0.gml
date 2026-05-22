@@ -26,11 +26,11 @@ if(state >= 2){
 		if(array_length(find) > 0){
 			ex = x + lengthdir_x(length,image_angle);
 			ey = y + lengthdir_y(length,image_angle);
-			draw_sprite_ext(sprite_effect,0,ex,ey,laser_scale*choose(1,-1),laser_scale*image_xscale/0.8,choose(0,180)+image_angle+90,-1,image_alpha);
+			draw_sprite_ext(sprite_effect,0,ex,ey,laser_scale*choose(1,-1),laser_scale*image_xscale/1.2,choose(0,180)+image_angle+90,-1,image_alpha);
 		}
-		find_player = laser_find_width(x,y,image_angle,length,10,player,true,true);
+		find_player = laser_find_width(x,y,image_angle,length,30,player,true,true);
 		if(array_length(find_player) > 0){
-			if(laser_scale > 0.2){
+			if(laser_scale > 0.4){
 				if(Player_IsEnabled()){
 					if(global.inv_hurt = 0&&global.inv_shield = 0){
 						event_user(0);

@@ -26,7 +26,8 @@ if(state >= 2){
 				find[0][0].OnBlock();
 			}
 		}
-		draw_surface_general(surf,0,0,sprite_get_width(sprite_laser_start),length,x+lengthdir_x(sprite_get_width(sprite_laser_start)/2,image_angle+90),y+lengthdir_y(sprite_get_width(sprite_laser_start)/2,image_angle+90),1,-1,image_angle-90,-1,-1,-1,-1,image_alpha);
+		if(length > 40)draw_laser(sprite_laser,laser_image,x+lengthdir_x(40,image_angle),y+lengthdir_y(40,image_angle),0,image_angle,length-40,false,laser_scale,1,image_alpha);
+		draw_laser(sprite_laser_start,laser_image,x,y,0,image_angle,length,false,laser_scale,1,image_alpha,true);
 		if(array_length(find) > 0){
 			ex = x + lengthdir_x(length,image_angle);
 			ey = y + lengthdir_y(length,image_angle);

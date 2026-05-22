@@ -3,7 +3,7 @@ event_inherited()
 
 inv_block = true
 
-damage = 2*global.enemy_damage_ratio
+damage = 2.5*global.enemy_damage_ratio
 
 sprite_ball = spr_bullet_enemy_laser_green_ball
 sprite_ring = spr_bullet_enemy_laser_green_ring
