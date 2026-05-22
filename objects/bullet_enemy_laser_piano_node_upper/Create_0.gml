@@ -1,0 +1,2 @@
+live;
+depth = DEPTH_BATTLE.BULLETS_ENEMY - 10

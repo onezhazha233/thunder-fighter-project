@@ -1,7 +1,12 @@
 live;
 if(state < 2)draw_sprite_ext(sprite_ball,0,x+lengthdir_x(ball_offset,image_angle),y+lengthdir_y(ball_offset,image_angle),ball_scale_x,ball_scale_y,image_angle,-1,1);
 if(state = 0){
-	draw_sprite_ext(sprite_ring,0,x,y,ring_scale,ring_scale,image_angle,-1,lerp(0.2,0.5,(5-ring_scale)/5));
+	if(charge_mode = 0){
+		draw_sprite_ext(sprite_ring,0,x,y,ring_scale,ring_scale,image_angle,-1,lerp(0.2,0.5,(5-ring_scale)/5));
+	}
+	else if(time < charge_time){
+		draw_sprite_ext(sprite_ball,0,x,y,ring_scale,ring_scale,image_angle,-1,0.5);
+	}
 	for(i=0;i<3;i+=1){
 		draw_sprite_ext(sprite_ball,0,x+lengthdir_x(effect_dist[i],effect_dir[i]),y+lengthdir_y(effect_dist[i],effect_dir[i]),effect_dist[i]/60,0.15,effect_dir[i],-1,0.8);
 	}

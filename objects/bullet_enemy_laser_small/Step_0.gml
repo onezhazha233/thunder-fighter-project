@@ -4,26 +4,43 @@ for(i=0;i<3;i+=1){
 	effect_dist[i] = max(0,effect_dist[i]-7);
 }
 if(state = 0){
-	delay -= 1;
-	if(delay = 0){
+	if(time = delay){
 		SetState(1);
 	}
-	if(time mod 16 = 1){
-		Anim_Create(id,"ring_scale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,5,-5,16);
-	}
-	ball_scale_x = 1 + sin(time*5)*0.2;
-	ball_scale_y = 1 + sin(time*5)*0.2;
-	if(time mod 1 = 0){
-		for(i=0;i<3;i+=1){
-			if(effect_dist[i] = 0){
-				effect_dir[i] = random(360);
-				effect_dist[i] = random_range(60,100);
+	if(charge_mode = 0){
+		if(time mod 16 = 1){
+			Anim_Create(id,"ring_scale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,5,-5,16);
+		}
+		ball_scale_x = 1 + sin(time*5)*0.2;
+		ball_scale_y = 1 + sin(time*5)*0.2;
+		if(time mod 1 = 0){
+			for(i=0;i<3;i+=1){
+				if(effect_dist[i] = 0){
+					effect_dir[i] = random(360);
+					effect_dist[i] = random_range(60,100);
+				}
 			}
+		}
+	}
+	else{
+		if(time = 1){
+			Anim_Create(id,"ball_scale_x",0,0,0.8,-0.8,charge_time);
+			Anim_Create(id,"ball_scale_y",0,0,0.8,-0.8,charge_time);
+		}
+		if(time < charge_time){
+			if(time mod 15 = 1){
+				Anim_Create(id,"ring_scale",0,0,3,-3,10);
+			}
+		}
+		else{
+			ball_scale_x = 0;
+			ball_scale_y = 0;
 		}
 	}
 }
 if(state = 1){
 	ball_scale_x = 1;
+	ball_scale_y = 1;
 	if(time = 1){
 		Anim_Create(id,"ball_scale_x",0,0,1,10,4);
 		Anim_Create(id,"ball_offset",0,0,0,15*10,4);

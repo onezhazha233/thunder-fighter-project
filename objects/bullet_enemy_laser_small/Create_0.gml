@@ -1,7 +1,7 @@
 live;
 event_inherited()
 
-inv_block = false
+inv_block = true
 
 damage = 1.5*global.enemy_damage_ratio
 
@@ -33,6 +33,9 @@ time = 0
 
 delay = 60
 duration = 15
+
+charge_mode = 0//0为正常蓄力 1为无特效蓄力
+charge_time = 45//蓄力模式为1时有效
 
 SetState = function(s){
 	state = s;
