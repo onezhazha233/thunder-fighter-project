@@ -135,7 +135,7 @@ attack_4 = function(){
 		}
 	}
 	if(attack_time = 90){
-		p_idx = 12; // 默认值防错
+		p_idx = 12;
 		if(instance_exists(player)){
 			px = player.x;
 		}

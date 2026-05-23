@@ -15,7 +15,15 @@
     "resourceVersion":"2.0",
   },
   "eventStubScript":null,
-  "eventToFunction":{},
+  "eventToFunction":{
+    "0":"",
+    "1":"",
+    "2":"",
+    "3":"test_seq_scr",
+    "4":"",
+    "5":"",
+    "6":"",
+  },
   "length":90.0,
   "lockOrigin":false,
   "moments":{
