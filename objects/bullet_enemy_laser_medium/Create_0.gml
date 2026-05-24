@@ -2,6 +2,7 @@ live;
 event_inherited()
 
 inv_block = true
+auto_destroy = false
 
 damage = 2.5*global.enemy_damage_ratio
 

@@ -1,6 +1,7 @@
 function Player_SetShield(shield_duration){
 	if(Player_IsEnabled()){
 		if(shield_duration > 0){
+			audio_play_sound(snd_quantum_shield_intro,0,0);
 			layer_sequence_create(global.layer_item_effects,player.x,player.y,seq_battle_item_effect_quantum_shield);
 			if(instance_exists(battle_quantum_shield)){
 				with(battle_quantum_shield){

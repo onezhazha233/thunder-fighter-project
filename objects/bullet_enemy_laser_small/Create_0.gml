@@ -2,6 +2,7 @@ live;
 event_inherited()
 
 inv_block = true
+auto_destroy = false
 
 damage = 1.5*global.enemy_damage_ratio
 
@@ -22,8 +23,6 @@ for(i=0;i<3;i+=1){
 	effect_dir[i] = 0;
 	effect_dist[i] = 0;
 }
-
-surf = surface_create(sprite_get_width(sprite_laser_start),1500)
 
 image_angle = -90
 

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"draw_laser_release_cache",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_laser_release_cache",
+  "parent":{
+    "name":"Draw",
+    "path":"folders/脚本/Draw.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

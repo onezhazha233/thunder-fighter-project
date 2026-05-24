@@ -1,0 +1,86 @@
+live;
+time += 1
+
+if(instance_exists(mark)){
+	if(mark.GetFrozen() > 0){
+		instance_destroy();
+	}
+}
+
+for(i=0;i<3;i+=1){
+	effect_dist[i] = max(0,effect_dist[i]-15);
+}
+if(state = 0){
+	if(time = delay){
+		SetState(1);
+	}
+	if(charge_mode = 0){
+		if(time = 1){
+			Anim_Create(id,"ball_flash_scale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0,4,delay/2);
+		}
+		if(time mod 16 = 1){
+			Anim_Create(id,"ring_scale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,5,-5,16);
+		}
+		if(time mod 2 = 0){
+			if(ball_scale_x = 1){
+				ball_scale_x = ball_flash_scale;
+				ball_scale_y = ball_flash_scale;
+			}
+			else{
+				ball_scale_x = 1;
+				ball_scale_y = 1;
+			}
+		}
+		if(time mod 1 = 0){
+			for(i=0;i<3;i+=1){
+				if(effect_dist[i] = 0){
+					effect_dir[i] = random(360);
+					effect_dist[i] = random_range(100,150);
+				}
+			}
+		}
+	}
+	else{
+		if(time = 1){
+			Anim_Create(id,"ball_scale_x",0,0,0.8,-0.8,charge_time);
+			Anim_Create(id,"ball_scale_y",0,0,0.8,-0.8,charge_time);
+		}
+		if(time < charge_time){
+			if(time mod 15 = 1){
+				Anim_Create(id,"ring_scale",0,0,3,-3,10);
+			}
+		}
+		else{
+			ball_scale_x = 0;
+			ball_scale_y = 0;
+		}
+	}
+}
+if(state = 1){
+	ball_scale_x = 0;
+	ball_scale_y = 0;
+	if(time = 2){
+		Anim_Create(id,"laser_scale",0,0,0,2.5,6);
+	}
+	if(time = 8){
+		SetState(2);
+	}
+}
+if(state = 2){
+	laser_image = 0;
+	laser_scale = 2.5+sin(duration)*0.2;
+	duration -= 1;
+	if(duration = 0){
+		SetState(3);
+	}
+}
+if(state = 3){
+	if(laser_scale < 0.1){
+		destroy_type = 3;
+		instance_destroy();
+	}
+	if(time = 1){
+		laser_image = 0;
+		Anim_Create(id,"laser_scale",0,0,laser_scale,-laser_scale,12);
+	}
+}

@@ -1,14 +1,14 @@
 live;
 time += 1
 if(time = 1){
-	cn = instance_create_depth(360,300,0,bullet_enemy_laser_piano_node);
+	cn = instance_create_depth(360,300,0,bullet_enemy_laser_piano_node_0);
 	dist = 0;
 	ang = 0;
 	rot = 0;
 }
 if(time = 90){
 	for(i=0;i<4;i+=1){
-		sn[i] = instance_create_depth(360,300,0,bullet_enemy_laser_piano_node);
+		sn[i] = instance_create_depth(360,300,0,bullet_enemy_laser_piano_node_0);
 		sn[i].state = 2;
 	}
 	Anim_Create(id,"dist",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0,300,30);

@@ -7,7 +7,7 @@ time = 0
 
 accept_laser = 0
 delay = 30
-duration = -1
+duration = 60
 
 ring_scale = 5
 ring_alpha = 0
@@ -20,16 +20,22 @@ node_0_alpha = 0
 node_1_scale = 1.5
 node_1_alpha = 0
 node_part = 1
-node_redcircle_y = 10
-node_bottom_y = 31
-node_side_x = -7
-node_side_y = 28
+node_bottom_dist = 0
+node_trangle_0_alpha = 0
+node_trangle_1_alpha = 1
+node_trangle_1_scale = 0
 redlight_scale = 0
 redlight_alpha = 0
 
+auto_destroy = false
 inv_block = true
 collision_destroy = false
+collision_enabled = false
+
+blk = noone
 
 if!(instance_exists(bullet_enemy_laser_piano_node_upper)){
 	instance_create_depth(0,0,0,bullet_enemy_laser_piano_node_upper);
 }
+
+alarm[0] = 1

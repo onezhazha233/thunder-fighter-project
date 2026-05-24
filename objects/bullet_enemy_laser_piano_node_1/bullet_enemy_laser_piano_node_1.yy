@@ -1,13 +1,14 @@
 {
   "$GMObject":"",
-  "%Name":"bullet_enemy_laser_piano_node",
+  "%Name":"bullet_enemy_laser_piano_node_1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"bullet_enemy_laser_piano_node",
+  "name":"bullet_enemy_laser_piano_node_1",
   "overriddenProperties":[],
   "parent":{
     "name":"bullet_enemy",
@@ -35,9 +36,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bullet_enemy_laser_piano_node",
-    "path":"sprites/spr_bullet_enemy_laser_piano_node/spr_bullet_enemy_laser_piano_node.yy",
+    "name":"spr_bullet_enemy_laser_piano_node_1",
+    "path":"sprites/spr_bullet_enemy_laser_piano_node_1/spr_bullet_enemy_laser_piano_node_1.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_bullet_enemy_laser_piano_node_trangle_mask",
+    "path":"sprites/spr_bullet_enemy_laser_piano_node_trangle_mask/spr_bullet_enemy_laser_piano_node_trangle_mask.yy",
+  },
   "visible":true,
 }

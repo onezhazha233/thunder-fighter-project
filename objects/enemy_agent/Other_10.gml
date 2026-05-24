@@ -261,7 +261,7 @@ SetFrozen = function(f){
 	}
     if(f > 0){
         effect_type = 0;
-        effect_alpha = 0.5;
+        effect_alpha = 0.3;
         layer_sequence_speedscale(enemy_sequence,0);
         SetFlame(-1,-1);
 		SpawnFrozenGrid(effect_enemy_ice, spr_effect_enemy_ice, 1, 1);
@@ -274,4 +274,8 @@ SetFrozen = function(f){
         SetFlame(flame_lower,flame_upper);
 		frozen_cd = frozen_cd_time;
     }
+}
+
+GetFrozen = function(){
+	return frozen_duration;
 }

@@ -32,21 +32,22 @@ if(state = 2){
 		Anim_Create(id,"node_1_scale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,node_1_scale,1-node_1_scale,20);
 	}
 	if(time = 20){
+		collision_enabled = true;
 		Anim_Create(id,"node_0_alpha",0,0,0,1,20);
 	}
 	if(time = 30){
 		Anim_Create(id,"node_1_alpha",0,0,1,-1,10);
 	}
 	if(time = 40){
-		Anim_Create(id,"node_bottom_y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,node_bottom_y,57+3-node_bottom_y,20);
+		Anim_Create(id,"node_bottom_dist",ANIM_TWEEN.BACK,ANIM_EASE.OUT,0,40,20);
 	}
 	if(time = 45){
-		Anim_Create(id,"node_side_x",ANIM_TWEEN.BACK,ANIM_EASE.OUT,node_side_x,-15-node_side_x,20);
-		Anim_Create(id,"node_side_y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,node_side_y,45-node_side_y,20);
-		Anim_Create(id,"node_redcircle_y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,node_redcircle_y,32-node_redcircle_y,20);
+		blk = instance_create_depth(x,y,0,bullet_enemy_block);
+		blk.sprite_index = mask_index;
 		Anim_Create(id,"redlight_alpha",0,0,0,1,10);
 		Anim_Create(id,"redlight_scale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,redlight_scale,1.5-redlight_scale,10);
 		Anim_Create(id,"redlight_scale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,1.5,-0.5,10,10);
+		Anim_Create(id,"node_trangle_0_alpha",0,0,0,1,10);
 		accept_laser = 1;
 	}
 	if(time = 65){
@@ -55,9 +56,11 @@ if(state = 2){
 	}
 }
 if(state = 3){
-	node_bottom_y = 57 + cos(time/20)*3;
-	node_side_x = -15 + sin(time/20)*1;
-	node_side_y = 45 + sin(time/20)*1;
+	if(time mod 40 = 1){
+		node_trangle_1_alpha = 1;
+		Anim_Create(id,"node_trangle_1_scale",0,0,0,1,40);
+		Anim_Create(id,"node_trangle_1_alpha",0,0,1,-1,5,35);
+	}
 	if(time = duration){
 		state = 4;
 		time = 0;
@@ -66,29 +69,27 @@ if(state = 3){
 }
 if(state = 4){
 	if(time = 1){
-		Anim_Create(id,"node_bottom_y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,node_bottom_y,20-node_bottom_y,20);
-		Anim_Create(id,"node_side_y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,node_side_y,10-node_side_y,20);
-		Anim_Create(id,"node_redcircle_y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,node_redcircle_y,10-node_redcircle_y,20);
-	}
-	if(time = 20){
 		Anim_Create(id,"redlight_alpha",0,0,1,-1,10);
 		node_part = 0;
 		Anim_Create(id,"node_1_alpha",0,0,0,1,10);
 		Anim_Create(id,"node_0_alpha",0,0,1,-1,20);
-	}
-	if(time = 20){
 		for(i=0;i<3;i+=1){
 			Anim_Create(id,"node_1_alpha",0,0,1,-0.5,10,i*20);
 			Anim_Create(id,"node_1_alpha",0,0,0.5,0.5,10,i*20+10);
 		}
 		Anim_Create(id,"node_1_alpha",0,0,1,-1,10,60);
 	}
-	if(time = 90){
+	if(time = 30){
+		instance_destroy(blk);
+		collision_enabled = false;
+	}
+	if(time = 70){
+		destroy_type = 3;
 		instance_destroy();
 	}
 }
 
-if(Player_IsEnabled()){
+if(Player_IsEnabled()&&collision_enabled = true){
 	if(global.inv_hurt = 0&&global.inv_shield = 0&&!Player_IsBreaktime()){
 		if(collision_mask_enabled = true){
 			if(place_meeting(x,y,player)){

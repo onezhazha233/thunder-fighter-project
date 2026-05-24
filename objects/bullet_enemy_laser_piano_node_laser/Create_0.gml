@@ -16,5 +16,6 @@ node_1_y = y+100
 duration = -1
 enabled = true
 
+auto_destroy = false
 inv_block = true
 collision_destroy = false

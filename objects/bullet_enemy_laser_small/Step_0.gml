@@ -1,5 +1,12 @@
 live;
 time += 1
+
+if(instance_exists(mark)){
+	if(mark.GetFrozen() > 0){
+		instance_destroy();
+	}
+}
+
 for(i=0;i<3;i+=1){
 	effect_dist[i] = max(0,effect_dist[i]-7);
 }

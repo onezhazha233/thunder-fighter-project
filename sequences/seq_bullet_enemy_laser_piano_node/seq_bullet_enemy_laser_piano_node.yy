@@ -117,7 +117,7 @@
       ],"traits":1,},
     {"$GMGraphicTrack":"","%Name":"spr_bullet_enemy_laser_piano_node","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_bullet_enemy_laser_piano_node","path":"sprites/spr_bullet_enemy_laser_piano_node/spr_bullet_enemy_laser_piano_node.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_bullet_enemy_laser_piano_node_0","path":"sprites/spr_bullet_enemy_laser_piano_node_0/spr_bullet_enemy_laser_piano_node_0.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
             },"Disabled":false,"id":"3b7ad71b-f52e-4c82-81eb-6ab02b8843d6","IsCreationKey":false,"Key":70.0,"Length":50.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_bullet_enemy_laser_piano_node","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294105672,"tracks":[
         {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
@@ -159,7 +159,7 @@
       ],"traits":0,},
     {"$GMGraphicTrack":"","%Name":"spr_bullet_enemy_laser_piano_node","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_bullet_enemy_laser_piano_node","path":"sprites/spr_bullet_enemy_laser_piano_node/spr_bullet_enemy_laser_piano_node.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_bullet_enemy_laser_piano_node_0","path":"sprites/spr_bullet_enemy_laser_piano_node_0/spr_bullet_enemy_laser_piano_node_0.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
             },"Disabled":false,"id":"ed7a8968-ed35-46e9-9203-f4681fdc64d0","IsCreationKey":false,"Key":60.0,"Length":60.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_bullet_enemy_laser_piano_node","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294105672,"tracks":[
         {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
@@ -348,7 +348,7 @@
       ],"traits":0,},
     {"$GMGraphicTrack":"","%Name":"spr_bullet_enemy_laser_piano_node_bg","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_bullet_enemy_laser_piano_node_bg","path":"sprites/spr_bullet_enemy_laser_piano_node_bg/spr_bullet_enemy_laser_piano_node_bg.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_bullet_enemy_laser_piano_node_0_bg","path":"sprites/spr_bullet_enemy_laser_piano_node_0_bg/spr_bullet_enemy_laser_piano_node_0_bg.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
             },"Disabled":false,"id":"28464c87-f25d-443d-848b-ed1d85390af2","IsCreationKey":false,"Key":70.0,"Length":50.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_bullet_enemy_laser_piano_node_bg","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4282964210,"tracks":[
         {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[

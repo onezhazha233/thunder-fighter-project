@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"draw_laser",
   "parent":{
-    "name":"Laser",
-    "path":"folders/脚本/Laser.yy",
+    "name":"Draw",
+    "path":"folders/脚本/Draw.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

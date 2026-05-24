@@ -28,14 +28,14 @@ if(frozen_amount >= frozen_target){
 	frozen_amount = 0;
 	SetFrozen(frozen_time);
 }
-if(frozen_duration > 0){
+if(GetFrozen() > 0){
 	frozen_amount = 0;
 	frozen_duration -= 1;
 	if(frozen_duration mod 5 = 0){
 		SpawnFrozenGrid(effect_enemy_snowflake_fog, spr_effect_enemy_snowflake, 0.75, 0.02);
 	}
 }
-if(frozen_duration = 0){
+if(GetFrozen() = 0){
 	frozen_duration = -1;
 	SetFrozen(0);
 }
