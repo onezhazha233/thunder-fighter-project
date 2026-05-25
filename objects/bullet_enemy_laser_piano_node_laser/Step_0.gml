@@ -29,3 +29,9 @@ if(Player_IsEnabled()){
 		}
 	}
 }
+
+if(instance_exists(mark)){
+	if(mark.GetFrozen() > 0){
+		enabled = false;
+	}
+}

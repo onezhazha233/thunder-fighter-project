@@ -56,12 +56,13 @@ if(state = 2){
 	}
 }
 if(state = 3){
+	duration -= 1;
 	if(time mod 40 = 1){
 		node_trangle_1_alpha = 1;
 		Anim_Create(id,"node_trangle_1_scale",0,0,0,1,40);
 		Anim_Create(id,"node_trangle_1_alpha",0,0,1,-1,5,35);
 	}
-	if(time = duration){
+	if(duration = 0){
 		state = 4;
 		time = 0;
 		accept_laser = 0;
@@ -88,6 +89,10 @@ if(state = 4){
 		instance_destroy();
 	}
 }
+if(instance_exists(blk)){
+	blk.x = x;
+	blk.y = y;
+}
 
 if(Player_IsEnabled()&&collision_enabled = true){
 	if(global.inv_hurt = 0&&global.inv_shield = 0&&!Player_IsBreaktime()){
@@ -99,6 +104,16 @@ if(Player_IsEnabled()&&collision_enabled = true){
 					instance_destroy();
 				}
 			}
+		}
+	}
+}
+
+if(instance_exists(mark)){
+	if(mark.GetFrozen() > 0){
+		if(state < 4){
+			accept_laser = 0;
+			state = 4;
+			time = 0;
 		}
 	}
 }

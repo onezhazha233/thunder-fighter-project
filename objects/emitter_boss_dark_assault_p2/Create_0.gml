@@ -162,9 +162,7 @@ attack_4 = function(){//收缩移动激光 160
 	if(attack_time = 1){
 		mark.move_range[3] -= 700;
 		for(i=0;i<4;i+=1){
-			blt[i] = MakeEnemyBullet(x,y+85,bullet_enemy_laser_small);
-			blt[i].delay = 60;
-			blt[i].duration = 60;
+			blt[i] = MakeEnemyLaser(0,x,y+85,1,-90,60,60); // 小激光，红色，角度-90，延迟60，持续时间60
 		}
 		Anim_Create(blt[0],"image_angle",0,0,blt[0].image_angle-90,60,60,60);
 		Anim_Create(blt[1],"image_angle",0,0,blt[1].image_angle-30,20,60,60);
@@ -378,5 +376,5 @@ var a6 = create_attack(6, attack_6,110);
 var a7 = create_attack(7, attack_7,170);
 var a8 = create_attack(8, attack_8,30,0.7);
 
-fixed_sequence = [ae,a7,a2,a0,a6,a4];
+fixed_sequence = [ae,a7,a2,a0,a6,a4,a8,a1,a3,a5];
 random_pool = [a0,a1,a2,a3,a4,a5,a6,a7,a8]

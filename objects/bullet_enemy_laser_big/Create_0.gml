@@ -14,6 +14,7 @@ sprite_effect = spr_bullet_enemy_effect_laser_blue
 sprite_start_effect = spr_bullet_enemy_laser_blue_start_effect
 
 start_effect = true
+wave_effect = false
 
 ball_offset = 0
 ball_scale_x = 0
@@ -22,6 +23,9 @@ ball_flash_scale = 0.5
 ring_scale = 0
 laser_scale = 0
 laser_image = 0
+wave_offset = 0
+wave_xscale = 0
+wave_image = 0
 
 for(i=0;i<3;i+=1){
 	effect_dir[i] = 0;

@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"draw_laser_release_cache",
+  "%Name":"MakeEnemyLaser",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"draw_laser_release_cache",
+  "name":"MakeEnemyLaser",
   "parent":{
-    "name":"Draw",
-    "path":"folders/脚本/Draw.yy",
+    "name":"Laser",
+    "path":"folders/脚本/Laser.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

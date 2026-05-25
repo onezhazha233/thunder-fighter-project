@@ -61,6 +61,7 @@ if(state = 1){
 	ball_scale_y = 0;
 	if(time = 2){
 		Anim_Create(id,"laser_scale",0,0,0,2.5,6);
+		Anim_Create(id,"wave_xscale",0,0,0,1,6);
 	}
 	if(time = 8){
 		SetState(2);
@@ -82,5 +83,6 @@ if(state = 3){
 	if(time = 1){
 		laser_image = 0;
 		Anim_Create(id,"laser_scale",0,0,laser_scale,-laser_scale,12);
+		Anim_Create(id,"wave_xscale",0,0,wave_xscale,-wave_xscale,12);
 	}
 }

@@ -132,22 +132,8 @@ attack_3 = function(){//机炮 210
 attack_4 = function(){//激光 80
 	if(attack_time = 1){
 		mark.SetMoveEnabled(false);
-		l = MakeEnemyBullet(x-32,y+25,bullet_enemy_laser_small);
-		l.delay = 40;
-		l.duration = 30;
-		l.sprite_ball = spr_bullet_enemy_laser_red_ball;
-		l.sprite_ring = spr_bullet_enemy_laser_red_ring;
-		l.sprite_laser_start = spr_bullet_enemy_laser_red_start;
-		l.sprite_laser = spr_bullet_enemy_laser_red;
-		l.sprite_effect = spr_bullet_enemy_effect_laser_red;
-		l = MakeEnemyBullet(x+32,y+25,bullet_enemy_laser_small);
-		l.delay = 40;
-		l.duration = 30;
-		l.sprite_ball = spr_bullet_enemy_laser_red_ball;
-		l.sprite_ring = spr_bullet_enemy_laser_red_ring;
-		l.sprite_laser_start = spr_bullet_enemy_laser_red_start;
-		l.sprite_laser = spr_bullet_enemy_laser_red;
-		l.sprite_effect = spr_bullet_enemy_effect_laser_red;
+		l = MakeEnemyLaser(0,x-32,y+25,1,-90,40,30); // 小激光，红色，角度-90，延迟40，持续时间30
+		l = MakeEnemyLaser(0,x+32,y+25,1,-90,40,30); // 小激光，红色，角度-90，延迟40，持续时间30
 	}
 	if(attack_time = 80){
 		mark.SetMoveEnabled(true);
@@ -252,5 +238,5 @@ var a4 = create_attack(4, attack_4,40);
 var a5 = create_attack(5, attack_5,90);
 var a6 = create_attack(6, attack_6,60);
 
-fixed_sequence = [ae,a1,a2,a0,a4];
+fixed_sequence = [ae,a1,a2,a0,a4,a6,a5,a3];
 random_pool = [a0,a1,a2,a3,a4,a5,a6]

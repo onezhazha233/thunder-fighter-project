@@ -56,10 +56,11 @@ if(state = 2){
 	}
 }
 if(state = 3){
+	duration -= 1;
 	node_bottom_y = 57 + cos(time/20)*3;
 	node_side_x = -15 + sin(time/20)*1;
 	node_side_y = 45 + sin(time/20)*1;
-	if(time = duration){
+	if(duration = 0){
 		state = 4;
 		time = 0;
 		accept_laser = 0;
@@ -103,6 +104,16 @@ if(Player_IsEnabled()&&collision_enabled = true){
 					instance_destroy();
 				}
 			}
+		}
+	}
+}
+
+if(instance_exists(mark)){
+	if(mark.GetFrozen() > 0&&inv_frozen = false){
+		if(state < 4){
+			accept_laser = 0;
+			state = 4;
+			time = 0;
 		}
 	}
 }

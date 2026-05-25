@@ -29,6 +29,6 @@ y = -500
 battle_ui.boss_hpbar_enabled = true
 battle_wave.enabled = false
 
-bullet_emitter = emitter_spikx_flarebolt
+bullet_emitter = emitter_boss_spikx_flarebolt
 
 items = []

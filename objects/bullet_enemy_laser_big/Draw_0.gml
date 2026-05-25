@@ -29,6 +29,7 @@ if(state >= 1){
 		}
 		if(length > 40)draw_laser(sprite_laser,laser_image,x+lengthdir_x(40,image_angle),y+lengthdir_y(40,image_angle),0,image_angle,length-40,false,laser_scale,1,image_alpha);
 		draw_laser(sprite_laser_start,laser_image,x,y,0,image_angle,length,false,laser_scale,1,image_alpha,true);
+		event_user(1);
 		if(instance_exists(bullet_enemy_block)&&array_length(find) > 0){
 			ex = x + lengthdir_x(length,image_angle);
 			ey = y + lengthdir_y(length,image_angle);

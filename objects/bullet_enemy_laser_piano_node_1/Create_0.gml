@@ -7,7 +7,7 @@ time = 0
 
 accept_laser = 0
 delay = 30
-duration = 60
+duration = -1
 
 ring_scale = 5
 ring_alpha = 0

@@ -236,22 +236,8 @@ attack_4 = function(){//收缩移动激光 160
 	if(attack_time = 1){
 		mark.move_range[3] -= 700;
 		for(i=0;i<2;i+=1){
-			blt[i,0] = MakeEnemyBullet(x-32,y+25,bullet_enemy_laser_small);
-			blt[i,0].delay = 60;
-			blt[i,0].duration = 60;
-			blt[i,0].sprite_ball = spr_bullet_enemy_laser_red_ball;
-			blt[i,0].sprite_ring = spr_bullet_enemy_laser_red_ring;
-			blt[i,0].sprite_laser_start = spr_bullet_enemy_laser_red_start;
-			blt[i,0].sprite_laser = spr_bullet_enemy_laser_red;
-			blt[i,0].sprite_effect = spr_bullet_enemy_effect_laser_red;
-			blt[i,1] = MakeEnemyBullet(x+32,y+25,bullet_enemy_laser_small);
-			blt[i,1].delay = 60;
-			blt[i,1].duration = 60;
-			blt[i,1].sprite_ball = spr_bullet_enemy_laser_red_ball;
-			blt[i,1].sprite_ring = spr_bullet_enemy_laser_red_ring;
-			blt[i,1].sprite_laser_start = spr_bullet_enemy_laser_red_start;
-			blt[i,1].sprite_laser = spr_bullet_enemy_laser_red;
-			blt[i,1].sprite_effect = spr_bullet_enemy_effect_laser_red;
+			blt[i,0] = MakeEnemyLaser(0,x-32,y+25,1,-90,60,60); // 小激光，红色，角度-90，延迟60，持续时间60
+			blt[i,1] = MakeEnemyLaser(0,x+32,y+25,1,-90,60,60); // 小激光，红色，角度-90，延迟60，持续时间60;
 		}
 		Anim_Create(blt[0,0],"image_angle",0,0,blt[0,0].image_angle-90,30,60,60);
 		Anim_Create(blt[1,0],"image_angle",0,0,blt[1,0].image_angle-60,40,60,60);
@@ -528,5 +514,5 @@ var a6 = create_attack(6, attack_6,30);
 var a7 = create_attack(7, attack_7,60);
 var a8 = create_attack(8, attack_8,50,0.7);
 
-fixed_sequence = [ae,a7,a2,a0,a6,a4];
+fixed_sequence = [ae,a7,a2,a0,a6,a4,a8,a1,a3,a5];
 random_pool = [a0,a1,a2,a3,a4,a5,a6,a7,a8]

@@ -39,9 +39,7 @@ attack_1 = function(){
 	live_name = "emitter_enemy_og0c0:attack_1";
 	live;
 	if(attack_time = 1){
-		ls = MakeEnemyBullet(x,y+80,bullet_enemy_laser_medium);
-		ls.delay = 120;
-		ls.duration = 30;
+		ls = MakeEnemyLaser(1,x,y+80,1,-90,120,30); // 中激光，红色，角度-90，延迟120，持续时间30
 	}
 	if(instance_exists(ls)){
 		ls.x = x;

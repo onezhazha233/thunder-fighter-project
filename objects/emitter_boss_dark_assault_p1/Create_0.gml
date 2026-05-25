@@ -99,9 +99,7 @@ attack_3 = function(){//机炮 210
 attack_4 = function(){//激光 80
 	if(attack_time = 1){
 		mark.SetMoveEnabled(false);
-		l = MakeEnemyBullet(x,y+85,bullet_enemy_laser_small);
-		l.delay = 40;
-		l.duration = 30;
+		l = MakeEnemyLaser(0,x,y+85,1,-90,40,30); // 小激光，红色，角度-90，延迟40，持续时间30
 	}
 	if(attack_time = 80){
 		mark.SetMoveEnabled(true);
@@ -158,5 +156,5 @@ var a4 = create_attack(4, attack_4,20);
 var a5 = create_attack(5, attack_5,130);
 var a6 = create_attack(6, attack_6,20);
 
-fixed_sequence = [ae,a1,a2,a0,a4];
+fixed_sequence = [ae,a1,a2,a0,a4,a6,a5,a3];
 random_pool = [a0,a1,a2,a3,a4,a5,a6]
