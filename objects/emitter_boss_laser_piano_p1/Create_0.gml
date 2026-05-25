@@ -270,13 +270,13 @@ attack_7 = function(){//旋转扩散激光
 	live;
 	if(attack_time = 1){
 		if!(instance_exists(bullet_enemy_laser_piano_node_0)||instance_exists(bullet_enemy_laser_piano_node_1)){
-			bl = MakeEnemyLaser(2,x-300,y+70,2,-50,120); // 大激光，蓝色，角度-50，延迟120
+			bl = MakeEnemyLaser(2,x-300,y+70,2,-50,120,120); // 大激光，蓝色，角度-50，延迟120
 			Anim_Create(bl,"image_angle",0,0,bl.image_angle,-15,120,120);
-			bl = MakeEnemyLaser(2,x-300,y+70,2,-40,120); // 大激光，蓝色，角度-40，延迟120
+			bl = MakeEnemyLaser(2,x-300,y+70,2,-40,120,120); // 大激光，蓝色，角度-40，延迟120
 			Anim_Create(bl,"image_angle",0,0,bl.image_angle,20,120,120);
-			bl = MakeEnemyLaser(2,x+300,y+70,2,-130,120); // 大激光，蓝色，角度-130，延迟120
+			bl = MakeEnemyLaser(2,x+300,y+70,2,-130,120,120); // 大激光，蓝色，角度-130，延迟120
 			Anim_Create(bl,"image_angle",0,0,bl.image_angle,15,120,120);
-			bl = MakeEnemyLaser(2,x+300,y+70,2,-140,120); // 大激光，蓝色，角度-140，延迟120
+			bl = MakeEnemyLaser(2,x+300,y+70,2,-140,120,120); // 大激光，蓝色，角度-140，延迟120
 			Anim_Create(bl,"image_angle",0,0,bl.image_angle,-20,120,120);
 		}
 		else{
@@ -284,20 +284,20 @@ attack_7 = function(){//旋转扩散激光
 		}
 	}
 	if(attack_time = 180){
-		ll = MakeEnemyLaser(1,x-120,y+260,1,-90,0,100); // 中激光，红色，角度-90，无延迟，持续时间100
+		ll = MakeEnemyLaser(1,x-120,y+260,1,-90,60,100); // 中激光，红色，角度-90，无延迟，持续时间100
 		ll.depth -= 10;
-		ll = MakeEnemyLaser(1,x-120,y+260,1,-90,0,100); // 中激光，红色，角度-90，无延迟，持续时间100
+		ll = MakeEnemyLaser(1,x-120,y+260,1,-90,60,100); // 中激光，红色，角度-90，无延迟，持续时间100
 		ll.depth -= 10;
 		Anim_Create(ll,"image_angle",0,0,ll.image_angle,-30,45,120);
-		ll = MakeEnemyLaser(1,x-120,y+260,1,-90,0,100); // 中激光，红色，角度-90，无延迟，持续时间100
+		ll = MakeEnemyLaser(1,x-120,y+260,1,-90,60,100); // 中激光，红色，角度-90，无延迟，持续时间100
 		ll.depth -= 10;
 		Anim_Create(ll,"image_angle",0,0,ll.image_angle,+30,45,120);
-		ll = MakeEnemyLaser(1,x+120,y+260,1,-90,0,100); // 中激光，红色，角度-90，无延迟，持续时间100
+		ll = MakeEnemyLaser(1,x+120,y+260,1,-90,60,100); // 中激光，红色，角度-90，无延迟，持续时间100
 		ll.depth -= 10;
-		ll = MakeEnemyLaser(1,x+120,y+260,1,-90,0,100); // 中激光，红色，角度-90，无延迟，持续时间100
+		ll = MakeEnemyLaser(1,x+120,y+260,1,-90,60,100); // 中激光，红色，角度-90，无延迟，持续时间100
 		ll.depth -= 10;
 		Anim_Create(ll,"image_angle",0,0,ll.image_angle,-30,45,120);
-		ll = MakeEnemyLaser(1,x+120,y+260,1,-90,0,100); // 中激光，红色，角度-90，无延迟，持续时间100
+		ll = MakeEnemyLaser(1,x+120,y+260,1,-90,60,100); // 中激光，红色，角度-90，无延迟，持续时间100
 		ll.depth -= 10;
 		Anim_Create(ll,"image_angle",0,0,ll.image_angle,+30,45,120);
 	}

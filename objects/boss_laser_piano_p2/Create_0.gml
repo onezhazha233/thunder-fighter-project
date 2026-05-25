@@ -30,6 +30,6 @@ y_target = 250
 battle_ui.boss_hpbar_enabled = true
 battle_wave.enabled = false
 
-bullet_emitter = emitter_boss_laser_piano_p1
+bullet_emitter = emitter_boss_laser_piano_p2
 
 items = []

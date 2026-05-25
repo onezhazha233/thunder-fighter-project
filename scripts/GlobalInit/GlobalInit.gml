@@ -1,7 +1,7 @@
 function GlobalInit(){
 	global.player_move_speed = 12;
 	global.hp_max = 10;
-	global.hp = 10000;
+	global.hp = 10;
 	global.atk_plane = 1;
 	global.atk_wingman = 1;
 	global.atk_subweapon = 1;
