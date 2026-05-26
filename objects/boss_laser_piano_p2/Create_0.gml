@@ -32,5 +32,7 @@ battle_wave.enabled = false
 
 bullet_emitter = emitter_boss_laser_piano_p2
 
+die_sequence = seq_enemy_boss_large_og1_die
+
 items = []
 value = 1000

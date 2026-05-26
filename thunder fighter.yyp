@@ -1759,6 +1759,7 @@
     {"id":{"name":"seq_enemy_boss_large_og0_p2_flame","path":"sequences/seq_enemy_boss_large_og0_p2_flame/seq_enemy_boss_large_og0_p2_flame.yy",},},
     {"id":{"name":"seq_enemy_boss_large_og0_p2_idle","path":"sequences/seq_enemy_boss_large_og0_p2_idle/seq_enemy_boss_large_og0_p2_idle.yy",},},
     {"id":{"name":"seq_enemy_boss_large_og0_p2_intro","path":"sequences/seq_enemy_boss_large_og0_p2_intro/seq_enemy_boss_large_og0_p2_intro.yy",},},
+    {"id":{"name":"seq_enemy_boss_large_og1_die","path":"sequences/seq_enemy_boss_large_og1_die/seq_enemy_boss_large_og1_die.yy",},},
     {"id":{"name":"seq_enemy_boss_large_og1_p1_flame","path":"sequences/seq_enemy_boss_large_og1_p1_flame/seq_enemy_boss_large_og1_p1_flame.yy",},},
     {"id":{"name":"seq_enemy_boss_large_og1_p1_intro","path":"sequences/seq_enemy_boss_large_og1_p1_intro/seq_enemy_boss_large_og1_p1_intro.yy",},},
     {"id":{"name":"seq_enemy_boss_large_og1_p2_flame","path":"sequences/seq_enemy_boss_large_og1_p2_flame/seq_enemy_boss_large_og1_p2_flame.yy",},},
