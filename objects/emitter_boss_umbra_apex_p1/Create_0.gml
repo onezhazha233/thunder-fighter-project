@@ -147,7 +147,7 @@ attack_5 = function(){//米加 90
 	}
 	if(attack_time mod 20 = 1){
 		rl = 250;
-		ra = sin(attack_time*987)*360;
+		ra = sin(attack_time*753)*360;
 		xx = clamp(player.x + lengthdir_x(rl,ra),10,710);
 		yy = clamp(player.y + lengthdir_y(rl,ra),10,1270);
 		mg = MakeEnemyBullet(xx,yy,bullet_enemy_umbra_apex_mega);

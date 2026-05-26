@@ -1,2 +1,3 @@
 live;
-game_restart()
+room_goto(room_preparation)
+BGM_StopAll()

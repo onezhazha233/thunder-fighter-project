@@ -162,7 +162,7 @@ attack_4 = function(){//收缩移动激光 160
 	if(attack_time = 1){
 		mark.move_range[3] -= 700;
 		for(i=0;i<4;i+=1){
-			blt[i] = MakeEnemyLaser(0,x,y+85,1,-90,60,60); // 小激光，红色，角度-90，延迟60，持续时间60
+			blt[i] = MakeEnemyLaser(0,x,y+85,0,-90,60,60);
 		}
 		Anim_Create(blt[0],"image_angle",0,0,blt[0].image_angle-90,60,60,60);
 		Anim_Create(blt[1],"image_angle",0,0,blt[1].image_angle-30,20,60,60);

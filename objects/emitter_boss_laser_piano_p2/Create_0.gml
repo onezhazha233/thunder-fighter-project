@@ -520,6 +520,19 @@ attack_10 = function(){//正方形激光节点
 		}
 	}
 }
+	
+against_on_top = function(){//防逃课
+	if(attack_time = 1){
+		if(Player_IsEnabled()){
+			if(player.y < 100){
+				for(i=0;i<25;i+=1){
+					MakeEnemyLaser(2,laser_pos_x[i],laser_pos_y[i],2,90,60,120);
+				}
+			}
+		}
+		end_attack();
+	}
+}
 
 a0 = create_attack(0,attack_0,40)
 a1 = create_attack(1,attack_1,40)
@@ -531,10 +544,11 @@ a6 = create_attack(6,attack_6,40)
 a7 = create_attack(7,attack_7,40)
 a8 = create_attack(8,attack_8,40)
 a9 = create_attack(9,attack_9,40,2)
-a10 = create_attack(9,attack_10,40,2)
+a10 = create_attack(10,attack_10,40,2)
+aot = create_attack(11,against_on_top,,10)
 
-fixed_sequence = [a0,a9,a3,a1,a8,a2,a6,a4,a5,a7,a10]
-random_pool = [a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10]
+fixed_sequence = [aot,a0,a9,a3,a1,a8,a2,a6,a4,a5,a7,a10]
+random_pool = [a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,aot]
 
 Laser = function(index,delay,duration=1,charge_time=45){
 	if(index >= 0&&index <= 25){

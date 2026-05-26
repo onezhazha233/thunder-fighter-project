@@ -5,7 +5,7 @@ ArmorAbility = function(type,exarg=0){
 		return exarg;
 	}
 	if(type = 3){
-		if(random(1) < 1){
+		if(random(1) < 0.5){
 			Player_SetShield(global.quantum_shield_duration);
 			audio_play_sound(snd_quantum_shield_intro,0,0);
 		}
