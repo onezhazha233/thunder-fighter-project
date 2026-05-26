@@ -83,8 +83,8 @@ function MakeBossCrystal(xx,yy,value){
 		c.auto_destroy = false;
 		c.detect_range = 0;
 		c.direction = point_direction(c.x,c.y,xx,yy);
-		Anim_Create(c,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,c.xx,tx-c.x,30);
-		Anim_Create(c,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,c.yy,ty-c.y,30);
+		Anim_Create(c,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,c.x,tx-c.x,30);
+		Anim_Create(c,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,c.y,ty-c.y,30);
 		Anim_Create(c,"chase",0,0,0,1,0,30,function(){
 			chase = 1;
 			gravity = 0;
