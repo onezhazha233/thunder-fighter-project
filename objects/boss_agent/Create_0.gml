@@ -39,6 +39,7 @@ time = 0
 name = ""
 
 bgm = bgm_boss_mini
+value = 500//小boss为500 大boss为1000
 
 move_start_duration = 60
 

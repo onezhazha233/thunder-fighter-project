@@ -18,4 +18,5 @@ enabled = true
 
 auto_destroy = false
 inv_block = true
+inv_induction = true
 collision_destroy = false

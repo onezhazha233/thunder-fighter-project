@@ -1,12 +1,6 @@
 live;
-
 switch (phase) {
 	case 0:
-		/*fade_alpha = min(1, fade_alpha + fade_speed);
-		if (fade_alpha >= 1) {
-			phase = 1;
-			room_goto(room_battle_loading);
-		}*/
 		if(anim.state = 1){
 			phase = 1;
 			room_goto(room_battle_loading);
@@ -18,10 +12,11 @@ switch (phase) {
 
 		if!(layer_exists(preload_layer)) {
 			preload_layer = layer_create(0);
+			sprite_prefetch_multi(preload_spr_list);
 		}
 
-		while (array_length(preload_active) < 10 && preload_index < array_length(preload_list)) {
-			var _seq = layer_sequence_create(preload_layer, 360, 640, preload_list[preload_index]);
+		while (array_length(preload_active) < 10 && preload_index < array_length(preload_seq_list)) {
+			var _seq = layer_sequence_create(preload_layer, 360, 640, preload_seq_list[preload_index]);
 			array_push(preload_active, _seq);
 			preload_index++;
 		}
@@ -36,7 +31,7 @@ switch (phase) {
 			}
 		}
 
-		if (preload_index >= array_length(preload_list) && array_length(preload_active) == 0) {
+		if (preload_index >= array_length(preload_seq_list) && array_length(preload_active) == 0) {
 			if(anim.state = 1){
 				phase = 2;
 				anim.state = 2;
@@ -50,10 +45,6 @@ switch (phase) {
 			phase = 3;
 			room_goto(room_battle);
 		}
-		/*fade_alpha = max(0, fade_alpha - fade_speed);
-		if (fade_alpha <= 0) {
-			phase = 3;
-		}*/
 	break;
 
 	case 3:

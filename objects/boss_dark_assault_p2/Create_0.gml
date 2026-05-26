@@ -31,3 +31,4 @@ bullet_emitter = emitter_boss_dark_assault_p2
 die_sequence = seq_enemy_boss_large_15_die
 
 items = []
+value = 1000

@@ -1,15 +1,11 @@
-live;
-event_inherited();
-
-OnDie = function(){
-	Player_AddScore(1000);
+function MakeBossCrystal(xx,yy,value){
 	var ring_count = 5;
 	var per_ring = 36;
 	var radius_start = 150;
 	var radius_step = 40;
 	var total_slots = ring_count * per_ring;
 	
-	var remaining_score = 1000;
+	var remaining_score = value;
 	var remaining_type2 = 2;
 	
 	var slots = array_create(total_slots, 0);
@@ -80,14 +76,15 @@ OnDie = function(){
 		var k = idx mod per_ring;
 		var radius = radius_start + r*radius_step;
 		var ang = k*(360/per_ring) + r*7;
-		var tx = x + lengthdir_x(radius, ang);
-		var ty = y + lengthdir_y(radius, ang);
+		var tx = xx + lengthdir_x(radius, ang);
+		var ty = yy + lengthdir_y(radius, ang);
 		
-		var c = MakeCrystal(x,y,t,false);
+		var c = MakeCrystal(xx,yy,t,false);
 		c.auto_destroy = false;
 		c.detect_range = 0;
-		Anim_Create(c,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,c.x,tx-c.x,30);
-		Anim_Create(c,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,c.y,ty-c.y,30);
+		c.direction = point_direction(c.x,c.y,xx,yy);
+		Anim_Create(c,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,c.xx,tx-c.x,30);
+		Anim_Create(c,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,c.yy,ty-c.y,30);
 		Anim_Create(c,"chase",0,0,0,1,0,30,function(){
 			chase = 1;
 			gravity = 0;

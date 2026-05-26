@@ -7,7 +7,7 @@ draw_sprite_ext(sprite_laser,0,sprite_get_width(sprite_laser_start)/2,sprite_get
 surface_reset_target();
 
 if(laser_scale > 0){
-	find = laser_find_width(x,y,image_angle,1500,laser_width,bullet_enemy_block,true,true);
+	find = laser_find_width(x,y,image_angle,1500,laser_width,bullet_enemy_block,false,true);
 	length = 1500;
 	if(array_length(find) > 0){
 		length = find[0][1];

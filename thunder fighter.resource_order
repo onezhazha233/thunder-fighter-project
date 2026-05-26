@@ -1222,6 +1222,7 @@
     {"name":"LuiTween","order":8,"path":"scripts/LuiTween/LuiTween.yy",},
     {"name":"LuiWindow","order":20,"path":"scripts/LuiWindow/LuiWindow.yy",},
     {"name":"Macro_EnemyAnim","order":1,"path":"scripts/Macro_EnemyAnim/Macro_EnemyAnim.yy",},
+    {"name":"MakeBossCrystal","order":26,"path":"scripts/MakeBossCrystal/MakeBossCrystal.yy",},
     {"name":"MakeCrystal","order":12,"path":"scripts/MakeCrystal/MakeCrystal.yy",},
     {"name":"MakeEffect","order":14,"path":"scripts/MakeEffect/MakeEffect.yy",},
     {"name":"MakeEnemyBullet","order":10,"path":"scripts/MakeEnemyBullet/MakeEnemyBullet.yy",},

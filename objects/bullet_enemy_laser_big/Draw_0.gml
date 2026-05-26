@@ -15,7 +15,7 @@ if(state >= 1){
 	if(laser_scale > 0){
 		length = 1500;
 		if(instance_exists(bullet_enemy_block)){
-			find = laser_find_width(x,y,image_angle,1500,10,bullet_enemy_block,true,true);
+			find = laser_find_width(x,y,image_angle,1500,10,bullet_enemy_block,false,true);
 			if(array_length(find) > 0){
 				length = find[0][1];
 				if(time mod 5 = 0){

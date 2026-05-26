@@ -17,6 +17,7 @@ damage = 1
 mark = noone
 duration = -1
 inv_block = false//是否免疫守卫护盾等清除效果，适用于激光器等
+inv_induction = false//为true时无法被擦分
 
 scale_x = 1
 scale_y = 1

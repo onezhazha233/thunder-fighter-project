@@ -34,3 +34,4 @@ bullet_emitter = emitter_boss_galaxy_ash_p2
 die_sequence = seq_enemy_boss_large_1_die
 
 items = []
+value = 1000

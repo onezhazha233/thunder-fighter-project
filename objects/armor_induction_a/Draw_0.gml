@@ -52,6 +52,3 @@ for(var i=0;i<array_length(graze_ratings);i+=1){
 		array_delete(graze_ratings,i,1);
 	}
 }
-
-draw_set_colour(-1)
-draw_text(0,900,graze_amount)

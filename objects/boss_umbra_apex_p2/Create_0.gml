@@ -31,3 +31,4 @@ bullet_emitter = emitter_boss_umbra_apex_p2
 die_sequence = seq_enemy_boss_large_og0_die
 
 items = []
+value = 1000

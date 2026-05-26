@@ -33,6 +33,7 @@ collision_destroy = false
 collision_enabled = false
 
 inv_frozen = false
+inv_induction = true
 
 if!(instance_exists(bullet_enemy_laser_piano_node_upper)){
 	instance_create_depth(0,0,0,bullet_enemy_laser_piano_node_upper);

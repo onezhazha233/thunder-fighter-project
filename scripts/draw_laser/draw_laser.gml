@@ -4,15 +4,19 @@ function draw_laser(spr,img,xx,yy,offset,dir,length,flip,xscale,yscale,alpha,sin
 	var w_px = max(1, ceil(abs(w)));
 	var h_px = max(1, ceil(abs(h)));
 	if(w_px > 0){
-	    // Reuse one backing surface instead of allocating/freeing every call.
 	    if (!variable_global_exists("draw_laser_surf")) {
 	        global.draw_laser_surf = -1;
 	        global.draw_laser_surf_w = 0;
 	    }
-	    if (!surface_exists(global.draw_laser_surf) || global.draw_laser_surf_w < w_px) {
+	    var _target_w = global.draw_laser_surf_w;
+	    if (_target_w < w_px) {
+	        _target_w = 256;
+	        while (_target_w < w_px) _target_w *= 2;
+	    }
+	    if (!surface_exists(global.draw_laser_surf) || global.draw_laser_surf_w < _target_w) {
 	        if (surface_exists(global.draw_laser_surf)) surface_free(global.draw_laser_surf);
-	        global.draw_laser_surf = surface_create(w_px, 1500);
-	        global.draw_laser_surf_w = w_px;
+	        global.draw_laser_surf = surface_create(_target_w, 1500);
+	        global.draw_laser_surf_w = _target_w;
 	    }
 	    var _texfilter = gpu_get_texfilter();
 	    gpu_set_texfilter(false);

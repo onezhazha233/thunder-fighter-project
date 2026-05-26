@@ -245,7 +245,8 @@ SetSequence = function(seq){
 }
 
 OnDie = function(){
-	
+	Player_AddScore(value);
+	MakeBossCrystal(x,y,value);
 }
 
 SetBurn = function(b){

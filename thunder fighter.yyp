@@ -1475,6 +1475,7 @@
     {"id":{"name":"LuiWindow","path":"scripts/LuiWindow/LuiWindow.yy",},},
     {"id":{"name":"Macro_Depth","path":"scripts/Macro_Depth/Macro_Depth.yy",},},
     {"id":{"name":"Macro_EnemyAnim","path":"scripts/Macro_EnemyAnim/Macro_EnemyAnim.yy",},},
+    {"id":{"name":"MakeBossCrystal","path":"scripts/MakeBossCrystal/MakeBossCrystal.yy",},},
     {"id":{"name":"MakeCrystal","path":"scripts/MakeCrystal/MakeCrystal.yy",},},
     {"id":{"name":"MakeEffect","path":"scripts/MakeEffect/MakeEffect.yy",},},
     {"id":{"name":"MakeEnemyBullet","path":"scripts/MakeEnemyBullet/MakeEnemyBullet.yy",},},

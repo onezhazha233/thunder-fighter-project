@@ -30,55 +30,51 @@ ArmorAbility = function(type,exarg=0){
 	    if (_count > 0) {
 	        for (var i = 0; i < _count; i++) {
 	            var _bullet = graze_list[| i];
+					if(_bullet.inv_induction = false){
 
-	            var b_vx = _bullet.x - _bullet.xprevious;
-	            var b_vy = _bullet.y - _bullet.yprevious;
+		            var b_vx = _bullet.x - _bullet.xprevious;
+		            var b_vy = _bullet.y - _bullet.yprevious;
 
-	            var rel_vx = p_vx - b_vx;
-	            var rel_vy = p_vy - b_vy;
+		            var rel_vx = p_vx - b_vx;
+		            var rel_vy = p_vy - b_vy;
             
-	            var _rel_spd_sqr = (rel_vx * rel_vx) + (rel_vy * rel_vy);
+		            var _rel_spd_sqr = (rel_vx * rel_vx) + (rel_vy * rel_vy);
             
-	            if (_rel_spd_sqr > 25) {
-	                var _rel_spd = sqrt(_rel_spd_sqr);
+		            if (_rel_spd_sqr > 25) {
+		                var _rel_spd = sqrt(_rel_spd_sqr);
 
-	                ArmorAbility(2, _rel_spd);
+		                ArmorAbility(2, _rel_spd);
 					
-	                var _part_num = max(1,_rel_spd/5);
+		                var _part_num = max(1,_rel_spd/5);
 
-	                repeat(_part_num) {
-	                    var _dir = random(360);//point_direction(b_vx,b_vy,p_vx,p_vy)+random_range(-5,5)
-	                    var _spd_val = random_range(effect_spd_min, effect_spd_max);
+		                repeat(_part_num) {
+		                    var _dir = random(360);//point_direction(b_vx,b_vy,p_vx,p_vy)+random_range(-5,5)
+		                    var _spd_val = random_range(effect_spd_min, effect_spd_max);
 
-	                    array_push(graze_effects, {
-	                        lx: 0,
-	                        ly: 0,
-	                        hsp: lengthdir_x(_spd_val, _dir),
-	                        vsp: lengthdir_y(_spd_val, _dir),
-	                        life: effect_life_max,
-	                        max_life: effect_life_max
-	                    });
-	                }
-	            }
-				else{
-					/*graze_clear_time -= 1;
-					if(graze_clear_time <= 0){
-						graze_amount = 0;
-						graze_current_rating = 0;
-						triggered = [0,0,0,0,0,0];
-					}*/
-					graze_clear_time -= 1;
-					if(graze_clear_time <= 0){
-						graze_amount = floor(graze_amount/2);
-						graze_current_rating = floor(graze_current_rating/2);
-						triggered = [0,0,0,0,0,0];
-						for(i=0;i<graze_current_rating;i+=1){
-							triggered[i] = 1;
+		                    array_push(graze_effects, {
+		                        lx: 0,
+		                        ly: 0,
+		                        hsp: lengthdir_x(_spd_val, _dir),
+		                        vsp: lengthdir_y(_spd_val, _dir),
+		                        life: effect_life_max,
+		                        max_life: effect_life_max
+		                    });
+		                }
+		            }
+					else{
+						graze_clear_time -= 1;
+						if(graze_clear_time <= 0){
+							graze_amount = floor(graze_amount/2);
+							graze_current_rating = floor(graze_current_rating/2);
+							triggered = [0,0,0,0,0,0];
+							for(i=0;i<graze_current_rating;i+=1){
+								triggered[i] = 1;
+							}
+							graze_clear_time = 30;
 						}
-						graze_clear_time = 30;
 					}
-				}
-	        }
+		        }
+			}
 	    } 
 	    else {
 	        graze_clear_time -= 1;
@@ -101,7 +97,7 @@ ArmorAbility = function(type,exarg=0){
 	if(type = 2){
 		graze_amount += exarg;
 		graze_clear_time = 30;
-		for(i=0;i<array_length(graze_rank);i+=1){
+		for(var i=0;i<array_length(graze_rank);i+=1){
 			if(graze_amount >= graze_rank[i]&&graze_current_rating = i&&triggered[i] = false){
 				CreateGrazeText(i);
 				triggered[i] = true;

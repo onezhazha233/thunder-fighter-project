@@ -329,12 +329,12 @@ attack_6 = function(){//激光齐射加节点抵挡
 	if(attack_time = 240){
 		n[0].duration = 1;
 		Anim_Create(id,"rotspd",0,0,30,-7,60);
-		Anim_Create(id,"rotadd",0,0,0,1,60);
+		Anim_Create(id,"rotadd",0,0,0,0.7,60);
 	}
 	if(attack_time = 480){
 		n[1].duration = 1;
 		Anim_Create(id,"rotspd",0,0,23,-7,60);
-		Anim_Create(id,"rotadd",0,0,1,1,60);
+		Anim_Create(id,"rotadd",0,0,0.7,0.8,60);
 	}
 	if(attack_time = 720){
 		n[2].duration = 1;

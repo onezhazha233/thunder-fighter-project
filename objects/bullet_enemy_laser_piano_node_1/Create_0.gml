@@ -29,6 +29,7 @@ redlight_alpha = 0
 
 auto_destroy = false
 inv_block = true
+inv_induction = true
 collision_destroy = false
 collision_enabled = false
 

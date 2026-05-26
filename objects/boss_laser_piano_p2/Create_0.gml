@@ -33,3 +33,4 @@ battle_wave.enabled = false
 bullet_emitter = emitter_boss_laser_piano_p2
 
 items = []
+value = 1000
