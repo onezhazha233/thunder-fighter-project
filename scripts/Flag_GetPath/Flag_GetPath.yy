@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Flag_GetPath",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Flag_GetPath",
+  "parent":{
+    "name":"Flag",
+    "path":"folders/脚本/GMU/Flag.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

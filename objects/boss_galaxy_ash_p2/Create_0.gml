@@ -19,7 +19,7 @@ explosion = effect_explosion_boss
 
 bgm = bgm_boss_large
 
-hp_max = 1500*global.boss_hp_ratio
+hp_max = 1500*Flag_Get(FLAG_SETTINGS,"boss_hp_ratio")
 hp = 1
 
 Anim_Create(id,"hp",0,0,hp,hp_max-hp,40)

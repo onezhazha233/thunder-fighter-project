@@ -68,7 +68,7 @@ function LuiCheckbox(_params = {}) : LuiBase(_params) constructor {
 	self.addEvent(LUI_EV_CLICK, function(_element) {
 		_element.set(!_element.get());
 		if !is_undefined(_element.style.sound_click) {
-			audio_play_sound(_element.style.sound_click, 1, false);
+			SFX_Play(_element.style.sound_click,1);
 		}
 	});
 }

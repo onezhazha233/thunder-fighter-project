@@ -6,7 +6,7 @@ boss = noone
 lv = 1
 name = "testname"
 
-audio_play_sound(snd_warning_boss,0,0)
+SFX_Play(snd_warning_boss)
 
 BGM_SetVolume(0,0,20)
 alarm[0] = 20

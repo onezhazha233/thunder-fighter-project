@@ -25,7 +25,7 @@ if(enabled = true){
 			Anim_Create(a,"image_alpha",0,0,1,-1,30,30);
 			
 			if(attack_time mod 10 = 0){
-				audio_play_sound(snd_plane_fire,0,0);
+				SFX_Play(snd_plane_fire);
 			}
 		}
 	}

@@ -15,6 +15,6 @@ MakeCleave = function(yoff,scale,dir=0,snd=0){
 	var cl = MakePlayerBullet(xx,yy+yoff,bullet_player_plane_azurewing_1);
 	cl.scale = scale;
 	cl.dir = dir;
-	if(snd = 1)audio_play_sound(snd_plane_azurewing,0,0);
+	if(snd = 1)SFX_Play(snd_plane_azurewing);
 	return cl;
 }

@@ -1,2 +1,2 @@
 live;
-if(sound = true)audio_play_sound(snd_explosion,0,0);
+if(sound = true)SFX_Play(snd_explosion);

@@ -21,7 +21,7 @@ MakeCleave = function(yoff,scale,dir=0,snd=0){
 	cl.angle = 30;
 	cl.image_angle = cl.angle * (cl.dir == 0 ? 1 : -1);
 	cl.damage = damage;
-	//if(snd = 1)audio_play_sound(snd_plane_azurewing,0,0);
+	//if(snd = 1)SFX_Play(snd_plane_azurewing);
 	return cl;
 }
 

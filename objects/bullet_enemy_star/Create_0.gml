@@ -1,7 +1,7 @@
 live;
 event_inherited();
 
-damage = 2*global.enemy_damage_ratio
+damage = 2*Flag_Get(FLAG_SETTINGS,"enemy_damage_ratio")
 
 line_length = 0
 

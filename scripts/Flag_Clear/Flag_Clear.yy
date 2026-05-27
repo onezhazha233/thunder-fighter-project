@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Flag_Clear",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Flag_Clear",
+  "parent":{
+    "name":"Flag",
+    "path":"folders/脚本/GMU/Flag.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

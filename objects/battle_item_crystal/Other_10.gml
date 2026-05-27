@@ -5,5 +5,5 @@ switch(type){
 	case 2:sc = 50;break;
 }
 Player_AddScore(sc)
-audio_play_sound(snd_crystal,0,0)
+SFX_Play(snd_crystal)
 player.equipment.armor_inst.ArmorAbility(5,type);

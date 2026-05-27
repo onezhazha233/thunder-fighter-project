@@ -47,7 +47,7 @@ function LuiImageButton(_params = {}) : LuiImage(_params) constructor {
 	
 	self.addEvent(LUI_EV_CLICK, function(_element) {
 		if !is_undefined(_element.style.sound_click) {
-			audio_play_sound(_element.style.sound_click, 1, false);
+			SFX_Play(_element.style.sound_click,1,);
 		}
 	});
 }

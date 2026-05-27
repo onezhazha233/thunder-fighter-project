@@ -18,17 +18,15 @@ function GlobalInit(){
 	global.breaktime = true;//为true时涉及倒计时的机制会暂停
 	
 	global.current_equipment = {
-		plane: plane_assault_a,
-		wingman_left: [wingman_shotcannon_a],
-		wingman_right: [wingman_shotcannon_a],
+		plane: asset_get_index(Flag_Get(FLAG_STATIC,"player_plane")),
+		wingman_left: [asset_get_index(Flag_Get(FLAG_STATIC,"player_wingman_left"))],
+		wingman_right: [asset_get_index(Flag_Get(FLAG_STATIC,"player_wingman_right"))],
 		wingman_x_offset: [130,200],
 		wingman_y_offset: [0,0],
-		subweapon: subweapon_missile_a,
-		armor: armor_alloy_a
+		subweapon: asset_get_index(Flag_Get(FLAG_STATIC,"player_subweapon")),
+		armor: asset_get_index(Flag_Get(FLAG_STATIC,"player_armor"))
 	}
-	global.choicebosswave = wave_boss_red_heavy;
-	global.boss_hp_ratio = 1;
-	global.enemy_damage_ratio = 1;
+	global.choicebosswave = asset_get_index(Flag_Get(FLAG_STATIC,"current_boss_wave"));
 	
 	global.debug_bullet_player_collision_display = false;
 	global.debug_bullet_enemy_collision_display = false;

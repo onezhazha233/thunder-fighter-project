@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":2.2080045,
+  "duration":1.2129931,
   "exportDir":"",
   "name":"snd_frost_splash",
   "parent":{

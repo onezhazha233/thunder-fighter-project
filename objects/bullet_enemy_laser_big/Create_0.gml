@@ -4,7 +4,7 @@ event_inherited()
 inv_block = true
 auto_destroy = false
 
-damage = 114514*global.enemy_damage_ratio
+damage = 114514*Flag_Get(FLAG_SETTINGS,"enemy_damage_ratio")
 
 sprite_ball = spr_bullet_enemy_laser_blue_ball
 sprite_ring = spr_bullet_enemy_laser_blue_ring

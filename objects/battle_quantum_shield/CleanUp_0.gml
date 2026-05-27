@@ -4,7 +4,7 @@ layer_destroy(sl)
 layer_sequence_destroy(shield_sequence)
 if!(instance_exists(battle_ui_victory)){
 	if(battle_ui_pause.pause_state = 0){
-		audio_play_sound(snd_quantum_shield_outro,0,0);
+		SFX_Play(snd_quantum_shield_outro);
 	}
 }
 with(bullet_enemy){

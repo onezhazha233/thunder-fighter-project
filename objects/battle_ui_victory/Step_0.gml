@@ -5,9 +5,3 @@ if(!layer_sequence_exists(ll,seq)&&flyaway = 0){
 	flyaway = 1;
 	alarm[0] = 60;
 }
-if(flyaway = 2){
-	if!(audio_is_playing(snd_flyaway)){
-		flyaway = 3;
-		room_goto(room_preparation);
-	}
-}

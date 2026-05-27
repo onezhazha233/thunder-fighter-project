@@ -88,7 +88,7 @@ Pause = function(){
 		}
 		pause_state = 1;
 		seq = layer_sequence_create(ll,room_width/2,room_height/2,seq_ui_pause);
-		audio_play_sound(snd_pause,0,0);
+		SFX_Play(snd_pause);
 		BGM_Pause(0);
 	}
 }
@@ -97,7 +97,7 @@ Resume = function(){
 	if(pause_state = 2){
 		alarm[0] = 1;
 		seq1 = layer_sequence_create(ll,room_width/2,room_height/2,seq_ui_resume);
-		audio_play_sound(snd_resume,0,0);
+		SFX_Play(snd_resume);
 		pause_state = 3;
 	}
 }

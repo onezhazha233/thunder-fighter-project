@@ -2,7 +2,7 @@ live;
 depth = DEPTH_BATTLE.UI
 readygo_time = 0;
 
-audio_play_sound(snd_ready,0,0)
+SFX_Play(snd_ready)
 
 // Anim-driven parameters (GMU_Anim)
 ready_blue_alpha = 1;
@@ -62,7 +62,7 @@ function readygo_draw(_x, _y, _t)
     }
 
     // --- GO main (52..100) ---
-	if(t = 60)audio_play_sound(snd_go,0,0);
+	if(t = 60)SFX_Play(snd_go);
     if (t >= 52 && t < 100) {
         var s = max(go_scale_main, 0);
         var a = clamp(go_alpha_main, 0.0, 1.0);

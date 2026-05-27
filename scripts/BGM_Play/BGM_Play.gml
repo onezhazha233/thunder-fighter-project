@@ -3,7 +3,8 @@
 ///@arg loop*
 ///@arg loop_start*
 ///@arg loop_end*
-function BGM_Play() {
+function BGM_Play(){
+	if(Flag_Get(FLAG_SETTINGS,"music") = false)return;
 	var SLOT=argument[0];
 	var AUDIO=argument[1];
 	var LOOP=true;

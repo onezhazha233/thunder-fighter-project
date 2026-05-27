@@ -1,6 +1,6 @@
 live;
 if(play_shoot_sound){
-	audio_play_sound(snd_plane_shoot,0,0);
+	SFX_Play(snd_plane_shoot);
 }
 blt = MakePlayerBullet(x,y,bullet_player_plane_overwatcher_d_1)
 blt.image_angle = image_angle

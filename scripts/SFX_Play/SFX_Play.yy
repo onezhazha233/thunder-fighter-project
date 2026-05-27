@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"SFX_Play",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SFX_Play",
+  "parent":{
+    "name":"脚本",
+    "path":"folders/脚本.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -55,7 +55,7 @@ if(rtime mod 18 = 0){
 	Anim_Create(laser,"light_alpha",0,0,1,-1,6);
 	array_push(follow_inst,[laser,50,0]);
 	
-	audio_play_sound(snd_plane_glacier_laser_big,0,0);
+	SFX_Play(snd_plane_glacier_laser_big);
 }
 if(rtime mod 22 = 0){
 	laser = MakePlayerBullet(x-50,y,bullet_player_plane_glacier);
@@ -74,7 +74,7 @@ if(rtime mod 22 = 0){
 	Anim_Create(laser,"image_xscale",0,0,1,-0.8,10,65);
 	array_push(follow_inst,[laser,50,0]);
 	
-	audio_play_sound(snd_plane_glacier_laser_small,0,0);
+	SFX_Play(snd_plane_glacier_laser_small);
 }
 
 rtime += 1

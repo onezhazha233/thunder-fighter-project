@@ -35,4 +35,4 @@ effect.scale_x = -scale_x*0.7;
 effect.scale_y = scale_y*0.7;
 array_push(follow_inst,[effect,50,0]);
 
-audio_play_sound(snd_plane_glacier_laser_big,0,0);
+SFX_Play(snd_plane_glacier_laser_big);

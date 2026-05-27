@@ -63,7 +63,7 @@ if(enabled = true){
 		fire.scale_y = scale_y;
 		fire.y_offset = -10;
 		array_push(follow_inst,fire);
-		audio_play_sound(snd_plane_shoot,0,0);
+		SFX_Play(snd_plane_shoot);
 	}
 }
 else{

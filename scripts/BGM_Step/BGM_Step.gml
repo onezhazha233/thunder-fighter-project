@@ -15,6 +15,4 @@ function BGM_Step() {
 		proc+=1;
 	}
 	return true;
-
-
 }

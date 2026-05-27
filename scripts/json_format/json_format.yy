@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"json_format",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"json_format",
+  "parent":{
+    "name":"脚本",
+    "path":"folders/脚本.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
