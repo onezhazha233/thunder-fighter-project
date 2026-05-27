@@ -12,12 +12,14 @@ pre_sequence = seq_enemy_boss_large_og1_p2_intro
 intro_sequence = seq_enemy_boss_large_og1_p2_intro
 idle_sequence = seq_enemy_boss_large_og1_p2_intro
 flame_lower = seq_enemy_boss_large_og1_p2_flame
+die_sequence = seq_enemy_boss_large_og1_die
+auto_idle_sequence = [seq_enemy_boss_large_og1_p2_attack_outro]
 
 explosion = effect_explosion_boss
 
 bgm = bgm_boss_large
 
-hp_max = 2000*global.boss_hp_ratio
+hp_max = 2500*global.boss_hp_ratio
 hp = 1
 
 Anim_Create(id,"hp",0,0,hp,hp_max-hp,40)
@@ -31,8 +33,6 @@ battle_ui.boss_hpbar_enabled = true
 battle_wave.enabled = false
 
 bullet_emitter = emitter_boss_laser_piano_p2
-
-die_sequence = seq_enemy_boss_large_og1_die
 
 items = []
 value = 1000

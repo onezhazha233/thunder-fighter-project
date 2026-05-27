@@ -89,6 +89,19 @@ if(keyboard_check_pressed(ord("K"))){
 	}
 }
 
+if(keyboard_check_pressed(ord("F"))){
+	with(enemy_agent){
+		if!(object_get_parent(object_index) = enemy_blockbullet){
+			if(GetFrozen() > 0){
+				SetFrozen(0);
+			}
+			else{
+				SetFrozen(frozen_time);
+			}
+		}
+	}
+}
+
 /*if (mouse_check_button_pressed(mb_right)) {
     is_drawing = true;
     start_x = mouse_x;

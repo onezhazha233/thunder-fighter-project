@@ -15,7 +15,7 @@ auto_idle_sequence = [seq_enemy_boss_mini_0_cover]
 
 explosion = effect_explosion_boss
 
-hp_max = 1200*global.boss_hp_ratio
+hp_max = 1500*global.boss_hp_ratio
 hp = 1
 
 Anim_Create(id,"hp",0,0,hp,hp_max-hp,40)

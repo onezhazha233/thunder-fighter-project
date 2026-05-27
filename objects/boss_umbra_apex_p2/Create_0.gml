@@ -10,6 +10,7 @@ pre_sequence = seq_enemy_boss_large_og0_p2_intro
 intro_sequence = seq_enemy_boss_large_og0_p2_intro
 idle_sequence = seq_enemy_boss_large_og0_p2_idle
 flame_lower = seq_enemy_boss_large_og0_p2_flame
+die_sequence = seq_enemy_boss_large_og0_die
 
 explosion = effect_explosion_boss
 
@@ -27,8 +28,6 @@ battle_ui.boss_hpbar_enabled = true
 battle_wave.enabled = false
 
 bullet_emitter = emitter_boss_umbra_apex_p2
-
-die_sequence = seq_enemy_boss_large_og0_die
 
 items = []
 value = 1000

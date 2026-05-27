@@ -7,6 +7,7 @@
 /// maintain_aspect
 ///@arg {Struct} [_params] Struct with parameters
 function LuiImageButton(_params = {}) : LuiImage(_params) constructor {
+	self.press_black = true;
 	
 	self.draw = function(){
 		//Calculate fit size
@@ -24,8 +25,10 @@ function LuiImageButton(_params = {}) : LuiImage(_params) constructor {
 		if !self.deactivated {
 			if self.isMouseHovered() {
 				_blend_color = merge_color(_blend_color, self.style.color_hover, 0.5);
-				if self.is_pressed {
-					_blend_color = merge_color(_blend_color, c_black, 0.5);
+				if(self.press_black = true){
+					if self.is_pressed {
+						_blend_color = merge_color(_blend_color, c_black, 0.5);
+					}
 				}
 			}
 		} else {

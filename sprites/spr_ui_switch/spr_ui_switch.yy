@@ -1,10 +1,10 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_ui_startbattle",
+  "%Name":"spr_ui_switch",
   "bboxMode":0,
-  "bbox_bottom":55,
+  "bbox_bottom":92,
   "bbox_left":0,
-  "bbox_right":139,
+  "bbox_right":157,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,17 +12,17 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"5bfe8f4e-7f21-423b-8c4b-ccb6b146028f","name":"5bfe8f4e-7f21-423b-8c4b-ccb6b146028f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"c4f53fe2-c1f2-41ef-8746-b85c466d4514","name":"c4f53fe2-c1f2-41ef-8746-b85c466d4514","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"75836c4a-375f-4bd9-9bea-b72a2243ca9e","name":"75836c4a-375f-4bd9-9bea-b72a2243ca9e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6adcb480-1299-4090-ab81-ffaae74a98ec","name":"6adcb480-1299-4090-ab81-ffaae74a98ec","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":56,
+  "height":93,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"1c8f7450-157e-4232-9d4a-fed0d0003efa","blendMode":0,"displayName":"default","isLocked":false,"name":"1c8f7450-157e-4232-9d4a-fed0d0003efa","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"a40ead36-f272-496e-82cd-ae34231174cb","blendMode":0,"displayName":"default","isLocked":false,"name":"a40ead36-f272-496e-82cd-ae34231174cb","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_ui_startbattle",
+  "name":"spr_ui_switch",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -34,7 +34,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_ui_startbattle",
+    "%Name":"spr_ui_switch",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -58,7 +58,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_ui_startbattle",
+    "name":"spr_ui_switch",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -70,11 +70,11 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5bfe8f4e-7f21-423b-8c4b-ccb6b146028f","path":"sprites/spr_ui_startbattle/spr_ui_startbattle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b93695fd-546e-4fbc-83c9-5ca2bf848a4c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"75836c4a-375f-4bd9-9bea-b72a2243ca9e","path":"sprites/spr_ui_switch/spr_ui_switch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"0b45f72f-eb2d-4367-be48-629a9a52bda8","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c4f53fe2-c1f2-41ef-8746-b85c466d4514","path":"sprites/spr_ui_startbattle/spr_ui_startbattle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"95e9d561-ef8b-4427-a405-18f9ce380c8f","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6adcb480-1299-4090-ab81-ffaae74a98ec","path":"sprites/spr_ui_switch/spr_ui_switch.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a12a262e-a550-4a2d-98c4-172027af8be6","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -90,5 +90,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":140,
+  "width":158,
 }

@@ -18,5 +18,6 @@
     "ui.select.armor": "选择装甲",
     "ui.boss.hp.ratio": "Boss血量倍率",
     "ui.enemy.damage.ratio": "敌人伤害倍率",
-    "ui.startbattle": "开始战斗"
+    "ui.startbattle": "开始战斗",
+    "ui.settings": "设置"
 }

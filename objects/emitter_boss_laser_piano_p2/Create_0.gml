@@ -228,6 +228,7 @@ attack_5 = function(){//激光齐射加节点横扫
 	live;
 	if(attack_time = 1){
 		if!(instance_exists(bullet_enemy_laser_piano_node_0)||instance_exists(bullet_enemy_laser_piano_node_1)){
+			mark.SetSequence(seq_enemy_boss_large_og1_p2_attack_intro);
 			MakeEnemyLaser(1,x-315,y+60,2,,120,120);
 			MakeEnemyLaser(1,x+315,y+33,2,,120,120);
 			MakeEnemyLaser(1,x-243,y+110,1,,120,120);
@@ -296,6 +297,7 @@ attack_5 = function(){//激光齐射加节点横扫
 		instance_destroy(node_3);
 		instance_destroy(node_4);
 		instance_destroy(node_5);
+		mark.SetSequence(seq_enemy_boss_large_og1_p2_attack_outro);
 		end_attack();
 	}
 }
@@ -304,6 +306,7 @@ attack_6 = function(){//激光齐射加节点抵挡
 	live_name = "emitter_laser_piano_p2:attack_6";
 	live;
 	if(attack_time = 1){
+		mark.SetSequence(seq_enemy_boss_large_og1_p2_attack_intro);
 		rot = 2;
 		rotspd = 30;
 		rotadd = 0;
@@ -338,6 +341,9 @@ attack_6 = function(){//激光齐射加节点抵挡
 	}
 	if(attack_time = 720){
 		n[2].duration = 1;
+	}
+	if(attack_time = 800){
+		mark.SetSequence(seq_enemy_boss_large_og1_p2_attack_outro);
 	}
 	if(attack_time = 820){
 		end_attack();
@@ -446,6 +452,7 @@ attack_9 = function(){//斜方形激光节点
 			}
 			node_follow = true;
 			alarm[0] = 110;
+			mark.SetSequence(seq_enemy_boss_large_og1_p2_attack_intro);
 		}
 		else{
 			end_attack();
@@ -453,6 +460,7 @@ attack_9 = function(){//斜方形激光节点
 	}
 	if(attack_time = 60){
 		node_follow = false;
+		mark.SetSequence(seq_enemy_boss_large_og1_p2_attack_outro);
 	}
 	if(attack_time = 110){
 		end_attack();
@@ -494,6 +502,7 @@ attack_10 = function(){//正方形激光节点
 			}
 			node_follow = true;
 			alarm[0] = 110;
+			mark.SetSequence(seq_enemy_boss_large_og1_p2_attack_intro);
 		}
 		else{
 			end_attack();
@@ -501,6 +510,7 @@ attack_10 = function(){//正方形激光节点
 	}
 	if(attack_time = 60){
 		node_follow = false;
+		mark.SetSequence(seq_enemy_boss_large_og1_p2_attack_outro);
 	}
 	if(attack_time = 110){
 		end_attack();

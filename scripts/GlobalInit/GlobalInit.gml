@@ -26,7 +26,7 @@ function GlobalInit(){
 		subweapon: subweapon_missile_a,
 		armor: armor_alloy_a
 	}
-	global.choicebosswave = wave_boss_dark_assault;
+	global.choicebosswave = wave_boss_red_heavy;
 	global.boss_hp_ratio = 1;
 	global.enemy_damage_ratio = 1;
 	
