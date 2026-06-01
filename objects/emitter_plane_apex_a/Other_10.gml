@@ -7,4 +7,4 @@ fire.scale_x = scale_x;
 fire.scale_y = scale_y;
 fire.y_offset = 5
 follow_inst = [fire]
-SFX_Play(snd_plane_shoot)
+SFX_Play(snd_plane_shoot);

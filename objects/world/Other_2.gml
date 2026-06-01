@@ -3,6 +3,8 @@ Flag_Init()
 
 display_set_gui_size(720,1280)
 
+UIInit()
+
 BGM_Init()
 
 lang = Flag_Get(FLAG_SETTINGS,"language")

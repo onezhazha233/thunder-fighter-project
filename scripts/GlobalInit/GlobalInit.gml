@@ -33,4 +33,14 @@ function GlobalInit(){
 	global.debug_enemy_collision_display = false;
 	
 	global.lui_interact_enabled = true;
+	
+	global.player_bullet_sfx = [
+		snd_plane_shoot,
+		snd_plane_blade_shoot_idle,
+		snd_plane_blade_shoot_rampage,
+		snd_plane_azurewing,
+		snd_plane_glacier_laser_big,
+		snd_plane_glacier_laser_small,
+		snd_plane_fire
+	];
 }

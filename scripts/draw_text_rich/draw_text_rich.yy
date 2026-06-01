@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"draw_text_rich",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_text_rich",
+  "parent":{
+    "name":"Draw",
+    "path":"folders/脚本/Draw.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

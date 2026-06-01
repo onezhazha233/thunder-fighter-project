@@ -592,7 +592,7 @@ create_select_window = function(type){//0为战机 1为装甲 2为副武器 3为
 	}
 }
 
-function create_equipment_item(data,type,selected=false,boss=false) {
+create_equipment_item = function(data,type,selected=false,boss=false){
     var rootp = new LuiPanel()
 		.setWidth(657)
         .setHeight(129)
@@ -724,7 +724,7 @@ equipment_name2obj = function(name,type){
 	return asset_get_index(prefix+name);
 }
 
-function refresh_preview(){
+refresh_preview = function(){
 	var px = room_width/2;
 	var py = 320;
 	var sc = 1;

@@ -11,14 +11,22 @@ if(enabled = true){
 		if((time-1) mod 5 = 0){
 			tt = 3 - ((time-1) div 5);
 			
-			target = instance_nearest(player.x,player.y,enemy_agent);
+			if(instance_exists(player)){
+				target = instance_nearest(player.x,player.y,enemy_agent);
+			}
 			if(instance_exists(target)){
 			    target_x = target.x;
 			    target_y = target.y;
-			} else {
-			    target = noone;
-			    target_x = player.x;
-			    target_y = player.y-800;
+			}
+			else{
+				if(instance_exists(player)){
+				    target_x = player.x;
+				    target_y = player.y-800;
+				}
+				else{
+					target_x = equipment_agent.x;
+				    target_y = equipment_agent.y-800;
+				}
 			}
 			if(number[tt] = 1){
 				ang = (dir=0 ? 0 : 180)+(dir=0 ? -1 : 1)*(tt*12);

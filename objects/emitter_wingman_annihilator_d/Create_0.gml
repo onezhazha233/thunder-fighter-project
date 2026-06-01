@@ -8,6 +8,7 @@ time = 0
 
 mark = 0
 
+target = noone
 number = [1,1,1,1]
 rtime = 0
 

@@ -24,7 +24,9 @@ switch(state){
 			fade = 1;
 		}
 		else{
-			x += sign(emitter_plane_boomerang.x-x)*(-speed)/2;
+			if(instance_exists(emitter_plane_boomerang)){
+				x += sign(emitter_plane_boomerang.x-x)*(-speed)/2;
+			}
 			with(emitter_plane_boomerang){
 				if(point_in_circle(x,y,other.x,other.y,50)){
 					with(other){

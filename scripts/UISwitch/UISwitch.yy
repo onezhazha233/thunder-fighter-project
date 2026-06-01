@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"UISwitch",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"UISwitch",
+  "parent":{
+    "name":"UI",
+    "path":"folders/UI.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

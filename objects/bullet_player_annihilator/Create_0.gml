@@ -17,8 +17,14 @@ rampage = false
 
 damage = 1
 
-target_x = player.x;
-target_y = player.y-800;
+if(instance_exists(player)){
+	target_x = player.x;
+	target_y = player.y-800;
+}
+else{
+	target_x = equipment_agent.x;
+	target_y = equipment_agent.y-800;
+}
 
 target_x_previous = target_x
 target_y_previous = target_y

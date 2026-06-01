@@ -155,6 +155,9 @@ for(var i = 0; i < count; i++){
 		if(enabled&&!rampage&&drones[i].alarm[0]==-1){
 			drones[i].alarm[0] = 1;
 		}
+		if(enabled&&rampage&&drones[i].alarm[1]==-1){
+			drones[i].alarm[1] = 1;
+		}
 	}
 }
 
