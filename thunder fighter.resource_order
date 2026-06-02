@@ -751,6 +751,7 @@
     {"name":"battle_loading_anim","order":1,"path":"objects/battle_loading_anim/battle_loading_anim.yy",},
     {"name":"battle_quantum_shield","order":6,"path":"objects/battle_quantum_shield/battle_quantum_shield.yy",},
     {"name":"battle_swarm_manager","order":14,"path":"objects/battle_swarm_manager/battle_swarm_manager.yy",},
+    {"name":"battle_ui_pause_new","order":6,"path":"objects/battle_ui_pause_new/battle_ui_pause_new.yy",},
     {"name":"battle_ui_pause","order":5,"path":"objects/battle_ui_pause/battle_ui_pause.yy",},
     {"name":"battle_ui_readygo","order":2,"path":"objects/battle_ui_readygo/battle_ui_readygo.yy",},
     {"name":"battle_ui_victory","order":3,"path":"objects/battle_ui_victory/battle_ui_victory.yy",},

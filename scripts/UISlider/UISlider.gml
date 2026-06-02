@@ -1,16 +1,17 @@
-function UISlider(xx,yy,w,h,minv,maxv,defv=0,bar=spr_ui_slider_bg,knob=spr_ui_slider_knob) : UIBase(xx,yy,w,h) constructor {
+function UISlider(xx,yy,w,h,minv,maxv,defv=0,bar_bg=spr_ui_slider_bg,knob=spr_ui_slider_knob,bar=spr_ui_slider_bar) : UIBase(xx,yy,w,h) constructor {
 	value = defv;
 	min_value = minv;
 	max_value = maxv;
 	value_step = 0;
 	
+	sprite_bar_bg = bar_bg;
 	sprite_bar = bar;
 	sprite_knob = knob;
 	
 	knob_padding = 20;
 	
-	nineslice = false;
-	nineslice_mode = 0;
+	nineslice = true;
+	nineslice_mode = 1;
 
 	static ProcessInput = function(_touch_index = 0){
 		if(destroyed||abs_alpha < 0||!active||!ready) return false;
@@ -84,19 +85,27 @@ function UISlider(xx,yy,w,h,minv,maxv,defv=0,bar=spr_ui_slider_bg,knob=spr_ui_sl
 		var _current_val = Get();
 		var _pct =(_current_val - min_value) /(max_value - min_value);
 		if(is_nan(_pct)) _pct = 0;
-
-		if(nineslice == true){
-			draw_sprite_nineslice(sprite_bar,0,abs_x,abs_y,width,height,abs_scale_x,abs_scale_y,nineslice_mode,-1,abs_alpha);
-		}
-		else{
-			draw_sprite_ext(sprite_bar,0,abs_x,abs_y,abs_scale_x,abs_scale_y,0,-1,abs_alpha);
-		}
-
+		
 		var _abs_padding = knob_padding * abs_scale_x;
 		var _valid_track_length = _w_p -(_abs_padding * 2);
 
 		var _knob_x = abs_x + _abs_padding +(_valid_track_length * _pct);
 		var _knob_y = abs_y +(_h_p * 0.5);
+
+		if(nineslice == true){
+			var _bar_bg_w = width;
+			var _bar_bg_h = height;
+			var _bar_w_screen = max((_pct * (_w_p - knob_padding * 2) + 16), 0);
+			var _bar_h_screen = _h_p * 0.5;
+			var _bar_w = _bar_w_screen / max(abs_scale_x, 0.0001);
+			var _bar_h = _bar_h_screen / max(abs_scale_y, 0.0001);
+			draw_sprite_nineslice(sprite_bar_bg,0,abs_x,abs_y,_bar_bg_w,_bar_bg_h,abs_scale_x,abs_scale_y,nineslice_mode,-1,abs_alpha);
+			draw_sprite_nineslice(sprite_bar,0,abs_x+9*abs_scale_x,abs_y+9*abs_scale_y,_bar_w,_bar_h,abs_scale_x,abs_scale_y,nineslice_mode,-1,abs_alpha);
+		}
+		else{
+			draw_sprite_ext(sprite_bar_bg,0,abs_x,abs_y,abs_scale_x,abs_scale_y,0,-1,abs_alpha);
+			draw_sprite_ext(sprite_bar,0,abs_x,abs_y,Get()*abs_scale_x,abs_scale_y,0,-1,abs_alpha);
+		}
 
 		draw_sprite_ext(sprite_knob,0,_knob_x,_knob_y,abs_scale_x,abs_scale_y,0,c_white,abs_alpha);
 	}

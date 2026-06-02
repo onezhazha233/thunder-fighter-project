@@ -20,13 +20,23 @@ create_select_window = function(type){//0为战机 1为装甲 2为副武器 3为
 	}
 	window_select.AddEvent(UI_EVENT.CREATE,function(el){
 		other.btn_select_plane.active = false;
+		other.btn_select_armor.active = false;
+		other.btn_select_subweapon.active = false;
+		other.btn_select_wingman_left.active = false;
+		other.btn_select_wingman_right.active = false;
 		other.btn_select_boss.active = false;
 		other.btn_start_battle.active = false;
+		other.btn_settings.active = false;
 	});
 	window_select.AddEvent(UI_EVENT.DESTROY,function(el){
 		other.btn_select_plane.active = true;
+		other.btn_select_armor.active = true;
+		other.btn_select_subweapon.active = true;
+		other.btn_select_wingman_left.active = true;
+		other.btn_select_wingman_right.active = true;
 		other.btn_select_boss.active = true;
 		other.btn_start_battle.active = true;
+		other.btn_settings.active = true;
 	});
 	
 	if(type = 0){
@@ -116,6 +126,7 @@ create_select_window = function(type){//0为战机 1为装甲 2为副武器 3为
 	closebtn = new UIButton(spr_ui_button_close,602,17);
 	closebtn.list = list;
 	closebtn.AddEvent(UI_EVENT.CLICK,function(el){
+		SFX_Play(snd_touch);
 		var _window = el.parent;
 		if(_window.closing) return;
 		_window.closing = true;
@@ -216,7 +227,6 @@ create_equipment_item = function(data,type,selected=false,boss=false){
 		equip_btn.type = type;
 		equip_btn.boss = boss;
 		equip_btn.AddEvent(UI_EVENT.CLICK,function(el){
-			SFX_Play(snd_touch);
 			if(el.boss = false){
 				te = other.equipment_name2obj(el.equipment_name,el.type);
 			}

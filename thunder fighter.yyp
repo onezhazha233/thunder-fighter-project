@@ -878,6 +878,7 @@
     {"id":{"name":"battle_loading","path":"objects/battle_loading/battle_loading.yy",},},
     {"id":{"name":"battle_quantum_shield","path":"objects/battle_quantum_shield/battle_quantum_shield.yy",},},
     {"id":{"name":"battle_swarm_manager","path":"objects/battle_swarm_manager/battle_swarm_manager.yy",},},
+    {"id":{"name":"battle_ui_pause_new","path":"objects/battle_ui_pause_new/battle_ui_pause_new.yy",},},
     {"id":{"name":"battle_ui_pause","path":"objects/battle_ui_pause/battle_ui_pause.yy",},},
     {"id":{"name":"battle_ui_readygo","path":"objects/battle_ui_readygo/battle_ui_readygo.yy",},},
     {"id":{"name":"battle_ui_victory","path":"objects/battle_ui_victory/battle_ui_victory.yy",},},
@@ -4651,8 +4652,8 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"room_init","path":"rooms/room_init/room_init.yy",},},
     {"roomId":{"name":"room_preparation","path":"rooms/room_preparation/room_preparation.yy",},},
-    {"roomId":{"name":"room_test","path":"rooms/room_test/room_test.yy",},},
     {"roomId":{"name":"room_battle","path":"rooms/room_battle/room_battle.yy",},},
+    {"roomId":{"name":"room_test","path":"rooms/room_test/room_test.yy",},},
     {"roomId":{"name":"room_battle_loading","path":"rooms/room_battle_loading/room_battle_loading.yy",},},
   ],
   "templateType":null,

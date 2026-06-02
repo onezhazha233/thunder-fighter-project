@@ -6,7 +6,7 @@ function UISwitch(spr,xx,yy): UIBase(xx,yy) constructor{
 	value = false;
 	
 	AddEvent(UI_EVENT.CLICK,function(el){
-		el.value = !el.value;
+		el.Set(!el.value);
 		SFX_Play(snd_touch);
 	});
 	
