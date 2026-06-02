@@ -1,3 +1,3 @@
 function Game_Resume(){
-	battle_ui_pause_new.Resume();
+	battle_ui_pause.Resume();
 }

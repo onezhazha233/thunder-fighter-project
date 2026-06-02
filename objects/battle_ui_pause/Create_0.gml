@@ -1,15 +1,56 @@
 live;
+global.ui_showbox = 1
 depth=-99999
 _screen_saving=noone;
 seq = -1
 seq1 = -1
 
 pause_state = 0//0为未暂停 1为暂停动画播放中 2为暂停动画停止 3为解除暂停动画播放中
+button_xoffset = 220
 
-main_ui = new LuiMain();
-main_ui.setStyle(new LuiStyle().setMinSize(32,32)).centerContent();
+main_ui = new UIBase(0,0,room_width,room_height);
 
-quit_button = new LuiButton({width: 174,height: 62});
+quit_button = new UIButton(spr_ui_pause_button_quit,10+12-210,640-62+4,174,62)
+quit_button.draw = function(el){
+	draw_sprite(spr_ui_pause_button_base,0,el.abs_x-12-10,el.abs_y-4+10);
+    draw_sprite(spr_ui_pause_button_quit,el.is_pressed,el.abs_x-12,el.abs_y-4);
+}
+quit_button.AddEvent(UI_EVENT.CLICK,function(el){
+	SFX_Play(snd_touch);
+	el.parent.active = false;
+	other.button_xoffset = 230;
+	el.x = 10+12 - other.button_xoffset;
+	other.resume_button.x = 360+152+12 + other.button_xoffset;
+	audio_stop_all();
+	BGM_StopAll();
+	other.pause_state = 0;
+	layer_sequence_destroy(other.seq);
+	instance_activate_all();
+	if(room = room_preparation){
+		room_restart();
+	}
+	else{
+		room_goto(room_preparation);
+	}
+	fader.alpha = 1;
+	Fader_Fade(1,0,10);
+	Layer_Init();
+});
+
+resume_button = new UIButton(spr_ui_pause_button_resume,10+12-210,640-62+4,174,62)
+resume_button.draw = function(el){
+	draw_sprite_ext(spr_ui_pause_button_base,0,el.abs_x-12+208,quit_button.abs_y-4+10,-el.abs_scale_x,el.abs_scale_y,0,-1,el.abs_alpha);
+    draw_sprite(spr_ui_pause_button_resume,el.is_pressed,el.abs_x-12,el.abs_y-4);
+}
+resume_button.AddEvent(UI_EVENT.CLICK,function(el){
+	SFX_Play(snd_touch);
+	Game_Resume();
+});
+
+main_ui.AddContent(quit_button)
+main_ui.AddContent(resume_button)
+
+/*quit_button = new LuiButton({width: 174,height: 62});
 quit_button.setPositionAbsolute()
 quit_button.setPosX(10+12-210)
 quit_button.setPosY(640-62+4)
@@ -66,12 +107,13 @@ resume_button.addEvent(LUI_EV_CLICK, function(_element) {
 
 main_ui.addContent([quit_button,resume_button]);
 
-button_xoffset = 220
+button_xoffset = 220*/
 
 Pause = function(){
 	if(pause_state = 0){
 		if (sprite_exists(_screen_saving)) sprite_delete(_screen_saving);
-	    _screen_saving = sprite_create_from_surface(application_surface, 0, 0, room_width, room_height, false, false, 0, 0) instance_deactivate_all(1);
+	    _screen_saving = sprite_create_from_surface(application_surface, 0, 0, room_width, room_height, false, false, 0, 0)
+		instance_deactivate_all(true);
 	    audio_pause_all();
 		al = layer_get_all()
 		for(l=0;l<array_length(al);l+=1){

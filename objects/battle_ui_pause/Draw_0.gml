@@ -40,9 +40,7 @@ if(keyboard_check_pressed(ord("P"))){
 	}
 }
 
-if (variable_struct_exists(self, "main_ui") && !is_undefined(main_ui)) {
-	main_ui.render();
-}
+main_ui.Draw()
 
 Sequence_PlayByFrame(ll)
 

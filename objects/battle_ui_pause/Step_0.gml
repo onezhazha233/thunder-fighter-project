@@ -14,11 +14,9 @@ if(pause_state = 3){
 }
 quit_button.x = 10+12 - button_xoffset
 resume_button.x = 360+152+12 + button_xoffset
-quit_button._updateViewRegion()
-resume_button._updateViewRegion()
-quit_button.is_visible_in_region = true
-resume_button.is_visible_in_region = true
 
-if (variable_struct_exists(self, "main_ui") && !is_undefined(main_ui)) {
-	main_ui.update();
-}
+main_ui.active = (pause_state == 2)
+
+main_ui.UpdatePosition()
+main_ui.Update()
+main_ui.ProcessInput()
