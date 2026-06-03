@@ -15,12 +15,12 @@ else{
 }
 
 if(boss_hpbar_enabled = true){
-	draw_sprite_ext(spr_ui_hpbar_boss_name,0,camera._shake_pos_x+360-273-3,camera._shake_pos_y+104,1,1,0,-1,1);
+	draw_sprite_ext(spr_ui_hpbar_boss_name,0,camera._shake_pos_x+360-273-3,camera._shake_pos_y+104-5,1,1,0,-1,1);
 	draw_set_font(Lang_GetFont("zpix"));
 	draw_set_valign(fa_bottom);
-	draw_text_transformed(camera._shake_pos_x+360-273+7,camera._shake_pos_y+104,"LV."+string(boss_hpbar_lv)+"  "+boss_hpbar_name,0.8,0.8,0);
+	draw_text_transformed(camera._shake_pos_x+360-273+7,camera._shake_pos_y+104-5,"LV."+string(boss_hpbar_lv)+"  "+boss_hpbar_name,0.8,0.8,0);
 	draw_set_valign(fa_top);
-	draw_sprite_ext(spr_ui_hpbar_boss_bg,0,camera._shake_pos_x+360,camera._shake_pos_y+110,1,1,0,-1,1);
+	draw_sprite_ext(spr_ui_hpbar_boss_bg,0,camera._shake_pos_x+360,camera._shake_pos_y+110-5,1,1,0,-1,1);
 	for(i=0;i<boss_hpbar_phase+1;i+=1){
 		if(i = boss_hpbar_phase){
 			length = (boss_hpbar_hp/boss_hpbar_hp_max)*537;
@@ -29,7 +29,7 @@ if(boss_hpbar_enabled = true){
 			length = 537;
 		}
 		length = clamp(length,0,537);
-		draw_sprite_ext(spr_ui_hpbar_boss_bar,i,camera._shake_pos_x+360-273+5,camera._shake_pos_y+110,length,1,0,-1,1);
+		draw_sprite_ext(spr_ui_hpbar_boss_bar,i,camera._shake_pos_x+360-273+5,camera._shake_pos_y+110-5,length,1,0,-1,1);
 	}
 }
 
