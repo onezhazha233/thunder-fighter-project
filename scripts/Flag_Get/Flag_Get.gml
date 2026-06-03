@@ -9,5 +9,9 @@ function Flag_Get(){
 		DEFAULT=argument[2];
 	}
 	
-	return Flag_GetStorage(TYPE).Get(NAME,DEFAULT);
+	var storage = Flag_GetStorage(TYPE);
+	if(is_undefined(storage)){
+		return DEFAULT;
+	}
+	return storage.Get(NAME,DEFAULT);
 }
