@@ -49,7 +49,3 @@ function CollideSingleEnemy(enemy){
 		alarm[1] = delay;
 	}
 }
-
-function HurtEnemy(){
-	if(enemy.inv_damage = false)enemy.hp -= damage;
-}

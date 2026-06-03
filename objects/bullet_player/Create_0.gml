@@ -69,5 +69,5 @@ function CollideSingleEnemy(enemy){
 }
 
 function HurtEnemy(){
-	if(enemy.inv_damage = false)enemy.hp -= damage;
+	enemy.TakeDamage(damage);
 }

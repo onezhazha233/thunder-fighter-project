@@ -1,5 +1,4 @@
 live;
-global.ui_showbox = 1
 depth=-99999
 _screen_saving=noone;
 seq = -1

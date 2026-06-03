@@ -1,5 +1,4 @@
 live;
-global.ui_showbox = 0
 depth = -100;
 preview_inst = noone
 event_user(0)

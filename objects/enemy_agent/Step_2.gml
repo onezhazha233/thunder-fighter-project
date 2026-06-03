@@ -10,7 +10,7 @@ if(burn_duration > 0){
 	burn_duration -= 1;
 	effect_type = 1;
 	effect_alpha += (0.7-effect_alpha)/2;
-	if(inv_damage = false)hp -= burn_damage;
+	TakeDamage(burn_damage);
 	if(burn_duration mod 5 = 0){
 		for(i=0;i<irandom_range(1,3);i+=1){
 			xx = random_range(bbox_left,bbox_right);

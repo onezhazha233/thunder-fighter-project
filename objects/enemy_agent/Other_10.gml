@@ -211,6 +211,12 @@ Hurt = function(){
 		Anim_Create(id,"blend_b",0,0,255,0,6,6);
 	}
 }
+	
+TakeDamage = function(dmg){
+	if(inv_damage = false){
+		hp -= dmg;
+	}
+}
 
 SetSequence = function(seq,spd=1,pos=0,dir=seqdir_right){
 	if(hp > 0){
