@@ -8,4 +8,8 @@ color = 0//颜色
 extra_angle = 0//使所有骨头的角度加上这个值
 enabled = false//是否启用，为0则可随意设置骨头位置
 duration = -1//持续时间
+battle_blt = bullet_enemy_normal
 all_exist = true
+mark = noone
+
+custom_function = function(){}

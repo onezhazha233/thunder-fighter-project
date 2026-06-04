@@ -126,7 +126,7 @@ btn_settings.AddEvent(UI_EVENT.CLICK,function(){
 	window_settings = new UIImage(spr_ui_list,0,360,640);
 	window_settings.center = true;
 	window_settings.nineslice = true;
-	window_settings.height = 400;
+	window_settings.height = 500;
 	window_settings.scale_x = 0.9
 	window_settings.scale_y = 0.9
 	window_settings.black = 0;
@@ -214,7 +214,7 @@ btn_settings.AddEvent(UI_EVENT.CLICK,function(){
 	window_settings.AddContent(sound_icon);
 	window_settings.AddContent(sound_switch);
 	
-	boss_hp_ratio_text = new UIText(Lang_GetString("ui.boss.hp.ratio"),50,190);
+	boss_hp_ratio_text = new UIText(Lang_GetString("ui.settings.boss.hp.ratio"),50,190);
 	boss_hp_ratio_value = new UIText("",330,0);
 	boss_hp_ratio = new UISlider(250,190,300,36,0.5,3);
 	boss_hp_ratio.value_step = 0.1;
@@ -231,7 +231,7 @@ btn_settings.AddEvent(UI_EVENT.CLICK,function(){
 	window_settings.AddContent(boss_hp_ratio_text);
 	window_settings.AddContent(boss_hp_ratio);
 	
-	enemy_damage_ratio_text = new UIText(Lang_GetString("ui.enemy.damage.ratio"),50,250);
+	enemy_damage_ratio_text = new UIText(Lang_GetString("ui.settings.enemy.damage.ratio"),50,250);
 	enemy_damage_ratio_value = new UIText("",330,0);
 	enemy_damage_ratio = new UISlider(250,250,300,36,0.5,3);
 	enemy_damage_ratio.value_step = 0.1;
@@ -247,6 +247,18 @@ btn_settings.AddEvent(UI_EVENT.CLICK,function(){
 	enemy_damage_ratio.AddContent(enemy_damage_ratio_value);
 	window_settings.AddContent(enemy_damage_ratio_text);
 	window_settings.AddContent(enemy_damage_ratio);
+	
+	swarm_text = new UIText(Lang_GetString("ui.settings.swarm"),50,330);
+	swarm = new UISwitch(spr_ui_switch,130,300);
+	swarm.AddEvent(UI_EVENT.CREATE,function(el){
+		el.Set(Flag_Get(FLAG_SETTINGS,"swarm"));
+	});
+	swarm.AddEvent(UI_EVENT.CHANGE,function(el){
+		Flag_Set(FLAG_SETTINGS,"swarm",el.value);
+		Flag_Save(FLAG_SETTINGS);
+	});
+	window_settings.AddContent(swarm_text);
+	window_settings.AddContent(swarm);
 	
 	other.main_ui.AddContent(window_settings);
 })

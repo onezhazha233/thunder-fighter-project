@@ -1,4 +1,6 @@
 live;
+custom_function()
+
 if(enabled = 1&&array_length(blt) > 0){
 	rott += rot;
     for(i=0;i<number;i+=1){

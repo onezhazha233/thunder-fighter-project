@@ -16,8 +16,9 @@
     "ui.select.wingman.right": "选择右僚机",
     "ui.select.subweapon": "选择副武器",
     "ui.select.armor": "选择装甲",
-    "ui.boss.hp.ratio": "Boss血量倍率",
-    "ui.enemy.damage.ratio": "敌人伤害倍率",
-    "ui.startbattle": "开始战斗",
-    "ui.settings": "设置"
+    "ui.settings": "设置",
+    "ui.settings.boss.hp.ratio": "Boss血量倍率",
+    "ui.settings.enemy.damage.ratio": "敌人伤害倍率",
+    "ui.settings.swarm": "炮灰机",
+    "ui.startbattle": "开始战斗"
 }

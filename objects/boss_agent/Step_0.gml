@@ -126,7 +126,13 @@ if(active = true){
 if(layer_sequence_is_finished(enemy_sequence)){
 	if(layer_sequence_get_headdir(enemy_sequence) = seqdir_right){
 		if(state = ENEMY_STATE.INTRO){
-			SetIdle();
+			if(intro_extra_time = 0){
+				SetIdle();
+			}
+			else{
+				layer_sequence_speedscale(enemy_sequence,0);
+				intro_extra_time -= 1;
+			}
 		}
 		if(state = ENEMY_STATE.IDLE){
 			for(i=0;i<array_length(auto_idle_sequence);i+=1){

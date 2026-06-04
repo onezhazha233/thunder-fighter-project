@@ -72,9 +72,9 @@ attack_0 = function(laser=0){//旋转散射加反弹闪电球
 			}
 		}
 		if(laser = 1){
-				ll = MakeEnemyLaser(1,x-42,y+120,1,-90,90,30); // 中激光，红色，角度-90，延迟90，持续时间30
-				ll = MakeEnemyLaser(1,x+42,y+120,1,-90,90,30); // 中激光，红色，角度-90，延迟90，持续时间30
-			}
+			ll = MakeEnemyLaser(1,x-42,y+120,1,-90,90,30); // 中激光，红色，角度-90，延迟90，持续时间30
+			ll = MakeEnemyLaser(1,x+42,y+120,1,-90,90,30); // 中激光，红色，角度-90，延迟90，持续时间30
+		}
 	}
 	if(attack_time > 100&&attack_time <= 130&&attack_time mod 10 = 0){
 		for(i=0;i<20;i+=1){
@@ -140,9 +140,9 @@ attack_0 = function(laser=0){//旋转散射加反弹闪电球
 			}
 		}
 		if(laser = 1){
-				ll = MakeEnemyLaser(1,x-82,y+30,1,-120,30,30); // 中激光，红色，角度-120，延迟30，持续时间30
-				ll = MakeEnemyLaser(1,x+82,y+30,1,-60,30,30); // 中激光，红色，角度-60，延迟30，持续时间30
-			}
+			ll = MakeEnemyLaser(1,x-82,y+30,1,-120,30,30); // 中激光，红色，角度-120，延迟30，持续时间30
+			ll = MakeEnemyLaser(1,x+82,y+30,1,-60,30,30); // 中激光，红色，角度-60，延迟30，持续时间30
+		}
 	}
 	if(attack_time = 200){
 		mark.SetSequence(seq_enemy_boss_mini_og0_attack_1_outro);

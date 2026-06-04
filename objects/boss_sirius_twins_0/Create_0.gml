@@ -9,8 +9,7 @@ idle_mode = IDLE_MODE.SEQUENCE
 pre_sequence = seq_enemy_boss_mini_og1_0_intro
 intro_sequence = seq_enemy_boss_mini_og1_0_intro
 idle_sequence = seq_enemy_boss_mini_og1_0_idle
-die_sequence = seq_enemy_boss_mini_0_die
-auto_idle_sequence = [seq_enemy_boss_mini_0_cover]
+die_sequence = seq_enemy_boss_mini_og1_0_die
 
 explosion = effect_explosion_boss
 
@@ -19,15 +18,16 @@ hp = 1
 
 Anim_Create(id,"hp",0,0,hp,hp_max-hp,40)
 
-x = 360-150
+x = 200
 y = -500
 
 x_target = x
-y_target = 500
+y_target = 400
 
 battle_ui.boss_hpbar_enabled = true
 battle_wave.enabled = false
 
-bullet_emitter = emitter_boss_red_heavy
+bullet_emitter = emitter_boss_sirius_twins_0
 
 items = []
+value = 250

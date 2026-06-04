@@ -2,15 +2,10 @@ live;
 event_inherited();
 
 SetMoveInfo = function(){
-	move_range = [150,250,720-150,350];
-	move_distance = [150,250];
-	move_duration = [80,120];
+	move_range = [150,250,720-150,500];
+	move_distance = [150,300];
+	move_duration = [40,60];
 	move_interval = [20,30];
-}
-
-OnDie = function(){
-	Player_AddScore(500);
-	MakeBossCrystal(x,y,500);
 }
 
 SetIdle = function(){

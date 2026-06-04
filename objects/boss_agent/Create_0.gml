@@ -63,3 +63,5 @@ frozen_cd_time = 200
 frozen_moving = true
 
 Player_SetBreaktime(true);
+
+intro_extra_time = 0
