@@ -37,19 +37,17 @@ SetState = function(s){
 		}
 	}
 }
+
 SetSurfEnabled = function(enabled){
 	surf_enabled = enabled;
 	var scrBegin = function(){
 		if (event_number != ev_draw_normal) return;
 		if(surf_enabled = true&&surface_exists(surf))surface_set_target(surf);
 		gpu_set_blendmode_ext_sepalpha(bm_src_alpha, bm_inv_src_alpha, bm_one, bm_inv_src_alpha);
-		shader_set(shd_blend_alpha);
-		shader_set_uniform_f(shader_get_uniform(shd_blend_alpha,"u_blendColor"),color_get_red(image_blend)/255,color_get_green(image_blend)/255,color_get_blue(image_blend)/255,image_alpha);
 	}
 
 	var scrEnd = function(){
 		if (event_number != ev_draw_normal) return;
-		shader_reset();
 		gpu_set_blendmode(bm_normal);
 		if(surf_enabled = true&&surface_exists(surf))surface_reset_target();
 	}

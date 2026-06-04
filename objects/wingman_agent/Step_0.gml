@@ -21,3 +21,8 @@ if(layer_sequence_exists(layer_wingman_lower,flame_sequence)){
 	layer_sequence_y(flame_sequence,y+lengthdir_y(flame_y_offset-surf_y*surf_enabled,image_angle));
 	layer_sequence_angle(flame_sequence,image_angle);
 }
+
+layer_sequence_blend(flame_sequence,image_blend)
+layer_sequence_blend(wingman_sequence,image_blend)
+layer_sequence_alpha(flame_sequence,image_alpha)
+layer_sequence_alpha(wingman_sequence,image_alpha)

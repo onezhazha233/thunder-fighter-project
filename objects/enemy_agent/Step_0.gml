@@ -31,6 +31,12 @@ if(hp <= 0){
 hurt_time = max(0,hurt_time-1)
 
 image_blend = make_color_rgb(blend_r,blend_g,blend_b)
+layer_sequence_blend(flame_upper_sequence,image_blend)
+layer_sequence_blend(flame_lower_sequence,image_blend)
+layer_sequence_blend(enemy_sequence,image_blend)
+layer_sequence_alpha(flame_upper_sequence,image_alpha)
+layer_sequence_alpha(flame_lower_sequence,image_alpha)
+layer_sequence_alpha(enemy_sequence,image_alpha)
 
 if(layer_sequence_is_finished(enemy_sequence)){
 	if(layer_sequence_get_headdir(enemy_sequence) = seqdir_right){

@@ -25,6 +25,8 @@ if(layer_sequence_exists(ll,bullet_sequence)){
 	layer_sequence_xscale(bullet_sequence,scale_x*(dir = 1 ? -1 : 1));
 	layer_sequence_yscale(bullet_sequence,scale_y);
 	layer_sequence_angle(bullet_sequence,image_angle);
+	layer_sequence_blend(bullet_sequence,image_blend);
+	layer_sequence_alpha(bullet_sequence,image_alpha);
 	layer_sequence_speedscale(bullet_sequence,game_get_speed(gamespeed_fps)/60*animspd);
 }
 

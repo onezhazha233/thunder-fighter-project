@@ -5,6 +5,8 @@ if(layer_sequence_exists(global.layer_bullets_player,bullet_sequence)){
 	layer_sequence_xscale(bullet_sequence,scale_x);
 	layer_sequence_yscale(bullet_sequence,scale_y);
 	layer_sequence_angle(bullet_sequence,image_angle);
+	layer_sequence_blend(bullet_sequence,image_blend);
+	layer_sequence_alpha(bullet_sequence,image_alpha);
 }
 
 if(global.debug_bullet_player_collision_display = true){

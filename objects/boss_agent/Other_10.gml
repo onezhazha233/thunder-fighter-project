@@ -57,8 +57,6 @@ SetSurfEnabled = function(enabled){
 		if (event_number != ev_draw_normal) return;
 		if(surf_enabled = true&&surface_exists(surf))surface_set_target(surf);
 		gpu_set_blendmode_ext_sepalpha(bm_src_alpha, bm_inv_src_alpha, bm_one, bm_inv_src_alpha);
-		shader_set(shd_blend_alpha);
-		shader_set_uniform_f(shader_get_uniform(shd_blend_alpha,"u_blendColor"),color_get_red(image_blend)/255,color_get_green(image_blend)/255,color_get_blue(image_blend)/255,image_alpha);
 	}
 
 	var scrEnd = function(){
@@ -68,7 +66,6 @@ SetSurfEnabled = function(enabled){
 	    draw_surface_ext(surf_effect, 0, 0, 1, 1, 0, c_white, 1);
 		
 		if(surf_enabled = true&&surface_exists(surf))surface_reset_target();
-		shader_reset();
 		if(global.debug_enemy_collision_display = true){
 			draw_set_color(c_red);
 			if(collision_type = 0){
