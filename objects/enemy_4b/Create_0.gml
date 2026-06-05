@@ -1,7 +1,7 @@
 live;
 event_inherited();
 
-display_mode = DISPLAY_MODE.SPRITE
+display_mode = ENEMY_DISPLAY_MODE.SPRITE
 
 enemy_sprite = spr_enemy_minion_4b
 flame_lower = seq_enemy_minion_4b_flame

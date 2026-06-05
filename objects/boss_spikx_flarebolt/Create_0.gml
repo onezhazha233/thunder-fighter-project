@@ -6,8 +6,8 @@ down = 100
 left = 120
 right = 120
 
-pre_mode = PRE_MODE.SEQUENCE
-idle_mode = IDLE_MODE.SEQUENCE
+pre_mode = ENEMY_PRE_MODE.SEQUENCE
+idle_mode = ENEMY_IDLE_MODE.SEQUENCE
 
 pre_sequence = seq_enemy_boss_mini_og0_pre
 intro_sequence = seq_enemy_boss_mini_og0_intro

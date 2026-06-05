@@ -1,15 +1,13 @@
 event_inherited();
 
-idle_mode = 0
-idle_sprite = spr_fire_base
-flame_lower_enabled = 1
-flame_lower = seq_raptor_abcd_flame
+idle_mode = EQUIPMENT_IDLE_MODE.SEQUENCE
+idle_sequence = seq_falcon_a_idle
 rampage_intro = seq_fire_rampage_intro
 rampage = seq_fire_rampage
-rampage_outro_mode = 0
 rampage_outro = seq_fire_rampage_outro
 
-sprite_roll_left = spr_fire_roll_left
-sprite_roll_flip = true
+roll_mode = EQUIPMENT_ROLL_MODE.SEQUENCE
+roll_sequence_right = [seq_falcon_a_roll_right_0,seq_falcon_a_roll_right_1,seq_falcon_a_roll_right_2]
+roll_sequence_left = roll_sequence_right
 
 bullet_emitter = emitter_plane_fire

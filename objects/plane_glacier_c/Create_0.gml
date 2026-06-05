@@ -1,13 +1,13 @@
 live;
 event_inherited();
 
-idle_mode = 1
+idle_mode = EQUIPMENT_IDLE_MODE.SEQUENCE
 idle_sequence = seq_glacier_c_idle
 rampage_intro = seq_glacier_c_rampage_intro
 rampage = seq_glacier_c_rampage
 rampage_outro = seq_glacier_c_rampage_outro
 
-roll_mode = 1
+roll_mode = EQUIPMENT_ROLL_MODE.SEQUENCE
 roll_sequence_right = [seq_glacier_c_roll_right_0,seq_glacier_c_roll_right_1,seq_glacier_c_roll_right_2]
 roll_sequence_left = roll_sequence_right
 

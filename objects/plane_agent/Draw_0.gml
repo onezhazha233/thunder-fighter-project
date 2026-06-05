@@ -1,11 +1,11 @@
 live;
-if(idle_mode = 0){
+if(idle_mode = EQUIPMENT_IDLE_MODE.SPRITE){
 	if(sprite_exists(idle_sprite)){
 		if(draw_plane = 1){
 			if(surf_enabled = 1)surface_set_target(surf);
 			draw_sprite_ext(idle_sprite,0,x-surf_x*surf_enabled,y-surf_y*surf_enabled,(state == 0&&roll_state != 0 ? 0 : image_xscale),image_yscale,image_angle,image_blend,image_alpha);
 			if(state = 0){
-				if(roll_mode = 0){
+				if(roll_mode = EQUIPMENT_ROLL_MODE.SPRITE){
 					if(roll_state < 0){
 						draw_sprite_ext(sprite_roll_left,clamp(ceil(abs(roll_state))-1,0,2),x-surf_x*surf_enabled,y-surf_y*surf_enabled,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
 					}
@@ -25,7 +25,7 @@ if(idle_mode = 0){
 }
 else{
 	if(state = 0){
-		if(roll_mode = 0){
+		if(roll_mode = EQUIPMENT_ROLL_MODE.SPRITE){
 			if(roll_state < 0){
 				draw_sprite_ext(sprite_roll_left,clamp(ceil(abs(roll_state))-1,0,2),x-surf_x*surf_enabled,y-surf_y*surf_enabled,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
 			}

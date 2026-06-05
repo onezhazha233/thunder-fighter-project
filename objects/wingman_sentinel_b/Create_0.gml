@@ -1,6 +1,6 @@
 event_inherited();
 
-idle_mode = 1
+idle_mode = EQUIPMENT_IDLE_MODE.SEQUENCE
 idle_sequence = seq_sentinel_b_idle
 rampage_intro = seq_sentinel_b_rampage_intro
 rampage = seq_sentinel_b_rampage

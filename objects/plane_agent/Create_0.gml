@@ -1,6 +1,6 @@
 plane_sequence = -1
 
-idle_mode = 0//0为贴图 1为序列 2为暴走第一帧
+idle_mode = EQUIPMENT_IDLE_MODE.SPRITE //0为贴图 1为序列 2为暴走第一帧
 idle_sprite = -1
 idle_sequence = -1
 
@@ -18,7 +18,7 @@ flame_lower_y_offset = 0
 
 rampage_intro = -1
 rampage = -1
-rampage_outro_mode = 0//0为存在暴走结束动画 1为暴走开始动画倒放
+rampage_outro_mode = EQUIPMENT_RAMPAGE_OUTRO_MODE.SEQUENCE//0为存在暴走结束动画 1为暴走开始动画倒放
 rampage_outro = -1
 
 draw_plane = 0
@@ -48,7 +48,7 @@ layer_plane_upper = layer_create(depth-1)
 
 speed_x = 0
 
-roll_mode = 0//0为贴图 1为序列
+roll_mode = EQUIPMENT_ROLL_MODE.SPRITE//0为贴图 1为序列
 roll_state = 0;//侧翻状态：-3到3（0为水平，负为左翻，正为右翻）
 roll_state_previous = 0
 

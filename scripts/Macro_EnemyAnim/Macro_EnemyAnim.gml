@@ -6,17 +6,17 @@ function Macro_EnemyAnim(){
 		WITHDRAW = 3
 	}
 	
-	enum DISPLAY_MODE{
+	enum ENEMY_DISPLAY_MODE{
 		SPRITE = 0,
 		SEQUENCE = 1
 	}
 	
-	enum PRE_MODE{
+	enum ENEMY_PRE_MODE{
 		START_FRAME = 0,
 		SEQUENCE = 1
 	}
 	
-	enum IDLE_MODE{
+	enum ENEMY_IDLE_MODE{
 		END_FRAME = 0,
 		SEQUENCE = 1
 	}

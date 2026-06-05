@@ -6,7 +6,7 @@ down = 150
 left = 360
 right = 360
 
-idle_mode = IDLE_MODE.END_FRAME
+idle_mode = ENEMY_IDLE_MODE.END_FRAME
 
 pre_sequence = seq_enemy_boss_large_og1_p2_intro
 intro_sequence = seq_enemy_boss_large_og1_p2_intro

@@ -1,12 +1,12 @@
 live;
 SetState = function(s){
 	state = s;
-	if(display_mode = DISPLAY_MODE.SEQUENCE){
+	if(display_mode = ENEMY_DISPLAY_MODE.SEQUENCE){
 		if(s = ENEMY_STATE.PRE){
-			if(pre_mode = PRE_MODE.START_FRAME){
+			if(pre_mode = ENEMY_PRE_MODE.START_FRAME){
 				SetSequence(intro_sequence,0);
 			}
-			if(pre_mode = PRE_MODE.SEQUENCE){
+			if(pre_mode = ENEMY_PRE_MODE.SEQUENCE){
 				SetSequence(pre_sequence);
 			}
 		}
@@ -17,10 +17,10 @@ SetState = function(s){
 			if(instance_exists(bullet_emitter_inst)){
 				bullet_emitter_inst.enabled = true;
 			}
-			if(idle_mode = IDLE_MODE.END_FRAME){
+			if(idle_mode = ENEMY_IDLE_MODE.END_FRAME){
 				SetSequence(intro_sequence,0,1);
 			}
-			if(idle_mode = IDLE_MODE.SEQUENCE){
+			if(idle_mode = ENEMY_IDLE_MODE.SEQUENCE){
 				SetSequence(idle_sequence);
 			}
 		}

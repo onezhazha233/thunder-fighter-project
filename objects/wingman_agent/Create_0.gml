@@ -1,6 +1,6 @@
 wingman_sequence = -1
 
-idle_mode = 0//0为贴图 1为序列 2为暴走第一帧
+idle_mode = EQUIPMENT_IDLE_MODE.SPRITE//0为贴图 1为序列 2为暴走第一帧
 idle_sprite = -1
 idle_sequence = -1
 
@@ -11,7 +11,7 @@ flame_y_offset = 0
 
 rampage_intro = -1
 rampage = -1
-rampage_outro_mode = 0//0为存在暴走结束动画 1为暴走开始动画倒放
+rampage_outro_mode = EQUIPMENT_RAMPAGE_OUTRO_MODE.SEQUENCE//0为存在暴走结束动画 1为暴走开始动画倒放
 rampage_outro = -1
 
 draw_wingman = 0

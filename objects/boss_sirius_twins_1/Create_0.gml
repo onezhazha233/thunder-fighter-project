@@ -4,7 +4,7 @@ event_inherited();
 collision_type = COLLISION_TYPE.SPRITE
 mask_index = spr_enemy_boss_mini_og1_1_bottom_0
 
-idle_mode = IDLE_MODE.SEQUENCE
+idle_mode = ENEMY_IDLE_MODE.SEQUENCE
 
 pre_sequence = seq_enemy_boss_mini_og1_1_intro
 intro_sequence = seq_enemy_boss_mini_og1_1_intro

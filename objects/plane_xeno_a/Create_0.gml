@@ -1,6 +1,6 @@
 event_inherited();
 
-idle_mode = 1
+idle_mode = EQUIPMENT_IDLE_MODE.SEQUENCE
 idle_sequence = seq_xeno_a_idle
 flame_lower_enabled = 1
 flame_lower = seq_xeno_ab_flame_0
@@ -8,7 +8,7 @@ flame_upper_enabled = 1
 flame_upper = seq_xeno_ab_flame_1
 rampage_intro = seq_xeno_a_rampage_intro
 rampage = seq_xeno_a_rampage
-rampage_outro_mode = 1
+rampage_outro_mode = EQUIPMENT_RAMPAGE_OUTRO_MODE.REVERSE_INTRO
 rampage_outro = seq_xeno_a_rampage_intro
 
 sprite_roll_left = spr_xeno_a_roll_left

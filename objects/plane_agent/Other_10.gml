@@ -2,13 +2,13 @@ SetState = function(s){
 	state = s;
 	if(s = 0){
 		layer_sequence_destroy(plane_sequence);
-		if(idle_mode = 0){
+		if(idle_mode = EQUIPMENT_IDLE_MODE.SPRITE){
 			draw_plane = 1;
 		}
-		if(idle_mode = 1){
+		if(idle_mode = EQUIPMENT_IDLE_MODE.SEQUENCE){
 			SetSequence(idle_sequence);
 		}
-		if(idle_mode = 2){
+		if(idle_mode = EQUIPMENT_IDLE_MODE.FIRST_FRAME){
 			SetSequence(idle_sequence,0);
 		}
 	}
@@ -25,12 +25,12 @@ SetState = function(s){
 		}
 	}
 	if(s = 3){
-		if(rampage_outro_mode = 0){
+		if(rampage_outro_mode = EQUIPMENT_RAMPAGE_OUTRO_MODE.SEQUENCE){
 			if(sequence_exists(rampage_outro)){
 				SetSequence(rampage_outro);
 			}
 		}
-		if(rampage_outro_mode = 1){
+		if(rampage_outro_mode = EQUIPMENT_RAMPAGE_OUTRO_MODE.REVERSE_INTRO){
 			if(sequence_exists(rampage_intro)){
 				SetSequence(rampage_intro,1,1,seqdir_left);
 			}
@@ -77,7 +77,7 @@ SetPosition = function(xx,yy){
 		xscale = image_xscale;
 		if(state = 0){
 			if!(roll_state = 0){
-				if(roll_mode = 0){
+				if(roll_mode = EQUIPMENT_ROLL_MODE.SPRITE){
 					xscale = 0;
 				}
 				else{

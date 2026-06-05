@@ -2,9 +2,9 @@ live;
 depth = DEPTH_BATTLE.ENEMIES
 depth_previous = depth
 
-display_mode = DISPLAY_MODE.SPRITE
-pre_mode = PRE_MODE.START_FRAME
-idle_mode = IDLE_MODE.END_FRAME
+display_mode = ENEMY_DISPLAY_MODE.SPRITE
+pre_mode = ENEMY_PRE_MODE.START_FRAME
+idle_mode = ENEMY_IDLE_MODE.END_FRAME
 
 enemy_sequence = -1
 enemy_sprite = -1

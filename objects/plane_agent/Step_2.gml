@@ -27,7 +27,7 @@ roll_real += delta * adapt_rate;
 if (abs(roll_real - roll_state) > 0.5) roll_state += sign(roll_real - roll_state);
 
 if(state = 0){
-	if(roll_mode = 1&&roll_state_previous != roll_state){
+	if(roll_mode = EQUIPMENT_ROLL_MODE.SEQUENCE&&roll_state_previous != roll_state){
 		if!(roll_state = 0){
 			rs = abs(roll_state)-1;
 			if(roll_state < 0){

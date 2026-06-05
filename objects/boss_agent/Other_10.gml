@@ -34,7 +34,7 @@ SetState = function(s){
 		Player_SetBreaktime(false);
 		inv_collision = false;
 		SetFlame(flame_lower,flame_upper);
-		if(idle_mode = 0){
+		if(idle_mode = ENEMY_IDLE_MODE.END_FRAME){
 			layer_sequence_destroy(enemy_sequence);
 			enemy_sequence = layer_sequence_create(layer_enemy,x,y,intro_sequence);
 			layer_sequence_xscale(enemy_sequence,image_xscale);
@@ -42,7 +42,7 @@ SetState = function(s){
 			layer_sequence_speedscale(enemy_sequence,0);
 			layer_sequence_headpos(enemy_sequence,layer_sequence_get_length(enemy_sequence));
 		}
-		if(idle_mode = 1){
+		if(idle_mode = ENEMY_IDLE_MODE.SEQUENCE){
 			layer_sequence_destroy(enemy_sequence);
 			enemy_sequence = layer_sequence_create(layer_enemy,x,y,idle_sequence);
 			layer_sequence_xscale(enemy_sequence,image_xscale);

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Macro_EquipmentAnim",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Macro_EquipmentAnim",
+  "parent":{
+    "name":"Macro",
+    "path":"folders/脚本/Macro.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

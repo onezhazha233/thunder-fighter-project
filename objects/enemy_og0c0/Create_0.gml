@@ -1,10 +1,10 @@
 live;
 event_inherited();
 
-display_mode = DISPLAY_MODE.SEQUENCE
+display_mode = ENEMY_DISPLAY_MODE.SEQUENCE
 
-pre_mode = PRE_MODE.START_FRAME
-idle_mode = IDLE_MODE.SEQUENCE
+pre_mode = ENEMY_PRE_MODE.START_FRAME
+idle_mode = ENEMY_IDLE_MODE.SEQUENCE
 
 pre_sequence = seq_enemy_minion_og0c0_intro
 intro_sequence = seq_enemy_minion_og0c0_intro

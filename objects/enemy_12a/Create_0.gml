@@ -1,9 +1,9 @@
 live;
 event_inherited();
 
-display_mode = DISPLAY_MODE.SEQUENCE
+display_mode = ENEMY_DISPLAY_MODE.SEQUENCE
 
-pre_mode = PRE_MODE.SEQUENCE
+pre_mode = ENEMY_PRE_MODE.SEQUENCE
 pre_sequence = seq_enemy_minion_12a
 flame_lower = seq_enemy_minion_12a_flame
 

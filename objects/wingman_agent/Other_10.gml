@@ -2,13 +2,13 @@ SetState = function(s){
 	state = s;
 	if(s = 0){
 		layer_sequence_destroy(wingman_sequence);
-		if(idle_mode = 0){
+		if(idle_mode = EQUIPMENT_IDLE_MODE.SPRITE){
 			draw_wingman = 1;
 		}
-		if(idle_mode = 1){
+		if(idle_mode = EQUIPMENT_IDLE_MODE.SEQUENCE){
 			SetSequence(idle_sequence);
 		}
-		if(idle_mode = 2){
+		if(idle_mode = EQUIPMENT_IDLE_MODE.FIRST_FRAME){
 			SetSequence(idle_sequence,0);
 		}
 	}
@@ -21,10 +21,10 @@ SetState = function(s){
 		draw_wingman = 0;
 	}
 	if(s = 3){
-		if(rampage_outro_mode = 0){
+		if(rampage_outro_mode = EQUIPMENT_RAMPAGE_OUTRO_MODE.SEQUENCE){
 			SetSequence(rampage_outro);
 		}
-		if(rampage_outro_mode = 1){
+		if(rampage_outro_mode = EQUIPMENT_RAMPAGE_OUTRO_MODE.REVERSE_INTRO){
 			SetSequence(rampage_intro,1,1,seqdir_left);
 		}
 	}

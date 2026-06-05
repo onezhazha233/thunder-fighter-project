@@ -1,4 +1,4 @@
-if(idle_mode = 0){
+if(idle_mode = EQUIPMENT_IDLE_MODE.SPRITE){
 	if(sprite_exists(idle_sprite)){
 		if(draw_wingman = 1){
 			if(surf_enabled = 1)surface_set_target(surf);

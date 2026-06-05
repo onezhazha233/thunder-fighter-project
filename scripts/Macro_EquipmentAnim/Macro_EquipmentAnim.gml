@@ -1,0 +1,17 @@
+function Macro_EquipmentAnim(){
+	enum EQUIPMENT_IDLE_MODE{
+		SPRITE = 0,
+		SEQUENCE = 1,
+		FIRST_FRAME = 2
+	}
+	
+	enum EQUIPMENT_RAMPAGE_OUTRO_MODE{
+		SEQUENCE = 0,
+		REVERSE_INTRO = 1
+	}
+	
+	enum EQUIPMENT_ROLL_MODE{
+		SPRITE = 0,
+		SEQUENCE = 1
+	}
+}

@@ -1,6 +1,6 @@
 event_inherited();
 
-idle_mode = 1
+idle_mode = EQUIPMENT_IDLE_MODE.SEQUENCE
 idle_sequence = seq_dawn_b_idle
 flame_lower_enabled = 1
 flame_lower = seq_dawn_ab_flame_0

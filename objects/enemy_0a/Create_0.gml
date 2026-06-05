@@ -2,7 +2,7 @@ live;
 event_inherited();
 depth -= 50
 
-display_mode = DISPLAY_MODE.SPRITE
+display_mode = ENEMY_DISPLAY_MODE.SPRITE
 
 enemy_sprite = spr_enemy_minion_0a
 flame_lower = seq_enemy_minion_0a_flame
