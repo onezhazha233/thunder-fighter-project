@@ -50,20 +50,3 @@ if (count_0_3 == total) {
 }
 
 SetPosition(x,y)
-
-with(plane_inst){
-	image_blend = other.image_blend;
-	image_alpha = other.image_alpha;
-}
-for(i=0;i<array_length(wingman_left);i+=1){
-	with(wingman_left_inst[i]){
-		image_blend = other.image_blend;
-		image_alpha = other.image_alpha;
-	}
-}
-for(i=0;i<array_length(wingman_right);i+=1){
-	with(wingman_right_inst[i]){
-		image_blend = other.image_blend;
-		image_alpha = other.image_alpha;
-	}
-}

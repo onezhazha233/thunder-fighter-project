@@ -142,6 +142,8 @@ SetPosition = function(xx,yy){
 		layer_sequence_xscale(enemy_sequence,image_xscale);
 		layer_sequence_yscale(enemy_sequence,image_yscale);
 		layer_sequence_angle(enemy_sequence,image_angle);
+		layer_sequence_blend(enemy_sequence,image_blend);
+		layer_sequence_alpha(enemy_sequence,image_alpha);
 	}
 	if(layer_sequence_exists(layer_enemy_lower,flame_lower_sequence)){
 		layer_sequence_x(flame_lower_sequence,x+lengthdir_x(flame_lower_x_offset,image_angle)*image_xscale-surf_x*surf_enabled+lengthdir_x(flame_lower_y_offset,image_angle-90)*image_xscale);
@@ -149,6 +151,9 @@ SetPosition = function(xx,yy){
 		layer_sequence_xscale(flame_lower_sequence,image_xscale);
 		layer_sequence_yscale(flame_lower_sequence,image_yscale);
 		layer_sequence_angle(flame_lower_sequence,image_angle);
+		layer_sequence_blend(flame_lower_sequence,image_blend);
+		layer_sequence_alpha(flame_lower_sequence,image_alpha);
+		
 	}
 	if(layer_sequence_exists(layer_enemy_upper,flame_upper_sequence)){
 		layer_sequence_x(flame_upper_sequence,x+lengthdir_x(flame_upper_x_offset,image_angle)*image_xscale-surf_x*surf_enabled+lengthdir_x(flame_upper_y_offset,image_angle-90)*image_xscale);
@@ -156,6 +161,9 @@ SetPosition = function(xx,yy){
 		layer_sequence_xscale(flame_upper_sequence,image_xscale);
 		layer_sequence_yscale(flame_upper_sequence,image_yscale);
 		layer_sequence_angle(flame_upper_sequence,image_angle);
+		layer_sequence_blend(flame_upper_sequence,image_blend);
+		layer_sequence_alpha(flame_upper_sequence,image_alpha);
+		
 	}
 }
 

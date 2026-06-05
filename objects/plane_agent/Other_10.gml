@@ -93,6 +93,8 @@ SetPosition = function(xx,yy){
 		layer_sequence_xscale(plane_sequence,xscale);
 		layer_sequence_yscale(plane_sequence,image_yscale);
 		layer_sequence_angle(plane_sequence,image_angle);
+		layer_sequence_blend(plane_sequence,image_blend);
+		layer_sequence_alpha(plane_sequence,image_alpha);
 	}
 	if(layer_sequence_exists(layer_plane_lower,flame_lower_sequence)){
 		layer_sequence_x(flame_lower_sequence,x+lengthdir_x(flame_lower_x_offset,image_angle)*image_xscale-surf_x*surf_enabled+lengthdir_x(flame_lower_y_offset,image_angle-90)*image_xscale);
@@ -100,6 +102,8 @@ SetPosition = function(xx,yy){
 		layer_sequence_xscale(flame_lower_sequence,image_xscale);
 		layer_sequence_yscale(flame_lower_sequence,image_yscale);
 		layer_sequence_angle(flame_lower_sequence,image_angle);
+		layer_sequence_blend(flame_lower_sequence,image_blend);
+		layer_sequence_alpha(flame_lower_sequence,image_alpha);
 	}
 	if(layer_sequence_exists(layer_plane_upper,flame_upper_sequence)){
 		layer_sequence_x(flame_upper_sequence,x+lengthdir_x(flame_upper_x_offset,image_angle)*image_xscale-surf_x*surf_enabled+lengthdir_x(flame_upper_y_offset,image_angle-90)*image_xscale);
@@ -107,6 +111,8 @@ SetPosition = function(xx,yy){
 		layer_sequence_xscale(flame_upper_sequence,image_xscale);
 		layer_sequence_yscale(flame_upper_sequence,image_yscale);
 		layer_sequence_angle(flame_upper_sequence,image_angle);
+		layer_sequence_blend(flame_upper_sequence,image_blend);
+		layer_sequence_alpha(flame_upper_sequence,image_alpha);
 	}
 }
 

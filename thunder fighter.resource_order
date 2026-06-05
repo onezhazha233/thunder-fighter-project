@@ -1855,7 +1855,6 @@
     {"name":"snd_warning_boss","order":6,"path":"sounds/snd_warning_boss/snd_warning_boss.yy",},
     {"name":"snd_weapon_upgrade","order":2,"path":"sounds/snd_weapon_upgrade/snd_weapon_upgrade.yy",},
     {"name":"sndDeniedClick","order":1,"path":"sounds/sndDeniedClick/sndDeniedClick.yy",},
-    {"name":"_QQMI6M__6Y__J_G8__D_TG","order":19,"path":"sprites/_QQMI6M__6Y__J_G8__D_TG/_QQMI6M__6Y__J_G8__D_TG.yy",},
     {"name":"sBoxDemo","order":4,"path":"sprites/sBoxDemo/sBoxDemo.yy",},
     {"name":"sCar","order":5,"path":"sprites/sCar/sCar.yy",},
     {"name":"sCarFlip","order":6,"path":"sprites/sCarFlip/sCarFlip.yy",},

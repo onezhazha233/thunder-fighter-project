@@ -90,6 +90,8 @@ SetPosition = function(xx,yy){
 			wingman_left_inst[i].image_xscale = xscale;
 			wingman_left_inst[i].image_yscale = yscale;
 			wingman_left_inst[i].image_angle = angle;
+			wingman_left_inst[i].image_blend = image_blend;
+			wingman_left_inst[i].image_alpha = image_alpha;
 		}
 	}
 	for(i=0;i<array_length(wingman_right_inst);i+=1){
@@ -100,6 +102,8 @@ SetPosition = function(xx,yy){
 			wingman_right_inst[i].image_xscale = xscale;
 			wingman_right_inst[i].image_yscale = yscale;
 			wingman_right_inst[i].image_angle = angle;
+			wingman_right_inst[i].image_blend = image_blend;
+			wingman_right_inst[i].image_alpha = image_alpha;
 		}
 	}
 	x = xx;
@@ -113,6 +117,8 @@ SetPosition = function(xx,yy){
 		plane_inst.image_xscale = xscale;
 		plane_inst.image_yscale = yscale;
 		plane_inst.image_angle = angle;
+		plane_inst.image_blend = image_blend;
+		plane_inst.image_alpha = image_alpha;
 	}
 	if(instance_exists(subweapon_inst)){
 		subweapon_inst.SetPosition(xx,yy);
