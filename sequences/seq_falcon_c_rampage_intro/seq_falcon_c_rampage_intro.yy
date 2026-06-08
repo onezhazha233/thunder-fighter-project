@@ -4354,7 +4354,7 @@
                 ],"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"rotation","resourceType":"GMRealTrack","resourceVersion":"2.0","trackColour":4294078024,"tracks":[],"traits":0,},
             {"$GMGraphicTrack":"","%Name":"spr_falcon_c_flame_0","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
                   {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-                      "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_falcon_c_flame_0","path":"sprites/spr_falcon_c_flame_0/spr_falcon_c_flame_0.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+                      "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_falcon_cd_flame_0","path":"sprites/spr_falcon_cd_flame_0/spr_falcon_cd_flame_0.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                     },"Disabled":false,"id":"807d2967-212e-49fe-a732-fcd2abae5c1f","IsCreationKey":false,"Key":0.0,"Length":16.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                 ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_falcon_c_flame_0","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294078024,"tracks":[
                 {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
@@ -4447,7 +4447,7 @@
                 ],"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"scale","resourceType":"GMRealTrack","resourceVersion":"2.0","trackColour":4294078024,"tracks":[],"traits":0,},
             {"$GMGraphicTrack":"","%Name":"spr_falcon_c_flame_0","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
                   {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-                      "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_falcon_c_flame_0","path":"sprites/spr_falcon_c_flame_0/spr_falcon_c_flame_0.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+                      "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_falcon_cd_flame_0","path":"sprites/spr_falcon_cd_flame_0/spr_falcon_cd_flame_0.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                     },"Disabled":false,"id":"87fb2b37-4537-4784-b387-ab8dd0d462a4","IsCreationKey":false,"Key":0.0,"Length":16.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                 ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_falcon_c_flame_0","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4294078024,"tracks":[
                 {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
