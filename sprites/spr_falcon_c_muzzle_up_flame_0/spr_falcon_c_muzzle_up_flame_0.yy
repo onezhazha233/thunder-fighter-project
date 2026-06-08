@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_falcon_c_muzzle_up_flame_0",
   "bboxMode":0,
-  "bbox_bottom":23,
+  "bbox_bottom":36,
   "bbox_left":0,
-  "bbox_right":8,
+  "bbox_right":7,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":24,
+  "height":37,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"37ed39d5-0ed0-4429-a953-6f57a073632d","blendMode":0,"displayName":"default","isLocked":false,"name":"37ed39d5-0ed0-4429-a953-6f57a073632d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":9,
+  "width":8,
 }

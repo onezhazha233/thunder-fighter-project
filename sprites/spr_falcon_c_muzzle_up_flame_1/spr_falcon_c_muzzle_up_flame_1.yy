@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_falcon_c_muzzle_up_flame_1",
   "bboxMode":0,
-  "bbox_bottom":56,
+  "bbox_bottom":82,
   "bbox_left":0,
-  "bbox_right":24,
+  "bbox_right":25,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"03672049-c71f-4e08-bb2c-70c4b91b4d65","name":"03672049-c71f-4e08-bb2c-70c4b91b4d65","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4944fa01-5558-4716-9d20-92362c5ef325","name":"4944fa01-5558-4716-9d20-92362c5ef325","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":57,
+  "height":83,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"5e06c086-7ae9-43ee-b410-0b77a9800143","blendMode":0,"displayName":"default","isLocked":false,"name":"5e06c086-7ae9-43ee-b410-0b77a9800143","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"b460b569-1225-4af4-ae14-e753adc0b06f","blendMode":0,"displayName":"default","isLocked":false,"name":"b460b569-1225-4af4-ae14-e753adc0b06f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_falcon_c_muzzle_up_flame_1",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"03672049-c71f-4e08-bb2c-70c4b91b4d65","path":"sprites/spr_falcon_c_muzzle_up_flame_1/spr_falcon_c_muzzle_up_flame_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d5d0a1c4-cafa-4903-9928-004e0a7beeb5","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4944fa01-5558-4716-9d20-92362c5ef325","path":"sprites/spr_falcon_c_muzzle_up_flame_1/spr_falcon_c_muzzle_up_flame_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f33794ac-807a-4cb9-aade-f67ac6f24ac9","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":25,
+  "width":26,
 }

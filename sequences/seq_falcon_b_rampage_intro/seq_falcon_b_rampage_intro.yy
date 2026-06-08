@@ -57,7 +57,7 @@
                   "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4281628057,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
                 },"Disabled":false,"id":"9b6046cf-5425-4df5-afe8-34928b7e76f3","IsCreationKey":false,"Key":32.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":2838122770,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":2844065592,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
                 },"Disabled":false,"id":"0abf9b47-7c11-4a30-a8ba-591483dc1c5d","IsCreationKey":false,"Key":34.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
               {"$Keyframe<ColourKeyframe>":"","Channels":{
                   "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":1416705070,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
@@ -128,7 +128,7 @@
                   "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":4281628057,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
                 },"Disabled":false,"id":"e21407e3-ecc9-4c59-b3b6-9a9a43067605","IsCreationKey":false,"Key":32.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
               {"$Keyframe<ColourKeyframe>":"","Channels":{
-                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":2838122770,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
+                  "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":2844065592,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
                 },"Disabled":false,"id":"bf60b0c7-993c-486a-b13e-92ac02c4fb9a","IsCreationKey":false,"Key":34.0,"Length":1.0,"resourceType":"Keyframe<ColourKeyframe>","resourceVersion":"2.0","Stretch":false,},
               {"$Keyframe<ColourKeyframe>":"","Channels":{
                   "0":{"$ColourKeyframe":"","AnimCurveId":null,"Colour":1416705070,"EmbeddedAnimCurve":null,"resourceType":"ColourKeyframe","resourceVersion":"2.0",},
@@ -220,29 +220,33 @@
               {"$Keyframe<RealKeyframe>":"","Channels":{
                   "0":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":{"$GMAnimCurve":"","%Name":"缩放","channels":[
                         {"$GMAnimCurveChannel":"","%Name":"x","colour":4290799884,"name":"x","points":[
-                            {"th0":-0.09090909,"th1":1.904978E-09,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.8,},
-                            {"th0":-0.45454547,"th1":0.018181814,"tv0":0.0,"tv1":0.0,"x":0.90909094,"y":4.6,},
-                            {"th0":-0.018181814,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":4.6,},
+                            {"th0":-0.03636364,"th1":7.6199125E-10,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.8,},
+                            {"th0":-0.18181819,"th1":0.27272728,"tv0":0.0,"tv1":0.0,"x":0.36363637,"y":3.2,},
+                            {"th0":-1.1429868E-09,"th1":0.018181814,"tv0":0.0,"tv1":0.0,"x":0.90909094,"y":2.8,},
+                            {"th0":-0.018181814,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":2.8,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                         {"$GMAnimCurveChannel":"","%Name":"y","colour":4281083598,"name":"y","points":[
-                            {"th0":-0.09090909,"th1":1.904978E-09,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.8,},
-                            {"th0":-0.45454547,"th1":0.018181814,"tv0":0.0,"tv1":0.0,"x":0.90909094,"y":4.6,},
-                            {"th0":-0.018181814,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":4.6,},
+                            {"th0":-0.03636364,"th1":7.6199125E-10,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.8,},
+                            {"th0":-0.18181819,"th1":0.27272728,"tv0":0.0,"tv1":0.0,"x":0.36363637,"y":3.2,},
+                            {"th0":-1.1429868E-09,"th1":0.018181814,"tv0":0.0,"tv1":0.0,"x":0.90909094,"y":2.8,},
+                            {"th0":-0.018181814,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":2.8,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                       ],"function":2,"name":"缩放","resourceType":"GMAnimCurve","resourceVersion":"2.0",},"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
-                  "1":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":{"$GMAnimCurve":"","%Name":"","channels":[
+                  "1":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":{"$GMAnimCurve":"","%Name":"缩放","channels":[
                         {"$GMAnimCurveChannel":"","%Name":"x","colour":4290799884,"name":"x","points":[
-                            {"th0":-0.09090909,"th1":1.904978E-09,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.8,},
-                            {"th0":-0.45454547,"th1":0.018181814,"tv0":0.0,"tv1":0.0,"x":0.90909094,"y":4.6,},
-                            {"th0":-0.018181814,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":4.6,},
+                            {"th0":-0.03636364,"th1":7.6199125E-10,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.8,},
+                            {"th0":-0.18181819,"th1":0.27272728,"tv0":0.0,"tv1":0.0,"x":0.36363637,"y":3.2,},
+                            {"th0":-1.1429868E-09,"th1":0.018181814,"tv0":0.0,"tv1":0.0,"x":0.90909094,"y":2.8,},
+                            {"th0":-0.018181814,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":2.8,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                         {"$GMAnimCurveChannel":"","%Name":"y","colour":4281083598,"name":"y","points":[
-                            {"th0":-0.09090909,"th1":1.904978E-09,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.8,},
-                            {"th0":-0.45454547,"th1":0.018181814,"tv0":0.0,"tv1":0.0,"x":0.90909094,"y":4.6,},
-                            {"th0":-0.018181814,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":4.6,},
+                            {"th0":-0.03636364,"th1":7.6199125E-10,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.8,},
+                            {"th0":-0.18181819,"th1":0.27272728,"tv0":0.0,"tv1":0.0,"x":0.36363637,"y":3.2,},
+                            {"th0":-1.1429868E-09,"th1":0.018181814,"tv0":0.0,"tv1":0.0,"x":0.90909094,"y":2.8,},
+                            {"th0":-0.018181814,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":2.8,},
                           ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
-                      ],"function":2,"name":"","resourceType":"GMAnimCurve","resourceVersion":"2.0",},"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
-                },"Disabled":false,"id":"efb8afdf-565f-4ff6-9ddd-e20ec54e948b","IsCreationKey":false,"Key":28.0,"Length":11.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                      ],"function":2,"name":"缩放","resourceType":"GMAnimCurve","resourceVersion":"2.0",},"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
+                },"Disabled":false,"id":"7dfa0509-bb52-4af7-8de0-cab4cad11697","IsCreationKey":false,"Key":28.0,"Length":11.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
             ],"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"scale","resourceType":"GMRealTrack","resourceVersion":"2.0","trackColour":4294068458,"tracks":[],"traits":0,},
       ],"traits":0,},
     {"$GMGroupTrack":"","%Name":"main","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"modifiers":[],"name":"main","resourceType":"GMGroupTrack","resourceVersion":"2.0","trackColour":4294068310,"tracks":[
