@@ -1,10 +1,10 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_falcon_d_cockpit",
+  "%Name":"spr_falcon_d_wing_up_light",
   "bboxMode":0,
-  "bbox_bottom":107,
+  "bbox_bottom":11,
   "bbox_left":0,
-  "bbox_right":46,
+  "bbox_right":49,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,16 +12,16 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"1caf46c5-8242-493c-a435-e277486b94ce","name":"1caf46c5-8242-493c-a435-e277486b94ce","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"35247f9f-67a9-43db-a1df-2406a1035106","name":"35247f9f-67a9-43db-a1df-2406a1035106","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":108,
+  "height":12,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"1dba36f2-8d47-41ea-9e46-86c24330eb89","blendMode":0,"displayName":"default","isLocked":false,"name":"1dba36f2-8d47-41ea-9e46-86c24330eb89","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"d3dc186a-7ffb-4398-b93e-6d90d1bd4781","blendMode":0,"displayName":"default","isLocked":false,"name":"d3dc186a-7ffb-4398-b93e-6d90d1bd4781","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_falcon_d_cockpit",
+  "name":"spr_falcon_d_wing_up_light",
   "nineSlice":null,
   "origin":9,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_falcon_d_cockpit",
+    "%Name":"spr_falcon_d_wing_up_light",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_falcon_d_cockpit",
+    "name":"spr_falcon_d_wing_up_light",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,14 +69,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1caf46c5-8242-493c-a435-e277486b94ce","path":"sprites/spr_falcon_d_cockpit/spr_falcon_d_cockpit.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ebd54654-6b83-42c8-9940-c636c1600a18","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"35247f9f-67a9-43db-a1df-2406a1035106","path":"sprites/spr_falcon_d_wing_up_light/spr_falcon_d_wing_up_light.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"3919cbc3-e731-4825-be6b-4750c44c604f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":23,
-    "yorigin":75,
+    "xorigin":28,
+    "yorigin":1,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":47,
+  "width":50,
 }
