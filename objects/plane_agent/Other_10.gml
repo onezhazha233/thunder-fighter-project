@@ -1,7 +1,6 @@
 SetState = function(s){
 	state = s;
 	if(s = 0){
-		layer_sequence_destroy(plane_sequence);
 		if(idle_mode = EQUIPMENT_IDLE_MODE.SPRITE){
 			draw_plane = 1;
 		}
