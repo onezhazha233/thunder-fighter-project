@@ -2,6 +2,7 @@ Anim_Init()
 Flag_Init()
 
 display_set_gui_size(720,1280)
+draw_enable_skeleton_blendmodes(true)
 
 UIInit()
 

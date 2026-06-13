@@ -46,10 +46,10 @@ function Equipment_Plane(){
 	    {name: Lang_GetString("overwatcher.c"), ability: Lang_GetString("ability.overwatcher"), quality: 2, icon: "overwatcher_c"},
 	    {name: Lang_GetString("overwatcher.d"), ability: Lang_GetString("ability.overwatcher"), quality: 3, icon: "overwatcher_d"},
 	    // falcon 系列
-	    /*{name: Lang_GetString("falcon.a"), ability: Lang_GetString("ability.falcon"), quality: 0, icon: "falcon_a"},
+	    {name: Lang_GetString("falcon.a"), ability: Lang_GetString("ability.falcon"), quality: 0, icon: "falcon_a"},
 	    {name: Lang_GetString("falcon.b"), ability: Lang_GetString("ability.falcon"), quality: 1, icon: "falcon_b"},
 	    {name: Lang_GetString("falcon.c"), ability: Lang_GetString("ability.falcon"), quality: 2, icon: "falcon_c"},
-	    {name: Lang_GetString("falcon.d"), ability: Lang_GetString("ability.falcon"), quality: 3, icon: "falcon_d"},*/
+	    {name: Lang_GetString("falcon.d"), ability: Lang_GetString("ability.falcon"), quality: 3, icon: "falcon_d"},
 	    // azurewing 系列（仅d档）
 	    {name: Lang_GetString("azurewing.d"), ability: Lang_GetString("ability.azurewing"), quality: 3, icon: "azurewing_d"},
 	    // fire 测试机

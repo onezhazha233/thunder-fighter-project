@@ -55,9 +55,9 @@ function Equipment_Wingman(){
 		{name: Lang_GetString("sentinel.d"), ability: Lang_GetString("ability.sentinel"), quality: 3, icon: "sentinel_d"},
 
 		// sniper
-		/*{name: Lang_GetString("sniper.a"), ability: Lang_GetString("ability.sniper"), quality: 0, icon: "sniper_a"},
+		{name: Lang_GetString("sniper.a"), ability: Lang_GetString("ability.sniper"), quality: 0, icon: "sniper_a"},
 		{name: Lang_GetString("sniper.b"), ability: Lang_GetString("ability.sniper"), quality: 1, icon: "sniper_b"},
-		{name: Lang_GetString("sniper.c"), ability: Lang_GetString("ability.sniper"), quality: 2, icon: "sniper_c"},
+		/*{name: Lang_GetString("sniper.c"), ability: Lang_GetString("ability.sniper"), quality: 2, icon: "sniper_c"},
 		{name: Lang_GetString("sniper.d"), ability: Lang_GetString("ability.sniper"), quality: 3, icon: "sniper_d"},*/
 
 		// lightarc

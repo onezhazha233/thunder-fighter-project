@@ -23,7 +23,7 @@
   ],
   "name":"spr_sniper_a_flame",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"sniper",
     "path":"folders/精灵/wingman/sniper/sniper.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":14,
-    "yorigin":14,
+    "yorigin":4,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

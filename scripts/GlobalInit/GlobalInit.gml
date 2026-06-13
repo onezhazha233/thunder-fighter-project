@@ -19,8 +19,8 @@ function GlobalInit(){
 	
 	global.current_equipment = {
 		plane: asset_get_index(Flag_Get(FLAG_STATIC,"player_plane")),
-		wingman_left: [wingman_sniper_a],//[asset_get_index(Flag_Get(FLAG_STATIC,"player_wingman_left"))],
-		wingman_right: [wingman_sniper_a],//[asset_get_index(Flag_Get(FLAG_STATIC,"player_wingman_right"))],
+		wingman_left: [wingman_sniper_b],//[asset_get_index(Flag_Get(FLAG_STATIC,"player_wingman_left"))],
+		wingman_right: [wingman_sniper_b],//[asset_get_index(Flag_Get(FLAG_STATIC,"player_wingman_right"))],
 		wingman_x_offset: [130,200],
 		wingman_y_offset: [0,0],
 		subweapon: asset_get_index(Flag_Get(FLAG_STATIC,"player_subweapon")),
