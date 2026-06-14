@@ -6,7 +6,7 @@
   "name":"UIBase",
   "parent":{
     "name":"UI",
-    "path":"folders/UI.yy",
+    "path":"folders/脚本/UI.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

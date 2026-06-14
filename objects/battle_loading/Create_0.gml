@@ -12,6 +12,5 @@ preload_active = [];
 preload_layer = -1
 
 global.battle_loading_done = false;
-global.lui_interact_enabled = false;
 
 anim = instance_create_depth(0,0,0,battle_loading_anim)

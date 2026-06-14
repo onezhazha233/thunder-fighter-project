@@ -24,8 +24,6 @@ instance_create_depth(0,0,0,battle_ui_pause)
 
 instance_create_depth(0,0,0,debugger)
 
-instance_create_depth(0,0,0,oSteadyDeltaTime)
-
 Flag_SetSlot(0)
 Flag_Load(FLAG_SETTINGS)
 Flag_Load(FLAG_STATIC)

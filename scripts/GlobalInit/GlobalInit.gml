@@ -32,8 +32,6 @@ function GlobalInit(){
 	global.debug_bullet_enemy_collision_display = false;
 	global.debug_enemy_collision_display = false;
 	
-	global.lui_interact_enabled = true;
-	
 	global.player_bullet_sfx = [
 		snd_plane_shoot,
 		snd_plane_blade_shoot_idle,

@@ -9,5 +9,4 @@ if (!instance_exists(battle_loading) || !variable_global_exists("battle_loading_
 	global.inv_hurt = 100
 	alarm[0] = 2
 	alarm[1] = 100
-	global.lui_interact_enabled = true;
 }
