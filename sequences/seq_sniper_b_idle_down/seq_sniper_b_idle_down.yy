@@ -43,7 +43,7 @@
   "tracks":[
     {"$GMGraphicTrack":"","%Name":"spr_sniper_ab_barrel_light_0","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_sniper_ab_barrel_light_0","path":"sprites/spr_sniper_ab_barrel_light_0/spr_sniper_ab_barrel_light_0.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_sniper_abdd_barrel_light_0","path":"sprites/spr_sniper_abdd_barrel_light_0/spr_sniper_abdd_barrel_light_0.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
             },"Disabled":false,"id":"24d87167-1ba6-4a0d-a449-b8a5c329c113","IsCreationKey":false,"Key":0.0,"Length":40.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[
         {"$InvisibleModifier":"","resourceType":"InvisibleModifier","resourceVersion":"2.0",},
@@ -95,7 +95,7 @@
       ],"traits":0,},
     {"$GMGraphicTrack":"","%Name":"spr_sniper_ab_barrel_light_0","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_sniper_ab_barrel_light_0","path":"sprites/spr_sniper_ab_barrel_light_0/spr_sniper_ab_barrel_light_0.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+              "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_sniper_abdd_barrel_light_0","path":"sprites/spr_sniper_abdd_barrel_light_0/spr_sniper_abdd_barrel_light_0.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
             },"Disabled":false,"id":"00a7910e-fced-479c-9e64-76f6b16f8047","IsCreationKey":false,"Key":0.0,"Length":40.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
         ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[
         {"$InvisibleModifier":"","resourceType":"InvisibleModifier","resourceVersion":"2.0",},
@@ -802,7 +802,7 @@
           ],"traits":0,},
         {"$GMGraphicTrack":"","%Name":"spr_sniper_b_barrel_bottom","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
               {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-                  "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_sniper_ab_barrel_bottom","path":"sprites/spr_sniper_ab_barrel_bottom/spr_sniper_ab_barrel_bottom.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+                  "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_sniper_abcd_barrel_bottom","path":"sprites/spr_sniper_abcd_barrel_bottom/spr_sniper_abcd_barrel_bottom.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                 },"Disabled":false,"id":"ee59e58c-611e-4051-87dc-c3f57c1c4e8d","IsCreationKey":false,"Key":0.0,"Length":40.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
             ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[
             {"$InvisibleModifier":"","resourceType":"InvisibleModifier","resourceVersion":"2.0",},
