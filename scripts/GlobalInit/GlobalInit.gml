@@ -18,12 +18,12 @@ function GlobalInit(){
 	global.breaktime = true;//为true时涉及倒计时的机制会暂停
 	
 	global.current_equipment = {
-		plane: asset_get_index(Flag_Get(FLAG_STATIC,"player_plane")),
-		wingman_left: [asset_get_index(Flag_Get(FLAG_STATIC,"player_wingman_left"))],
-		wingman_right: [asset_get_index(Flag_Get(FLAG_STATIC,"player_wingman_right"))],
+		plane: plane_falcon_d,//asset_get_index(Flag_Get(FLAG_STATIC,"player_plane")),
+		wingman_left: [],//[asset_get_index(Flag_Get(FLAG_STATIC,"player_wingman_left"))],
+		wingman_right: [],//[asset_get_index(Flag_Get(FLAG_STATIC,"player_wingman_right"))],
 		wingman_x_offset: [130,200],
 		wingman_y_offset: [0,0],
-		subweapon: asset_get_index(Flag_Get(FLAG_STATIC,"player_subweapon")),
+		subweapon: -1,//asset_get_index(Flag_Get(FLAG_STATIC,"player_subweapon")),
 		armor: asset_get_index(Flag_Get(FLAG_STATIC,"player_armor"))
 	}
 	global.choicebosswave = asset_get_index(Flag_Get(FLAG_STATIC,"current_boss_wave"));

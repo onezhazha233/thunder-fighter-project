@@ -12,4 +12,4 @@ roll_sequence_right = [seq_falcon_d_roll_right_0,seq_falcon_d_roll_right_1,seq_f
 roll_sequence_flip = false
 roll_sequence_left = [seq_falcon_d_roll_left_0,seq_falcon_d_roll_left_1,seq_falcon_d_roll_left_2]
 
-bullet_emitter = emitter_plane_glacier_d
+bullet_emitter = emitter_plane_falcon_d

@@ -11,4 +11,4 @@ roll_mode = EQUIPMENT_ROLL_MODE.SEQUENCE
 roll_sequence_right = [seq_falcon_b_roll_right_0,seq_falcon_b_roll_right_1,seq_falcon_b_roll_right_2]
 roll_sequence_left = roll_sequence_right
 
-bullet_emitter = emitter_plane_glacier_b
+bullet_emitter = emitter_plane_falcon_b
