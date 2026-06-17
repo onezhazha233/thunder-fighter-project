@@ -46,6 +46,7 @@ SetPosition = function(xx,yy){
 		layer_sequence_y(wingman_sequence,y-surf_y*surf_enabled);
 		layer_sequence_xscale(wingman_sequence,image_xscale*(flip=1 ? -1 : 1));
 		layer_sequence_yscale(wingman_sequence,image_yscale);
+		if(instance_exists(bullet_emitter_inst)&&variable_instance_exists(bullet_emitter_inst,"angle"))barrel_angle = bullet_emitter_inst.angle;
 		layer_sequence_angle(wingman_sequence,image_angle+barrel_angle*(flip=1 ? -1 : 1)*(state==0));
 		layer_sequence_blend(wingman_sequence,image_blend);
 		layer_sequence_alpha(wingman_sequence,image_alpha);

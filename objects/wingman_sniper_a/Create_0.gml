@@ -9,7 +9,7 @@ rampage_intro = seq_sniper_a_rampage_intro
 rampage = seq_sniper_a_rampage
 rampage_outro = seq_sniper_a_rampage_outro
 
-bullet_emitter = noone//emitter_wingman_sentinel_a
+bullet_emitter = emitter_wingman_sniper_a
 
 wingman_up_sequence = -1
 wingman_down_sequence = -1

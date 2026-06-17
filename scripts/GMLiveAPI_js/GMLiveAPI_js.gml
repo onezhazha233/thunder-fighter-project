@@ -466,7 +466,7 @@ function live_preinit_js_func_384(l_ind) {
 		case 424: return draw_get_color;
 		case 425: return draw_get_alpha;
 		case 426: return merge_colour;
-		case 427: return make_colour_rgb;
+		case 427: return make_color_rgb;
 		case 428: return make_colour_hsv;
 		case 429: return colour_get_red;
 		case 430: return colour_get_green;

@@ -12,7 +12,7 @@ laser_scale = 1
 laser_scale_target = 1
 laser_scale_level = [1.25,1.27,1.30,1.33]
 
-damages = [0.125,0.125*1.3,0.125*1.7,0.25,0.5]
+damages = [0.047,0.061,0.08,0.094,0.188]
 
 ring_time = 0
 

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"enemy",
-    "path":"folders/精灵/effect/enemy.yy",
+    "name":"frozen",
+    "path":"folders/精灵/effect/enemy/frozen.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

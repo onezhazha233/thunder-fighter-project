@@ -27,6 +27,8 @@ mark = noone
 destroy_type = 0//0为被守卫抵挡 1为被护盾消除 2为碰到玩家判定点 3为无特效直接消失 4为被调试清屏或boss切换阶段等强制销毁 5为被打掉
 destroy_effect = noone
 inv_block = false//是否免疫守卫护盾等清除效果，适用于激光器等
+inv_burn = true
+inv_frozen = true
 
 duration = -1
 auto_destroy = true

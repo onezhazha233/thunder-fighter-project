@@ -9,8 +9,8 @@
   "name":"effect_enemy_ice",
   "overriddenProperties":[],
   "parent":{
-    "name":"enemy",
-    "path":"folders/物体/effect/enemy.yy",
+    "name":"frozen",
+    "path":"folders/物体/effect/enemy/frozen.yy",
   },
   "parentObjectId":null,
   "persistent":false,

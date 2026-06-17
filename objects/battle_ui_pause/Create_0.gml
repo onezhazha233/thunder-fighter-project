@@ -62,7 +62,7 @@ Pause = function(){
 			if(len > 0){
 				for (var i = 0; i < len; ++i){
 					var el = elements[i];
-					if(layer_get_element_type(el) = layerelementtype_sequence){
+					if(layer_get_element_type(el) = layerelementtype_sequence&&layer_sequence_get_speedscale(el) != 0){
 						layer_sequence_pause(el);
 					}
 				}

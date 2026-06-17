@@ -7,6 +7,11 @@ if(enabled = false){
 			instance_destroy(laser[i]);
 		}
 	}
+	for(i=0;i<array_length(follow_inst);i+=1){
+		if(instance_exists(follow_inst[i])){
+			instance_destroy(follow_inst[i]);
+		}
+	}
 }
 
 if(abs(laser_scale - laser_scale_target) > 0.01){

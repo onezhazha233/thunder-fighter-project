@@ -44,6 +44,8 @@ blend_b = 255
 
 inv_damage = true//为真时会被子弹击中但不掉血
 inv_collision = false//为真时不会和子弹触发碰撞事件
+inv_frozen = false//是否免疫冰冻
+inv_burn = false//是否免疫燃烧
 hp_max = 5
 hp = hp_max
 hurt_time = 0
@@ -85,10 +87,18 @@ last_bullet = noone
 tracks = ds_map_create()//被子弹锁定的数量
 
 burn_amount = 0
-burn_target = 60
+burn_target = 30
 burn_damage = 0
-burn_time = -1
+burn_time = 240
 burn_duration = -1
+
+explode_amount = 0
+explode_target = 70
+explode_enabled = false
+explode_interval = 45
+explode_time = 0
+explode_x = x
+explode_damage = 1
 
 frozen_amount = 0
 frozen_target = 60

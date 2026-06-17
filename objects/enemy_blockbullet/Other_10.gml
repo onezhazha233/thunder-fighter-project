@@ -12,6 +12,12 @@ SetPosition = function(xx,yy){
 	}
 }
 
+TakeDamage = function(dmg){
+	if(inv_damage = false){
+		hp -= dmg;
+	}
+}
+
 Hurt = function(){}
 
 SetSequence = function(seq,spd=1,pos=0,dir=seqdir_right){

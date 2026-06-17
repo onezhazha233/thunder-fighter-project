@@ -1,0 +1,10 @@
+live;
+draw_sprite_ext(spr_bullet_player_sniper_abcd_bg,1,x,y,bgsx*scale_x,bgsy*scale_y*1.5,image_angle,image_blend,0.5)
+draw_sprite_ext(spr_bullet_player_sniper_abcd_bg,1,x,y,bgsx*scale_x,bgsy*scale_y*1.5,image_angle,image_blend,0.5)
+draw_sprite_ext(spr_bullet_player_sniper_abcd_bg,2,x,y,image_xscale*scale_x,image_yscale*scale_y*1.5,image_angle,image_blend,ra/2)
+draw_sprite_ext(spr_bullet_player_sniper_cd_rampage,0,x,y,rsx*scale_x,rsy*scale_y*1.5,image_angle,image_blend,ra)
+gpu_set_blendmode(bm_add)
+draw_sprite_ext(spr_bullet_player_sniper_cd_particle,0,x+lengthdir_x(po,image_angle-90)*abs(scale_x),y+lengthdir_y(po,image_angle-90)*scale_y,image_xscale*scale_x*2,ps*scale_y*2,image_angle,image_blend,pa)
+draw_sprite_ext(sprite_index,image_index,x,y,image_xscale*scale_x,image_yscale*scale_y,image_angle,image_blend,image_alpha)
+gpu_set_blendmode(bm_normal)
+draw_sprite_ext(spr_bullet_player_sniper_cd_rampage,0,x,y,rsx*scale_x,rsy*scale_y*1.5,image_angle,image_blend,1-ra)

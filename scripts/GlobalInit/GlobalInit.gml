@@ -18,7 +18,7 @@ function GlobalInit(){
 	global.breaktime = true;//为true时涉及倒计时的机制会暂停
 	
 	global.current_equipment = {
-		plane: plane_falcon_d,//asset_get_index(Flag_Get(FLAG_STATIC,"player_plane")),
+		plane: plane_agent,//asset_get_index(Flag_Get(FLAG_STATIC,"player_plane")),
 		wingman_left: [],//[asset_get_index(Flag_Get(FLAG_STATIC,"player_wingman_left"))],
 		wingman_right: [],//[asset_get_index(Flag_Get(FLAG_STATIC,"player_wingman_right"))],
 		wingman_x_offset: [130,200],

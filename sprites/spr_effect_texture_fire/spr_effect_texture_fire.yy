@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"enemy",
-    "path":"folders/精灵/effect/enemy.yy",
+    "name":"burn",
+    "path":"folders/精灵/effect/enemy/burn.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

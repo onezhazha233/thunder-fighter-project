@@ -23,50 +23,50 @@ history_file_name = "console.txt"	// what do you want the save file to be called
 view_history_datapoints = 500		// When drawing a graph how many points to draw (look if you are going to draw 100 graphs its going to chug you can solve this by making this number smaller)
 #endregion
 #region colours/style							<- You can change colours here
-history_background_col =	make_colour_rgb(0,0,0)
+history_background_col =	make_color_rgb(0,0,0)
 history_background_alpha =	0.8
-history_text_col =			make_colour_rgb(173,173,173)
-history_text_col_info =		make_colour_rgb(144,113,80)
-history_text_col_focus =	make_colour_rgb(255,182,104)
-history_text_col_hover =	make_colour_rgb(255,132,0)
+history_text_col =			make_color_rgb(173,173,173)
+history_text_col_info =		make_color_rgb(144,113,80)
+history_text_col_focus =	make_color_rgb(255,182,104)
+history_text_col_hover =	make_color_rgb(255,132,0)
 history_text_alpha =		1
 history_text_shadow =		0.2 // 0=off, 1=full on, decimal=amount of opacity 
-history_border_col =		make_colour_rgb(255,132,0)
+history_border_col =		make_color_rgb(255,132,0)
 history_border_alpha =		1
-main_background_col =		make_colour_rgb(60,60,60)
+main_background_col =		make_color_rgb(60,60,60)
 main_background_alpha =		0.8
-main_text1_col =			make_colour_rgb(255,255,255) // this is the first part of the parsed text
-main_text2_col =			make_colour_rgb(160,160,160) // this is arguments that are not in focus 
-main_text3_col =			make_colour_rgb(255,132,0) // this is the colour as you type to form a word (and the selected word)
+main_text1_col =			make_color_rgb(255,255,255) // this is the first part of the parsed text
+main_text2_col =			make_color_rgb(160,160,160) // this is arguments that are not in focus 
+main_text3_col =			make_color_rgb(255,132,0) // this is the colour as you type to form a word (and the selected word)
 main_text_alpha =			1
 main_text_shadow =			0.3 // 0=off, 1=full on, decimal=amount of opacity 
-main_text_bad_col =			make_colour_rgb(241,186,186) // colour used if the colsone cant parse the code
-main_border_col =			make_colour_rgb(209,209,209)
+main_text_bad_col =			make_color_rgb(241,186,186) // colour used if the colsone cant parse the code
+main_border_col =			make_color_rgb(209,209,209)
 main_border_alpha =			1
-main_mouse_selected_col =	make_colour_rgb(255,132,0)
-predict_background_col =	make_colour_rgb(0,0,0)
+main_mouse_selected_col =	make_color_rgb(255,132,0)
+predict_background_col =	make_color_rgb(0,0,0)
 predict_background_alpha =	0.3
-predict_text_col =			make_colour_rgb(255,255,255)
+predict_text_col =			make_color_rgb(255,255,255)
 predict_text_alpha =		1
 predict_text_shadow =		0.7 // 0=off, 1=full on, decimal=amount of opacity 
-predict_border_col =		make_colour_rgb(0,0,0)
+predict_border_col =		make_color_rgb(0,0,0)
 predict_border_alpha =		0.7
-focus_background_col =		make_colour_rgb(60,60,60)
+focus_background_col =		make_color_rgb(60,60,60)
 focus_background_alpha =	1
-focus_text_col =			make_colour_rgb(255,132,0)
-focus_arrow_colour =		make_colour_rgb(255,132,0)
-view_background_col =		make_colour_rgb(60,60,60)
+focus_text_col =			make_color_rgb(255,132,0)
+focus_arrow_colour =		make_color_rgb(255,132,0)
+view_background_col =		make_color_rgb(60,60,60)
 view_background_alpha =		0.8
-view_border_col =			make_colour_rgb(250,250,250)
+view_border_col =			make_color_rgb(250,250,250)
 view_border_alpha =			1
-view_text_title_col =		make_colour_rgb(255,255,255)
-view_text_value_col =		make_colour_rgb(255,132,0)
-view_text_name_col =		make_colour_rgb(255,132,0)
-view_data_bar_col =			make_colour_rgb(255,132,0)
+view_text_title_col =		make_color_rgb(255,255,255)
+view_text_value_col =		make_color_rgb(255,132,0)
+view_text_name_col =		make_color_rgb(255,132,0)
+view_data_bar_col =			make_color_rgb(255,132,0)
 view_data_bar_alpha =		0
-view_data_top_col =			make_colour_rgb(255,132,0)
+view_data_top_col =			make_color_rgb(255,132,0)
 view_data_top_alpha =		1
-view_intro_highlight_col =	make_colour_rgb(255,255,255)
+view_intro_highlight_col =	make_color_rgb(255,255,255)
 #endregion
 #region heights/widths/sizes
 pos_top = -1 // where it starts on the screen

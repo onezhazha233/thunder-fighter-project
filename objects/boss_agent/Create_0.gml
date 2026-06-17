@@ -57,7 +57,7 @@ move_distance = [100,160]
 move_duration = [80,120]
 move_interval = [20,30]
 
-burn_target = 120
+burn_target = 30
 frozen_target = 300
 frozen_cd_time = 200
 frozen_moving = true
