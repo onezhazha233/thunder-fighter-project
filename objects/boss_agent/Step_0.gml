@@ -28,7 +28,8 @@ if(hp <= 0){
 			layer_sequence_create(global.layer_enemies_die,x,y,die_sequence);
 		}
 		if(object_exists(explosion)){
-			instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,explosion);
+			eff = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,explosion);
+			eff.box = [bbox_left,bbox_top,bbox_right,bbox_bottom];
 		}
 		battle_ui.boss_hpbar_hp = 0;
 		Anim_Create(battle_ui,"boss_hpbar_enabled",0,0,1,-1,0,180);

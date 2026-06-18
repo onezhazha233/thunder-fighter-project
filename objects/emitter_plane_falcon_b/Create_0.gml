@@ -21,10 +21,12 @@ SetRampage = function(rampage){
 	if(rampage = true){
 		alarm[0] = -1;
 		alarm[1] = 1;
+		audio_stop_sound(snd_plane_falcon_idle);
 	}
 	else{
 		alarm[0] = 1;
 		alarm[1] = -1;
+		audio_stop_sound(snd_plane_falcon_rampage);
 	}
 }
 SetPosition = function(xx,yy){

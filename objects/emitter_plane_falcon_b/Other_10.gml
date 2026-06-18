@@ -40,3 +40,5 @@ if(ring_time mod 10 = 0){
 	ring.image_yscale = laser_scale*0.6;
 	array_push(follow_inst,ring);
 }
+
+if!(audio_is_playing(snd_plane_falcon_idle))SFX_Play(snd_plane_falcon_idle,0,true);

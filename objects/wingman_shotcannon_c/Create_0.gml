@@ -1,6 +1,6 @@
 event_inherited();
 
-idle_mode = EQUIPMENT_IDLE_MODE.FIRST_FRAME
+idle_mode = EQUIPMENT_IDLE_MODE.SPRITE
 idle_sprite = spr_shotcannon_c_base
 flame = seq_shotcannon_cd_flame
 rampage_intro = seq_shotcannon_c_rampage_intro

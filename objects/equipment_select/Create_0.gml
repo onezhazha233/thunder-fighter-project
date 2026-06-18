@@ -1,5 +1,5 @@
 live;
-depth = -100;
+depth = DEPTH_BATTLE.UI+100;
 preview_inst = noone
 event_user(0)
 

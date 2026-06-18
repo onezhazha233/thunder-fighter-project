@@ -23,3 +23,5 @@ pa = 0
 ra = 0
 
 damage = 1
+
+SFX_Play(snd_wingman_sniper)

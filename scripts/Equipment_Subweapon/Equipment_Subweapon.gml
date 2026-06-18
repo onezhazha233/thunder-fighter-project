@@ -55,10 +55,10 @@ function Equipment_Subweapon(){
 		{name: Lang_GetString("bolide.d"), ability: Lang_GetString("ability.bolide"), quality: 3, icon: "bolide_d"},
 
 		// helix_piercer
-		/*{name: Lang_GetString("helix_piercer.a"), ability: Lang_GetString("ability.helix_piercer"), quality: 0, icon: "helix_piercer_a"},
+		{name: Lang_GetString("helix_piercer.a"), ability: Lang_GetString("ability.helix_piercer"), quality: 0, icon: "helix_piercer_a"},
 		{name: Lang_GetString("helix_piercer.b"), ability: Lang_GetString("ability.helix_piercer"), quality: 1, icon: "helix_piercer_b"},
 		{name: Lang_GetString("helix_piercer.c"), ability: Lang_GetString("ability.helix_piercer"), quality: 2, icon: "helix_piercer_c"},
-		{name: Lang_GetString("helix_piercer.d"), ability: Lang_GetString("ability.helix_piercer"), quality: 3, icon: "helix_piercer_d"},*/
+		{name: Lang_GetString("helix_piercer.d"), ability: Lang_GetString("ability.helix_piercer"), quality: 3, icon: "helix_piercer_d"},
 
 		// sticky_bomb
 		{name: Lang_GetString("sticky_bomb.a"), ability: Lang_GetString("ability.sticky_bomb"), quality: 0, icon: "sticky_bomb_a"},

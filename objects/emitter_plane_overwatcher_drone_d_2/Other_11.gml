@@ -4,3 +4,4 @@ laser.image_angle = image_angle + 90
 laser.color = [[255,255,0],[255,128,128]]
 laser.damage = damage
 array_push(follow_inst,[laser,15]);
+SFX_Play(snd_plane_overwatcher_laser)

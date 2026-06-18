@@ -18,3 +18,5 @@ Anim_Create(id,"image_yscale",0,0,1,1,10,4)
 Anim_Create(id,"image_yscale",0,0,2,-1,10,14)
 
 damage = 1
+
+SFX_Play(snd_wingman_sniper)
