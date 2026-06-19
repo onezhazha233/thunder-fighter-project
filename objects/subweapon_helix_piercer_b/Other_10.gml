@@ -8,6 +8,9 @@ for(i=0;i<2;i+=1){
 	}
 	blt.part_add = 1;
 	blt.image_angle = angle - 90;
-	blt.damage = damage;
+	blt.damage = 0;
+	Anim_Create(blt,"damage",0,0,0,damage,60);
+	blt.damage_interval = 10;
+	Anim_Create(blt,"damage_interval",0,0,10,-9,90);
 	angle += 180;
 }

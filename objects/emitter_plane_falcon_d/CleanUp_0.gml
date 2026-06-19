@@ -5,3 +5,5 @@ for(i=0;i<array_length(laser);i+=1){
 	}
 }
 follow_inst = [];
+if(audio_is_playing(snd_plane_falcon_idle))audio_stop_sound(snd_plane_falcon_idle);
+if(audio_is_playing(snd_plane_falcon_rampage))audio_stop_sound(snd_plane_falcon_rampage);

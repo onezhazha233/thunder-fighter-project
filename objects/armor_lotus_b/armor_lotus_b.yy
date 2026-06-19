@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"armor_crystalis_c0",
+  "%Name":"armor_lotus_b",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"armor_crystalis_c0",
+  "name":"armor_lotus_b",
   "overriddenProperties":[],
   "parent":{
-    "name":"crystalis",
-    "path":"folders/物体/armor/crystalis.yy",
+    "name":"lotus",
+    "path":"folders/物体/armor/lotus.yy",
   },
   "parentObjectId":{
-    "name":"armor_crystalis_a",
-    "path":"objects/armor_crystalis_a/armor_crystalis_a.yy",
+    "name":"armor_lotus_a",
+    "path":"objects/armor_lotus_a/armor_lotus_a.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

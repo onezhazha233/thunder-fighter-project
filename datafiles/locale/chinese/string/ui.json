@@ -20,5 +20,6 @@
     "ui.settings.boss.hp.ratio": "Boss血量倍率",
     "ui.settings.enemy.damage.ratio": "敌人伤害倍率",
     "ui.settings.swarm": "炮灰机",
+    "ui.settings.minion": "小敌机",
     "ui.startbattle": "开始战斗"
 }

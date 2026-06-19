@@ -1,5 +1,6 @@
 live;
 //crystalis shield
+crystalis_atkpower_spd = 100/(60*4);
 ArmorAbility = function(type,exarg=0){
 	if(type = 1){
 		return exarg;
@@ -7,11 +8,12 @@ ArmorAbility = function(type,exarg=0){
 }
 
 if(room = room_battle){
+	var _armor = id;
 	buff_crystalis = {
+		armor_inst: _armor,
 		order: 0,
 		surf: surface_create(64,64),
 		atkpower: 0,
-		atkpower_spd: 100/(60*4),
 		atkpower_level: 0,
 		atkpower_level_max: 5,
 		atkbonus: {value: 0},
@@ -45,7 +47,7 @@ if(room = room_battle){
 							atkpower = 100;
 						}
 					}
-					if!(Player_IsBreaktime())atkpower += atkpower_spd;
+					if!(Player_IsBreaktime())atkpower += armor_inst.crystalis_atkpower_spd;
 				}
 			}
 			else{

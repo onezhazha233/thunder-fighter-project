@@ -20,6 +20,6 @@ for(i=0;i<array_length(find);i+=1){
 		CollideSingleEnemy(enemy);
 		draw_effect(x+lengthdir_x(_dist,image_angle+90),y+lengthdir_y(_dist,image_angle+90),1,time mod 14);
 		enemy.explode_x = x+lengthdir_x(_dist,image_angle+90);
-		enemy.explode_damage = damage*50;
+		enemy.explode_damage = damage*40;
 	}
 }

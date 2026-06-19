@@ -1,7 +1,7 @@
 live;
 event_inherited();
 
-test = 1
+test = 0
 if(test = 0){
 	enemy_0 = new Enemy(enemy_og0b,emitter_enemy_og0b,function(){
 		EnemyMove_Pre([360, -200], [360, 320], 40);

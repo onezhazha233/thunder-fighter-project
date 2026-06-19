@@ -64,11 +64,11 @@ function Equipment_Armor(){
 		{name: Lang_GetString("timedom.d"), ability: Lang_GetString("ability.timedom"), quality: 3, icon: "timedom_d"},
 
 		// lotus
-		/*{name: Lang_GetString("lotus.a"), ability: Lang_GetString("ability.lotus"), quality: 0, icon: "lotus_a"},
+		{name: Lang_GetString("lotus.a"), ability: Lang_GetString("ability.lotus"), quality: 0, icon: "lotus_a"},
 		{name: Lang_GetString("lotus.b"), ability: Lang_GetString("ability.lotus"), quality: 1, icon: "lotus_b"},
 		{name: Lang_GetString("lotus.c0"), ability: Lang_GetString("ability.lotus"), quality: 2, icon: "lotus_c", obj: "lotus_c0"},
 		{name: Lang_GetString("lotus.c123"), ability: Lang_GetString("ability.lotus"), quality: 2, icon: "lotus_c", obj: "lotus_c123"},
-		{name: Lang_GetString("lotus.d"), ability: Lang_GetString("ability.lotus"), quality: 3, icon: "lotus_d"},*/
+		{name: Lang_GetString("lotus.d"), ability: Lang_GetString("ability.lotus"), quality: 3, icon: "lotus_d"},
 	
 		// crystalis
 		{name: Lang_GetString("crystalis.a"), ability: Lang_GetString("ability.crystalis"), quality: 0, icon: "crystalis_a"},

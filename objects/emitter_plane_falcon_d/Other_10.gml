@@ -41,4 +41,7 @@ if(ring_time mod 12 = 0){
 	array_push(follow_inst,ring);
 }
 
-if!(audio_is_playing(snd_plane_falcon_idle))SFX_Play(snd_plane_falcon_idle,0,true);
+if!(audio_is_playing(snd_plane_falcon_idle)){
+	SFX_Play(snd_plane_falcon_idle);
+	alarm[2] = 40;
+}

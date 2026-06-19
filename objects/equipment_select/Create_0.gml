@@ -260,6 +260,18 @@ btn_settings.AddEvent(UI_EVENT.CLICK,function(){
 	window_settings.AddContent(swarm_text);
 	window_settings.AddContent(swarm);
 	
+	minion_text = new UIText(Lang_GetString("ui.settings.minion"),350,330);
+	minion = new UISwitch(spr_ui_switch,430,300);
+	minion.AddEvent(UI_EVENT.CREATE,function(el){
+		el.Set(Flag_Get(FLAG_SETTINGS,"minion"));
+	});
+	minion.AddEvent(UI_EVENT.CHANGE,function(el){
+		Flag_Set(FLAG_SETTINGS,"minion",el.value);
+		Flag_Save(FLAG_SETTINGS);
+	});
+	window_settings.AddContent(minion_text);
+	window_settings.AddContent(minion);
+	
 	other.main_ui.AddContent(window_settings);
 })
 
