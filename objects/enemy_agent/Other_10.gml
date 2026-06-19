@@ -109,7 +109,7 @@ SetSurfEnabled = function(enabled){
 					for(var i=0;i<6;i+=1){
 						for(var j=0;j<5;j+=1){
 							for(var k=0;k<512;k+=4){
-								draw_sprite_part_ext(spr_effect_texture_fire,0,0,k,512,4,512*i+sin(k/30+time/20)*20,512*j+k,1,1,-1,effect_alpha);
+								draw_sprite_part_ext(spr_effect_texture_fire,0,0,k,512,4,512*i+sin(k/30+time/20)*20-256,512*j+k,1,1,-1,effect_alpha);
 							}
 						}
 					}
