@@ -1,5 +1,7 @@
 ///@arg layer
 function Sequence_PlayByFrame(layer_id){
+	if(!layer_exists(layer_id)) return;
+
 	var elements = layer_get_all_elements(layer_id);
 	var len = array_length(elements);
 	if (len == 0) return;

@@ -1,2 +1,4 @@
 live;
-layer_destroy(preload_layer)
+if(layer_exists(preload_layer)){
+	layer_destroy(preload_layer);
+}

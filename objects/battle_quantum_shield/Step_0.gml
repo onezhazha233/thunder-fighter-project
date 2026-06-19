@@ -49,7 +49,9 @@ if(Player_IsEnabled()){
 	}
 }
 
-layer_sequence_blend(shield_sequence,image_blend);
-layer_sequence_alpha(shield_sequence,image_alpha);
+if(layer_sequence_exists(sl,shield_sequence)){
+	layer_sequence_blend(shield_sequence,image_blend);
+	layer_sequence_alpha(shield_sequence,image_alpha);
+}
 
 Sequence_PlayByFrame(sl);

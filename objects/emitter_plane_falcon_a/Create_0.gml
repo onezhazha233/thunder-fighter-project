@@ -41,21 +41,25 @@ SetPosition = function(xx,yy){
 			follow_inst[i].y = yy;
 			
 			with(follow_inst[i]){
-				if(variable_instance_exists(id,"bullet_sequence")){
-					if(variable_instance_exists(id,"ll")){
+			if(variable_instance_exists(id,"bullet_sequence")){
+				if(variable_instance_exists(id,"ll")){
+					if(layer_sequence_exists(ll,bullet_sequence)){
 						layer_sequence_x(bullet_sequence,x);
 						layer_sequence_y(bullet_sequence,y);
 					}
 				}
 			}
-			with(follow_inst[i]){
-				if(variable_instance_exists(id,"seq")){
-					if(variable_instance_exists(id,"ll")){
+		}
+		with(follow_inst[i]){
+			if(variable_instance_exists(id,"seq")){
+				if(variable_instance_exists(id,"ll")){
+					if(layer_sequence_exists(ll,seq)){
 						layer_sequence_x(seq,x);
 						layer_sequence_y(seq,y);
 					}
 				}
 			}
+		}
 		}
 		else{
 			array_delete(follow_inst,i,1);

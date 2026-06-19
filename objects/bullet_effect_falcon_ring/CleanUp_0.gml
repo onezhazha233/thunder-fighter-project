@@ -1,3 +1,7 @@
 live;
-layer_destroy(ll);
-layer_sequence_destroy(seq);
+if(ll != -1 && layer_exists(ll)){
+	layer_destroy(ll);
+}
+if(seq != -1){
+	layer_sequence_destroy(seq);
+}

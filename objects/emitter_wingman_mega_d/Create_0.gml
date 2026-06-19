@@ -22,13 +22,15 @@ SetPosition = function(xx,yy){
 			follow_inst[i,0].y = yy + follow_inst[i,1]*scale_y;
 			
 			with(follow_inst[i,0]){
-				if(variable_instance_exists(id,"bullet_sequence")){
-					if(variable_instance_exists(id,"ll")){
+			if(variable_instance_exists(id,"bullet_sequence")){
+				if(variable_instance_exists(id,"ll")){
+					if(layer_sequence_exists(ll,bullet_sequence)){
 						layer_sequence_x(bullet_sequence,x);
 						layer_sequence_y(bullet_sequence,y);
 					}
 				}
 			}
+		}
 		}
 		else{
 			array_delete(follow_inst,i,1);
