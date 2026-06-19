@@ -42,6 +42,12 @@ if(visible = true){
 		}
 	}
 	
+	if(instance_exists(effect_lotus)){
+		with(effect_lotus){
+			SetPosition(player.x,player.y);
+		}
+	}
+	
 	if(instance_exists(equipment)){
 		equipment.x = x
 		equipment.y = y

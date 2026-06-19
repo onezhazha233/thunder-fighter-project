@@ -81,6 +81,9 @@ if(instance_exists(player)){
 	if(keyboard_check_pressed(ord("S"))){
 		Player_SetWeaponLevel(max(0,Player_GetWeaponLevel()-1));
 	}
+	if(keyboard_check_pressed(ord("I"))){
+		MakeItem(mouse_x,mouse_y,battle_item_weapon_upgrade,true);
+	}
 }
 
 if(keyboard_check_pressed(ord("K"))){

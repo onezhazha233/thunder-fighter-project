@@ -22,4 +22,4 @@ y = (node_0_y + node_1_y)/2;
 image_xscale = point_distance(node_0_x,node_0_y,node_1_x,node_1_y)/2;
 
 draw_self()
-draw_sprite_ext(sprite_index,1,x,y,image_xscale,image_yscale*(0.9+sin(current_time/1000*100)*0.1),image_angle,-1,image_alpha)
+draw_sprite_ext(sprite_index,1,x,y,image_xscale,image_yscale*(0.9+sin(current_time/1000*game_get_speed(gamespeed_fps)/3*5)*0.1),image_angle,-1,image_alpha)

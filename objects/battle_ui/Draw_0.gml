@@ -35,6 +35,21 @@ if(boss_hpbar_enabled = true){
 
 main_ui.Draw()
 
-for(i=0;i<ds_list_size(buff_list);i+=1){
-	buff_list[|i].draw(55,160+i*80);
+var _ordered = [];
+var _unordered = [];
+for(var i=0;i<ds_list_size(buff_list);i+=1){
+	var _b = buff_list[|i];
+	if(variable_struct_exists(_b,"order")){
+		array_push(_ordered,_b);
+	}
+	else{
+		array_push(_unordered,_b);
+	}
+}
+array_sort(_ordered,function(a,b){return a.order-b.order;});
+for(var i=0;i<array_length(_unordered);i+=1){
+	array_push(_ordered,_unordered[i]);
+}
+for(var i=0;i<array_length(_ordered);i+=1){
+	_ordered[i].draw(55,160+i*80);
 }

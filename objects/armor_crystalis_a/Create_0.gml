@@ -1,9 +1,6 @@
 live;
 //crystalis shield
 ArmorAbility = function(type,exarg=0){
-	if(type = 0){
-		
-	}
 	if(type = 1){
 		return exarg;
 	}
@@ -11,6 +8,7 @@ ArmorAbility = function(type,exarg=0){
 
 if(room = room_battle){
 	buff_crystalis = {
+		order: 0,
 		surf: surface_create(64,64),
 		atkpower: 0,
 		atkpower_spd: 100/(60*4),

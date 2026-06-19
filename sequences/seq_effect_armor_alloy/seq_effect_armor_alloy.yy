@@ -32,8 +32,8 @@
   },
   "name":"seq_effect_armor_alloy",
   "parent":{
-    "name":"effect",
-    "path":"folders/序列/effect.yy",
+    "name":"armor",
+    "path":"folders/序列/effect/armor.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,
