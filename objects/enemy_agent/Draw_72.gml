@@ -1,13 +1,15 @@
 live;
 if(surf_enabled = true){
 	if(!surface_exists(surf))surf = surface_create(surf_width,surf_height);
-	if(!surface_exists(surf_effect))surf_effect = surface_create(720,1280);
+	if(!surface_exists(surf_effect))surf_effect = surface_create(room_width,room_height);
 
 	surface_set_target(surf);
 	draw_clear_alpha(c_black,0);
 	surface_reset_target();
 
-	surface_set_target(surf_effect);
-	draw_clear_alpha(c_black,0);
-	surface_reset_target();
+	if(effect_alpha <= 0){
+		surface_set_target(surf_effect);
+		draw_clear_alpha(c_black,0);
+		surface_reset_target();
+	}
 }
