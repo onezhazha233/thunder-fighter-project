@@ -45,6 +45,7 @@ var inv_h = 1 / room_height;
 /// 7. 绘制
 var tex = surface_get_texture(bm);
 
+gpu_set_blendmode_ext(bm_one, bm_inv_src_alpha);
 draw_primitive_begin_texture(pr_trianglestrip, tex);
 
 draw_vertex_texture_color(x1, y1, x1 * inv_w, y1 * inv_h, c_white, 1);
@@ -53,6 +54,7 @@ draw_vertex_texture_color(x3, y3, x3 * inv_w, y3 * inv_h, c_white, 1);
 draw_vertex_texture_color(x4, y4, x4 * inv_w, y4 * inv_h, c_white, 1);
 
 draw_primitive_end();
+gpu_set_blendmode(bm_normal);
 
 /// 8. Debug线（可选）
 draw_line(x2, y2, x4, y4);
