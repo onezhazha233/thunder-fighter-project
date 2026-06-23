@@ -27,7 +27,7 @@ ArmorAbility = function(type,exarg=0){
 
 	    var _count = collision_circle_list(px, py, graze_radius, bullet_enemy, true, false, graze_list, false);
 
-	    if (_count > 0) {
+	    if(_count > 0&&global.inv_hurt = 0){
 	        for (var i = 0; i < _count; i++) {
 	            var _bullet = graze_list[| i];
 					if(_bullet.inv_induction = false){
