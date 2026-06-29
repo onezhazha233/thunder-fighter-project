@@ -57,4 +57,4 @@ draw_primitive_end();
 gpu_set_blendmode(bm_normal);
 
 /// 8. Debug线（可选）
-draw_line(x2, y2, x4, y4);
+//draw_line(x2, y2, x4, y4);

@@ -1,5 +1,5 @@
 depth = DEPTH_BATTLE.BULLETS_ENEMY
-collision_mask_enabled = true//0为自定义碰撞 1为spr碰撞
+collision_mask_enabled = true//false为自定义碰撞 true为spr碰撞
 collision_mask_type = 0//0为矩形 1为圆形
 up = 10
 down = 10
