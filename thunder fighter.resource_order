@@ -1576,7 +1576,7 @@
     {"name":"seq_enemy_boss_mini_4_attack_0_outro","order":5,"path":"sequences/seq_enemy_boss_mini_4_attack_0_outro/seq_enemy_boss_mini_4_attack_0_outro.yy",},
     {"name":"seq_enemy_boss_mini_4_attack_1_intro","order":3,"path":"sequences/seq_enemy_boss_mini_4_attack_1_intro/seq_enemy_boss_mini_4_attack_1_intro.yy",},
     {"name":"seq_enemy_boss_mini_4_attack_1_outro","order":4,"path":"sequences/seq_enemy_boss_mini_4_attack_1_outro/seq_enemy_boss_mini_4_attack_1_outro.yy",},
-    {"name":"seq_enemy_boss_mini_4_attack_outro","order":2,"path":"sequences/seq_enemy_boss_mini_4_attack_outro/seq_enemy_boss_mini_4_attack_outro.yy",},
+    {"name":"seq_enemy_boss_mini_4_die","order":6,"path":"sequences/seq_enemy_boss_mini_4_die/seq_enemy_boss_mini_4_die.yy",},
     {"name":"seq_enemy_boss_mini_og0_attack_0","order":4,"path":"sequences/seq_enemy_boss_mini_og0_attack_0/seq_enemy_boss_mini_og0_attack_0.yy",},
     {"name":"seq_enemy_boss_mini_og0_attack_1_intro","order":5,"path":"sequences/seq_enemy_boss_mini_og0_attack_1_intro/seq_enemy_boss_mini_og0_attack_1_intro.yy",},
     {"name":"seq_enemy_boss_mini_og0_attack_1_outro","order":7,"path":"sequences/seq_enemy_boss_mini_og0_attack_1_outro/seq_enemy_boss_mini_og0_attack_1_outro.yy",},
@@ -4438,6 +4438,5 @@
     {"name":"spr_xeno_d_roll_right","order":22,"path":"sprites/spr_xeno_d_roll_right/spr_xeno_d_roll_right.yy",},
     {"name":"spr_xeno_d_side_gun","order":3,"path":"sprites/spr_xeno_d_side_gun/spr_xeno_d_side_gun.yy",},
     {"name":"Sprite2032","order":12,"path":"sprites/Sprite2032/Sprite2032.yy",},
-    {"name":"wing_11b_260612201345_2f3fda_100","order":1,"path":"sprites/wing_11b_260612201345_2f3fda_100/wing_11b_260612201345_2f3fda_100.yy",},
   ],
 }
