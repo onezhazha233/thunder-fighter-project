@@ -62,7 +62,7 @@ attack_0 = function(){
 		}
 		for(i=0;i<20;i+=1){
 			for(j=0;j<30;j+=1){
-				if(instance_exists(bb[i][j]))bb[i][j].image_angle += rot;
+				if(instance_exists(bb[i][j]))bb[i][j].image_angle -= rot;
 				if(instance_exists(bb[i][j]))dist = point_distance(bb[i][j].x,bb[i][j].y,mouse_x,mouse_y);
 				ba = 1;
 				if(dist < 200)ba = 1;
