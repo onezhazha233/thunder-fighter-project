@@ -7,8 +7,3 @@ SetMoveInfo = function(){
 	move_duration = [40,80];
 	move_interval = [10,20];
 }
-
-OnDie = function(){
-	Player_AddScore(1000);
-	MakeBossCrystal(x,y,1000);
-}
