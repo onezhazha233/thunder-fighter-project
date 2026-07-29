@@ -31,7 +31,7 @@ if(hp <= 0){
 			eff = instance_create_depth(x,y,DEPTH_BATTLE.INSTANCES_UPPER,explosion);
 			eff.box = [bbox_left,bbox_top,bbox_right,bbox_bottom];
 		}
-		battle_ui.boss_hpbar_hp = 0;
+		with(battle_ui)boss_hpbar_hp = 0;
 		Anim_Create(battle_ui,"boss_hpbar_enabled",0,0,1,-1,0,180);
 		Anim_Create(battle_wave,"enabled",0,0,0,1,0,240);
 		Player_SetBreaktime(true);
@@ -45,8 +45,8 @@ if(hp <= 0){
 		a.move_start_duration = 30;
 		a.ApplySpawnFromPrevious(x,y);
 		a.phase = phase + 1;
-		battle_ui.boss_hpbar_hp = 1;
-		battle_ui.boss_hpbar_hp_max = 1;
+		with(battle_ui)boss_hpbar_hp = 1;
+		with(battle_ui)boss_hpbar_hp_max = 1;
 		array_delete(boss_list,0,1);
 		a.boss_list = boss_list;
 		Swarm_SetEnabled(true);
@@ -64,9 +64,9 @@ if(active = true){
 	if(boss_hpbar_enabled = true){
 		var _total_phases = array_length(boss_list) + 1;
 		if(_total_phases < 1) _total_phases = 1;
-		battle_ui.boss_hpbar_phase = _total_phases - 1;
-		battle_ui.boss_hpbar_hp_max = hp_max;
-		battle_ui.boss_hpbar_hp = hp;
+		with(battle_ui)boss_hpbar_phase = _total_phases - 1;
+		with(battle_ui)boss_hpbar_hp_max = hp_max;
+		with(battle_ui)boss_hpbar_hp = hp;
 	}
 	
 	if(start = 1){

@@ -252,11 +252,16 @@ SetMoveEnabled = function(enabled){
 	}
 }
 
-SetSequence = function(seq){
+SetSequence = function(seq,dir=seqdir_right){
 	layer_sequence_destroy(enemy_sequence);
 	enemy_sequence = layer_sequence_create(layer_enemy,x,y,seq);
 	layer_sequence_xscale(enemy_sequence,image_xscale);
 	layer_sequence_yscale(enemy_sequence,image_yscale);
+	layer_sequence_headdir(enemy_sequence,dir);
+	if(dir = seqdir_left){
+		layer_sequence_headpos(enemy_sequence,layer_sequence_get_length(enemy_sequence));
+	}
+	
 }
 
 OnDie = function(){

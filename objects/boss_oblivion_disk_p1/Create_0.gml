@@ -9,6 +9,7 @@ idle_mode = ENEMY_IDLE_MODE.END_FRAME
 pre_sequence = seq_enemy_boss_large_og2_p1_intro
 intro_sequence = seq_enemy_boss_large_og2_p1_intro
 idle_sequence = seq_enemy_boss_large_og2_p1_intro
+auto_idle_sequence = [seq_enemy_boss_large_og2_p1_attack_1_outro]
 
 explosion = effect_explosion_boss
 
@@ -22,10 +23,12 @@ Anim_Create(id,"hp",0,0,hp,hp_max-hp,40)
 x = 360
 y = -500
 
-battle_ui.boss_hpbar_enabled = true
-battle_wave.enabled = false
+y_target = 350
 
-bullet_emitter = emitter_boss_sirius_twins_0
+with(battle_ui)boss_hpbar_enabled = true
+with(battle_wave)enabled = false
+
+bullet_emitter = emitter_boss_oblivion_disk_p1
 
 items = [[[battle_item_quantum_shield,battle_item_weapon_upgrade],1]]
 value = 1000
