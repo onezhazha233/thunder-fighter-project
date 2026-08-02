@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_icon_boss_oblivion_disk",
+  "%Name":"spr_icon_boss_oblivion_star_ring",
   "bboxMode":0,
   "bbox_bottom":152,
   "bbox_left":0,
@@ -21,7 +21,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"f9d94f69-0689-4259-8b0a-64d0b544d877","blendMode":0,"displayName":"default","isLocked":false,"name":"f9d94f69-0689-4259-8b0a-64d0b544d877","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_icon_boss_oblivion_disk",
+  "name":"spr_icon_boss_oblivion_star_ring",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_icon_boss_oblivion_disk",
+    "%Name":"spr_icon_boss_oblivion_star_ring",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_icon_boss_oblivion_disk",
+    "name":"spr_icon_boss_oblivion_star_ring",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,7 +69,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"234a8aa2-965b-4be1-865b-2f831f65a66d","path":"sprites/spr_icon_boss_oblivion_disk/spr_icon_boss_oblivion_disk.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"234a8aa2-965b-4be1-865b-2f831f65a66d","path":"sprites/spr_icon_boss_oblivion_star_ring/spr_icon_boss_oblivion_star_ring.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"74704938-547e-4716-8c3c-aeaa6fd7d01d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

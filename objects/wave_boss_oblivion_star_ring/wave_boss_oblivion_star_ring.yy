@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"wave_boss_oblivion_disk",
+  "%Name":"wave_boss_oblivion_star_ring",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"wave_boss_oblivion_disk",
+  "name":"wave_boss_oblivion_star_ring",
   "overriddenProperties":[],
   "parent":{
     "name":"battle_wave",

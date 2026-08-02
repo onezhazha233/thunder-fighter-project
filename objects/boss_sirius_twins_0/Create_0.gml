@@ -24,9 +24,6 @@ y = -500
 x_target = x
 y_target = 400
 
-battle_ui.boss_hpbar_enabled = true
-battle_wave.enabled = false
-
 bullet_emitter = emitter_boss_sirius_twins_0
 
 items = []

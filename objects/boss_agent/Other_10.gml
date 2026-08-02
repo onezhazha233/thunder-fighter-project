@@ -61,9 +61,8 @@ SetSurfEnabled = function(enabled){
 	var scrEnd = function(){
 		if (event_number != ev_draw_normal) return;
 		
-		gpu_set_blendmode_ext(bm_dest_alpha, bm_inv_src_alpha);
-	    draw_surface_ext(surf_effect, 0, 0, 1, 1, 0, c_white, 1);
-		
+		// 不再在每层结束后合成 surf_effect（否则最后绘制的最上层会盖掉累积特效而变淡），
+		// 只在 scrEndUpper（所有层都画完后）统一合成一次，保证各层特效强度一致。
 		if(surf_enabled = true&&surface_exists(surf))surface_reset_target();
 		if(global.debug_enemy_collision_display = true){
 			draw_set_color(c_red);
@@ -292,7 +291,7 @@ SetFrozen = function(f){
 	}
     if(f > 0){
         effect_type = 0;
-        effect_alpha = 0.3;
+        effect_alpha = 0.45;
         layer_sequence_speedscale(enemy_sequence,0);
         SetFlame(-1,-1);
 		SpawnFrozenGrid(effect_enemy_ice, spr_effect_enemy_ice, 1, 1);

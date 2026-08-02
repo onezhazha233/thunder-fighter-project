@@ -1,20 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"emitter_boss_oblivion_disk_p1",
+  "%Name":"boss_oblivion_star_ring_p1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"emitter_boss_oblivion_disk_p1",
+  "name":"boss_oblivion_star_ring_p1",
   "overriddenProperties":[],
   "parent":{
     "name":"original",
     "path":"folders/物体/enemy/boss/original.yy",
   },
   "parentObjectId":{
-    "name":"emitter_enemy",
-    "path":"objects/emitter_enemy/emitter_enemy.yy",
+    "name":"boss_agent",
+    "path":"objects/boss_agent/boss_agent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

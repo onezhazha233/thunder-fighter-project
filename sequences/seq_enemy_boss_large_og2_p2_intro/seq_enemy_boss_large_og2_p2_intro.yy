@@ -26,8 +26,8 @@
   },
   "name":"seq_enemy_boss_large_og2_p2_intro",
   "parent":{
-    "name":"oblivion_disk",
-    "path":"folders/序列/enemy/boss/large/oblivion_disk.yy",
+    "name":"oblivion_star_ring",
+    "path":"folders/序列/enemy/boss/large/oblivion_star_ring.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

@@ -8,7 +8,7 @@ if(burn_amount >= burn_target&&inv_burn = false){
 if(burn_duration > 0){
 	burn_amount = 0;
 	effect_type = 1;
-	effect_alpha += (0.2-effect_alpha)/2;
+	effect_alpha += (0.5-effect_alpha)/2;
 	TakeDamage(burn_damage);
 	if(floor(current_time/1000*game_get_speed(gamespeed_fps)) mod 5 = 0){
 		for(i=0;i<irandom_range(1,3);i+=1){

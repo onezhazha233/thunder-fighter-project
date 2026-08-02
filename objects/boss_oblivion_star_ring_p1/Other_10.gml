@@ -89,9 +89,10 @@ SetSurfEnabled = function(enabled){
 	var scrEnd = function(){
 		if (event_number != ev_draw_normal) return;
 		
-		gpu_set_blendmode_ext(bm_dest_alpha, bm_inv_src_alpha);
-	    draw_surface_ext(surf_effect, 0, 0, 1, 1, 0, c_white, 1);
-		
+		// 注意：这里不再把 surf_effect 合成进 surf。
+		// 若每层都合成一次，最上层（最后绘制、alpha=1）会覆盖掉此前累积在其区域的特效，
+		// 只剩 scrEndUpper 的最后一次合成 → 最上层特效明显变淡，而其它层多次累积变浓。
+		// 改为只在 scrEndUpper（所有层都画完后）统一合成一次，保证各层特效强度一致。
 		if(surf_enabled = true&&surface_exists(surf))surface_reset_target();
 		if(global.debug_enemy_collision_display = true){
 			draw_set_color(c_red);

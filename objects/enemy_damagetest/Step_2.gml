@@ -6,7 +6,7 @@ if(burn_amount >= burn_target&&inv_burn = false){
 if(burn_duration > 0){
 	burn_amount = 0;
 	effect_type = 1;
-	effect_alpha += (0.2-effect_alpha)/2;
+	effect_alpha += (0.5-effect_alpha)/2;
 	var dmg = burn_damage;
 	var now = time;
 	ds_list_add(damage_history, [now, dmg]);

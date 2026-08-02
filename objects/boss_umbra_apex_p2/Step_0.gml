@@ -64,9 +64,9 @@ if(active = true){
 	if(boss_hpbar_enabled = true){
 		var _total_phases = array_length(boss_list) + 1;
 		if(_total_phases < 1) _total_phases = 1;
-		battle_ui.boss_hpbar_phase = _total_phases - 1;
-		battle_ui.boss_hpbar_hp_max = hp_max;
-		battle_ui.boss_hpbar_hp = hp;
+		with(battle_ui)boss_hpbar_phase = _total_phases - 1;
+		with(battle_ui)boss_hpbar_hp_max = other.hp_max;
+		with(battle_ui)boss_hpbar_hp = other.hp;
 	}
 	
 	if(start = 1){

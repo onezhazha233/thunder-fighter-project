@@ -7,6 +7,6 @@ function BossList(){
 		{name: Lang_GetString("boss.spikx_flarebolt"), quality: 3, icon: "boss_spikx_flarebolt", obj: wave_boss_spikx_flarebolt},
 		{name: Lang_GetString("boss.laser_piano"), quality: 3, icon: "boss_laser_piano", obj: wave_boss_laser_piano},
 		{name: Lang_GetString("boss.sirius_twins"), quality: 3, icon: "boss_sirius_twins", obj: wave_boss_sirius_twins},
-		{name: Lang_GetString("boss.oblivion_disk"), quality: 3, icon: "boss_oblivion_disk", obj: wave_boss_oblivion_disk}
+		{name: Lang_GetString("boss.oblivion_star_ring"), quality: 3, icon: "boss_oblivion_star_ring", obj: wave_boss_oblivion_star_ring}
 	];
 }

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":8,
   "parent":{
-    "name":"oblivion_disk",
-    "path":"folders/精灵/enemy/boss/large/oblivion_disk.yy",
+    "name":"oblivion_star_ring",
+    "path":"folders/精灵/enemy/boss/large/oblivion_star_ring.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

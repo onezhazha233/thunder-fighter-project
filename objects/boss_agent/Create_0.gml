@@ -21,6 +21,9 @@ skip = false//为0时为第一阶段，否则创建即变形
 x_target = 360//出场时目标x位置
 y_target = 300//出场时目标y位置
 
+battle_ui.boss_hpbar_enabled = true
+battle_wave.enabled = false
+
 display_mode = 1
 
 flame_lower_pre = -1

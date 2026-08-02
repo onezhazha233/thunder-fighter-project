@@ -4,7 +4,7 @@ event_inherited();
 warning = {
 	obj : battle_warning_boss,
 	lv : "0915199X",
-	name : Lang_GetString("boss.oblivion_disk"),
+	name : Lang_GetString("boss.oblivion_star_ring"),
 	
 	Create : function(){
 		ww = instance_create_depth(0,0,DEPTH_BATTLE.UI,obj);
@@ -18,7 +18,7 @@ warning = {
 }
 
 boss = {
-	boss_list : [boss_oblivion_disk_p1,boss_oblivion_disk_p2],
+	boss_list : [boss_oblivion_star_ring_p1,boss_oblivion_star_ring_p2],
 	
 	Create : function(){
 		enemy = instance_create_depth(room_width/2,-200,0,boss_list[0]);

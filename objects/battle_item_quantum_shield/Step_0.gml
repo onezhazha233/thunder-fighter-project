@@ -1,16 +1,26 @@
 live;
 event_inherited();
 
-if(!(instance_exists(battle_ui_victory) && chase == 1)){
+if(!(instance_exists(battle_ui_victory)&&chase == 1)){
 	if(x > room_width||x < 0){
-		if(x > room_width)x = room_width-1;
-		if(x < 0)x = 1;
-		hspeed *= -1;
+		if(x > room_width){
+			x = room_width-1;
+			hspeed = -abs(hspeed);
+		}
+		if(x < 0){
+			x = 1;
+			hspeed = abs(hspeed);
+		}
 	}
 	if(y < 0||y > room_height){
-		if(y > room_height)y = room_height-1;
-		if(y < 0)y = 1;
-		vspeed *= -1;
+		if(y > room_height){
+			y = room_height-1;
+			hspeed = -abs(vspeed);
+		}
+		if(y < 0){
+			y = 1;
+			hspeed = abs(vspeed);
+		}
 	}
 }
 

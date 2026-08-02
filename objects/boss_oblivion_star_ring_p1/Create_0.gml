@@ -29,10 +29,7 @@ y = -500
 
 y_target = 350
 
-with(battle_ui)boss_hpbar_enabled = true
-with(battle_wave)enabled = false
-
-bullet_emitter = emitter_boss_oblivion_disk_p1
+bullet_emitter = emitter_boss_oblivion_star_ring_p1
 
 items = [[[battle_item_quantum_shield,battle_item_weapon_upgrade],1]]
 value = 1000
