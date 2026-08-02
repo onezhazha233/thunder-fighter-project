@@ -58,7 +58,6 @@ SetSurfEnabled = function(enabled){
 		if(surf_enabled = true&&surface_exists(surf))surface_set_target(surf);
 		gpu_set_blendmode_ext_sepalpha(bm_src_alpha, bm_inv_src_alpha, bm_one, bm_inv_src_alpha);
 	}
-
 	var scrEnd = function(){
 		if (event_number != ev_draw_normal) return;
 		
@@ -139,6 +138,7 @@ SetSurfEnabled = function(enabled){
 SetPosition = function(xx,yy){
 	x = xx;
 	y = yy;
+	
 	if(instance_exists(bullet_emitter_inst)){
 		bullet_emitter_inst.x = xx;
 		bullet_emitter_inst.y = yy;

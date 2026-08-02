@@ -153,7 +153,7 @@ attack_2 = function(){//延迟蓝针狙
 	live;
 	if(attack_time <= 40&&attack_time mod 4 = 0){
 		for(i=0;i<8;i+=1){
-			blt = MakeEnemyBullet(x,y-62,bullet_enemy_normal,spr_bullet_enemy_blueneedle);
+			blt = MakeEnemyBullet(x,y-62,bullet_enemy_normal,spr_bullet_enemy_blueneedle,,1);
 			blt.image_angle = -attack_time*3 + i*45;
 			blt.direction = -attack_time*3 + i*45;
 			Anim_Create(blt,"speed",0,0,10,-9.9,30);

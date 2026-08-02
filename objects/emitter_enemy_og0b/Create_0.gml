@@ -37,7 +37,7 @@ attack_1 = function(){
 	if(attack_time = 1){
 		for(j=0;j<2;j+=1){
 			for(i=0;i<2;i+=1){
-				bn = MakeEnemyBullet(x-50+j*100,y+20,bullet_enemy_blueneedle);
+				bn = MakeEnemyBullet(x-50+j*100,y+20,bullet_enemy_blueneedle,,1);
 				bn.image_xscale = 0.25;
 				bn.image_angle = -90-10+20*i;
 				bn.direction = bn.image_angle;
@@ -53,7 +53,7 @@ attack_1 = function(){
 	if(attack_time = 30){
 		for(j=0;j<2;j+=1){
 			for(i=0;i<3;i+=1){
-				bn = MakeEnemyBullet(x-50+j*100,y+20,bullet_enemy_blueneedle);
+				bn = MakeEnemyBullet(x-50+j*100,y+20,bullet_enemy_blueneedle,,1);
 				bn.image_xscale = 0.25;
 				bn.image_angle = -90-40+40*i;
 				bn.direction = bn.image_angle;
@@ -69,7 +69,7 @@ attack_1 = function(){
 	if(attack_time = 80){
 		for(j=0;j<2;j+=1){
 			for(i=0;i<4;i+=1){
-				bn = MakeEnemyBullet(x-50+j*100,y+20,bullet_enemy_blueneedle);
+				bn = MakeEnemyBullet(x-50+j*100,y+20,bullet_enemy_blueneedle,,1);
 				bn.image_xscale = 0.25;
 				bn.image_angle = -90-30+20*i;
 				bn.direction = bn.image_angle;

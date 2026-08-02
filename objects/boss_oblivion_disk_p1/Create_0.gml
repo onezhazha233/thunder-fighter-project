@@ -4,12 +4,16 @@ event_inherited();
 collision_type = COLLISION_TYPE.SPRITE
 mask_index = spr_enemy_boss_large_og2_bottom_0
 
-idle_mode = ENEMY_IDLE_MODE.END_FRAME
+idle_mode = ENEMY_IDLE_MODE.SEQUENCE
 
 pre_sequence = seq_enemy_boss_large_og2_p1_intro
 intro_sequence = seq_enemy_boss_large_og2_p1_intro
-idle_sequence = seq_enemy_boss_large_og2_p1_intro
-auto_idle_sequence = [seq_enemy_boss_large_og2_p1_attack_1_outro]
+
+for(i=0;i<5;i+=1){
+	variable_instance_set(id,"layer_enemy_"+string(i),layer_create(depth-i));
+	variable_instance_set(id,"enemy_sequence_"+string(i),-1);
+	variable_instance_set(id,"idle_sequence_"+string(i),asset_get_index("seq_enemy_boss_large_og2_p1_idle_"+string(i)));
+}
 
 explosion = effect_explosion_boss
 
@@ -32,3 +36,6 @@ bullet_emitter = emitter_boss_oblivion_disk_p1
 
 items = [[[battle_item_quantum_shield,battle_item_weapon_upgrade],1]]
 value = 1000
+
+ring_angle = 0
+gun_angle = 0

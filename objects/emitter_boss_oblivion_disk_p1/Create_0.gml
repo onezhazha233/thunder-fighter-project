@@ -12,7 +12,7 @@ attack_0 = function(){//中间红反弹外侧三蓝
 	live;
 	if(attack_time = 1){
 		mark.SetMoveEnabled(false);
-		mark.SetSequence(seq_enemy_boss_large_og2_p1_attack_0);
+		Anim_Create(mark,"ring_angle",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,0,60,30);
 	}
 	if(attack_time < 17&&attack_time mod 2 = 1){
 		tt = attack_time div 2;
@@ -85,7 +85,7 @@ attack_0 = function(){//中间红反弹外侧三蓝
 	}
 	if(attack_time = 90){
 		mark.SetMoveEnabled(true);
-		mark.SetSequence(seq_enemy_boss_large_og2_p1_attack_0,seqdir_left);
+		Anim_Create(mark,"ring_angle",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,60,-60,30);
 	}
 	if(attack_time = 150){
 		end_attack();
@@ -96,25 +96,32 @@ attack_1 = function(){//固定激光加扫射加狙
 	live_name = "emitter_boss_oblivion_disk_p1:attack_1";
 	live;
 	if(attack_time = 1){
-		mark.SetSequence(seq_enemy_boss_large_og2_p1_attack_1_intro);
+		Anim_Create(mark,"ring_angle",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,0,-60,30);
+		Anim_Create(mark,"gun_angle",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,0,90,25);
+		gun_rot = 0;
+		rn = 0;
 	}
 	if(attack_time = 40){
 		for(i=0;i<3;i+=1){
 			laser[i] = MakeEnemyLaser(2,x+lengthdir_x(250,-30+i*120),y+lengthdir_y(250,-30+i*120),2,-30+i*120,30,200);
 		}
+		Anim_Create(id,"gun_rot",0,0,0,1,20);
+		Anim_Create(id,"gun_rot",0,0,1,1,20,75);
+		Anim_Create(id,"gun_rot",0,0,2,1,20,150);
 	}
 	if(attack_time >= 40){
+		mark.gun_angle += gun_rot;
 		for(i=0;i<3;i+=1){
 			if(instance_exists(laser[i])){
 				laser[i].x = x+lengthdir_x(250,-30+i*120);
 				laser[i].y = y+lengthdir_y(250,-30+i*120);
 			}
 		}
-		if(attack_time < 275){
+		if(attack_time < 300){
 			if(attack_time mod 5 = 0){
 				for(i=0;i<3;i+=1){
 					for(j=0;j<5;j+=1){
-						dd = -30+i*120-(attack_time-40)*(63/39);
+						dd = mark.gun_angle + 30 + i*120;
 						blt = MakeEnemyBullet(x+lengthdir_x(230,dd),y+lengthdir_y(230,dd),bullet_enemy_normal);
 						blt.image_xscale = 1.5;
 						blt.image_yscale = 1.5;
@@ -124,7 +131,7 @@ attack_1 = function(){//固定激光加扫射加狙
 				}
 			}
 		}
-		if(attack_time mod 90 = 0){
+		if(attack_time mod 100 = 50&&rn < 3){
 			dd = get_target_dir();
 			for(i=0;i<5;i+=1){
 				bn = MakeEnemyBullet(x,y,bullet_enemy_blueneedle,spr_bullet_enemy_purpleneedle);
@@ -138,7 +145,7 @@ attack_1 = function(){//固定激光加扫射加狙
 				bn.effect_dist = 40;
 			}
 		}
-		if(attack_time mod 90 = 20){
+		if(attack_time mod 100 = 70&&rn < 3){
 			dd = get_target_dir();
 			for(i=0;i<4;i+=1){
 				bn = MakeEnemyBullet(x,y,bullet_enemy_blueneedle,spr_bullet_enemy_purpleneedle);
@@ -151,12 +158,17 @@ attack_1 = function(){//固定激光加扫射加狙
 				Anim_Create(bn,"image_xscale",0,0,1,2,10,60);
 				bn.effect_dist = 40;
 			}
+			rn += 1;
 		}
 	}
-	if(attack_time = 301){
-		mark.SetSequence(seq_enemy_boss_large_og2_p1_attack_1_outro);
+	if(attack_time = 300){
+		Anim_Create(id,"gun_rot",0,0,gun_rot,-gun_rot,30);
 	}
-	if(attack_time = 331){
+	if(attack_time = 330){
+		Anim_Create(mark,"ring_angle",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,60,-60,30);
+		Anim_Create(mark,"gun_angle",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,(mark.gun_angle) mod 120,-(mark.gun_angle) mod 120,30);
+	}
+	if(attack_time = 360){
 		end_attack();
 	}
 }
@@ -165,14 +177,23 @@ attack_2 = function(){//红蓝散射
 	live_name = "emitter_boss_oblivion_disk_p1:attack_2";
 	live;
 	if(attack_time = 1){
-		mark.SetSequence(seq_enemy_boss_large_og2_p1_attack_2);
+		gun_rot = 0;
+		ring_rot = 0;
+		Anim_Create(mark,"gun_angle",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0,-60,25);
+		Anim_Create(mark,"ring_angle",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0,90,40,25);
+		Anim_Create(id,"gun_rot",0,0,0,3,60,25);
+		Anim_Create(id,"ring_rot",0,0,0,-1,30,65);
 	}
-	if(attack_time < 335){
+	if(attack_time > 1){
+		mark.gun_angle += gun_rot;
+		mark.ring_angle += ring_rot;
+	}
+	if(attack_time < 330){
 		if(attack_time >= 25){
 			if(attack_time mod 16 = 0){
 				for(i=0;i<3;i+=1){
 					for(j=0;j<9;j+=1){
-						dd = -30+i*120+(attack_time-25)*(60/31);
+						dd = mark.gun_angle + 30 + i*120;
 						blt = MakeEnemyBullet(x+lengthdir_x(230,dd),y+lengthdir_y(230,dd),bullet_enemy_normal);
 						blt.image_xscale = 0;
 						blt.image_yscale = 0;
@@ -188,8 +209,8 @@ attack_2 = function(){//红蓝散射
 			if(attack_time mod 25 = 0){
 				for(i=0;i<3;i+=1){
 					for(j=0;j<11;j+=1){
-						dd = -30+i*120-(attack_time-50)*(126/95);
-						blt = MakeEnemyBullet(x+lengthdir_x(230,dd),y+lengthdir_y(230,dd),bullet_enemy_normal);
+						dd = mark.ring_angle + 30 + i*120;
+						blt = MakeEnemyBullet(x+lengthdir_x(250,dd),y+lengthdir_y(250,dd),bullet_enemy_normal);
 						blt.image_index = 1;
 						blt.image_xscale = 0;
 						blt.image_yscale = 0;
@@ -202,29 +223,115 @@ attack_2 = function(){//红蓝散射
 			}
 		}
 	}
-	if(attack_time = 361){
+	if(attack_time = 300){
+		Anim_Create(id,"gun_rot",0,0,gun_rot,-gun_rot,30);
+		Anim_Create(id,"ring_rot",0,0,ring_rot,-ring_rot,30);
+	}
+	if(attack_time = 330){
 		mark.SetIdle();
+	}
+	if(attack_time = 360){
 		end_attack();
 	}
 }
 	
-attack_3 = function(){
+attack_3 = function(dir=0){//反弹子弹加蓝针
 	live_name = "emitter_boss_oblivion_disk_p1:attack_3";
 	live;
+	if(attack_time = 1){
+		mark.SetMoveEnabled(false);
+		Anim_Create(mark,"gun_angle",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,0,30*(dir=0 ? 1 : -1),25);
+	}
+	if(attack_time > 30&&attack_time < 400){
+		if(attack_time mod 9 = 0){
+			for(i=0;i<3;i+=1){
+				for(j=0;j<3;j+=1){
+					dd = mark.gun_angle + 30 + i*120;
+					blt = MakeEnemyBullet(x+lengthdir_x(230,dd),y+lengthdir_y(230,dd),bullet_enemy_normal,spr_bullet_enemy_normal_2);
+					blt.direction = dd - 20 + j*20;
+					blt.image_angle = blt.direction;
+					blt.speed = 10;
+					with(blt){
+						bounced = 0;
+						custom_function = function(){
+							if(bounced < 2){
+								if(x <= 0 || x >= room_width){
+									if(x <= 0)x = 0;
+									if(x >= room_width)x = room_width;
+									hspeed *= -1;
+									image_angle = direction;
+									bounced += 1;
+								}
+								if(y <= 0 || y >= room_height){
+									if(y <= 0)y = 0;
+									if(y >= room_height)y = room_height;
+									vspeed *= -1;
+									image_angle = direction;
+									bounced += 1;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		if(attack_time >= 120&&attack_time < 144){
+			tt = attack_time - 120;
+			for(i=0;i<3;i+=1){
+				dd = 30+mark.ring_angle+i*120;
+				bn = MakeEnemyBullet(x+lengthdir_x(250,dd)+lengthdir_x(120,dd+tt*15),y+lengthdir_y(250,dd)+lengthdir_y(120,dd+tt*15),bullet_enemy_blueneedle,,1);
+				bn.image_xscale = 0;
+				bn.image_yscale = 2;
+				Anim_Create(bn,"image_xscale",0,0,0,2,20);
+				Anim_Create(bn,"image_yscale",0,0,2,-1,20);
+				bn.direction = dd+tt*15;
+				bn.image_angle = dd+tt*15;
+				Anim_Create(bn,"speed",0,0,-5,5,20);
+				Anim_Create(bn,"speed",0,0,0,8,30,60-tt);
+			}
+		}
+		if(attack_time = 240){
+			Anim_Create(mark,"ring_angle",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,0,60*(dir=0 ? -1 : 1),30);
+		}
+		if(attack_time >= 300&&attack_time < 324){
+			tt = attack_time - 300;
+			for(i=0;i<3;i+=1){
+				dd = 30+mark.ring_angle+i*120;
+				bn = MakeEnemyBullet(x+lengthdir_x(250,dd)+lengthdir_x(120,dd+tt*15),y+lengthdir_y(250,dd)+lengthdir_y(120,dd+tt*15),bullet_enemy_blueneedle,,1);
+				bn.image_xscale = 0;
+				bn.image_yscale = 2;
+				Anim_Create(bn,"image_xscale",0,0,0,2,20);
+				Anim_Create(bn,"image_yscale",0,0,2,-1,20);
+				bn.direction = dd+tt*15;
+				bn.image_angle = dd+tt*15;
+				Anim_Create(bn,"speed",0,0,-5,5,20);
+				Anim_Create(bn,"speed",0,0,0,8,30,60-tt);
+			}
+		}
+	}
+	if(attack_time = 420){
+		mark.SetIdle();
+		mark.SetMoveEnabled(true);
+	}
+	if(attack_time = 450){
+		end_attack();
+	}
+}
+	
+attack_4 = function(){
+	live_name = "emitter_boss_oblivion_disk_p1:attack_4";
+	live;
+	
 }
 
 a0 = create_attack(0,attack_0,30)
 a1 = create_attack(1,attack_1,30)
 a2 = create_attack(2,attack_2,30)
 a3 = create_attack(3,attack_3,30)
-//a1 = create_attack(1,attack_1,40)
-//a2 = create_attack(2,attack_2,30)
-//a3 = create_attack(3,attack_3,40)
-//a4 = create_attack(4,attack_4,30)
+a4 = create_attack(4,attack_4,30)
 
-//fixed_sequence = [a1,a0,a3,a2,a4]
-//random_pool = [a0,a1,a2,a3,a4]
-fixed_sequence = [a0,a2,a2,a0]
-random_pool = [a0,a1,a2]
+//fixed_sequence = [a0,a1,a2,a0,a3]
+//random_pool = [a0,a1,a2,a3]
+fixed_sequence = [a4]
 
 //enabled = true
