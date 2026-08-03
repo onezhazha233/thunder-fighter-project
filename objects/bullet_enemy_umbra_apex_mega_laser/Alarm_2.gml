@@ -1,5 +1,5 @@
 live;
-siner += 1
-laser_scale = (0.9+cos(siner)*0.1)
+alarm[1] = -1
+Anim_Create(id,"laser_scale",0,0,laser_scale,-laser_scale,12)
 
-alarm[2] = 1
+duration = 12
