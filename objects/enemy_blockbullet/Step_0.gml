@@ -47,7 +47,7 @@ if(hp <= 0){
 	}
 }
 
-if(inv_collision = false){
+if(inv_collision = false&&Player_IsEnabled()){
 	if!(Player_IsBreaktime()){
 		if(_near_player && place_meeting(x,y,player)){
 			if(global.inv_hurt = 0&&global.inv_shield = 0){
@@ -59,6 +59,15 @@ if(inv_collision = false){
 				}
 			}
 		}
+	}
+}
+
+if(inv_block = false){
+	blk = instance_place(x,y,bullet_enemy_block);
+	if(instance_exists(blk)){
+		destroy_type = blk.type;
+		blk.OnBlock();
+		instance_destroy();
 	}
 }
 
@@ -78,26 +87,4 @@ duration -= 1
 if(duration = 0){
 	destroy_type = 3;
 	instance_destroy();
-}
-
-if(Player_IsEnabled()){
-	if(global.inv_hurt = 0&&global.inv_shield = 0&&!Player_IsBreaktime()){
-		if(_near_player && place_meeting(x,y,player)){
-			event_user(1);
-			Player_CallHurtEvent();
-			if(collision_destroy = true){
-				destroy_type = 2;
-				instance_destroy();
-			}
-		}
-	}
-}
-
-if(inv_block = false){
-	blk = instance_place(x,y,bullet_enemy_block);
-	if(instance_exists(blk)){
-		destroy_type = blk.type;
-		blk.OnBlock();
-		instance_destroy();
-	}
 }
