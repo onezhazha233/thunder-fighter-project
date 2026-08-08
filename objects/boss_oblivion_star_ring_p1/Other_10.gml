@@ -181,3 +181,32 @@ SetIdle = function(duration=30){
 	Anim_Create(id,"gun_angle",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,gun_angle,-gun_angle,duration);
 	SetState(ENEMY_STATE.IDLE);
 }
+	
+SetFrozen = function(f){
+    frozen_duration = f;
+    SetMoveEnabled(!f);
+    if(instance_exists(bullet_emitter_inst)){
+		if(f > 0){
+			bullet_emitter_inst.end_attack();
+			Anim_Destroy(id,"gun_angle");
+			Anim_Destroy(id,"ring_angle");
+		}
+	bullet_emitter_inst.enabled = !f;
+	}
+    if(f > 0){
+        effect_type = 0;
+        effect_alpha = 0.45;
+        layer_sequence_speedscale(enemy_sequence,0);
+        SetFlame(-1,-1);
+		SpawnFrozenGrid(effect_enemy_ice, spr_effect_enemy_ice, 1, 1);
+		SpawnFrozenGrid(effect_enemy_snowflake_fog, spr_effect_enemy_fog, 1, 0.85);
+    }
+    else{
+        frozen_duration = -1;
+        effect_alpha = 0;
+        layer_sequence_speedscale(enemy_sequence,1);
+        SetFlame(flame_lower,flame_upper);
+		SetIdle();
+		frozen_cd = frozen_cd_time;
+    }
+}

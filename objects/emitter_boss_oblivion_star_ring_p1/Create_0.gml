@@ -7,6 +7,20 @@ get_target_dir = function(){
 	return point_direction(x, y, _tx, _ty);
 }
 
+get_laser_edge = function(){
+	edge_point = [];
+	with(bullet_enemy_laser_big){
+		var _dx = lengthdir_x(1,image_angle);
+		var _dy = lengthdir_y(1,image_angle);
+		var _t = 9999999;
+		if(_dx > 0)_t = min(_t,(room_width-x)/_dx);
+		else if(_dx < 0)_t = min(_t,(0-x)/_dx);
+		if(_dy > 0)_t = min(_t,(room_height-y)/_dy);
+		else if(_dy < 0)_t = min(_t,(0-y)/_dy);
+		other.edge_point[order] = [x+_dx*_t,y+_dy*_t];
+	}
+}
+
 attack_0 = function(){//中间红反弹外侧三蓝
 	live_name = "emitter_boss_oblivion_star_ring_p1:attack_0";
 	live;
@@ -390,6 +404,283 @@ attack_4 = function(dir=0){//红蓝旋转散射
 		end_attack();
 	}
 }
+	
+attack_5 = function(dir=0){//激光加边缘散射
+	live_name = "emitter_boss_oblivion_star_ring_p1:attack_5";
+	live;
+	if(attack_time = 1){
+		mark.SetMoveEnabled(false);
+		for(i=0;i<4;i+=1){
+			ga[i] = sin(attack_time*114514+1919-i*80)*120;
+		}
+		for(i=0;i<3;i+=1){
+			bl = MakeEnemyLaser(2,x+lengthdir_x(250,-90+i*120),y+lengthdir_y(250,-90+i*120),2,-90+i*120,40,15);
+			bl.order = i;
+		}
+		Anim_Create(mark,"ring_angle",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,0,ga[0],30);
+	}
+	if(attack_time > 1){
+		with(bullet_enemy_laser_big){
+			x = other.x+lengthdir_x(250,-90+order*120+mark.ring_angle);
+			y = other.y+lengthdir_y(250,-90+order*120+mark.ring_angle);
+			image_angle = -90+order*120+mark.ring_angle;
+		}
+	}
+	if(attack_time = 60){
+		get_laser_edge();
+		for(i=0;i<3;i+=1){
+			for(j=0;j<5;j+=1){
+				for(k=0;k<15;k+=1){
+					bb = MakeEnemyBullet(edge_point[i][0],edge_point[i][1],bullet_enemy_normal,spr_bullet_enemy_normal_0);
+					bb.image_index = i;
+					bb.dd = j;
+					bb.od = k;
+					bb.sd = 0;
+					if(bb.x = 0){
+						bb.sd -= 90;
+					}
+					else if(bb.y = 0){
+						bb.sd += 180;
+					}
+					else if(bb.x = room_width){
+						bb.sd += 90;
+					}
+					bb.x += lengthdir_x(20,bb.sd+30+j*30);
+					bb.y += lengthdir_y(20,bb.sd+30+j*30);
+					with(bb){
+						time = 0;
+						custom_function = function(){
+							time += 1;
+							if(time = 30+od*4){
+								image_angle = sd+30+dd*30;
+								direction = image_angle;
+								speed = 15;
+								Anim_Create(id,"speed",0,0,speed,10,30);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	if(attack_time = 80){
+		for(i=0;i<3;i+=1){
+			bl = MakeEnemyLaser(2,x+lengthdir_x(250,-90+i*120),y+lengthdir_y(250,-90+i*120),2,-90+i*120,40,15);
+			bl.order = i;
+		}
+		Anim_Create(mark,"ring_angle",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,mark.ring_angle,ga[1],30);
+	}
+	if(attack_time = 140){
+		get_laser_edge();
+		for(i=0;i<3;i+=1){
+			for(j=0;j<5;j+=1){
+				for(k=0;k<15;k+=1){
+					bb = MakeEnemyBullet(edge_point[i][0],edge_point[i][1],bullet_enemy_normal,spr_bullet_enemy_normal_0);
+					bb.image_index = i;
+					bb.dd = j;
+					bb.od = k;
+					bb.sd = 0;
+					if(bb.x = 0){
+						bb.sd -= 90;
+					}
+					else if(bb.y = 0){
+						bb.sd += 180;
+					}
+					else if(bb.x = room_width){
+						bb.sd += 90;
+					}
+					bb.x += lengthdir_x(20,bb.sd+30+j*30);
+					bb.y += lengthdir_y(20,bb.sd+30+j*30);
+					with(bb){
+						time = 0;
+						custom_function = function(){
+							time += 1;
+							if(time = 30+od*4){
+								image_angle = sd+30+dd*30;
+								direction = image_angle;
+								speed = 15;
+								Anim_Create(id,"speed",0,0,speed,10,30);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	if(attack_time = 160){
+		for(i=0;i<3;i+=1){
+			bl = MakeEnemyLaser(2,x+lengthdir_x(250,-90+i*120),y+lengthdir_y(250,-90+i*120),2,-90+i*120,40,15);
+			bl.order = i;
+		}
+		Anim_Create(mark,"ring_angle",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,mark.ring_angle,ga[2],30);
+	}
+	if(attack_time = 220){
+		get_laser_edge();
+		for(i=0;i<3;i+=1){
+			for(j=0;j<5;j+=1){
+				for(k=0;k<15;k+=1){
+					bb = MakeEnemyBullet(edge_point[i][0],edge_point[i][1],bullet_enemy_normal,spr_bullet_enemy_normal_0);
+					bb.image_index = i;
+					bb.dd = j;
+					bb.od = k;
+					bb.sd = 0;
+					if(bb.x = 0){
+						bb.sd -= 90;
+					}
+					else if(bb.y = 0){
+						bb.sd += 180;
+					}
+					else if(bb.x = room_width){
+						bb.sd += 90;
+					}
+					bb.x += lengthdir_x(20,bb.sd+30+j*30);
+					bb.y += lengthdir_y(20,bb.sd+30+j*30);
+					with(bb){
+						time = 0;
+						custom_function = function(){
+							time += 1;
+							if(time = 30+od*4){
+								image_angle = sd+30+dd*30;
+								direction = image_angle;
+								speed = 15;
+								Anim_Create(id,"speed",0,0,speed,10,30);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	if(attack_time = 240){
+		for(i=0;i<3;i+=1){
+			bl = MakeEnemyLaser(2,x+lengthdir_x(250,-90+i*120),y+lengthdir_y(250,-90+i*120),2,-90+i*120,40,15);
+			bl.order = i;
+		}
+		Anim_Create(mark,"ring_angle",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,mark.ring_angle,ga[3],30);
+	}
+	if(attack_time = 300){
+		get_laser_edge();
+		for(i=0;i<3;i+=1){
+			for(j=0;j<5;j+=1){
+				for(k=0;k<15;k+=1){
+					bb = MakeEnemyBullet(edge_point[i][0],edge_point[i][1],bullet_enemy_normal,spr_bullet_enemy_normal_0);
+					bb.image_index = i;
+					bb.dd = j;
+					bb.od = k;
+					bb.sd = 0;
+					if(bb.x = 0){
+						bb.sd -= 90;
+					}
+					else if(bb.y = 0){
+						bb.sd += 180;
+					}
+					else if(bb.x = room_width){
+						bb.sd += 90;
+					}
+					bb.x += lengthdir_x(20,bb.sd+30+j*30);
+					bb.y += lengthdir_y(20,bb.sd+30+j*30);
+					with(bb){
+						time = 0;
+						custom_function = function(){
+							time += 1;
+							if(time = 30+od*4){
+								image_angle = sd+30+dd*30;
+								direction = image_angle;
+								speed = 15;
+								Anim_Create(id,"speed",0,0,speed,10,30);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	if(attack_time = 330){
+		mark.SetIdle();
+		mark.SetMoveEnabled(true);
+	}
+	if(attack_time = 330){
+		end_attack();
+	}
+}
+
+attack_6 = function(){//旋转激光加旋转散射
+	live_name = "emitter_boss_oblivion_star_ring_p1:attack_6";
+	live;
+	if(attack_time = 1){
+		mark.SetMoveEnabled(false);
+		ring_rot = 0;
+		gun_rot = 0;
+	}
+	if(attack_time = 30){
+		Anim_Create(mark,"x",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,mark.x,room_width/2-mark.x,60);
+		Anim_Create(mark,"y",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,mark.y,room_height/2-mark.y,60);
+		Anim_Create(mark,"gun_angle",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,mark.gun_angle,120,60);
+		Anim_Create(mark,"ring_angle",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,mark.ring_angle,-120,60);
+		for(i=0;i<3;i+=1){
+			bl = MakeEnemyLaser(2,x+lengthdir_x(250,-90+i*120),y+lengthdir_y(250,-90+i*120),1,-90+i*120,90,-1);
+			bl.order = i;
+		}
+	}
+	if(attack_time = 100){
+		Anim_Create(id,"ring_rot",0,0,0,0.75,120);
+		Anim_Create(id,"gun_rot",0,0,0,-5,120);
+	}
+	if(attack_time > 1){
+		mark.ring_angle += ring_rot;
+		mark.gun_angle += gun_rot;
+		with(bullet_enemy_laser_big){
+			x = other.x+lengthdir_x(250,-90+order*120+mark.ring_angle);
+			y = other.y+lengthdir_y(250,-90+order*120+mark.ring_angle);
+			image_angle = -90+order*120+mark.ring_angle;
+		}
+		if(attack_time mod 7 = 0&&attack_time >= 100&&attack_time < 400){
+			for(i=0;i<3;i+=1){
+				dd = 30+i*120+mark.gun_angle;
+				for(j=0;j<5;j+=1){
+					blt = MakeEnemyBullet(x+lengthdir_x(230,dd),y+lengthdir_y(230,dd),bullet_enemy_normal,spr_bullet_enemy_normal_1);
+					blt.image_angle = dd;
+					blt.direction = dd;
+					blt.speed = 3+j/2;
+					Anim_Create(blt,"speed",0,0,blt.speed,4,5,20);
+				}
+			}
+		}
+		if(attack_time mod 10 = 0&&attack_time >= 400&&attack_time < 700){
+			for(i=0;i<3;i+=1){
+				dd = 30+i*120+mark.gun_angle;
+				for(j=0;j<2;j+=1){
+					blt = MakeEnemyBullet(x+lengthdir_x(230,dd),y+lengthdir_y(230,dd),bullet_enemy_normal,spr_bullet_enemy_normal_1);
+					blt.image_angle = dd;
+					blt.direction = dd;
+					blt.speed = 3+j;
+					Anim_Create(blt,"speed",0,0,blt.speed,4,5,20);
+				}
+			}
+		}
+	}
+	if(attack_time = 500){
+		Anim_Create(id,"ring_rot",0,0,0.75,2,60);
+	}
+	if(attack_time = 700){
+		Anim_Create(id,"ring_rot",0,0,ring_rot,-ring_rot,100);
+		Anim_Create(id,"gun_rot",0,0,gun_rot,-gun_rot,60);
+	}
+	if(attack_time = 760){
+		with(bullet_enemy_laser_big){
+			duration = 1;
+		}
+	}
+	if(attack_time = 800){
+		mark.SetIdle(60);
+		Anim_Create(mark,"x",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,mark.x,room_width/2-mark.x,60);
+		Anim_Create(mark,"y",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,mark.y,350-mark.y,60);
+	}
+	if(attack_time = 860){
+		mark.SetMoveEnabled(true);
+		end_attack();
+	}
+}
 
 a0 = create_attack(0,attack_0,30)
 a1 = create_attack(1,attack_1,30)
@@ -400,8 +691,50 @@ a5 = create_attack(5,attack_1,30,,1)
 a6 = create_attack(6,attack_2,30,,1)
 a7 = create_attack(7,attack_3,30,,1)
 a8 = create_attack(8,attack_4,30,,1)
+a9 = create_attack(9,attack_5,30)
+a10 = create_attack(10,attack_6,30)
 
-fixed_sequence = [a0,a1,a2,a0,a3,a4,a0,a5,a6,a0,a8]
-random_pool = [a0,a1,a2,a3,a4,a5,a6,a7,a8]
+fixed_sequence = [a0,a1,a2,a0,a3,a4,a0,a5,a6,a0,a8,a9,a10]
+random_pool = [a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10]
+
+// ---- 保证 a10 距上一次 a10 至少间隔 5 个攻击 ----
+since_a10 = 5; // 距上次 a10 完成已结束的攻击数（初始视为已满足，可立即释放）
+
+// 覆盖 end_attack：每结束一个攻击推进计数，a10 结束则清零
+_end_attack_orig = end_attack;
+end_attack = function(){
+	if(current_attack != undefined){
+		if(current_attack.id_num = 10){
+			since_a10 = 0;
+		}
+		else{
+			since_a10 += 1;
+		}
+	}
+	_end_attack_orig();
+}
+
+// 覆盖 get_next_attack：间隔不足 5 时临时剔除 a10 再选择
+_get_next_attack_orig = get_next_attack;
+get_next_attack = function(){
+	if(since_a10 < 5){
+		var _sp = random_pool, _sf = fixed_sequence;
+		var _np = [], _nf = [];
+		for(var _i = 0; _i < array_length(_sp); _i += 1){
+			if(_sp[_i].id_num != 10)array_push(_np,_sp[_i]);
+		}
+		for(var _i = 0; _i < array_length(_sf); _i += 1){
+			if(_sf[_i].id_num != 10)array_push(_nf,_sf[_i]);
+		}
+		random_pool = _np;
+		fixed_sequence = _nf;
+		_get_next_attack_orig();
+		random_pool = _sp;
+		fixed_sequence = _sf;
+	}
+	else{
+		_get_next_attack_orig();
+	}
+}
 
 //enabled = true

@@ -21,8 +21,8 @@ skip = false//为0时为第一阶段，否则创建即变形
 x_target = 360//出场时目标x位置
 y_target = 300//出场时目标y位置
 
-battle_ui.boss_hpbar_enabled = true
-battle_wave.enabled = false
+if(instance_exists(battle_ui))battle_ui.boss_hpbar_enabled = true
+if(instance_exists(battle_wave))battle_wave.enabled = false
 
 display_mode = 1
 
@@ -61,8 +61,8 @@ move_duration = [80,120]
 move_interval = [20,30]
 
 burn_target = 30
-frozen_target = 300
-frozen_cd_time = 200
+frozen_target = 400
+frozen_cd_time = 400
 frozen_moving = true
 
 Player_SetBreaktime(true);
