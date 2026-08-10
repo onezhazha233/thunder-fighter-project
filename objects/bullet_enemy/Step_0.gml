@@ -14,14 +14,14 @@ if(cull_margin > 0 && instance_exists(camera)){
 	var _cull_vy = camera.y + camera._shake_pos_y - cull_margin;
 	var _cull_w = (camera.width/camera.scale_x) + cull_margin*2;
 	var _cull_h = (camera.height/camera.scale_y) + cull_margin*2;
-	if(!point_in_rectangle(x,y,_cull_vx,_cull_vy,_cull_vx+_cull_w,_cull_vy+_cull_h)){
+	if(!point_in_rectangle(x,y,_cull_vx,_cull_vy,_cull_vx+_cull_w,_cull_vy+_cull_h)&&auto_destroy = true){
 		// 已离屏：进入宽限倒计时，满宽限仍未回屏才销毁
-		if(cull_grace_timer < 0){
-			cull_grace_timer = cull_grace;
+		if(auto_destroy_time < 0){
+			cull_grace_timer = auto_destroy_delay;
 		}
 		else{
-			cull_grace_timer -= 1;
-			if(cull_grace_timer <= 0){
+			auto_destroy_time -= 1;
+			if(auto_destroy_time <= 0){
 				destroy_type = 3;
 				instance_destroy();
 			}
@@ -31,7 +31,7 @@ if(cull_margin > 0 && instance_exists(camera)){
 	}
 	else{
 		// 回到屏内：重置宽限
-		cull_grace_timer = -1;
+		auto_destroy_time = -1;
 	}
 }
 

@@ -8,13 +8,18 @@ idle_mode = ENEMY_IDLE_MODE.SEQUENCE
 
 pre_sequence = seq_enemy_boss_large_og2_p2_intro
 intro_sequence = seq_enemy_boss_large_og2_p2_intro
-idle_sequence = seq_enemy_boss_large_og2_p2_idle
+
+for(i=0;i<4;i+=1){
+	variable_instance_set(id,"layer_enemy_"+string(i),layer_create(depth-i));
+	variable_instance_set(id,"enemy_sequence_"+string(i),-1);
+	variable_instance_set(id,"idle_sequence_"+string(i),asset_get_index("seq_enemy_boss_large_og2_p2_idle_"+string(i)));
+}
 
 explosion = effect_explosion_boss
 
 bgm = bgm_boss_large
 
-hp_max = 2000*Flag_Get(FLAG_SETTINGS,"boss_hp_ratio")
+hp_max = 3000*Flag_Get(FLAG_SETTINGS,"boss_hp_ratio")
 hp = 1
 
 Anim_Create(id,"hp",0,0,hp,hp_max-hp,40)
@@ -22,7 +27,18 @@ Anim_Create(id,"hp",0,0,hp,hp_max-hp,40)
 x = 360
 y = -500
 
-bullet_emitter = emitter_boss_sirius_twins_1
+y_target = 350
+
+bullet_emitter = emitter_boss_oblivion_star_ring_p2
 
 items = []
 value = 1000
+
+ring_angle = 0
+gun_xoff = 0
+gun_angle = 0
+corner_angle = 0
+
+gun_attack_active = false
+gun_attack_played = 0
+gun_attack_count = 0

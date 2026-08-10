@@ -6,8 +6,6 @@ depth = DEPTH_BATTLE.BULLETS_ENEMY;
 collision_type = COLLISION_TYPE.RECTANGLE
 collision_destroy = true
 cull_margin = 160//离屏粗筛边距(px)，0为关闭
-cull_grace = 60//离屏宽限期(帧)，给折返子弹回屏机会，超时仍离屏才销毁
-cull_grace_timer = -1//当前宽限剩余帧，-1为未在宽限中
 up = 10
 down = 10
 left = 10
@@ -35,6 +33,7 @@ inv_frozen = true
 
 duration = -1
 auto_destroy = true
+auto_destroy_time = -1
 auto_destroy_delay = 60
 
 scale_x = 1

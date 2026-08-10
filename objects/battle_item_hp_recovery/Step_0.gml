@@ -15,11 +15,11 @@ if(!(instance_exists(battle_ui_victory)&&chase == 1)){
 	if(y < 0||y > room_height){
 		if(y > room_height){
 			y = room_height-1;
-			hspeed = -abs(vspeed);
+			vspeed = -abs(vspeed);
 		}
 		if(y < 0){
 			y = 1;
-			hspeed = abs(vspeed);
+			vspeed = abs(vspeed);
 		}
 	}
 }

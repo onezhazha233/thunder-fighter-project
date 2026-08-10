@@ -1,2 +1,2 @@
 live;
-depth = DEPTH_BATTLE.BG
+depth = DEPTH_BATTLE.BG-10
