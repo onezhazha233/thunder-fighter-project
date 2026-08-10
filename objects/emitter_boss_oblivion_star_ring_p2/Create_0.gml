@@ -199,8 +199,126 @@ attack_1 = function(){//反弹红弹
 attack_2 = function(){
 	live_name = "emitter_boss_oblivion_star_ring_p1:attack_2";
 	live;
-	
-	
+	if(attack_time = 1){
+		mark.SetMoveEnabled(false);
+		Anim_Create(mark,"ring_angle",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0,-150,40);
+		Anim_Create(mark,"corner_angle",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0,90,40);
+	}
+	if(attack_time > 40&&attack_time < 90&&attack_time mod 3 = 0){
+		for(i=0;i<3;i+=1){
+			for(j=0;j<4;j+=1){
+				dd = mark.corner_angle+30+i*120;
+				blt = MakeEnemyBullet(x+lengthdir_x(300,dd),y+lengthdir_y(300,dd),bullet_enemy_normal);
+				blt.direction = dd-7.5+5*j;
+				blt.speed = 20;
+				Anim_Create(blt,"image_xscale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,1,1,20);
+				Anim_Create(blt,"image_yscale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,1,1,20);
+				
+				dd = mark.ring_angle-30+i*120;
+				blt = MakeEnemyBullet(x+lengthdir_x(250,dd),y+lengthdir_y(250,dd),bullet_enemy_normal);
+				blt.image_index = 1;
+				blt.direction = dd-7.5+5*j;
+				blt.speed = 20;
+				Anim_Create(blt,"image_xscale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,1,1,20);
+				Anim_Create(blt,"image_yscale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,1,1,20);
+			}
+		}
+	}
+	if(attack_time = 90){
+		Anim_Create(mark,"gun_xoff",ANIM_TWEEN.SINE,ANIM_EASE.OUT,0,-75,30);
+		Anim_Create(mark,"gun_angle",ANIM_TWEEN.SINE,ANIM_EASE.OUT,0,-20,30);
+	}
+	if(attack_time = 120||attack_time = 240||attack_time = 360||attack_time = 480){
+		for(i=0;i<13;i+=1){
+			blt = MakeEnemyBullet(-30,15+i*100,bullet_enemy_normal);
+			blt.image_xscale = 2;
+			blt.image_yscale = 2;
+			Anim_Create(blt,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,blt.x,20-blt.x,20,i*2);
+			Anim_Create(blt,"hspeed",0,0,0,6,30,90+i*10);
+			blt = MakeEnemyBullet(-30,65+i*100,bullet_enemy_normal);
+			blt.image_index = 1;
+			blt.image_xscale = 2;
+			blt.image_yscale = 2;
+			Anim_Create(blt,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,blt.x,20-blt.x,20,(15-i)*2);
+			Anim_Create(blt,"hspeed",0,0,0,6,30,90+(15-i)*10);
+			blt = MakeEnemyBullet(750,15+i*100,bullet_enemy_normal);
+			blt.image_xscale = 2;
+			blt.image_yscale = 2;
+			Anim_Create(blt,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,blt.x,710-blt.x,20,i*2);
+			Anim_Create(blt,"hspeed",0,0,0,-6,30,90+i*10);
+			blt = MakeEnemyBullet(750,65+i*100,bullet_enemy_normal);
+			blt.image_index = 1;
+			blt.image_xscale = 2;
+			blt.image_yscale = 2;
+			Anim_Create(blt,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,blt.x,710-blt.x,20,(15-i)*2);
+			Anim_Create(blt,"hspeed",0,0,0,-6,30,90+(15-i)*10);
+		}
+	}
+	if(attack_time = 120){
+		mark.GunAttack(7);
+		Anim_Create(mark,"gun_xoff",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,-75,150,110);
+		Anim_Create(mark,"gun_angle",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,-20,40,110);
+	}
+	if(attack_time = 225){
+		mark.GunAttack(7);
+		Anim_Create(mark,"gun_xoff",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,75,-150,110);
+		Anim_Create(mark,"gun_angle",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,20,-40,110);
+	}
+	if(attack_time >= 120&&attack_time <= 335){
+		if(attack_time mod 15 = 0){
+			gp = get_gun_pos();
+			for(i=0;i<5;i+=1){
+				blt = MakeEnemyBullet(gp[0],gp[1],bullet_enemy_normal,spr_bullet_enemy_normal_2);
+				blt.image_angle = mark.gun_angle-90-30+i*15;
+				blt.direction = blt.image_angle;
+				blt.speed = 4;
+			}
+		}
+	}
+	if(attack_time = 330){
+		mark.GunAttack(7);
+		Anim_Create(mark,"gun_xoff",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,-75,150,110);
+		Anim_Create(mark,"gun_angle",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,-20,40,110);
+	}
+	if(attack_time = 435){
+		mark.GunAttack(7);
+		Anim_Create(mark,"gun_xoff",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,75,-150,110);
+		Anim_Create(mark,"gun_angle",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,20,-40,110);
+	}
+	if(attack_time >= 330&&attack_time <= 530){
+		if(attack_time mod 15 = 0){
+			gp = get_gun_pos();
+			for(i=0;i<5;i+=1){
+				blt = MakeEnemyBullet(gp[0],gp[1],bullet_enemy_normal,spr_bullet_enemy_normal_2);
+				blt.image_angle = mark.gun_angle-90-30+i*15;
+				blt.direction = blt.image_angle;
+				blt.speed = 4;
+			}
+		}
+	}
+	if(attack_time = 540){
+		mark.GunAttack(7);
+		Anim_Create(mark,"gun_xoff",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,-75,150,110);
+		Anim_Create(mark,"gun_angle",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,-20,40,110);
+	}
+	if(attack_time = 645){
+		Anim_Create(mark,"gun_xoff",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,75,-75,50);
+		Anim_Create(mark,"gun_angle",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,20,-20,50);
+	}
+	if(attack_time >= 540&&attack_time <= 640){
+		if(attack_time mod 15 = 0){
+			gp = get_gun_pos();
+			for(i=0;i<5;i+=1){
+				blt = MakeEnemyBullet(gp[0],gp[1],bullet_enemy_normal,spr_bullet_enemy_normal_2);
+				blt.image_angle = mark.gun_angle-90-30+i*15;
+				blt.direction = blt.image_angle;
+				blt.speed = 4;
+			}
+		}
+	}
+	if(attack_time = 800){
+		end_attack();
+	}
 }
 
 a0 = create_attack(0,attack_0,30)

@@ -11,6 +11,7 @@ bullet_sequence = -1
 collision_destroy = true
 cull_margin = 160//离屏粗筛边距(px)，0为关闭
 auto_destroy = true
+auto_destroy_time = -1
 auto_destroy_delay = 60
 destroy_type = 0//0为被守卫抵挡 1为被护盾消除 2为碰到玩家判定点 3为无特效直接消失 4为被调试清屏或boss切换阶段等强制销毁
 destroy_effect = noone

@@ -17,7 +17,7 @@ if(cull_margin > 0 && instance_exists(camera)){
 	if(!point_in_rectangle(x,y,_cull_vx,_cull_vy,_cull_vx+_cull_w,_cull_vy+_cull_h)&&auto_destroy = true){
 		// 已离屏：进入宽限倒计时，满宽限仍未回屏才销毁
 		if(auto_destroy_time < 0){
-			cull_grace_timer = auto_destroy_delay;
+			auto_destroy_time  = auto_destroy_delay;
 		}
 		else{
 			auto_destroy_time -= 1;
