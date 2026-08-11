@@ -105,6 +105,19 @@ if(keyboard_check_pressed(ord("F"))){
 	}
 }
 
+if(keyboard_check_pressed(ord("B"))){
+	with(enemy_agent){
+		if!(object_get_parent(object_index) = enemy_blockbullet){
+			if(GetBurn() > 0){
+				SetBurn(0);
+			}
+			else{
+				SetBurn(burn_time);
+			}
+		}
+	}
+}
+
 /*if (mouse_check_button_pressed(mb_right)) {
     is_drawing = true;
     start_x = mouse_x;

@@ -2,7 +2,7 @@ live;
 SetSurfEnabled(surf_enabled)
 SetFlame(flame_lower,flame_upper)
 if!(bullet_emitter = noone){
-	bullet_emitter_inst = instance_create_depth(x,y,DEPTH_BATTLE.BULLETS_PLAYER,bullet_emitter);
+	bullet_emitter_inst = instance_create_depth(x,y,DEPTH_BATTLE.BULLETS_ENEMY-10,bullet_emitter);
 	bullet_emitter_inst.mark = id;
 }
 

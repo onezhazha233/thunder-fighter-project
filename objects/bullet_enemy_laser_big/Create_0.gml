@@ -12,6 +12,8 @@ sprite_laser_start = spr_bullet_enemy_laser_blue_start
 sprite_laser = spr_bullet_enemy_laser_blue
 sprite_effect = spr_bullet_enemy_effect_laser_blue
 sprite_start_effect = spr_bullet_enemy_laser_blue_start_effect
+sprite_lighting = spr_bullet_enemy_laser_blue_lightning
+sprite_wave = spr_bullet_enemy_laser_blue_wave
 
 start_effect = true
 wave_effect = false

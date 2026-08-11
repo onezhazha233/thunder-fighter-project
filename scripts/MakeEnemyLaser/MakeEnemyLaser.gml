@@ -20,6 +20,9 @@ function MakeEnemyLaser(size,xx,yy,col,angle=-90,delay=60,duration=15){
 		laser.sprite_laser_start = spr_bullet_enemy_laser_red_start;
 		laser.sprite_laser = spr_bullet_enemy_laser_red;
 		laser.sprite_effect = spr_bullet_enemy_effect_laser_red;
+		laser.sprite_start_effect = spr_bullet_enemy_laser_red_start_effect;
+		laser.sprite_lighting = spr_bullet_enemy_laser_red_lightning;
+		laser.sprite_wave = spr_bullet_enemy_laser_red_wave;
 	}
 	if(col = 2){
 		laser.sprite_ball = spr_bullet_enemy_laser_blue_ball;
@@ -27,6 +30,9 @@ function MakeEnemyLaser(size,xx,yy,col,angle=-90,delay=60,duration=15){
 		laser.sprite_laser_start = spr_bullet_enemy_laser_blue_start;
 		laser.sprite_laser = spr_bullet_enemy_laser_blue;
 		laser.sprite_effect = spr_bullet_enemy_effect_laser_blue;
+		laser.sprite_start_effect = spr_bullet_enemy_laser_blue_start_effect;
+		laser.sprite_lighting = spr_bullet_enemy_laser_blue_lightning;
+		laser.sprite_wave = spr_bullet_enemy_laser_blue_wave;
 	}
 	
 	return laser;
