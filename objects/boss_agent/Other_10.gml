@@ -242,7 +242,7 @@ TakeDamage = function(dmg){
 SetMoveEnabled = function(enabled){
 	move_enabled = enabled;
 	if(move_enabled = true){
-		move_nexttime = time;
+		move_nexttime = 0;
 		move_state = 0;
 	}
 	else{

@@ -27,7 +27,7 @@ if(hp <= 0){
 		Anim_Create(battle_wave,"enabled",0,0,0,1,0,240);
 		Player_SetBreaktime(true);
 		BGM_SetVolume(1,0,60);
-		battle.alarm[2] = 240;
+		with(battle)alarm[2] = 240;
 		OnDie();
 	}
 	else{
@@ -65,7 +65,7 @@ if(active = true){
 		if(start = 1){
 			if(move_enabled = true){
 				if(move_state = 0){
-				    if(time-move_starttime >= move_nexttime){
+				    if(time >= move_nexttime){
 				        var centerX = (move_range[0] + move_range[2]) / 2;
 					    var centerY = (move_range[1] + move_range[3]) / 2;
     
@@ -84,28 +84,22 @@ if(active = true){
 					    var newTargetX = x + lengthdir_x(distance, dir);
 					    var newTargetY = y + lengthdir_y(distance, dir);
     
-					    // 动态 margin
 					    var marginX = min(10, (move_range[2] - move_range[0]) / 2 - 1);
 					    var marginY = min(10, (move_range[3] - move_range[1]) / 2 - 1);
 
 					    newTargetX = clamp(newTargetX, move_range[0] + marginX, move_range[2] - marginX);
 					    newTargetY = clamp(newTargetY, move_range[1] + marginY, move_range[3] - marginY);
 			
-						move_targetpos = [newTargetX,newTargetY]
-					    moveStartTime = time - move_starttime;
+						move_targetpos = [newTargetX,newTargetY];
 					    moveDuration = random_range(move_duration[0],move_duration[1]);
 					    move_state = 1;
     
-					    // 使用 Anim_Create 移动
 					    Anim_Create(id, "x", 0, 0, x, move_targetpos[0] - x, moveDuration);
 					    Anim_Create(id, "y", 0, 0, y, move_targetpos[1] - y, moveDuration);
 				    }
 				}
 				else if(move_state = 1){
-				    if((x <= move_range[0]||x >= move_range[2]||y <= move_range[1]||y >= move_range[3])||(!Anim_IsExists(id,"x")&&!Anim_IsExists(id,"y"))){
-				        x = clamp(x, move_range[0], move_range[2]);
-					    y = clamp(y, move_range[1], move_range[3]);
-    
+				    if(!Anim_IsExists(id,"x")&&!Anim_IsExists(id,"y")){
 					    move_nexttime = time + random_range(move_interval[0],move_interval[1]);
 					    move_state = 0;
 				    }

@@ -36,7 +36,7 @@ if(hp <= 0){
 		Anim_Create(battle_wave,"enabled",0,0,0,1,0,240);
 		Player_SetBreaktime(true);
 		BGM_SetVolume(1,0,60);
-		battle.alarm[2] = 240;
+		with(battle)alarm[2] = 240;
 		OnDie();
 	}
 	else{
@@ -85,7 +85,7 @@ if(active = true){
 			if(time > 80){
 				if(move_enabled = true){
 					if(move_state = 0){
-					    if(time-move_starttime >= move_nexttime){
+					    if(time >= move_nexttime){
 					        var centerX = (move_range[0] + move_range[2]) / 2;
 						    var centerY = (move_range[1] + move_range[3]) / 2;
     
@@ -112,7 +112,6 @@ if(active = true){
 						    newTargetY = clamp(newTargetY, move_range[1] + marginY, move_range[3] - marginY);
 			
 							move_targetpos = [newTargetX,newTargetY]
-						    moveStartTime = time - move_starttime;
 						    moveDuration = random_range(move_duration[0],move_duration[1]);
 						    move_state = 1;
     

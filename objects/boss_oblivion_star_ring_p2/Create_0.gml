@@ -8,6 +8,7 @@ idle_mode = ENEMY_IDLE_MODE.SEQUENCE
 
 pre_sequence = seq_enemy_boss_large_og2_p2_intro
 intro_sequence = seq_enemy_boss_large_og2_p2_intro
+die_sequence = seq_enemy_boss_large_og2_die
 
 for(i=0;i<4;i+=1){
 	variable_instance_set(id,"layer_enemy_"+string(i),layer_create(depth-i));

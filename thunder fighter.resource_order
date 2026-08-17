@@ -1558,6 +1558,7 @@
     {"name":"seq_enemy_boss_large_og1_p2_attack_outro","order":6,"path":"sequences/seq_enemy_boss_large_og1_p2_attack_outro/seq_enemy_boss_large_og1_p2_attack_outro.yy",},
     {"name":"seq_enemy_boss_large_og1_p2_flame","order":3,"path":"sequences/seq_enemy_boss_large_og1_p2_flame/seq_enemy_boss_large_og1_p2_flame.yy",},
     {"name":"seq_enemy_boss_large_og1_p2_intro","order":4,"path":"sequences/seq_enemy_boss_large_og1_p2_intro/seq_enemy_boss_large_og1_p2_intro.yy",},
+    {"name":"seq_enemy_boss_large_og2_die","order":18,"path":"sequences/seq_enemy_boss_large_og2_die/seq_enemy_boss_large_og2_die.yy",},
     {"name":"seq_enemy_boss_large_og2_p1_idle_0","order":8,"path":"sequences/seq_enemy_boss_large_og2_p1_idle_0/seq_enemy_boss_large_og2_p1_idle_0.yy",},
     {"name":"seq_enemy_boss_large_og2_p1_idle_1","order":9,"path":"sequences/seq_enemy_boss_large_og2_p1_idle_1/seq_enemy_boss_large_og2_p1_idle_1.yy",},
     {"name":"seq_enemy_boss_large_og2_p1_idle_2","order":10,"path":"sequences/seq_enemy_boss_large_og2_p1_idle_2/seq_enemy_boss_large_og2_p1_idle_2.yy",},

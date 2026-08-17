@@ -36,7 +36,7 @@ if(hp <= 0){
 		Anim_Create(battle_wave,"enabled",0,0,0,1,0,240);
 		Player_SetBreaktime(true);
 		BGM_SetVolume(1,0,60);
-		battle.alarm[2] = 240;
+		with(battle)alarm[2] = 240;
 		OnDie();
 	}
 	else{
