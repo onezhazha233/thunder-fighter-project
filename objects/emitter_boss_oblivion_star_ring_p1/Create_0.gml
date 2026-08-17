@@ -660,7 +660,7 @@ attack_6 = function(){//旋转激光加旋转散射
 		}
 	}
 	if(attack_time = 500){
-		Anim_Create(id,"ring_rot",0,0,0.75,2,60);
+		Anim_Create(id,"ring_rot",0,0,0.5,2,60);
 	}
 	if(attack_time = 700){
 		Anim_Create(id,"ring_rot",0,0,ring_rot,-ring_rot,100);
