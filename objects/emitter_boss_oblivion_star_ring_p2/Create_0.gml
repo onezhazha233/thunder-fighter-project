@@ -853,7 +853,11 @@ attack_6 = function(){//旋转激光加反弹红弹
 			ls[i].duration = 30;
 		}
 	}
-	if(attack_time = 650){
+	if(attack_time = 630){
+		Anim_Create(mark,"x",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,mark.x,room_width/2-mark.x,30);
+		Anim_Create(mark,"y",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,mark.y,room_height/2-mark.y,30);
+	}
+	if(attack_time = 660){
 		mark.SetMoveEnabled(true);
 		mark.SetIdle();
 		end_attack();
