@@ -869,10 +869,10 @@ a1 = create_attack(1,attack_1,30)
 a2 = create_attack(2,attack_2,30)
 a3 = create_attack(3,attack_3,30)
 a4 = create_attack(4,attack_4,30)
-a5 = create_attack(4,attack_5,30)
-a6 = create_attack(5,attack_6,30)
-a7 = create_attack(4,attack_0,30,,1)
-a8 = create_attack(5,attack_1,30,,1)
+a5 = create_attack(5,attack_5,30)
+a6 = create_attack(6,attack_6,30)
+a7 = create_attack(7,attack_0,30,,1)
+a8 = create_attack(8,attack_1,30,,1)
 
 fixed_sequence = [a0,a1,a2,a3,a4,a7,a2,a6,a5]
 random_pool = [a0,a1,a2,a3,a4,a5,a6,a7,a8]
