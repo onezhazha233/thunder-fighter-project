@@ -646,7 +646,7 @@ attack_6 = function(){//旋转激光加旋转散射
 				}
 			}
 		}
-		if(attack_time mod 10 = 0&&attack_time >= 400&&attack_time < 700){
+		if(attack_time mod 10 = 0&&attack_time >= 400&&attack_time < 730){
 			for(i=0;i<3;i+=1){
 				dd = 30+i*120+mark.gun_angle;
 				for(j=0;j<2;j+=1){
@@ -660,23 +660,23 @@ attack_6 = function(){//旋转激光加旋转散射
 		}
 	}
 	if(attack_time = 500){
-		Anim_Create(id,"ring_rot",0,0,0.5,2,60);
+		Anim_Create(id,"ring_rot",0,0,0.25,2,90);
 	}
-	if(attack_time = 700){
+	if(attack_time = 730){
 		Anim_Create(id,"ring_rot",0,0,ring_rot,-ring_rot,100);
 		Anim_Create(id,"gun_rot",0,0,gun_rot,-gun_rot,60);
 	}
-	if(attack_time = 760){
+	if(attack_time = 790){
 		with(bullet_enemy_laser_big){
 			duration = 1;
 		}
 	}
-	if(attack_time = 800){
+	if(attack_time = 830){
 		mark.SetIdle(60);
 		Anim_Create(mark,"x",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,mark.x,room_width/2-mark.x,60);
 		Anim_Create(mark,"y",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,mark.y,350-mark.y,60);
 	}
-	if(attack_time = 860){
+	if(attack_time = 890){
 		mark.SetMoveEnabled(true);
 		end_attack();
 	}

@@ -8,6 +8,6 @@ rampage_outro = seq_falcon_a_rampage_outro
 
 roll_mode = EQUIPMENT_ROLL_MODE.SEQUENCE
 roll_sequence_right = [seq_falcon_a_roll_right_0,seq_falcon_a_roll_right_1,seq_falcon_a_roll_right_2]
-roll_sequence_flip = true
+roll_sequence_left = roll_sequence_right
 
 bullet_emitter = emitter_plane_fire
