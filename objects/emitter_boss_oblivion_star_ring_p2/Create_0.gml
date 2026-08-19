@@ -897,7 +897,7 @@ end_attack = function(){
 		}
 	}
 	if(current_attack != undefined){
-		if(current_attack.id_num = 5){
+		if(current_attack.id_num = 6){
 			since_a6 = 0;
 		}
 		else{
@@ -913,10 +913,10 @@ get_next_attack = function(){
 		var _sp = random_pool, _sf = fixed_sequence;
 		var _np = [], _nf = [];
 		for(var _i = 0; _i < array_length(_sp); _i += 1){
-			if(_sp[_i].id_num != 5)array_push(_np,_sp[_i]);
+			if(_sp[_i].id_num != 6)array_push(_np,_sp[_i]);
 		}
 		for(var _i = 0; _i < array_length(_sf); _i += 1){
-			if(_sf[_i].id_num != 5)array_push(_nf,_sf[_i]);
+			if(_sf[_i].id_num != 6)array_push(_nf,_sf[_i]);
 		}
 		random_pool = _np;
 		fixed_sequence = _nf;
