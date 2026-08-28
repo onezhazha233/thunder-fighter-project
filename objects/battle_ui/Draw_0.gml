@@ -17,8 +17,24 @@ else{
 if(boss_hpbar_enabled = true){
 	draw_sprite_ext(spr_ui_hpbar_boss_name,0,camera._shake_pos_x+360-273-3,camera._shake_pos_y+104-5,1,1,0,-1,1);
 	draw_set_font(Lang_GetFont("zpix"));
+	draw_set_halign(fa_left);
 	draw_set_valign(fa_bottom);
-	draw_text_transformed(camera._shake_pos_x+360-273+7,camera._shake_pos_y+104-5,"LV."+string(boss_hpbar_lv)+"  "+boss_hpbar_name,0.8,0.8,0);
+	var _sx0 = camera._shake_pos_x+360-273+7;
+	var _sy0 = camera._shake_pos_y+104-5;
+	var _sc = 0.8;
+	if(sprite_exists(boss_hpbar_lv)){
+		var _cx = _sx0;
+		draw_text_transformed(_cx,_sy0,"LV.",_sc,_sc,0);
+		_cx += string_width("LV.")*_sc;
+		var _sw = sprite_get_width(boss_hpbar_lv)*_sc;
+		var _sh = sprite_get_height(boss_hpbar_lv)*_sc;
+		draw_sprite_stretched_ext(boss_hpbar_lv,boss_hpbar_lv_spr_img,_cx,_sy0-_sh,_sw,_sh,-1,1);
+		_cx += _sw;
+		draw_text_transformed(_cx,_sy0,"  "+boss_hpbar_name,_sc,_sc,0);
+	}
+	else{
+		draw_text_transformed(_sx0,_sy0,"LV."+string(boss_hpbar_lv)+"  "+boss_hpbar_name,_sc,_sc,0);
+	}
 	draw_set_valign(fa_top);
 	draw_sprite_ext(spr_ui_hpbar_boss_bg,0,camera._shake_pos_x+360,camera._shake_pos_y+110-5,1,1,0,-1,1);
 	for(i=0;i<boss_hpbar_phase+1;i+=1){

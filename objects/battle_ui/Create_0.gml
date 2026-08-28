@@ -6,6 +6,7 @@ hp_red_time = 0
 boss_hpbar_enabled = false
 boss_hpbar_phase = 0
 boss_hpbar_lv = 0
+boss_hpbar_lv_spr_img = 0
 boss_hpbar_name = "boss"
 boss_hpbar_hp = 10
 boss_hpbar_hp_max = 10

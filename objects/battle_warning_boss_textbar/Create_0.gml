@@ -1,6 +1,8 @@
 live;
 lv = 0
 name = Lang_GetString("battle.testboss.name")
+lv_spr = false
+lv_spr_img = 0
 
 image_xscale = 5
 image_yscale = 5

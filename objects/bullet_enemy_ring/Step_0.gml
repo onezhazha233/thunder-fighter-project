@@ -13,6 +13,7 @@ if(enabled = 1&&array_length(blt) > 0){
         }
     }
 }
+
 duration -= 1
 if(duration = 0||(enabled = true&&all_exist = false)){
 	instance_destroy();
