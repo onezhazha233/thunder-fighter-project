@@ -69,3 +69,9 @@ if(GetFrozen() = 0){
 if(frozen_cd > 0){
 	frozen_cd -= 1;
 }
+
+if(variable_instance_exists(id,"boss_hpbar_enabled")){
+	if(boss_hpbar_enabled = true){
+		if(instance_exists(battle_ui)) battle_ui.boss_hpbar_state = state;
+	}
+}

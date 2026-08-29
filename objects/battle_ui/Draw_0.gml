@@ -28,7 +28,15 @@ if(boss_hpbar_enabled = true){
 		_cx += string_width("LV.")*_sc;
 		var _sw = sprite_get_width(boss_hpbar_lv)*_sc;
 		var _sh = sprite_get_height(boss_hpbar_lv)*_sc;
-		draw_sprite_stretched_ext(boss_hpbar_lv,boss_hpbar_lv_spr_img,_cx,_sy0-_sh,_sw,_sh,-1,1);
+		var _col;
+		if(boss_hpbar_state = ENEMY_STATE.PRE||boss_hpbar_state = ENEMY_STATE.INTRO){
+			_col = c_white;
+		}
+		else{
+			var _r = (boss_hpbar_hp_max > 0) ? clamp(boss_hpbar_hp/boss_hpbar_hp_max,0,1) : 1;
+			_col = merge_color(c_red,c_white, _r);
+		}
+		draw_sprite_stretched_ext(boss_hpbar_lv,boss_hpbar_lv_spr_img,_cx,_sy0-_sh,_sw,_sh,_col,1);
 		_cx += _sw;
 		draw_text_transformed(_cx,_sy0,"  "+boss_hpbar_name,_sc,_sc,0);
 	}
