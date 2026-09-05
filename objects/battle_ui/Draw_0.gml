@@ -22,7 +22,7 @@ if(boss_hpbar_enabled = true){
 	var _sx0 = camera._shake_pos_x+360-273+7;
 	var _sy0 = camera._shake_pos_y+104-5;
 	var _sc = 0.8;
-	if(sprite_exists(boss_hpbar_lv)){
+	if(sprite_exists(boss_hpbar_lv)&&boss_hpbar_lv_spr_enabled = true){
 		var _cx = _sx0;
 		draw_text_transformed(_cx,_sy0,"LV.",_sc,_sc,0);
 		_cx += string_width("LV.")*_sc;

@@ -13,6 +13,7 @@ warning = {
 		ww.lv_spr_img = lv_spr_img;
 		ww.name = name;
 		battle_ui.boss_hpbar_lv = lv;
+		battle_ui.boss_hpbar_lv_spr_enabled = true;
 		battle_ui.boss_hpbar_lv_spr_img = lv_spr_img;
 		battle_ui.boss_hpbar_name = name;
 		
