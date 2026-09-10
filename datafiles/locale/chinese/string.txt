@@ -1,3 +1,0 @@
-string/names_equipment.json
-string/names_boss.json
-string/ui.json

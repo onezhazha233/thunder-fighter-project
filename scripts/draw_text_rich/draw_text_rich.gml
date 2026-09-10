@@ -1,4 +1,4 @@
-function draw_text_rich(_x0, _y0, _text, _font=Lang_GetFont("zpix"), _visible_count=-1, _line_space=24, _char_space=0, _halign=fa_left, _valign=fa_top, _ui_scale_x=1.0, _ui_scale_y=1.0, _base_alpha=1.0) {
+function draw_text_rich(_x0, _y0, _text, _font=Lang_GetFont("zpix"), _visible_count=-1, _line_space=24, _char_space=0, _halign=fa_left, _valign=fa_top, _ui_scale_x=1.0, _ui_scale_y=1.0, _base_alpha=1.0, _per_line_align=false) {
 	if (_base_alpha <= 0 || _ui_scale_x <= 0 || _ui_scale_y <= 0 || _visible_count == 0) return;
 
 	var _old_font = draw_get_font();
@@ -6,7 +6,8 @@ function draw_text_rich(_x0, _y0, _text, _font=Lang_GetFont("zpix"), _visible_co
 
 	var _def_color = draw_get_color();
 	var _curr_color = _def_color;
-	var _curr_scale = 1.0;
+	var _curr_scale_x = 1.0;
+	var _curr_scale_y = 1.0;
 	var _curr_effect = 0;
 	
 	// === 新增：描边状态变量 ===
@@ -58,7 +59,8 @@ function draw_text_rich(_x0, _y0, _text, _font=Lang_GetFont("zpix"), _visible_co
 
 				if (_tag == "-") {
 					_curr_color = _def_color;
-					_curr_scale = 1.0;
+					_curr_scale_x = 1.0;
+					_curr_scale_y = 1.0;
 					_curr_effect = 0;
 					_curr_out_thick = 0; // 恢复默认无描边
 				}
@@ -88,7 +90,15 @@ function draw_text_rich(_x0, _y0, _text, _font=Lang_GetFont("zpix"), _visible_co
 					_curr_out_thick = real(string_delete(_tag, 1, 18));
 				}
 				else if (string_starts_with(_tag, "scale ")) {
-					_curr_scale = real(string_delete(_tag, 1, 6));
+					var _val = real(string_delete(_tag, 1, 6));
+					_curr_scale_x = _val;
+					_curr_scale_y = _val;
+				}
+				else if (string_starts_with(_tag, "scale_x ")) {
+					_curr_scale_x = real(string_delete(_tag, 1, 8));
+				}
+				else if (string_starts_with(_tag, "scale_y ")) {
+					_curr_scale_y = real(string_delete(_tag, 1, 8));
 				}
 				else if (string_starts_with(_tag, "effect ")) {
 					var _eff_type = string_delete(_tag, 1, 7);
@@ -107,11 +117,12 @@ function draw_text_rich(_x0, _y0, _text, _font=Lang_GetFont("zpix"), _visible_co
 			continue;
 		}
 
-		var _char_w = string_width(_char) * _curr_scale * _ui_scale_x;
+		var _char_w = string_width(_char) * _curr_scale_x * _ui_scale_x;
 		array_push(_curr_line, {
 			char: _char,
 			color: _curr_color,
-			scale: _curr_scale,
+			scale_x: _curr_scale_x,
+			scale_y: _curr_scale_y,
 			effect: _curr_effect,
 			width: _char_w,
 			index: _global_char_index,
@@ -134,6 +145,19 @@ function draw_text_rich(_x0, _y0, _text, _font=Lang_GetFont("zpix"), _visible_co
 	var _real_line_space = _line_space * _ui_scale_y;
 	var _real_char_space = _char_space * _ui_scale_x;
 	var _text_block_total_height = _line_count * _real_line_space;
+
+	// 计算文字块最大行宽
+	var _max_line_width = 0;
+	for (var _l = 0; _l < _line_count; _l++) {
+		var _ld = _lines[_l];
+		var _cc = array_length(_ld);
+		var _tw = 0;
+		for (var _c = 0; _c < _cc; _c++) {
+			_tw += _ld[_c].width;
+			if (_c < _cc - 1) _tw += _real_char_space;
+		}
+		if (_tw > _max_line_width) _max_line_width = _tw;
+	}
 
 	var _start_y = _y0;
 	if (_valign == fa_middle) {
@@ -161,8 +185,24 @@ function draw_text_rich(_x0, _y0, _text, _font=Lang_GetFont("zpix"), _visible_co
 		}
 
 		var _draw_x = _x0;
-		if (_halign == fa_center)      _draw_x = _x0 - (_line_total_width / 2);
-		else if (_halign == fa_right)  _draw_x = _x0 - _line_total_width;
+		if (_halign == fa_center) {
+			if (_per_line_align) {
+				// 逐行对齐：在最大行宽容器内居中
+				_draw_x = _x0 + (_max_line_width - _line_total_width) / 2;
+			} else {
+				// 整体对齐：各行共享中心点
+				_draw_x = _x0 - (_line_total_width / 2);
+			}
+		} else if (_halign == fa_right) {
+			if (_per_line_align) {
+				// 逐行对齐：在最大行宽容器内右对齐
+				_draw_x = _x0 + _max_line_width - _line_total_width;
+			} else {
+				// 整体对齐：各行共享右边缘
+				_draw_x = _x0 - _line_total_width;
+			}
+		}
+		// fa_left：两种模式都从 _x0 开始
 
 		for (var _c = 0; _c < _char_count; _c++) {
 			var _data = _line_data[_c];
@@ -171,18 +211,18 @@ function draw_text_rich(_x0, _y0, _text, _font=Lang_GetFont("zpix"), _visible_co
 
 			switch (_data.effect) {
 				case 1:
-					_offset_x = random_range(-1.5, 1.5) * _data.scale * _ui_scale_x;
-					_offset_y = random_range(-1.5, 1.5) * _data.scale * _ui_scale_y;
+					_offset_x = random_range(-1.5, 1.5) * _data.scale_x * _ui_scale_x;
+					_offset_y = random_range(-1.5, 1.5) * _data.scale_y * _ui_scale_y;
 					break;
 				case 2:
-					_offset_y = sin(_time + (_data.index * 0.5)) * 4.0 * _data.scale * _ui_scale_y;
+					_offset_y = sin(_time + (_data.index * 0.5)) * 4.0 * _data.scale_y * _ui_scale_y;
 					break;
 			}
 
 			var _final_x = _draw_x + _offset_x;
 			var _final_y = _draw_y + _offset_y;
-			var _sc_x = _data.scale * _ui_scale_x;
-			var _sc_y = _data.scale * _ui_scale_y;
+			var _sc_x = _data.scale_x * _ui_scale_x;
+			var _sc_y = _data.scale_y * _ui_scale_y;
 
 			// === 新增：核心 8 方向描边绘制逻辑 ===
 			if (_data.out_thick > 0) {

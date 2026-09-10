@@ -1,0 +1,12 @@
+{
+  "info": {
+    "name": "English",
+    "ascii_name": "english",
+    "order": 0
+  },
+  "fonts": [
+    "zpix"
+  ],
+  "sprites": [],
+  "audio": []
+}

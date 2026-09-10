@@ -1,6 +1,6 @@
 function Flag_CustomSettings(){
 	with(Flag_GetStorage(FLAG_SETTINGS)){
-		Set("language",0);//0为中文 不一定有其它语言
+		Set("language","chinese");//默认中文，可改为"english"
 		Set("music",true);//是否开启音乐
 		Set("sound",true);//是否开启音效
 		Set("boss_hp_ratio",1);//boss血量倍率

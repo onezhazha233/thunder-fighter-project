@@ -1,0 +1,14 @@
+{
+  "zpix": {
+    "source": "zpix.ttf",
+    "is_sprite": false,
+    "size": 18,
+    "bold": false,
+    "italic": false,
+    "first": 32,
+    "last": 40959,
+    "string_map": "",
+    "is_proportional": false,
+    "separation": 0
+  }
+}

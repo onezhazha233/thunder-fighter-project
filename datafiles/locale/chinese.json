@@ -1,0 +1,12 @@
+{
+  "info": {
+    "name": "简体中文",
+    "ascii_name": "chinese",
+    "order": 1
+  },
+  "fonts": [
+    "zpix"
+  ],
+  "sprites": [],
+  "audio": []
+}

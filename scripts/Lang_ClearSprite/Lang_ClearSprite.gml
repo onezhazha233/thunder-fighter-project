@@ -9,6 +9,4 @@ function Lang_ClearSprite() {
 	}
 	ds_map_clear(global._gmu_lang_sprite);
 	return true;
-
-
 }

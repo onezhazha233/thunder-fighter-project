@@ -1,1 +1,0 @@
-sprite/battle_greedish_corn_explosion.ini

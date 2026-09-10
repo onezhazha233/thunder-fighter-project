@@ -9,6 +9,7 @@ function UIText(str,xx,yy): UIBase(xx,yy) constructor{
 	char_spacing = 0;
 	halign = fa_left;
 	valign = fa_top;
+	per_line_align = false;
 	
 	draw = function(){
 		draw_text_rich(abs_x,abs_y,text,font,-1,line_spacing,char_spacing,halign,valign,abs_scale_x,abs_scale_y,abs_alpha);

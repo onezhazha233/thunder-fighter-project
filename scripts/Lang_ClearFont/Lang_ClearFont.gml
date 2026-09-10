@@ -9,6 +9,4 @@ function Lang_ClearFont() {
 	}
 	ds_map_clear(global._gmu_lang_font);
 	return true;
-
-
 }

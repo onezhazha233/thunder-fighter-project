@@ -215,13 +215,17 @@ create_equipment_item = function(data,type,selected=false,boss=false){
 	equipment_text.line_spacing = 40;
 	
 	if(selected = true){
-		equip_btn = new UIText("{color green}"+Lang_GetString("ui."+(boss = true ? "selected" : "equipped")),542,46);
+		equip_btn = new UIText("{color green}"+Lang_GetString("ui."+(boss = true ? "selected" : "equipped")),580,55);
+		equip_btn.halign = fa_center;
+		equip_btn.valign = fa_middle;
 	}
 	else{
 		equip_btn = new UIButton(spr_ui_button,522,28);
 		equip_btn.text = "{color_rgb 0 65 140}{outline_color 57 162 225}{outline_thickness 2}"+Lang_GetString("ui."+(boss = true ? "select" : "equip"));
-		equip_btn.text_x = 33;
-		equip_btn.text_y = 20;
+		equip_btn.text_x = 59;
+		equip_btn.text_y = 27;
+		equip_btn.halign = fa_center;
+		equip_btn.valign = fa_middle;
 		equip_btn.equipment_name = data.icon;
 		if(variable_struct_exists(data,"obj"))equip_btn.equipment_name = data.obj;
 		equip_btn.type = type;

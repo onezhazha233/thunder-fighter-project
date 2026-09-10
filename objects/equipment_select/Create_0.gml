@@ -92,8 +92,10 @@ select_equipment_wingman_right.AddContent(btn_select_wingman_right)
 
 btn_select_boss = new UIButton(spr_ui_selectboss,144,515)
 btn_select_boss.text = "{color_rgb 125 12 154}{outline_color 233 143 255}{outline_thickness 2}"+Lang_GetString("ui.select.boss")
-btn_select_boss.text_x = 94
-btn_select_boss.text_y = 12
+btn_select_boss.text_x = 150
+btn_select_boss.text_y = 18
+btn_select_boss.halign = fa_center;
+btn_select_boss.valign = fa_middle;
 btn_select_boss.AddEvent(UI_EVENT.CLICK,function(){
 	other.create_select_window(5);
 })
@@ -101,8 +103,10 @@ btn_select_boss.AddEvent(UI_EVENT.CLICK,function(){
 btn_start_battle = new UIButton(spr_ui_button_flat,224,586,140,56)
 btn_start_battle.nineslice = true
 btn_start_battle.text = "{color_rgb 0 65 140}{outline_color 100 180 250}{outline_thickness 2}"+Lang_GetString("ui.startbattle")
-btn_start_battle.text_x = 18
-btn_start_battle.text_y = 12
+btn_start_battle.text_x = 70
+btn_start_battle.text_y = 18
+btn_start_battle.halign = fa_center;
+btn_start_battle.valign = fa_middle;
 btn_start_battle.AddEvent(UI_EVENT.CLICK,function(){
 	SFX_Play(snd_touch);
 	global.score = 0;
@@ -126,7 +130,7 @@ btn_settings.AddEvent(UI_EVENT.CLICK,function(){
 	window_settings = new UIImage(spr_ui_list,0,360,640);
 	window_settings.center = true;
 	window_settings.nineslice = true;
-	window_settings.height = 500;
+	window_settings.height = 560;
 	window_settings.scale_x = 0.9
 	window_settings.scale_y = 0.9
 	window_settings.black = 0;
@@ -272,6 +276,29 @@ btn_settings.AddEvent(UI_EVENT.CLICK,function(){
 	window_settings.AddContent(minion_text);
 	window_settings.AddContent(minion);
 	
+	lang_text = new UIText(Lang_GetString("ui.settings.language"),50,420);
+	lang_btn = new UIButton(spr_ui_button_flat,220,410,160,60);
+	lang_btn.nineslice = true;
+	// 用当前语言的实际显示名作为按钮文字
+	var _lang_name = Lang_ResolveName(Language());
+	lang_btn.text = "{color_rgb 0 65 140}{outline_color 100 180 250}{outline_thickness 2}"+Lang_GetInfo(_lang_name,"name",_lang_name);
+	lang_btn.text_x = 80;
+	lang_btn.text_y = 20;
+	lang_btn.halign = fa_center;
+	lang_btn.valign = fa_middle;
+	lang_btn.AddEvent(UI_EVENT.CLICK,function(el){
+		SFX_Play(snd_touch);
+		var _curr = Lang_GetID(Language());
+		var _next = (_curr + 1) % Lang_GetNumber();
+		Lang_Switch(_next);
+		// 切换后刷新按钮文字
+		var _name = Lang_ResolveName(Language());
+		el.text = Lang_GetInfo(_name,"name",_name);
+		game_restart();
+	});
+	window_settings.AddContent(lang_text);
+	window_settings.AddContent(lang_btn);
+
 	other.main_ui.AddContent(window_settings);
 })
 

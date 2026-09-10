@@ -17,6 +17,7 @@ function UIButton(spr,xx,yy,w,h): UIBase(xx,yy) constructor{
 	char_spacing = 0;
 	halign = fa_left;
 	valign = fa_top;
+	per_line_align = false;
 	
 	draw = function(){
 		if(nineslice == true){

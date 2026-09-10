@@ -8,13 +8,13 @@ UIInit()
 
 BGM_Init()
 
-lang = Flag_Get(FLAG_SETTINGS,"language")
+Flag_SetSlot(0)
+Flag_Load(FLAG_SETTINGS)
+Flag_Load(FLAG_STATIC)
 
 Lang_Init()
 Lang_LoadList()
-Lang_LoadString(lang)
-Lang_LoadSprite(lang)
-Lang_LoadFont(lang)
+Lang_LoadLanguage(Language())
 
 randomize()
 
@@ -23,10 +23,6 @@ instance_create_depth(0,0,0,fader)
 instance_create_depth(0,0,0,battle_ui_pause)
 
 instance_create_depth(0,0,0,debugger)
-
-Flag_SetSlot(0)
-Flag_Load(FLAG_SETTINGS)
-Flag_Load(FLAG_STATIC)
 
 GlobalInit()
 
