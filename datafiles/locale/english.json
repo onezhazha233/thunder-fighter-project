@@ -4,6 +4,11 @@
     "ascii_name": "english",
     "order": 0
   },
+  "strings": [
+    "names_boss.json",
+    "names_equipment.json",
+    "ui.json"
+  ],
   "fonts": [
     "zpix"
   ],

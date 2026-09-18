@@ -20,31 +20,66 @@ function Lang_LoadLanguage(LANG) {
 	// 加载字符串
 	var MAP=global._gmu_lang_string;
 	var STRING_DIR=BASE+"string/";
-	if(directory_exists(STRING_DIR)){
-		var STRING_FILES=[];
+	var STRING_FILES=[];
+
+	// 1) 清单中显式列出的文件（移动端唯一可靠方式：
+	//    Android/iOS 无法用 directory_exists / file_find_first 枚举游戏包内文件）
+	if(variable_struct_exists(MANIFEST,"strings")){
+		var STR_LIST=MANIFEST[$ "strings"];
+		if(is_array(STR_LIST)){
+			for(var si=0;si<array_length(STR_LIST);si+=1){
+				var _sf=STR_LIST[si];
+				if(!is_string(_sf)||_sf==""){
+					continue;
+				}
+				var _dup=false;
+				for(var di=0;di<array_length(STRING_FILES);di+=1){
+					if(STRING_FILES[di]==_sf){
+						_dup=true;
+						break;
+					}
+				}
+				if(!_dup){
+					array_push(STRING_FILES,_sf);
+				}
+			}
+		}
+	}
+
+	// 2) 桌面端兜底：枚举 string 目录（移动端不调用）
+	if(os_type==os_windows||os_type==os_macosx||os_type==os_linux){
 		var FILE=file_find_first(STRING_DIR+"*.json",0);
 		while(FILE!=""){
-			array_push(STRING_FILES,FILE);
+			var _dup2=false;
+			for(var di=0;di<array_length(STRING_FILES);di+=1){
+				if(STRING_FILES[di]==FILE){
+					_dup2=true;
+					break;
+				}
+			}
+			if(!_dup2){
+				array_push(STRING_FILES,FILE);
+			}
 			FILE=file_find_next();
 		}
 		file_find_close();
+	}
 
-		for(var si=0;si<array_length(STRING_FILES);si+=1){
-			var PATH=STRING_DIR+STRING_FILES[si];
-			if(file_exists(PATH)){
-				var STR=Lang_LoadFileToString(PATH);
-				var obj=json_parse(STR);
-				if(is_struct(obj)){
-					var names=variable_struct_get_names(obj);
-					for(var k=0;k<array_length(names);k+=1){
-						var skey=names[k];
-						var innerLine=obj[$ skey];
-						if(is_string(innerLine)){
-							ds_map_set(MAP,skey,innerLine);
-						}
+	for(var si=0;si<array_length(STRING_FILES);si+=1){
+		var PATH=STRING_DIR+STRING_FILES[si];
+		if(file_exists(PATH)){
+			var STR=Lang_LoadFileToString(PATH);
+			var obj=json_parse(STR);
+			if(is_struct(obj)){
+				var names=variable_struct_get_names(obj);
+				for(var k=0;k<array_length(names);k+=1){
+					var skey=names[k];
+					var innerLine=obj[$ skey];
+					if(is_string(innerLine)){
+						ds_map_set(MAP,skey,innerLine);
 					}
-					OK=true;
 				}
+				OK=true;
 			}
 		}
 	}

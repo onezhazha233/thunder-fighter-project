@@ -1,7 +1,6 @@
-live;
 event_inherited();
 
-attack_0 = function(){
+attack_0 = function(){//水蓝
 	if(attack_time = 1){
 		aa = 0;
 		ea = 0;
@@ -125,8 +124,51 @@ attack_0 = function(){
 		end_attack();
 	}
 }
+	
+attack_1 = function(){
+	live_name = "emitter_enemy_test:attack_1";
+	live;
+	if(attack_time = 1){
+		ll = MakeEnemyLaser(1,x-40,y,1,,45,60);
+		rl = MakeEnemyLaser(1,x+40,y,1,,45,60);
+		langle = 0;
+		Anim_Create(id,"langle",0,0,0,90,40,75);
+	}
+	if(attack_time > 1&&attack_time < 150){
+		if(instance_exists(ll))ll.image_angle = -90-langle;
+		if(instance_exists(rl))rl.image_angle = -90+langle;
+	}
+	if(attack_time >= 75&&attack_time <= 110){
+		if(attack_time mod 5 = 0){
+			tt = (attack_time-80) div 5;
+			for(i=0;i<15;i+=1){
+				aa = -90-langle;
+				if(instance_exists(ll)&&ll.length >= 60+100*i){
+					blt = MakeEnemyBullet(x-40+lengthdir_x(60+100*i,aa),y+lengthdir_y(60+100*i,aa),bullet_enemy_normal,spr_bullet_enemy_normal_2);
+					blt.image_angle = aa;
+					blt.direction = blt.image_angle;
+					if(i mod 2 = 0)blt.image_index = 1;
+					Anim_Create(blt,"direction",0,0,blt.direction,180,180,40);
+					Anim_Create(blt,"image_angle",0,0,blt.image_angle,180,180,40);
+					Anim_Create(blt,"speed",0,0,0,30,90,40);
+				}
+				aa = -90+langle;
+				if(instance_exists(rl)&&rl.length >= 60+100*i){
+					blt = MakeEnemyBullet(x+40+lengthdir_x(60+100*i,aa),y+lengthdir_y(60+100*i,aa),bullet_enemy_normal,spr_bullet_enemy_normal_2);
+					blt.image_angle = aa;
+					blt.direction = blt.image_angle;
+					if(i mod 2 = 0)blt.image_index = 1;
+					Anim_Create(blt,"direction",0,0,blt.direction,-180,180,40);
+					Anim_Create(blt,"image_angle",0,0,blt.image_angle,-180,180,40);
+					Anim_Create(blt,"speed",0,0,0,30,90,40);
+				}
+			}
+		}
+	}
+}
 
-var a0 = create_attack(0, attack_0,30);
+var a0 = create_attack(0,attack_0,30);
+var a1 = create_attack(0,attack_1,30);
 
-fixed_sequence = [a0];
-random_pool = [a0]
+fixed_sequence = [a1];
+//random_pool = [a0]
