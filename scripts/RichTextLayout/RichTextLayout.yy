@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"RichTextLayout",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"RichTextLayout",
+  "parent":{
+    "name":"UI",
+    "path":"folders/脚本/UI.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

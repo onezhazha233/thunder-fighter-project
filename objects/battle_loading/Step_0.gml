@@ -13,6 +13,8 @@ switch (phase) {
 		if!(layer_exists(preload_layer)) {
 			preload_layer = layer_create(0);
 			sprite_prefetch_multi(preload_spr_list);
+			// 预热UI系统：预上传纹理+JIT编译+字体栅格化
+			UI_Warmup();
 		}
 
 		while (array_length(preload_active) < 10 && preload_index < array_length(preload_seq_list)) {

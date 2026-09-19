@@ -98,6 +98,15 @@ function UIBase(xx=0,yy=0,w=100,h=100) constructor{
 	static ProcessInput = function(touch_index=0){
 		if(destroyed||abs_alpha < 0||!active||!ready)return false;
 		
+		// 无鼠标事件时跳过子树遍历（不检测滚轮，滚轮由 UIScrollPanel 自行处理）
+		if(!device_mouse_check_button(touch_index,mb_left)&&!device_mouse_check_button_pressed(touch_index,mb_left)&&!device_mouse_check_button_released(touch_index,mb_left)){
+			var al = array_length(children);
+			for(i=al-1;i>=0;i-=1){
+				if(children[i].ProcessInput(touch_index)) return true;
+			}
+			return false;
+		}
+		
 		var tx = device_mouse_x_to_gui(touch_index);
 		var ty = device_mouse_y_to_gui(touch_index);
 		

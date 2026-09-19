@@ -1,7 +1,7 @@
 live;
 if(time >= interval){
 	if(Swarm_IsEnabled()&&array_length(swarm_list) > 0){
-		if(battle_wave_manager.enabled = true){
+		if(battle_wave_manager_stage.enabled = true){
 			rdm = irandom(array_length(swarm_list)-1);
 			for(i=0;i<array_length(swarm_list[rdm]);i+=1){
 				swarm_list[rdm][i].Create();

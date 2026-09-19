@@ -1,6 +1,10 @@
 live;
 depth = DEPTH_BATTLE.UI+100;
 preview_inst = noone
+
+// 预热UI系统：预上传纹理+JIT编译+字体栅格化
+UI_Warmup();
+
 event_user(0)
 
 main_ui = new UIBase(0,0,720,1280)

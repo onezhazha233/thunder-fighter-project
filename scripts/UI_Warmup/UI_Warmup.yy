@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"UI_Warmup",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"UI_Warmup",
+  "parent":{
+    "name":"UI",
+    "path":"folders/脚本/UI.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -81,23 +81,24 @@ function UIScrollPanel(xx,yy,w,h): UIBase(xx,yy,w,h) constructor{
 			}
 		}
 		
-		var _cur_knob_h = (height*height / content_height);
-		if(scroll_y > 0){
-			_cur_knob_h = max(_cur_knob_h - (scroll_y / height)*_cur_knob_h,5);
-		}
-		else if(scroll_y < min_y){
-			_cur_knob_h = max(_cur_knob_h - ((min_y - scroll_y) / height)*_cur_knob_h,5);
-		}
-		
-		var _knob_abs_y = abs_y + knob_y*abs_scale_y;
-		var _knob_x1 = abs_x + abs_width*scale_x;
-		var _knob_x2 = _knob_x1 + knob_width*abs_scale_x;
-		
-		var _click_y1 = max(abs_y,_knob_abs_y - 80*abs_scale_y);
-		var _click_y2 = min(abs_y + height*abs_scale_y,_knob_abs_y + (_cur_knob_h + 80)*abs_scale_y);
-		var _in_knob = point_in_rectangle(tx,ty,_knob_x1,_click_y1,_knob_x2,_click_y2);
-		
+		// 只有内容可滚动时才计算 knob 相关几何
 		if(min_y < 0){
+			var _cur_knob_h = (height*height / content_height);
+			if(scroll_y > 0){
+				_cur_knob_h = max(_cur_knob_h - (scroll_y / height)*_cur_knob_h,5);
+			}
+			else if(scroll_y < min_y){
+				_cur_knob_h = max(_cur_knob_h - ((min_y - scroll_y) / height)*_cur_knob_h,5);
+			}
+			
+			var _knob_abs_y = abs_y + knob_y*abs_scale_y;
+			var _knob_x1 = abs_x + abs_width*scale_x;
+			var _knob_x2 = _knob_x1 + knob_width*abs_scale_x;
+			
+			var _click_y1 = max(abs_y,_knob_abs_y - 80*abs_scale_y);
+			var _click_y2 = min(abs_y + height*abs_scale_y,_knob_abs_y + (_cur_knob_h + 80)*abs_scale_y);
+			var _in_knob = point_in_rectangle(tx,ty,_knob_x1,_click_y1,_knob_x2,_click_y2);
+		
 			if(device_mouse_check_button_pressed(touch_index,mb_left)){
 				if(_in_knob){
 					is_dragging_knob = true;
@@ -241,12 +242,19 @@ function UIScrollPanel(xx,yy,w,h): UIBase(xx,yy,w,h) constructor{
 	static Draw = function(){
 		if(destroyed||abs_alpha <= 0||!active)return;
 		if(!is_undefined(draw)) draw();
-		
+
 		var old_scissor = gpu_get_scissor();
 		gpu_set_scissor(abs_x,abs_y,abs_width*scale_x,abs_height*scale_y);
+
+		// 裁剪：跳过完全在可视区域外的子组件
+		var _clip_top = abs_y;
+		var _clip_bot = abs_y + abs_height * abs_scale_y;
 		var al = array_length(children);
 		for(var i=0; i<al; i+=1){
-			children[i].Draw();
+			var _child = children[i];
+			if (_child.abs_y + _child.abs_height * _child.abs_scale_y < _clip_top) continue;
+			if (_child.abs_y > _clip_bot) continue;
+			_child.Draw();
 		}
 		gpu_set_scissor(old_scissor);
 		

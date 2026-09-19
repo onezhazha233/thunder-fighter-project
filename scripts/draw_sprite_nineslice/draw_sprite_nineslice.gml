@@ -33,72 +33,84 @@ function draw_sprite_nineslice(_spr, _img, _x, _y, _w, _h, _sc_x=1.0, _sc_y=1.0,
 	var _h3 = _n_b;
 	var _h2 = _orig_h - _h1 - _h3;
 
-	// 3. 计算在整体动画缩放(_sc_x, _sc_y)下，四角边框的实际物理显示厚度
-	var _sw1 = _w1 * _sc_x;
-	var _sw3 = _w3 * _sc_x;
-	var _sh1 = _h1 * _sc_y;
-	var _sh3 = _h3 * _sc_y;
-
-	// 计算缩放后的屏幕总显示尺寸与内部区域尺寸
+	// 3. 计算缩放后的屏幕总显示尺寸，并取整到像素边界
 	var _total_w = _w * _sc_x;
 	var _total_h = _h * _sc_y;
-	var _sw2 = _total_w - _sw1 - _sw3;
-	var _sh2 = _total_h - _sh1 - _sh3;
+	var _px_total_w = round(_total_w);
+	var _px_total_h = round(_total_h);
 
-	// 4. 计算 9 宫格绝对屏幕坐标栅格起点
-	var _x0 = _x; var _x1 = _x + _sw1; var _x2 = _x + _total_w - _sw3;
-	var _y0 = _y; var _y1 = _y + _sh1; var _y2 = _y + _total_h - _sh3;
+	// 四角物理像素宽度取整到最近像素，避免子像素缝隙
+	var _px_sw1 = round(_w1 * _sc_x); if (_px_sw1 < 1 && _w1 > 0) _px_sw1 = 1;
+	var _px_sw3 = round(_w3 * _sc_x); if (_px_sw3 < 1 && _w3 > 0) _px_sw3 = 1;
+	var _px_sh1 = round(_h1 * _sc_y); if (_px_sh1 < 1 && _h1 > 0) _px_sh1 = 1;
+	var _px_sh3 = round(_h3 * _sc_y); if (_px_sh3 < 1 && _h3 > 0) _px_sh3 = 1;
+
+	// 中间区域填满剩余像素空间
+	var _px_sw2 = max(_px_total_w - _px_sw1 - _px_sw3, 0);
+	var _px_sh2 = max(_px_total_h - _px_sh1 - _px_sh3, 0);
+
+	// 4. 计算9宫格绝对像素坐标栅格起点（全部取整到像素格点）
+	var _x0 = round(_x);
+	var _x1 = _x0 + _px_sw1;
+	var _x2 = _x0 + _px_sw1 + _px_sw2;
+	var _y0 = round(_y);
+	var _y1 = _y0 + _px_sh1;
+	var _y2 = _y0 + _px_sh1 + _px_sh2;
+
+	// 5. 计算各片的实际缩放系数
+	var _sc_x1 = _px_sw1 / _w1;
+	var _sc_x3 = _px_sw3 / _w3;
+	var _sc_y1 = _px_sh1 / _h1;
+	var _sc_y3 = _px_sh3 / _h3;
 
 	// ==========================================
-	// 基础绘制：固定绘制四个角（随整体缩放）
+	// 基础绘制：绘制四个角
 	// ==========================================
-	draw_sprite_part_ext(_spr, _img, 0,	   0,	   _w1, _h1, _x0, _y0, _sc_x, _sc_y, _color, _alpha); // 左上
-	draw_sprite_part_ext(_spr, _img, _w1+_w2, 0,	   _w3, _h1, _x2, _y0, _sc_x, _sc_y, _color, _alpha); // 右上
-	draw_sprite_part_ext(_spr, _img, 0,	   _h1+_h2, _w1, _h3, _x0, _y2, _sc_x, _sc_y, _color, _alpha); // 左下
-	draw_sprite_part_ext(_spr, _img, _w1+_w2, _h1+_h2, _w3, _h3, _x2, _y2, _sc_x, _sc_y, _color, _alpha); // 右下
+	draw_sprite_part_ext(_spr, _img, 0,       0,       _w1, _h1, _x0, _y0, _sc_x1, _sc_y1, _color, _alpha); // 左上
+	draw_sprite_part_ext(_spr, _img, _w1+_w2, 0,       _w3, _h1, _x2, _y0, _sc_x3, _sc_y1, _color, _alpha); // 右上
+	draw_sprite_part_ext(_spr, _img, 0,       _h1+_h2, _w1, _h3, _x0, _y2, _sc_x1, _sc_y3, _color, _alpha); // 左下
+	draw_sprite_part_ext(_spr, _img, _w1+_w2, _h1+_h2, _w3, _h3, _x2, _y2, _sc_x3, _sc_y3, _color, _alpha); // 右下
 
 	// ==========================================
-	// 四边绘制：强制按拉伸（Stretch）逻辑处理
+	// 四边绘制：强制拉伸
 	// ==========================================
-	// 上边框 & 下边框
-	if (_w2 > 0 && _sw2 > 0) {
-		var _edge_sc_x = _sw2 / _w2;
-		draw_sprite_part_ext(_spr, _img, _w1, 0,	   _w2, _h1, _x1, _y0, _edge_sc_x, _sc_y, _color, _alpha); // 上
-		draw_sprite_part_ext(_spr, _img, _w1, _h1+_h2, _w2, _h3, _x1, _y2, _edge_sc_x, _sc_y, _color, _alpha); // 下
+	if (_w2 > 0 && _px_sw2 > 0) {
+		var _edge_sc_x = _px_sw2 / _w2;
+		draw_sprite_part_ext(_spr, _img, _w1, 0,       _w2, _h1, _x1, _y0, _edge_sc_x, _sc_y1, _color, _alpha); // 上
+		draw_sprite_part_ext(_spr, _img, _w1, _h1+_h2, _w2, _h3, _x1, _y2, _edge_sc_x, _sc_y3, _color, _alpha); // 下
 	}
-	// 左边框 & 右边框
-	if (_h2 > 0 && _sh2 > 0) {
-		var _edge_sc_y = _sh2 / _h2;
-		draw_sprite_part_ext(_spr, _img, 0,	   _h1, _w1, _h2, _x0, _y1, _sc_x, _edge_sc_y, _color, _alpha); // 左
-		draw_sprite_part_ext(_spr, _img, _w1+_w2, _h1, _w3, _h2, _x2, _y1, _sc_x, _edge_sc_y, _color, _alpha); // 右
+	if (_h2 > 0 && _px_sh2 > 0) {
+		var _edge_sc_y = _px_sh2 / _h2;
+		draw_sprite_part_ext(_spr, _img, 0,       _h1, _w1, _h2, _x0, _y1, _sc_x1, _edge_sc_y, _color, _alpha); // 左
+		draw_sprite_part_ext(_spr, _img, _w1+_w2, _h1, _w3, _h2, _x2, _y1, _sc_x3, _edge_sc_y, _color, _alpha); // 右
 	}
 
 	// ==========================================
-	// 中心绘制：依据 _center_mode 区分 0(拉伸) 或 1(重复)
+	// 中心绘制：0(拉伸) 或 1(重复)
 	// ==========================================
-	if (_w2 > 0 && _h2 > 0 && _sw2 > 0 && _sh2 > 0) {
+	if (_w2 > 0 && _h2 > 0 && _px_sw2 > 0 && _px_sh2 > 0) {
 		if (_center_mode == 0) {
 			// 模式 0：中心直接拉伸
-			draw_sprite_part_ext(_spr, _img, _w1, _h1, _w2, _h2, _x1, _y1, _sw2 / _w2, _sh2 / _h2, _color, _alpha);
+			draw_sprite_part_ext(_spr, _img, _w1, _h1, _w2, _h2, _x1, _y1, _px_sw2 / _w2, _px_sh2 / _h2, _color, _alpha);
 		} 
 		else if (_center_mode == 1) {
 			// 模式 1：中心矩阵硬件裁剪平铺
 			var _old_scissor = gpu_get_scissor();
-			gpu_set_scissor(_x1, _y1, _sw2, _sh2); // 限制渲染边界
+			gpu_set_scissor(_x1, _y1, _px_sw2, _px_sh2);
 			
 			var _unit_w = _w2 * _sc_x;
 			var _unit_h = _h2 * _sc_y;
 			
 			var _curr_x = _x1;
-			while (_curr_x < _x1 + _sw2) {
+			while (_curr_x < _x1 + _px_sw2) {
 				var _curr_y = _y1;
-				while (_curr_y < _y1 + _sh2) {
+				while (_curr_y < _y1 + _px_sh2) {
 					draw_sprite_part_ext(_spr, _img, _w1, _h1, _w2, _h2, _curr_x, _curr_y, _sc_x, _sc_y, _color, _alpha);
 					_curr_y += _unit_h;
 				}
 				_curr_x += _unit_w;
 			}
-			gpu_set_scissor(_old_scissor); // 恢复裁剪
+			gpu_set_scissor(_old_scissor);
 		}
 	}
 }
