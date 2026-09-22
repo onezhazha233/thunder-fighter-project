@@ -1,7 +1,7 @@
 live;
 event_inherited();
 
-bg_images = [[spr_bg_battle_galaxy],[spr_bg_battle_galaxy_bg_0],[spr_bg_battle_galaxy_bg_1]]
+bg_images = [[spr_bg_battle_galaxy],[spr_bg_battle_galaxy_part_0],[spr_bg_battle_galaxy_part_1]]
 scroll_speed = [0.1,-1,-3]
 bg_offset = [0,random(1000),random(1000)];
 

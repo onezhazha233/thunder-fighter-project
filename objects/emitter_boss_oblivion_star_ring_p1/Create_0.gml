@@ -25,7 +25,7 @@ attack_0 = function(){//中间红反弹外侧三蓝
 	live_name = "emitter_boss_oblivion_star_ring_p1:attack_0";
 	live;
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		Anim_Create(mark,"ring_angle",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,0,60,30);
 	}
 	if(attack_time < 17&&attack_time mod 2 = 1){
@@ -98,7 +98,7 @@ attack_0 = function(){//中间红反弹外侧三蓝
 		}
 	}
 	if(attack_time = 90){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		Anim_Create(mark,"ring_angle",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,60,-60,30);
 	}
 	if(attack_time = 150){
@@ -253,7 +253,7 @@ attack_3 = function(dir=0){//反弹子弹加蓝针
 	live_name = "emitter_boss_oblivion_star_ring_p1:attack_3";
 	live;
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		Anim_Create(mark,"gun_angle",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,0,30*(dir=0 ? 1 : -1),25);
 	}
 	if(attack_time > 30&&attack_time < 400){
@@ -327,7 +327,7 @@ attack_3 = function(dir=0){//反弹子弹加蓝针
 	}
 	if(attack_time = 420){
 		mark.SetIdle();
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 	}
 	if(attack_time = 450){
 		end_attack();
@@ -409,7 +409,7 @@ attack_5 = function(dir=0){//激光加边缘散射
 	live_name = "emitter_boss_oblivion_star_ring_p1:attack_5";
 	live;
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		for(i=0;i<4;i+=1){
 			ga[i] = sin(attack_time*114514+1919-i*80)*120;
 		}
@@ -597,7 +597,7 @@ attack_5 = function(dir=0){//激光加边缘散射
 	}
 	if(attack_time = 330){
 		mark.SetIdle();
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 	}
 	if(attack_time = 330){
 		end_attack();
@@ -608,7 +608,7 @@ attack_6 = function(){//旋转激光加旋转散射
 	live_name = "emitter_boss_oblivion_star_ring_p1:attack_6";
 	live;
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		ring_rot = 0;
 		gun_rot = 0;
 	}
@@ -677,7 +677,7 @@ attack_6 = function(){//旋转激光加旋转散射
 		Anim_Create(mark,"y",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,mark.y,350-mark.y,60);
 	}
 	if(attack_time = 890){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }

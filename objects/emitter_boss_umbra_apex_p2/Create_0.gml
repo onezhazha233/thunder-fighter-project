@@ -9,7 +9,7 @@ attack_empty_60 = function(){//60帧前摇
 
 attack_0 = function(){//六向散射 90
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 	}
 	if(attack_time = 2){
 		dd = 0;
@@ -80,7 +80,7 @@ attack_0 = function(){//六向散射 90
 		}
 	}
 	if(attack_time = 90){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }
@@ -152,7 +152,7 @@ attack_1 = function(){//延迟散射 60
 
 attack_2 = function(){//连射扫射扇形狙 90
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		dir = -90;
 		if(Player_IsEnabled()){
 			dir = point_direction(x,y,player.x,player.y);
@@ -181,7 +181,7 @@ attack_2 = function(){//连射扫射扇形狙 90
 		}
 	}
 	if(attack_time = 60){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }
@@ -311,7 +311,7 @@ attack_5 = function(){//米加 180
 
 attack_6 = function(){//六芒星 90
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		star_size = 200;
 		point_count = 15;
 
@@ -388,7 +388,7 @@ attack_6 = function(){//六芒星 90
 	    }
 	}
 	if(attack_time = 90){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }
@@ -445,7 +445,7 @@ attack_8 = function(){//穿甲弹加米加狙 700
 	var end_time = 700;
 	
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		mark.SetSequence(seq_enemy_boss_large_og0_p2_attack_intro);
 		var tx = room_width/2;
 		var ty = room_height*0.2;
@@ -498,7 +498,7 @@ attack_8 = function(){//穿甲弹加米加狙 700
 		}
 	}
 	if(attack_time = end_time){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }

@@ -203,7 +203,7 @@ attack_4 = function(){//侧狙 40
 	if(attack_time = 1){
 		dir0 = point_direction(x-220,y+200,player.x,player.y);
 		dir1 = point_direction(x+220,y+200,player.x,player.y);
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 	}
 	if(attack_time mod 4 = 0){
 		a = MakeEnemyBullet(x-220,y+200,bullet_enemy_normal,spr_bullet_enemy_normal_2);
@@ -249,7 +249,7 @@ attack_4 = function(){//侧狙 40
 	}
 	if(attack_time = 40){
 		end_attack();
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 	}
 }
 

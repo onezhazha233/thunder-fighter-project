@@ -35,7 +35,7 @@ attack_1 = function(){//紫红交替弧
 	live_name = "emitter_boss_sirius_twins_1:attack_1";
 	live;
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		mark.SetSequence(seq_enemy_boss_mini_og1_1_attack);
 	}
 	if(attack_time <= 20){
@@ -94,7 +94,7 @@ attack_1 = function(){//紫红交替弧
 		mark.SetIdle();
 	}
 	if(attack_time = 150){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 	}
 	if(attack_time = 180){
 		end_attack();
@@ -105,7 +105,7 @@ attack_2 = function(){//双色散弹
 	live_name = "emitter_boss_sirius_twins_1:attack_2";
 	live;
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		mark.SetSequence(seq_enemy_boss_mini_og1_1_attack);
 	}
 	if(attack_time < 120&&attack_time mod 3 = 0){
@@ -129,7 +129,7 @@ attack_2 = function(){//双色散弹
 	}
 	if(attack_time = 200){
 		mark.SetIdle();
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }

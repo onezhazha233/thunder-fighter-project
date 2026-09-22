@@ -261,6 +261,14 @@ function UIScrollPanel(xx,yy,w,h): UIBase(xx,yy,w,h) constructor{
 		var _base_knob_h = height*height / content_height;
 		knob_height = max(_base_knob_h,14);
 		
+		// ---- 横向反馈参数(用法见下面"横向: 中心固定 + 左右对称的挤压/变宽") ----
+		// idle = 0.9 是关键: 0.9*20 = 18px, 正好等于九宫格左右边框之和(9+9)。
+		// 请求宽度一旦小于它, draw_sprite_nineslice 会把不足的宽度全部补到右边,
+		// 画出来的矩形就偏右、且跨过 18px 时会跳一下 —— 这就是"看着往左偏"的根源。
+		var _knob_sc_idle  = 0.9;
+		var _knob_sc_press = 1.0;
+		var _knob_sc_max   = 1.15;
+		
 		if(!is_dragging_knob){
 			if(min_y != 0){
 				knob_y = clamp((scroll_y / min_y)*(height - _base_knob_h),0,height - _base_knob_h);
@@ -273,22 +281,27 @@ function UIScrollPanel(xx,yy,w,h): UIBase(xx,yy,w,h) constructor{
 				var overflow = (scroll_y / height)*_base_knob_h;
 				knob_height = max(_base_knob_h - overflow,14);
 				knob_y = 0;
-				knob_scale_x += overflow / 500*abs_scale_x;
+				knob_scale_x = min(knob_scale_x + overflow / 500, _knob_sc_max);   // 过界: 再对称地鼓一点点(有上限)
 			} 
 			else if(scroll_y < min_y){
 				var overflow = ((min_y - scroll_y) / height)*_base_knob_h;
 				knob_height = max(_base_knob_h - overflow,14);
 				knob_y = height - knob_height;
-				knob_scale_x += overflow / 500*abs_scale_x;
+				knob_scale_x = min(knob_scale_x + overflow / 500, _knob_sc_max);   // 过界: 再对称地鼓一点点(有上限)
 			}
 		}
 
+		// ---- 横向: 中心固定 + 左右对称的挤压/变宽 ----
+		// knob_x 是按"固定中心"摆放的: 中心 = 面板右缘 + knob_width/2*abs_scale_x, 与 knob_scale_x 无关,
+		// 所以只要请求宽度能被九宫格原样画出(即 knob_scale_x >= _knob_sc_idle), 变宽/收窄就是
+		// 左右对称的, 中心永远钉在原位 —— 既保留挤压反馈, 又不会出现"往左偏"。
 		if(is_pressed||is_dragging_knob){
-			knob_scale_x += (1 - knob_scale_x) / 3;
+			knob_scale_x = lerp(knob_scale_x, _knob_sc_press, 0.34);
 		}
 		else{
-			knob_scale_x += (0.8 - knob_scale_x) / 3;
+			knob_scale_x = lerp(knob_scale_x, _knob_sc_idle, 0.34);
 		}
+		knob_scale_x = clamp(knob_scale_x, _knob_sc_idle, _knob_sc_max);
 		knob_x = abs_x + abs_width*scale_x + (knob_width*(1 - knob_scale_x)) / 2*abs_scale_x;
 
 		if(min_y < 0)draw_sprite_nineslice(sprite_knob,0,knob_x,abs_y+knob_y*abs_scale_y,knob_width*knob_scale_x,knob_height,abs_scale_x,abs_scale_y,,,abs_alpha);

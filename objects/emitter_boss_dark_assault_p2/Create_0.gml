@@ -9,7 +9,7 @@ attack_empty_60 = function(){//60帧前摇
 
 attack_0 = function(){//六向散射 60
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 	}
 	if(attack_time < 60&&attack_time mod 8 = 1){
 		for(i=0;i<6;i+=1){
@@ -21,7 +21,7 @@ attack_0 = function(){//六向散射 60
 		}
 	}
 	if(attack_time = 60){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }
@@ -93,7 +93,7 @@ attack_1 = function(){//延迟散射 90
 
 attack_2 = function(){//连射扇形狙 40
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		dir = -90;
 		if(Player_IsEnabled()){
 			dir = point_direction(x,y,player.x,player.y);
@@ -107,7 +107,7 @@ attack_2 = function(){//连射扇形狙 40
 		}
 	}
 	if(attack_time = 40){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }
@@ -212,7 +212,7 @@ attack_5 = function(){//机关炮 50
 
 attack_6 = function(){//中心散射加狙 40
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 	}
 	if(attack_time = 20){
 		for(i=0;i<12;i+=1){
@@ -250,7 +250,7 @@ attack_6 = function(){//中心散射加狙 40
 		}
 	}
 	if(attack_time = 40){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }
@@ -307,7 +307,7 @@ attack_8 = function(){//散射导弹 400
 	var end_time = 400;
 	
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		mark.SetSequence(seq_enemy_boss_large_15_p2_attack_intro);
 		var tx = room_width/2;
 		var ty = room_height*0.2;
@@ -360,7 +360,7 @@ attack_8 = function(){//散射导弹 400
 	}
 	
 	if(attack_time = end_time){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }

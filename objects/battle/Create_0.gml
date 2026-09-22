@@ -2,5 +2,5 @@ live;
 battle_initialized = false;
 player_inst = noone;
 instance_create_depth(0,0,0,battle_ui)
-instance_create_depth(0,0,0,battle_bg_core)
+instance_create_depth(0,0,0,battle_bg_starry)
 alarm[3] = 30

@@ -3,7 +3,7 @@ event_inherited();
 
 attack_0 = function(){//散射+六向直线 240
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 	}
 	if(attack_time mod 5 = 0&&attack_time < 180){
 		a = MakeEnemyBullet(x,y+70,bullet_enemy_star,spr_bullet_enemy_normal_4);
@@ -42,14 +42,14 @@ attack_0 = function(){//散射+六向直线 240
 	}
 	if(attack_time = 180){
 		end_attack();
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 	}
 }
 	
 attack_1 = function(){//散射 120
 	at = attack_time;
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		a3 = function(){
 			for(i=0;i<4;i+=1){
 				dir = [-90,-90];//[point_direction(x-75,y+100,player.x,player.y),point_direction(x+75,y+100,player.x,player.y)];
@@ -173,14 +173,14 @@ attack_1 = function(){//散射 120
 	}
 	if(attack_time = 110){
 		end_attack();
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		mark.SetIdle();
 	}
 }
 
 attack_2 = function(){//侧双斜散射 120
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		mark.SetSequence(seq_enemy_boss_mini_0_attack_1);
 		for(i=0;i<15;i+=1){
 			a = MakeEnemyBullet(x-125-20,y+80,bullet_enemy_normal,spr_bullet_enemy_normal_0);
@@ -251,14 +251,14 @@ attack_2 = function(){//侧双斜散射 120
 	}
 	if(attack_time = 90){
 		end_attack();
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		mark.SetIdle();
 	}
 }
 
 attack_3 = function(){//中心散射 230
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		mark.SetSequence(seq_enemy_boss_mini_0_uncover);
 	}
 	if(attack_time = 60){
@@ -333,7 +333,7 @@ attack_3 = function(){//中心散射 230
 	}
 	if(attack_time = 230){
 		end_attack();
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 	}
 }
 

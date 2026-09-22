@@ -19,6 +19,7 @@ part_speed = [];
 part_interval = [];
 part_timer = [];
 bg_part_offset = [];
+part_func = [];
 part_seeded = false; // 是否已在创建时预铺一批 part
 
 // 返回该 part 的时间相位偏移（帧，0 ≤ 偏移 < 间隔），等效于循环带子向前/向后随机偏移的帧数；
@@ -49,6 +50,9 @@ SpawnPart = function(p, _top=undefined){
 	_p.sprite_index = _spr;
 	_p.image_speed = 0;
 	_p.vspeed = _spd;
+	if(!is_undefined(part_func[p])){
+		other.part_func[p](_p);
+	}
 	return _p;
 }
 
@@ -80,7 +84,7 @@ DrawBg = function(yy,images){
 		if(i > 0){
 			yyy += sprite_get_height(images[i-1]);
 		}
-		draw_sprite(images[i],0,0,yyy);
+		draw_sprite(images[i],0,camera._shake_pos_x+0,camera._shake_pos_y+yyy);
 	}
 }
 GetBgHeight = function(images){

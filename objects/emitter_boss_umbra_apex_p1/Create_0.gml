@@ -78,7 +78,7 @@ attack_1 = function(){//延迟狙 90
 
 attack_2 = function(){//连射斜线狙 40
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 	}
 	if(attack_time >= 1&&attack_time <= 31&&attack_time mod 10 = 1){
 		var dir = -90;
@@ -101,7 +101,7 @@ attack_2 = function(){//连射斜线狙 40
 		}
 	}
 	if(attack_time = 40){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }
@@ -131,12 +131,12 @@ attack_3 = function(){//机炮 210
 
 attack_4 = function(){//激光 80
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		l = MakeEnemyLaser(0,x-32,y+25,1,-90,40,30); // 小激光，红色，角度-90，延迟40，持续时间30
 		l = MakeEnemyLaser(0,x+32,y+25,1,-90,40,30); // 小激光，红色，角度-90，延迟40，持续时间30
 	}
 	if(attack_time = 80){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }
@@ -161,7 +161,7 @@ attack_5 = function(){//米加 90
 
 attack_6 = function(){//等边三角散射 90
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 	}
 	if(attack_time = 20){
 		for (var i = 0; i < 12; i += 1){
@@ -224,7 +224,7 @@ attack_6 = function(){//等边三角散射 90
 		}
 	}
 	if(attack_time = 90){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }

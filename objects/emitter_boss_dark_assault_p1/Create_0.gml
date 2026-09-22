@@ -56,7 +56,7 @@ attack_1 = function(){//延迟散射 40
 
 attack_2 = function(){//连射狙 40
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 	}
 	if(attack_time >= 1&&attack_time <= 31&&attack_time mod 5 = 1){
 		var dir = 90;
@@ -68,7 +68,7 @@ attack_2 = function(){//连射狙 40
 		blt.speed = 15;
 	}
 	if(attack_time = 40){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }
@@ -98,11 +98,11 @@ attack_3 = function(){//机炮 210
 
 attack_4 = function(){//激光 80
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		MakeEnemyLaser(0,x,y+85,0,-90,40,30);
 	}
 	if(attack_time = 80){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }
@@ -129,7 +129,7 @@ attack_5 = function(){//机关炮 50
 
 attack_6 = function(){//中心散射 40
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 	}
 	if(attack_time = 20){
 		for(i=0;i<12;i+=1){
@@ -142,7 +142,7 @@ attack_6 = function(){//中心散射 40
 		}
 	}
 	if(attack_time = 40){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }

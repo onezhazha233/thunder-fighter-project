@@ -184,7 +184,7 @@ attack_3 = function(){//两次分裂
 	live;
 	if(attack_time = 1){
 		mark.SetSequence(seq_enemy_boss_mini_og1_0_attack);
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 	}
 	if(attack_time < 20){
 		if(attack_time mod 4 = 1){
@@ -222,7 +222,7 @@ attack_3 = function(){//两次分裂
 	}
 	if(attack_time = 40){
 		mark.SetIdle();
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 	}
 	if(attack_time = 150){
 		end_attack();
@@ -234,7 +234,7 @@ attack_4 = function(){//反弹子弹排
 	live;
 	if(attack_time = 1){
 		mark.SetSequence(seq_enemy_boss_mini_og1_0_attack);
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		for(j=0;j<2;j+=1){
 			for(i=0;i<6;i+=1){
 				blt = MakeEnemyBullet(x,y,bullet_enemy_normal,spr_bullet_enemy_normal_0);
@@ -302,7 +302,7 @@ attack_4 = function(){//反弹子弹排
 	}
 	if(attack_time = 90){
 		mark.SetIdle();
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 	}
 	if(attack_time = 150){
 		end_attack();

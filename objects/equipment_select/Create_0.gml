@@ -116,9 +116,17 @@ btn_start_battle.AddEvent(UI_EVENT.CLICK,function(){
 	global.score = 0;
 	global.hp_max = 10;
 	global.hp = 10;
-	if (!instance_exists(battle_loading)) {
+	if(!instance_exists(battle_loading)){
 		instance_create_depth(0,0,0,battle_loading);
 	}
+	other.btn_select_plane.active = false;
+	other.btn_select_armor.active = false;
+	other.btn_select_subweapon.active = false;
+	other.btn_select_wingman_left.active = false;
+	other.btn_select_wingman_right.active = false;
+	other.btn_select_boss.active = false;
+	other.btn_start_battle.active = false;
+	other.btn_settings.active = false;
 })
 
 btn_settings = new UIButton(spr_ui_button_flat,470,570,80,80)

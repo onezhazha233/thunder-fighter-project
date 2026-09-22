@@ -109,7 +109,7 @@ attack_1 = function(){//倒五角星加狙
 	live_name = "emitter_boss_hellhound:attack_1";
 	live;
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		star_size = 200;
 		point_count = 15;
 		spawn_interval = 1;
@@ -175,7 +175,7 @@ attack_1 = function(){//倒五角星加狙
 	}
 
 	if(attack_time = 85){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		for(var i = 0; i < array_length(all_bullets); i++){
 			if(instance_exists(all_bullets[i])){
 				var inst = all_bullets[i];
@@ -231,7 +231,7 @@ attack_2 = function(){//旋转激光
 	live_name = "emitter_boss_hellhound:attack_2";
 	live;
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		a0 = MakeEnemyLaser(1,x-140,y+150,1,-90,60,120);
 		b0 = MakeEnemyLaser(1,x-100,y+130,1,-90,60,120);
 		c0 = MakeEnemyLaser(1,x-32,y+125,1,-90,60,120);
@@ -246,7 +246,7 @@ attack_2 = function(){//旋转激光
 		Anim_Create(c1,"image_angle",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,-90,40,60);
 	}
 	if(attack_time = 210){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }
@@ -439,7 +439,7 @@ attack_5 = function(){//短激光阵列
 	live;
 	if(attack_time = 1){
 		mark.SetSequence(seq_enemy_boss_mini_og2_attack_2);
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 	}
 	if(attack_time >= 1&&attack_time <= 81){
 		if(attack_time mod 10 = 1){
@@ -563,7 +563,7 @@ attack_5 = function(){//短激光阵列
 	}
 	if(attack_time = 400){
 		mark.SetIdle();
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }

@@ -107,3 +107,18 @@ Clear = function(){
 		}
 	}
 }
+
+GetEnemy = function(){
+	if(instance_exists(mark)){
+		return mark;
+	}
+	else{
+		return noone;
+	}
+}
+
+MoveEnemy = function(enabled){
+	if(instance_exists(GetEnemy())){
+		GetEnemy().SetMoveEnabled(enabled);
+	}
+}

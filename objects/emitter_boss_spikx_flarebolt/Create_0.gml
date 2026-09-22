@@ -26,7 +26,7 @@ attack_0 = function(laser=0){//旋转散射加反弹闪电球
 	live_name = "emitter_spikx_flarebolt:attack_0";
 	live;
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		mark.SetSequence(seq_enemy_boss_mini_og0_attack_1_intro);
 	}
 	if(attack_time = 69){
@@ -148,7 +148,7 @@ attack_0 = function(laser=0){//旋转散射加反弹闪电球
 		mark.SetSequence(seq_enemy_boss_mini_og0_attack_1_outro);
 	}
 	if(attack_time = 250){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }
@@ -157,7 +157,7 @@ attack_1 = function(){//绕点旋转子弹阵列
 	live_name = "emitter_spikx_flarebolt:attack_1";
 	live;
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 	}
 	if(attack_time < 200&&attack_time mod 3 = 0){
 		br = instance_create_depth(x,y,0,bullet_enemy_ring);
@@ -178,7 +178,7 @@ attack_1 = function(){//绕点旋转子弹阵列
 		Anim_Create(br,"speed",0,0,0,6,10,20);
 	}
 	if(attack_time = 230){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }
@@ -187,7 +187,7 @@ attack_2 = function(){//随机数量子弹扩散
 	live_name = "emitter_spikx_flarebolt:attack_2";
 	live;
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		mark.SetSequence(seq_enemy_boss_mini_og0_attack_1_intro);
 	}
 	if(attack_time = 69){
@@ -258,7 +258,7 @@ attack_2 = function(){//随机数量子弹扩散
 		mark.SetSequence(seq_enemy_boss_mini_og0_attack_1_outro);
 	}
 	if(attack_time = 230){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }
@@ -334,7 +334,7 @@ attack_4 = function(){//斜四向红黄子弹加蓝针狙
 	live_name = "emitter_spikx_flarebolt:attack_4";
 	live;
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		mark.SetSequence(seq_enemy_boss_mini_og0_attack_1_intro);
 		bnl = 0;
 		bntime = 0;
@@ -398,7 +398,7 @@ attack_4 = function(){//斜四向红黄子弹加蓝针狙
 		mark.SetSequence(seq_enemy_boss_mini_og0_attack_1_outro);
 	}
 	if(attack_time = 450){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }
@@ -407,7 +407,7 @@ attack_5 = function(){//波粒加激光
 	live_name = "emitter_spikx_flarebolt:attack_5";
 	live;
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		mark.SetSequence(seq_enemy_boss_mini_og0_attack_1_intro);
 		dd = 0;
 		rotspd = 0;
@@ -441,7 +441,7 @@ attack_5 = function(){//波粒加激光
 		mark.SetSequence(seq_enemy_boss_mini_og0_attack_1_outro);
 	}
 	if(attack_time = 380){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }

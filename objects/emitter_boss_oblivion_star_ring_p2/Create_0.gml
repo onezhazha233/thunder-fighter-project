@@ -35,7 +35,7 @@ attack_0 = function(dir=0){//旋转反弹双色弹加扩散追踪弹
 	live_name = "emitter_boss_oblivion_star_ring_p1:attack_0";
 	live;
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		corner_rot = 0;
 		ring_rot = 0;
 		Anim_Create(id,"corner_rot",0,0,0,-1,40);
@@ -134,7 +134,7 @@ attack_0 = function(dir=0){//旋转反弹双色弹加扩散追踪弹
 		mark.SetIdle();
 	}
 	if(attack_time = 430){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		end_attack();
 	}
 }
@@ -202,7 +202,7 @@ attack_2 = function(){//垂直红蓝弹加左右散射
 	live_name = "emitter_boss_oblivion_star_ring_p1:attack_2";
 	live;
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		Anim_Create(mark,"ring_angle",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0,-150,40);
 		Anim_Create(mark,"corner_angle",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0,90,40);
 	}
@@ -330,7 +330,7 @@ attack_3 = function(){//四角星加横排下落
 	live_name = "emitter_boss_oblivion_star_ring_p1:attack_3";
 	live;
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		Anim_Create(mark,"gun_angle",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0,180,30);
 	}
 	if(attack_time = 30){
@@ -402,7 +402,7 @@ attack_4 = function(){//狙和随机交替激光和散射
 	live_name = "emitter_boss_oblivion_star_ring_p1:attack_4";
 	live;
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		for(i=0;i<3;i+=1){
 			rdms[i] = sin(951753*i+114.514-1919.810)*30;
 		}
@@ -456,7 +456,7 @@ attack_4 = function(){//狙和随机交替激光和散射
 		ls = MakeEnemyLaser(2,get_gun_pos()[0],get_gun_pos()[1],1,mark.gun_angle-90,60,30);
 	}
 	if(attack_time = 850){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		mark.SetIdle();
 		end_attack();
 	}
@@ -466,7 +466,7 @@ attack_5 = function(){//反弹红蓝
 	live_name = "emitter_boss_oblivion_star_ring_p1:attack_5";
 	live;
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		rdmpx = 320;
 		rdmpy = 320;
 		Anim_Create(mark,"x",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,mark.x,rdmpx-mark.x,20);
@@ -728,7 +728,7 @@ attack_5 = function(){//反弹红蓝
 		}
 	}
 	if(attack_time = 520){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		mark.SetIdle();
 		end_attack();
 	}
@@ -738,7 +738,7 @@ attack_6 = function(){//旋转激光加反弹红弹
 	live_name = "emitter_boss_oblivion_star_ring_p1:attack_6";
 	live;
 	if(attack_time = 1){
-		mark.SetMoveEnabled(false);
+		MoveEnemy(false);
 		Anim_Create(mark,"x",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,mark.x,room_width/2-mark.x,30);
 		Anim_Create(mark,"y",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,mark.y,room_height/2-mark.y,30);
 		Anim_Create(mark,"ring_angle",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,0,120,30);
@@ -858,7 +858,7 @@ attack_6 = function(){//旋转激光加反弹红弹
 		Anim_Create(mark,"y",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,mark.y,room_height/2-mark.y,30);
 	}
 	if(attack_time = 660){
-		mark.SetMoveEnabled(true);
+		MoveEnemy(true);
 		mark.SetIdle();
 		end_attack();
 	}
