@@ -3,12 +3,17 @@ event_inherited();
 
 depth = DEPTH_BATTLE.BULLETS_ENEMY
 
+inv_block = true
+inv_induction = true
+
 radius         = 300;                              // 外半径(像素)
 ring_width     = 50;                               // 圆环宽度(像素); 内半径 = radius - ring_width
 segments       = 180;                              // 圆周细分段数(越大越平滑)
 ring_colour    = c_white;     // 圆环颜色(会乘到纹理上)
 ring_alpha     = 0.5;                              // 圆环透明度(会乘到纹理 alpha 上)
 radius_spd = 0;
+
+auto_destroy = false
 
 // ==================== 环形纹理(画师给的长条) ====================
 // 实测这条精灵是 1px 宽 × 38px 高(不是 100):

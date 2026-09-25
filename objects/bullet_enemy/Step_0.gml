@@ -107,7 +107,7 @@ if(Player_IsEnabled()){
 
 if(collision_mask_enabled = true){
 	blk = instance_place(x,y,bullet_enemy_block);
-	if(instance_exists(blk)){
+	if(instance_exists(blk)&&!inv_block){
 		destroy_type = blk.type;
 		blk.OnBlock();
 		instance_destroy();
@@ -117,7 +117,7 @@ else{
 	switch(collision_mask_type){
 		case 0:
 			blk = collision_rectangle(x-left*scale_x,y-up*scale_y,x+right*scale_x,y+down*scale_y,bullet_enemy_block,0,1);
-			if(instance_exists(blk)){
+			if(instance_exists(blk)&&!inv_block){
 				destroy_type = blk.type;
 				blk.OnBlock();
 				instance_destroy();
@@ -125,7 +125,7 @@ else{
 			break;
 		case 1:
 			blk = collision_ellipse(x-radius*scale_x,y-radius*scale_y,x+radius*scale_x,y+radius*scale_y,bullet_enemy_block,0,1);
-			if(instance_exists(blk)){
+			if(instance_exists(blk)&&!inv_block){
 				destroy_type = blk.type;
 				blk.OnBlock();
 				instance_destroy();

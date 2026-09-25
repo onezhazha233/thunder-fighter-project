@@ -52,12 +52,14 @@ attack_1 = function(){//波加狙
 	live;
 	if(attack_time = 1){
 		lwe = MakeEnemyBullet(x,y,bullet_enemy_wavering_emitter);
+		lwe.inv_block = true;                          // 后续帧仍会引用它, 免疫守卫/护盾清除
 		lwe.image_alpha = 0;
 		lwe.scale = 0.5;
 		Anim_Create(lwe,"image_alpha",0,0,0,1,30);
 		Anim_Create(lwe,"scale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0.5,0.5,30);
 		Anim_Create(lwe,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,lwe.x,-200,30);
 		rwe = MakeEnemyBullet(x,y,bullet_enemy_wavering_emitter);
+		rwe.inv_block = true;                          // 后续帧仍会引用它, 免疫守卫/护盾清除
 		rwe.image_alpha = 0;
 		rwe.scale = 0.5;
 		Anim_Create(rwe,"image_alpha",0,0,0,1,30);
@@ -200,12 +202,14 @@ attack_3 = function(dir=0){//环绕双波
 	live;
 	if(attack_time = 1){
 		lwe = MakeEnemyBullet(x,y,bullet_enemy_wavering_emitter);
+		lwe.inv_block = true;                          // 后续帧仍会引用它, 免疫守卫/护盾清除
 		lwe.image_alpha = 0;
 		lwe.scale = 0.5;
 		Anim_Create(lwe,"image_alpha",0,0,0,1,30);
 		Anim_Create(lwe,"scale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0.5,0.5,30);
 		Anim_Create(lwe,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,lwe.x,-250*(dir=0 ? 1 : -1),30);
 		rwe = MakeEnemyBullet(x,y,bullet_enemy_wavering_emitter);
+		rwe.inv_block = true;                          // 后续帧仍会引用它, 免疫守卫/护盾清除
 		rwe.image_alpha = 0;
 		rwe.scale = 0.5;
 		Anim_Create(rwe,"image_alpha",0,0,0,1,30);
@@ -260,7 +264,7 @@ attack_4 = function(c=0){//三连波
 		we = MakeEnemyBullet(x,y,bullet_enemy_wavering_emitter);
 		we.scale = 0.5;
 		Anim_Create(we,"scale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0.5,0.5,60);
-		Anim_Create(we,"x",ANIM_TWEEN.QUAD,ANIM_EASE.IN,we.x,wo[0]-we.x,30);
+		Anim_Create(we,"x",ANIM_TWEEN.QUAD,ANIM_EASE.IN,we.x,wo[0]-we.x,60);
 		Anim_Create(we,"y",ANIM_TWEEN.QUAD,ANIM_EASE.IN,we.y,wo[1]-we.y,60);
 		Anim_Create(we,"scale",ANIM_TWEEN.QUAD,ANIM_EASE.IN,1,-1,60,60);
 		we.duration = 120;
@@ -319,6 +323,7 @@ attack_5 = function(){//波加旋转散射
 		we = array_create(6,noone);
 		we[0] = MakeEnemyBullet(x,y,bullet_enemy_wavering_emitter);
 		we[0].scale = 0.5;
+		we[0].inv_block = true;                        // 后续弹幕仍会引用它, 免疫守卫/护盾清除
 		Anim_Create(we[0],"scale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0.5,0.5,60);
 	}
 	if(attack_time > 1&&attack_time < 340){
@@ -333,26 +338,31 @@ attack_5 = function(){//波加旋转散射
 	if(attack_time = 10){
 		we[1] = MakeEnemyBullet(x,y,bullet_enemy_wavering_emitter);
 		we[1].scale = 0.5;
+		we[1].inv_block = true;                        // 后续弹幕仍会引用它, 免疫守卫/护盾清除
 		Anim_Create(we[1],"scale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0.5,0.5,60);
 	}
 	if(attack_time = 20){
 		we[2] = MakeEnemyBullet(x,y,bullet_enemy_wavering_emitter);
 		we[2].scale = 0.5;
+		we[2].inv_block = true;                        // 后续弹幕仍会引用它, 免疫守卫/护盾清除
 		Anim_Create(we[2],"scale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0.5,0.5,60);
 	}
 	if(attack_time = 30){
 		we[3] = MakeEnemyBullet(x,y,bullet_enemy_wavering_emitter);
 		we[3].scale = 0.5;
+		we[3].inv_block = true;                        // 后续弹幕仍会引用它, 免疫守卫/护盾清除
 		Anim_Create(we[3],"scale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0.5,0.5,60);
 	}
 	if(attack_time = 40){
 		we[4] = MakeEnemyBullet(x,y,bullet_enemy_wavering_emitter);
 		we[4].scale = 0.5;
+		we[4].inv_block = true;                        // 后续弹幕仍会引用它, 免疫守卫/护盾清除
 		Anim_Create(we[4],"scale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0.5,0.5,60);
 	}
 	if(attack_time = 50){
 		we[5] = MakeEnemyBullet(x,y,bullet_enemy_wavering_emitter);
 		we[5].scale = 0.5;
+		we[5].inv_block = true;                        // 后续弹幕仍会引用它, 免疫守卫/护盾清除
 		Anim_Create(we[5],"scale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0.5,0.5,60);
 	}
 	if(attack_time = 100||attack_time = 200||attack_time = 300){
