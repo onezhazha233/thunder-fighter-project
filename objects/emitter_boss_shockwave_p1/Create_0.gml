@@ -447,16 +447,51 @@ attack_6 = function(){//散射蓝针加波
 	}
 }
 
-var a0 = create_attack(0,attack_0,30);
-var a1 = create_attack(1,attack_1,30);
-var a2 = create_attack(2,attack_2,30);
-var a3 = create_attack(3,attack_3,30);
-var a4 = create_attack(4,attack_4,30);
-var a5 = create_attack(5,attack_5,30);
-var a6 = create_attack(6,attack_6,30);
-var a7 = create_attack(7,attack_3,30,,1);
-var a8 = create_attack(8,attack_4,30,,1);
-var a9 = create_attack(9,attack_4,30,,2);
+a0 = create_attack(0,attack_0,30);
+a1 = create_attack(1,attack_1,30);
+a2 = create_attack(2,attack_2,30);
+a3 = create_attack(3,attack_3,30);
+a4 = create_attack(4,attack_4,30);
+a5 = create_attack(5,attack_5,30);
+a6 = create_attack(6,attack_6,30);
+a7 = create_attack(7,attack_3,30,,1);
+a8 = create_attack(8,attack_4,30,,1);
+a9 = create_attack(9,attack_4,30,,2);
 
 fixed_sequence = [a0,a1,a2,a3,a4,a5,a6,a7];
 random_pool = [a0,a1,a2,a3,a4,a5,a6,a7,a8,a9]
+
+_end_attack_orig = end_attack;
+end_attack = function(){
+	if(mark.GetFrozen() > 0){
+		if(current_attack = a1){
+			if(instance_exists(lwe)){
+				Anim_Create(lwe,"vspeed",0,0,0,-20,30);
+				lwe.duration = 60;
+			}
+			if(instance_exists(rwe)){
+				Anim_Create(rwe,"vspeed",0,0,0,-20,30);
+				rwe.duration = 60;
+			}
+		}
+		if(current_attack = a3&&current_attack = a7){
+			if(instance_exists(lwe)){
+				Anim_Create(lwe,"vspeed",0,0,0,-20,30);
+				lwe.duration = 60;
+			}
+			if(instance_exists(rwe)){
+				Anim_Create(rwe,"vspeed",0,0,0,-20,30);
+				rwe.duration = 60;
+			}
+		}
+		if(current_attack = a5){
+			for(i=0;i<6;i+=1){
+				if(instance_exists(we[i])){
+					Anim_Create(we[i],"scale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,1,-1,30);
+					we[i].duration = 40;
+				}
+			}
+		}
+	}
+	_end_attack_orig();
+}

@@ -487,16 +487,16 @@ attack_6 = function(){//底波加随机子弹链
 	}
 }
 
-var a0 = create_attack(0,attack_0,30);
-var a1 = create_attack(1,attack_1,30);
-var a2 = create_attack(2,attack_2,30);
-var a3 = create_attack(3,attack_3,30);
-var a4 = create_attack(4,attack_4,30);
-var a5 = create_attack(5,attack_5,30);
-var a6 = create_attack(6,attack_6,30,0.5);
-var a4b = create_attack(7,attack_4,30,,1);
-var a4c = create_attack(8,attack_4,30,,2);
-var a5b = create_attack(9,attack_5,30,,1);
+a0 = create_attack(0,attack_0,30);
+a1 = create_attack(1,attack_1,30);
+a2 = create_attack(2,attack_2,30);
+a3 = create_attack(3,attack_3,30);
+a4 = create_attack(4,attack_4,30);
+a5 = create_attack(5,attack_5,30);
+a6 = create_attack(6,attack_6,30);
+a4b = create_attack(7,attack_4,30,,1);
+a4c = create_attack(8,attack_4,30,,2);
+a5b = create_attack(9,attack_5,30,,1);
 
 fixed_sequence = [a0,a1,a2,a3,a4,a5,a6,a4c];
 random_pool = [a0,a1,a2,a3,a4,a5,a6,a4b,a4c,a5b]
@@ -505,6 +505,24 @@ since_a6 = 5;
 
 _end_attack_orig = end_attack;
 end_attack = function(){
+	if(mark.GetFrozen() > 0){
+		if(current_attack = a3){
+			if(instance_exists(we0)){
+				with(we0)custom_function = function(){};
+				Anim_Destroy(we0);
+				we0.gravity = 0.3;
+				we0.hspeed = 2;
+				we0.vspeed = -5;
+			}
+			if(instance_exists(we1)){
+				with(we1)custom_function = function(){};
+				Anim_Destroy(we1);
+				we1.gravity = 0.3;
+				we1.hspeed = -2;
+				we1.vspeed = -5;
+			}
+		}
+	}
 	if(current_attack != undefined){
 		if(current_attack.id_num = 6){
 			since_a6 = 0;
