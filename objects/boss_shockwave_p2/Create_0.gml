@@ -30,5 +30,5 @@ y_target = 400
 
 bullet_emitter = emitter_boss_shockwave_p2
 
-items = [[[battle_item_quantum_shield,battle_item_weapon_upgrade],1]]
+items = []
 value = 1000

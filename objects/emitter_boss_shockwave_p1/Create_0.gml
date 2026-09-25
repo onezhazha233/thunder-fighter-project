@@ -52,14 +52,14 @@ attack_1 = function(){//波加狙
 	live;
 	if(attack_time = 1){
 		lwe = MakeEnemyBullet(x,y,bullet_enemy_wavering_emitter);
-		lwe.inv_block = true;                          // 后续帧仍会引用它, 免疫守卫/护盾清除
+		lwe.inv_block = true;
 		lwe.image_alpha = 0;
 		lwe.scale = 0.5;
 		Anim_Create(lwe,"image_alpha",0,0,0,1,30);
 		Anim_Create(lwe,"scale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0.5,0.5,30);
 		Anim_Create(lwe,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,lwe.x,-200,30);
 		rwe = MakeEnemyBullet(x,y,bullet_enemy_wavering_emitter);
-		rwe.inv_block = true;                          // 后续帧仍会引用它, 免疫守卫/护盾清除
+		rwe.inv_block = true;
 		rwe.image_alpha = 0;
 		rwe.scale = 0.5;
 		Anim_Create(rwe,"image_alpha",0,0,0,1,30);
@@ -201,15 +201,16 @@ attack_3 = function(dir=0){//环绕双波
 	live_name = "emitter_boss_shockwave_p1:attack_3";
 	live;
 	if(attack_time = 1){
+		MoveEnemy(false);
 		lwe = MakeEnemyBullet(x,y,bullet_enemy_wavering_emitter);
-		lwe.inv_block = true;                          // 后续帧仍会引用它, 免疫守卫/护盾清除
+		lwe.inv_block = true;
 		lwe.image_alpha = 0;
 		lwe.scale = 0.5;
 		Anim_Create(lwe,"image_alpha",0,0,0,1,30);
 		Anim_Create(lwe,"scale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0.5,0.5,30);
 		Anim_Create(lwe,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,lwe.x,-250*(dir=0 ? 1 : -1),30);
 		rwe = MakeEnemyBullet(x,y,bullet_enemy_wavering_emitter);
-		rwe.inv_block = true;                          // 后续帧仍会引用它, 免疫守卫/护盾清除
+		rwe.inv_block = true;
 		rwe.image_alpha = 0;
 		rwe.scale = 0.5;
 		Anim_Create(rwe,"image_alpha",0,0,0,1,30);
@@ -218,32 +219,32 @@ attack_3 = function(dir=0){//环绕双波
 	}
 	if(attack_time > 30&&attack_time < 660){
 		if(dir = 0){
-			lwe.x += (x - sin((attack_time+30)/30)*250-lwe.x)/10;
-			lwe.y += (y - cos((attack_time+30)/30)*250-lwe.y)/10;
-			rwe.x += (x + sin((attack_time+30)/30)*250-rwe.x)/10;
-			rwe.y += (y + cos((attack_time+30)/30)*250-rwe.y)/10;
+			lwe.x += (x - sin((attack_time+50)/50)*250-lwe.x)/10;
+			lwe.y += (y - cos((attack_time+50)/50)*250-lwe.y)/10;
+			rwe.x += (x + sin((attack_time+50)/50)*250-rwe.x)/10;
+			rwe.y += (y + cos((attack_time+50)/50)*250-rwe.y)/10;
 		}
 		else{
-			lwe.x += (x + sin((attack_time+30)/30)*250-lwe.x)/10;
-			lwe.y += (y + cos((attack_time+30)/30)*250-lwe.y)/10;
-			rwe.x += (x - sin((attack_time+30)/30)*250-rwe.x)/10;
-			rwe.y += (y - cos((attack_time+30)/30)*250-rwe.y)/10;
+			lwe.x += (x + sin((attack_time+50)/50)*250-lwe.x)/10;
+			lwe.y += (y + cos((attack_time+50)/50)*250-lwe.y)/10;
+			rwe.x += (x - sin((attack_time+50)/50)*250-rwe.x)/10;
+			rwe.y += (y - cos((attack_time+50)/50)*250-rwe.y)/10;
 		}
 	}
 	if(attack_time > 45&&attack_time < 600){
-		if(attack_time mod 15 = 0){
+		if(attack_time mod 20 = 0){
 			wr = MakeEnemyBullet(lwe.x,lwe.y,bullet_enemy_wavering);
 			wr.radius = 0;
-			wr.radius_spd = 12;
-			wr.ring_width = 20;
-			wr.vspeed = 4;
+			wr.radius_spd = 9;
+			wr.ring_width = 40;
 			wr = MakeEnemyBullet(rwe.x,rwe.y,bullet_enemy_wavering);
 			wr.radius = 0;
-			wr.radius_spd = 12;
-			wr.ring_width = 20;
+			wr.radius_spd = 9;
+			wr.ring_width = 40;
 		}
 	}
 	if(attack_time = 660){
+		MoveEnemy(true);
 		Anim_Create(lwe,"hspeed",0,0,0,20*(dir=0 ? 1 : -1),30);
 		lwe.duration = 60;
 		Anim_Create(rwe,"hspeed",0,0,0,-20*(dir=0 ? 1 : -1),30);

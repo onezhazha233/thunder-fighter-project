@@ -425,7 +425,7 @@ attack_5 = function(dir=0){//旋转四五散射
 		Anim_Create(id,"dd1",0,0,0,100,60);
 		Anim_Create(id,"rr1",ANIM_TWEEN.QUAD,ANIM_EASE.IN,-90,-720*(dir=0 ? 1 : -1),60);
 	}
-	if(attack_time>30&&attack_time < 90){
+	if(attack_time>30&&attack_time < 90&&attack_time mod 2 = 0){
 		for(i=0;i<5;i+=1){
 			blt = MakeEnemyBullet(x+lengthdir_x(dd1,rr1),y-75+lengthdir_y(dd1,rr1),bullet_enemy_normal);
 			blt.image_index = 2;
