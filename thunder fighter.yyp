@@ -10,7 +10,6 @@
   },
   "defaultScriptType":1,
   "Folders":[
-    {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"便签","folderPath":"folders/便签.yy","name":"便签","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"动画曲线","folderPath":"folders/动画曲线.yy","name":"动画曲线","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"图块集","folderPath":"folders/图块集.yy","name":"图块集","resourceType":"GMFolder","resourceVersion":"2.0",},
