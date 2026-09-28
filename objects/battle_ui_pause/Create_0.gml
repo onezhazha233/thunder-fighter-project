@@ -9,7 +9,7 @@ button_xoffset = 220
 
 main_ui = new UIBase(0,0,room_width,room_height);
 
-quit_button = new UIButton(spr_ui_pause_button_quit,10+12-210,640-62+4,174,62)
+quit_button = new UIButton(spr_ui_pause_button_quit,10+12-210,640-62+4,174,82)
 quit_button.draw = function(el){
 	draw_sprite(spr_ui_pause_button_base,0,el.abs_x-12-10,el.abs_y-4+10);
     draw_sprite(spr_ui_pause_button_quit,el.is_pressed,el.abs_x-12,el.abs_y-4);
@@ -36,7 +36,7 @@ quit_button.AddEvent(UI_EVENT.CLICK,function(el){
 	Layer_Init();
 });
 
-resume_button = new UIButton(spr_ui_pause_button_resume,10+12-210,640-62+4,174,62)
+resume_button = new UIButton(spr_ui_pause_button_resume,10+12-210,640-62+4,174,82)
 resume_button.draw = function(el){
 	draw_sprite_ext(spr_ui_pause_button_base,0,el.abs_x-12+208,quit_button.abs_y-4+10,-el.abs_scale_x,el.abs_scale_y,0,-1,el.abs_alpha);
     draw_sprite(spr_ui_pause_button_resume,el.is_pressed,el.abs_x-12,el.abs_y-4);

@@ -82,8 +82,9 @@ function laser_find_width(_ox, _oy, _dir, _range, _width, _object, _prec, _notme
     //_detector_inst.x = -99999;
     //_detector_inst.y = -99999;
     
+    static _dist_cmp = function(a, b) { return a[1] - b[1]; };//比较器只创建一次,避免热路径每次分配闭包
     if (array_length(_result_array) > 1) {
-        array_sort(_result_array, function(a, b) { return a[1] - b[1]; });
+        array_sort(_result_array, _dist_cmp);
     }
     
     return _result_array;

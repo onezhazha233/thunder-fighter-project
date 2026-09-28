@@ -115,3 +115,17 @@ wavering_player_on_overlap = function(_rings) {
     }
     return false;
 };
+
+/// @desc 把表面上指定的矩形区域清成透明 RGBA=0(不触碰区域外的像素)
+///       用"全部写零"的混合模式画一个矩形, 避免整张表面 draw_clear
+/// @param {Id.Surface} _surf  目标表面
+/// @param {Real} _x0  矩形左(含)
+/// @param {Real} _y0  矩形上(含)
+/// @param {Real} _x1  矩形右(含)
+/// @param {Real} _y1  矩形下(含)
+wavering_wipe_rect = function(_surf, _x0, _y0, _x1, _y1) {
+    surface_set_target(_surf);
+    gpu_set_blendmode_ext_sepalpha(bm_zero, bm_zero, bm_zero, bm_zero);
+    draw_rectangle_colour(_x0, _y0, _x1, _y1, c_black, c_black, c_black, c_black, false);
+    surface_reset_target();
+};

@@ -31,3 +31,7 @@ if(debug_display = true){
 		draw_text(0,250,$"seq number:{_total_count}");
 	}
 }
+draw_set_halign(fa_right);
+draw_text(room_width,0,fps);
+draw_text(room_width,30,fps_real);
+draw_set_halign(fa_left);

@@ -11,19 +11,46 @@ live;
 ///   而圆环深度(-400)比本对象(-401)靠后、会先画完,
 ///   所以轮到本对象时半径已经推进完毕 → "画出来的红色区域"和"会受伤的区域"完全一致。
 ///
-/// 重叠判定: 逐个圆环求"它 ∩ 之前所有圆环的并集", 再并起来(二值遮罩相乘);
-///           应用表面上先把重叠处擦成透明、再写入纯色 → 重叠处就是纯色本身, 与圆环颜色无关。
-///
-/// ⚠ 遮罩的取法(看 overlap_use_glow):
-///   · true (默认): 遮罩传纹理 → alpha 带光晕的软边, 重叠区 = "指定色调 × 光晕相交形状";
-///   · false: 遮罩传 -1 → 只取判定带, alpha 是干净二值, 重叠区 = 硬边纯色色块。
-///   两种情况下判定/伤害都只按 [内半径, 外半径] 算 —— 光晕不参与伤害。
-/// 性能: 每个圆环只花 1 次清屏 + 2 次全屏搬运(线性复杂度), 十几个实例也不会拖慢帧率。
+/// 性能: 在原版全屏流水线之前加了一道"解析早退"——
+///   先用纯数学判断"判定带 ± 光晕"的环带两两是否可能相交
+///   (存在 r∈[in_i,out_i] 使 |d-r| ≤ out_j 且 d+r ≥ in_j),
+///   没有任何可能相交的环对时, 重叠绘制与重叠伤害都不可能发生,
+///   整条表面流水线直接跳过(膨胀环大部分时间处于这种状态)。
+///   环带不相交 ⇒ 遮罩不相交 ⇒ 无红可画、无伤可判, 此早退不改变任何表现。
+/// 一旦存在相交环对, 则走与旧版完全一致的全屏流水线。
 
 if (id != instance_find(object_index, 0)) exit;      // 有多个 manager 时只留一个干活
 
 var _rings = wavering_collect();
-if (array_length(_rings) < 2) exit;                  // 不足两个圆环 → 不存在重叠
+var _n = array_length(_rings);
+if (_n < 2) exit;                                    // 不足两个圆环 → 不存在重叠
+
+// ---- 解析早退: 逐对检查环带(含光晕)是否可能相交 ----
+var _cx  = array_create(_n, 0);
+var _cy  = array_create(_n, 0);
+var _in  = array_create(_n, 0);
+var _out = array_create(_n, 0);
+for (var i = 0; i < _n; i++) {
+    var _ri  = _rings[i];
+    var _pad = _ri.ring_tex_pad(_ri, _ri.ring_sprite);
+    _cx[i]  = _ri.x;
+    _cy[i]  = _ri.y;
+    _in[i]  = max(0, clamp(_ri.radius - _ri.ring_width, 0, _ri.radius) - _pad);
+    _out[i] = _ri.radius + _pad;
+}
+var _work = false;
+for (var i = 0; i < _n && !_work; i++) {
+    for (var j = i + 1; j < _n; j++) {
+        var _d  = point_distance(_cx[i], _cy[i], _cx[j], _cy[j]);
+        var _lo = max(_in[i], _d - _out[j], _in[j] - _d);
+        var _hi = min(_out[i], _d + _out[j]);
+        if (_lo <= _hi) {
+            _work = true;
+            break;
+        }
+    }
+}
+if (!_work) exit;                                    // 没有任何可能相交的环对 → 跳过
 
 if (!ring_ensure_surfaces()) exit;
 var _union   = global.ring_union_surface;            // 已处理圆环的并集(二值)

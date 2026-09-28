@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"laser_hit_player",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"laser_hit_player",
+  "parent":{
+    "name":"Laser",
+    "path":"folders/脚本/Laser.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1614,6 +1614,7 @@
     {"id":{"name":"Lang_Uninit","path":"scripts/Lang_Uninit/Lang_Uninit.yy",},},
     {"id":{"name":"Language","path":"scripts/Language/Language.yy",},},
     {"id":{"name":"laser_find_width","path":"scripts/laser_find_width/laser_find_width.yy",},},
+    {"id":{"name":"laser_hit_player","path":"scripts/laser_hit_player/laser_hit_player.yy",},},
     {"id":{"name":"Layer_Init","path":"scripts/Layer_Init/Layer_Init.yy",},},
     {"id":{"name":"LimekysUsefulFunctions","path":"scripts/LimekysUsefulFunctions/LimekysUsefulFunctions.yy",},},
     {"id":{"name":"Macro_Depth","path":"scripts/Macro_Depth/Macro_Depth.yy",},},
@@ -5443,8 +5444,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"room_init","path":"rooms/room_init/room_init.yy",},},
-    {"roomId":{"name":"room_test","path":"rooms/room_test/room_test.yy",},},
     {"roomId":{"name":"room_preparation","path":"rooms/room_preparation/room_preparation.yy",},},
+    {"roomId":{"name":"room_test","path":"rooms/room_test/room_test.yy",},},
     {"roomId":{"name":"room_battle","path":"rooms/room_battle/room_battle.yy",},},
     {"roomId":{"name":"room_battle_loading","path":"rooms/room_battle_loading/room_battle_loading.yy",},},
   ],

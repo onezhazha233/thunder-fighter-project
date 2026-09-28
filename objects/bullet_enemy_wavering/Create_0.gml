@@ -62,11 +62,12 @@ ring_tex_pad = function(_inst, _tex) {
 /// @param {Real} _alpha         透明度(会乘到纹理 alpha 上)
 /// @param {Asset.GMSprite} _tex 环形纹理(-1 = 不用纹理, 纯顶点色)
 ///        ⚠ 重叠遮罩必须传 -1: 遮罩要求 alpha 只能是 0/1, 带上光晕纹理就不是二值的了
-ring_draw_shape = function(_inst, _col, _alpha, _tex = -1) {
+/// @param {Real} _segdiv        分段缩减(1 = 完整平滑; manager 的掩码传 4 省顶点, 软边下不可见)
+ring_draw_shape = function(_inst, _col, _alpha, _tex = -1, _segdiv = 1) {
     if (is_undefined(_tex)) _tex = -1;             // 兜底: GMLive 热重载时参数可能是 undefined
     var _outer = _inst.radius;
     var _inner = ring_inner_radius(_inst);
-    var _seg   = max(8, floor(_inst.segments));
+    var _seg   = max(8, floor(_inst.segments / max(1, _segdiv)));
 
     if (_outer > 0) {
         var _px = _inst.x;

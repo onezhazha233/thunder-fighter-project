@@ -35,8 +35,7 @@ if(state >= 1){
 			ey = y + lengthdir_y(length,image_angle);
 			draw_sprite_ext(sprite_effect,0,ex,ey,laser_scale*choose(1,-1)/1.5,laser_scale*image_xscale/1.2/1.5,choose(0,180)+image_angle+90,-1,image_alpha);
 		}
-		find_player = laser_find_width(x,y,image_angle,length,30,player,true,true);
-		if(array_length(find_player) > 0){
+		if(laser_hit_player(x,y,image_angle,length,15)){
 			if(laser_scale > 0.4){
 				if(Player_IsEnabled()){
 					if(global.inv_hurt = 0&&global.inv_shield = 0){
