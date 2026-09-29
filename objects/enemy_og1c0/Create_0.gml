@@ -19,6 +19,6 @@ hpbar_yoffset = 140
 explosion = effect_explosion_big
 
 collision_type = COLLISION_TYPE.SPRITE
-sprite_index = spr_enemy_minion_og0c0_body
+sprite_index = spr_enemy_minion_og1c0_body
 
 items = [[[battle_item_hp_recovery],1],[[battle_item_quantum_shield],1],[[battle_item_weapon_upgrade],1],[[battle_item_rampage],1],[[],12]]
