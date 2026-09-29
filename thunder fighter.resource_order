@@ -1291,7 +1291,6 @@
     {"name":"draw_laser_release_cache","order":5,"path":"scripts/draw_laser_release_cache/draw_laser_release_cache.yy",},
     {"name":"draw_laser","order":4,"path":"scripts/draw_laser/draw_laser.yy",},
     {"name":"draw_sprite_nineslice","order":6,"path":"scripts/draw_sprite_nineslice/draw_sprite_nineslice.yy",},
-    {"name":"draw_text_rich","order":7,"path":"scripts/draw_text_rich/draw_text_rich.yy",},
     {"name":"EnemyMove","order":1,"path":"scripts/EnemyMove/EnemyMove.yy",},
     {"name":"Equipment_GetName","order":1,"path":"scripts/Equipment_GetName/Equipment_GetName.yy",},
     {"name":"Equipment_Plane","order":2,"path":"scripts/Equipment_Plane/Equipment_Plane.yy",},

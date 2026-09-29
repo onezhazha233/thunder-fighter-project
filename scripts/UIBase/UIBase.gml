@@ -25,7 +25,8 @@ function UIBase(xx=0,yy=0,w=100,h=100) constructor{
 	
 	destroyed = false;
 	ready = false;
-	active = true;
+	active = true;   // 输入闸门: false = 不参与命中, 但照常绘制(窗口打开动画期间就是用它挡输入)
+	visible = true;  // 总开关: false = 既不绘制也不参与命中
 	
 	is_pressed = false;
 	touch_inside = false;
@@ -72,7 +73,7 @@ function UIBase(xx=0,yy=0,w=100,h=100) constructor{
 			}
 		}
 		var al = array_length(children);
-		for(i=0;i<al;i+=1){
+		for(var i=0;i<al;i+=1){
 			children[i].UpdatePosition();
 		}
 		scroll_panel = undefined;
@@ -93,18 +94,20 @@ function UIBase(xx=0,yy=0,w=100,h=100) constructor{
 	static Update = function(){
 		if (!is_undefined(step))step(self);
 		var al = array_length(children);
-		for(i=0;i<al;i+=1){
+		for(var i=0;i<al;i+=1){
 			children[i].Update();
 		}
 	}
 	
 	static ProcessInput = function(touch_index=0){
-		if(destroyed||abs_alpha < 0||!active||!ready)return false;
+		// visible = 总开关(不绘制也不命中); active = 输入闸门(不命中但照常绘制, 窗口开合动画用);
+		// alpha 只影响显示, 全透明的不该还能被点到
+		if(destroyed||!visible||abs_alpha <= 0||!active||!ready)return false;
 		
 		// 无鼠标事件时跳过子树遍历（不检测滚轮，滚轮由 UIScrollPanel 自行处理）
 		if(!device_mouse_check_button(touch_index,mb_left)&&!device_mouse_check_button_pressed(touch_index,mb_left)&&!device_mouse_check_button_released(touch_index,mb_left)){
 			var al = array_length(children);
-			for(i=al-1;i>=0;i-=1){
+			for(var i=al-1;i>=0;i-=1){
 				if(children[i].ProcessInput(touch_index)) return true;
 			}
 			return false;
@@ -118,7 +121,7 @@ function UIBase(xx=0,yy=0,w=100,h=100) constructor{
 		}
 		
 		var al = array_length(children);
-		for(i=al-1;i>=0;i-=1){
+		for(var i=al-1;i>=0;i-=1){
 			if(children[i].ProcessInput(touch_index)){
 				is_pressed = false;
 				touch_inside = false;
@@ -190,13 +193,13 @@ function UIBase(xx=0,yy=0,w=100,h=100) constructor{
 	}
 	
 	static Draw = function(){
-		if(abs_alpha < 0)return;
+		if(!visible||abs_alpha <= 0)return; // 全透明/不可见时连子树一起跳过, 省掉整棵子树的遍历与绘制调用
 		if!(is_undefined(scroll_panel)){
 			if!(rectangle_in_rectangle(abs_x,abs_y,abs_x+abs_width*scale_x,abs_y+abs_height*scale_y,scroll_panel.abs_x,scroll_panel.abs_y,scroll_panel.abs_x+scroll_panel.abs_width*scroll_panel.scale_x,scroll_panel.abs_y+scroll_panel.abs_height*scroll_panel.scale_y))return false;
 		}
 		if!(is_undefined(draw))draw(self);
 		var al = array_length(children);
-		for(i=0;i<al;i+=1){
+		for(var i=0;i<al;i+=1){
 			children[i].Draw();
 		}
 		if(global.ui_showbox == true) draw_rectangle_color(abs_x, abs_y, abs_x + abs_width * scale_x, abs_y + abs_height * scale_y, c_yellow, c_yellow, c_yellow, c_yellow, 1);
@@ -227,7 +230,7 @@ function UIBase(xx=0,yy=0,w=100,h=100) constructor{
 		if(destroyed) return;
 
 		var al = array_length(children);
-		for(i=0;i<al;i+=1){
+		for(var i=0;i<al;i+=1){
 			if(children[i] == child){
 				array_delete(children,i,1);
 				break;
@@ -238,7 +241,7 @@ function UIBase(xx=0,yy=0,w=100,h=100) constructor{
 	static AddContent = function(content){
 		if(is_array(content)){
 			var al = array_length(content);
-			for(i=0;i<al;i+=1){
+			for(var i=0;i<al;i+=1){
 				content[i].parent = self;
 				array_push(children,content[i]);
 				content[i].UpdatePosition();
@@ -255,14 +258,21 @@ function UIBase(xx=0,yy=0,w=100,h=100) constructor{
 		if!(variable_struct_exists(events,type)){
 			events[$ type] = [];
 		}
-		array_push(events[$ type],method(self,func));
+		// 同时保存两份:
+		//   fn  → 绑定到本组件的方法, 供 CallEvent 调用(method() 每次都新建绑定, 必须存下来复用)
+		//   src → 调用者传入的原始函数, 供 RemoveEvent 做同一性比较
+		// 之前只存 method(self,func), 而 RemoveEvent 拿它去和裸 func 比 —— 永远不相等, 所以删不掉。
+		array_push(events[$ type],{ fn: method(self,func), src: func });
 	}
 	
+	/// 注销事件。func 必须与 AddEvent 时传入的是同一个函数值
+	/// (具名函数, 或调用者自己存下来的引用; 内联匿名函数无法再取到同一个值)。
+	/// 同一函数注册多次时只移除最先命中的一条。
 	static RemoveEvent = function(type,func){
 		if(variable_struct_exists(events,type)){
 			var al = array_length(events[$ type]);
-			for(i=0;i<al;i+=1){
-				if(events[$ type][i] == func){
+			for(var i=0;i<al;i+=1){
+				if(events[$ type][i].src == func){
 					array_delete(events[$ type],i,1);
 					break;
 				}
@@ -272,8 +282,11 @@ function UIBase(xx=0,yy=0,w=100,h=100) constructor{
 	
 	static CallEvent = function(type,arg0=0,arg1=0){
 		var al = array_length(events[$ type]);
-		for(i=0;i<al;i+=1){
-			events[$ type][i](self,arg0,arg1);
+		for(var i=0;i<al;i+=1){
+			// 派发途中可能被 RemoveEvent 注销(现在真的能注销了), 数组会变短, al 已过期
+			if(i >= array_length(events[$ type]))break;
+			var _e = events[$ type][i];
+			_e.fn(self,arg0,arg1);
 		}
 	}
 	

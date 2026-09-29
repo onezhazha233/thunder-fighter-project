@@ -14,6 +14,12 @@
 /// - 预跑富文本解析 → 布局缓存命中，省去解析时间
 /// - font_cache_glyph → 预栅格化常用字体字形
 function UI_Warmup() {
+	// 幂等: 纹理上传与 JIT 编译在整个进程生命周期内都有效, 只需做一次。
+	// 装备界面每场战斗后都会重进, 之前每次都要重跑: 38 个精灵预热 + 6 个构造器 + 一次完整富文本解析 + 3 次字形栅格化。
+	// 用 variable_global_exists 判断, 不依赖 UIInit 是否已经执行过。
+	if (variable_global_exists("ui_warmed") && global.ui_warmed) return;
+	global.ui_warmed = true;
+
 	// ===== 1. 预加载所有UI精灵到VRAM =====
 	var _ui_sprites = [
 		// 设备选择界面

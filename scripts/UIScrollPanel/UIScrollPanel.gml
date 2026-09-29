@@ -48,7 +48,7 @@ function UIScrollPanel(xx,yy,w,h): UIBase(xx,yy,w,h) constructor{
 	}
 	
 	static ProcessInput = function(touch_index=0){
-		if(destroyed||abs_alpha < 0||!active)return false;
+		if(destroyed||!visible||abs_alpha <= 0||!active)return false;
 		
 		var al = array_length(children);
 		for(var i=al-1; i>=0; i-=1){
@@ -240,7 +240,9 @@ function UIScrollPanel(xx,yy,w,h): UIBase(xx,yy,w,h) constructor{
 	}
 	
 	static Draw = function(){
-		if(destroyed||abs_alpha <= 0||!active)return;
+		// 注意: 这里不能用 !active —— active 现在专管"是否参与命中"(窗口打开动画期间会置 false),
+		// 而"要不要画"归 visible 管; 用 !active 会让一个只是被挡了输入的滚动列表整个消失
+		if(destroyed||!visible||abs_alpha <= 0)return;
 		if(!is_undefined(draw)) draw();
 
 		var old_scissor = gpu_get_scissor();

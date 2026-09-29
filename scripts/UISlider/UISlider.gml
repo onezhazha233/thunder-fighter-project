@@ -14,7 +14,7 @@ function UISlider(xx,yy,w,h,minv,maxv,defv=0,bar_bg=spr_ui_slider_bg,knob=spr_ui
 	nineslice_mode = 1;
 
 	static ProcessInput = function(_touch_index = 0){
-		if(destroyed||abs_alpha < 0||!active||!ready) return false;
+		if(destroyed||!visible||abs_alpha <= 0||!active||!ready) return false;
 		
 		var tx = device_mouse_x_to_gui(_touch_index);
 		var ty = device_mouse_y_to_gui(_touch_index);
@@ -77,7 +77,7 @@ function UISlider(xx,yy,w,h,minv,maxv,defv=0,bar_bg=spr_ui_slider_bg,knob=spr_ui
 	}
 
 	draw = function(){
-		if(!ready||abs_alpha < 0) return;
+		if(!ready||abs_alpha <= 0) return;
 
 		var _w_p = width * abs_scale_x;
 		var _h_p = height * abs_scale_y;

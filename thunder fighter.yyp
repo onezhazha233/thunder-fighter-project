@@ -1551,7 +1551,6 @@
     {"id":{"name":"draw_laser_release_cache","path":"scripts/draw_laser_release_cache/draw_laser_release_cache.yy",},},
     {"id":{"name":"draw_laser","path":"scripts/draw_laser/draw_laser.yy",},},
     {"id":{"name":"draw_sprite_nineslice","path":"scripts/draw_sprite_nineslice/draw_sprite_nineslice.yy",},},
-    {"id":{"name":"draw_text_rich","path":"scripts/draw_text_rich/draw_text_rich.yy",},},
     {"id":{"name":"Enemy","path":"scripts/Enemy/Enemy.yy",},},
     {"id":{"name":"EnemyMove","path":"scripts/EnemyMove/EnemyMove.yy",},},
     {"id":{"name":"Equipment_Armor","path":"scripts/Equipment_Armor/Equipment_Armor.yy",},},
