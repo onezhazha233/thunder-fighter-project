@@ -62,7 +62,7 @@ function UIScrollPanel(xx,yy,w,h): UIBase(xx,yy,w,h) constructor{
 		
 		var tx = device_mouse_x_to_gui(touch_index);
 		var ty = device_mouse_y_to_gui(touch_index);
-		var _in_bounds = point_in_rectangle(tx,ty,abs_x,abs_y,abs_x + abs_width*scale_x,abs_y + abs_height*scale_y);
+		var _in_bounds = InBounds(tx,ty);
 
 		if(_in_bounds && min_y < 0){
 			var _wheel_delta = 0;
@@ -92,7 +92,7 @@ function UIScrollPanel(xx,yy,w,h): UIBase(xx,yy,w,h) constructor{
 			}
 			
 			var _knob_abs_y = abs_y + knob_y*abs_scale_y;
-			var _knob_x1 = abs_x + abs_width*scale_x;
+			var _knob_x1 = Right();
 			var _knob_x2 = _knob_x1 + knob_width*abs_scale_x;
 			
 			var _click_y1 = max(abs_y,_knob_abs_y - 80*abs_scale_y);
@@ -194,6 +194,30 @@ function UIScrollPanel(xx,yy,w,h): UIBase(xx,yy,w,h) constructor{
 		}
 	}
 	
+	// 覆写 UIBase.AddContent: 运行期往"已就绪"的面板里加子节点时必须重算 children_ystart / content_height,
+	// 否则 UpdatePosition 里那句 children[i].y = children_ystart[i] + scroll_y 会因为 children_ystart 比
+	// children 短而越界读, 把子节点的 y 写成错的值。
+	// RemoveChild 一直是即时重算的, 这里把"增加"补齐, 增删就对称了。
+	// 基类没有 super 可调, 所以照抄一份挂载逻辑 —— 与本文件覆写 UpdatePosition/Draw/ProcessInput 的做法一致。
+	static AddContent = function(content){
+		if(is_array(content)){
+			var al = array_length(content);
+			for(var i=0; i<al; i+=1){
+				content[i].parent = self;
+				array_push(children,content[i]);
+				content[i].UpdatePosition();
+			}
+		}
+		else{
+			content.parent = self;
+			array_push(children,content);
+			content.UpdatePosition();
+		}
+		// ready 之前不算: children_ystart 只在 UpdatePosition 的 ready 分支里被读,
+		// 而首次 ready 翻转时本来就会调一次 InitChildrenY(), 这里提前算纯属白做。
+		if(ready)InitChildrenY();
+	}
+	
 	static UpdatePosition = function(){
 		if(parent == -1){
 			abs_x = x;
@@ -204,8 +228,8 @@ function UIScrollPanel(xx,yy,w,h): UIBase(xx,yy,w,h) constructor{
 			abs_scale_y = scale_y;
 			abs_alpha = alpha;
 			if(center == true){
-				abs_x -= width*scale_x/2;
-				abs_y -= height*scale_y/2;
+				abs_x -= PixelWidth()/2;
+				abs_y -= PixelHeight()/2;
 			}
 		}
 		else{
@@ -217,8 +241,8 @@ function UIScrollPanel(xx,yy,w,h): UIBase(xx,yy,w,h) constructor{
 			abs_scale_y = parent.abs_scale_y*scale_y;
 			abs_alpha = parent.abs_alpha*alpha;
 			if(center == true){
-				abs_x -= abs_width/2;
-				abs_y -= abs_height/2;
+				abs_x -= PixelWidth()/2;
+				abs_y -= PixelHeight()/2;
 			}
 		}
 		if(ready == true){
@@ -246,15 +270,15 @@ function UIScrollPanel(xx,yy,w,h): UIBase(xx,yy,w,h) constructor{
 		if(!is_undefined(draw)) draw();
 
 		var old_scissor = gpu_get_scissor();
-		gpu_set_scissor(abs_x,abs_y,abs_width*scale_x,abs_height*scale_y);
+		gpu_set_scissor(abs_x,abs_y,PixelWidth(),PixelHeight());
 
 		// 裁剪：跳过完全在可视区域外的子组件
 		var _clip_top = abs_y;
-		var _clip_bot = abs_y + abs_height * abs_scale_y;
+		var _clip_bot = Bottom();
 		var al = array_length(children);
 		for(var i=0; i<al; i+=1){
 			var _child = children[i];
-			if (_child.abs_y + _child.abs_height * _child.abs_scale_y < _clip_top) continue;
+			if (_child.Bottom() < _clip_top) continue;
 			if (_child.abs_y > _clip_bot) continue;
 			_child.Draw();
 		}
@@ -304,16 +328,16 @@ function UIScrollPanel(xx,yy,w,h): UIBase(xx,yy,w,h) constructor{
 			knob_scale_x = lerp(knob_scale_x, _knob_sc_idle, 0.34);
 		}
 		knob_scale_x = clamp(knob_scale_x, _knob_sc_idle, _knob_sc_max);
-		knob_x = abs_x + abs_width*scale_x + (knob_width*(1 - knob_scale_x)) / 2*abs_scale_x;
+		knob_x = Right() + (knob_width*(1 - knob_scale_x)) / 2*abs_scale_x;
 
 		if(min_y < 0)draw_sprite_nineslice(sprite_knob,0,knob_x,abs_y+knob_y*abs_scale_y,knob_width*knob_scale_x,knob_height,abs_scale_x,abs_scale_y,,,abs_alpha);
 		
 		if(global.ui_showbox == true){
-			draw_rectangle_color(abs_x,abs_y,abs_x + abs_width*scale_x,abs_y + abs_height*scale_y,c_yellow,c_yellow,c_yellow,c_yellow,true);
+			draw_rectangle_color(abs_x,abs_y,Right(),Bottom(),c_yellow,c_yellow,c_yellow,c_yellow,true);
 			
 			var _debug_y1 = max(abs_y,abs_y + knob_y*abs_scale_y - 80*abs_scale_y);
 			var _debug_y2 = min(abs_y + height*abs_scale_y,abs_y + (knob_y + knob_height)*abs_scale_y + 80*abs_scale_y);
-			draw_rectangle_color(abs_x + abs_width*scale_x,_debug_y1,abs_x + abs_width*scale_x + knob_width*abs_scale_x,_debug_y2,c_red,c_red,c_red,c_red,true);
+			draw_rectangle_color(Right(),_debug_y1,Right() + knob_width*abs_scale_x,_debug_y2,c_red,c_red,c_red,c_red,true);
 		}
 	}
 	

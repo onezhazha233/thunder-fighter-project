@@ -43,6 +43,30 @@ function UIBase(xx=0,yy=0,w=100,h=100) constructor{
 	
 	events = {};
 	
+	// ---- 尺寸 / 命中 的统一入口 ----
+	// abs_width / abs_height 不是像素尺寸: 它们已经含了父级缩放, 但还没乘自己的 scale_x / scale_y。
+	// "像素宽高 / 右边界 / 下边界 / 是否命中"一律走下面这几个方法, 不要各处手写 abs_width*scale_x ——
+	// 历史上就因为漏乘、或错用 abs_scale_* 出过 4 处不一致(其中一处与 gpu_set_scissor 的裁剪区都不一致)。
+	static PixelWidth = function(){
+		return abs_width*scale_x;
+	}
+	
+	static PixelHeight = function(){
+		return abs_height*scale_y;
+	}
+	
+	static Right = function(){
+		return abs_x + abs_width*scale_x;
+	}
+	
+	static Bottom = function(){
+		return abs_y + abs_height*scale_y;
+	}
+	
+	static InBounds = function(tx,ty){
+		return point_in_rectangle(tx,ty,abs_x,abs_y,abs_x + abs_width*scale_x,abs_y + abs_height*scale_y);
+	}
+	
 	static UpdatePosition = function(){
 		if(parent == -1){
 			abs_x = x;
@@ -54,8 +78,8 @@ function UIBase(xx=0,yy=0,w=100,h=100) constructor{
 			abs_alpha = alpha;
 			
 			if(center == true){
-				abs_x -= width*scale_x/2;
-				abs_y -= height*scale_y/2;
+				abs_x -= PixelWidth()/2;
+				abs_y -= PixelHeight()/2;
 			}
 		}
 		else{
@@ -68,8 +92,8 @@ function UIBase(xx=0,yy=0,w=100,h=100) constructor{
 			abs_alpha = parent.abs_alpha * alpha;
 			
 			if(center == true){
-				abs_x -= abs_width*scale_x/2;
-				abs_y -= abs_height*scale_y/2;
+				abs_x -= PixelWidth()/2;
+				abs_y -= PixelHeight()/2;
 			}
 		}
 		var al = array_length(children);
@@ -117,7 +141,7 @@ function UIBase(xx=0,yy=0,w=100,h=100) constructor{
 		var ty = device_mouse_y_to_gui(touch_index);
 		
 		if!(is_undefined(scroll_panel)){
-			mouse_in_valid_region = point_in_rectangle(tx,ty,scroll_panel.abs_x,scroll_panel.abs_y,scroll_panel.abs_x+scroll_panel.abs_width*scroll_panel.scale_x,scroll_panel.abs_y+scroll_panel.abs_height*scroll_panel.scale_y);
+			mouse_in_valid_region = scroll_panel.InBounds(tx,ty);
 		}
 		
 		var al = array_length(children);
@@ -129,7 +153,7 @@ function UIBase(xx=0,yy=0,w=100,h=100) constructor{
 			}
 		}
 		
-		var _in_bounds = point_in_rectangle(tx,ty,abs_x,abs_y,abs_x+abs_width*scale_x,abs_y+abs_height*scale_y);
+		var _in_bounds = InBounds(tx,ty);
 		
 		if(device_mouse_check_button_pressed(touch_index,mb_left)){
 			if(_in_bounds&&mouse_in_valid_region){
@@ -195,14 +219,14 @@ function UIBase(xx=0,yy=0,w=100,h=100) constructor{
 	static Draw = function(){
 		if(!visible||abs_alpha <= 0)return; // 全透明/不可见时连子树一起跳过, 省掉整棵子树的遍历与绘制调用
 		if!(is_undefined(scroll_panel)){
-			if!(rectangle_in_rectangle(abs_x,abs_y,abs_x+abs_width*scale_x,abs_y+abs_height*scale_y,scroll_panel.abs_x,scroll_panel.abs_y,scroll_panel.abs_x+scroll_panel.abs_width*scroll_panel.scale_x,scroll_panel.abs_y+scroll_panel.abs_height*scroll_panel.scale_y))return false;
+			if!(rectangle_in_rectangle(abs_x,abs_y,Right(),Bottom(),scroll_panel.abs_x,scroll_panel.abs_y,scroll_panel.Right(),scroll_panel.Bottom()))return false;
 		}
 		if!(is_undefined(draw))draw(self);
 		var al = array_length(children);
 		for(var i=0;i<al;i+=1){
 			children[i].Draw();
 		}
-		if(global.ui_showbox == true) draw_rectangle_color(abs_x, abs_y, abs_x + abs_width * scale_x, abs_y + abs_height * scale_y, c_yellow, c_yellow, c_yellow, c_yellow, 1);
+		if(global.ui_showbox == true) draw_rectangle_color(abs_x, abs_y, Right(), Bottom(), c_yellow, c_yellow, c_yellow, c_yellow, 1);
 	}
 	
 	static Destroy = function(){

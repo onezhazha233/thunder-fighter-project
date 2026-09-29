@@ -20,7 +20,7 @@ function UISlider(xx,yy,w,h,minv,maxv,defv=0,bar_bg=spr_ui_slider_bg,knob=spr_ui
 		var ty = device_mouse_y_to_gui(_touch_index);
 		
 		if!(is_undefined(scroll_panel)){
-			mouse_in_valid_region = point_in_rectangle(tx,ty,scroll_panel.abs_x,scroll_panel.abs_y,scroll_panel.abs_x+scroll_panel.abs_width*scroll_panel.scale_x,scroll_panel.abs_y+scroll_panel.abs_height*scroll_panel.scale_y);
+			mouse_in_valid_region = scroll_panel.InBounds(tx,ty);
 		}
 
 		var _child_count = array_length(children);
@@ -30,7 +30,7 @@ function UISlider(xx,yy,w,h,minv,maxv,defv=0,bar_bg=spr_ui_slider_bg,knob=spr_ui
 			}
 		}
 		
-		var _in_bounds = point_in_rectangle(tx,ty,abs_x,abs_y,abs_x+abs_width,abs_y+abs_height);
+		var _in_bounds = InBounds(tx,ty);
 
 		if(device_mouse_check_button_pressed(_touch_index,mb_left)){
 			if(_in_bounds&&mouse_in_valid_region){
