@@ -149,11 +149,7 @@ btn_settings.AddEvent(UI_EVENT.CLICK,function(){
 	window_settings.alpha = 0.5;
 	window_settings.closing = false;
 	window_settings.close_finished = false;
-	// 打开动画播完之前不接受任何输入(关闭键与点击窗口外都不生效)。
-	// 注意 Anim_Step 在 delay 期间根本不写变量, 所以这里必须显式置 false,
-	// 由下面 delay = 20 的 active 动画在打开动画结束时才放开。
 	window_settings.active = false;
-	// 点击窗口外(压暗遮罩)也算一次关闭请求
 	window_settings.dismiss_on_outside = true;
 
 	// 统一关闭流程: 关闭键 与 "点击窗口外" 共用, 避免两处动画不同步
