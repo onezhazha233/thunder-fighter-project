@@ -34,6 +34,9 @@ function UIBase(xx=0,yy=0,w=100,h=100) constructor{
 	first_press_x = 0;
 	first_press_y = 0;
 	
+	dismiss_on_outside = false; // true: 在组件范围之外完成一次安全点击时抛出 UI_EVENT.DISMISS(模态窗用)
+	outside_press = false;      // 本次按压是否起始于组件范围之外
+	
 	scroll_panel = undefined;
 	mouse_in_valid_region = true;
 	
@@ -129,6 +132,18 @@ function UIBase(xx=0,yy=0,w=100,h=100) constructor{
 			if(_in_bounds&&mouse_in_valid_region){
 				is_pressed = true;
 				touch_inside = true;
+				outside_press = false;
+				press_mouse_x = tx;
+				press_mouse_y = ty;
+				first_press_x = tx;
+				first_press_y = ty;
+				return true;
+			}
+			else if(dismiss_on_outside&&mouse_in_valid_region){
+				// 点在组件范围之外: 先吃掉这次按压(不穿透到下层), 等松开时再判定是否算一次"外部点击"
+				is_pressed = true;
+				touch_inside = false;
+				outside_press = true;
 				press_mouse_x = tx;
 				press_mouse_y = ty;
 				first_press_x = tx;
@@ -157,6 +172,11 @@ function UIBase(xx=0,yy=0,w=100,h=100) constructor{
 					touch_inside = false;
 					CallEvent(UI_EVENT.CLICK);
 				}
+				else if(outside_press&&dismiss_on_outside&&mouse_in_valid_region){
+					// 按下与松开都落在组件范围之外 → 视为"点击组件外", 抛出 DISMISS 让窗口自己决定关不关
+					CallEvent(UI_EVENT.DISMISS);
+				}
+				outside_press = false;
 				if(!is_undefined(scroll_panel)){
 					scroll_panel.is_pressed = false;
 					scroll_panel.velocity = scroll_panel.ProcessDrag(ty,press_mouse_y);

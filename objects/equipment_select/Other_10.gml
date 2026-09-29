@@ -9,13 +9,57 @@ create_select_window = function(type){//0为战机 1为装甲 2为副武器 3为
 	window_select.alpha = 0.5;
 	window_select.closing = false;
 	window_select.close_finished = false;
+	// 打开动画(卡片依次飞入)播完之前不接受任何输入(关闭键与点击窗口外都不生效)。
+	// Anim_Step 在 delay 期间不写变量, 所以这里必须显式置 false,
+	// 由下面 delay = _intro_total_time 的 active 动画在打开动画结束时才放开。
+	window_select.active = false;
+	// 点击窗口外(压暗遮罩)也算一次关闭请求
+	window_select.dismiss_on_outside = true;
+
+	// 统一关闭流程: 关闭键 与 "点击窗口外" 共用, 避免两处退出动画不同步
+	window_select.close_window = function(el){
+		if(el.closing) return;
+		el.closing = true;
+		el.close_finished = false;
+		el.active = false;
+
+		var _exit_cards = el.list.children;
+		var _exit_card_time = 10;
+		var _exit_card_delay = 1;
+		var _exit_card_offset = 700;
+		var _exit_card_count = array_length(_exit_cards);
+		var _exit_visible_count = 0;
+		var _exit_content_y = el.list.content_gap;
+
+		for (var i = 0; i < _exit_card_count; i++) {
+			var _card = _exit_cards[i];
+			var _card_top = _exit_content_y;
+			var _card_bottom = _card_top + _card.height;
+			_exit_content_y += _card.height + el.list.content_gap;
+
+			var _visible_top = -el.list.scroll_y;
+			var _visible_bottom = _visible_top + el.list.height;
+			if (_card_bottom <= _visible_top || _card_top >= _visible_bottom) {
+				continue;
+			}
+
+			Anim_Create(_card, "x", ANIM_TWEEN.QUAD, ANIM_EASE.IN, _card.x, _exit_card_offset, _exit_card_time, _exit_visible_count * _exit_card_delay);
+			_exit_visible_count++;
+		}
+
+		var _exit_total_time = _exit_card_time + max(_exit_visible_count - 1, 0) * _exit_card_delay;
+		Anim_Create(el,"alpha",0,0,el.alpha,-el.alpha,_exit_total_time,0,function(){
+			self.close_finished = true;
+		});
+		Anim_Create(el,"black",0,0,el.black,-el.black,_exit_total_time);
+	}
+
 	window_select.step = function(el){
 		if(el.closing){
 			if(el.close_finished)el.Destroy();
 		}
 		else{
 			if(el.alpha <= 0)el.Destroy();
-			el.active = (el.alpha == 1);
 		}
 	}
 	window_select.AddEvent(UI_EVENT.CREATE,function(el){
@@ -125,44 +169,15 @@ create_select_window = function(type){//0为战机 1为装甲 2为副武器 3为
 
 	closebtn = new UIButton(spr_ui_button_close,602,17);
 	closebtn.list = list;
+	window_select.list = list; // close_window 从窗口侧取列表, 供关闭键与"点击窗口外"共用
 	closebtn.AddEvent(UI_EVENT.CLICK,function(el){
 		SFX_Play(snd_touch);
-		var _window = el.parent;
-		if(_window.closing) return;
-		_window.closing = true;
-		_window.close_finished = false;
-		_window.active = false;
-		el.active = false;
-
-		var _exit_cards = el.list.children;
-		var _exit_card_time = 10;
-		var _exit_card_delay = 1;
-		var _exit_card_offset = 700;
-		var _exit_card_count = array_length(_exit_cards);
-		var _exit_visible_count = 0;
-		var _exit_content_y = el.list.content_gap;
-
-		for (var i = 0; i < _exit_card_count; i++) {
-			var _card = _exit_cards[i];
-			var _card_top = _exit_content_y;
-			var _card_bottom = _card_top + _card.height;
-			_exit_content_y += _card.height + el.list.content_gap;
-
-			var _visible_top = -el.list.scroll_y;
-			var _visible_bottom = _visible_top + el.list.height;
-			if (_card_bottom <= _visible_top || _card_top >= _visible_bottom) {
-				continue;
-			}
-
-			Anim_Create(_card, "x", ANIM_TWEEN.QUAD, ANIM_EASE.IN, _card.x, _exit_card_offset, _exit_card_time, _exit_visible_count * _exit_card_delay);
-			_exit_visible_count++;
-		}
-
-		var _exit_total_time = _exit_card_time + max(_exit_visible_count - 1, 0) * _exit_card_delay;
-		Anim_Create(_window,"alpha",0,0,_window.alpha,-_window.alpha,_exit_total_time,0,function(){
-			self.close_finished = true;
-		});
-		Anim_Create(_window,"black",0,0,_window.black,-_window.black,_exit_total_time);
+		el.parent.close_window(el.parent);
+	});
+	// 点击窗口外 → 走和关闭键完全相同的退出流程
+	window_select.AddEvent(UI_EVENT.DISMISS,function(el){
+		SFX_Play(snd_touch);
+		el.close_window(el);
 	});
 	
 	window_select.AddContent(list);

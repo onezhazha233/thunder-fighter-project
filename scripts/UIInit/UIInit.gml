@@ -4,6 +4,7 @@ function UIInit(){
 		CREATE,   // 组件第一帧创建完成
 		DESTROY,  // 组件被销毁
 		CLICK,	// 组件被安全点击并松开
-		CHANGE	// 内部数值 value 变更
+		CHANGE,	// 内部数值 value 变更
+		DISMISS	// 在组件范围之外完成一次安全点击(dismiss_on_outside = true 时才会抛出)
 	}
 }

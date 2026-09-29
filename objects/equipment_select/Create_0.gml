@@ -149,9 +149,27 @@ btn_settings.AddEvent(UI_EVENT.CLICK,function(){
 	window_settings.alpha = 0.5;
 	window_settings.closing = false;
 	window_settings.close_finished = false;
+	// 打开动画播完之前不接受任何输入(关闭键与点击窗口外都不生效)。
+	// 注意 Anim_Step 在 delay 期间根本不写变量, 所以这里必须显式置 false,
+	// 由下面 delay = 20 的 active 动画在打开动画结束时才放开。
+	window_settings.active = false;
+	// 点击窗口外(压暗遮罩)也算一次关闭请求
+	window_settings.dismiss_on_outside = true;
+
+	// 统一关闭流程: 关闭键 与 "点击窗口外" 共用, 避免两处动画不同步
+	window_settings.close_window = function(el){
+		if(el.closing) return;
+		el.closing = true;
+		el.active = false;
+		Anim_Destroy(el);
+		Anim_Create(el,"alpha",0,0,el.alpha,-el.alpha,5,0);
+		Anim_Create(el,"black",0,0,el.black,-el.black,5);
+		Anim_Create(el,"scale_x",0,0,el.scale_x,0.9-el.scale_x,5);
+		Anim_Create(el,"scale_y",0,0,el.scale_y,0.9-el.scale_y,5);
+	}
+
 	window_settings.step = function(el){
 		if(el.alpha <= 0)el.Destroy();
-		el.active = (el.alpha == 1);
 	}
 	window_settings.AddEvent(UI_EVENT.CREATE,function(el){
 		other.btn_select_plane.active = false;
@@ -173,24 +191,22 @@ btn_settings.AddEvent(UI_EVENT.CLICK,function(){
 		other.btn_start_battle.active = true;
 		other.btn_settings.active = true;
 	});
-	Anim_Create(window_settings,"scale_x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0.95,0.06,10)
-	Anim_Create(window_settings,"scale_y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0.95,0.06,10)
-	Anim_Create(window_settings,"scale_x",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,1.01,-0.01,10,10)
-	Anim_Create(window_settings,"scale_y",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,1.01,-0.01,10,10)
-	Anim_Create(window_settings,"active",0,0,0,1,0,20);
-	Anim_Create(window_settings,"alpha",0,0,window_settings.alpha,1-window_settings.alpha,10);
-	Anim_Create(window_settings,"black",0,0,0,0.5,10);
+	// 点击窗口外 → 走和关闭键完全相同的关闭流程
+	window_settings.AddEvent(UI_EVENT.DISMISS,function(el){
+		SFX_Play(snd_touch);
+		el.close_window(el);
+	});
+	Anim_Create(window_settings,"scale_x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0.95,0.06,6)
+	Anim_Create(window_settings,"scale_y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,0.95,0.06,6)
+	Anim_Create(window_settings,"scale_x",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,1.01,-0.01,4,6)
+	Anim_Create(window_settings,"scale_y",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,1.01,-0.01,4,6)
+	Anim_Create(window_settings,"active",0,0,0,1,0,6);
+	Anim_Create(window_settings,"alpha",0,0,window_settings.alpha,1-window_settings.alpha,6);
+	Anim_Create(window_settings,"black",0,0,0,0.5,6);
 	closebtn = new UIButton(spr_ui_button_close,602,17);
 	closebtn.AddEvent(UI_EVENT.CLICK,function(el){
 		SFX_Play(snd_touch);
-		var _window = el.parent;
-		if(_window.closing) return;
-		_window.active = false;
-		el.active = false;
-		Anim_Create(_window,"alpha",0,0,_window.alpha,-_window.alpha,10,0);
-		Anim_Create(_window,"black",0,0,_window.black,-_window.black,10);
-		Anim_Create(_window,"scale_x",0,0,1,-0.1,10);
-		Anim_Create(_window,"scale_y",0,0,1,-0.1,10);
+		el.parent.close_window(el.parent);
 	});
 	window_settings.AddContent(closebtn);
 	window_settings_title = new UIText("{outline_color 0 65 140}{outline_thickness 2}"+Lang_GetString("ui.settings"),360,20);
