@@ -26,8 +26,8 @@
   },
   "name":"seq_enemy_boss_mini_og1_1_intro",
   "parent":{
-    "name":"sirius_twins",
-    "path":"folders/序列/enemy/boss/mini/sirius_twins.yy",
+    "name":"Sirius_Twins",
+    "path":"folders/序列/Enemy/Boss/Mini/Sirius_Twins.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

@@ -27,7 +27,7 @@
   "name":"seq_glacier_b_idle",
   "parent":{
     "name":"storm_glacier",
-    "path":"folders/序列/plane/glacier/storm_glacier.yy",
+    "path":"folders/序列/Plane/glacier/storm_glacier.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

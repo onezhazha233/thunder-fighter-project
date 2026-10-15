@@ -27,7 +27,7 @@
   "name":"seq_enemy_minion_13c0_intro",
   "parent":{
     "name":"13",
-    "path":"folders/序列/enemy/minion/13.yy",
+    "path":"folders/序列/Enemy/Minion/13.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

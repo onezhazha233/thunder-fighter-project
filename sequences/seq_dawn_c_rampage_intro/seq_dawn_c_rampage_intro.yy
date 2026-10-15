@@ -27,7 +27,7 @@
   "name":"seq_dawn_c_rampage_intro",
   "parent":{
     "name":"hope_dawn",
-    "path":"folders/序列/plane/dawn/hope_dawn.yy",
+    "path":"folders/序列/Plane/dawn/hope_dawn.yy",
   },
   "playback":0,
   "playbackSpeed":66.0,

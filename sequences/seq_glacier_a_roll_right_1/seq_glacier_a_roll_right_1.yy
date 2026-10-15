@@ -27,7 +27,7 @@
   "name":"seq_glacier_a_roll_right_1",
   "parent":{
     "name":"glacier_zero",
-    "path":"folders/序列/plane/glacier/glacier_zero.yy",
+    "path":"folders/序列/Plane/glacier/glacier_zero.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

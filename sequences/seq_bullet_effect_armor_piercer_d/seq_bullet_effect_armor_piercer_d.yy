@@ -32,8 +32,8 @@
   },
   "name":"seq_bullet_effect_armor_piercer_d",
   "parent":{
-    "name":"armor_piercer",
-    "path":"folders/序列/effect/bullet_player/subweapon/armor_piercer.yy",
+    "name":"Armor_Piercer",
+    "path":"folders/序列/Effect/Bullet_Player/Subweapon/Armor_Piercer.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

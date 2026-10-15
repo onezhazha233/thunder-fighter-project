@@ -27,7 +27,7 @@
   "name":"seq_xeno_a_idle",
   "parent":{
     "name":"xeno_zero",
-    "path":"folders/序列/plane/xeno/xeno_zero.yy",
+    "path":"folders/序列/Plane/xeno/xeno_zero.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

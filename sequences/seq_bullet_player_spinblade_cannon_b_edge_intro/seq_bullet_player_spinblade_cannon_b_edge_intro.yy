@@ -27,7 +27,7 @@
   "name":"seq_bullet_player_spinblade_cannon_b_edge_intro",
   "parent":{
     "name":"electronic_spinblade_cannon",
-    "path":"folders/序列/bullet_player/wingman/spinblade_cannon/electronic_spinblade_cannon.yy",
+    "path":"folders/序列/Bullet_Player/Wingman/spinblade_cannon/electronic_spinblade_cannon.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

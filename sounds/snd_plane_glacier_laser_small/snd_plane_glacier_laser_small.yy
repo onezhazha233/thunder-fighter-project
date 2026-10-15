@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_plane_glacier_laser_small",
   "parent":{
-    "name":"sfx",
-    "path":"folders/声音/sfx.yy",
+    "name":"SFX",
+    "path":"folders/声音/SFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

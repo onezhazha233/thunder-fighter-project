@@ -27,7 +27,7 @@
   "name":"seq_assault_b_rampage_intro",
   "parent":{
     "name":"pulse_assault",
-    "path":"folders/序列/plane/assault/pulse_assault.yy",
+    "path":"folders/序列/Plane/assault/pulse_assault.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

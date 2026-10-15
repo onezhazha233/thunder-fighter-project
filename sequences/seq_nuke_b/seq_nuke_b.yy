@@ -27,7 +27,7 @@
   "name":"seq_nuke_b",
   "parent":{
     "name":"nuclear_bomb",
-    "path":"folders/序列/bullet_player/subweapon/nuke/nuclear_bomb.yy",
+    "path":"folders/序列/Bullet_Player/Subweapon/nuke/nuclear_bomb.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

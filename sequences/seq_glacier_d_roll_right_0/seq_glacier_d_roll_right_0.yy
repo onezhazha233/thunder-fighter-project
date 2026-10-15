@@ -27,7 +27,7 @@
   "name":"seq_glacier_d_roll_right_0",
   "parent":{
     "name":"x_wing_glacier",
-    "path":"folders/序列/plane/glacier/x_wing_glacier.yy",
+    "path":"folders/序列/Plane/glacier/x_wing_glacier.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

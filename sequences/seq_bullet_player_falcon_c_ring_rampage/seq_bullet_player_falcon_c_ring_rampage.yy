@@ -41,7 +41,7 @@
   "name":"seq_bullet_player_falcon_c_ring_rampage",
   "parent":{
     "name":"azureflame_falcon",
-    "path":"folders/序列/bullet_player/plane/falcon/azureflame_falcon.yy",
+    "path":"folders/序列/Bullet_Player/Plane/falcon/azureflame_falcon.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

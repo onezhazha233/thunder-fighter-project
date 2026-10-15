@@ -27,7 +27,7 @@
   "name":"seq_enemy_minion_og0c0_intro",
   "parent":{
     "name":"og0",
-    "path":"folders/序列/enemy/minion/og0.yy",
+    "path":"folders/序列/Enemy/Minion/og0.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

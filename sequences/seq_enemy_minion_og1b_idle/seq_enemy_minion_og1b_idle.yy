@@ -27,7 +27,7 @@
   "name":"seq_enemy_minion_og1b_idle",
   "parent":{
     "name":"og1",
-    "path":"folders/序列/enemy/minion/og1.yy",
+    "path":"folders/序列/Enemy/Minion/og1.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

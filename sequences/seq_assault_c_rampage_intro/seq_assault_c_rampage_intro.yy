@@ -27,7 +27,7 @@
   "name":"seq_assault_c_rampage_intro",
   "parent":{
     "name":"swift_assault",
-    "path":"folders/序列/plane/assault/swift_assault.yy",
+    "path":"folders/序列/Plane/assault/swift_assault.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

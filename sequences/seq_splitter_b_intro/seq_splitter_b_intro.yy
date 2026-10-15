@@ -27,7 +27,7 @@
   "name":"seq_splitter_b_intro",
   "parent":{
     "name":"razor_splitter",
-    "path":"folders/序列/bullet_player/subweapon/splitter/razor_splitter.yy",
+    "path":"folders/序列/Bullet_Player/Subweapon/splitter/razor_splitter.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

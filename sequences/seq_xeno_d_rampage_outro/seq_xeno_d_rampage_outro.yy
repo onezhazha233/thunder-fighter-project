@@ -27,7 +27,7 @@
   "name":"seq_xeno_d_rampage_outro",
   "parent":{
     "name":"ghost_xeno",
-    "path":"folders/序列/plane/xeno/ghost_xeno.yy",
+    "path":"folders/序列/Plane/xeno/ghost_xeno.yy",
   },
   "playback":0,
   "playbackSpeed":67.0,

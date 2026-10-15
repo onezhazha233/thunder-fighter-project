@@ -27,7 +27,7 @@
   "name":"seq_enemy_minion_10c1_flame",
   "parent":{
     "name":"10",
-    "path":"folders/序列/enemy/minion/10.yy",
+    "path":"folders/序列/Enemy/Minion/10.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

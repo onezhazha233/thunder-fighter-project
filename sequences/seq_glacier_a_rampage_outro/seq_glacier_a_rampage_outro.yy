@@ -27,7 +27,7 @@
   "name":"seq_glacier_a_rampage_outro",
   "parent":{
     "name":"glacier_zero",
-    "path":"folders/序列/plane/glacier/glacier_zero.yy",
+    "path":"folders/序列/Plane/glacier/glacier_zero.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

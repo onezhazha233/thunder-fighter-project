@@ -26,8 +26,8 @@
   },
   "name":"seq_enemy_boss_large_15_p2_intro",
   "parent":{
-    "name":"dark_assault",
-    "path":"folders/序列/enemy/boss/large/dark_assault.yy",
+    "name":"Dark_Assault",
+    "path":"folders/序列/Enemy/Boss/Large/Dark_Assault.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

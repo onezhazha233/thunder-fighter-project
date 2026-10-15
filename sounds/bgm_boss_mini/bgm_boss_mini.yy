@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"bgm_boss_mini",
   "parent":{
-    "name":"bgm",
-    "path":"folders/声音/bgm.yy",
+    "name":"BGM",
+    "path":"folders/声音/BGM.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

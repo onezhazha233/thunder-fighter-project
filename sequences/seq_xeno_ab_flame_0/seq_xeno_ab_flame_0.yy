@@ -27,7 +27,7 @@
   "name":"seq_xeno_ab_flame_0",
   "parent":{
     "name":"xeno",
-    "path":"folders/序列/plane/xeno.yy",
+    "path":"folders/序列/Plane/xeno.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

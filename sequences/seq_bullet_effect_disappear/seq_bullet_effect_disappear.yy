@@ -32,8 +32,8 @@
   },
   "name":"seq_bullet_effect_disappear",
   "parent":{
-    "name":"bullet_enemy",
-    "path":"folders/序列/effect/bullet_enemy.yy",
+    "name":"Bullet_Enemy",
+    "path":"folders/序列/Effect/Bullet_Enemy.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

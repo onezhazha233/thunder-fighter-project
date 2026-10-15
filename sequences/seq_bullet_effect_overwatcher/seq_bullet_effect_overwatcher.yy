@@ -32,8 +32,8 @@
   },
   "name":"seq_bullet_effect_overwatcher",
   "parent":{
-    "name":"overwatcher",
-    "path":"folders/序列/effect/bullet_player/plane/overwatcher.yy",
+    "name":"Overwatcher",
+    "path":"folders/序列/Effect/Bullet_Player/Plane/Overwatcher.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

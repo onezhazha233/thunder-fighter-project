@@ -41,7 +41,7 @@
   "name":"seq_bullet_player_falcon_b_ring",
   "parent":{
     "name":"fiery_falcon",
-    "path":"folders/序列/bullet_player/plane/falcon/fiery_falcon.yy",
+    "path":"folders/序列/Bullet_Player/Plane/falcon/fiery_falcon.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

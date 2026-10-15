@@ -26,8 +26,8 @@
   },
   "name":"seq_battle_item_crystal_1",
   "parent":{
-    "name":"item",
-    "path":"folders/序列/item.yy",
+    "name":"Item",
+    "path":"folders/序列/Item.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

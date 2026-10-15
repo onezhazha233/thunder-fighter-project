@@ -27,7 +27,7 @@
   "name":"seq_fire_rampage",
   "parent":{
     "name":"fire",
-    "path":"folders/序列/plane/fire.yy",
+    "path":"folders/序列/Plane/fire.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

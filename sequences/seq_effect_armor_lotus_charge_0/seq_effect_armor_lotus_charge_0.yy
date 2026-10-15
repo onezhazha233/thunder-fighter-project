@@ -40,8 +40,8 @@
   },
   "name":"seq_effect_armor_lotus_charge_0",
   "parent":{
-    "name":"armor",
-    "path":"folders/序列/effect/armor.yy",
+    "name":"Armor",
+    "path":"folders/序列/Effect/Armor.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

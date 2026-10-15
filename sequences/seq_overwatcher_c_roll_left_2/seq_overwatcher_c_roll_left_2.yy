@@ -27,7 +27,7 @@
   "name":"seq_overwatcher_c_roll_left_2",
   "parent":{
     "name":"starfield_overwatcher",
-    "path":"folders/序列/plane/overwatcher/starfield_overwatcher.yy",
+    "path":"folders/序列/Plane/overwatcher/starfield_overwatcher.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

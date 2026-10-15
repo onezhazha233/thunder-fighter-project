@@ -27,7 +27,7 @@
   "name":"seq_bullet_player_falcon_a_fire_rampage",
   "parent":{
     "name":"falcon_zero",
-    "path":"folders/序列/bullet_player/plane/falcon/falcon_zero.yy",
+    "path":"folders/序列/Bullet_Player/Plane/falcon/falcon_zero.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

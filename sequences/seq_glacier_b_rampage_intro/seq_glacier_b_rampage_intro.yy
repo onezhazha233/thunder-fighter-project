@@ -27,7 +27,7 @@
   "name":"seq_glacier_b_rampage_intro",
   "parent":{
     "name":"storm_glacier",
-    "path":"folders/序列/plane/glacier/storm_glacier.yy",
+    "path":"folders/序列/Plane/glacier/storm_glacier.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

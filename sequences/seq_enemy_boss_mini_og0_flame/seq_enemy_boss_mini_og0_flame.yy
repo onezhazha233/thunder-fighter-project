@@ -26,8 +26,8 @@
   },
   "name":"seq_enemy_boss_mini_og0_flame",
   "parent":{
-    "name":"spikx_flarebolt",
-    "path":"folders/序列/enemy/boss/mini/spikx_flarebolt.yy",
+    "name":"Spikx_Flarebolt",
+    "path":"folders/序列/Enemy/Boss/Mini/Spikx_Flarebolt.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

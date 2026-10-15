@@ -27,7 +27,7 @@
   "name":"seq_xeno_b_rampage_intro",
   "parent":{
     "name":"steel_xeno",
-    "path":"folders/序列/plane/xeno/steel_xeno.yy",
+    "path":"folders/序列/Plane/xeno/steel_xeno.yy",
   },
   "playback":0,
   "playbackSpeed":67.0,

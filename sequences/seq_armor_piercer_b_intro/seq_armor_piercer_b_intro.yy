@@ -27,7 +27,7 @@
   "name":"seq_armor_piercer_b_intro",
   "parent":{
     "name":"alloy_armor piercer",
-    "path":"folders/序列/bullet_player/subweapon/armor_piercer/alloy_armor piercer.yy",
+    "path":"folders/序列/Bullet_Player/Subweapon/armor_piercer/alloy_armor piercer.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

@@ -26,8 +26,8 @@
   },
   "name":"seq_enemy_boss_large_1_p2_flame_1",
   "parent":{
-    "name":"galaxy_ash",
-    "path":"folders/序列/enemy/boss/large/galaxy_ash.yy",
+    "name":"Galaxy_Ash",
+    "path":"folders/序列/Enemy/Boss/Large/Galaxy_Ash.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

@@ -27,7 +27,7 @@
   "name":"seq_apex_d_rampage",
   "parent":{
     "name":"thunder_apex",
-    "path":"folders/序列/plane/apex/thunder_apex.yy",
+    "path":"folders/序列/Plane/apex/thunder_apex.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

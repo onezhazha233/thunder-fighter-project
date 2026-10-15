@@ -32,8 +32,8 @@
   },
   "name":"seq_battle_quantum_shield_fade",
   "parent":{
-    "name":"item",
-    "path":"folders/序列/item.yy",
+    "name":"Item",
+    "path":"folders/序列/Item.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

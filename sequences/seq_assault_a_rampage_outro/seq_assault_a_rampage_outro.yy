@@ -35,7 +35,7 @@
   "name":"seq_assault_a_rampage_outro",
   "parent":{
     "name":"assault_zero",
-    "path":"folders/序列/plane/assault/assault_zero.yy",
+    "path":"folders/序列/Plane/assault/assault_zero.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

@@ -26,8 +26,8 @@
   },
   "name":"seq_enemy_boss_mini_og2_attack_0",
   "parent":{
-    "name":"hellhound",
-    "path":"folders/序列/enemy/boss/mini/hellhound.yy",
+    "name":"Hellhound",
+    "path":"folders/序列/Enemy/Boss/Mini/Hellhound.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

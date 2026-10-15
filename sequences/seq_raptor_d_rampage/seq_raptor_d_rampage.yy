@@ -27,7 +27,7 @@
   "name":"seq_raptor_d_rampage",
   "parent":{
     "name":"blaze_phoenix",
-    "path":"folders/序列/plane/raptor/blaze_phoenix.yy",
+    "path":"folders/序列/Plane/raptor/blaze_phoenix.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

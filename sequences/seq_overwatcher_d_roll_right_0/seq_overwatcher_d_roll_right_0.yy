@@ -27,7 +27,7 @@
   "name":"seq_overwatcher_d_roll_right_0",
   "parent":{
     "name":"starriver_overwatcher",
-    "path":"folders/序列/plane/overwatcher/starriver_overwatcher.yy",
+    "path":"folders/序列/Plane/overwatcher/starriver_overwatcher.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

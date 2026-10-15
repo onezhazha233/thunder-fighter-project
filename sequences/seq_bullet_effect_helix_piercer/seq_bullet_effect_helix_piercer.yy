@@ -32,8 +32,8 @@
   },
   "name":"seq_bullet_effect_helix_piercer",
   "parent":{
-    "name":"helix_piercer",
-    "path":"folders/序列/effect/bullet_player/subweapon/helix_piercer.yy",
+    "name":"Helix_Piercer",
+    "path":"folders/序列/Effect/Bullet_Player/Subweapon/Helix_Piercer.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

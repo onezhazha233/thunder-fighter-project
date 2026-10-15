@@ -32,8 +32,8 @@
   },
   "name":"seq_enemy_boss_mini_0_die",
   "parent":{
-    "name":"red_heavy",
-    "path":"folders/序列/enemy/boss/mini/red_heavy.yy",
+    "name":"Red_Heavy",
+    "path":"folders/序列/Enemy/Boss/Mini/Red_Heavy.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

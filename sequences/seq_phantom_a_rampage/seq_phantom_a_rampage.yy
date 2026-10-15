@@ -27,7 +27,7 @@
   "name":"seq_phantom_a_rampage",
   "parent":{
     "name":"phantom_zero",
-    "path":"folders/序列/plane/phantom/phantom_zero.yy",
+    "path":"folders/序列/Plane/phantom/phantom_zero.yy",
   },
   "playback":1,
   "playbackSpeed":67.0,

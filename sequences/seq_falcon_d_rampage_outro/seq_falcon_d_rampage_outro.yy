@@ -27,7 +27,7 @@
   "name":"seq_falcon_d_rampage_outro",
   "parent":{
     "name":"sky_scorching_falcon",
-    "path":"folders/序列/plane/falcon/sky_scorching_falcon.yy",
+    "path":"folders/序列/Plane/falcon/sky_scorching_falcon.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

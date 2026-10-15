@@ -27,7 +27,7 @@
   "name":"seq_bullet_player_falcon_d_fire_rampage",
   "parent":{
     "name":"sky_scorching_falcon",
-    "path":"folders/序列/bullet_player/plane/falcon/sky_scorching_falcon.yy",
+    "path":"folders/序列/Bullet_Player/Plane/falcon/sky_scorching_falcon.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

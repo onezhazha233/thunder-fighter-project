@@ -27,7 +27,7 @@
   "name":"seq_dawn_a_rampage_outro",
   "parent":{
     "name":"dawn_zero",
-    "path":"folders/序列/plane/dawn/dawn_zero.yy",
+    "path":"folders/序列/Plane/dawn/dawn_zero.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

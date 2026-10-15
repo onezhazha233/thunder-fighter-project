@@ -27,7 +27,7 @@
   "name":"seq_dawn_c_flame_0",
   "parent":{
     "name":"hope_dawn",
-    "path":"folders/序列/plane/dawn/hope_dawn.yy",
+    "path":"folders/序列/Plane/dawn/hope_dawn.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

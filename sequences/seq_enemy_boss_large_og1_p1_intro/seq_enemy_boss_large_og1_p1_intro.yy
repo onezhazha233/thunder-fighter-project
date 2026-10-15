@@ -34,8 +34,8 @@
   },
   "name":"seq_enemy_boss_large_og1_p1_intro",
   "parent":{
-    "name":"laser_piano",
-    "path":"folders/序列/enemy/boss/large/laser_piano.yy",
+    "name":"Laser_Piano",
+    "path":"folders/序列/Enemy/Boss/Large/Laser_Piano.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

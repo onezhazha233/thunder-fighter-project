@@ -32,8 +32,8 @@
   },
   "name":"seq_enemy_boss_large_og3_die",
   "parent":{
-    "name":"shockwave",
-    "path":"folders/序列/enemy/boss/large/shockwave.yy",
+    "name":"Shockwave",
+    "path":"folders/序列/Enemy/Boss/Large/Shockwave.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"bgm_endless_remix",
   "parent":{
-    "name":"bgm",
-    "path":"folders/声音/bgm.yy",
+    "name":"BGM",
+    "path":"folders/声音/BGM.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

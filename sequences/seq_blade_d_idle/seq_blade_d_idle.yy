@@ -27,7 +27,7 @@
   "name":"seq_blade_d_idle",
   "parent":{
     "name":"devil_blade",
-    "path":"folders/序列/plane/blade/devil_blade.yy",
+    "path":"folders/序列/Plane/blade/devil_blade.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

@@ -27,7 +27,7 @@
   "name":"seq_falcon_a_roll_right_1",
   "parent":{
     "name":"falcon_zero",
-    "path":"folders/序列/plane/falcon/falcon_zero.yy",
+    "path":"folders/序列/Plane/falcon/falcon_zero.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

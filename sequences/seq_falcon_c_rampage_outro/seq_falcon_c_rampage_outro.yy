@@ -27,7 +27,7 @@
   "name":"seq_falcon_c_rampage_outro",
   "parent":{
     "name":"azureflame_falcon",
-    "path":"folders/序列/plane/falcon/azureflame_falcon.yy",
+    "path":"folders/序列/Plane/falcon/azureflame_falcon.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

@@ -27,7 +27,7 @@
   "name":"seq_overwatcher_d_rampage_intro_1",
   "parent":{
     "name":"starriver_overwatcher",
-    "path":"folders/序列/plane/overwatcher/starriver_overwatcher.yy",
+    "path":"folders/序列/Plane/overwatcher/starriver_overwatcher.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

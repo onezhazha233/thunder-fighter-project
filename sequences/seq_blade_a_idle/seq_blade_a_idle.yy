@@ -35,7 +35,7 @@
   "name":"seq_blade_a_idle",
   "parent":{
     "name":"blade_zero",
-    "path":"folders/序列/plane/blade/blade_zero.yy",
+    "path":"folders/序列/Plane/blade/blade_zero.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

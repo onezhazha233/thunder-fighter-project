@@ -32,8 +32,8 @@
   },
   "name":"seq_bullet_effect_sniper",
   "parent":{
-    "name":"sniper",
-    "path":"folders/序列/effect/bullet_player/wingman/sniper.yy",
+    "name":"Sniper",
+    "path":"folders/序列/Effect/Bullet_Player/Wingman/Sniper.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

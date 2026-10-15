@@ -27,7 +27,7 @@
   "name":"seq_splitter_a_small_rampage",
   "parent":{
     "name":"spike_splitter",
-    "path":"folders/序列/bullet_player/subweapon/splitter/spike_splitter.yy",
+    "path":"folders/序列/Bullet_Player/Subweapon/splitter/spike_splitter.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

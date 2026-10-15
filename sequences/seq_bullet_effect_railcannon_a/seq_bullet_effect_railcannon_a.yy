@@ -32,8 +32,8 @@
   },
   "name":"seq_bullet_effect_railcannon_a",
   "parent":{
-    "name":"railcannon",
-    "path":"folders/序列/effect/bullet_player/wingman/railcannon.yy",
+    "name":"Railcannon",
+    "path":"folders/序列/Effect/Bullet_Player/Wingman/Railcannon.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

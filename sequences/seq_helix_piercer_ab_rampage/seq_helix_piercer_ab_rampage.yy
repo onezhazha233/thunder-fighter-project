@@ -27,7 +27,7 @@
   "name":"seq_helix_piercer_ab_rampage",
   "parent":{
     "name":"helix_piercer",
-    "path":"folders/序列/bullet_player/subweapon/helix_piercer.yy",
+    "path":"folders/序列/Bullet_Player/Subweapon/helix_piercer.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

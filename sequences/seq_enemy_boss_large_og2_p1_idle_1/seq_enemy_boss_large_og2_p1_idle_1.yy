@@ -26,8 +26,8 @@
   },
   "name":"seq_enemy_boss_large_og2_p1_idle_1",
   "parent":{
-    "name":"oblivion_star_ring",
-    "path":"folders/序列/enemy/boss/large/oblivion_star_ring.yy",
+    "name":"Oblivion_Star_Ring",
+    "path":"folders/序列/Enemy/Boss/Large/Oblivion_Star_Ring.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

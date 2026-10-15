@@ -27,7 +27,7 @@
   "name":"seq_falcon_b_rampage_outro",
   "parent":{
     "name":"fiery_falcon",
-    "path":"folders/序列/plane/falcon/fiery_falcon.yy",
+    "path":"folders/序列/Plane/falcon/fiery_falcon.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

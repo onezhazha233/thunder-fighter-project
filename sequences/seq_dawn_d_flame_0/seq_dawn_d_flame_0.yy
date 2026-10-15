@@ -27,7 +27,7 @@
   "name":"seq_dawn_d_flame_0",
   "parent":{
     "name":"wisdom_dawn",
-    "path":"folders/序列/plane/dawn/wisdom_dawn.yy",
+    "path":"folders/序列/Plane/dawn/wisdom_dawn.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

@@ -33,7 +33,7 @@
   "name":"seq_bullet_player_falcon_explosion",
   "parent":{
     "name":"falcon",
-    "path":"folders/序列/bullet_player/plane/falcon.yy",
+    "path":"folders/序列/Bullet_Player/Plane/falcon.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

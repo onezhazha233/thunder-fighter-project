@@ -32,8 +32,8 @@
   },
   "name":"seq_bullet_effect_missile_cd",
   "parent":{
-    "name":"missile",
-    "path":"folders/序列/effect/bullet_player/subweapon/missile.yy",
+    "name":"Missile",
+    "path":"folders/序列/Effect/Bullet_Player/Subweapon/Missile.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

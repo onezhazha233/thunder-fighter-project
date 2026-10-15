@@ -27,7 +27,7 @@
   "name":"seq_phantom_c_flame",
   "parent":{
     "name":"void_phantom",
-    "path":"folders/序列/plane/phantom/void_phantom.yy",
+    "path":"folders/序列/Plane/phantom/void_phantom.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

@@ -27,7 +27,7 @@
   "name":"seq_blade_c_rampage_intro",
   "parent":{
     "name":"demon_blade",
-    "path":"folders/序列/plane/blade/demon_blade.yy",
+    "path":"folders/序列/Plane/blade/demon_blade.yy",
   },
   "playback":0,
   "playbackSpeed":67.0,

@@ -27,7 +27,7 @@
   "name":"seq_xeno_c_rampage_intro",
   "parent":{
     "name":"blast_xeno",
-    "path":"folders/序列/plane/xeno/blast_xeno.yy",
+    "path":"folders/序列/Plane/xeno/blast_xeno.yy",
   },
   "playback":0,
   "playbackSpeed":67.0,

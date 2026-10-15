@@ -32,8 +32,8 @@
   },
   "name":"seq_battle_item_effect_quantum_shield",
   "parent":{
-    "name":"item",
-    "path":"folders/序列/item.yy",
+    "name":"Item",
+    "path":"folders/序列/Item.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

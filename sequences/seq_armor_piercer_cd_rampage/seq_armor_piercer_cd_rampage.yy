@@ -27,7 +27,7 @@
   "name":"seq_armor_piercer_cd_rampage",
   "parent":{
     "name":"armor_piercer",
-    "path":"folders/序列/bullet_player/subweapon/armor_piercer.yy",
+    "path":"folders/序列/Bullet_Player/Subweapon/armor_piercer.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

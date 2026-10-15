@@ -27,7 +27,7 @@
   "name":"seq_raptor_c_rampage",
   "parent":{
     "name":"hurricane_griffin",
-    "path":"folders/序列/plane/raptor/hurricane_griffin.yy",
+    "path":"folders/序列/Plane/raptor/hurricane_griffin.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

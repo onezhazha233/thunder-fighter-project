@@ -27,7 +27,7 @@
   "name":"seq_blade_a_rampage_intro",
   "parent":{
     "name":"blade_zero",
-    "path":"folders/序列/plane/blade/blade_zero.yy",
+    "path":"folders/序列/Plane/blade/blade_zero.yy",
   },
   "playback":0,
   "playbackSpeed":67.0,

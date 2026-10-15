@@ -27,7 +27,7 @@
   "name":"seq_overwatcher_a_rampage_0",
   "parent":{
     "name":"overwatcher_zero",
-    "path":"folders/序列/plane/overwatcher/overwatcher_zero.yy",
+    "path":"folders/序列/Plane/overwatcher/overwatcher_zero.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

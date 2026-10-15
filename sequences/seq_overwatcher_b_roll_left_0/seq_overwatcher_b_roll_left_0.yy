@@ -27,7 +27,7 @@
   "name":"seq_overwatcher_b_roll_left_0",
   "parent":{
     "name":"stellar_overwatcher",
-    "path":"folders/序列/plane/overwatcher/stellar_overwatcher.yy",
+    "path":"folders/序列/Plane/overwatcher/stellar_overwatcher.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

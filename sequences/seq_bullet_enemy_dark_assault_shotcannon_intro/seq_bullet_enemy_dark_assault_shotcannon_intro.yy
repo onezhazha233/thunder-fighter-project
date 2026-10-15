@@ -26,8 +26,8 @@
   },
   "name":"seq_bullet_enemy_dark_assault_shotcannon_intro",
   "parent":{
-    "name":"bullet_enemy",
-    "path":"folders/序列/bullet_enemy.yy",
+    "name":"Bullet_Enemy",
+    "path":"folders/序列/Bullet_Enemy.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

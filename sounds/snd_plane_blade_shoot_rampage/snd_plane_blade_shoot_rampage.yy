@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_plane_blade_shoot_rampage",
   "parent":{
-    "name":"sfx",
-    "path":"folders/声音/sfx.yy",
+    "name":"SFX",
+    "path":"folders/声音/SFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

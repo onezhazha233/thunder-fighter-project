@@ -27,7 +27,7 @@
   "name":"seq_glacier_c_rampage_outro",
   "parent":{
     "name":"nebula_glacier",
-    "path":"folders/序列/plane/glacier/nebula_glacier.yy",
+    "path":"folders/序列/Plane/glacier/nebula_glacier.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

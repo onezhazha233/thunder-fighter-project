@@ -27,7 +27,7 @@
   "name":"seq_azurewing_d_rampage",
   "parent":{
     "name":"abyss_azurewing",
-    "path":"folders/序列/plane/azurewing/abyss_azurewing.yy",
+    "path":"folders/序列/Plane/azurewing/abyss_azurewing.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

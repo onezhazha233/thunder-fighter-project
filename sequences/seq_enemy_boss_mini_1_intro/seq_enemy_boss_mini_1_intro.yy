@@ -26,8 +26,8 @@
   },
   "name":"seq_enemy_boss_mini_1_intro",
   "parent":{
-    "name":"wildraubtier",
-    "path":"folders/序列/enemy/boss/mini/wildraubtier.yy",
+    "name":"Wildraubtier",
+    "path":"folders/序列/Enemy/Boss/Mini/Wildraubtier.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

@@ -27,7 +27,7 @@
   "name":"seq_splitter_c_small",
   "parent":{
     "name":"edge_splitter",
-    "path":"folders/序列/bullet_player/subweapon/splitter/edge_splitter.yy",
+    "path":"folders/序列/Bullet_Player/Subweapon/splitter/edge_splitter.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

@@ -41,7 +41,7 @@
   "name":"seq_bullet_player_falcon_a_ring_rampage",
   "parent":{
     "name":"falcon_zero",
-    "path":"folders/序列/bullet_player/plane/falcon/falcon_zero.yy",
+    "path":"folders/序列/Bullet_Player/Plane/falcon/falcon_zero.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

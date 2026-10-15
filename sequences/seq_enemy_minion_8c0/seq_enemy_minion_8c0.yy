@@ -27,7 +27,7 @@
   "name":"seq_enemy_minion_8c0",
   "parent":{
     "name":"8",
-    "path":"folders/序列/enemy/minion/8.yy",
+    "path":"folders/序列/Enemy/Minion/8.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

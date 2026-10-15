@@ -27,7 +27,7 @@
   "name":"seq_apex_b_rampage",
   "parent":{
     "name":"pulse_apex",
-    "path":"folders/序列/plane/apex/pulse_apex.yy",
+    "path":"folders/序列/Plane/apex/pulse_apex.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

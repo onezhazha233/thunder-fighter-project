@@ -26,8 +26,8 @@
   },
   "name":"seq_enemy_boss_large_0_p1_pre_flame",
   "parent":{
-    "name":"breaker_III",
-    "path":"folders/序列/enemy/boss/large/breaker_III.yy",
+    "name":"Breaker_III",
+    "path":"folders/序列/Enemy/Boss/Large/Breaker_III.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

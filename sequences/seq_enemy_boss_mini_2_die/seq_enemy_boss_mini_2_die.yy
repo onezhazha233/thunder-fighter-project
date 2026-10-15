@@ -40,8 +40,8 @@
   },
   "name":"seq_enemy_boss_mini_2_die",
   "parent":{
-    "name":"huckebein",
-    "path":"folders/序列/enemy/boss/mini/huckebein.yy",
+    "name":"Huckebein",
+    "path":"folders/序列/Enemy/Boss/Mini/Huckebein.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

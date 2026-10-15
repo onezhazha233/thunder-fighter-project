@@ -27,7 +27,7 @@
   "name":"seq_raptor_a_rampage_outro",
   "parent":{
     "name":"raptor_zero",
-    "path":"folders/序列/plane/raptor/raptor_zero.yy",
+    "path":"folders/序列/Plane/raptor/raptor_zero.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

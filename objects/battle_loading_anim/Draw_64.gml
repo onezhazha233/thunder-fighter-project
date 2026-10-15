@@ -1,4 +1,5 @@
 live;
+GuiClip_Start()
 draw_sprite_ext(spr_ui_loading_bg,0,0,down_y+60,1,1,0,-1,1)
 draw_sprite_ext(spr_ui_loading_bg,1,0,up_y+60,1,1,0,-1,1)
 draw_sprite_ext(spr_ui_loading_light,1,360,480+60,0.45,1,0,-1,light_alpha)
@@ -14,6 +15,7 @@ draw_sprite_ext(spr_ui_loading_screen_border,1,0,down_y+642+60,1,-1,0,-1,center_
 draw_sprite_ext(spr_ui_loading_screen_border,1,720,down_y+642+60,-1,-1,0,-1,center_alpha)
 draw_sprite_ext(spr_ui_loading_screen_border,1,0,up_y+338+60,1,1,0,-1,center_alpha)
 draw_sprite_ext(spr_ui_loading_screen_border,1,720,up_y+338+60,-1,1,0,-1,center_alpha)
+GuiClip_End()
 
 /*draw_text(0,20,time)
 draw_text(0,50,state)

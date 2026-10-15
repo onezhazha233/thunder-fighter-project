@@ -32,8 +32,8 @@
   },
   "name":"seq_bullet_effect_dawn_a",
   "parent":{
-    "name":"dawn",
-    "path":"folders/序列/effect/bullet_player/plane/dawn.yy",
+    "name":"Dawn",
+    "path":"folders/序列/Effect/Bullet_Player/Plane/Dawn.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,
