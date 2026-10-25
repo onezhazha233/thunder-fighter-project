@@ -125,140 +125,74 @@ attack_0 = function(){//水蓝
 	}
 }
 	
-attack_1 = function(){//莲华螺旋(三段式:旋涡-绽放-绝)
+attack_1 = function(){//延迟五六连续散射
 	live_name = "emitter_enemy_test:attack_1";
 	live;
-
-	a1_pos = Player_GetPos();
-	px = a1_pos[0];
-	py = a1_pos[1];
-
 	if(attack_time = 1){
-		a1_spin = 1;       //旋涡旋转方向
-		a1_rate = 2;       //旋涡发射间隔
-		a1_arms = 2;       //旋涡臂数
-		a1_spd = 3.6;      //旋涡末速
-		a1_waves = [];     //种子激活队列 {t,list,mode,done}
-		//封位环:绕目标悬停一圈,激活后整环狙向目标当前位置收网
-		a1_spawn_ring = function(_cx,_cy,_count,_radius,_delay){
-			var _list = [];
-			for(m=0;m<_count;m+=1){
-				ang = m*360/_count-90;
-				blt = MakeEnemyBullet(_cx+lengthdir_x(_radius,ang),_cy+lengthdir_y(_radius,ang),bullet_enemy_normal,spr_bullet_enemy_normal_2);
-				blt.image_xscale = 1.15;
-				blt.image_yscale = 1.15;
-				blt.speed = 0;
-				array_push(_list,blt);
+		a = 0;
+	}
+	if(attack_time < 25){
+		if(attack_time mod 5 = 1){
+			blt = MakeEnemyBullet(x,y,bullet_enemy_normal);
+			blt.direction = a*72-90;
+			blt.a = a;
+			Anim_Create(blt,"speed",0,0,15,-15,30);
+			with(blt){
+				time = 0;
+				aa = 0;
+				custom_function = function(){
+					time += 1;
+					if(time >= 60-a*6&&time <= 110-a*6&&(time-a*6) mod 10 = 0){
+						for(i=0;i<5;i+=1){
+							blt = MakeEnemyBullet(x,y,bullet_enemy_normal,spr_bullet_enemy_normal_1);
+							blt.direction = direction + (aa*25+i*20)*(i mod 2 = 0 ? 1 : -1)+160;
+							blt.image_angle = blt.direction;
+							blt.speed = 10+(i mod 2 = 0 ? 2 : 0);
+							Anim_Create(blt,"speed",0,0,speed,-speed/2+5,10,10);
+							Anim_Create(blt,"speed",0,0,5,5+i,30,(60-i*5));
+						}
+						aa += 1;
+					}
+					if(time > 110-a*6)duration = 1;
+				}
 			}
-			array_push(a1_waves,{t:attack_time+_delay,list:_list,mode:0,done:false});
-		}
-		//黄金角绽放盘:种子悬停显形,激活后向外奇偶双旋炸开
-		a1_spawn_bloom = function(_cx,_cy,_count,_size,_delay){
-			var _list = [];
-			for(m=0;m<_count;m+=1){
-				ang = m*137.508;
-				blt = MakeEnemyBullet(_cx+lengthdir_x(_size*sqrt((m+0.5)/_count),ang),_cy+lengthdir_y(_size*sqrt((m+0.5)/_count),ang),bullet_enemy_normal,spr_bullet_enemy_normal_3);
-				blt.image_xscale = 0.2;
-				blt.image_yscale = 0.2;
-				blt.speed = 0;
-				blt.bloom_dir = ang;
-				Anim_Create(blt,"image_xscale",0,0,0.2,1.05,30);
-				Anim_Create(blt,"image_yscale",0,0,0.2,1.05,30);
-				array_push(_list,blt);
-			}
-			array_push(a1_waves,{t:attack_time+_delay,list:_list,mode:1,done:false});
+			a += 1;
 		}
 	}
-
-	//=== 主体:旋涡弹幕(140反向,280四臂加速) ===
-	if(attack_time >= 10&&attack_time < 370){
-		if(attack_time mod a1_rate = 0){
-			for(i=0;i<a1_arms;i+=1){
-				blt = MakeEnemyBullet(x,y,bullet_enemy_normal,spr_bullet_enemy_normal_1);
-				a1_dir = a1_spin*attack_time*7+i*360/a1_arms+random_range(-2,2);
-				blt.direction = a1_dir;
-				blt.image_angle = a1_dir;
-				blt.speed = 0.4;
-				Anim_Create(blt,"speed",0,0,0.4,a1_spd-0.4,50);
-				Anim_Create(blt,"direction",0,0,a1_dir,a1_spin*16,50);
-				Anim_Create(blt,"image_angle",0,0,a1_dir,a1_spin*16,50);
+	if(attack_time = 120){
+		a = 0;
+	}
+	if(attack_time > 120&&attack_time < 150){
+		if(attack_time mod 5 = 1){
+			blt = MakeEnemyBullet(x,y,bullet_enemy_normal);
+			blt.direction = -a*60;
+			blt.a = a;
+			Anim_Create(blt,"speed",0,0,15,-15,30);
+			with(blt){
+				time = 0;
+				aa = 0;
+				custom_function = function(){
+					time += 1;
+					if(time >= 60-a*6&&time <= 110-a*6&&(time-a*6) mod 10 = 0){
+						for(i=0;i<5;i+=1){
+							blt = MakeEnemyBullet(x,y,bullet_enemy_normal,spr_bullet_enemy_normal_1);
+							blt.direction = direction + (aa*25+i*20)*(i mod 2 = 0 ? 1 : -1)+160;
+							blt.image_angle = blt.direction;
+							blt.speed = 10+(i mod 2 = 0 ? 2 : 0);
+							Anim_Create(blt,"speed",0,0,speed,-speed/2+5,10,10);
+							Anim_Create(blt,"speed",0,0,5,5+i,30,(60-i*5));
+						}
+						aa += 1;
+					}
+					if(time > 110-a*6)duration = 1;
+				}
 			}
+			a += 1;
 		}
 	}
-
-	//=== 时间轴 ===
-	if(attack_time = 30)a1_spawn_ring(px,py,16,130,55);
-	if(attack_time = 85)a1_spawn_ring(px,py,16,130,55);
-	if(attack_time = 140){//二段「绽」:旋涡反向
-		a1_spin = -a1_spin;
+	if(attack_time = 300){
+		end_attack();
 	}
-	if(attack_time = 155){
-		a1_bd = point_direction(px,py,room_width/2,room_height/2)+random_range(-60,60);
-		a1_br = random_range(170,240);
-		a1_bx = clamp(px+lengthdir_x(a1_br,a1_bd),120,room_width-120);
-		a1_by = clamp(py+lengthdir_y(a1_br,a1_bd),120,room_height-120);
-		a1_spawn_bloom(a1_bx,a1_by,36,74,45);
-	}
-	if(attack_time = 200)a1_spawn_ring(px,py,16,140,55);
-	if(attack_time = 215){
-		a1_bd = point_direction(px,py,room_width/2,room_height/2)+random_range(-60,60);
-		a1_br = random_range(170,240);
-		a1_bx = clamp(px+lengthdir_x(a1_br,a1_bd),120,room_width-120);
-		a1_by = clamp(py+lengthdir_y(a1_br,a1_bd),120,room_height-120);
-		a1_spawn_bloom(a1_bx,a1_by,36,74,45);
-	}
-	if(attack_time = 280){//三段「绝」:四臂高速旋涡
-		a1_arms = 4;
-		a1_spd = 4.8;
-	}
-	if(attack_time >= 290&&attack_time <= 350&&attack_time mod 30 = 20){//侧翼三连狙(左右夹击)
-		a1_sy = 320+(attack_time-290)*6;
-		for(k=0;k<2;k+=1){
-			for(j=0;j<3;j+=1){
-				blt = MakeEnemyBullet(k*room_width,a1_sy,bullet_enemy_normal,spr_bullet_enemy_normal_1);
-				a1_dir = point_direction(blt.x,blt.y,px,py)+(j-1)*16;
-				blt.direction = a1_dir;
-				blt.image_angle = a1_dir;
-				blt.speed = 5;
-				Anim_Create(blt,"speed",0,0,5,4.5,30,6);
-			}
-		}
-	}
-	if(attack_time = 305){//大绽放
-		a1_bd = point_direction(px,py,room_width/2,room_height/2)+random_range(-60,60);
-		a1_br = random_range(200,260);
-		a1_bx = clamp(px+lengthdir_x(a1_br,a1_bd),130,room_width-130);
-		a1_by = clamp(py+lengthdir_y(a1_br,a1_bd),130,room_height-130);
-		a1_spawn_bloom(a1_bx,a1_by,52,96,45);
-	}
-
-	//=== 种子激活 ===
-	for(wi=0;wi<array_length(a1_waves);wi+=1){
-		wv = a1_waves[wi];
-		if(wv.done)continue;
-		if(attack_time < wv.t)continue;
-		wv.done = true;
-		for(n=0;n<array_length(wv.list);n+=1){
-			sd = wv.list[n];
-			if(!instance_exists(sd))continue;
-			if(wv.mode = 0){//环狙:扇形收网
-				sd.direction = point_direction(sd.x,sd.y,px,py)+(n-array_length(wv.list)/2)*2.2;
-				sd.image_angle = sd.direction;
-				Anim_Create(sd,"speed",0,0,0,4.4,16,10);
-			}
-			else{//绽放:奇偶双旋
-				Anim_Create(sd,"speed",0,0,0,4.6,25,6);
-				sw = 24;
-				if((n mod 2) = 1)sw = -24;
-				sd.image_angle = sd.bloom_dir;
-				Anim_Create(sd,"direction",0,0,sd.bloom_dir,sw,55,6);
-				Anim_Create(sd,"image_angle",0,0,sd.bloom_dir,sw,55,6);
-			}
-		}
-	}
-
-	//=== 收尾:子弹正常飞离,出屏后自动回收 ===
-	if(attack_time = 400)end_attack();
 }
 	
 attack_2 = function(){
@@ -271,5 +205,5 @@ var a0 = create_attack(0,attack_0,30);
 var a1 = create_attack(0,attack_1,30);
 var a2 = create_attack(0,attack_2,30);
 
-fixed_sequence = [a2];
+fixed_sequence = [a1];
 //random_pool = [a1]//循环测试用
