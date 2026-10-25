@@ -1,60 +1,32 @@
 live;
 event_inherited();
 
-if(rampage = true){
-	time = 0;
+/* 原版 setCurWeapon: 模式切换时攻击点重建(错相重启, 未完成波清空) */
+if(rampage != rampage_prev){
+	rampage_prev = rampage;
+	rtime = -1;
+	pend_k = [];
+	pend_d = [];
 }
 
-if(enabled = true){
-	if(time > 0){
-		time -= 1;
-		if((time-1) mod 5 = 0){
-			tt = 3 - ((time-1) div 5);
-			
-			if(instance_exists(player)){
-				target = instance_nearest(player.x,player.y,enemy_agent);
-			}
-			if(instance_exists(target)){
-			    target_x = target.x;
-			    target_y = target.y;
-			}
-			else{
-				if(instance_exists(player)){
-				    target_x = player.x;
-				    target_y = player.y-800;
-				}
-				else{
-					target_x = equipment_agent.x;
-				    target_y = equipment_agent.y-800;
-				}
-			}
-			if(number[tt] = 1){
-				ang = (dir=0 ? 0 : 180)+(dir=0 ? -1 : 1)*(tt*15);
-				blt = MakePlayerBullet(x,y-17,bullet_player_annihilator);
-				blt.direction = ang;
-				blt.image_angle = ang - 90;
-				blt.speed = 10;
-				blt.track_inst = target;
-				blt.target_x = target_x;
-				blt.target_y = target_y;
-				blt.damage = damage;
-			}
-			else{
-				for(i=0;i<2;i+=1){
-					ang = (dir=0 ? 0 : 180)+(dir=0 ? -1 : 1)*(tt*15+i*50);
-					blt = MakePlayerBullet(x,y-17,bullet_player_annihilator);
-					blt.direction = ang;
-					blt.image_angle = ang - 90;
-					blt.speed = 10;
-					blt.track_inst = target;
-					blt.target_x = target_x;
-					blt.target_y = target_y;
-					blt.damage = damage;
-				}
-			}
+if(rampage = false && enabled = true){
+	/* 常态波内错相: 弹k在波开始后 6*(k mod 4) 帧发射(原版 standbyTime 序列) */
+	var nk = [];
+	var nd = [];
+	for(var i = 0; i < array_length(pend_d); i += 1){
+		if(pend_d[i] = 0){
+			FireAnnihilatorShot(pend_k[i], false);
+		}
+		else{
+			pend_d[i] -= 1;
+			array_push(nk, pend_k[i]);
+			array_push(nd, pend_d[i]);
 		}
 	}
+	pend_k = nk;
+	pend_d = nd;
 }
-else{
-	time = 0;
+else if(enabled = false){
+	pend_k = [];
+	pend_d = [];
 }

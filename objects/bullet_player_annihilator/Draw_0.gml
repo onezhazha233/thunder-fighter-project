@@ -4,76 +4,32 @@ image_yscale = scale_y*(0.7+scale_add)
 
 scale_add += 0.01
 
-if(track_inst_exists = 1){
-	if(!instance_exists(track_inst)){
-		target_x = target_x_previous;
-		target_y = target_y_previous;
+/* 原版 FollowBehavior.cycleMove: 贝塞尔飞行 + 终点实时重定位(目标死亡不换目标) */
+if(standby > 0){
+	standby -= 1;
+}
+else if(bezier_done = false){
+	if(instance_exists(track_inst)){
+		target_x = track_inst.x;
+		target_y = track_inst.y;
+	}
+	b_t += track_perm;
+	var tt = min(b_t, 1);
+	var px = x;
+	var py = y;
+	var u1 = 1 - tt;
+	x = u1*u1*u1*p0x + 3*u1*u1*tt*p1x + 3*u1*tt*tt*p2x + tt*tt*tt*target_x;
+	y = u1*u1*u1*p0y + 3*u1*u1*tt*p1y + 3*u1*tt*tt*p2y + tt*tt*tt*target_y;
+	var ddx = x - px;
+	var ddy = y - py;
+	if(ddx*ddx + ddy*ddy > 0.0001){
+		direction = point_direction(px, py, x, y);
+	}
+	if(b_t >= 1){
+		bezier_done = true;
+		speed = init_v;
 	}
 }
-
-if(instance_exists(track_inst)){
-	target_x_previous = target_x;
-	target_y_previous = target_y;
-
-    target_x = track_inst.x;
-    target_y = track_inst.y;
-}
-
-var tx = target_x;
-var ty = target_y;
-
-var currentDis = 100
-if(instance_exists(track_inst)){
-	var targetDir = point_direction(x, y, tx, ty);
-	var delta = angle_difference(targetDir, direction);
-	var nearPerc = max(1 - (currentDis / bestDis), 0)
-	
-	
-	if(abs(delta) > 45){
-		speed *= 0.98;
-		speed = max(speed, 0)
-	}else if(abs(delta) > 45){
-		
-	}else{
-		speed *= 1.5+rampage*0.1;
-		speed = min(speed, 60)
-	}
-	
-	direction += delta * min(dirSpd + nearPerc, 1);
-	
-	dirSpd *= 1.2
-	dirSpd = min(dirSpd, 1)
-}
-else{
-	if(point_distance(x,y,tx,ty) < 50)pass_target = 1;
-	
-	if(pass_target = 0){
-		var targetDir = point_direction(x, y, target_x, target_y);
-		var delta = angle_difference(targetDir, direction);
-		var nearPerc = max(1 - (currentDis / bestDis), 0)
-	
-	
-		if(abs(delta) > 45){
-			speed *= 0.98;
-			speed = max(speed, 0)
-		}else if(abs(delta) > 45){
-		
-		}else{
-			speed *= 1.2+rampage*0.1;
-			speed = min(speed, 60)
-		}
-	
-		direction += delta * min(dirSpd + nearPerc, 1);
-	
-		dirSpd *= 1.2
-		dirSpd = min(dirSpd, 1)
-	}
-	else{
-		speed *= 1.2;
-	}
-}
-
-speed = min(speed, currentDis)
 
 image_angle = direction - 90;
 

@@ -1,13 +1,2 @@
 live;
-angle = 0
-for(i=0;i<6;i+=1){
-	blt = MakePlayerBullet(x,y,bullet_player_lightning,seq_lightning_cd);
-	layer_sequence_angle(blt.bullet_sequence,angle-90);
-	blt.collision_effect_sequence = seq_lightning_cd_explosion;
-	blt.dir = angle;
-	blt.direction = angle;
-	blt.image_angle = angle - 90;
-	blt.track_inst = find_priority_enemy(bullet_player_lightning);
-	blt.damage = damage;
-	angle += 60;
-}
+FireLightningVolley(volley_normal[0], volley_normal[1], volley_normal[2], false);

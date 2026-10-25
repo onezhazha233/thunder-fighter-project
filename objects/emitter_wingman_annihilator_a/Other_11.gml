@@ -1,49 +1,9 @@
 live;
 rtime += 1
-number = [2,1,1,1]
-
-tt = (rtime-1) mod 4;
-
-if(instance_exists(player)){
-	target = instance_nearest(player.x,player.y,enemy_agent);
-}
-if(instance_exists(target)){
-	target_x = target.x;
-	target_y = target.y;
-}
-else{
-	if(instance_exists(player)){
-		target_x = player.x;
-		target_y = player.y-800;
-	}
-	else{
-		target_x = equipment_agent.x;
-		target_y = equipment_agent.y-800;
-	}
-}
-if(number[tt] = 1){
-	ang = (dir=0 ? 0 : 180)+(dir=0 ? -1 : 1)*(tt*20);
-	blt = MakePlayerBullet(x,y-17,bullet_player_annihilator);
-	blt.direction = ang;
-	blt.image_angle = ang - 90;
-	blt.speed = 10;
-	blt.track_inst = target;
-	blt.target_x = target_x;
-	blt.target_y = target_y;
-	blt.damage = damage;
-	blt.rampage = true;
-}
-else{
-	for(i=0;i<2;i+=1){
-		ang = (dir=0 ? 0 : 180)+(dir=0 ? -1 : 1)*(tt*20+i*40);
-		blt = MakePlayerBullet(x,y-17,bullet_player_annihilator);
-		blt.direction = ang;
-		blt.image_angle = ang - 90;
-		blt.speed = 10;
-		blt.track_inst = target;
-		blt.target_x = target_x;
-		blt.target_y = target_y;
-		blt.damage = damage;
-		blt.rampage = true;
+/* 原版暴走: rampage_count 个攻击点各15帧周期, 一次性错相 standby = 6*(k mod 6) */
+for(var k = 0; k < rampage_count; k += 1){
+	var st = 6 * (k mod 6);
+	if(rtime >= st && (rtime - st) mod 15 = 0){
+		FireAnnihilatorShot(k, true);
 	}
 }

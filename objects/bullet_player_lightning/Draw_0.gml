@@ -2,42 +2,33 @@ live;
 image_xscale = scale_x
 image_yscale = scale_y
 
-/*if(instance_exists(track_inst)&&acceleration < 0.9+rampage){
-	dir = point_direction(x,y,track_inst.x,track_inst.y);
+/* 原版 FollowBehavior.cycleMove: 贝塞尔飞行 + 终点实时重定位 */
+if(standby > 0){
+	/* 原版子弹待机帧(params[5]): 悬停后再起飞 */
+	standby -= 1;
 }
-
-hspeed += lengthdir_x(acceleration,dir);
-vspeed += lengthdir_y(acceleration,dir);
-
-acceleration = min(acceleration+0.2*(rampage = false ? 1 : 2),0.9+rampage)
-
-image_angle = direction - 90;*/
-
-var currentDis = 100
-if(instance_exists(track_inst)){
-	var targetDir = point_direction(x, y, track_inst.x, track_inst.y);
-	var delta = angle_difference(targetDir, direction);
-	var nearPerc = max(1 - (currentDis / bestDis), 0)
-	
-	
-	if(abs(delta) > 90){
-		speed *= 0.995;
-		speed = max(speed, 0)
-	}else{
-		speed *= 1.05;
-		speed = min(speed, 60)
+else if(bezier_done = false){
+	if(instance_exists(track_inst)){
+		target_x = track_inst.x;
+		target_y = track_inst.y;
 	}
-	
-	direction += delta * min(dirSpd + nearPerc, 1);
-	
-	dirSpd *= 1.1
-	dirSpd = min(dirSpd, 1)
+	b_t += track_perm;
+	var tt = min(b_t, 1);
+	var px = x;
+	var py = y;
+	var u1 = 1 - tt;
+	x = u1*u1*u1*p0x + 3*u1*u1*tt*p1x + 3*u1*tt*tt*p2x + tt*tt*tt*target_x;
+	y = u1*u1*u1*p0y + 3*u1*u1*tt*p1y + 3*u1*tt*tt*p2y + tt*tt*tt*target_y;
+	var ddx = x - px;
+	var ddy = y - py;
+	if(ddx*ddx + ddy*ddy > 0.0001){
+		direction = point_direction(px, py, x, y);
+	}
+	if(b_t >= 1){
+		bezier_done = true;
+		speed = init_v;
+	}
 }
-else{
-	speed *= 1.05;
-}
-
-speed = min(speed, currentDis)
 
 image_angle = direction - 90;
 
