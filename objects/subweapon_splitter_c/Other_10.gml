@@ -4,7 +4,7 @@ blt.idle = seq_splitter_c
 blt.small_sequence = seq_splitter_c_small
 blt.collision_effect = seq_bullet_effect_dawn_c
 blt.direction = 90
-enemy = find_priority_enemy(bullet_player_splitter)
+enemy = find_follow_target()
 if(instance_exists(enemy)){
 	blt.direction = point_direction(blt.x,blt.y,enemy.x,enemy.y);
 }
@@ -18,7 +18,7 @@ blt.idle = seq_splitter_c
 blt.small_sequence = seq_splitter_c_small
 blt.collision_effect = seq_bullet_effect_dawn_c
 blt.direction = 90
-enemy = find_priority_enemy(bullet_player_splitter)
+enemy = find_follow_target()
 if(instance_exists(enemy)){
 	blt.direction = point_direction(blt.x,blt.y,enemy.x,enemy.y);
 }

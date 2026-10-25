@@ -11,7 +11,7 @@ with(equipment){
 	yscale = 1;
 
 	plane = plane_agent;
-	wingman_left = [wingman_annihilator_d];
+	wingman_left = [wingman_annihilator_c];
 	wingman_right = [wingman_annihilator_d];
 	wingman_x_offset = global.current_equipment.wingman_x_offset;
 	wingman_y_offset = global.current_equipment.wingman_y_offset;

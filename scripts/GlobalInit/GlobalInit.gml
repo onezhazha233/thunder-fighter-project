@@ -11,7 +11,7 @@ function GlobalInit(){
 	global.atk_all_bonus = [];
 	global.inv_hurt = 0;
 	global.inv_shield = 0;
-	global.rampage_duration = 300;
+	global.rampage_duration = 3000;
 	global.quantum_shield_duration = 300;
 	global.inv_duration = 120;
 	global.score = 0;

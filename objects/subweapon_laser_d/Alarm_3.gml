@@ -4,7 +4,7 @@ a.sprite_index = spr_laser_d
 a.collision_effect_ring = spr_buller_effect_laser_d_ring
 a.collision_effect_lightball = spr_buller_effect_laser_d_lightball
 a.direction = 90
-enemy = find_priority_enemy(bullet_player_laser)
+enemy = find_follow_target()
 if(instance_exists(enemy)){
 	a.direction = point_direction(a.x,a.y,enemy.x,enemy.y);
 }
@@ -19,7 +19,7 @@ a.sprite_index = spr_laser_d
 a.collision_effect_ring = spr_buller_effect_laser_d_ring
 a.collision_effect_lightball = spr_buller_effect_laser_d_lightball
 a.direction = 90
-enemy = find_priority_enemy(bullet_player_laser)
+enemy = find_follow_target()
 if(instance_exists(enemy)){
 	a.direction = point_direction(a.x,a.y,enemy.x,enemy.y);
 }

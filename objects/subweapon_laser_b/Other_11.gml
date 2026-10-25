@@ -2,7 +2,7 @@ live;
 a = MakePlayerBullet(x-35*scale_x,y,bullet_player_laser)
 a.sprite_index = spr_laser_b
 a.direction = 90
-enemy = find_priority_enemy(bullet_player_laser)
+enemy = find_follow_target()
 if(instance_exists(enemy)){
 	a.direction = point_direction(a.x,a.y,enemy.x,enemy.y);
 }
@@ -15,7 +15,7 @@ a.damage = damage
 a = MakePlayerBullet(x+35*scale_x,y,bullet_player_laser)
 a.sprite_index = spr_laser_b
 a.direction = 90
-enemy = find_priority_enemy(bullet_player_laser)
+enemy = find_follow_target()
 if(instance_exists(enemy)){
 	a.direction = point_direction(a.x,a.y,enemy.x,enemy.y);
 }

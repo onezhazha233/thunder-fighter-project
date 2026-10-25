@@ -6,7 +6,7 @@ tail_scale = 0
 tail_image = 1
 scale_add = 0
 
-Anim_Create(id,"tail_scale",0,0,0,2.5,15,15)
+Anim_Create(id,"tail_scale",0,0,0,2.5,15,20)
 
 collision_type = COLLISION_TYPE.SPRITE
 collision_effect = seq_bullet_effect_dawn_c

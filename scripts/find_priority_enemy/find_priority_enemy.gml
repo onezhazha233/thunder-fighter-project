@@ -56,3 +56,39 @@ function find_priority_enemy(obj) {
     
     return highest_priority_inst;
 }
+
+/// @function find_follow_target()
+/// @returns {Id.Instance} 统一追踪索敌(原版 WeaponBulletMgr.pickRandomFollowTarget):
+///          Boss 存在必锁(存活即可,原版不对 Boss 做合适性检查);
+///          否则从"合适"敌机中均匀随机——可受伤(inv_collision=false)+在视野矩形内,
+///          有非拦截型时跳过拦截型(enemy_blockbullet);无合适目标返回 noone(调用方锁NONE不再重问)
+function find_follow_target() {
+    var _boss = noone;
+    with (enemy_agent) {
+        if (object_index = boss_agent || object_is_ancestor(object_index, boss_agent)) {
+            _boss = id;
+            break;
+        }
+    }
+    if (_boss != noone) return _boss;
+
+    var _has_non_block = false;
+    with (enemy_agent) {
+        if (object_index != enemy_blockbullet) {
+            _has_non_block = true;
+            break;
+        }
+    }
+
+    /* 蓄水池采样: 第 n 个合适敌机以 1/n 概率成为选择 → 均匀随机且零临时分配 */
+    var _pick = noone;
+    var _count = 0;
+    with (enemy_agent) {
+        if (_has_non_block && object_index = enemy_blockbullet) continue;
+        if (inv_collision) continue;
+        if (!point_in_rectangle(x, y, -60, -60, room_width + 60, room_height + 60)) continue;
+        _count += 1;
+        if (irandom(_count - 1) = 0) _pick = id;
+    }
+    return _pick;
+}

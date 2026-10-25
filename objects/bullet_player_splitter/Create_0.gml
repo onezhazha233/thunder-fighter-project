@@ -23,7 +23,7 @@ function CollideSingleEnemy(enemy){
 	
 	small = MakePlayerBullet(x,y,bullet_player_splitter_small,small_sequence);
 	small.direction = 90;
-	e = find_priority_enemy(bullet_player_splitter_small);
+	e = find_follow_target();
 	if(instance_exists(e)){
 		small.direction = point_direction(xx,yy,e.x,e.y);
 	}
@@ -36,7 +36,7 @@ function CollideSingleEnemy(enemy){
 	yy = y+lengthdir_x(18,direction-90);
 	small = MakePlayerBullet(xx,yy,bullet_player_splitter_small,small_sequence);
 	small.direction = 90;
-	e = find_priority_enemy(bullet_player_splitter_small);
+	e = find_follow_target();
 	if(instance_exists(e)){
 		small.direction = point_direction(xx,yy,e.x,e.y);
 	}

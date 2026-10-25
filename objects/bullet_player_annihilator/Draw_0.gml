@@ -1,8 +1,8 @@
 live;
-image_xscale = scale_x*(0.7+scale_add)
-image_yscale = scale_y*(0.7+scale_add)
+image_xscale = scale_x*(scale_add)
+image_yscale = scale_y*(scale_add)
 
-scale_add += 0.01
+if(scale_add < 0.8)scale_add += 0.05;
 
 /* 原版 FollowBehavior.cycleMove: 贝塞尔飞行 + 终点实时重定位(目标死亡不换目标) */
 if(standby > 0){
@@ -33,7 +33,7 @@ else if(bezier_done = false){
 
 image_angle = direction - 90;
 
-draw_sprite_ext(sprite_index,tail_image,x,y,image_xscale*scale_x,image_yscale*scale_y*tail_scale,image_angle,-1,1)
+draw_sprite_ext(sprite_index,tail_image,x,y,image_xscale*scale_x,image_yscale*scale_y*tail_scale*(rampage = false ? 1 : 1.8),image_angle,-1,1)
 draw_self()
 
 event_inherited();

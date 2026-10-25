@@ -1,63 +1,31 @@
 live;
 event_inherited();
 
-if(enabled = true){
-	time -= 1;
-	if(time <= 0)time = 0;
-	if(time mod 4 = 1){
-		if(rampage = false){
-			if(bb <= weapon_level){
-				angle = 75-10*bb;
-				a = MakePlayerBullet(x,y+60*scale_y,bullet_player_missile,seq_missile_d_intro);
-				a.idle = seq_missile_d;
-				layer_sequence_angle(a.bullet_sequence,angle-90);
-				a.direction = angle;
-				a.image_angle = angle - 90;
-				a.collision_effect = seq_bullet_effect_missile_cd;
-				a.track_inst = find_priority_enemy(bullet_player_missile);
-				a.damage = damage;
+/* 原版攻击点错相: 待发队列逐帧倒计时(模式切换清空) */
+if(rampage != rampage_prev){
+	rampage_prev = rampage;
+	pend_a = [];
+	pend_d = [];
+}
 
-				angle = 105+10*bb;
-				a = MakePlayerBullet(x,y+60*scale_y,bullet_player_missile,seq_missile_d_intro);
-				a.idle = seq_missile_d;
-				layer_sequence_angle(a.bullet_sequence,angle-90);
-				a.direction = angle;
-				a.image_angle = angle - 90;
-				a.collision_effect = seq_bullet_effect_missile_cd;
-				a.track_inst = find_priority_enemy(bullet_player_missile);
-				a.damage = damage;
-			}
+if(enabled = true){
+	var na = [];
+	var nd = [];
+	for(var i = 0; i < array_length(pend_d); i += 1){
+		if(pend_d[i] <= 0){
+			FireMissilePair(pend_a[2*i], pend_a[2*i+1], rampage);
 		}
 		else{
-			angle = 75-10*bb;
-			a = MakePlayerBullet(x,y+60*scale_y,bullet_player_missile,seq_missile_d_rampage_intro);
-			a.idle = seq_missile_d_rampage;
-			a.collision_effect_scale_x = 1.5;
-			a.collision_effect_scale_y = 1.5;
-			layer_sequence_angle(a.bullet_sequence,angle-90);
-			a.direction = angle;
-			a.image_angle = angle - 90;
-			a.speed += 2;
-			a.collision_effect = seq_bullet_effect_missile_cd;
-			a.track_inst = find_priority_enemy(bullet_player_missile);
-			a.damage = damage;
-
-			angle = 105+10*bb;
-			a = MakePlayerBullet(x,y+60*scale_y,bullet_player_missile,seq_missile_d_rampage_intro);
-			a.idle = seq_missile_d_rampage;
-			a.collision_effect_scale_x = 1.5;
-			a.collision_effect_scale_y = 1.5;
-			layer_sequence_angle(a.bullet_sequence,angle-90);
-			a.direction = angle;
-			a.image_angle = angle - 90;
-			a.speed += 2;
-			a.collision_effect = seq_bullet_effect_missile_cd;
-			a.track_inst = find_priority_enemy(bullet_player_missile);
-			a.damage = damage;
+			pend_d[i] -= 1;
+			array_push(na, pend_a[2*i]);
+			array_push(na, pend_a[2*i+1]);
+			array_push(nd, pend_d[i]);
 		}
-		bb += 1;
 	}
+	pend_a = na;
+	pend_d = nd;
 }
 else{
-	time = 0;
+	pend_a = [];
+	pend_d = [];
 }

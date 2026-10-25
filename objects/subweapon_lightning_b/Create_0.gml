@@ -26,30 +26,11 @@ explosion_sequence = seq_lightning_b_explosion
 
 bb = false
 
-FindLightningTarget = function(){
-	var _boss = noone;
-	with(enemy_agent){
-		if(object_index = boss_agent || object_is_ancestor(object_index, boss_agent)){
-			if(_boss = noone)_boss = id;
-		}
-	}
-	if(_boss != noone)return _boss;
-	var _pool = [];
-	with(enemy_agent){
-		if(object_index = boss_agent || object_is_ancestor(object_index, boss_agent))continue;
-		if(inv_collision)continue;
-		if(!point_in_rectangle(x, y, -60, -60, room_width + 60, room_height + 60))continue;
-		array_push(_pool, id);
-	}
-	if(array_length(_pool) = 0)return noone;
-	return _pool[irandom(array_length(_pool) - 1)];
-}
-
 FireLightningVolley = function(cnt, ang0, ang1, rp){
 	var step = (cnt > 1) ? (ang1 - ang0) / (cnt - 1) : 0;
 	for(var k = 0; k < cnt; k += 1){
 		var ang = ang0 + step * k;
-		var tgt = FindLightningTarget();
+		var tgt = find_follow_target();
 		blt = MakePlayerBullet(x, y, bullet_player_lightning, fire_sequence);
 		layer_sequence_angle(blt.bullet_sequence, ang - 90);
 		blt.collision_effect_sequence = explosion_sequence;
