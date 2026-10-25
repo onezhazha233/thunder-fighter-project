@@ -26,8 +26,8 @@
   },
   "name":"seq_railcannon_d_rampage_intro",
   "parent":{
-    "name":"superconductive_railcannon",
-    "path":"folders/序列/wingman/railcannon/superconductive_railcannon.yy",
+    "name":"Superconductive_Railcannon",
+    "path":"folders/序列/Wingman/Railcannon/Superconductive_Railcannon.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

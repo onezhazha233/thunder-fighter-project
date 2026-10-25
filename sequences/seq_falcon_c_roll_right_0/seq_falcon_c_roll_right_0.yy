@@ -26,8 +26,8 @@
   },
   "name":"seq_falcon_c_roll_right_0",
   "parent":{
-    "name":"azureflame_falcon",
-    "path":"folders/序列/Plane/falcon/azureflame_falcon.yy",
+    "name":"Azureflame_Falcon",
+    "path":"folders/序列/Plane/Falcon/Azureflame_Falcon.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

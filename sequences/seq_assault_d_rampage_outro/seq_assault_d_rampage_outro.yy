@@ -26,8 +26,8 @@
   },
   "name":"seq_assault_d_rampage_outro",
   "parent":{
-    "name":"thunder_assault",
-    "path":"folders/序列/Plane/assault/thunder_assault.yy",
+    "name":"Thunder_Assault",
+    "path":"folders/序列/Plane/Assault/Thunder_Assault.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

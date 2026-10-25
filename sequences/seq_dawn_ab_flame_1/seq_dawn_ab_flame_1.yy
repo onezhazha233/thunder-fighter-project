@@ -26,8 +26,8 @@
   },
   "name":"seq_dawn_ab_flame_1",
   "parent":{
-    "name":"dawn",
-    "path":"folders/序列/Plane/dawn.yy",
+    "name":"Dawn",
+    "path":"folders/序列/Plane/Dawn.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

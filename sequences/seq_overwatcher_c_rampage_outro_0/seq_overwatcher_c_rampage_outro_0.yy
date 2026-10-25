@@ -26,8 +26,8 @@
   },
   "name":"seq_overwatcher_c_rampage_outro_0",
   "parent":{
-    "name":"starfield_overwatcher",
-    "path":"folders/序列/Plane/overwatcher/starfield_overwatcher.yy",
+    "name":"Starfield_Overwatcher",
+    "path":"folders/序列/Plane/Overwatcher/Starfield_Overwatcher.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

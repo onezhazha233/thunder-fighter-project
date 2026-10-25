@@ -26,8 +26,8 @@
   },
   "name":"seq_plasma_cannon_c_rampage",
   "parent":{
-    "name":"hyper_plasma_cannon",
-    "path":"folders/序列/wingman/plasma_cannon/hyper_plasma_cannon.yy",
+    "name":"Hyper_Plasma_Cannon",
+    "path":"folders/序列/Wingman/Plasma_Cannon/Hyper_Plasma_Cannon.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

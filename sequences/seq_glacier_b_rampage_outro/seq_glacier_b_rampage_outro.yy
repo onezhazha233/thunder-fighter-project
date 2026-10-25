@@ -26,8 +26,8 @@
   },
   "name":"seq_glacier_b_rampage_outro",
   "parent":{
-    "name":"storm_glacier",
-    "path":"folders/序列/Plane/glacier/storm_glacier.yy",
+    "name":"Storm_Glacier",
+    "path":"folders/序列/Plane/Glacier/Storm_Glacier.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

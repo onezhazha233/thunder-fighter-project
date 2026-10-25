@@ -26,8 +26,8 @@
   },
   "name":"seq_shotcannon_cd_flame",
   "parent":{
-    "name":"shotcannon",
-    "path":"folders/序列/wingman/shotcannon.yy",
+    "name":"Shotcannon",
+    "path":"folders/序列/Wingman/Shotcannon.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

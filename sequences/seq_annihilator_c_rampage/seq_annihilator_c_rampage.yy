@@ -26,8 +26,8 @@
   },
   "name":"seq_annihilator_c_rampage",
   "parent":{
-    "name":"strike_annihilator",
-    "path":"folders/序列/wingman/annihilator/strike_annihilator.yy",
+    "name":"Strike_Annihilator",
+    "path":"folders/序列/Wingman/Annihilator/Strike_Annihilator.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

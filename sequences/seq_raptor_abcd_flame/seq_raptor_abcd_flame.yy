@@ -26,8 +26,8 @@
   },
   "name":"seq_raptor_abcd_flame",
   "parent":{
-    "name":"raptor",
-    "path":"folders/序列/Plane/raptor.yy",
+    "name":"Raptor",
+    "path":"folders/序列/Plane/Raptor.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

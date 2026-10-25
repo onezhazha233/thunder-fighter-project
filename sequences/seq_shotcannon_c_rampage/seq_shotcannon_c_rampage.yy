@@ -26,8 +26,8 @@
   },
   "name":"seq_shotcannon_c_rampage",
   "parent":{
-    "name":"quadruple_shotcannon",
-    "path":"folders/序列/wingman/shotcannon/quadruple_shotcannon.yy",
+    "name":"Quadruple_Shotcannon",
+    "path":"folders/序列/Wingman/Shotcannon/Quadruple_Shotcannon.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

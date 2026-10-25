@@ -26,8 +26,8 @@
   },
   "name":"seq_railcannon_a_idle",
   "parent":{
-    "name":"railcannon",
-    "path":"folders/序列/wingman/railcannon/railcannon.yy",
+    "name":"Railcannon",
+    "path":"folders/序列/Wingman/Railcannon/Railcannon.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

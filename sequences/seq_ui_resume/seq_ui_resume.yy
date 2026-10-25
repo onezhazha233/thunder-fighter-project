@@ -32,8 +32,8 @@
   },
   "name":"seq_ui_resume",
   "parent":{
-    "name":"ui",
-    "path":"folders/序列/ui.yy",
+    "name":"UI",
+    "path":"folders/序列/UI.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

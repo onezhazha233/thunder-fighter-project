@@ -26,8 +26,8 @@
   },
   "name":"seq_mega_c_idle",
   "parent":{
-    "name":"mega_particle_cannon",
-    "path":"folders/序列/wingman/mega/mega_particle_cannon.yy",
+    "name":"Mega_Particle_Cannon",
+    "path":"folders/序列/Wingman/Mega/Mega_Particle_Cannon.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

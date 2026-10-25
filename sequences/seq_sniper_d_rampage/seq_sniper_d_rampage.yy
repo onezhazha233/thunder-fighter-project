@@ -26,8 +26,8 @@
   },
   "name":"seq_sniper_d_rampage",
   "parent":{
-    "name":"star_destroyer_sniper",
-    "path":"folders/序列/wingman/sniper/star_destroyer_sniper.yy",
+    "name":"Star_Destroyer_Sniper",
+    "path":"folders/序列/Wingman/Sniper/Star_Destroyer_Sniper.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

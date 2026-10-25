@@ -26,8 +26,8 @@
   },
   "name":"seq_glacier_d_rampage_intro",
   "parent":{
-    "name":"x_wing_glacier",
-    "path":"folders/序列/Plane/glacier/x_wing_glacier.yy",
+    "name":"X_Wing_Glacier",
+    "path":"folders/序列/Plane/Glacier/X_Wing_Glacier.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

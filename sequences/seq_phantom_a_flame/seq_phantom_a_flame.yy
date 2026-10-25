@@ -26,8 +26,8 @@
   },
   "name":"seq_phantom_a_flame",
   "parent":{
-    "name":"phantom_zero",
-    "path":"folders/序列/Plane/phantom/phantom_zero.yy",
+    "name":"Phantom_Zero",
+    "path":"folders/序列/Plane/Phantom/Phantom_Zero.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

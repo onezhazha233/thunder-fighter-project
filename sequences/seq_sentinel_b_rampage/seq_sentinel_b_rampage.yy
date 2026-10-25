@@ -26,8 +26,8 @@
   },
   "name":"seq_sentinel_b_rampage",
   "parent":{
-    "name":"convert_sentinel",
-    "path":"folders/序列/wingman/sentinel/convert_sentinel.yy",
+    "name":"Convert_Sentinel",
+    "path":"folders/序列/Wingman/Sentinel/Convert_Sentinel.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

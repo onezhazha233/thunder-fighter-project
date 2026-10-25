@@ -26,8 +26,8 @@
   },
   "name":"seq_apex_d_rampage_outro",
   "parent":{
-    "name":"thunder_apex",
-    "path":"folders/序列/Plane/apex/thunder_apex.yy",
+    "name":"Thunder_Apex",
+    "path":"folders/序列/Plane/Apex/Thunder_Apex.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

@@ -26,8 +26,8 @@
   },
   "name":"seq_assault_c_rampage_outro",
   "parent":{
-    "name":"swift_assault",
-    "path":"folders/序列/Plane/assault/swift_assault.yy",
+    "name":"Swift_Assault",
+    "path":"folders/序列/Plane/Assault/Swift_Assault.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

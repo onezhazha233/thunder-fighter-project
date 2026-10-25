@@ -26,8 +26,8 @@
   },
   "name":"seq_falcon_a_rampage_intro",
   "parent":{
-    "name":"falcon_zero",
-    "path":"folders/序列/Plane/falcon/falcon_zero.yy",
+    "name":"Falcon_Zero",
+    "path":"folders/序列/Plane/Falcon/Falcon_Zero.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

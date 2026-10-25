@@ -26,8 +26,8 @@
   },
   "name":"seq_guard_a_idle",
   "parent":{
-    "name":"charging_guard",
-    "path":"folders/序列/wingman/guardian/charging_guard.yy",
+    "name":"Charging_Guard",
+    "path":"folders/序列/Wingman/Guardian/Charging_Guard.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

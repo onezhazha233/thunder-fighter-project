@@ -26,8 +26,8 @@
   },
   "name":"seq_xeno_a_rampage_intro",
   "parent":{
-    "name":"xeno_zero",
-    "path":"folders/序列/Plane/xeno/xeno_zero.yy",
+    "name":"Xeno_Zero",
+    "path":"folders/序列/Plane/Xeno/Xeno_Zero.yy",
   },
   "playback":0,
   "playbackSpeed":67.0,

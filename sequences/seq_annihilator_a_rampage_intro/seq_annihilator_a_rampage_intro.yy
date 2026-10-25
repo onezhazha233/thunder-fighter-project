@@ -26,8 +26,8 @@
   },
   "name":"seq_annihilator_a_rampage_intro",
   "parent":{
-    "name":"annihilator",
-    "path":"folders/序列/wingman/annihilator/annihilator.yy",
+    "name":"Annihilator",
+    "path":"folders/序列/Wingman/Annihilator/Annihilator.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

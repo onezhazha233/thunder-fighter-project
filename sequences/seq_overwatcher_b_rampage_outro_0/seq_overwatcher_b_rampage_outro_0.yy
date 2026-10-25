@@ -26,8 +26,8 @@
   },
   "name":"seq_overwatcher_b_rampage_outro_0",
   "parent":{
-    "name":"stellar_overwatcher",
-    "path":"folders/序列/Plane/overwatcher/stellar_overwatcher.yy",
+    "name":"Stellar_Overwatcher",
+    "path":"folders/序列/Plane/Overwatcher/Stellar_Overwatcher.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

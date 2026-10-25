@@ -26,8 +26,8 @@
   },
   "name":"seq_xeno_c_idle",
   "parent":{
-    "name":"blast_xeno",
-    "path":"folders/序列/Plane/xeno/blast_xeno.yy",
+    "name":"Blast_Xeno",
+    "path":"folders/序列/Plane/Xeno/Blast_Xeno.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

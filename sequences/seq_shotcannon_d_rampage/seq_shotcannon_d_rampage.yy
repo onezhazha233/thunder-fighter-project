@@ -26,8 +26,8 @@
   },
   "name":"seq_shotcannon_d_rampage",
   "parent":{
-    "name":"scatter_shotcannon",
-    "path":"folders/序列/wingman/shotcannon/scatter_shotcannon.yy",
+    "name":"Scatter_Shotcannon",
+    "path":"folders/序列/Wingman/Shotcannon/Scatter_Shotcannon.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

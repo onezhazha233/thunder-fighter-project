@@ -26,8 +26,8 @@
   },
   "name":"seq_apex_c_rampage",
   "parent":{
-    "name":"swift_apex",
-    "path":"folders/序列/Plane/apex/swift_apex.yy",
+    "name":"Swift_Apex",
+    "path":"folders/序列/Plane/Apex/Swift_Apex.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

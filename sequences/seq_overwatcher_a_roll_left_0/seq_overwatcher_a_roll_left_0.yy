@@ -26,8 +26,8 @@
   },
   "name":"seq_overwatcher_a_roll_left_0",
   "parent":{
-    "name":"overwatcher_zero",
-    "path":"folders/序列/Plane/overwatcher/overwatcher_zero.yy",
+    "name":"Overwatcher_Zero",
+    "path":"folders/序列/Plane/Overwatcher/Overwatcher_Zero.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

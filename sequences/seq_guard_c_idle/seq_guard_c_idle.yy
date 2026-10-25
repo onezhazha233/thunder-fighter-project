@@ -26,8 +26,8 @@
   },
   "name":"seq_guard_c_idle",
   "parent":{
-    "name":"steel_guard",
-    "path":"folders/序列/wingman/guardian/steel_guard.yy",
+    "name":"Steel_Guard",
+    "path":"folders/序列/Wingman/Guardian/Steel_Guard.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

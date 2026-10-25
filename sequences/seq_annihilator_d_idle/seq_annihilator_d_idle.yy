@@ -26,8 +26,8 @@
   },
   "name":"seq_annihilator_d_idle",
   "parent":{
-    "name":"final_annihilator",
-    "path":"folders/序列/wingman/annihilator/final_annihilator.yy",
+    "name":"Final_Annihilator",
+    "path":"folders/序列/Wingman/Annihilator/Final_Annihilator.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

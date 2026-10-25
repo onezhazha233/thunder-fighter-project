@@ -26,8 +26,8 @@
   },
   "name":"seq_annihilator_d_rampage_outro",
   "parent":{
-    "name":"final_annihilator",
-    "path":"folders/序列/wingman/annihilator/final_annihilator.yy",
+    "name":"Final_Annihilator",
+    "path":"folders/序列/Wingman/Annihilator/Final_Annihilator.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

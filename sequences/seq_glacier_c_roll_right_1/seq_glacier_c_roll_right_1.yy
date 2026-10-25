@@ -26,8 +26,8 @@
   },
   "name":"seq_glacier_c_roll_right_1",
   "parent":{
-    "name":"nebula_glacier",
-    "path":"folders/序列/Plane/glacier/nebula_glacier.yy",
+    "name":"Nebula_Glacier",
+    "path":"folders/序列/Plane/Glacier/Nebula_Glacier.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

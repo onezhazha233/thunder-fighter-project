@@ -26,8 +26,8 @@
   },
   "name":"seq_sniper_b_rampage_outro",
   "parent":{
-    "name":"sonic_sniper",
-    "path":"folders/序列/wingman/sniper/sonic_sniper.yy",
+    "name":"Sonic_Sniper",
+    "path":"folders/序列/Wingman/Sniper/Sonic_Sniper.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

@@ -26,8 +26,8 @@
   },
   "name":"seq_sentinel_c_rampage_outro",
   "parent":{
-    "name":"luster_sentinel",
-    "path":"folders/序列/wingman/sentinel/luster_sentinel.yy",
+    "name":"Luster_Sentinel",
+    "path":"folders/序列/Wingman/Sentinel/Luster_Sentinel.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

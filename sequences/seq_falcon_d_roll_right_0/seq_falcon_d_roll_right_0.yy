@@ -26,8 +26,8 @@
   },
   "name":"seq_falcon_d_roll_right_0",
   "parent":{
-    "name":"sky_scorching_falcon",
-    "path":"folders/序列/Plane/falcon/sky_scorching_falcon.yy",
+    "name":"Sky_Scorching_Falcon",
+    "path":"folders/序列/Plane/Falcon/Sky_Scorching_Falcon.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

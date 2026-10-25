@@ -26,8 +26,8 @@
   },
   "name":"seq_apex_abcd_flame",
   "parent":{
-    "name":"apex",
-    "path":"folders/序列/Plane/apex.yy",
+    "name":"Apex",
+    "path":"folders/序列/Plane/Apex.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

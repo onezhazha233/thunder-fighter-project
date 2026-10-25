@@ -26,8 +26,8 @@
   },
   "name":"seq_azurewing_d_rampage_intro",
   "parent":{
-    "name":"abyss_azurewing",
-    "path":"folders/序列/Plane/azurewing/abyss_azurewing.yy",
+    "name":"Shadow_Azurewing",
+    "path":"folders/序列/Plane/Azurewing/Shadow_Azurewing.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

@@ -26,8 +26,8 @@
   },
   "name":"seq_gatling_c_rampage",
   "parent":{
-    "name":"high_speed_gatling",
-    "path":"folders/序列/wingman/gatling/high_speed_gatling.yy",
+    "name":"High_Speed_Gatling",
+    "path":"folders/序列/Wingman/Gatling/High_Speed_Gatling.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

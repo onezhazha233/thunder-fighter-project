@@ -26,8 +26,8 @@
   },
   "name":"seq_blade_b_rampage_intro",
   "parent":{
-    "name":"enigmatic_blade",
-    "path":"folders/序列/Plane/blade/enigmatic_blade.yy",
+    "name":"Enigmatic_Blade",
+    "path":"folders/序列/Plane/Blade/Enigmatic_Blade.yy",
   },
   "playback":0,
   "playbackSpeed":67.0,

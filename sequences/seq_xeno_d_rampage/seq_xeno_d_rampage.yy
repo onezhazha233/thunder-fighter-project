@@ -26,8 +26,8 @@
   },
   "name":"seq_xeno_d_rampage",
   "parent":{
-    "name":"ghost_xeno",
-    "path":"folders/序列/Plane/xeno/ghost_xeno.yy",
+    "name":"Ghost_Xeno",
+    "path":"folders/序列/Plane/Xeno/Ghost_Xeno.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

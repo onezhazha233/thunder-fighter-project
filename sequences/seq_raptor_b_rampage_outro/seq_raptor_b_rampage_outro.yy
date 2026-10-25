@@ -26,8 +26,8 @@
   },
   "name":"seq_raptor_b_rampage_outro",
   "parent":{
-    "name":"gale_eagle",
-    "path":"folders/序列/Plane/raptor/gale_eagle.yy",
+    "name":"Gale_Eagle",
+    "path":"folders/序列/Plane/Raptor/Gale_Eagle.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

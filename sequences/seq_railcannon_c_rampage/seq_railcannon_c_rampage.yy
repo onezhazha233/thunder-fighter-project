@@ -26,8 +26,8 @@
   },
   "name":"seq_railcannon_c_rampage",
   "parent":{
-    "name":"hyper_railcannon",
-    "path":"folders/序列/wingman/railcannon/hyper_railcannon.yy",
+    "name":"Hyper_Railcannon",
+    "path":"folders/序列/Wingman/Railcannon/Hyper_Railcannon.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

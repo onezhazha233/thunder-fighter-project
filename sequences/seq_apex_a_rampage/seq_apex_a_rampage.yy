@@ -26,8 +26,8 @@
   },
   "name":"seq_apex_a_rampage",
   "parent":{
-    "name":"apex_zero",
-    "path":"folders/序列/Plane/apex/apex_zero.yy",
+    "name":"Apex_Zero",
+    "path":"folders/序列/Plane/Apex/Apex_Zero.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

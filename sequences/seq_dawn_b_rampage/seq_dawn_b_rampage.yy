@@ -26,8 +26,8 @@
   },
   "name":"seq_dawn_b_rampage",
   "parent":{
-    "name":"peace_dawn",
-    "path":"folders/序列/Plane/dawn/peace_dawn.yy",
+    "name":"Peace_Dawn",
+    "path":"folders/序列/Plane/Dawn/Peace_Dawn.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

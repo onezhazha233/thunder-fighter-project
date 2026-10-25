@@ -26,8 +26,8 @@
   },
   "name":"seq_lightarc_a_flame",
   "parent":{
-    "name":"sweep_lightarc",
-    "path":"folders/序列/wingman/lightarc/sweep_lightarc.yy",
+    "name":"Sweep_Lightarc",
+    "path":"folders/序列/Wingman/Lightarc/Sweep_Lightarc.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

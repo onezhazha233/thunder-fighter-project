@@ -26,8 +26,8 @@
   },
   "name":"seq_dawn_d_idle",
   "parent":{
-    "name":"wisdom_dawn",
-    "path":"folders/序列/Plane/dawn/wisdom_dawn.yy",
+    "name":"Wisdom_Dawn",
+    "path":"folders/序列/Plane/Dawn/Wisdom_Dawn.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

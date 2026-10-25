@@ -26,8 +26,8 @@
   },
   "name":"seq_shotcannon_a_rampage",
   "parent":{
-    "name":"double_shotcannon",
-    "path":"folders/序列/wingman/shotcannon/double_shotcannon.yy",
+    "name":"Double_Shotcannon",
+    "path":"folders/序列/Wingman/Shotcannon/Double_Shotcannon.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

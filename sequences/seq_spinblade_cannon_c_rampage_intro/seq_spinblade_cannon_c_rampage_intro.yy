@@ -26,8 +26,8 @@
   },
   "name":"seq_spinblade_cannon_c_rampage_intro",
   "parent":{
-    "name":"magnetic_spinblade_cannon",
-    "path":"folders/序列/wingman/spinblade_cannon/magnetic_spinblade_cannon.yy",
+    "name":"Magnetic_Spinblade_Cannon",
+    "path":"folders/序列/Wingman/Spinblade_Cannon/Magnetic_Spinblade_Cannon.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

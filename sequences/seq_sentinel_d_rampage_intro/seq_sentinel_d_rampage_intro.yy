@@ -26,8 +26,8 @@
   },
   "name":"seq_sentinel_d_rampage_intro",
   "parent":{
-    "name":"incandescent_sentinel",
-    "path":"folders/序列/wingman/sentinel/incandescent_sentinel.yy",
+    "name":"Incandescent_Sentinel",
+    "path":"folders/序列/Wingman/Sentinel/Incandescent_Sentinel.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

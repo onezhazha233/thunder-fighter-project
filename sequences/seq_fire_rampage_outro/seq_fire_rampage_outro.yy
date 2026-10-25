@@ -26,8 +26,8 @@
   },
   "name":"seq_fire_rampage_outro",
   "parent":{
-    "name":"fire",
-    "path":"folders/序列/Plane/fire.yy",
+    "name":"Fire",
+    "path":"folders/序列/Plane/Fire.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

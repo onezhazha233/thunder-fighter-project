@@ -26,8 +26,8 @@
   },
   "name":"seq_overwatcher_d_roll_left_1",
   "parent":{
-    "name":"starriver_overwatcher",
-    "path":"folders/序列/Plane/overwatcher/starriver_overwatcher.yy",
+    "name":"Starriver_Overwatcher",
+    "path":"folders/序列/Plane/Overwatcher/Starriver_Overwatcher.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

@@ -26,8 +26,8 @@
   },
   "name":"seq_phantom_d_rampage_intro",
   "parent":{
-    "name":"aurora_phantom",
-    "path":"folders/序列/Plane/phantom/aurora_phantom.yy",
+    "name":"Aurora_Phantom",
+    "path":"folders/序列/Plane/Phantom/Aurora_Phantom.yy",
   },
   "playback":0,
   "playbackSpeed":67.0,

@@ -26,8 +26,8 @@
   },
   "name":"seq_falcon_b_roll_right_2",
   "parent":{
-    "name":"fiery_falcon",
-    "path":"folders/序列/Plane/falcon/fiery_falcon.yy",
+    "name":"Fiery_Falcon",
+    "path":"folders/序列/Plane/Falcon/Fiery_Falcon.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

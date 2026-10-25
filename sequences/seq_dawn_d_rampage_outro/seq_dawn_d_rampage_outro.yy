@@ -26,8 +26,8 @@
   },
   "name":"seq_dawn_d_rampage_outro",
   "parent":{
-    "name":"wisdom_dawn",
-    "path":"folders/序列/Plane/dawn/wisdom_dawn.yy",
+    "name":"Wisdom_Dawn",
+    "path":"folders/序列/Plane/Dawn/Wisdom_Dawn.yy",
   },
   "playback":0,
   "playbackSpeed":66.0,

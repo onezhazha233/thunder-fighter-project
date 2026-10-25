@@ -26,8 +26,8 @@
   },
   "name":"seq_plasma_cannon_a_idle",
   "parent":{
-    "name":"plasma_cannon",
-    "path":"folders/序列/wingman/plasma_cannon/plasma_cannon.yy",
+    "name":"Plasma_Cannon",
+    "path":"folders/序列/Wingman/Plasma_Cannon/Plasma_Cannon.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

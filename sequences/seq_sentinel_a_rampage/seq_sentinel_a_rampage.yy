@@ -26,8 +26,8 @@
   },
   "name":"seq_sentinel_a_rampage",
   "parent":{
-    "name":"absorb_sentinel",
-    "path":"folders/序列/wingman/sentinel/absorb_sentinel.yy",
+    "name":"Absorb_Sentinel",
+    "path":"folders/序列/Wingman/Sentinel/Absorb_Sentinel.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

@@ -26,8 +26,8 @@
   },
   "name":"seq_xeno_b_idle",
   "parent":{
-    "name":"steel_xeno",
-    "path":"folders/序列/Plane/xeno/steel_xeno.yy",
+    "name":"Steel_Xeno",
+    "path":"folders/序列/Plane/Xeno/Steel_Xeno.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

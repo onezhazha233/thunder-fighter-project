@@ -26,8 +26,8 @@
   },
   "name":"seq_dawn_a_idle",
   "parent":{
-    "name":"dawn_zero",
-    "path":"folders/序列/Plane/dawn/dawn_zero.yy",
+    "name":"Dawn_Zero",
+    "path":"folders/序列/Plane/Dawn/Dawn_Zero.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

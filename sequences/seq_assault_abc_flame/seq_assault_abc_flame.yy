@@ -26,8 +26,8 @@
   },
   "name":"seq_assault_abc_flame",
   "parent":{
-    "name":"assault",
-    "path":"folders/序列/Plane/assault.yy",
+    "name":"Assault",
+    "path":"folders/序列/Plane/Assault.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

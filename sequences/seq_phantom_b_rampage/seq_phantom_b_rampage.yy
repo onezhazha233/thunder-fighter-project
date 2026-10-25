@@ -26,8 +26,8 @@
   },
   "name":"seq_phantom_b_rampage",
   "parent":{
-    "name":"squall_phantom",
-    "path":"folders/序列/Plane/phantom/squall_phantom.yy",
+    "name":"Squall_Phantom",
+    "path":"folders/序列/Plane/Phantom/Squall_Phantom.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

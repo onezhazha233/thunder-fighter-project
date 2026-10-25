@@ -26,8 +26,8 @@
   },
   "name":"seq_mega_a_rampage_intro",
   "parent":{
-    "name":"beam_cannon",
-    "path":"folders/序列/wingman/mega/beam_cannon.yy",
+    "name":"Beam_Cannon",
+    "path":"folders/序列/Wingman/Mega/Beam_Cannon.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

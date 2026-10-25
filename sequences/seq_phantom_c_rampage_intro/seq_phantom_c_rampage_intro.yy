@@ -26,8 +26,8 @@
   },
   "name":"seq_phantom_c_rampage_intro",
   "parent":{
-    "name":"void_phantom",
-    "path":"folders/序列/Plane/phantom/void_phantom.yy",
+    "name":"Void_Phantom",
+    "path":"folders/序列/Plane/Phantom/Void_Phantom.yy",
   },
   "playback":0,
   "playbackSpeed":67.0,

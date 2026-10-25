@@ -26,8 +26,8 @@
   },
   "name":"seq_shotcannon_b_rampage_intro",
   "parent":{
-    "name":"triple_shotcannon",
-    "path":"folders/序列/wingman/shotcannon/triple_shotcannon.yy",
+    "name":"Triple_Shotcannon",
+    "path":"folders/序列/Wingman/Shotcannon/Triple_Shotcannon.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

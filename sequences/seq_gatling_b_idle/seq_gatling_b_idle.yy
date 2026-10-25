@@ -26,8 +26,8 @@
   },
   "name":"seq_gatling_b_idle",
   "parent":{
-    "name":"speedy_gatling",
-    "path":"folders/序列/wingman/gatling/speedy_gatling.yy",
+    "name":"Speedy_Gatling",
+    "path":"folders/序列/Wingman/Gatling/Speedy_Gatling.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

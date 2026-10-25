@@ -26,8 +26,8 @@
   },
   "name":"seq_sniper_c_rampage",
   "parent":{
-    "name":"skybreak_sniper",
-    "path":"folders/序列/wingman/sniper/skybreak_sniper.yy",
+    "name":"Skybreak_Sniper",
+    "path":"folders/序列/Wingman/Sniper/Skybreak_Sniper.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

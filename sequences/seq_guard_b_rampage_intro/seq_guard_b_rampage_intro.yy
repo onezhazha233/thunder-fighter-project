@@ -26,8 +26,8 @@
   },
   "name":"seq_guard_b_rampage_intro",
   "parent":{
-    "name":"golden_guard",
-    "path":"folders/序列/wingman/guardian/golden_guard.yy",
+    "name":"Golden_Guard",
+    "path":"folders/序列/Wingman/Guardian/Golden_Guard.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

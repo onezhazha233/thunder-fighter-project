@@ -26,8 +26,8 @@
   },
   "name":"seq_railcannon_a_rampage_intro",
   "parent":{
-    "name":"railcannon",
-    "path":"folders/序列/wingman/railcannon/railcannon.yy",
+    "name":"Railcannon",
+    "path":"folders/序列/Wingman/Railcannon/Railcannon.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

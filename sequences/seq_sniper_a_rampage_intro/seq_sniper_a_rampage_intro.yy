@@ -26,8 +26,8 @@
   },
   "name":"seq_sniper_a_rampage_intro",
   "parent":{
-    "name":"sniper",
-    "path":"folders/序列/wingman/sniper/sniper.yy",
+    "name":"Sniper",
+    "path":"folders/序列/Wingman/Sniper/Sniper.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,
