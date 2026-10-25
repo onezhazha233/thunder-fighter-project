@@ -15,8 +15,8 @@
   "name":"battle_item_crystal",
   "overriddenProperties":[],
   "parent":{
-    "name":"item",
-    "path":"folders/物体/item.yy",
+    "name":"Item",
+    "path":"folders/物体/Item.yy",
   },
   "parentObjectId":{
     "name":"battle_item_agent",

@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"frozen",
-    "path":"folders/精灵/effect/enemy/frozen.yy",
+    "path":"folders/精灵/Effect/enemy/frozen.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

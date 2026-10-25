@@ -27,7 +27,7 @@
   "origin":9,
   "parent":{
     "name":"sniper",
-    "path":"folders/精灵/effect/bullet_player/wingman/sniper.yy",
+    "path":"folders/精灵/Effect/Bullet_Player/wingman/sniper.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

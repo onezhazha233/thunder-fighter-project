@@ -8,8 +8,8 @@
   "name":"armor_dragon_d",
   "overriddenProperties":[],
   "parent":{
-    "name":"dragon",
-    "path":"folders/物体/armor/dragon.yy",
+    "name":"Dragon",
+    "path":"folders/物体/Armor/Dragon.yy",
   },
   "parentObjectId":{
     "name":"armor_agent",

@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"dawn_zero",
-    "path":"folders/精灵/effect/bullet_player/plane/dawn/dawn_zero.yy",
+    "path":"folders/精灵/Effect/Bullet_Player/plane/dawn/dawn_zero.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

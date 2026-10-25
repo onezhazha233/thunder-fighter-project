@@ -10,8 +10,8 @@
   "name":"subweapon_nuke_b",
   "overriddenProperties":[],
   "parent":{
-    "name":"nuke",
-    "path":"folders/物体/subweapon/nuke.yy",
+    "name":"Nuke",
+    "path":"folders/物体/Subweapon/Nuke.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

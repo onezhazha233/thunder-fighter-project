@@ -10,8 +10,8 @@
   "name":"emitter_plane_xeno_c",
   "overriddenProperties":[],
   "parent":{
-    "name":"xeno",
-    "path":"folders/物体/bullet_player/plane/emitter/xeno.yy",
+    "name":"Xeno",
+    "path":"folders/物体/Bullet_Player/Plane/Emitter/Xeno.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

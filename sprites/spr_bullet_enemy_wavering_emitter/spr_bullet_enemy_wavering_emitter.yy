@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"shockwave",
-    "path":"folders/精灵/bullet_enemy/shockwave.yy",
+    "name":"Shockwave",
+    "path":"folders/精灵/Bullet_Enemy/Shockwave.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

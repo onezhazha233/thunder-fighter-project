@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"damage_number",
-    "path":"folders/精灵/effect/damage_number.yy",
+    "path":"folders/精灵/Effect/damage_number.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

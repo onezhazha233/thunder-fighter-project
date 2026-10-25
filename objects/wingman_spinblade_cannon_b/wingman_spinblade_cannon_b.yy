@@ -8,8 +8,8 @@
   "name":"wingman_spinblade_cannon_b",
   "overriddenProperties":[],
   "parent":{
-    "name":"spinblade_cannon",
-    "path":"folders/物体/wingman/spinblade_cannon.yy",
+    "name":"Spinblade_Cannon",
+    "path":"folders/物体/Wingman/Spinblade_Cannon.yy",
   },
   "parentObjectId":{
     "name":"wingman_agent",

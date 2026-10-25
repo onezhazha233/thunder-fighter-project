@@ -29,7 +29,7 @@
   "origin":9,
   "parent":{
     "name":"annihilator",
-    "path":"folders/精灵/bullet_player/wingman/annihilator.yy",
+    "path":"folders/精灵/Bullet_Player/Wingman/annihilator.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

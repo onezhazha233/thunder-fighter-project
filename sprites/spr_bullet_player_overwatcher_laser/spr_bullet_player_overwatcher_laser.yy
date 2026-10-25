@@ -26,7 +26,7 @@
   "origin":7,
   "parent":{
     "name":"overwatcher",
-    "path":"folders/精灵/bullet_player/plane/overwatcher.yy",
+    "path":"folders/精灵/Bullet_Player/Plane/overwatcher.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

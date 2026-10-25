@@ -11,8 +11,8 @@
   "name":"emitter_plane_dawn_d",
   "overriddenProperties":[],
   "parent":{
-    "name":"dawn",
-    "path":"folders/物体/bullet_player/plane/emitter/dawn.yy",
+    "name":"Dawn",
+    "path":"folders/物体/Bullet_Player/Plane/Emitter/Dawn.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

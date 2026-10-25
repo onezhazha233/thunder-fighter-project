@@ -9,8 +9,8 @@
   "name":"bullet_player_plane_apex_b_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"pulse_apex",
-    "path":"folders/物体/bullet_player/plane/bullet/apex/pulse_apex.yy",
+    "name":"Pulse_Apex",
+    "path":"folders/物体/Bullet_Player/Plane/Bullet/Apex/Pulse_Apex.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

@@ -10,8 +10,8 @@
   "name":"bullet_player_plane_overwatcher_c_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"starfield_overwatcher",
-    "path":"folders/物体/bullet_player/plane/bullet/overwatcher/starfield_overwatcher.yy",
+    "name":"Starfield_Overwatcher",
+    "path":"folders/物体/Bullet_Player/Plane/Bullet/Overwatcher/Starfield_Overwatcher.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

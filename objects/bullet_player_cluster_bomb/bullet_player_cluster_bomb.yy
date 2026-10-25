@@ -11,8 +11,8 @@
   "name":"bullet_player_cluster_bomb",
   "overriddenProperties":[],
   "parent":{
-    "name":"cluster_bomb",
-    "path":"folders/物体/bullet_player/subweapon/cluster_bomb.yy",
+    "name":"Cluster_Bomb",
+    "path":"folders/物体/Bullet_Player/Subweapon/Cluster_Bomb.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

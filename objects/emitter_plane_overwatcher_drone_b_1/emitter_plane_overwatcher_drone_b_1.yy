@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"stellar_overwatcher",
-    "path":"folders/物体/bullet_player/plane/emitter/overwatcher/stellar_overwatcher.yy",
+    "path":"folders/物体/Bullet_Player/Plane/Emitter/Overwatcher/stellar_overwatcher.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

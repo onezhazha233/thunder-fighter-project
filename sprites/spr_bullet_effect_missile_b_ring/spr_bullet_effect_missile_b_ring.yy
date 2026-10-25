@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"missile",
-    "path":"folders/精灵/effect/bullet_player/subweapon/missile.yy",
+    "path":"folders/精灵/Effect/Bullet_Player/subweapon/missile.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

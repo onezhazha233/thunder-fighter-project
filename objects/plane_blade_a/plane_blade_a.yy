@@ -8,8 +8,8 @@
   "name":"plane_blade_a",
   "overriddenProperties":[],
   "parent":{
-    "name":"blade",
-    "path":"folders/物体/plane/blade.yy",
+    "name":"Blade",
+    "path":"folders/物体/Plane/Blade.yy",
   },
   "parentObjectId":{
     "name":"plane_agent",

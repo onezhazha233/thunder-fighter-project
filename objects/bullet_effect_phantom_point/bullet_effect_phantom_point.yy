@@ -11,8 +11,8 @@
   "name":"bullet_effect_phantom_point",
   "overriddenProperties":[],
   "parent":{
-    "name":"plane",
-    "path":"folders/物体/effect/bullet_player/plane.yy",
+    "name":"Plane",
+    "path":"folders/物体/Effect/Bullet_Player/Plane.yy",
   },
   "parentObjectId":null,
   "persistent":false,

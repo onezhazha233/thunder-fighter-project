@@ -12,8 +12,8 @@
   "name":"emitter_plane_phantom_c",
   "overriddenProperties":[],
   "parent":{
-    "name":"phantom",
-    "path":"folders/物体/bullet_player/plane/emitter/phantom.yy",
+    "name":"Phantom",
+    "path":"folders/物体/Bullet_Player/Plane/Emitter/Phantom.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

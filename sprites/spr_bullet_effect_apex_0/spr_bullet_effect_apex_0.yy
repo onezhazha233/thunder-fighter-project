@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"apex",
-    "path":"folders/精灵/effect/bullet_player/plane/apex.yy",
+    "path":"folders/精灵/Effect/Bullet_Player/plane/apex.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

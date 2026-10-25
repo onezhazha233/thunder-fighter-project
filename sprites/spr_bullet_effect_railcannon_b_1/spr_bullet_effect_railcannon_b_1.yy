@@ -28,7 +28,7 @@
   "origin":4,
   "parent":{
     "name":"pulse_railcannon",
-    "path":"folders/精灵/effect/bullet_player/wingman/railcannon/pulse_railcannon.yy",
+    "path":"folders/精灵/Effect/Bullet_Player/wingman/railcannon/pulse_railcannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

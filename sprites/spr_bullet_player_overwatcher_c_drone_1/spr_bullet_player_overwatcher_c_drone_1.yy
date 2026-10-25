@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"starfield_overwatcher",
-    "path":"folders/精灵/bullet_player/plane/overwatcher/starfield_overwatcher.yy",
+    "path":"folders/精灵/Bullet_Player/Plane/overwatcher/starfield_overwatcher.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

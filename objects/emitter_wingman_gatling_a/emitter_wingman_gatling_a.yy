@@ -11,8 +11,8 @@
   "name":"emitter_wingman_gatling_a",
   "overriddenProperties":[],
   "parent":{
-    "name":"gatling",
-    "path":"folders/物体/bullet_player/wingman/emitter/gatling.yy",
+    "name":"Gatling",
+    "path":"folders/物体/Bullet_Player/Wingman/Emitter/Gatling.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

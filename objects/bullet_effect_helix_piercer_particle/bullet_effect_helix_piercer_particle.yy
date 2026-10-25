@@ -11,8 +11,8 @@
   "name":"bullet_effect_helix_piercer_particle",
   "overriddenProperties":[],
   "parent":{
-    "name":"subweapon",
-    "path":"folders/物体/effect/bullet_player/subweapon.yy",
+    "name":"Subweapon",
+    "path":"folders/物体/Effect/Bullet_Player/Subweapon.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -8,8 +8,8 @@
   "name":"wingman_mega_c",
   "overriddenProperties":[],
   "parent":{
-    "name":"mega",
-    "path":"folders/物体/wingman/mega.yy",
+    "name":"Mega",
+    "path":"folders/物体/Wingman/Mega.yy",
   },
   "parentObjectId":{
     "name":"wingman_agent",

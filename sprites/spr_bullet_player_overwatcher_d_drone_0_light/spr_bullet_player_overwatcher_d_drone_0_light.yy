@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"starriver_overwatcher",
-    "path":"folders/精灵/bullet_player/plane/overwatcher/starriver_overwatcher.yy",
+    "path":"folders/精灵/Bullet_Player/Plane/overwatcher/starriver_overwatcher.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

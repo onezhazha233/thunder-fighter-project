@@ -10,8 +10,8 @@
   "name":"subweapon_laser_b",
   "overriddenProperties":[],
   "parent":{
-    "name":"laser",
-    "path":"folders/物体/subweapon/laser.yy",
+    "name":"Laser",
+    "path":"folders/物体/Subweapon/Laser.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

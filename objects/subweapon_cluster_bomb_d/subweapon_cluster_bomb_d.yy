@@ -10,8 +10,8 @@
   "name":"subweapon_cluster_bomb_d",
   "overriddenProperties":[],
   "parent":{
-    "name":"cluster_bomb",
-    "path":"folders/物体/subweapon/cluster_bomb.yy",
+    "name":"Cluster_bomb",
+    "path":"folders/物体/Subweapon/Cluster_bomb.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

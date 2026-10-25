@@ -8,8 +8,8 @@
   "name":"plane_phantom_d",
   "overriddenProperties":[],
   "parent":{
-    "name":"phantom",
-    "path":"folders/物体/plane/phantom.yy",
+    "name":"Phantom",
+    "path":"folders/物体/Plane/Phantom.yy",
   },
   "parentObjectId":{
     "name":"plane_agent",

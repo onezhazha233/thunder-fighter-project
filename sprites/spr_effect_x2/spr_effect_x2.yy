@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"effect",
-    "path":"folders/精灵/effect.yy",
+    "name":"Effect",
+    "path":"folders/精灵/Effect.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

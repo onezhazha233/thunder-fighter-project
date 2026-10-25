@@ -10,8 +10,8 @@
   "name":"armor_induction_a",
   "overriddenProperties":[],
   "parent":{
-    "name":"induction",
-    "path":"folders/物体/armor/induction.yy",
+    "name":"Induction",
+    "path":"folders/物体/Armor/Induction.yy",
   },
   "parentObjectId":{
     "name":"armor_agent",

@@ -9,8 +9,8 @@
   "name":"effect_enemy_snowflake_fog",
   "overriddenProperties":[],
   "parent":{
-    "name":"frozen",
-    "path":"folders/物体/effect/enemy/frozen.yy",
+    "name":"Frozen",
+    "path":"folders/物体/Effect/Enemy/Frozen.yy",
   },
   "parentObjectId":null,
   "persistent":false,

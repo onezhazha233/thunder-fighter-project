@@ -14,8 +14,8 @@
   "name":"bullet_player",
   "overriddenProperties":[],
   "parent":{
-    "name":"bullet_player",
-    "path":"folders/物体/bullet_player.yy",
+    "name":"Bullet_Player",
+    "path":"folders/物体/Bullet_Player.yy",
   },
   "parentObjectId":null,
   "persistent":false,

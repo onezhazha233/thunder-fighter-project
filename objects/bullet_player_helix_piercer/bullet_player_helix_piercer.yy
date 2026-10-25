@@ -11,8 +11,8 @@
   "name":"bullet_player_helix_piercer",
   "overriddenProperties":[],
   "parent":{
-    "name":"helix_piercer",
-    "path":"folders/物体/bullet_player/subweapon/helix_piercer.yy",
+    "name":"Helix_Piercer",
+    "path":"folders/物体/Bullet_Player/Subweapon/Helix_Piercer.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

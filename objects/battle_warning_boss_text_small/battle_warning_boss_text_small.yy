@@ -10,8 +10,8 @@
   "name":"battle_warning_boss_text_small",
   "overriddenProperties":[],
   "parent":{
-    "name":"warning_boss",
-    "path":"folders/物体/ui/warning_boss.yy",
+    "name":"Warning_Boss",
+    "path":"folders/物体/UI/Warning_Boss.yy",
   },
   "parentObjectId":null,
   "persistent":false,

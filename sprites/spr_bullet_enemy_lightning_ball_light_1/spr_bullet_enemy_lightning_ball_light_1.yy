@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":3,
   "parent":{
-    "name":"lightning_ball",
-    "path":"folders/精灵/bullet_enemy/lightning_ball.yy",
+    "name":"Lightning_Ball",
+    "path":"folders/精灵/Bullet_Enemy/Lightning_Ball.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

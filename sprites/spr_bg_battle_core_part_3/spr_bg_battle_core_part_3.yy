@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"core",
-    "path":"folders/精灵/bg/core.yy",
+    "name":"Core",
+    "path":"folders/精灵/BG/Core.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

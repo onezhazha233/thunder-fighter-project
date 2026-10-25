@@ -10,8 +10,8 @@
   "name":"battle_bg",
   "overriddenProperties":[],
   "parent":{
-    "name":"battle",
-    "path":"folders/物体/bg/battle.yy",
+    "name":"Battle",
+    "path":"folders/物体/BG/Battle.yy",
   },
   "parentObjectId":null,
   "persistent":false,

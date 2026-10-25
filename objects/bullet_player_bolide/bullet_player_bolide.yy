@@ -9,8 +9,8 @@
   "name":"bullet_player_bolide",
   "overriddenProperties":[],
   "parent":{
-    "name":"bolide",
-    "path":"folders/物体/bullet_player/subweapon/bolide.yy",
+    "name":"Bolide",
+    "path":"folders/物体/Bullet_Player/Subweapon/Bolide.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

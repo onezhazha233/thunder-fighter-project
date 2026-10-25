@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"gatling",
-    "path":"folders/精灵/bullet_player/wingman/gatling.yy",
+    "path":"folders/精灵/Bullet_Player/Wingman/gatling.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

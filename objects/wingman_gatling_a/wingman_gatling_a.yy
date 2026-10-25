@@ -8,8 +8,8 @@
   "name":"wingman_gatling_a",
   "overriddenProperties":[],
   "parent":{
-    "name":"gatling",
-    "path":"folders/物体/wingman/gatling.yy",
+    "name":"Gatling",
+    "path":"folders/物体/Wingman/Gatling.yy",
   },
   "parentObjectId":{
     "name":"wingman_agent",

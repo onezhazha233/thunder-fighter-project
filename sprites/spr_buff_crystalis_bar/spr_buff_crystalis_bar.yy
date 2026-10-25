@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"buff",
-    "path":"folders/精灵/buff.yy",
+    "name":"Buff",
+    "path":"folders/精灵/Buff.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

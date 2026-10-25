@@ -10,8 +10,8 @@
   "name":"bullet_player_plane_raptor",
   "overriddenProperties":[],
   "parent":{
-    "name":"raptor",
-    "path":"folders/物体/bullet_player/plane/bullet/raptor.yy",
+    "name":"Raptor",
+    "path":"folders/物体/Bullet_Player/Plane/Bullet/Raptor.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

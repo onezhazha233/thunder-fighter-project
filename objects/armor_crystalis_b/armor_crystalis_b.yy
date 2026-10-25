@@ -8,8 +8,8 @@
   "name":"armor_crystalis_b",
   "overriddenProperties":[],
   "parent":{
-    "name":"crystalis",
-    "path":"folders/物体/armor/crystalis.yy",
+    "name":"Crystalis",
+    "path":"folders/物体/Armor/Crystalis.yy",
   },
   "parentObjectId":{
     "name":"armor_crystalis_a",

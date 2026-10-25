@@ -10,8 +10,8 @@
   "name":"emitter_wingman_spinblade_cannon_a",
   "overriddenProperties":[],
   "parent":{
-    "name":"spinblade_cannon",
-    "path":"folders/物体/bullet_player/wingman/emitter/spinblade_cannon.yy",
+    "name":"Spinblade_Cannon",
+    "path":"folders/物体/Bullet_Player/Wingman/Emitter/Spinblade_Cannon.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

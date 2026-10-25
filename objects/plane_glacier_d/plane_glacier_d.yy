@@ -8,8 +8,8 @@
   "name":"plane_glacier_d",
   "overriddenProperties":[],
   "parent":{
-    "name":"glacier",
-    "path":"folders/物体/plane/glacier.yy",
+    "name":"Glacier",
+    "path":"folders/物体/Plane/Glacier.yy",
   },
   "parentObjectId":{
     "name":"plane_agent",

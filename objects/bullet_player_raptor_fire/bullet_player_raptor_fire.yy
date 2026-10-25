@@ -11,8 +11,8 @@
   "name":"bullet_player_raptor_fire",
   "overriddenProperties":[],
   "parent":{
-    "name":"raptor",
-    "path":"folders/物体/bullet_player/plane/bullet/raptor.yy",
+    "name":"Raptor",
+    "path":"folders/物体/Bullet_Player/Plane/Bullet/Raptor.yy",
   },
   "parentObjectId":null,
   "persistent":false,

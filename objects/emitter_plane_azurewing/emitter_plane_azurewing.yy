@@ -11,8 +11,8 @@
   "name":"emitter_plane_azurewing",
   "overriddenProperties":[],
   "parent":{
-    "name":"azurewing",
-    "path":"folders/物体/bullet_player/plane/emitter/azurewing.yy",
+    "name":"Azurewing",
+    "path":"folders/物体/Bullet_Player/Plane/Emitter/Azurewing.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

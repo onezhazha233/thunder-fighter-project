@@ -8,8 +8,8 @@
   "name":"plane_assault_b",
   "overriddenProperties":[],
   "parent":{
-    "name":"assault",
-    "path":"folders/物体/plane/assault.yy",
+    "name":"Assault",
+    "path":"folders/物体/Plane/Assault.yy",
   },
   "parentObjectId":{
     "name":"plane_agent",

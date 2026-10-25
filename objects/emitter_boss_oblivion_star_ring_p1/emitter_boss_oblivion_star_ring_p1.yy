@@ -8,8 +8,8 @@
   "name":"emitter_boss_oblivion_star_ring_p1",
   "overriddenProperties":[],
   "parent":{
-    "name":"original",
-    "path":"folders/物体/enemy/boss/original.yy",
+    "name":"Original",
+    "path":"folders/物体/Enemy/Boss/Original.yy",
   },
   "parentObjectId":{
     "name":"emitter_enemy",

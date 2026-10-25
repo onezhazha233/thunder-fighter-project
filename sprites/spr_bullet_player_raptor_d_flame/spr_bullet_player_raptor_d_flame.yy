@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"blaze_phoenix",
-    "path":"folders/精灵/bullet_player/plane/raptor/blaze_phoenix.yy",
+    "path":"folders/精灵/Bullet_Player/Plane/raptor/blaze_phoenix.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

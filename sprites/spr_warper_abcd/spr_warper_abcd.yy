@@ -30,7 +30,7 @@
   "origin":9,
   "parent":{
     "name":"warper",
-    "path":"folders/精灵/bullet_player/subweapon/warper.yy",
+    "path":"folders/精灵/Bullet_Player/Subweapon/warper.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

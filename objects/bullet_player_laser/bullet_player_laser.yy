@@ -11,8 +11,8 @@
   "name":"bullet_player_laser",
   "overriddenProperties":[],
   "parent":{
-    "name":"laser",
-    "path":"folders/物体/bullet_player/subweapon/laser.yy",
+    "name":"Laser",
+    "path":"folders/物体/Bullet_Player/Subweapon/Laser.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

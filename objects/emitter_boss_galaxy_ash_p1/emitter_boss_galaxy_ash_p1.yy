@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"0",
-    "path":"folders/物体/enemy/boss/0.yy",
+    "path":"folders/物体/Enemy/Boss/0.yy",
   },
   "parentObjectId":{
     "name":"emitter_enemy",

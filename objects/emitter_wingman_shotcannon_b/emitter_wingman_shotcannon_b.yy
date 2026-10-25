@@ -11,8 +11,8 @@
   "name":"emitter_wingman_shotcannon_b",
   "overriddenProperties":[],
   "parent":{
-    "name":"shotcannon",
-    "path":"folders/物体/bullet_player/wingman/emitter/shotcannon.yy",
+    "name":"Shotcannon",
+    "path":"folders/物体/Bullet_Player/Wingman/Emitter/Shotcannon.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

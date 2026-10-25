@@ -8,8 +8,8 @@
   "name":"armor_agent",
   "overriddenProperties":[],
   "parent":{
-    "name":"armor",
-    "path":"folders/物体/armor.yy",
+    "name":"Armor",
+    "path":"folders/物体/Armor.yy",
   },
   "parentObjectId":null,
   "persistent":false,

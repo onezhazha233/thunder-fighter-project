@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"plane",
-    "path":"folders/精灵/effect/bullet_player/plane.yy",
+    "path":"folders/精灵/Effect/Bullet_Player/plane.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

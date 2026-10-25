@@ -8,8 +8,8 @@
   "name":"plane_apex_d",
   "overriddenProperties":[],
   "parent":{
-    "name":"apex",
-    "path":"folders/物体/plane/apex.yy",
+    "name":"Apex",
+    "path":"folders/物体/Plane/Apex.yy",
   },
   "parentObjectId":{
     "name":"plane_agent",

@@ -8,8 +8,8 @@
   "name":"plane_xeno_d",
   "overriddenProperties":[],
   "parent":{
-    "name":"xeno",
-    "path":"folders/物体/plane/xeno.yy",
+    "name":"Xeno",
+    "path":"folders/物体/Plane/Xeno.yy",
   },
   "parentObjectId":{
     "name":"plane_agent",

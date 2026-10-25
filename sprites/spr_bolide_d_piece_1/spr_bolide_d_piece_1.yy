@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"daybreak_bolide",
-    "path":"folders/精灵/bullet_player/subweapon/bolide/daybreak_bolide.yy",
+    "path":"folders/精灵/Bullet_Player/Subweapon/bolide/daybreak_bolide.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

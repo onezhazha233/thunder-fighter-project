@@ -9,8 +9,8 @@
   "name":"bullet_player_plane_apex_a_3",
   "overriddenProperties":[],
   "parent":{
-    "name":"apex_zero",
-    "path":"folders/物体/bullet_player/plane/bullet/apex/apex_zero.yy",
+    "name":"Apex_Zero",
+    "path":"folders/物体/Bullet_Player/Plane/Bullet/Apex/Apex_Zero.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

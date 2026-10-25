@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"crystalis",
-    "path":"folders/精灵/effect/armor/crystalis.yy",
+    "name":"Crystalis",
+    "path":"folders/精灵/Effect/Armor/Crystalis.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

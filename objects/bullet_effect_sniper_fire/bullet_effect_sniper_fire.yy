@@ -11,8 +11,8 @@
   "name":"bullet_effect_sniper_fire",
   "overriddenProperties":[],
   "parent":{
-    "name":"wingman",
-    "path":"folders/物体/effect/bullet_player/wingman.yy",
+    "name":"Wingman",
+    "path":"folders/物体/Effect/Bullet_Player/Wingman.yy",
   },
   "parentObjectId":null,
   "persistent":false,

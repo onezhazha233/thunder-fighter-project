@@ -12,8 +12,8 @@
   "name":"bullet_player_plane_blade_line_b",
   "overriddenProperties":[],
   "parent":{
-    "name":"enigmatic_blade",
-    "path":"folders/物体/bullet_player/plane/bullet/blade/enigmatic_blade.yy",
+    "name":"Enigmatic_Blade",
+    "path":"folders/物体/Bullet_Player/Plane/Bullet/Blade/Enigmatic_Blade.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

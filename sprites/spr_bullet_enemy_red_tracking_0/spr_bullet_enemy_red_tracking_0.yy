@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"red_tracking",
-    "path":"folders/精灵/bullet_enemy/red_tracking.yy",
+    "name":"Red_Tracking",
+    "path":"folders/精灵/Bullet_Enemy/Red_Tracking.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

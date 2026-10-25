@@ -10,8 +10,8 @@
   "name":"bullet_player_wingman_mega_ball",
   "overriddenProperties":[],
   "parent":{
-    "name":"mega",
-    "path":"folders/物体/bullet_player/wingman/bullet/mega.yy",
+    "name":"Mega",
+    "path":"folders/物体/Bullet_Player/Wingman/Bullet/Mega.yy",
   },
   "parentObjectId":null,
   "persistent":false,

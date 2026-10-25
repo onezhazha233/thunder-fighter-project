@@ -8,8 +8,8 @@
   "name":"plane_azurewing_d",
   "overriddenProperties":[],
   "parent":{
-    "name":"azurewing",
-    "path":"folders/物体/plane/azurewing.yy",
+    "name":"Azurewing",
+    "path":"folders/物体/Plane/Azurewing.yy",
   },
   "parentObjectId":{
     "name":"plane_agent",

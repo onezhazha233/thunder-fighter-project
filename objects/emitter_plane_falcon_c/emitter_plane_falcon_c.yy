@@ -14,8 +14,8 @@
   "name":"emitter_plane_falcon_c",
   "overriddenProperties":[],
   "parent":{
-    "name":"falcon",
-    "path":"folders/物体/bullet_player/plane/emitter/falcon.yy",
+    "name":"Falcon",
+    "path":"folders/物体/Bullet_Player/Plane/Emitter/Falcon.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

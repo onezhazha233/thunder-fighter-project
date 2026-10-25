@@ -12,8 +12,8 @@
   "name":"bullet_player_plane_blade_line_d",
   "overriddenProperties":[],
   "parent":{
-    "name":"devil_blade",
-    "path":"folders/物体/bullet_player/plane/bullet/blade/devil_blade.yy",
+    "name":"Devil_Blade",
+    "path":"folders/物体/Bullet_Player/Plane/Bullet/Blade/Devil_Blade.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

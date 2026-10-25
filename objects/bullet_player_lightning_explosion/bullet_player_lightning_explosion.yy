@@ -11,8 +11,8 @@
   "name":"bullet_player_lightning_explosion",
   "overriddenProperties":[],
   "parent":{
-    "name":"lightning",
-    "path":"folders/物体/bullet_player/subweapon/lightning.yy",
+    "name":"Lightning",
+    "path":"folders/物体/Bullet_Player/Subweapon/Lightning.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

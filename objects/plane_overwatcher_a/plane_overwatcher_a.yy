@@ -9,8 +9,8 @@
   "name":"plane_overwatcher_a",
   "overriddenProperties":[],
   "parent":{
-    "name":"overwatcher",
-    "path":"folders/物体/plane/overwatcher.yy",
+    "name":"Overwatcher",
+    "path":"folders/物体/Plane/Overwatcher.yy",
   },
   "parentObjectId":{
     "name":"plane_agent",

@@ -8,8 +8,8 @@
   "name":"plane_dawn_c",
   "overriddenProperties":[],
   "parent":{
-    "name":"dawn",
-    "path":"folders/物体/plane/dawn.yy",
+    "name":"Dawn",
+    "path":"folders/物体/Plane/Dawn.yy",
   },
   "parentObjectId":{
     "name":"plane_agent",

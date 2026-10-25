@@ -10,8 +10,8 @@
   "name":"bullet_player_plane_phantom_b",
   "overriddenProperties":[],
   "parent":{
-    "name":"squall_phantom",
-    "path":"folders/物体/bullet_player/plane/bullet/phantom/squall_phantom.yy",
+    "name":"Squall_Phantom",
+    "path":"folders/物体/Bullet_Player/Plane/Bullet/Phantom/Squall_Phantom.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

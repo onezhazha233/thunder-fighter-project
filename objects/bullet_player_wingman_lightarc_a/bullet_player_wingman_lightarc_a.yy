@@ -10,8 +10,8 @@
   "name":"bullet_player_wingman_lightarc_a",
   "overriddenProperties":[],
   "parent":{
-    "name":"lightarc",
-    "path":"folders/物体/bullet_player/wingman/bullet/lightarc.yy",
+    "name":"Lightarc",
+    "path":"folders/物体/Bullet_Player/Wingman/Bullet/Lightarc.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

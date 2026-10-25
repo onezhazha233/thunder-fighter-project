@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":1,
   "parent":{
-    "name":"umbra_apex",
-    "path":"folders/精灵/bullet_enemy/umbra_apex.yy",
+    "name":"Umbra_Apex",
+    "path":"folders/精灵/Bullet_Enemy/Umbra_Apex.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

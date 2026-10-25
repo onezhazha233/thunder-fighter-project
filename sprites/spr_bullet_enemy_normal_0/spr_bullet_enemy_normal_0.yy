@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"bullet_enemy",
-    "path":"folders/精灵/bullet_enemy.yy",
+    "name":"Bullet_Enemy",
+    "path":"folders/精灵/Bullet_Enemy.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

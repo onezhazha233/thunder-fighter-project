@@ -9,8 +9,8 @@
   "name":"battle_bg_starry",
   "overriddenProperties":[],
   "parent":{
-    "name":"battle",
-    "path":"folders/物体/bg/battle.yy",
+    "name":"Battle",
+    "path":"folders/物体/BG/Battle.yy",
   },
   "parentObjectId":{
     "name":"battle_bg",

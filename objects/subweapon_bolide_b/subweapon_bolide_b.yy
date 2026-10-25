@@ -10,8 +10,8 @@
   "name":"subweapon_bolide_b",
   "overriddenProperties":[],
   "parent":{
-    "name":"bolide",
-    "path":"folders/物体/subweapon/bolide.yy",
+    "name":"Bolide",
+    "path":"folders/物体/Subweapon/Bolide.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

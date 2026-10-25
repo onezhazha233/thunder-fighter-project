@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"12",
-    "path":"folders/物体/enemy/boss/12.yy",
+    "path":"folders/物体/Enemy/Boss/12.yy",
   },
   "parentObjectId":{
     "name":"boss_agent",

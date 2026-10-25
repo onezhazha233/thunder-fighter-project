@@ -26,7 +26,7 @@
   "origin":7,
   "parent":{
     "name":"plasma_cannon",
-    "path":"folders/精灵/bullet_player/wingman/plasma_cannon/plasma_cannon.yy",
+    "path":"folders/精灵/Bullet_Player/Wingman/plasma_cannon/plasma_cannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

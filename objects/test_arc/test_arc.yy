@@ -9,8 +9,8 @@
   "name":"test_arc",
   "overriddenProperties":[],
   "parent":{
-    "name":"test",
-    "path":"folders/物体/test.yy",
+    "name":"Test",
+    "path":"folders/物体/Test.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -11,8 +11,8 @@
   "name":"bullet_player_xeno_fire",
   "overriddenProperties":[],
   "parent":{
-    "name":"xeno",
-    "path":"folders/物体/bullet_player/plane/bullet/xeno.yy",
+    "name":"Xeno",
+    "path":"folders/物体/Bullet_Player/Plane/Bullet/Xeno.yy",
   },
   "parentObjectId":null,
   "persistent":false,

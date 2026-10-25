@@ -11,8 +11,8 @@
   "name":"bullet_player_wingman_plasma_cannon",
   "overriddenProperties":[],
   "parent":{
-    "name":"plasma_cannon",
-    "path":"folders/物体/bullet_player/wingman/bullet/plasma_cannon.yy",
+    "name":"Plasma_Cannon",
+    "path":"folders/物体/Bullet_Player/Wingman/Bullet/Plasma_Cannon.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

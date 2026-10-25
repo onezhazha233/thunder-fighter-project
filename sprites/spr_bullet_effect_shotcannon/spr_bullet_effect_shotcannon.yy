@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"bullet_player",
-    "path":"folders/精灵/effect/bullet_player.yy",
+    "name":"Bullet_Player",
+    "path":"folders/精灵/Effect/Bullet_Player.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

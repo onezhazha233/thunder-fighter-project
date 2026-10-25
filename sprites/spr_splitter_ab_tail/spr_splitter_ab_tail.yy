@@ -27,7 +27,7 @@
   "origin":1,
   "parent":{
     "name":"splitter",
-    "path":"folders/精灵/bullet_player/subweapon/splitter.yy",
+    "path":"folders/精灵/Bullet_Player/Subweapon/splitter.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

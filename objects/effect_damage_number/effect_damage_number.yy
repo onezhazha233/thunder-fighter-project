@@ -10,8 +10,8 @@
   "name":"effect_damage_number",
   "overriddenProperties":[],
   "parent":{
-    "name":"effect",
-    "path":"folders/物体/effect.yy",
+    "name":"Effect",
+    "path":"folders/物体/Effect.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -45,7 +45,7 @@
   "origin":9,
   "parent":{
     "name":"velocity_bolide",
-    "path":"folders/精灵/bullet_player/subweapon/bolide/velocity_bolide.yy",
+    "path":"folders/精灵/Bullet_Player/Subweapon/bolide/velocity_bolide.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

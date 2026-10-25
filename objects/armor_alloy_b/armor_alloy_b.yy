@@ -8,8 +8,8 @@
   "name":"armor_alloy_b",
   "overriddenProperties":[],
   "parent":{
-    "name":"alloy",
-    "path":"folders/物体/armor/alloy.yy",
+    "name":"Alloy",
+    "path":"folders/物体/Armor/Alloy.yy",
   },
   "parentObjectId":{
     "name":"armor_agent",

@@ -9,8 +9,8 @@
   "name":"battle_healer",
   "overriddenProperties":[],
   "parent":{
-    "name":"item",
-    "path":"folders/物体/item.yy",
+    "name":"Item",
+    "path":"folders/物体/Item.yy",
   },
   "parentObjectId":null,
   "persistent":false,

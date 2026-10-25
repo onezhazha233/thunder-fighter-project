@@ -26,7 +26,7 @@
   "origin":1,
   "parent":{
     "name":"hexogen_cluster_bomb",
-    "path":"folders/精灵/bullet_player/subweapon/cluster_bomb/hexogen_cluster_bomb.yy",
+    "path":"folders/精灵/Bullet_Player/Subweapon/cluster_bomb/hexogen_cluster_bomb.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

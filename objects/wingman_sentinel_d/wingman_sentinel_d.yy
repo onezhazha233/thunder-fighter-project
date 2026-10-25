@@ -8,8 +8,8 @@
   "name":"wingman_sentinel_d",
   "overriddenProperties":[],
   "parent":{
-    "name":"sentinel",
-    "path":"folders/物体/wingman/sentinel.yy",
+    "name":"Sentinel",
+    "path":"folders/物体/Wingman/Sentinel.yy",
   },
   "parentObjectId":{
     "name":"wingman_agent",

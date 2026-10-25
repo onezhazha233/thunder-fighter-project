@@ -12,8 +12,8 @@
   "name":"emitter_wingman_sniper_b",
   "overriddenProperties":[],
   "parent":{
-    "name":"sniper",
-    "path":"folders/物体/bullet_player/wingman/emitter/sniper.yy",
+    "name":"Sniper",
+    "path":"folders/物体/Bullet_Player/Wingman/Emitter/Sniper.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

@@ -10,8 +10,8 @@
   "name":"bullet_player_serpentine_piercer",
   "overriddenProperties":[],
   "parent":{
-    "name":"serpentine_piercer",
-    "path":"folders/物体/bullet_player/subweapon/serpentine_piercer.yy",
+    "name":"Serpentine_Piercer",
+    "path":"folders/物体/Bullet_Player/Subweapon/Serpentine_Piercer.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

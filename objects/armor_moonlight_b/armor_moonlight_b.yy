@@ -8,8 +8,8 @@
   "name":"armor_moonlight_b",
   "overriddenProperties":[],
   "parent":{
-    "name":"moonlight",
-    "path":"folders/物体/armor/moonlight.yy",
+    "name":"Moonlight",
+    "path":"folders/物体/Armor/Moonlight.yy",
   },
   "parentObjectId":{
     "name":"armor_agent",

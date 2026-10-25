@@ -27,7 +27,7 @@
   "origin":4,
   "parent":{
     "name":"fusion_nuke",
-    "path":"folders/精灵/bullet_player/subweapon/nuke/fusion_nuke.yy",
+    "path":"folders/精灵/Bullet_Player/Subweapon/nuke/fusion_nuke.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

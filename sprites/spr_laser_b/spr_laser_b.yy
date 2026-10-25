@@ -28,7 +28,7 @@
   "origin":4,
   "parent":{
     "name":"radar_laser",
-    "path":"folders/精灵/bullet_player/subweapon/laser/radar_laser.yy",
+    "path":"folders/精灵/Bullet_Player/Subweapon/laser/radar_laser.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

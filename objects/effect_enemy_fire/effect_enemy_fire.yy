@@ -9,8 +9,8 @@
   "name":"effect_enemy_fire",
   "overriddenProperties":[],
   "parent":{
-    "name":"burn",
-    "path":"folders/物体/effect/enemy/burn.yy",
+    "name":"Burn",
+    "path":"folders/物体/Effect/Enemy/Burn.yy",
   },
   "parentObjectId":null,
   "persistent":false,

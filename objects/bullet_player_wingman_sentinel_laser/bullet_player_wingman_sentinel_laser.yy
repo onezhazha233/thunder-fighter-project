@@ -10,8 +10,8 @@
   "name":"bullet_player_wingman_sentinel_laser",
   "overriddenProperties":[],
   "parent":{
-    "name":"sentinel",
-    "path":"folders/物体/bullet_player/wingman/bullet/sentinel.yy",
+    "name":"Sentinel",
+    "path":"folders/物体/Bullet_Player/Wingman/Bullet/Sentinel.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

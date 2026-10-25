@@ -10,8 +10,8 @@
   "name":"bullet_enemy_dark_assault",
   "overriddenProperties":[],
   "parent":{
-    "name":"bullet_enemy",
-    "path":"folders/物体/bullet_enemy.yy",
+    "name":"Bullet_Enemy",
+    "path":"folders/物体/Bullet_Enemy.yy",
   },
   "parentObjectId":{
     "name":"bullet_enemy",

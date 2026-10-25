@@ -11,8 +11,8 @@
   "name":"bullet_player_apex_fire",
   "overriddenProperties":[],
   "parent":{
-    "name":"apex",
-    "path":"folders/物体/bullet_player/plane/bullet/apex.yy",
+    "name":"Apex",
+    "path":"folders/物体/Bullet_Player/Plane/Bullet/Apex.yy",
   },
   "parentObjectId":null,
   "persistent":false,

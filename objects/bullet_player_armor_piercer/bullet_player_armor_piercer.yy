@@ -11,8 +11,8 @@
   "name":"bullet_player_armor_piercer",
   "overriddenProperties":[],
   "parent":{
-    "name":"armor_piercer",
-    "path":"folders/物体/bullet_player/subweapon/armor_piercer.yy",
+    "name":"Armor_Piercer",
+    "path":"folders/物体/Bullet_Player/Subweapon/Armor_Piercer.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

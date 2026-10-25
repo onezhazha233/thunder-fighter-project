@@ -27,7 +27,7 @@
   "origin":4,
   "parent":{
     "name":"spike_splitter",
-    "path":"folders/精灵/bullet_player/subweapon/splitter/spike_splitter.yy",
+    "path":"folders/精灵/Bullet_Player/Subweapon/splitter/spike_splitter.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

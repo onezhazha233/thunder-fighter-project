@@ -11,8 +11,8 @@
   "name":"subweapon_warper_d",
   "overriddenProperties":[],
   "parent":{
-    "name":"warper",
-    "path":"folders/物体/subweapon/warper.yy",
+    "name":"Warper",
+    "path":"folders/物体/Subweapon/Warper.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

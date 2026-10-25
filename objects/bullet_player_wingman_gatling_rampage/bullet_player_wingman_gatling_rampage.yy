@@ -9,8 +9,8 @@
   "name":"bullet_player_wingman_gatling_rampage",
   "overriddenProperties":[],
   "parent":{
-    "name":"gatling",
-    "path":"folders/物体/bullet_player/wingman/bullet/gatling.yy",
+    "name":"Gatling",
+    "path":"folders/物体/Bullet_Player/Wingman/Bullet/Gatling.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

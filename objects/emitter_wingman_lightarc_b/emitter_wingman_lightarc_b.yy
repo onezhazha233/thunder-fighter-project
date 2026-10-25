@@ -12,8 +12,8 @@
   "name":"emitter_wingman_lightarc_b",
   "overriddenProperties":[],
   "parent":{
-    "name":"lightarc",
-    "path":"folders/物体/bullet_player/wingman/emitter/lightarc.yy",
+    "name":"Lightarc",
+    "path":"folders/物体/Bullet_Player/Wingman/Emitter/Lightarc.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

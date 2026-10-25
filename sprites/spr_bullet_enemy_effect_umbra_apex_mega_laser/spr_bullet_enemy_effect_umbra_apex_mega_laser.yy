@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"bullet_enemy",
-    "path":"folders/精灵/effect/bullet_enemy.yy",
+    "name":"Bullet_Enemy",
+    "path":"folders/精灵/Effect/Bullet_Enemy.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

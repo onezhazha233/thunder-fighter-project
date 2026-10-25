@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"laser_green",
-    "path":"folders/精灵/bullet_enemy/laser_green.yy",
+    "name":"Laser_Green",
+    "path":"folders/精灵/Bullet_Enemy/Laser_Green.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

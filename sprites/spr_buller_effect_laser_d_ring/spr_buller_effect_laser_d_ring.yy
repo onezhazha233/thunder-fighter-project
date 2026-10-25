@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"superconductive_laser",
-    "path":"folders/精灵/effect/bullet_player/subweapon/laser/superconductive_laser.yy",
+    "path":"folders/精灵/Effect/Bullet_Player/subweapon/laser/superconductive_laser.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

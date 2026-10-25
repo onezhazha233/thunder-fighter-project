@@ -8,8 +8,8 @@
   "name":"armor_lotus_c123",
   "overriddenProperties":[],
   "parent":{
-    "name":"lotus",
-    "path":"folders/物体/armor/lotus.yy",
+    "name":"Lotus",
+    "path":"folders/物体/Armor/Lotus.yy",
   },
   "parentObjectId":{
     "name":"armor_lotus_a",

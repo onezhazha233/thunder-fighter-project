@@ -8,8 +8,8 @@
   "name":"wingman_lightarc_c",
   "overriddenProperties":[],
   "parent":{
-    "name":"lightarc",
-    "path":"folders/物体/wingman/lightarc.yy",
+    "name":"Lightarc",
+    "path":"folders/物体/Wingman/Lightarc.yy",
   },
   "parentObjectId":{
     "name":"wingman_agent",

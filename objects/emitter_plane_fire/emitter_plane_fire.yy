@@ -11,8 +11,8 @@
   "name":"emitter_plane_fire",
   "overriddenProperties":[],
   "parent":{
-    "name":"emitter",
-    "path":"folders/物体/bullet_player/plane/emitter.yy",
+    "name":"Emitter",
+    "path":"folders/物体/Bullet_Player/Plane/Emitter.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

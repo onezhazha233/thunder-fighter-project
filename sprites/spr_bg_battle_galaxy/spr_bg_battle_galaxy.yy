@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"galaxy",
-    "path":"folders/精灵/bg/galaxy.yy",
+    "name":"Galaxy",
+    "path":"folders/精灵/BG/Galaxy.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

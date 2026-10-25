@@ -10,8 +10,8 @@
   "name":"bullet_player_plane_phantom_a",
   "overriddenProperties":[],
   "parent":{
-    "name":"phantom_zero",
-    "path":"folders/物体/bullet_player/plane/bullet/phantom/phantom_zero.yy",
+    "name":"Phantom_Zero",
+    "path":"folders/物体/Bullet_Player/Plane/Bullet/Phantom/Phantom_Zero.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

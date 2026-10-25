@@ -10,8 +10,8 @@
   "name":"bullet_player_plane_phantom_d",
   "overriddenProperties":[],
   "parent":{
-    "name":"aurora_phantom",
-    "path":"folders/物体/bullet_player/plane/bullet/phantom/aurora_phantom.yy",
+    "name":"Aurora_Phantom",
+    "path":"folders/物体/Bullet_Player/Plane/Bullet/Phantom/Aurora_Phantom.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

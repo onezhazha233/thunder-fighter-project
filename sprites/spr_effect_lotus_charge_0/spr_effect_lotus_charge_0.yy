@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"lotus",
-    "path":"folders/精灵/effect/armor/lotus.yy",
+    "name":"Lotus",
+    "path":"folders/精灵/Effect/Armor/Lotus.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

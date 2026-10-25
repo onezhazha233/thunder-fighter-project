@@ -28,7 +28,7 @@
   "origin":4,
   "parent":{
     "name":"hyper_laser",
-    "path":"folders/精灵/bullet_player/subweapon/laser/hyper_laser.yy",
+    "path":"folders/精灵/Bullet_Player/Subweapon/laser/hyper_laser.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

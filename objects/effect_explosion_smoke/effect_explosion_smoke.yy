@@ -10,8 +10,8 @@
   "name":"effect_explosion_smoke",
   "overriddenProperties":[],
   "parent":{
-    "name":"explosion",
-    "path":"folders/物体/effect/explosion.yy",
+    "name":"Explosion",
+    "path":"folders/物体/Effect/Explosion.yy",
   },
   "parentObjectId":null,
   "persistent":false,

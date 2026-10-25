@@ -26,7 +26,7 @@
   "origin":7,
   "parent":{
     "name":"lightarc",
-    "path":"folders/精灵/bullet_player/wingman/lightarc.yy",
+    "path":"folders/精灵/Bullet_Player/Wingman/lightarc.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

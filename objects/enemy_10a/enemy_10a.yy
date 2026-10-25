@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"10",
-    "path":"folders/物体/enemy/minion/10.yy",
+    "path":"folders/物体/Enemy/Minion/10.yy",
   },
   "parentObjectId":{
     "name":"enemy_agent",

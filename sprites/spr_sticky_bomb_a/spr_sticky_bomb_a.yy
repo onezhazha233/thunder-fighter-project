@@ -27,7 +27,7 @@
   "origin":4,
   "parent":{
     "name":"sticky_bomb",
-    "path":"folders/精灵/bullet_player/subweapon/sticky_bomb.yy",
+    "path":"folders/精灵/Bullet_Player/Subweapon/sticky_bomb.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

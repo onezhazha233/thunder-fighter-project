@@ -8,8 +8,8 @@
   "name":"wave_7",
   "overriddenProperties":[],
   "parent":{
-    "name":"battle_wave",
-    "path":"folders/物体/battle_wave.yy",
+    "name":"Battle_Wave",
+    "path":"folders/物体/Battle_Wave.yy",
   },
   "parentObjectId":{
     "name":"battle_wave",

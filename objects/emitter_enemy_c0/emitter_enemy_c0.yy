@@ -8,8 +8,8 @@
   "name":"emitter_enemy_c0",
   "overriddenProperties":[],
   "parent":{
-    "name":"enemy",
-    "path":"folders/物体/enemy.yy",
+    "name":"Enemy",
+    "path":"folders/物体/Enemy.yy",
   },
   "parentObjectId":{
     "name":"emitter_enemy",

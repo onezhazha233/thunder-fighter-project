@@ -10,8 +10,8 @@
   "name":"bullet_player_plane_dawn_big",
   "overriddenProperties":[],
   "parent":{
-    "name":"dawn",
-    "path":"folders/物体/bullet_player/plane/bullet/dawn.yy",
+    "name":"Dawn",
+    "path":"folders/物体/Bullet_Player/Plane/Bullet/Dawn.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

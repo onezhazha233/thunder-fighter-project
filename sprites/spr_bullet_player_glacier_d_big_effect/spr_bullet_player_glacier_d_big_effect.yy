@@ -30,7 +30,7 @@
   "origin":7,
   "parent":{
     "name":"glacier",
-    "path":"folders/精灵/bullet_player/plane/glacier.yy",
+    "path":"folders/精灵/Bullet_Player/Plane/glacier.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

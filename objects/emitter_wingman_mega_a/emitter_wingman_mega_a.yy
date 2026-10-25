@@ -13,8 +13,8 @@
   "name":"emitter_wingman_mega_a",
   "overriddenProperties":[],
   "parent":{
-    "name":"mega",
-    "path":"folders/物体/bullet_player/wingman/emitter/mega.yy",
+    "name":"Mega",
+    "path":"folders/物体/Bullet_Player/Wingman/Emitter/Mega.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

@@ -27,7 +27,7 @@
   "origin":4,
   "parent":{
     "name":"lightning",
-    "path":"folders/精灵/bullet_player/subweapon/lightning.yy",
+    "path":"folders/精灵/Bullet_Player/Subweapon/lightning.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

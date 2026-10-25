@@ -9,8 +9,8 @@
   "name":"boss_spikx_flarebolt",
   "overriddenProperties":[],
   "parent":{
-    "name":"original",
-    "path":"folders/物体/enemy/boss/original.yy",
+    "name":"Original",
+    "path":"folders/物体/Enemy/Boss/Original.yy",
   },
   "parentObjectId":{
     "name":"boss_agent",

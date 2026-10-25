@@ -26,7 +26,7 @@
   "origin":7,
   "parent":{
     "name":"sky_scorching_falcon",
-    "path":"folders/精灵/bullet_player/plane/falcon/sky_scorching_falcon.yy",
+    "path":"folders/精灵/Bullet_Player/Plane/falcon/sky_scorching_falcon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -8,8 +8,8 @@
   "name":"wingman_railcannon_b",
   "overriddenProperties":[],
   "parent":{
-    "name":"railcannon",
-    "path":"folders/物体/wingman/railcannon.yy",
+    "name":"Railcannon",
+    "path":"folders/物体/Wingman/Railcannon.yy",
   },
   "parentObjectId":{
     "name":"wingman_agent",

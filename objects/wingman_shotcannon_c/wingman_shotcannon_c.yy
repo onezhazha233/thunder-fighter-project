@@ -8,8 +8,8 @@
   "name":"wingman_shotcannon_c",
   "overriddenProperties":[],
   "parent":{
-    "name":"shotcannon",
-    "path":"folders/物体/wingman/shotcannon.yy",
+    "name":"Shotcannon",
+    "path":"folders/物体/Wingman/Shotcannon.yy",
   },
   "parentObjectId":{
     "name":"wingman_agent",

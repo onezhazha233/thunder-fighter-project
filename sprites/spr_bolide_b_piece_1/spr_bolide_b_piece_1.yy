@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"fleet_bolide",
-    "path":"folders/精灵/bullet_player/subweapon/bolide/fleet_bolide.yy",
+    "path":"folders/精灵/Bullet_Player/Subweapon/bolide/fleet_bolide.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

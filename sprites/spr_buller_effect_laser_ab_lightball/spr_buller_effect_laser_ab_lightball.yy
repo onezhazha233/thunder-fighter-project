@@ -27,7 +27,7 @@
   "origin":4,
   "parent":{
     "name":"laser",
-    "path":"folders/精灵/effect/bullet_player/subweapon/laser.yy",
+    "path":"folders/精灵/Effect/Bullet_Player/subweapon/laser.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

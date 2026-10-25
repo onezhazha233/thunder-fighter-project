@@ -10,8 +10,8 @@
   "name":"emitter_plane_assault_d",
   "overriddenProperties":[],
   "parent":{
-    "name":"assault",
-    "path":"folders/物体/bullet_player/plane/emitter/assault.yy",
+    "name":"Assault",
+    "path":"folders/物体/Bullet_Player/Plane/Emitter/Assault.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

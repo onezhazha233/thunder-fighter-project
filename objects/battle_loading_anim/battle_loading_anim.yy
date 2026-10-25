@@ -11,8 +11,8 @@
   "name":"battle_loading_anim",
   "overriddenProperties":[],
   "parent":{
-    "name":"loading",
-    "path":"folders/物体/ui/loading.yy",
+    "name":"Loading",
+    "path":"folders/物体/UI/Loading.yy",
   },
   "parentObjectId":null,
   "persistent":true,

@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"pulse_bomb",
-    "path":"folders/精灵/bullet_player/subweapon/nuke/pulse_bomb.yy",
+    "path":"folders/精灵/Bullet_Player/Subweapon/nuke/pulse_bomb.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

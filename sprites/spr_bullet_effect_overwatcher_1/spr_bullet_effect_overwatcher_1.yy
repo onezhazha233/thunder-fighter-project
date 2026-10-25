@@ -26,7 +26,7 @@
   "origin":7,
   "parent":{
     "name":"overwatcher",
-    "path":"folders/精灵/effect/bullet_player/plane/overwatcher.yy",
+    "path":"folders/精灵/Effect/Bullet_Player/plane/overwatcher.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

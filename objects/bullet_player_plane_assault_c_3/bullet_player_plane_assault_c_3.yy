@@ -9,8 +9,8 @@
   "name":"bullet_player_plane_assault_c_3",
   "overriddenProperties":[],
   "parent":{
-    "name":"swift_assault",
-    "path":"folders/物体/bullet_player/plane/bullet/assault/swift_assault.yy",
+    "name":"Swift_Assault",
+    "path":"folders/物体/Bullet_Player/Plane/Bullet/Assault/Swift_Assault.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

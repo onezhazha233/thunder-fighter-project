@@ -11,8 +11,8 @@
   "name":"bullet_player_plane_refraction",
   "overriddenProperties":[],
   "parent":{
-    "name":"bullet",
-    "path":"folders/物体/bullet_player/plane/bullet.yy",
+    "name":"Bullet",
+    "path":"folders/物体/Bullet_Player/Plane/Bullet.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

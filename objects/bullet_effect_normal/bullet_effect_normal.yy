@@ -10,8 +10,8 @@
   "name":"bullet_effect_normal",
   "overriddenProperties":[],
   "parent":{
-    "name":"effect",
-    "path":"folders/物体/effect.yy",
+    "name":"Effect",
+    "path":"folders/物体/Effect.yy",
   },
   "parentObjectId":null,
   "persistent":false,

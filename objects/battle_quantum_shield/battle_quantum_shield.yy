@@ -12,8 +12,8 @@
   "name":"battle_quantum_shield",
   "overriddenProperties":[],
   "parent":{
-    "name":"item",
-    "path":"folders/物体/item.yy",
+    "name":"Item",
+    "path":"folders/物体/Item.yy",
   },
   "parentObjectId":{
     "name":"bullet_enemy_block",

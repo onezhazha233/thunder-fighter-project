@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"frost",
-    "path":"folders/精灵/effect/armor/frost.yy",
+    "name":"Frost",
+    "path":"folders/精灵/Effect/Armor/Frost.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

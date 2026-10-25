@@ -8,8 +8,8 @@
   "name":"wingman_annihilator_b",
   "overriddenProperties":[],
   "parent":{
-    "name":"annihilator",
-    "path":"folders/物体/wingman/annihilator.yy",
+    "name":"Annihilator",
+    "path":"folders/物体/Wingman/Annihilator.yy",
   },
   "parentObjectId":{
     "name":"wingman_agent",

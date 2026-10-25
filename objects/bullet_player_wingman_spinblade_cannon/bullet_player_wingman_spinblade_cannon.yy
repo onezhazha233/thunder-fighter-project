@@ -12,8 +12,8 @@
   "name":"bullet_player_wingman_spinblade_cannon",
   "overriddenProperties":[],
   "parent":{
-    "name":"spinblade_cannon",
-    "path":"folders/物体/bullet_player/wingman/bullet/spinblade_cannon.yy",
+    "name":"Spinblade_Cannon",
+    "path":"folders/物体/Bullet_Player/Wingman/Bullet/Spinblade_Cannon.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

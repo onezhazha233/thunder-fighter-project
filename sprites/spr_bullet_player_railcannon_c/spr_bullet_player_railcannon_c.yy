@@ -46,7 +46,7 @@
   "origin":9,
   "parent":{
     "name":"railcannon",
-    "path":"folders/精灵/bullet_player/wingman/railcannon.yy",
+    "path":"folders/精灵/Bullet_Player/Wingman/railcannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

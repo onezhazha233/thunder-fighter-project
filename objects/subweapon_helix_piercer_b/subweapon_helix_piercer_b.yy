@@ -11,8 +11,8 @@
   "name":"subweapon_helix_piercer_b",
   "overriddenProperties":[],
   "parent":{
-    "name":"helix_piercer",
-    "path":"folders/物体/subweapon/helix_piercer.yy",
+    "name":"Helix_piercer",
+    "path":"folders/物体/Subweapon/Helix_piercer.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

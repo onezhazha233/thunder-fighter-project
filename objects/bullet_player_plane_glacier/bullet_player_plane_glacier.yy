@@ -10,8 +10,8 @@
   "name":"bullet_player_plane_glacier",
   "overriddenProperties":[],
   "parent":{
-    "name":"glacier",
-    "path":"folders/物体/bullet_player/plane/bullet/glacier.yy",
+    "name":"Glacier",
+    "path":"folders/物体/Bullet_Player/Plane/Bullet/Glacier.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

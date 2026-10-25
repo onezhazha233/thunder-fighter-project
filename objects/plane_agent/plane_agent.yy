@@ -15,8 +15,8 @@
   "name":"plane_agent",
   "overriddenProperties":[],
   "parent":{
-    "name":"plane",
-    "path":"folders/物体/plane.yy",
+    "name":"Plane",
+    "path":"folders/物体/Plane.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -9,8 +9,8 @@
   "name":"bullet_player_plane_apex_d_4",
   "overriddenProperties":[],
   "parent":{
-    "name":"thunder_apex",
-    "path":"folders/物体/bullet_player/plane/bullet/apex/thunder_apex.yy",
+    "name":"Thunder_Apex",
+    "path":"folders/物体/Bullet_Player/Plane/Bullet/Apex/Thunder_Apex.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

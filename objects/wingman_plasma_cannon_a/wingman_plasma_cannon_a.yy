@@ -8,8 +8,8 @@
   "name":"wingman_plasma_cannon_a",
   "overriddenProperties":[],
   "parent":{
-    "name":"plasma_cannon",
-    "path":"folders/物体/wingman/plasma_cannon.yy",
+    "name":"Plasma_Cannon",
+    "path":"folders/物体/Wingman/Plasma_Cannon.yy",
   },
   "parentObjectId":{
     "name":"wingman_agent",

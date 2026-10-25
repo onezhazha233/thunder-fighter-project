@@ -9,8 +9,8 @@
   "name":"bullet_player_plane_assault_d_4",
   "overriddenProperties":[],
   "parent":{
-    "name":"thunder_assault",
-    "path":"folders/物体/bullet_player/plane/bullet/assault/thunder_assault.yy",
+    "name":"Thunder_Assault",
+    "path":"folders/物体/Bullet_Player/Plane/Bullet/Assault/Thunder_Assault.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

@@ -10,8 +10,8 @@
   "name":"emitter_plane_raptor_d",
   "overriddenProperties":[],
   "parent":{
-    "name":"raptor",
-    "path":"folders/物体/bullet_player/plane/emitter/raptor.yy",
+    "name":"Raptor",
+    "path":"folders/物体/Bullet_Player/Plane/Emitter/Raptor.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

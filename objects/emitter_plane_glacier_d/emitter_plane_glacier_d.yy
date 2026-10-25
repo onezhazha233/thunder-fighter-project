@@ -14,8 +14,8 @@
   "name":"emitter_plane_glacier_d",
   "overriddenProperties":[],
   "parent":{
-    "name":"glacier",
-    "path":"folders/物体/bullet_player/plane/emitter/glacier.yy",
+    "name":"Glacier",
+    "path":"folders/物体/Bullet_Player/Plane/Emitter/Glacier.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

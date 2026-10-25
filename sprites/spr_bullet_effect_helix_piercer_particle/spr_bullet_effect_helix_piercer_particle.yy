@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"helix_piercer",
-    "path":"folders/精灵/effect/bullet_player/subweapon/helix_piercer.yy",
+    "path":"folders/精灵/Effect/Bullet_Player/subweapon/helix_piercer.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

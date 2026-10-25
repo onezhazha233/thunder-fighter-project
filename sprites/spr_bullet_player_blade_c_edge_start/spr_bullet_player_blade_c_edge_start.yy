@@ -26,7 +26,7 @@
   "origin":8,
   "parent":{
     "name":"demon_blade",
-    "path":"folders/精灵/bullet_player/plane/blade/demon_blade.yy",
+    "path":"folders/精灵/Bullet_Player/Plane/blade/demon_blade.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -10,8 +10,8 @@
   "name":"emitter_plane_apex_c",
   "overriddenProperties":[],
   "parent":{
-    "name":"apex",
-    "path":"folders/物体/bullet_player/plane/emitter/apex.yy",
+    "name":"Apex",
+    "path":"folders/物体/Bullet_Player/Plane/Emitter/Apex.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

@@ -27,7 +27,7 @@
   "origin":9,
   "parent":{
     "name":"glacier",
-    "path":"folders/精灵/effect/bullet_player/plane/glacier.yy",
+    "path":"folders/精灵/Effect/Bullet_Player/plane/glacier.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

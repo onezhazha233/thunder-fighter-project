@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"explosion",
-    "path":"folders/精灵/effect/explosion.yy",
+    "path":"folders/精灵/Effect/explosion.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

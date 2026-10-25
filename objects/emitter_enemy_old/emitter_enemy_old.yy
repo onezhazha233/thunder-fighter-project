@@ -11,8 +11,8 @@
   "name":"emitter_enemy_old",
   "overriddenProperties":[],
   "parent":{
-    "name":"enemy",
-    "path":"folders/物体/enemy.yy",
+    "name":"Enemy",
+    "path":"folders/物体/Enemy.yy",
   },
   "parentObjectId":null,
   "persistent":false,

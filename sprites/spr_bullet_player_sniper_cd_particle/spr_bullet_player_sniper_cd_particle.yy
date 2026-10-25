@@ -26,7 +26,7 @@
   "origin":1,
   "parent":{
     "name":"sniper",
-    "path":"folders/精灵/bullet_player/wingman/sniper.yy",
+    "path":"folders/精灵/Bullet_Player/Wingman/sniper.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

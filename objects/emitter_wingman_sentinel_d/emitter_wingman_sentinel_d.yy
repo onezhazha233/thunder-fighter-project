@@ -12,8 +12,8 @@
   "name":"emitter_wingman_sentinel_d",
   "overriddenProperties":[],
   "parent":{
-    "name":"sentinel",
-    "path":"folders/物体/bullet_player/wingman/emitter/sentinel.yy",
+    "name":"Sentinel",
+    "path":"folders/物体/Bullet_Player/Wingman/Emitter/Sentinel.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

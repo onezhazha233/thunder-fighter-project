@@ -28,7 +28,7 @@
   "origin":4,
   "parent":{
     "name":"aiming_laser",
-    "path":"folders/精灵/bullet_player/subweapon/laser/aiming_laser.yy",
+    "path":"folders/精灵/Bullet_Player/Subweapon/laser/aiming_laser.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

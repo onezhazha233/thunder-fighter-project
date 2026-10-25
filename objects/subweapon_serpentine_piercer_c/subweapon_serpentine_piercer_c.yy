@@ -10,8 +10,8 @@
   "name":"subweapon_serpentine_piercer_c",
   "overriddenProperties":[],
   "parent":{
-    "name":"serpentine_piercer",
-    "path":"folders/物体/subweapon/serpentine_piercer.yy",
+    "name":"Serpentine_Piercer",
+    "path":"folders/物体/Subweapon/Serpentine_Piercer.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

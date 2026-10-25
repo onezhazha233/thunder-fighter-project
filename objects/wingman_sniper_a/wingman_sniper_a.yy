@@ -10,8 +10,8 @@
   "name":"wingman_sniper_a",
   "overriddenProperties":[],
   "parent":{
-    "name":"sniper",
-    "path":"folders/物体/wingman/sniper.yy",
+    "name":"Sniper",
+    "path":"folders/物体/Wingman/Sniper.yy",
   },
   "parentObjectId":{
     "name":"wingman_agent",

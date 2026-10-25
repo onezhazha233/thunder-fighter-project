@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"vector_serpentine_piercer",
-    "path":"folders/精灵/bullet_player/subweapon/serpentine_piercer/vector_serpentine_piercer.yy",
+    "path":"folders/精灵/Bullet_Player/Subweapon/serpentine_piercer/vector_serpentine_piercer.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

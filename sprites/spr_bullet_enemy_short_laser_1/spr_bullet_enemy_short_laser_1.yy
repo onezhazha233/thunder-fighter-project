@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"short_laser",
-    "path":"folders/精灵/bullet_enemy/short_laser.yy",
+    "name":"Short_Laser",
+    "path":"folders/精灵/Bullet_Enemy/Short_Laser.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

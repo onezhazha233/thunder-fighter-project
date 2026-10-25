@@ -8,8 +8,8 @@
   "name":"plane_falcon_d",
   "overriddenProperties":[],
   "parent":{
-    "name":"falcon",
-    "path":"folders/物体/plane/falcon.yy",
+    "name":"Falcon",
+    "path":"folders/物体/Plane/Falcon.yy",
   },
   "parentObjectId":{
     "name":"plane_agent",

@@ -9,8 +9,8 @@
   "name":"bullet_player_splitter_small",
   "overriddenProperties":[],
   "parent":{
-    "name":"splitter",
-    "path":"folders/物体/bullet_player/subweapon/splitter.yy",
+    "name":"Splitter",
+    "path":"folders/物体/Bullet_Player/Subweapon/Splitter.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

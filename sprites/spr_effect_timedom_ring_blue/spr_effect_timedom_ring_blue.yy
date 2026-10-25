@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"timedom",
-    "path":"folders/精灵/effect/armor/timedom.yy",
+    "name":"Timedom",
+    "path":"folders/精灵/Effect/Armor/Timedom.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

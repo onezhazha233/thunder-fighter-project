@@ -28,7 +28,7 @@
   "origin":4,
   "parent":{
     "name":"electronic_spinblade_cannon",
-    "path":"folders/精灵/bullet_player/wingman/spinblade_cannon/electronic_spinblade_cannon.yy",
+    "path":"folders/精灵/Bullet_Player/Wingman/spinblade_cannon/electronic_spinblade_cannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

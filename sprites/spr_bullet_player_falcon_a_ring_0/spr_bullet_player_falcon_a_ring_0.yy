@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"falcon_zero",
-    "path":"folders/精灵/bullet_player/plane/falcon/falcon_zero.yy",
+    "path":"folders/精灵/Bullet_Player/Plane/falcon/falcon_zero.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -14,8 +14,8 @@
   "name":"battle_ui_pause",
   "overriddenProperties":[],
   "parent":{
-    "name":"ui",
-    "path":"folders/物体/ui.yy",
+    "name":"UI",
+    "path":"folders/物体/UI.yy",
   },
   "parentObjectId":null,
   "persistent":true,

@@ -12,8 +12,8 @@
   "name":"emitter_wingman_guard_c",
   "overriddenProperties":[],
   "parent":{
-    "name":"guard",
-    "path":"folders/物体/bullet_player/wingman/emitter/guard.yy",
+    "name":"Guard",
+    "path":"folders/物体/Bullet_Player/Wingman/Emitter/Guard.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

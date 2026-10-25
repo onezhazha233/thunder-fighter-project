@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"overwatcher_zero",
-    "path":"folders/物体/bullet_player/plane/emitter/overwatcher/overwatcher_zero.yy",
+    "path":"folders/物体/Bullet_Player/Plane/Emitter/Overwatcher/overwatcher_zero.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

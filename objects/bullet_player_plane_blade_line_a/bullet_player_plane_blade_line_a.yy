@@ -12,8 +12,8 @@
   "name":"bullet_player_plane_blade_line_a",
   "overriddenProperties":[],
   "parent":{
-    "name":"blade_zero",
-    "path":"folders/物体/bullet_player/plane/bullet/blade/blade_zero.yy",
+    "name":"Blade_Zero",
+    "path":"folders/物体/Bullet_Player/Plane/Bullet/Blade/Blade_Zero.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

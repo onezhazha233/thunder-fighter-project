@@ -11,8 +11,8 @@
   "name":"emitter_wingman_annihilator_b",
   "overriddenProperties":[],
   "parent":{
-    "name":"annihilator",
-    "path":"folders/物体/bullet_player/wingman/emitter/annihilator.yy",
+    "name":"Annihilator",
+    "path":"folders/物体/Bullet_Player/Wingman/Emitter/Annihilator.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

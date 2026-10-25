@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"shotcannon",
-    "path":"folders/精灵/bullet_player/wingman/shotcannon.yy",
+    "path":"folders/精灵/Bullet_Player/Wingman/shotcannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

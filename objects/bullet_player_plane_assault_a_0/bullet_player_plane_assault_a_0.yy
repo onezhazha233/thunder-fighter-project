@@ -9,8 +9,8 @@
   "name":"bullet_player_plane_assault_a_0",
   "overriddenProperties":[],
   "parent":{
-    "name":"assault_zero",
-    "path":"folders/物体/bullet_player/plane/bullet/assault/assault_zero.yy",
+    "name":"Assault_Zero",
+    "path":"folders/物体/Bullet_Player/Plane/Bullet/Assault/Assault_Zero.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

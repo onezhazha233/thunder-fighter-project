@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"edge_splitter",
-    "path":"folders/精灵/bullet_player/subweapon/splitter/edge_splitter.yy",
+    "path":"folders/精灵/Bullet_Player/Subweapon/splitter/edge_splitter.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

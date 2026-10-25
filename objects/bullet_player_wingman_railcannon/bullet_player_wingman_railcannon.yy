@@ -9,8 +9,8 @@
   "name":"bullet_player_wingman_railcannon",
   "overriddenProperties":[],
   "parent":{
-    "name":"railcannon",
-    "path":"folders/物体/bullet_player/wingman/bullet/railcannon.yy",
+    "name":"Railcannon",
+    "path":"folders/物体/Bullet_Player/Wingman/Bullet/Railcannon.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

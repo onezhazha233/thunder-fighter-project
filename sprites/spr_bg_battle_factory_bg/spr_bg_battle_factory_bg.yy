@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"factory",
-    "path":"folders/精灵/bg/factory.yy",
+    "name":"Factory",
+    "path":"folders/精灵/BG/Factory.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

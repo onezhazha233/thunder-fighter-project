@@ -29,7 +29,7 @@
   "origin":7,
   "parent":{
     "name":"mega_particle_cannon",
-    "path":"folders/精灵/bullet_player/wingman/mega/mega_particle_cannon.yy",
+    "path":"folders/精灵/Bullet_Player/Wingman/mega/mega_particle_cannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

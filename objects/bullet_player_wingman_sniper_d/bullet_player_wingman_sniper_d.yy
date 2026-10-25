@@ -10,8 +10,8 @@
   "name":"bullet_player_wingman_sniper_d",
   "overriddenProperties":[],
   "parent":{
-    "name":"sniper",
-    "path":"folders/物体/bullet_player/wingman/bullet/sniper.yy",
+    "name":"Sniper",
+    "path":"folders/物体/Bullet_Player/Wingman/Bullet/Sniper.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

@@ -9,8 +9,8 @@
   "name":"bullet_player_warper",
   "overriddenProperties":[],
   "parent":{
-    "name":"warper",
-    "path":"folders/物体/bullet_player/subweapon/warper.yy",
+    "name":"Warper",
+    "path":"folders/物体/Bullet_Player/Subweapon/Warper.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

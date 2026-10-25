@@ -10,8 +10,8 @@
   "name":"bullet_player_missile",
   "overriddenProperties":[],
   "parent":{
-    "name":"missile",
-    "path":"folders/物体/bullet_player/subweapon/missile.yy",
+    "name":"Missile",
+    "path":"folders/物体/Bullet_Player/Subweapon/Missile.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

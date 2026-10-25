@@ -10,8 +10,8 @@
   "name":"bullet_player_plane_falcon_explosion",
   "overriddenProperties":[],
   "parent":{
-    "name":"falcon",
-    "path":"folders/物体/bullet_player/plane/bullet/falcon.yy",
+    "name":"Falcon",
+    "path":"folders/物体/Bullet_Player/Plane/Bullet/Falcon.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

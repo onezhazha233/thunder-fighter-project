@@ -27,7 +27,7 @@
   "origin":1,
   "parent":{
     "name":"nano_splitter",
-    "path":"folders/精灵/bullet_player/subweapon/splitter/nano_splitter.yy",
+    "path":"folders/精灵/Bullet_Player/Subweapon/splitter/nano_splitter.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

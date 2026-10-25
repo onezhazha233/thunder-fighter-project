@@ -11,8 +11,8 @@
   "name":"subweapon_lightning_c",
   "overriddenProperties":[],
   "parent":{
-    "name":"lightning",
-    "path":"folders/物体/subweapon/lightning.yy",
+    "name":"Lightning",
+    "path":"folders/物体/Subweapon/Lightning.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

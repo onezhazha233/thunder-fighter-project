@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"guard",
-    "path":"folders/精灵/bullet_player/wingman/guard.yy",
+    "path":"folders/精灵/Bullet_Player/Wingman/guard.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

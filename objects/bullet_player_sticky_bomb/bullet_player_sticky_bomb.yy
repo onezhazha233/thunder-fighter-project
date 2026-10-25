@@ -11,8 +11,8 @@
   "name":"bullet_player_sticky_bomb",
   "overriddenProperties":[],
   "parent":{
-    "name":"sticky_bomb",
-    "path":"folders/物体/bullet_player/subweapon/sticky_bomb.yy",
+    "name":"Sticky_Bomb",
+    "path":"folders/物体/Bullet_Player/Subweapon/Sticky_Bomb.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

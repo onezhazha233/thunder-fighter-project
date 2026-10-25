@@ -28,7 +28,7 @@
   "origin":7,
   "parent":{
     "name":"beam_cannon",
-    "path":"folders/精灵/bullet_player/wingman/mega/beam_cannon.yy",
+    "path":"folders/精灵/Bullet_Player/Wingman/mega/beam_cannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

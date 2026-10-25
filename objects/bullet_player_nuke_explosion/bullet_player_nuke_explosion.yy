@@ -10,8 +10,8 @@
   "name":"bullet_player_nuke_explosion",
   "overriddenProperties":[],
   "parent":{
-    "name":"nuke",
-    "path":"folders/物体/bullet_player/subweapon/nuke.yy",
+    "name":"Nuke",
+    "path":"folders/物体/Bullet_Player/Subweapon/Nuke.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

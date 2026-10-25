@@ -10,8 +10,8 @@
   "name":"effect_crystalis",
   "overriddenProperties":[],
   "parent":{
-    "name":"armor",
-    "path":"folders/物体/effect/armor.yy",
+    "name":"Armor",
+    "path":"folders/物体/Effect/Armor.yy",
   },
   "parentObjectId":null,
   "persistent":false,

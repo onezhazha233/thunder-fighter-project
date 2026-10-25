@@ -9,8 +9,8 @@
   "name":"plane_mirror",
   "overriddenProperties":[],
   "parent":{
-    "name":"plane",
-    "path":"folders/物体/plane.yy",
+    "name":"Test",
+    "path":"folders/物体/Plane/Test.yy",
   },
   "parentObjectId":{
     "name":"plane_agent",

@@ -35,7 +35,7 @@
   "origin":4,
   "parent":{
     "name":"enemy",
-    "path":"folders/精灵/effect/enemy.yy",
+    "path":"folders/精灵/Effect/enemy.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

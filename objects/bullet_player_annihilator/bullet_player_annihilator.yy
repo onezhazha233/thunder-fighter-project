@@ -9,8 +9,8 @@
   "name":"bullet_player_annihilator",
   "overriddenProperties":[],
   "parent":{
-    "name":"annihilator",
-    "path":"folders/物体/bullet_player/wingman/bullet/annihilator.yy",
+    "name":"Annihilator",
+    "path":"folders/物体/Bullet_Player/Wingman/Bullet/Annihilator.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

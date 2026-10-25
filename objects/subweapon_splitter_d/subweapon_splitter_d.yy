@@ -10,8 +10,8 @@
   "name":"subweapon_splitter_d",
   "overriddenProperties":[],
   "parent":{
-    "name":"splitter",
-    "path":"folders/物体/subweapon/splitter.yy",
+    "name":"Splitter",
+    "path":"folders/物体/Subweapon/Splitter.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

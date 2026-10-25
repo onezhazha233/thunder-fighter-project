@@ -12,8 +12,8 @@
   "name":"emitter_plane_blade_c",
   "overriddenProperties":[],
   "parent":{
-    "name":"blade",
-    "path":"folders/物体/bullet_player/plane/emitter/blade.yy",
+    "name":"Blade",
+    "path":"folders/物体/Bullet_Player/Plane/Emitter/Blade.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

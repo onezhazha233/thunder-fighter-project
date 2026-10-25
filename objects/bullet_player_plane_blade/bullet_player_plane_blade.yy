@@ -10,8 +10,8 @@
   "name":"bullet_player_plane_blade",
   "overriddenProperties":[],
   "parent":{
-    "name":"blade",
-    "path":"folders/物体/bullet_player/plane/bullet/blade.yy",
+    "name":"Blade",
+    "path":"folders/物体/Bullet_Player/Plane/Bullet/Blade.yy",
   },
   "parentObjectId":{
     "name":"bullet_player",

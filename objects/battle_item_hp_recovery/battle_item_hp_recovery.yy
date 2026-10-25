@@ -12,8 +12,8 @@
   "name":"battle_item_hp_recovery",
   "overriddenProperties":[],
   "parent":{
-    "name":"item",
-    "path":"folders/物体/item.yy",
+    "name":"Item",
+    "path":"folders/物体/Item.yy",
   },
   "parentObjectId":{
     "name":"battle_item_agent",

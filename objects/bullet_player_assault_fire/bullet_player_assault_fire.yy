@@ -11,8 +11,8 @@
   "name":"bullet_player_assault_fire",
   "overriddenProperties":[],
   "parent":{
-    "name":"assault",
-    "path":"folders/物体/bullet_player/plane/bullet/assault.yy",
+    "name":"Assault",
+    "path":"folders/物体/Bullet_Player/Plane/Bullet/Assault.yy",
   },
   "parentObjectId":null,
   "persistent":false,

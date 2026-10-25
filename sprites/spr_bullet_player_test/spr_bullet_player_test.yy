@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"plane",
-    "path":"folders/精灵/bullet_player/plane.yy",
+    "name":"Plane",
+    "path":"folders/精灵/Bullet_Player/Plane.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
