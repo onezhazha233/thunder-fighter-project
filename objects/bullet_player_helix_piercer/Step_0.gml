@@ -1,16 +1,27 @@
 live;
 event_inherited();
 
-if(rampage = true){
-	dist = 0.0003*time*time*time - 0.018*time*time + 1.25*time + 30;
-}
-else{
-	dist = 0.042*time*time - 0.125*time + 30;
+if(!phase_init){
+	phase = image_angle;
+	phase_init = true;
+	dir = image_angle;
 }
 
-image_angle -= rotspd
+// 原版逐帧解析式：r(t)=30+0.01t+0.035t²（常态/暴走同式），θ=相位+rotateSpeed·t^指数
+dist = 30 + 0.01*time + 0.035*time*time
+_rs = rampage ? -55 : -14
+_re = rampage ? 0.6 : 0.9
+image_angle = phase + _rs*power(time,_re)-90
+
 x = ox + lengthdir_x(dist,image_angle)
 y = oy + lengthdir_y(dist,image_angle)
+
+// 弹头朝向 = 切线方向（上一帧位置→当前位置），t=0 时取极角
+if(time > 0){
+	dir = point_direction(lastx,lasty,x,y);
+}
+lastx = x
+lasty = y
 
 if(dist > dist_max+200)instance_destroy();
 

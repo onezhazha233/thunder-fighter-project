@@ -35,3 +35,10 @@ dist = 30
 dist_max = 114514
 alarm[1] = 1
 part_add = 0
+
+// 原版 SpiralOrbitMoveBehavior 轨迹状态（phase 于首帧 Step 捕获，因发射事件在创建后才写 image_angle）
+phase_init = false
+phase = 0
+dir = 0
+lastx = x
+lasty = y
