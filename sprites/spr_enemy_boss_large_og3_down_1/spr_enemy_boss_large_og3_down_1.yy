@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":1,
   "parent":{
-    "name":"shockwave",
-    "path":"folders/精灵/enemy/boss/large/shockwave.yy",
+    "name":"Shockwave",
+    "path":"folders/精灵/Enemy/Boss/Large/Shockwave.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

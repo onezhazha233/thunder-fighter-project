@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"frost",
-    "path":"folders/精灵/icon/armor/frost.yy",
+    "name":"Frost",
+    "path":"folders/精灵/Icon/Armor/Frost.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

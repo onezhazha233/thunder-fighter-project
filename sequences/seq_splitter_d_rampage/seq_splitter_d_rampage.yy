@@ -26,8 +26,8 @@
   },
   "name":"seq_splitter_d_rampage",
   "parent":{
-    "name":"nano_splitter",
-    "path":"folders/序列/Bullet_Player/Subweapon/splitter/nano_splitter.yy",
+    "name":"Nano_Splitter",
+    "path":"folders/序列/Bullet_Player/Subweapon/Splitter/Nano_Splitter.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

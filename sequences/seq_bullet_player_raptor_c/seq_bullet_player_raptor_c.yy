@@ -26,8 +26,8 @@
   },
   "name":"seq_bullet_player_raptor_c",
   "parent":{
-    "name":"hurricane_griffin",
-    "path":"folders/序列/Bullet_Player/Plane/raptor/hurricane_griffin.yy",
+    "name":"Hurricane_Griffin",
+    "path":"folders/序列/Bullet_Player/Plane/Raptor/Hurricane_Griffin.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

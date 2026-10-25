@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"pulse_apex",
-    "path":"folders/精灵/Bullet_Player/Plane/apex/pulse_apex.yy",
+    "name":"Pulse_Apex",
+    "path":"folders/精灵/Bullet_Player/Plane/Apex/Pulse_Apex.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

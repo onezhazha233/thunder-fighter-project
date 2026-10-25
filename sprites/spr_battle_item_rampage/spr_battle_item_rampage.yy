@@ -35,8 +35,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"rampage",
-    "path":"folders/精灵/item/rampage.yy",
+    "name":"Rampage",
+    "path":"folders/精灵/Item/Rampage.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

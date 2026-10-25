@@ -30,8 +30,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"falcon_zero",
-    "path":"folders/精灵/plane/falcon/falcon_zero.yy",
+    "name":"Falcon_Zero",
+    "path":"folders/精灵/Plane/Falcon/Falcon_Zero.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"glacier",
-    "path":"folders/精灵/icon/plane/glacier.yy",
+    "name":"Glacier",
+    "path":"folders/精灵/Icon/Plane/Glacier.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

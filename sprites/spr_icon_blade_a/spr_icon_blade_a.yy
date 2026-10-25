@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"blade",
-    "path":"folders/精灵/icon/plane/blade.yy",
+    "name":"Blade",
+    "path":"folders/精灵/Icon/Plane/Blade.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

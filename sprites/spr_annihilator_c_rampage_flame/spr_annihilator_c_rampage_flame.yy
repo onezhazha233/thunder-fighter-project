@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":1,
   "parent":{
-    "name":"strike_annihilator",
-    "path":"folders/精灵/wingman/annihilator/strike_annihilator.yy",
+    "name":"Strike_Annihilator",
+    "path":"folders/精灵/Wingman/Annihilator/Strike_Annihilator.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

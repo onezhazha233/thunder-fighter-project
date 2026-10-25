@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":1,
   "parent":{
-    "name":"armor_piercer",
-    "path":"folders/精灵/Effect/Bullet_Player/subweapon/armor_piercer.yy",
+    "name":"Armor_Piercer",
+    "path":"folders/精灵/Effect/Bullet_Player/Subweapon/Armor_Piercer.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

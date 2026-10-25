@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"convert_sentinel",
-    "path":"folders/精灵/wingman/sentinel/convert_sentinel.yy",
+    "name":"Convert_Sentinel",
+    "path":"folders/精灵/Wingman/Sentinel/Convert_Sentinel.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

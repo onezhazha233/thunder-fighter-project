@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"sentinel",
-    "path":"folders/精灵/Bullet_Player/Wingman/sentinel.yy",
+    "name":"Sentinel",
+    "path":"folders/精灵/Bullet_Player/Wingman/Sentinel.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

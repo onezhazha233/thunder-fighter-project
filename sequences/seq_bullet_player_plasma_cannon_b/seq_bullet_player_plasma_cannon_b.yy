@@ -26,8 +26,8 @@
   },
   "name":"seq_bullet_player_plasma_cannon_b",
   "parent":{
-    "name":"laser_plasma_cannon",
-    "path":"folders/序列/Bullet_Player/Wingman/plasma_cannon/laser_plasma_cannon.yy",
+    "name":"Laser_Plasma_Cannon",
+    "path":"folders/序列/Bullet_Player/Wingman/Plasma_Cannon/Laser_Plasma_Cannon.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

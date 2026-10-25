@@ -44,8 +44,8 @@
   },
   "origin":9,
   "parent":{
-    "name":"fiery_falcon",
-    "path":"folders/精灵/plane/falcon/fiery_falcon.yy",
+    "name":"Fiery_Falcon",
+    "path":"folders/精灵/Plane/Falcon/Fiery_Falcon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

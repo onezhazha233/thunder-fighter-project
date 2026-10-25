@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":1,
   "parent":{
-    "name":"huckebein",
-    "path":"folders/精灵/enemy/boss/mini/huckebein.yy",
+    "name":"Huckebein",
+    "path":"folders/精灵/Enemy/Boss/Mini/Huckebein.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

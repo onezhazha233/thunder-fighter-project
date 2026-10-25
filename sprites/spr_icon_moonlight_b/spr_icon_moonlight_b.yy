@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"moonlight",
-    "path":"folders/精灵/icon/armor/moonlight.yy",
+    "name":"Moonlight",
+    "path":"folders/精灵/Icon/Armor/Moonlight.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

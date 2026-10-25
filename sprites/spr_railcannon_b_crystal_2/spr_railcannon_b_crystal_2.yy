@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":1,
   "parent":{
-    "name":"pulse_railcannon",
-    "path":"folders/精灵/wingman/railcannon/pulse_railcannon.yy",
+    "name":"Pulse_Railcannon",
+    "path":"folders/精灵/Wingman/Railcannon/Pulse_Railcannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

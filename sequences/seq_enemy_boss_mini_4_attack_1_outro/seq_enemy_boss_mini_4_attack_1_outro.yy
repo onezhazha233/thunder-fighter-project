@@ -26,8 +26,8 @@
   },
   "name":"seq_enemy_boss_mini_4_attack_1_outro",
   "parent":{
-    "name":"Armored_lizard",
-    "path":"folders/序列/Enemy/Boss/Mini/Armored_lizard.yy",
+    "name":"Armored_Lizard",
+    "path":"folders/序列/Enemy/Boss/Mini/Armored_Lizard.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

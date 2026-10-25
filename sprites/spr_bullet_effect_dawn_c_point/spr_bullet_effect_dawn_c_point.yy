@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"hope_dawn",
-    "path":"folders/精灵/Effect/Bullet_Player/plane/dawn/hope_dawn.yy",
+    "name":"Hope_Dawn",
+    "path":"folders/精灵/Effect/Bullet_Player/Plane/Dawn/Hope_Dawn.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

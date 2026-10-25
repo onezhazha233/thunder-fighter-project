@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"refraction",
-    "path":"folders/精灵/Bullet_Player/Plane/refraction.yy",
+    "name":"Refraction",
+    "path":"folders/精灵/Bullet_Player/Plane/Refraction.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

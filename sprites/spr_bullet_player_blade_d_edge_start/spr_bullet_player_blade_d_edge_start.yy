@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":8,
   "parent":{
-    "name":"devil_blade",
-    "path":"folders/精灵/Bullet_Player/Plane/blade/devil_blade.yy",
+    "name":"Devil_Blade",
+    "path":"folders/精灵/Bullet_Player/Plane/Blade/Devil_Blade.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

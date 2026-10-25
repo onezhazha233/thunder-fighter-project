@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"luster_sentinel",
-    "path":"folders/精灵/wingman/sentinel/luster_sentinel.yy",
+    "name":"Luster_Sentinel",
+    "path":"folders/精灵/Wingman/Sentinel/Luster_Sentinel.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

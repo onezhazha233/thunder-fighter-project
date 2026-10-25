@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"cruise_missile",
-    "path":"folders/精灵/Bullet_Player/Subweapon/missile/cruise_missile.yy",
+    "name":"Cruise_Missile",
+    "path":"folders/精灵/Bullet_Player/Subweapon/Missile/Cruise_Missile.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

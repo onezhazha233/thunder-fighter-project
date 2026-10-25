@@ -26,8 +26,8 @@
   },
   "name":"seq_bullet_player_blade_a_slash_rampage",
   "parent":{
-    "name":"blade_zero",
-    "path":"folders/序列/Bullet_Player/Plane/blade/blade_zero.yy",
+    "name":"Blade_Zero",
+    "path":"folders/序列/Bullet_Player/Plane/Blade/Blade_Zero.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

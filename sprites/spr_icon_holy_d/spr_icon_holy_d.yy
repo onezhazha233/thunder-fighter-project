@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"holy",
-    "path":"folders/精灵/icon/armor/holy.yy",
+    "name":"Holy",
+    "path":"folders/精灵/Icon/Armor/Holy.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

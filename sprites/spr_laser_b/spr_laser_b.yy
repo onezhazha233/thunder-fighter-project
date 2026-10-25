@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"radar_laser",
-    "path":"folders/精灵/Bullet_Player/Subweapon/laser/radar_laser.yy",
+    "name":"Radar_Laser",
+    "path":"folders/精灵/Bullet_Player/Subweapon/Laser/Radar_Laser.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

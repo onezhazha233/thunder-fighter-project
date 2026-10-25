@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"mirror",
-    "path":"folders/精灵/Bullet_Player/Plane/mirror.yy",
+    "name":"Mirror",
+    "path":"folders/精灵/Bullet_Player/Plane/Mirror.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

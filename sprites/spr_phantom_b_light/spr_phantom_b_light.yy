@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"squall_phantom",
-    "path":"folders/精灵/plane/phantom/squall_phantom.yy",
+    "name":"Squall_Phantom",
+    "path":"folders/精灵/Plane/Phantom/Squall_Phantom.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

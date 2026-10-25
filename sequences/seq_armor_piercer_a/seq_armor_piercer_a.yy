@@ -26,8 +26,8 @@
   },
   "name":"seq_armor_piercer_a",
   "parent":{
-    "name":"armor_piercer",
-    "path":"folders/序列/Bullet_Player/Subweapon/armor_piercer/armor_piercer.yy",
+    "name":"Armor_Piercer",
+    "path":"folders/序列/Bullet_Player/Subweapon/Armor_Piercer/Armor_Piercer.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

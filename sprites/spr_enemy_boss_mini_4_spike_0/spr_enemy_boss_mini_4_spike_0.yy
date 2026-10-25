@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"armored_lizard",
-    "path":"folders/精灵/enemy/boss/mini/armored_lizard.yy",
+    "name":"Armored_Lizard",
+    "path":"folders/精灵/Enemy/Boss/Mini/Armored_Lizard.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

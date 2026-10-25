@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"laser_plasma_cannon",
-    "path":"folders/精灵/wingman/plasma_cannon/laser_plasma_cannon.yy",
+    "name":"Laser_Plasma_Cannon",
+    "path":"folders/精灵/Wingman/Plasma_Cannon/Laser_Plasma_Cannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

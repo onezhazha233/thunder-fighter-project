@@ -26,8 +26,8 @@
   },
   "name":"seq_bullet_player_spinblade_cannon_d",
   "parent":{
-    "name":"quantum_spinblade_cannon",
-    "path":"folders/序列/Bullet_Player/Wingman/spinblade_cannon/quantum_spinblade_cannon.yy",
+    "name":"Quantum_Spinblade_Cannon",
+    "path":"folders/序列/Bullet_Player/Wingman/Spinblade_Cannon/Quantum_Spinblade_Cannon.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

@@ -26,8 +26,8 @@
   },
   "name":"seq_nuke_cd_rampage_intro",
   "parent":{
-    "name":"nuke",
-    "path":"folders/序列/Bullet_Player/Subweapon/nuke.yy",
+    "name":"Nuke",
+    "path":"folders/序列/Bullet_Player/Subweapon/Nuke.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

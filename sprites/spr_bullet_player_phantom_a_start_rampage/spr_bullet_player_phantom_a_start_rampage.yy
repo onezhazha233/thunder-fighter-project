@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"phantom_zero",
-    "path":"folders/精灵/Bullet_Player/Plane/phantom/phantom_zero.yy",
+    "name":"Phantom_Zero",
+    "path":"folders/精灵/Bullet_Player/Plane/Phantom/Phantom_Zero.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

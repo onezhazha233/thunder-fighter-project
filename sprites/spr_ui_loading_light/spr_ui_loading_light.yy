@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"loading",
-    "path":"folders/精灵/ui/loading.yy",
+    "name":"Loading",
+    "path":"folders/精灵/Ui/Loading.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

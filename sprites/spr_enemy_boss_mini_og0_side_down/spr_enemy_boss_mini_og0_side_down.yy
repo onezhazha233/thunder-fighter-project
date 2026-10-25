@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"spikx_flarebolt",
-    "path":"folders/精灵/enemy/boss/mini/spikx_flarebolt.yy",
+    "name":"Spikx_Flarebolt",
+    "path":"folders/精灵/Enemy/Boss/Mini/Spikx_Flarebolt.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

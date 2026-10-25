@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"blaze_phoenix",
-    "path":"folders/精灵/plane/raptor/blaze_phoenix.yy",
+    "name":"Blaze_Phoenix",
+    "path":"folders/精灵/Plane/Raptor/Blaze_Phoenix.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

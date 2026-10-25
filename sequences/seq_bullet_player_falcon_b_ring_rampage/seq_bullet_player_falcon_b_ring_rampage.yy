@@ -40,8 +40,8 @@
   },
   "name":"seq_bullet_player_falcon_b_ring_rampage",
   "parent":{
-    "name":"fiery_falcon",
-    "path":"folders/序列/Bullet_Player/Plane/falcon/fiery_falcon.yy",
+    "name":"Fiery_Falcon",
+    "path":"folders/序列/Bullet_Player/Plane/Falcon/Fiery_Falcon.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

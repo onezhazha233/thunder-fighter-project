@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"pause",
-    "path":"folders/精灵/ui/pause.yy",
+    "name":"Pause",
+    "path":"folders/精灵/Ui/Pause.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

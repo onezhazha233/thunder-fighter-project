@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"missile",
-    "path":"folders/精灵/icon/subweapon/missile.yy",
+    "name":"Missile",
+    "path":"folders/精灵/Icon/Subweapon/Missile.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

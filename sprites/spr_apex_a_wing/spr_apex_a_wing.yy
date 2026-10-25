@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"apex_zero",
-    "path":"folders/精灵/plane/apex/apex_zero.yy",
+    "name":"Apex_Zero",
+    "path":"folders/精灵/Plane/Apex/Apex_Zero.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

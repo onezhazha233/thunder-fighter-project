@@ -26,8 +26,8 @@
   },
   "name":"seq_bullet_player_xeno_a_rampage",
   "parent":{
-    "name":"xeno_zero",
-    "path":"folders/序列/Bullet_Player/Plane/xeno/xeno_zero.yy",
+    "name":"Xeno_Zero",
+    "path":"folders/序列/Bullet_Player/Plane/Xeno/Xeno_Zero.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

@@ -30,7 +30,7 @@
     {"name":"xeno_zero","order":1,"path":"folders/序列/Bullet_Player/Plane/xeno/xeno_zero.yy",},
     {"name":"Subweapon","order":2,"path":"folders/序列/Bullet_Player/Subweapon.yy",},
     {"name":"armor_piercer","order":2,"path":"folders/序列/Bullet_Player/Subweapon/armor_piercer.yy",},
-    {"name":"alloy_armor piercer","order":1,"path":"folders/序列/Bullet_Player/Subweapon/armor_piercer/alloy_armor piercer.yy",},
+    {"name":"alloy_armor_piercer","order":1,"path":"folders/序列/Bullet_Player/Subweapon/armor_piercer/alloy_armor_piercer.yy",},
     {"name":"cluster_bomb","order":5,"path":"folders/序列/Bullet_Player/Subweapon/cluster_bomb.yy",},
     {"name":"hexogen_cluster_bomb","order":1,"path":"folders/序列/Bullet_Player/Subweapon/cluster_bomb/hexogen_cluster_bomb.yy",},
     {"name":"helix_piercer","order":7,"path":"folders/序列/Bullet_Player/Subweapon/helix_piercer.yy",},

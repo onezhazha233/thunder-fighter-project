@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"incandescent_sentinel",
-    "path":"folders/精灵/wingman/sentinel/incandescent_sentinel.yy",
+    "name":"Incandescent_Sentinel",
+    "path":"folders/精灵/Wingman/Sentinel/Incandescent_Sentinel.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

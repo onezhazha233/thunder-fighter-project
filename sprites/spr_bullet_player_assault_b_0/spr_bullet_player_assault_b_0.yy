@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"pulse_assault",
-    "path":"folders/精灵/Bullet_Player/Plane/assault/pulse_assault.yy",
+    "name":"Pulse_Assault",
+    "path":"folders/精灵/Bullet_Player/Plane/Assault/Pulse_Assault.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"2",
-    "path":"folders/精灵/enemy/minion/2.yy",
+    "path":"folders/精灵/Enemy/Minion/2.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

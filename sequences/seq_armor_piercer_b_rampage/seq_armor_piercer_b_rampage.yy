@@ -26,8 +26,8 @@
   },
   "name":"seq_armor_piercer_b_rampage",
   "parent":{
-    "name":"alloy_armor piercer",
-    "path":"folders/序列/Bullet_Player/Subweapon/armor_piercer/alloy_armor piercer.yy",
+    "name":"Alloy_Armor_Piercer",
+    "path":"folders/序列/Bullet_Player/Subweapon/Armor_Piercer/Alloy_Armor_Piercer.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

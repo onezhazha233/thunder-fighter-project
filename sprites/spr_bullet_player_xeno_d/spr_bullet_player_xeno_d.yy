@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"ghost_xeno",
-    "path":"folders/精灵/Bullet_Player/Plane/xeno/ghost_xeno.yy",
+    "name":"Ghost_Xeno",
+    "path":"folders/精灵/Bullet_Player/Plane/Xeno/Ghost_Xeno.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

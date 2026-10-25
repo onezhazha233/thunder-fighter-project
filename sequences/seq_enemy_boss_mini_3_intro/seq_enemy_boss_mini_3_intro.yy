@@ -34,8 +34,8 @@
   },
   "name":"seq_enemy_boss_mini_3_intro",
   "parent":{
-    "name":"Gespenst_r",
-    "path":"folders/序列/Enemy/Boss/Mini/Gespenst_r.yy",
+    "name":"Gespenst_R",
+    "path":"folders/序列/Enemy/Boss/Mini/Gespenst_R.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

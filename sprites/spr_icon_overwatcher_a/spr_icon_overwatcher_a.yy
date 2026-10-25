@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"overwatcher",
-    "path":"folders/精灵/icon/plane/overwatcher.yy",
+    "name":"Overwatcher",
+    "path":"folders/精灵/Icon/Plane/Overwatcher.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

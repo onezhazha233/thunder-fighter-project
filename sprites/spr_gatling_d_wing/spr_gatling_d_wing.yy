@@ -29,8 +29,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"hyper_speed_gatling",
-    "path":"folders/精灵/wingman/gatling/hyper_speed_gatling.yy",
+    "name":"Hyper_Speed_Gatling",
+    "path":"folders/精灵/Wingman/Gatling/Hyper_Speed_Gatling.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"aurora_phantom",
-    "path":"folders/精灵/Bullet_Player/Plane/phantom/aurora_phantom.yy",
+    "name":"Aurora_Phantom",
+    "path":"folders/精灵/Bullet_Player/Plane/Phantom/Aurora_Phantom.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

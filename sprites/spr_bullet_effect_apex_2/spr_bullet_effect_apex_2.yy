@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"apex",
-    "path":"folders/精灵/Effect/Bullet_Player/plane/apex.yy",
+    "name":"Apex",
+    "path":"folders/精灵/Effect/Bullet_Player/Plane/Apex.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

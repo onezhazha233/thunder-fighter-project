@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"dawn_zero",
-    "path":"folders/精灵/Bullet_Player/Plane/dawn/dawn_zero.yy",
+    "name":"Dawn_Zero",
+    "path":"folders/精灵/Bullet_Player/Plane/Dawn/Dawn_Zero.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

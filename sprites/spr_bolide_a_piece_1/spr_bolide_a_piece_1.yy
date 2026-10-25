@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"steady_bolide",
-    "path":"folders/精灵/Bullet_Player/Subweapon/bolide/steady_bolide.yy",
+    "name":"Steady_Bolide",
+    "path":"folders/精灵/Bullet_Player/Subweapon/Bolide/Steady_Bolide.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"dragon",
-    "path":"folders/精灵/icon/armor/dragon.yy",
+    "name":"Dragon",
+    "path":"folders/精灵/Icon/Armor/Dragon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

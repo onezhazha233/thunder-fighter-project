@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Dark_assault",
-    "path":"folders/精灵/Bullet_Enemy/Dark_assault.yy",
+    "name":"Dark_Assault",
+    "path":"folders/精灵/Bullet_Enemy/Dark_Assault.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

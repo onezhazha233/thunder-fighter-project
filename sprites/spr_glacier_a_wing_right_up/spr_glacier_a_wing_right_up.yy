@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"glacier_zero",
-    "path":"folders/精灵/plane/glacier/glacier_zero.yy",
+    "name":"Glacier_Zero",
+    "path":"folders/精灵/Plane/Glacier/Glacier_Zero.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -11,8 +11,8 @@
   "name":"emitter_plane_overwatcher_drone_b_0",
   "overriddenProperties":[],
   "parent":{
-    "name":"stellar_overwatcher",
-    "path":"folders/物体/Bullet_Player/Plane/Emitter/Overwatcher/stellar_overwatcher.yy",
+    "name":"Stellar_Overwatcher",
+    "path":"folders/物体/Bullet_Player/Plane/Emitter/Overwatcher/Stellar_Overwatcher.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

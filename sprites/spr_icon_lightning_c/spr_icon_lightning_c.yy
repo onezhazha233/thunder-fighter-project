@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"lightning",
-    "path":"folders/精灵/icon/subweapon/lightning.yy",
+    "name":"Lightning",
+    "path":"folders/精灵/Icon/Subweapon/Lightning.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

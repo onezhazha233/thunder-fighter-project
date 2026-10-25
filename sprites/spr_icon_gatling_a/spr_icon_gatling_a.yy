@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"gatling",
-    "path":"folders/精灵/icon/wingman/gatling.yy",
+    "name":"Gatling",
+    "path":"folders/精灵/Icon/Wingman/Gatling.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

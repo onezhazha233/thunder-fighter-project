@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"abyss_azurewing",
-    "path":"folders/精灵/plane/azurewing/abyss_azurewing.yy",
+    "name":"Abyss_Azurewing",
+    "path":"folders/精灵/Plane/Azurewing/Abyss_Azurewing.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

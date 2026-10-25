@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":1,
   "parent":{
-    "name":"edge_splitter",
-    "path":"folders/精灵/Bullet_Player/Subweapon/splitter/edge_splitter.yy",
+    "name":"Edge_Splitter",
+    "path":"folders/精灵/Bullet_Player/Subweapon/Splitter/Edge_Splitter.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

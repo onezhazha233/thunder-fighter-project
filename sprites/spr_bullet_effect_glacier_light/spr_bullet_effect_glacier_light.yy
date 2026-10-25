@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"glacier",
-    "path":"folders/精灵/Effect/Bullet_Player/plane/glacier.yy",
+    "name":"Glacier",
+    "path":"folders/精灵/Effect/Bullet_Player/Plane/Glacier.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"galaxy_ash",
-    "path":"folders/精灵/enemy/boss/large/galaxy_ash.yy",
+    "name":"Galaxy_Ash",
+    "path":"folders/精灵/Enemy/Boss/Large/Galaxy_Ash.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

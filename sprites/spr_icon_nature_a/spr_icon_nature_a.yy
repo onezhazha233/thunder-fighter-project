@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"nature",
-    "path":"folders/精灵/icon/armor/nature.yy",
+    "name":"Nature",
+    "path":"folders/精灵/Icon/Armor/Nature.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

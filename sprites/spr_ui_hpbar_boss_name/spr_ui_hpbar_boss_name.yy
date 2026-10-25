@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":6,
   "parent":{
-    "name":"hpbar_boss",
-    "path":"folders/精灵/ui/hpbar_boss.yy",
+    "name":"Hpbar_Boss",
+    "path":"folders/精灵/Ui/Hpbar_Boss.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

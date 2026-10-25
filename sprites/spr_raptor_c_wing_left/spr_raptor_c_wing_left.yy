@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"hurricane_griffin",
-    "path":"folders/精灵/plane/raptor/hurricane_griffin.yy",
+    "name":"Hurricane_Griffin",
+    "path":"folders/精灵/Plane/Raptor/Hurricane_Griffin.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

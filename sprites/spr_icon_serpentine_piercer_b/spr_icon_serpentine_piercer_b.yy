@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"serpentine_piercer",
-    "path":"folders/精灵/icon/subweapon/serpentine_piercer.yy",
+    "name":"Serpentine_Piercer",
+    "path":"folders/精灵/Icon/Subweapon/Serpentine_Piercer.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

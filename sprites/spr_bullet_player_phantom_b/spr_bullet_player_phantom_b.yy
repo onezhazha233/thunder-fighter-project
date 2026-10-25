@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"squall_phantom",
-    "path":"folders/精灵/Bullet_Player/Plane/phantom/squall_phantom.yy",
+    "name":"Squall_Phantom",
+    "path":"folders/精灵/Bullet_Player/Plane/Phantom/Squall_Phantom.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

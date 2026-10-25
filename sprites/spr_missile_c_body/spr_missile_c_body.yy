@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"ballistic_missile",
-    "path":"folders/精灵/Bullet_Player/Subweapon/missile/ballistic_missile.yy",
+    "name":"Ballistic_Missile",
+    "path":"folders/精灵/Bullet_Player/Subweapon/Missile/Ballistic_Missile.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

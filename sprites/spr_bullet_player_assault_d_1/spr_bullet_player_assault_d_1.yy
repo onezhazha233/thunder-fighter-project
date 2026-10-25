@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"thunder_assault",
-    "path":"folders/精灵/Bullet_Player/Plane/assault/thunder_assault.yy",
+    "name":"Thunder_Assault",
+    "path":"folders/精灵/Bullet_Player/Plane/Assault/Thunder_Assault.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":2,
   "parent":{
-    "name":"overwatcher_zero",
-    "path":"folders/精灵/plane/overwatcher/overwatcher_zero.yy",
+    "name":"Overwatcher_Zero",
+    "path":"folders/精灵/Plane/Overwatcher/Overwatcher_Zero.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

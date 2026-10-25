@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"swift_assault",
-    "path":"folders/精灵/plane/assault/swift_assault.yy",
+    "name":"Swift_Assault",
+    "path":"folders/精灵/Plane/Assault/Swift_Assault.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

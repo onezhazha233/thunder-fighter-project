@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"mega_particle_cannon",
-    "path":"folders/精灵/wingman/mega/mega_particle_cannon.yy",
+    "name":"Mega_Particle_Cannon",
+    "path":"folders/精灵/Wingman/Mega/Mega_Particle_Cannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":8,
   "parent":{
-    "name":"hellhound",
-    "path":"folders/精灵/enemy/boss/mini/hellhound.yy",
+    "name":"Hellhound",
+    "path":"folders/精灵/Enemy/Boss/Mini/Hellhound.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

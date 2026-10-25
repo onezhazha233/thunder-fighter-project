@@ -32,8 +32,8 @@
   },
   "name":"seq_bullet_player_blade_c_edge_attack",
   "parent":{
-    "name":"demon_blade",
-    "path":"folders/序列/Bullet_Player/Plane/blade/demon_blade.yy",
+    "name":"Demon_Blade",
+    "path":"folders/序列/Bullet_Player/Plane/Blade/Demon_Blade.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

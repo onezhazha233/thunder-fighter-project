@@ -34,8 +34,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"enemy",
-    "path":"folders/精灵/Effect/enemy.yy",
+    "name":"Enemy",
+    "path":"folders/精灵/Effect/Enemy.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -26,8 +26,8 @@
   },
   "name":"seq_nuke_c_explosion",
   "parent":{
-    "name":"neutron_bomb",
-    "path":"folders/序列/Bullet_Player/Subweapon/nuke/neutron_bomb.yy",
+    "name":"Neutron_Bomb",
+    "path":"folders/序列/Bullet_Player/Subweapon/Nuke/Neutron_Bomb.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

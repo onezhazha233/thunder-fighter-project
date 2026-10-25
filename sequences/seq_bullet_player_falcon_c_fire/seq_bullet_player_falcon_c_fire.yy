@@ -26,8 +26,8 @@
   },
   "name":"seq_bullet_player_falcon_c_fire",
   "parent":{
-    "name":"azureflame_falcon",
-    "path":"folders/序列/Bullet_Player/Plane/falcon/azureflame_falcon.yy",
+    "name":"Azureflame_Falcon",
+    "path":"folders/序列/Bullet_Player/Plane/Falcon/Azureflame_Falcon.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

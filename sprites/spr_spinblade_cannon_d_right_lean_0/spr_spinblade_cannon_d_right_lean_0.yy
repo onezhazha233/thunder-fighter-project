@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"quantum_spinblade_cannon",
-    "path":"folders/精灵/wingman/spinblade_cannon/quantum_spinblade_cannon.yy",
+    "name":"Quantum_Spinblade_Cannon",
+    "path":"folders/精灵/Wingman/Spinblade_Cannon/Quantum_Spinblade_Cannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

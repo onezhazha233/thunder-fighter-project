@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"blade_zero",
-    "path":"folders/精灵/Bullet_Player/Plane/blade/blade_zero.yy",
+    "name":"Blade_Zero",
+    "path":"folders/精灵/Bullet_Player/Plane/Blade/Blade_Zero.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -26,8 +26,8 @@
   },
   "name":"seq_enemy_boss_large_og0_p1_intro",
   "parent":{
-    "name":"Umbra_apex",
-    "path":"folders/序列/Enemy/Boss/Large/Umbra_apex.yy",
+    "name":"Umbra_Apex",
+    "path":"folders/序列/Enemy/Boss/Large/Umbra_Apex.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

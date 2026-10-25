@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"helix_piercer",
-    "path":"folders/精灵/icon/subweapon/helix_piercer.yy",
+    "name":"Helix_Piercer",
+    "path":"folders/精灵/Icon/Subweapon/Helix_Piercer.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"ui",
-    "path":"folders/精灵/ui.yy",
+    "name":"Ui",
+    "path":"folders/精灵/Ui.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

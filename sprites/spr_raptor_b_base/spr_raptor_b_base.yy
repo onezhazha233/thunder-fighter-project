@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"gale_eagle",
-    "path":"folders/精灵/plane/raptor/gale_eagle.yy",
+    "name":"Gale_Eagle",
+    "path":"folders/精灵/Plane/Raptor/Gale_Eagle.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

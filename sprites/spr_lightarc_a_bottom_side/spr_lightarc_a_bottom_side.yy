@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":2,
   "parent":{
-    "name":"lightarc",
-    "path":"folders/精灵/wingman/lightarc.yy",
+    "name":"Lightarc",
+    "path":"folders/精灵/Wingman/Lightarc.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":1,
   "parent":{
-    "name":"wisdom_dawn",
-    "path":"folders/精灵/plane/dawn/wisdom_dawn.yy",
+    "name":"Wisdom_Dawn",
+    "path":"folders/精灵/Plane/Dawn/Wisdom_Dawn.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

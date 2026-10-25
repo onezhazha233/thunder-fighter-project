@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"splitter",
-    "path":"folders/精灵/icon/subweapon/splitter.yy",
+    "name":"Splitter",
+    "path":"folders/精灵/Icon/Subweapon/Splitter.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

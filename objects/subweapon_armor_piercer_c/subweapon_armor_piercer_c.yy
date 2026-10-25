@@ -10,8 +10,8 @@
   "name":"subweapon_armor_piercer_c",
   "overriddenProperties":[],
   "parent":{
-    "name":"Armor_piercer",
-    "path":"folders/物体/Subweapon/Armor_piercer.yy",
+    "name":"Armor_Piercer",
+    "path":"folders/物体/Subweapon/Armor_Piercer.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

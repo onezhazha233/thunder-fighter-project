@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"golden_guard",
-    "path":"folders/精灵/wingman/guard/golden_guard.yy",
+    "name":"Golden_Guard",
+    "path":"folders/精灵/Wingman/Guard/Golden_Guard.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

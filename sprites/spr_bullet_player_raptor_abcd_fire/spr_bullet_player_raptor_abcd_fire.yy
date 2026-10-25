@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"raptor",
-    "path":"folders/精灵/Bullet_Player/Plane/raptor.yy",
+    "name":"Raptor",
+    "path":"folders/精灵/Bullet_Player/Plane/Raptor.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

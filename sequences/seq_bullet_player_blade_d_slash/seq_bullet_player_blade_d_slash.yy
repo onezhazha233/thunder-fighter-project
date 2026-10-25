@@ -34,8 +34,8 @@
   },
   "name":"seq_bullet_player_blade_d_slash",
   "parent":{
-    "name":"devil_blade",
-    "path":"folders/序列/Bullet_Player/Plane/blade/devil_blade.yy",
+    "name":"Devil_Blade",
+    "path":"folders/序列/Bullet_Player/Plane/Blade/Devil_Blade.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"lightarc",
-    "path":"folders/精灵/Effect/Bullet_Player/wingman/lightarc.yy",
+    "name":"Lightarc",
+    "path":"folders/精灵/Effect/Bullet_Player/Wingman/Lightarc.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

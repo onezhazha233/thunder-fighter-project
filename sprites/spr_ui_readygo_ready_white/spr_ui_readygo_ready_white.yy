@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"readygo",
-    "path":"folders/精灵/ui/readygo.yy",
+    "name":"Readygo",
+    "path":"folders/精灵/Ui/Readygo.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

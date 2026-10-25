@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"sentinel",
-    "path":"folders/精灵/icon/wingman/sentinel.yy",
+    "name":"Sentinel",
+    "path":"folders/精灵/Icon/Wingman/Sentinel.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

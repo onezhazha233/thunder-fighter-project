@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"sonic_sniper",
-    "path":"folders/精灵/wingman/sniper/sonic_sniper.yy",
+    "name":"Sonic_Sniper",
+    "path":"folders/精灵/Wingman/Sniper/Sonic_Sniper.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

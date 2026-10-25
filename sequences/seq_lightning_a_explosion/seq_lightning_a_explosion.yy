@@ -26,8 +26,8 @@
   },
   "name":"seq_lightning_a_explosion",
   "parent":{
-    "name":"lightning",
-    "path":"folders/序列/Bullet_Player/Subweapon/lightning.yy",
+    "name":"Lightning",
+    "path":"folders/序列/Bullet_Player/Subweapon/Lightning.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

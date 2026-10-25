@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":1,
   "parent":{
-    "name":"breaker_III",
-    "path":"folders/精灵/enemy/boss/large/breaker_III.yy",
+    "name":"Breaker_III",
+    "path":"folders/精灵/Enemy/Boss/Large/Breaker_III.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

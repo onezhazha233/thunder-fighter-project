@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"damage_number",
-    "path":"folders/精灵/Effect/damage_number.yy",
+    "name":"Damage_Number",
+    "path":"folders/精灵/Effect/Damage_Number.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

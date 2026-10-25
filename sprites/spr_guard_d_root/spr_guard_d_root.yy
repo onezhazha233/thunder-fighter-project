@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"doom_guard",
-    "path":"folders/精灵/wingman/guard/doom_guard.yy",
+    "name":"Doom_Guard",
+    "path":"folders/精灵/Wingman/Guard/Doom_Guard.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

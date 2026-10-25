@@ -26,8 +26,8 @@
   },
   "name":"seq_missile_ab",
   "parent":{
-    "name":"missile",
-    "path":"folders/序列/Bullet_Player/Subweapon/missile.yy",
+    "name":"Missile",
+    "path":"folders/序列/Bullet_Player/Subweapon/Missile.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

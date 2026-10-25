@@ -26,8 +26,8 @@
   },
   "name":"seq_cluster_bomb_a",
   "parent":{
-    "name":"cluster_bomb",
-    "path":"folders/序列/Bullet_Player/Subweapon/cluster_bomb/cluster_bomb.yy",
+    "name":"Cluster_Bomb",
+    "path":"folders/序列/Bullet_Player/Subweapon/Cluster_Bomb/Cluster_Bomb.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

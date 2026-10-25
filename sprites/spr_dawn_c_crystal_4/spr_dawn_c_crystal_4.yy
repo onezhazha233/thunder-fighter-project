@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"hope_dawn",
-    "path":"folders/精灵/plane/dawn/hope_dawn.yy",
+    "name":"Hope_Dawn",
+    "path":"folders/精灵/Plane/Dawn/Hope_Dawn.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"swift_apex",
-    "path":"folders/精灵/plane/apex/swift_apex.yy",
+    "name":"Swift_Apex",
+    "path":"folders/精灵/Plane/Apex/Swift_Apex.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

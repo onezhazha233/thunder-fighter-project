@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"phantom",
-    "path":"folders/精灵/icon/plane/phantom.yy",
+    "name":"Phantom",
+    "path":"folders/精灵/Icon/Plane/Phantom.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

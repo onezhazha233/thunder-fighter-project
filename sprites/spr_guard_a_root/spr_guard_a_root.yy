@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"charging_guard",
-    "path":"folders/精灵/wingman/guard/charging_guard.yy",
+    "name":"Charging_Guard",
+    "path":"folders/精灵/Wingman/Guard/Charging_Guard.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

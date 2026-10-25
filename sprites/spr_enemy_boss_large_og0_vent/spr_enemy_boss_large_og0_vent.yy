@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"umbra_apex",
-    "path":"folders/精灵/enemy/boss/large/umbra_apex.yy",
+    "name":"Umbra_Apex",
+    "path":"folders/精灵/Enemy/Boss/Large/Umbra_Apex.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

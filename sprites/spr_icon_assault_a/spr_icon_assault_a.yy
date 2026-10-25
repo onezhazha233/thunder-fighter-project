@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"assault",
-    "path":"folders/精灵/icon/plane/assault.yy",
+    "name":"Assault",
+    "path":"folders/精灵/Icon/Plane/Assault.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

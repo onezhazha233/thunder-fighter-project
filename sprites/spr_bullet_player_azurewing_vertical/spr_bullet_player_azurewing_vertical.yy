@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"azurewing",
-    "path":"folders/精灵/Bullet_Player/Plane/azurewing.yy",
+    "name":"Azurewing",
+    "path":"folders/精灵/Bullet_Player/Plane/Azurewing.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

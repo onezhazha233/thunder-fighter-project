@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"sniper",
-    "path":"folders/精灵/wingman/sniper/sniper.yy",
+    "name":"Sniper",
+    "path":"folders/精灵/Wingman/Sniper/Sniper.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"mini",
-    "path":"folders/精灵/enemy/boss/mini.yy",
+    "name":"Mini",
+    "path":"folders/精灵/Enemy/Boss/Mini.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

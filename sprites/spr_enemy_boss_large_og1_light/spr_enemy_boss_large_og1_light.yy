@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"laser_piano",
-    "path":"folders/精灵/enemy/boss/large/laser_piano.yy",
+    "name":"Laser_Piano",
+    "path":"folders/精灵/Enemy/Boss/Large/Laser_Piano.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

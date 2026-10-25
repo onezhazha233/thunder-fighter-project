@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"du_armor_piercer",
-    "path":"folders/精灵/Effect/Bullet_Player/subweapon/armor_piercer/du_armor_piercer.yy",
+    "name":"Du_Armor_Piercer",
+    "path":"folders/精灵/Effect/Bullet_Player/Subweapon/Armor_Piercer/Du_Armor_Piercer.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

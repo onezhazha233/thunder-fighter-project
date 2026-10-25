@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"ultra_plasma_cannon",
-    "path":"folders/精灵/wingman/plasma_cannon/ultra_plasma_cannon.yy",
+    "name":"Ultra_Plasma_Cannon",
+    "path":"folders/精灵/Wingman/Plasma_Cannon/Ultra_Plasma_Cannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

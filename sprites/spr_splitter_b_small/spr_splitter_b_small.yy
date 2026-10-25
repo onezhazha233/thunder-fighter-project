@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"razor_splitter",
-    "path":"folders/精灵/Bullet_Player/Subweapon/splitter/razor_splitter.yy",
+    "name":"Razor_Splitter",
+    "path":"folders/精灵/Bullet_Player/Subweapon/Splitter/Razor_Splitter.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

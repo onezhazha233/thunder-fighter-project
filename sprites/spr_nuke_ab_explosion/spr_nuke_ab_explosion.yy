@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"nuke",
-    "path":"folders/精灵/Bullet_Player/Subweapon/nuke.yy",
+    "name":"Nuke",
+    "path":"folders/精灵/Bullet_Player/Subweapon/Nuke.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

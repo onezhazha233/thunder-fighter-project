@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"laser",
-    "path":"folders/精灵/Effect/Bullet_Player/subweapon/laser.yy",
+    "name":"Laser",
+    "path":"folders/精灵/Effect/Bullet_Player/Subweapon/Laser.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

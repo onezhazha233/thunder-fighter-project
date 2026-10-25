@@ -26,8 +26,8 @@
   },
   "name":"seq_enemy_minion_og0c1_flame",
   "parent":{
-    "name":"og0",
-    "path":"folders/序列/Enemy/Minion/og0.yy",
+    "name":"Og0",
+    "path":"folders/序列/Enemy/Minion/Og0.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

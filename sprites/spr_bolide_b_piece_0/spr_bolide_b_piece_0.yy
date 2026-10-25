@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"fleet_bolide",
-    "path":"folders/精灵/Bullet_Player/Subweapon/bolide/fleet_bolide.yy",
+    "name":"Fleet_Bolide",
+    "path":"folders/精灵/Bullet_Player/Subweapon/Bolide/Fleet_Bolide.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

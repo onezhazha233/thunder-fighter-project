@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"serpentine_piercer",
-    "path":"folders/精灵/Bullet_Player/Subweapon/serpentine_piercer/serpentine_piercer.yy",
+    "name":"Serpentine_Piercer",
+    "path":"folders/精灵/Bullet_Player/Subweapon/Serpentine_Piercer/Serpentine_Piercer.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

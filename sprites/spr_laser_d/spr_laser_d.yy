@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"superconductive_laser",
-    "path":"folders/精灵/Bullet_Player/Subweapon/laser/superconductive_laser.yy",
+    "name":"Superconductive_Laser",
+    "path":"folders/精灵/Bullet_Player/Subweapon/Laser/Superconductive_Laser.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

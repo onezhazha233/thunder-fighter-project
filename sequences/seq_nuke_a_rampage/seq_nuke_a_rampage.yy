@@ -26,8 +26,8 @@
   },
   "name":"seq_nuke_a_rampage",
   "parent":{
-    "name":"pulse_bomb",
-    "path":"folders/序列/Bullet_Player/Subweapon/nuke/pulse_bomb.yy",
+    "name":"Pulse_Bomb",
+    "path":"folders/序列/Bullet_Player/Subweapon/Nuke/Pulse_Bomb.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

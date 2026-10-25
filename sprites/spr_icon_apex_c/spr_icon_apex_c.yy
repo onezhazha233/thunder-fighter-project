@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"apex",
-    "path":"folders/精灵/icon/plane/apex.yy",
+    "name":"Apex",
+    "path":"folders/精灵/Icon/Plane/Apex.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

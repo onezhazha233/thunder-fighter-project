@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"crystal",
-    "path":"folders/精灵/item/crystal.yy",
+    "name":"Crystal",
+    "path":"folders/精灵/Item/Crystal.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

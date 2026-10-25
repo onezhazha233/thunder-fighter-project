@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"boss",
-    "path":"folders/精灵/icon/boss.yy",
+    "name":"Boss",
+    "path":"folders/精灵/Icon/Boss.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

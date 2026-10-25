@@ -10,8 +10,8 @@
   "name":"subweapon_sticky_bomb_a",
   "overriddenProperties":[],
   "parent":{
-    "name":"Sticky_bomb",
-    "path":"folders/物体/Subweapon/Sticky_bomb.yy",
+    "name":"Sticky_Bomb",
+    "path":"folders/物体/Subweapon/Sticky_Bomb.yy",
   },
   "parentObjectId":{
     "name":"emitter_player",

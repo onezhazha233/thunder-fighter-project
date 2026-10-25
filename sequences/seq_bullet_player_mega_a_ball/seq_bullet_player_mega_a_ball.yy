@@ -40,8 +40,8 @@
   },
   "name":"seq_bullet_player_mega_a_ball",
   "parent":{
-    "name":"mega",
-    "path":"folders/序列/Bullet_Player/Wingman/mega.yy",
+    "name":"Mega",
+    "path":"folders/序列/Bullet_Player/Wingman/Mega.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

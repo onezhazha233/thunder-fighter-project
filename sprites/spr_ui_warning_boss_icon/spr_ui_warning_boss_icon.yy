@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"warning_boss",
-    "path":"folders/精灵/ui/warning_boss.yy",
+    "name":"Warning_Boss",
+    "path":"folders/精灵/Ui/Warning_Boss.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

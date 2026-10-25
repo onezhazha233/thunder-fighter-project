@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"induction",
-    "path":"folders/精灵/icon/armor/induction.yy",
+    "name":"Induction",
+    "path":"folders/精灵/Icon/Armor/Induction.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"sniper",
-    "path":"folders/精灵/Effect/Bullet_Player/wingman/sniper.yy",
+    "name":"Sniper",
+    "path":"folders/精灵/Effect/Bullet_Player/Wingman/Sniper.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

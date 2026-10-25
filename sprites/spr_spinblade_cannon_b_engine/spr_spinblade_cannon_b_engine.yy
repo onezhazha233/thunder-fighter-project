@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"electronic_spinblade_cannon",
-    "path":"folders/精灵/wingman/spinblade_cannon/electronic_spinblade_cannon.yy",
+    "name":"Electronic_Spinblade_Cannon",
+    "path":"folders/精灵/Wingman/Spinblade_Cannon/Electronic_Spinblade_Cannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"speedy_gatling",
-    "path":"folders/精灵/wingman/gatling/speedy_gatling.yy",
+    "name":"Speedy_Gatling",
+    "path":"folders/精灵/Wingman/Gatling/Speedy_Gatling.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

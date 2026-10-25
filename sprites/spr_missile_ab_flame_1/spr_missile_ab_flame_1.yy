@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"missile",
-    "path":"folders/精灵/Bullet_Player/Subweapon/missile.yy",
+    "name":"Missile",
+    "path":"folders/精灵/Bullet_Player/Subweapon/Missile.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

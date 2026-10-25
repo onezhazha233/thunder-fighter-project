@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"enigmatic_blade",
-    "path":"folders/精灵/plane/blade/enigmatic_blade.yy",
+    "name":"Enigmatic_Blade",
+    "path":"folders/精灵/Plane/Blade/Enigmatic_Blade.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

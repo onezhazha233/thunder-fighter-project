@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"cluster_bomb",
-    "path":"folders/精灵/Bullet_Player/Subweapon/cluster_bomb.yy",
+    "name":"Cluster_Bomb",
+    "path":"folders/精灵/Bullet_Player/Subweapon/Cluster_Bomb.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

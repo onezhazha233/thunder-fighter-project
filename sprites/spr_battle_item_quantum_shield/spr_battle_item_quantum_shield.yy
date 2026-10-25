@@ -30,8 +30,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"quantum_shield",
-    "path":"folders/精灵/item/quantum_shield.yy",
+    "name":"Quantum_Shield",
+    "path":"folders/精灵/Item/Quantum_Shield.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

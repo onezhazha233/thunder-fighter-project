@@ -44,8 +44,8 @@
   },
   "origin":9,
   "parent":{
-    "name":"superconductive_railcannon",
-    "path":"folders/精灵/wingman/railcannon/superconductive_railcannon.yy",
+    "name":"Superconductive_Railcannon",
+    "path":"folders/精灵/Wingman/Railcannon/Superconductive_Railcannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

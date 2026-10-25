@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"nebula_glacier",
-    "path":"folders/精灵/plane/glacier/nebula_glacier.yy",
+    "name":"Nebula_Glacier",
+    "path":"folders/精灵/Plane/Glacier/Nebula_Glacier.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"magnetic_spinblade_cannon",
-    "path":"folders/精灵/Bullet_Player/Wingman/spinblade_cannon/magnetic_spinblade_cannon.yy",
+    "name":"Magnetic_Spinblade_Cannon",
+    "path":"folders/精灵/Bullet_Player/Wingman/Spinblade_Cannon/Magnetic_Spinblade_Cannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

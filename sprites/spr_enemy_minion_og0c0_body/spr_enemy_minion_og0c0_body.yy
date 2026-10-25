@@ -44,8 +44,8 @@
   },
   "origin":4,
   "parent":{
-    "name":"c0",
-    "path":"folders/精灵/enemy/minion/og0/c0.yy",
+    "name":"C0",
+    "path":"folders/精灵/Enemy/Minion/Og0/C0.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

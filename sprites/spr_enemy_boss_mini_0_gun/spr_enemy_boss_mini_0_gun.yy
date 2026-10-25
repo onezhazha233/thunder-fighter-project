@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":3,
   "parent":{
-    "name":"red_heavy",
-    "path":"folders/精灵/enemy/boss/mini/red_heavy.yy",
+    "name":"Red_Heavy",
+    "path":"folders/精灵/Enemy/Boss/Mini/Red_Heavy.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

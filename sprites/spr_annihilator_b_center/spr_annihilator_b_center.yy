@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"chase_annihilator",
-    "path":"folders/精灵/wingman/annihilator/chase_annihilator.yy",
+    "name":"Chase_Annihilator",
+    "path":"folders/精灵/Wingman/Annihilator/Chase_Annihilator.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

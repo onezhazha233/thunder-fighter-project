@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"x_wing_glacier",
-    "path":"folders/精灵/plane/glacier/x_wing_glacier.yy",
+    "name":"X_Wing_Glacier",
+    "path":"folders/精灵/Plane/Glacier/X_Wing_Glacier.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

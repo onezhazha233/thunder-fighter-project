@@ -34,8 +34,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"hpbar",
-    "path":"folders/精灵/ui/hpbar.yy",
+    "name":"Hpbar",
+    "path":"folders/精灵/Ui/Hpbar.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

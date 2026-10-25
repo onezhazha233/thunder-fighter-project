@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"skybreak_sniper",
-    "path":"folders/精灵/wingman/sniper/skybreak_sniper.yy",
+    "name":"Skybreak_Sniper",
+    "path":"folders/精灵/Wingman/Sniper/Skybreak_Sniper.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

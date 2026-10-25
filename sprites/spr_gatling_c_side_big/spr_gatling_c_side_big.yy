@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"high_speed_gatling",
-    "path":"folders/精灵/wingman/gatling/high_speed_gatling.yy",
+    "name":"High_Speed_Gatling",
+    "path":"folders/精灵/Wingman/Gatling/High_Speed_Gatling.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

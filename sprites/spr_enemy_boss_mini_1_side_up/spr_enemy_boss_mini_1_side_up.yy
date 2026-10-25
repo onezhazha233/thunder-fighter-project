@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":3,
   "parent":{
-    "name":"wildraubtier",
-    "path":"folders/精灵/enemy/boss/mini/wildraubtier.yy",
+    "name":"Wildraubtier",
+    "path":"folders/精灵/Enemy/Boss/Mini/Wildraubtier.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

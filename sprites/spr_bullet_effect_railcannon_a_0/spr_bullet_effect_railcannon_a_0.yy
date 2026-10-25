@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"railcannon",
-    "path":"folders/精灵/Effect/Bullet_Player/wingman/railcannon/railcannon.yy",
+    "name":"Railcannon",
+    "path":"folders/精灵/Effect/Bullet_Player/Wingman/Railcannon/Railcannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"thunder_apex",
-    "path":"folders/精灵/Bullet_Player/Plane/apex/thunder_apex.yy",
+    "name":"Thunder_Apex",
+    "path":"folders/精灵/Bullet_Player/Plane/Apex/Thunder_Apex.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

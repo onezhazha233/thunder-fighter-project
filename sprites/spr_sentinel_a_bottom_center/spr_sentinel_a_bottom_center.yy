@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"absorb_sentinel",
-    "path":"folders/精灵/wingman/sentinel/absorb_sentinel.yy",
+    "name":"Absorb_Sentinel",
+    "path":"folders/精灵/Wingman/Sentinel/Absorb_Sentinel.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

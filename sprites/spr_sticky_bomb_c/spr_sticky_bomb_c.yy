@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"sticky_bomb",
-    "path":"folders/精灵/Bullet_Player/Subweapon/sticky_bomb.yy",
+    "name":"Sticky_Bomb",
+    "path":"folders/精灵/Bullet_Player/Subweapon/Sticky_Bomb.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

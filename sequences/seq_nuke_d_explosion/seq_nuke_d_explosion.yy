@@ -26,8 +26,8 @@
   },
   "name":"seq_nuke_d_explosion",
   "parent":{
-    "name":"fusion_nuke",
-    "path":"folders/序列/Bullet_Player/Subweapon/nuke/fusion_nuke.yy",
+    "name":"Fusion_Nuke",
+    "path":"folders/序列/Bullet_Player/Subweapon/Nuke/Fusion_Nuke.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

@@ -26,8 +26,8 @@
   },
   "name":"seq_missile_d_rampage",
   "parent":{
-    "name":"cruise_missile",
-    "path":"folders/序列/Bullet_Player/Subweapon/missile/cruise_missile.yy",
+    "name":"Cruise_Missile",
+    "path":"folders/序列/Bullet_Player/Subweapon/Missile/Cruise_Missile.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

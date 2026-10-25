@@ -44,8 +44,8 @@
   },
   "origin":9,
   "parent":{
-    "name":"hurricane_griffin",
-    "path":"folders/精灵/Bullet_Player/Plane/raptor/hurricane_griffin.yy",
+    "name":"Hurricane_Griffin",
+    "path":"folders/精灵/Bullet_Player/Plane/Raptor/Hurricane_Griffin.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

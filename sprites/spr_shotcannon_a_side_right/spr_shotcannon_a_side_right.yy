@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":6,
   "parent":{
-    "name":"double_shotcannon",
-    "path":"folders/精灵/wingman/shotcannon/double_shotcannon.yy",
+    "name":"Double_Shotcannon",
+    "path":"folders/精灵/Wingman/Shotcannon/Double_Shotcannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

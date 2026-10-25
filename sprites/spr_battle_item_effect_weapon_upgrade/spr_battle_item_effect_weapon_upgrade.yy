@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"weapon_upgrade",
-    "path":"folders/精灵/item/weapon_upgrade.yy",
+    "name":"Weapon_Upgrade",
+    "path":"folders/精灵/Item/Weapon_Upgrade.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

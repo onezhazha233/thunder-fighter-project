@@ -26,8 +26,8 @@
   },
   "name":"seq_cluster_bomb_b",
   "parent":{
-    "name":"hexogen_cluster_bomb",
-    "path":"folders/序列/Bullet_Player/Subweapon/cluster_bomb/hexogen_cluster_bomb.yy",
+    "name":"Hexogen_Cluster_Bomb",
+    "path":"folders/序列/Bullet_Player/Subweapon/Cluster_Bomb/Hexogen_Cluster_Bomb.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

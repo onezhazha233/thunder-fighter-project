@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"gold",
-    "path":"folders/精灵/icon/armor/gold.yy",
+    "name":"Gold",
+    "path":"folders/精灵/Icon/Armor/Gold.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

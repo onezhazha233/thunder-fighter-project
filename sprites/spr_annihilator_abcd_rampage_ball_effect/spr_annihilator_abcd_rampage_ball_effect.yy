@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"annihilator",
-    "path":"folders/精灵/wingman/annihilator.yy",
+    "name":"Annihilator",
+    "path":"folders/精灵/Wingman/Annihilator.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

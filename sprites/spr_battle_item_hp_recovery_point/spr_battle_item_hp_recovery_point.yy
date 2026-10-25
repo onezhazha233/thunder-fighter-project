@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"hp_recovery",
-    "path":"folders/精灵/item/hp_recovery.yy",
+    "name":"Hp_Recovery",
+    "path":"folders/精灵/Item/Hp_Recovery.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

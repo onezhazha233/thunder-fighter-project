@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"railcannon",
-    "path":"folders/精灵/icon/wingman/railcannon.yy",
+    "name":"Railcannon",
+    "path":"folders/精灵/Icon/Wingman/Railcannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

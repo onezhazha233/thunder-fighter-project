@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"victory",
-    "path":"folders/精灵/ui/victory.yy",
+    "name":"Victory",
+    "path":"folders/精灵/Ui/Victory.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

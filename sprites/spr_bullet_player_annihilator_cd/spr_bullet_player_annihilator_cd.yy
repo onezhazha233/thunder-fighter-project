@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"annihilator",
-    "path":"folders/精灵/Bullet_Player/Wingman/annihilator.yy",
+    "name":"Annihilator",
+    "path":"folders/精灵/Bullet_Player/Wingman/Annihilator.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"bolide",
-    "path":"folders/精灵/icon/subweapon/bolide.yy",
+    "name":"Bolide",
+    "path":"folders/精灵/Icon/Subweapon/Bolide.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

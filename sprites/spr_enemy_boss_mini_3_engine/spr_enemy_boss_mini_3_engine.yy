@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":6,
   "parent":{
-    "name":"gespenst_r",
-    "path":"folders/精灵/enemy/boss/mini/gespenst_r.yy",
+    "name":"Gespenst_R",
+    "path":"folders/精灵/Enemy/Boss/Mini/Gespenst_R.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"mega",
-    "path":"folders/精灵/Effect/Bullet_Player/wingman/mega.yy",
+    "name":"Mega",
+    "path":"folders/精灵/Effect/Bullet_Player/Wingman/Mega.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

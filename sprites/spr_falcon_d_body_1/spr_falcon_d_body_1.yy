@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"sky_scorching_falcon",
-    "path":"folders/精灵/plane/falcon/sky_scorching_falcon.yy",
+    "name":"Sky_Scorching_Falcon",
+    "path":"folders/精灵/Plane/Falcon/Sky_Scorching_Falcon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

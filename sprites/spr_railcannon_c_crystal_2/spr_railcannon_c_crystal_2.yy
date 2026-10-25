@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":1,
   "parent":{
-    "name":"hyper_railcannon",
-    "path":"folders/精灵/wingman/railcannon/hyper_railcannon.yy",
+    "name":"Hyper_Railcannon",
+    "path":"folders/精灵/Wingman/Railcannon/Hyper_Railcannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

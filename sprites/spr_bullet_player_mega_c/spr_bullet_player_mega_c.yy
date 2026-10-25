@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"mega_particle_cannon",
-    "path":"folders/精灵/Bullet_Player/Wingman/mega/mega_particle_cannon.yy",
+    "name":"Mega_Particle_Cannon",
+    "path":"folders/精灵/Bullet_Player/Wingman/Mega/Mega_Particle_Cannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

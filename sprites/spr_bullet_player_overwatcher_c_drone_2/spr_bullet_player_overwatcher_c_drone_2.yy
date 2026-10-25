@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"starfield_overwatcher",
-    "path":"folders/精灵/Bullet_Player/Plane/overwatcher/starfield_overwatcher.yy",
+    "name":"Starfield_Overwatcher",
+    "path":"folders/精灵/Bullet_Player/Plane/Overwatcher/Starfield_Overwatcher.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

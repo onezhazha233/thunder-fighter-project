@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":5,
   "parent":{
-    "name":"sirius_twins",
-    "path":"folders/精灵/enemy/boss/mini/sirius_twins.yy",
+    "name":"Sirius_Twins",
+    "path":"folders/精灵/Enemy/Boss/Mini/Sirius_Twins.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"minion",
-    "path":"folders/精灵/enemy/minion.yy",
+    "name":"Minion",
+    "path":"folders/精灵/Enemy/Minion.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"item",
-    "path":"folders/精灵/item.yy",
+    "name":"Item",
+    "path":"folders/精灵/Item.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

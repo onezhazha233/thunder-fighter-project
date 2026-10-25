@@ -26,8 +26,8 @@
   },
   "name":"seq_enemy_minion_og2c1",
   "parent":{
-    "name":"og2",
-    "path":"folders/序列/Enemy/Minion/og2.yy",
+    "name":"Og2",
+    "path":"folders/序列/Enemy/Minion/Og2.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

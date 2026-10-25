@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"nuke",
-    "path":"folders/精灵/icon/subweapon/nuke.yy",
+    "name":"Nuke",
+    "path":"folders/精灵/Icon/Subweapon/Nuke.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

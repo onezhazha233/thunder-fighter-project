@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"raptor",
-    "path":"folders/精灵/plane/raptor.yy",
+    "name":"Raptor",
+    "path":"folders/精灵/Plane/Raptor.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

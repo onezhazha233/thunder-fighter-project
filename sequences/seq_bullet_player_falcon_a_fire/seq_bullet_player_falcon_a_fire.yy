@@ -26,8 +26,8 @@
   },
   "name":"seq_bullet_player_falcon_a_fire",
   "parent":{
-    "name":"falcon_zero",
-    "path":"folders/序列/Bullet_Player/Plane/falcon/falcon_zero.yy",
+    "name":"Falcon_Zero",
+    "path":"folders/序列/Bullet_Player/Plane/Falcon/Falcon_Zero.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

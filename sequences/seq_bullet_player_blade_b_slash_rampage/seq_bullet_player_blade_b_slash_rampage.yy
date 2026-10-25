@@ -26,8 +26,8 @@
   },
   "name":"seq_bullet_player_blade_b_slash_rampage",
   "parent":{
-    "name":"enigmatic_blade",
-    "path":"folders/序列/Bullet_Player/Plane/blade/enigmatic_blade.yy",
+    "name":"Enigmatic_Blade",
+    "path":"folders/序列/Bullet_Player/Plane/Blade/Enigmatic_Blade.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

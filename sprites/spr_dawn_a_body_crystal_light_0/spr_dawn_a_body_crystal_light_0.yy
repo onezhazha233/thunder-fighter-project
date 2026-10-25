@@ -44,8 +44,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"dawn_zero",
-    "path":"folders/精灵/plane/dawn/dawn_zero.yy",
+    "name":"Dawn_Zero",
+    "path":"folders/精灵/Plane/Dawn/Dawn_Zero.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

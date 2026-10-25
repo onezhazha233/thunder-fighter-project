@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"laser",
-    "path":"folders/精灵/icon/subweapon/laser.yy",
+    "name":"Laser",
+    "path":"folders/精灵/Icon/Subweapon/Laser.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

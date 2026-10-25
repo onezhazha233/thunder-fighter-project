@@ -26,8 +26,8 @@
   },
   "name":"seq_bullet_player_plasma_cannon_d",
   "parent":{
-    "name":"ultra_plasma_cannon",
-    "path":"folders/序列/Bullet_Player/Wingman/plasma_cannon/ultra_plasma_cannon.yy",
+    "name":"Ultra_Plasma_Cannon",
+    "path":"folders/序列/Bullet_Player/Wingman/Plasma_Cannon/Ultra_Plasma_Cannon.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

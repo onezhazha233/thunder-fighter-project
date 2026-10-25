@@ -26,8 +26,8 @@
   },
   "name":"seq_bullet_player_raptor_d_rampage",
   "parent":{
-    "name":"blaze_phoenix",
-    "path":"folders/序列/Bullet_Player/Plane/raptor/blaze_phoenix.yy",
+    "name":"Blaze_Phoenix",
+    "path":"folders/序列/Bullet_Player/Plane/Raptor/Blaze_Phoenix.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

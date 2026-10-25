@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":8,
   "parent":{
-    "name":"mega",
-    "path":"folders/精灵/wingman/mega.yy",
+    "name":"Mega",
+    "path":"folders/精灵/Wingman/Mega.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

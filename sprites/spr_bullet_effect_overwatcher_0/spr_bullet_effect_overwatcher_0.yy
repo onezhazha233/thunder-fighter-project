@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"overwatcher",
-    "path":"folders/精灵/Effect/Bullet_Player/plane/overwatcher.yy",
+    "name":"Overwatcher",
+    "path":"folders/精灵/Effect/Bullet_Player/Plane/Overwatcher.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"falcon",
-    "path":"folders/精灵/Effect/Bullet_Player/plane/falcon.yy",
+    "name":"Falcon",
+    "path":"folders/精灵/Effect/Bullet_Player/Plane/Falcon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

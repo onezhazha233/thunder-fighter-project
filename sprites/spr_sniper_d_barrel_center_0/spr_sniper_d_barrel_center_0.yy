@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"star_destroyer_sniper",
-    "path":"folders/精灵/wingman/sniper/star_destroyer_sniper.yy",
+    "name":"Star_Destroyer_Sniper",
+    "path":"folders/精灵/Wingman/Sniper/Star_Destroyer_Sniper.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

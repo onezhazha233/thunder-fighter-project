@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":2,
   "parent":{
-    "name":"xeno_zero",
-    "path":"folders/精灵/plane/xeno/xeno_zero.yy",
+    "name":"Xeno_Zero",
+    "path":"folders/精灵/Plane/Xeno/Xeno_Zero.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

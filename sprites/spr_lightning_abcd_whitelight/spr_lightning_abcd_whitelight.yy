@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"lightning",
-    "path":"folders/精灵/Bullet_Player/Subweapon/lightning.yy",
+    "name":"Lightning",
+    "path":"folders/精灵/Bullet_Player/Subweapon/Lightning.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

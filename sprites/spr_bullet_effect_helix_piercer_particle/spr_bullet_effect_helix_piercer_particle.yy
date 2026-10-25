@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"helix_piercer",
-    "path":"folders/精灵/Effect/Bullet_Player/subweapon/helix_piercer.yy",
+    "name":"Helix_Piercer",
+    "path":"folders/精灵/Effect/Bullet_Player/Subweapon/Helix_Piercer.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

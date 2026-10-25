@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"void_phantom",
-    "path":"folders/精灵/plane/phantom/void_phantom.yy",
+    "name":"Void_Phantom",
+    "path":"folders/精灵/Plane/Phantom/Void_Phantom.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

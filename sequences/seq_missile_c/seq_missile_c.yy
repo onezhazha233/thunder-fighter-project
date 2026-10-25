@@ -26,8 +26,8 @@
   },
   "name":"seq_missile_c",
   "parent":{
-    "name":"ballistic_missile",
-    "path":"folders/序列/Bullet_Player/Subweapon/missile/ballistic_missile.yy",
+    "name":"Ballistic_Missile",
+    "path":"folders/序列/Bullet_Player/Subweapon/Missile/Ballistic_Missile.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

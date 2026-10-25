@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"spinblade_cannon",
-    "path":"folders/精灵/wingman/spinblade_cannon/spinblade_cannon.yy",
+    "name":"Spinblade_Cannon",
+    "path":"folders/精灵/Wingman/Spinblade_Cannon/Spinblade_Cannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

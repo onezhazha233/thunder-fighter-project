@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"devil_blade",
-    "path":"folders/精灵/plane/blade/devil_blade.yy",
+    "name":"Devil_Blade",
+    "path":"folders/精灵/Plane/Blade/Devil_Blade.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

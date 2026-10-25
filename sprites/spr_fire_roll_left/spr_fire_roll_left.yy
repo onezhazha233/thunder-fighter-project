@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"fire",
-    "path":"folders/精灵/plane/fire.yy",
+    "name":"Fire",
+    "path":"folders/精灵/Plane/Fire.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

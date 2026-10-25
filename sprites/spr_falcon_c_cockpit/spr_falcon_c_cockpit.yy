@@ -44,8 +44,8 @@
   },
   "origin":9,
   "parent":{
-    "name":"azureflame_falcon",
-    "path":"folders/精灵/plane/falcon/azureflame_falcon.yy",
+    "name":"Azureflame_Falcon",
+    "path":"folders/精灵/Plane/Falcon/Azureflame_Falcon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

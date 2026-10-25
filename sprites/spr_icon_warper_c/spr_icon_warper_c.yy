@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"warper",
-    "path":"folders/精灵/icon/subweapon/warper.yy",
+    "name":"Warper",
+    "path":"folders/精灵/Icon/Subweapon/Warper.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

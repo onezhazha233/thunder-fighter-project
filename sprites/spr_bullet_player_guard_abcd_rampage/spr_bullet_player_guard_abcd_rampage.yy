@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"guard",
-    "path":"folders/精灵/Bullet_Player/Wingman/guard.yy",
+    "name":"Guard",
+    "path":"folders/精灵/Bullet_Player/Wingman/Guard.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

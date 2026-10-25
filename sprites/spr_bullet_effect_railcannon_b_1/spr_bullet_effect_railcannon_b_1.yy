@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"pulse_railcannon",
-    "path":"folders/精灵/Effect/Bullet_Player/wingman/railcannon/pulse_railcannon.yy",
+    "name":"Pulse_Railcannon",
+    "path":"folders/精灵/Effect/Bullet_Player/Wingman/Railcannon/Pulse_Railcannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
