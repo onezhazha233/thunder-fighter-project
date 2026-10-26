@@ -1,2 +1,3 @@
 live;
-rtime = 17
+bursts_left = rampage_num;
+burst_timer = rampage_biv;

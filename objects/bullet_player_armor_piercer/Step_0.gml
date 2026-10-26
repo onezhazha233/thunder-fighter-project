@@ -1,4 +1,4 @@
 live;
-vspeed = ospd
+if (!CycleStandby()) vspeed = ospd
 
 event_inherited();

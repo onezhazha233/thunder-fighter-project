@@ -1,22 +1,14 @@
 live;
 blt = MakePlayerBullet(x,y-10*scale_y,bullet_player_armor_piercer,seq_armor_piercer_a_rampage_intro)
 blt.idle = seq_armor_piercer_a_rampage
-blt.hspeed = 17/3
 blt.scale_x = scale_x
 blt.scale_y = scale_y
 blt.damage = damage
-Anim_Create(blt,"hspeed",0,0,blt.hspeed,2-blt.hspeed,24)
-Anim_Create(blt,"hspeed",0,0,0,0,0,25)
-Anim_Create(blt,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,blt.y,35,24)
-Anim_Create(blt,"ospd",0,0,0,-45,0,24)
+blt.SetStandby(24, 90, -45)
 
 blt = MakePlayerBullet(x,y-10*scale_y,bullet_player_armor_piercer,seq_armor_piercer_a_rampage_intro)
 blt.idle = seq_armor_piercer_a_rampage
-blt.hspeed = -17/3
 blt.scale_x = -scale_x
 blt.scale_y = scale_y
 blt.damage = damage
-Anim_Create(blt,"hspeed",0,0,blt.hspeed,-2-blt.hspeed,24)
-Anim_Create(blt,"hspeed",0,0,0,0,0,25)
-Anim_Create(blt,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,blt.y,35,24)
-Anim_Create(blt,"ospd",0,0,0,-45,0,24)
+blt.SetStandby(24, -90, -45)

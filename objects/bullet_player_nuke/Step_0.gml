@@ -1,4 +1,6 @@
 live;
+if (!CycleStandby()) vspeed = standby_v;
+
 if(damage_type = 1){
 	var _keys = ds_map_find_first(collision_enemy);
 	while (!is_undefined(_keys)) {

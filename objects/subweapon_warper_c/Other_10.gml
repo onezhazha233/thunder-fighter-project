@@ -1,2 +1,3 @@
 live;
-time = 16
+bursts_left = idle_num;
+burst_timer = idle_biv;

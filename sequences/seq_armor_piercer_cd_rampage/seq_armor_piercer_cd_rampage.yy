@@ -26,8 +26,8 @@
   },
   "name":"seq_armor_piercer_cd_rampage",
   "parent":{
-    "name":"Armor_Piercer",
-    "path":"folders/序列/Bullet_Player/Subweapon/Armor_Piercer.yy",
+    "name":"DU_Armor_Piercer",
+    "path":"folders/序列/Bullet_Player/Subweapon/Armor_Piercer/DU_Armor_Piercer.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

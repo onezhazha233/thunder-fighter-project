@@ -1,4 +1,4 @@
 live;
 event_inherited();
 
-vspeed = -20/3
+vspeed = -6.75

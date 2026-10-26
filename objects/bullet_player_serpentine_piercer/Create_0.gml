@@ -26,9 +26,14 @@ history_y = array_create(12,y);
 history_sprite_index = array_create(12,spr_serpentine_piercer_cd_light_0);
 current_frame = 0;
 
-history_image_xscale = array_create(12,scale_x);
-history_image_yscale = array_create(12,scale_y);
+history_image_xscale = array_create(12,0);
+history_image_yscale = array_create(12,0);
 history_image_angle = array_create(12,0);
+
+sx = 0.5
+sy = 0.5
+Anim_Create(id,"sx",0,0,sx,1-sx,30)
+Anim_Create(id,"sy",0,0,sy,1-sy,30)
 
 rampage = false
 

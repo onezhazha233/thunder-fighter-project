@@ -11,10 +11,10 @@ with(equipment){
 	yscale = 1;
 
 	plane = plane_agent;
-	wingman_left = [wingman_annihilator_c];
-	wingman_right = [wingman_annihilator_d];
+	wingman_left = [plane_agent];
+	wingman_right = [plane_agent];
 	wingman_x_offset = global.current_equipment.wingman_x_offset;
 	wingman_y_offset = global.current_equipment.wingman_y_offset;
-	subweapon = emitter_player;
+	subweapon = subweapon_warper_d;
 	armor = armor_agent;
 }

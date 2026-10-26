@@ -195,15 +195,99 @@ attack_1 = function(){//延迟五六连续散射
 	}
 }
 	
-attack_2 = function(){
+attack_2 = function(){//向上反弹的圆散射
 	live_name = "emitter_enemy_test:attack_2";
 	live;
+	if(attack_time = 1){
+		dd = 0;
+		Anim_Create(id,"dd",0,0,0,720,40);
+		Anim_Create(id,"dd",0,0,720,-720,40,40);
+	}
+	if(attack_time < 80){
+		xx = x + lengthdir_x(dd/3,dd-90);
+		yy = y + lengthdir_y(dd/3,dd-90);
+		if(yy > 0){
+			blt = MakeEnemyBullet(xx,yy,bullet_enemy_normal);
+			blt.image_xscale = 3;
+			blt.image_yscale = 3;
+			blt.image_alpha = 0;
+			Anim_Create(blt,"image_xscale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,3,-1,20);
+			Anim_Create(blt,"image_yscale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,3,-1,20);
+			Anim_Create(blt,"image_alpha",0,0,0,1,20);
+			blt.direction = point_direction(blt.x,blt.y,x,y)+sin(attack_time*75772+1358)*5;
+			blt.speed = 0.5;
+			Anim_Create(blt,"speed",0,0,blt.speed,12,40,60);
+			with(blt){
+				custom_function = function(){
+					if(y < 0&&vspeed < 0){
+						y = abs(y);
+						vspeed = abs(vspeed);
+					}
+				}
+			}
+			xx = x + lengthdir_x(dd/3,-dd-90);
+			yy = y + lengthdir_y(dd/3,-dd-90);
+			blt = MakeEnemyBullet(xx,yy,bullet_enemy_normal);
+			blt.image_xscale = 3;
+			blt.image_yscale = 3;
+			blt.image_alpha = 0;
+			Anim_Create(blt,"image_xscale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,3,-1,20);
+			Anim_Create(blt,"image_yscale",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,3,-1,20);
+			Anim_Create(blt,"image_alpha",0,0,0,1,20);
+			blt.direction = point_direction(blt.x,blt.y,x,y)+cos(attack_time*951753+1358)*2;
+			blt.speed = 0.5;
+			Anim_Create(blt,"speed",0,0,blt.speed,12,40,60);
+			with(blt){
+				custom_function = function(){
+					if(y < 0&&vspeed < 0){
+						y = abs(y);
+						vspeed = abs(vspeed);
+					}
+				}
+			}
+		}
+	}
+	if(attack_time = 200){
+		end_attack();
+	}
+}
 	
+attack_3 = function(){//间断旋转正反散射
+	live_name = "emitter_enemy_test:attack_3";
+	live;
+	if(attack_time = 1){
+		dd = 0;
+	}
+	if(attack_time < 190){
+		dd += (attack_time < 60 ? 1 : -2);
+		if(attack_time mod 2 = 0){
+			for(i=0;i<6;i+=1){
+				if(attack_time mod 30 < 20){
+					blt = MakeEnemyBullet(x,y,bullet_enemy_normal,spr_bullet_enemy_normal_1);
+					blt.image_angle = dd+i*60;
+					blt.direction = dd+i*60;
+					blt.speed = 10;
+					Anim_Create(blt,"speed",0,0,blt.speed,-3,30,20);
+				}
+				if(attack_time mod 22 < 15){
+					blt = MakeEnemyBullet(x,y,bullet_enemy_normal,spr_bullet_enemy_normal_1);
+					blt.image_angle = -dd*1.2+i*60;
+					blt.direction = -dd*1.2+i*60;
+					blt.speed = 8;
+					Anim_Create(blt,"speed",0,0,blt.speed,-3,20,30);
+				}
+			}
+		}
+	}
+	if(attack_time = 270){
+		end_attack();
+	}
 }
 
 var a0 = create_attack(0,attack_0,30);
 var a1 = create_attack(0,attack_1,30);
 var a2 = create_attack(0,attack_2,30);
+var a3 = create_attack(0,attack_3,30);
 
-fixed_sequence = [a1];
+fixed_sequence = [a3];
 //random_pool = [a1]//循环测试用
