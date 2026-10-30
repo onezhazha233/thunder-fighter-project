@@ -1,7 +1,7 @@
 live;
 depth = DEPTH_BATTLE.ITEMS
 
-detect_range = 180
+detect_range = 160
 detect_amount = 0
 detect_target = 5
 chase = 0

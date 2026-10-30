@@ -4,7 +4,7 @@ depth = DEPTH_BATTLE.ITEMS_CRYSTAL-10
 
 enabled = false
 
-detect_range = 340
+detect_range = 320
 chase_acceleration = 2
 chase_speed_max = 18
 
