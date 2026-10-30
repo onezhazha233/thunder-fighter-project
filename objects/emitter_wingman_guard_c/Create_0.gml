@@ -1,8 +1,8 @@
 live;
 event_inherited();
 
-time_interval_idle = [31,31,31,31]
-time_interval_rampage = 16
+time_interval_idle = [30,30,30,30]
+time_interval_rampage = 15
 
 time = 0
 
@@ -16,5 +16,5 @@ block_height = 24
 block_width_rampage = 70
 block_height_rampage = 42
 
-damages = [0.645833,0.6296875,0.65875,0.645833,2/3]
+damages = [0.645833*30/31,0.6296875*30/31,0.65875*30/31,0.645833*30/31,2/3*15/16]
 type = 1

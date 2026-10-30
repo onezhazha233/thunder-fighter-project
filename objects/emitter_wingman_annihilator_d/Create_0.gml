@@ -1,22 +1,14 @@
 live;
 event_inherited();
 
-/* —— 原版数据(终结歼灭炮 zidang310, 暴走311) ——
-   常态 wing09d-01: attackRate 12%, 70帧周期, 弹数6/7/8/9(按武器等级),
-     每弹角度 -(5+10k), 追踪30‰, 攻击点错相 standby=6*(k mod 4)
-   暴走 wing09d-02: attackRate 8%, 15帧周期, 固定10弹, 角度-(8+10k), 追踪40‰,
-     错相 standby=6*(k mod 6) */
 time_interval_idle = [70,70,70,70]
-time_interval_rampage = 1     /* 暴走逐帧相位驱动(见 Other_11) */
+time_interval_rampage = 1
 
 volley_counts = [6,7,8,9]
 rampage_count = 10
 track_perm_idle = 0.03
 track_perm_rampage = 0.04
 
-/* 伤害按GM工程DPS标定换算(等级0-3: 7.5/9.75/12.75/15, 暴走30 DPS; ×GetAtkWingman)
-   常态每发 = DPS×70帧/(60×2僚机×每波弹数[6,7,8,9])
-   暴走每发 = 30×15帧/(60×2僚机×10弹) */
 damages = [0.729167,0.8125,0.929688,0.972222,0.375]
 type = 1
 

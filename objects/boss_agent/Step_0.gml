@@ -51,7 +51,8 @@ if(hp <= 0){
 		a.boss_list = boss_list;
 		Swarm_SetEnabled(true);
 		for(i=0;i<array_length(ii);i+=1){
-			ii[i].direction = random_range(-135,-45);
+			ii[i].direction = -90 + random_range(-30,30);
+			ii[i].speed = random_range(2,4);
 		}
 	}
 }
