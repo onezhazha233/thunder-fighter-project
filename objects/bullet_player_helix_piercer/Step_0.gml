@@ -18,7 +18,7 @@ y = oy + lengthdir_y(dist,image_angle)
 
 // 弹头朝向 = 切线方向（上一帧位置→当前位置），t=0 时取极角
 if(time > 0){
-	dir = point_direction(lastx,lasty,x,y);
+	dir = point_direction(lastx,lasty,x,y)-20;
 }
 lastx = x
 lasty = y

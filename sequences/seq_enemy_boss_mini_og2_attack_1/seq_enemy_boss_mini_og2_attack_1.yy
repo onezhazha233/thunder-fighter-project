@@ -196,7 +196,7 @@
               ],"traits":0,},
             {"$GMGraphicTrack":"","%Name":"spr_enemy_boss_mini_og0_gun_top","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
                   {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-                      "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og0_gun_top","path":"sprites/spr_enemy_boss_mini_og0_gun_top/spr_enemy_boss_mini_og0_gun_top.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+                      "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og2_gun_top","path":"sprites/spr_enemy_boss_mini_og2_gun_top/spr_enemy_boss_mini_og2_gun_top.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                     },"Disabled":false,"id":"b8e28227-5996-4d4e-9aa6-0dcc0da84bd7","IsCreationKey":false,"Key":0.0,"Length":10.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                 ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_og0_gun_top","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4290332914,"tracks":[
                 {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
@@ -357,7 +357,7 @@
                     ],"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"rotation","resourceType":"GMRealTrack","resourceVersion":"2.0","trackColour":4290332914,"tracks":[],"traits":0,},
                 {"$GMGraphicTrack":"","%Name":"spr_enemy_boss_mini_og0_gun","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
                       {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-                          "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og0_gun","path":"sprites/spr_enemy_boss_mini_og0_gun/spr_enemy_boss_mini_og0_gun.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+                          "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og2_gun","path":"sprites/spr_enemy_boss_mini_og2_gun/spr_enemy_boss_mini_og2_gun.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                         },"Disabled":false,"id":"cc15f48f-585c-486a-8bfa-17dfb5d10cc0","IsCreationKey":false,"Key":0.0,"Length":10.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                     ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_og0_gun","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4290332914,"tracks":[
                     {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
@@ -386,7 +386,7 @@
                   ],"traits":0,},
                 {"$GMGraphicTrack":"","%Name":"spr_enemy_boss_mini_og0_gun_down","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
                       {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-                          "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og0_gun_down","path":"sprites/spr_enemy_boss_mini_og0_gun_down/spr_enemy_boss_mini_og0_gun_down.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+                          "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og2_gun_down","path":"sprites/spr_enemy_boss_mini_og2_gun_down/spr_enemy_boss_mini_og2_gun_down.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                         },"Disabled":false,"id":"8de2605f-11db-4592-891d-7e13756c468e","IsCreationKey":false,"Key":0.0,"Length":10.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                     ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_og0_gun_down","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4290332914,"tracks":[
                     {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
@@ -415,7 +415,7 @@
                   ],"traits":0,},
                 {"$GMGraphicTrack":"","%Name":"spr_enemy_boss_mini_og0_gun_up_1","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
                       {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-                          "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og0_gun_up_1","path":"sprites/spr_enemy_boss_mini_og0_gun_up_1/spr_enemy_boss_mini_og0_gun_up_1.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+                          "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og2_gun_up_1","path":"sprites/spr_enemy_boss_mini_og2_gun_up_1/spr_enemy_boss_mini_og2_gun_up_1.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                         },"Disabled":false,"id":"93097b90-fbd8-40ad-98bb-6add55a24b4a","IsCreationKey":false,"Key":0.0,"Length":10.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                     ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_og0_gun_up_1","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4290332914,"tracks":[
                     {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
@@ -444,7 +444,7 @@
                   ],"traits":0,},
                 {"$GMGraphicTrack":"","%Name":"spr_enemy_boss_mini_og0_gun_up_0","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
                       {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-                          "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og0_gun_up_0","path":"sprites/spr_enemy_boss_mini_og0_gun_up_0/spr_enemy_boss_mini_og0_gun_up_0.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+                          "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og2_gun_up_0","path":"sprites/spr_enemy_boss_mini_og2_gun_up_0/spr_enemy_boss_mini_og2_gun_up_0.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                         },"Disabled":false,"id":"cc204a8b-55b5-409b-bd93-c3c64f2761f1","IsCreationKey":false,"Key":0.0,"Length":10.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                     ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_og0_gun_up_0","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4290332914,"tracks":[
                     {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
@@ -633,7 +633,7 @@
               ],"traits":0,},
             {"$GMGraphicTrack":"","%Name":"spr_enemy_boss_mini_og0_gun_top","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
                   {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-                      "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og0_gun_top","path":"sprites/spr_enemy_boss_mini_og0_gun_top/spr_enemy_boss_mini_og0_gun_top.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+                      "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og2_gun_top","path":"sprites/spr_enemy_boss_mini_og2_gun_top/spr_enemy_boss_mini_og2_gun_top.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                     },"Disabled":false,"id":"77071bbb-b2a7-403f-a8b9-b7ff56a3ec34","IsCreationKey":false,"Key":0.0,"Length":10.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                 ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_og0_gun_top","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4290332914,"tracks":[
                 {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
@@ -794,7 +794,7 @@
                     ],"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"rotation","resourceType":"GMRealTrack","resourceVersion":"2.0","trackColour":4290332914,"tracks":[],"traits":0,},
                 {"$GMGraphicTrack":"","%Name":"spr_enemy_boss_mini_og0_gun","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
                       {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-                          "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og0_gun","path":"sprites/spr_enemy_boss_mini_og0_gun/spr_enemy_boss_mini_og0_gun.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+                          "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og2_gun","path":"sprites/spr_enemy_boss_mini_og2_gun/spr_enemy_boss_mini_og2_gun.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                         },"Disabled":false,"id":"c9654a0f-ed09-403a-9198-619547eb702a","IsCreationKey":false,"Key":0.0,"Length":10.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                     ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_og0_gun","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4290332914,"tracks":[
                     {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
@@ -823,7 +823,7 @@
                   ],"traits":0,},
                 {"$GMGraphicTrack":"","%Name":"spr_enemy_boss_mini_og0_gun_down","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
                       {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-                          "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og0_gun_down","path":"sprites/spr_enemy_boss_mini_og0_gun_down/spr_enemy_boss_mini_og0_gun_down.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+                          "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og2_gun_down","path":"sprites/spr_enemy_boss_mini_og2_gun_down/spr_enemy_boss_mini_og2_gun_down.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                         },"Disabled":false,"id":"01f073c4-bc08-4c41-906c-be1b89508d46","IsCreationKey":false,"Key":0.0,"Length":10.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                     ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_og0_gun_down","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4290332914,"tracks":[
                     {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
@@ -852,7 +852,7 @@
                   ],"traits":0,},
                 {"$GMGraphicTrack":"","%Name":"spr_enemy_boss_mini_og0_gun_up_1","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
                       {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-                          "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og0_gun_up_1","path":"sprites/spr_enemy_boss_mini_og0_gun_up_1/spr_enemy_boss_mini_og0_gun_up_1.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+                          "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og2_gun_up_1","path":"sprites/spr_enemy_boss_mini_og2_gun_up_1/spr_enemy_boss_mini_og2_gun_up_1.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                         },"Disabled":false,"id":"732dd5f7-520e-480e-8fdf-256a5051c330","IsCreationKey":false,"Key":0.0,"Length":10.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                     ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_og0_gun_up_1","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4290332914,"tracks":[
                     {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
@@ -881,7 +881,7 @@
                   ],"traits":0,},
                 {"$GMGraphicTrack":"","%Name":"spr_enemy_boss_mini_og0_gun_up_0","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
                       {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-                          "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og0_gun_up_0","path":"sprites/spr_enemy_boss_mini_og0_gun_up_0/spr_enemy_boss_mini_og0_gun_up_0.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+                          "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og2_gun_up_0","path":"sprites/spr_enemy_boss_mini_og2_gun_up_0/spr_enemy_boss_mini_og2_gun_up_0.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                         },"Disabled":false,"id":"4e82a77e-9c96-4f8c-945e-f9f2bb7968a4","IsCreationKey":false,"Key":0.0,"Length":10.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                     ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_og0_gun_up_0","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4290332914,"tracks":[
                     {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
@@ -941,7 +941,7 @@
           ],"traits":0,},
         {"$GMGraphicTrack":"","%Name":"spr_enemy_boss_mini_og0_body_light","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
               {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-                  "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og0_body_light","path":"sprites/spr_enemy_boss_mini_og0_body_light/spr_enemy_boss_mini_og0_body_light.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+                  "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og2_body_light","path":"sprites/spr_enemy_boss_mini_og2_body_light/spr_enemy_boss_mini_og2_body_light.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                 },"Disabled":false,"id":"69b7c02b-d673-4bd5-a281-f039334c19de","IsCreationKey":false,"Key":0.0,"Length":10.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
             ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_og0_body_light","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4290332914,"tracks":[
             {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
@@ -970,7 +970,7 @@
           ],"traits":0,},
         {"$GMGraphicTrack":"","%Name":"spr_enemy_boss_mini_og0_body","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
               {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-                  "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og0_body","path":"sprites/spr_enemy_boss_mini_og0_body/spr_enemy_boss_mini_og0_body.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+                  "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og2_body","path":"sprites/spr_enemy_boss_mini_og2_body/spr_enemy_boss_mini_og2_body.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                 },"Disabled":false,"id":"a6a19e5d-5fc8-401f-bf19-29b094163bf3","IsCreationKey":false,"Key":0.0,"Length":10.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
             ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_og0_body","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4290332914,"tracks":[
             {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
@@ -1011,7 +1011,7 @@
                 ],"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"rotation","resourceType":"GMRealTrack","resourceVersion":"2.0","trackColour":4290332914,"tracks":[],"traits":0,},
             {"$GMGraphicTrack":"","%Name":"spr_enemy_boss_mini_og0_gun_side","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
                   {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-                      "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og0_gun_side","path":"sprites/spr_enemy_boss_mini_og0_gun_side/spr_enemy_boss_mini_og0_gun_side.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+                      "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og2_gun_side","path":"sprites/spr_enemy_boss_mini_og2_gun_side/spr_enemy_boss_mini_og2_gun_side.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                     },"Disabled":false,"id":"c7b3d76c-6dad-4dce-b762-a8ce58d3e4f1","IsCreationKey":false,"Key":0.0,"Length":10.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                 ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_og0_gun_side","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4290332914,"tracks":[
                 {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
@@ -1040,7 +1040,7 @@
               ],"traits":0,},
             {"$GMGraphicTrack":"","%Name":"spr_enemy_boss_mini_og0_gun_small","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
                   {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-                      "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og0_gun_small","path":"sprites/spr_enemy_boss_mini_og0_gun_small/spr_enemy_boss_mini_og0_gun_small.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+                      "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og2_gun_small","path":"sprites/spr_enemy_boss_mini_og2_gun_small/spr_enemy_boss_mini_og2_gun_small.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                     },"Disabled":false,"id":"c09386c3-ad95-47bc-a34b-0db3388ca5a3","IsCreationKey":false,"Key":0.0,"Length":10.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                 ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_og0_gun_small","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4290332914,"tracks":[
                 {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
@@ -1069,7 +1069,7 @@
               ],"traits":0,},
             {"$GMGraphicTrack":"","%Name":"spr_enemy_boss_mini_og0_body_side","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
                   {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-                      "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og0_body_side","path":"sprites/spr_enemy_boss_mini_og0_body_side/spr_enemy_boss_mini_og0_body_side.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+                      "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og2_body_side","path":"sprites/spr_enemy_boss_mini_og2_body_side/spr_enemy_boss_mini_og2_body_side.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                     },"Disabled":false,"id":"4bb0fbb7-1fb6-438a-b7ac-ff3d9a0368d3","IsCreationKey":false,"Key":0.0,"Length":10.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                 ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_og0_body_side","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4290332914,"tracks":[
                 {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
@@ -1146,7 +1146,7 @@
                 ],"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"scale","resourceType":"GMRealTrack","resourceVersion":"2.0","trackColour":4290332914,"tracks":[],"traits":0,},
             {"$GMGraphicTrack":"","%Name":"spr_enemy_boss_mini_og0_gun_side","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
                   {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-                      "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og0_gun_side","path":"sprites/spr_enemy_boss_mini_og0_gun_side/spr_enemy_boss_mini_og0_gun_side.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+                      "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og2_gun_side","path":"sprites/spr_enemy_boss_mini_og2_gun_side/spr_enemy_boss_mini_og2_gun_side.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                     },"Disabled":false,"id":"725eda8d-c5e6-4f4d-964e-cbff46404ff1","IsCreationKey":false,"Key":0.0,"Length":10.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                 ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_og0_gun_side","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4290332914,"tracks":[
                 {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
@@ -1175,7 +1175,7 @@
               ],"traits":0,},
             {"$GMGraphicTrack":"","%Name":"spr_enemy_boss_mini_og0_gun_small","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
                   {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-                      "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og0_gun_small","path":"sprites/spr_enemy_boss_mini_og0_gun_small/spr_enemy_boss_mini_og0_gun_small.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+                      "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og2_gun_small","path":"sprites/spr_enemy_boss_mini_og2_gun_small/spr_enemy_boss_mini_og2_gun_small.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                     },"Disabled":false,"id":"89e18b11-6626-4c34-b178-42c0b23a749a","IsCreationKey":false,"Key":0.0,"Length":10.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                 ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_og0_gun_small","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4290332914,"tracks":[
                 {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
@@ -1204,7 +1204,7 @@
               ],"traits":0,},
             {"$GMGraphicTrack":"","%Name":"spr_enemy_boss_mini_og0_body_side","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetSpriteKeyframe>":"","Keyframes":[
                   {"$Keyframe<AssetSpriteKeyframe>":"","Channels":{
-                      "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og0_body_side","path":"sprites/spr_enemy_boss_mini_og0_body_side/spr_enemy_boss_mini_og0_body_side.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
+                      "0":{"$AssetSpriteKeyframe":"","Id":{"name":"spr_enemy_boss_mini_og2_body_side","path":"sprites/spr_enemy_boss_mini_og2_body_side/spr_enemy_boss_mini_og2_body_side.yy",},"resourceType":"AssetSpriteKeyframe","resourceVersion":"2.0",},
                     },"Disabled":false,"id":"aa6246fc-73ee-447e-a977-f49ed70464b3","IsCreationKey":false,"Key":0.0,"Length":10.0,"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"2.0","Stretch":false,},
                 ],"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"spr_enemy_boss_mini_og0_body_side","resourceType":"GMGraphicTrack","resourceVersion":"2.0","trackColour":4290332914,"tracks":[
                 {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
