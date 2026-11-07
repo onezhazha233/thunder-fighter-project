@@ -30,14 +30,251 @@ attack_0 = function(){//收缩瞄准散射
 		end_attack();
 	}
 }
+	
+attack_1 = function(){//八向反弹加曲线狙
+	live_name = "emitter_boss_xenomorph:attack_1";
+	live;
+	if(attack_time <= 2 || !variable_instance_exists(id,"tx")){
+		tx = instance_exists(player) ? player.x : mouse_x;
+		ty = instance_exists(player) ? player.y : mouse_y;
+	}
+	if(attack_time > 1&&attack_time < 300){
+		if(attack_time mod 6 = 0){
+			for(i=0;i<8;i+=(attack_time < 100)+1){
+				dd = i*45+22.5;
+				bb = MakeEnemyBullet(x+lengthdir_x(80,dd),y+lengthdir_y(80,dd),bullet_enemy_normal);
+				bb.image_index = 4;
+				bb.direction = dd;
+				bb.bounced = false;
+				bb.image_xscale = 3;
+				bb.image_yscale = 3;
+				bb.image_alpha = 0;
+				bb.time = 0;
+				Anim_Create(bb,"image_xscale",0,0,3,-2,20);
+				Anim_Create(bb,"image_yscale",0,0,3,-2,20);
+				Anim_Create(bb,"image_alpha",0,0,0,1,20);
+				Anim_Create(bb,"speed",0,0,0,12,0,10);
+				with(bb){
+					custom_function = function(){
+						if(bounced = false){
+							if(x <= 0 || x >= room_width){
+								if(x <= 0)x = abs(x);
+								if(x >= room_width)x = room_width-(x-room_width);
+								hspeed *= -1;
+								bounced = true;
+							}
+							else if(y <= 0 || y >= room_height){
+								if(y <= 0)y = abs(y);
+								if(y >= room_height)y = room_height-(y-room_height);
+								vspeed *= -1;
+								bounced = true;
+							}
+						}
+						time += 1;
+						if(time mod 20 = 0){
+							Anim_Create(id,"image_xscale",0,0,2,-1,10);
+							Anim_Create(id,"image_yscale",0,0,2,-1,10);
+						}
+					}
+				}
+			}
+		}
+	}
+	if(attack_time > 1&&attack_time < 300){
+		if(attack_time mod 40 < 25){
+			if(attack_time mod 40 = 0){
+				mark.SetSequence(seq_enemy_boss_mini_og3_attack_0);
+			}
+			if(attack_time mod 40 = 10){
+				mark.SetSequence(seq_enemy_boss_mini_og3_attack_0);
+			}
+			if(attack_time mod 40 = 20){
+				mark.SetSequence(seq_enemy_boss_mini_og3_attack_0);
+			}
+			if(attack_time mod 40 = 0){
+				tx = instance_exists(player) ? player.x : mouse_x;
+				ty = instance_exists(player) ? player.y : mouse_y;
+			}
+			if(attack_time mod 3 = 0){
+				var _side = ((attack_time div 40) mod 2 == 0) ? 1 : -1;
+				for(var k=0;k<2;k+=1){
+					bb = MakeEnemyBullet(x,y+80,bullet_enemy_normal,spr_bullet_enemy_bug);
+
+					bb.aim_x = tx;
+					bb.aim_y = ty;
+					bb.wave_side = _side;
+					bb.spread_deg = (k == 0) ? 45 : 90;
+					bb.x += (k=1)*_side*60;
+					bb.y -= (k=1)*30;
+
+					with(bb){
+						var _sx = x;
+						var _sy = y;
+						var _launch = point_direction(_sx,_sy,aim_x,aim_y) + wave_side*spread_deg;
+
+						p0x = _sx;
+						p0y = _sy;
+						p1x = _sx + lengthdir_x(100,_launch);
+						p1y = _sy + lengthdir_y(100,_launch);
+						p2x = _sx + lengthdir_x(300,_launch);
+						p2y = _sy + lengthdir_y(300,_launch);
+						p3x = aim_x;
+						p3y = aim_y;
+						launch_dir = _launch;
+
+						direction = _launch;
+						image_angle = direction + 90;
+						speed = 0;
+
+						b_t = 0;
+						track_perm = 0.03;
+						init_v = 12;
+						bezier_done = false;
+
+						custom_function = function(){
+							if(bezier_done = false){
+								b_t += track_perm;
+								var tt = min(b_t,1);
+								var u = 1 - tt;
+								var px = x;
+								var py = y;
+								x = u*u*u*p0x + 3*u*u*tt*p1x + 3*u*tt*tt*p2x + tt*tt*tt*p3x;
+								y = u*u*u*p0y + 3*u*u*tt*p1y + 3*u*tt*tt*p2y + tt*tt*tt*p3y;
+								var ddx = x - px;
+								var ddy = y - py;
+								if(ddx*ddx + ddy*ddy > 0.0001){
+									direction = point_direction(px,py,x,y);
+									image_angle = direction + 90;
+								}
+								if(b_t >= 1){
+									bezier_done = true;
+									if(point_distance(p2x,p2y,p3x,p3y) > 1){
+										direction = point_direction(p2x,p2y,p3x,p3y);
+									}
+									else{
+										direction = launch_dir;
+									}
+									image_angle = direction + 90;
+									speed = init_v;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	if(attack_time = 350){
+		end_attack();
+	}
+}
+	
+attack_2 = function(){
+	live_name = "emitter_boss_xenomorph:attack_2";
+	live;
+	if(attack_time = 1){
+		l0 = MakeEnemyLaser(1,x,y+80,1,-90,60,60);
+		l1 = noone;
+		l2 = noone;
+		l3 = noone;
+		l4 = noone;
+	}
+	if(attack_time = 90){
+		l1 = MakeEnemyLaser(1,x-55,y+130,1,-90,60,60);
+		l2 = MakeEnemyLaser(1,x+55,y+130,1,-90,60,60);
+	}
+	if(attack_time = 180){
+		l3 = MakeEnemyLaser(1,x-95,y+85,1,-90,60,30);
+		l4 = MakeEnemyLaser(1,x+95,y+85,1,-90,60,30);
+	}
+	if(attack_time > 1){
+		if(instance_exists(l0)){
+			l0.x = x;
+			l0.y = y + 80;
+		}
+		if(instance_exists(l1)){
+			l1.x = x - 55;
+			l1.y = y + 130;
+		}
+		if(instance_exists(l2)){
+			l2.x = x + 55;
+			l2.y = y + 130;
+		}
+		if(instance_exists(l3)){
+			l3.x = x - 95;
+			l3.y = y + 85;
+		}
+		if(instance_exists(l4)){
+			l4.x = x + 95;
+			l4.y = y + 85;
+		}
+	}
+	if(attack_time > 1&&attack_time < 30||attack_time > 60&&attack_time < 90||attack_time > 120&&attack_time < 150||attack_time > 180&&attack_time < 210){
+		if(attack_time mod 10 = 1){
+			mark.SetSequence(seq_enemy_boss_mini_og3_attack_1_0);
+		}
+		if(attack_time mod 4 = 0){
+			for(i=0;i<7;i+=1){
+				bb = MakeEnemyBullet(x-60,y-115,bullet_enemy_normal,spr_bullet_enemy_normal_1);
+				bb.hspeed = -3*2+i*2+2;
+				if(attack_time mod 12 = 0){
+					bb.hspeed *= 1.5;
+					bb.vspeed -= 2;
+				}
+				bb.vspeed = -10;
+				bb.gravity = 0.5;
+				bb.image_angle = 90;
+				with(bb){
+					px = x;
+					py = y;
+					custom_function = function(){
+						image_angle = point_direction(px,py,x,y);
+						px = x;
+						py = y;
+					}
+				}
+			}
+		}
+	}
+	if(attack_time > 30&&attack_time < 60||attack_time > 90&&attack_time < 120||attack_time > 150&&attack_time < 180||attack_time > 210&&attack_time < 240){
+		if(attack_time mod 10 = 1){
+			mark.SetSequence(seq_enemy_boss_mini_og3_attack_1_1);
+		}
+		if(attack_time mod 4 = 0){
+			for(i=0;i<7;i+=1){
+				bb = MakeEnemyBullet(x+60,y-115,bullet_enemy_normal,spr_bullet_enemy_normal_1);
+				bb.hspeed = -3*2+i*2-2;
+				if(attack_time mod 12 = 0){
+					bb.hspeed *= 1.5;
+					bb.vspeed -= 2;
+				}
+				bb.vspeed = -10;
+				bb.gravity = 0.5;
+				bb.image_angle = 90;
+				with(bb){
+					px = x;
+					py = y;
+					custom_function = function(){
+						image_angle = point_direction(px,py,x,y);
+						px = x;
+						py = y;
+					}
+				}
+			}
+		}
+	}
+	if(attack_time = 300){
+		end_attack();
+	}
+}
 
 a0 = create_attack(0,attack_0,40)
-/*a1 = create_attack(1,attack_1,40)
+a1 = create_attack(1,attack_1,40)
 a2 = create_attack(2,attack_2,40)
-a3 = create_attack(2,attack_3,40)
+/*a3 = create_attack(2,attack_3,40)
 a4 = create_attack(3,attack_4,40)
 a5 = create_attack(4,attack_5,40)
 a6 = create_attack(5,attack_6,40)*/
 
-fixed_sequence = [a0/*,a1,a2,a3,a4,a5,a6*/]
+fixed_sequence = [a2]
 //random_pool = [a0,a1,a2,a3,a4,a5,a6]

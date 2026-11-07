@@ -70,6 +70,8 @@ function draw_laser(_spr, _img, _xx, _yy, _offset, _dir, _length, _flip, _xscale
     var _target_h = 0;
     var _count = 0;
     var _scale_x = 1;
+	//_xx = floor(_xx);
+	_yy = floor(_yy);
 
     if (_xscale = 0 || _yscale = 0) return false;
 
