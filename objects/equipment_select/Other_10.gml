@@ -319,6 +319,7 @@ function refresh_preview(){
 		preview_inst.wingman_y_offset = global.current_equipment.wingman_y_offset;
 		preview_inst.subweapon = global.current_equipment.subweapon;
 		preview_inst.armor = global.current_equipment.armor;
+		preview_inst.enabled = false;
 		preview_inst.alarm[0] = 1;
 		preview_inst.SetRampage(false);
 	}
