@@ -3,9 +3,9 @@ event_inherited();
 
 SetMoveInfo = function(){
 	move_range = [150,250,720-150,500];
-	move_distance = [150,250];
-	move_duration = [60,100];
-	move_interval = [10,25];
+	move_distance = [100,250];
+	move_duration = [40,60];
+	move_interval = [10,20];
 }
 
 SetIdle = function(){

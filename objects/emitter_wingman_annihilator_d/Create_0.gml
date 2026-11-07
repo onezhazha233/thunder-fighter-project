@@ -43,7 +43,6 @@ FireAnnihilatorShot = function(k, rp){
 	var tgt = noone;
 	var bd = 999999999;
 	with(enemy_agent){
-		if(object_index = boss_agent || object_is_ancestor(object_index, boss_agent))continue;
 		if(inv_collision)continue;
 		if(!point_in_rectangle(x, y, -60, -60, room_width + 60, room_height + 60))continue;
 		var dd = point_distance(x, y, lx, ly);

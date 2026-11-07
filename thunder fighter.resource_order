@@ -1276,6 +1276,7 @@
     {"name":"seq_enemy_boss_mini_og2_flame","order":3,"path":"sequences/seq_enemy_boss_mini_og2_flame/seq_enemy_boss_mini_og2_flame.yy",},
     {"name":"seq_enemy_boss_mini_og2_idle","order":2,"path":"sequences/seq_enemy_boss_mini_og2_idle/seq_enemy_boss_mini_og2_idle.yy",},
     {"name":"seq_enemy_boss_mini_og2_intro","order":1,"path":"sequences/seq_enemy_boss_mini_og2_intro/seq_enemy_boss_mini_og2_intro.yy",},
+    {"name":"seq_enemy_boss_mini_og3_attack_0","order":3,"path":"sequences/seq_enemy_boss_mini_og3_attack_0/seq_enemy_boss_mini_og3_attack_0.yy",},
     {"name":"seq_enemy_boss_mini_og3_flame","order":2,"path":"sequences/seq_enemy_boss_mini_og3_flame/seq_enemy_boss_mini_og3_flame.yy",},
     {"name":"seq_enemy_boss_mini_og3_intro","order":1,"path":"sequences/seq_enemy_boss_mini_og3_intro/seq_enemy_boss_mini_og3_intro.yy",},
     {"name":"seq_enemy_minion_0b_flame","order":1,"path":"sequences/seq_enemy_minion_0b_flame/seq_enemy_minion_0b_flame.yy",},

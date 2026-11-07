@@ -1,9 +1,34 @@
 //live;
 event_inherited();
 
-attack_0 = function(){
+attack_0 = function(){//收缩瞄准散射
 	live_name = "emitter_boss_xenomorph:attack_0";
 	live;
+	if(attack_time = 1){
+		rr = 240;
+		Anim_Create(id,"rr",0,0,rr,10-rr,90);
+		var _tx = instance_exists(player) ? player.x : mouse_x;
+		var _ty = instance_exists(player) ? player.y : mouse_y;
+		dd = point_direction(x,y+80,_tx,_ty);
+		mark.SetMoveEnabled(false);
+	}
+	if(attack_time > 1&&attack_time < 100){
+		if(attack_time mod 10 = 0){
+			mark.SetSequence(seq_enemy_boss_mini_og3_attack_0);
+			for(i=0;i<9;i+=1){
+				bb = MakeEnemyBullet(x,y+80,bullet_enemy_normal);
+				bb.direction = dd-4*(rr/9)+i*(rr/9);
+				bb.speed = 3;
+				bb.image_xscale = 2;
+				bb.image_yscale = 2;
+				Anim_Create(bb,"speed",0,0,3,10,20,40);
+			}
+		}
+	}
+	if(attack_time = 160){
+		mark.SetMoveEnabled(true);
+		end_attack();
+	}
 }
 
 a0 = create_attack(0,attack_0,40)

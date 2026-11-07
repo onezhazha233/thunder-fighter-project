@@ -12,7 +12,7 @@ intro_sequence = seq_enemy_boss_mini_og3_intro
 idle_sequence = seq_enemy_boss_mini_og3_idle
 flame_lower = seq_enemy_boss_mini_og3_flame
 die_sequence = seq_enemy_boss_mini_og0_die
-//auto_idle_sequence = [seq_enemy_boss_mini_og0_attack_1_outro]
+auto_idle_sequence = [seq_enemy_boss_mini_og3_attack_0]
 
 explosion = effect_explosion_boss
 
