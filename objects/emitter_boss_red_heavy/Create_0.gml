@@ -6,21 +6,22 @@ attack_0 = function(){//散射+六向直线 240
 		MoveEnemy(false);
 	}
 	if(attack_time mod 5 = 0&&attack_time < 180){
-		a = MakeEnemyBullet(x,y+70,bullet_enemy_star,spr_bullet_enemy_normal_4);
-		rdm = sin(attack_time*114)*40
+		a = MakeEnemyBullet(x,y+70,bullet_enemy_star);
+		rdm = sin(attack_time*114)*40;
 		a.direction = -90 + rdm;
 		a.speed = 4 + abs(rdm)/10;
 		a.friction = -0.2;
-		a.image_xscale = 0.5;
-		a.image_yscale = 0.5;
-		Anim_Create(a,"image_xscale",0,0,0.5,0.5,60);
-		Anim_Create(a,"image_yscale",0,0,0.5,0.5,60);
+		a.image_xscale = 0;
+		a.image_yscale = 0;
+		Anim_Create(a,"image_xscale",0,0,0,1,20);
+		Anim_Create(a,"image_yscale",0,0,0,1,20);
 	}
 	if(attack_time = 180){
+		burst_seq = 0;
 		with(bullet_enemy_star){
+			burst_delay = (other.burst_seq mod 12)*2;	// 错峰 0~22 帧, 削掉同帧齐爆
+			other.burst_seq += 1;
 			Anim_Create(id,"speed",0,0,speed,-speed,60);
-			Anim_Destroy(id,"image_xscale");
-			Anim_Destroy(id,"image_yscale");
 			Anim_Create(id,"bb",0,0,255,-255,30);
 			time = 0;
 			ll = 0;
@@ -32,7 +33,7 @@ attack_0 = function(){//散射+六向直线 240
 			}
 			custom_function = function(){
 				time += 1.2;
-				if(time > y/15+35&&ll = 0){
+				if(time > y/15+35+burst_delay&&ll = 0){
 					laser();
 					ll = 1;
 					line_length = 0;
@@ -52,7 +53,7 @@ attack_1 = function(){//散射 120
 		MoveEnemy(false);
 		a3 = function(){
 			for(i=0;i<4;i+=1){
-				dir = [-90,-90];//[point_direction(x-75,y+100,player.x,player.y),point_direction(x+75,y+100,player.x,player.y)];
+				dir = [-90,-90];
 				for(j=0;j<3;j+=1){
 					if(i = 0){
 						a = MakeEnemyBullet(x-75,y+100,bullet_enemy_normal,spr_bullet_enemy_normal_1);
@@ -87,7 +88,7 @@ attack_1 = function(){//散射 120
 		}
 		a2 = function(){
 			for(i=0;i<4;i+=1){
-				dir = [-90,-90];//[point_direction(x-75,y+100,player.x,player.y),point_direction(x+75,y+100,player.x,player.y)];
+				dir = [-90,-90];
 				for(j=0;j<2;j+=1){
 					if(i = 0){
 						a = MakeEnemyBullet(x-75,y+100,bullet_enemy_normal,spr_bullet_enemy_normal_1);
@@ -122,7 +123,7 @@ attack_1 = function(){//散射 120
 		}
 		a1 = function(){
 			for(i=0;i<4;i+=1){
-				dir = [-90,-90];//[point_direction(x-75,y+100,player.x,player.y),point_direction(x+75,y+100,player.x,player.y)];
+				dir = [-90,-90];
 				if(i = 0){
 					a = MakeEnemyBullet(x-75,y+100,bullet_enemy_normal,spr_bullet_enemy_normal_1);
 					a.image_angle = dir[0];
@@ -154,16 +155,14 @@ attack_1 = function(){//散射 120
 			}
 		}
 	}
-	if(attack_time mod 20 = 0){
+	if(attack_time mod 30 = 0){
 		mark.SetSequence(seq_enemy_boss_mini_0_attack_0);
-		tt = attack_time div 20;
+		tt = attack_time div 30;
 		switch(tt){
 			case 1:
-			case 5:
 				a3();
 				break;
 			case 2:
-			case 4:
 				a2();
 				break;
 			case 3:
