@@ -4,8 +4,9 @@ event_inherited();
 top_red_thickness = 0
 
 get_target_dir = function(){
-	var _tx = instance_exists(player) ? player.x : mouse_x;
-	var _ty = instance_exists(player) ? player.y : mouse_y;
+	var _pgp = Player_GetPos();
+	var _tx = instance_exists(player) ? _pgp[0] : mouse_x;
+	var _ty = instance_exists(player) ? _pgp[1] : mouse_y;
 	return point_direction(x, y, _tx, _ty);
 }
 
@@ -59,15 +60,15 @@ attack_0 = function(dir=0){//旋转反弹双色弹加扩散追踪弹
 						custom_function = function(){
 							if(bounced < 1){
 								if(x <= 0 || x >= room_width){
-									if(x <= 0)x = 0;
-									if(x >= room_width)x = room_width;
+									if(x <= 0)x = -x;
+									if(x >= room_width)x = room_width*2-x;
 									hspeed *= -1;
 									image_angle = direction;
 									bounced += 1;
 								}
-								if(y <= 0 || y >= room_height){
-									if(y <= 0)y = 0;
-									if(y >= room_height)y = room_height;
+								else if(y <= 0 || y >= room_height){
+									if(y <= 0)y = -y;
+									if(y >= room_height)y = room_height*2-y;
 									vspeed *= -1;
 									image_angle = direction;
 									bounced += 1;
@@ -92,15 +93,15 @@ attack_0 = function(dir=0){//旋转反弹双色弹加扩散追踪弹
 						custom_function = function(){
 							if(bounced < 1){
 								if(x <= 0 || x >= room_width){
-									if(x <= 0)x = 0;
-									if(x >= room_width)x = room_width;
+									if(x <= 0)x = -x;
+									if(x >= room_width)x = room_width*2-x;
 									hspeed *= -1;
 									image_angle = direction;
 									bounced += 1;
 								}
-								if(y <= 0 || y >= room_height){
-									if(y <= 0)y = 0;
-									if(y >= room_height)y = room_height;
+								else if(y <= 0 || y >= room_height){
+									if(y <= 0)y = -y;
+									if(y >= room_height)y = room_height*2-y;
 									vspeed *= -1;
 									image_angle = direction;
 									bounced += 1;
@@ -119,7 +120,8 @@ attack_0 = function(dir=0){//旋转反弹双色弹加扩散追踪弹
 			px = mouse_x;
 			py = mouse_y;
 			dd = -90;
-			if(Player_IsEnabled())dd = point_direction(x,y,player.x,player.y);
+			var _pgp = Player_GetPos();
+			if(Player_IsEnabled())dd = point_direction(x,y,_pgp[0],_pgp[1]);
 			blt.direction = dd + i*(360/24);
 			blt.speed = 20;
 			Anim_Create(blt,"speed",0,0,blt.speed,-blt.speed,30);
@@ -158,15 +160,15 @@ attack_1 = function(dir=0){//反弹红弹
 				custom_function = function(){
 					if(bounced < 2){
 						if(x <= 0 || x >= room_width){
-							if(x <= 0)x = 0;
-							if(x >= room_width)x = room_width;
+							if(x <= 0)x = -x;
+							if(x >= room_width)x = room_width*2-x;
 							hspeed *= -1;
 							image_angle = direction;
 							bounced += 1;
 						}
-						if(y <= 0 || y >= room_height){
-							if(y <= 0)y = 0;
-							if(y >= room_height)y = room_height;
+						else if(y <= 0 || y >= room_height){
+							if(y <= 0)y = -y;
+							if(y >= room_height)y = room_height*2-y;
 							vspeed *= -1;
 							image_angle = direction;
 							bounced += 1;
@@ -498,15 +500,15 @@ attack_5 = function(){//反弹红蓝
 					custom_function = function(){
 						if(bounced < 1){
 							if(x <= 0 || x >= room_width){
-								if(x <= 0)x = 0;
-								if(x >= room_width)x = room_width;
+								if(x <= 0)x = -x;
+								if(x >= room_width)x = room_width*2-x;
 								hspeed *= -1;
 								image_angle = direction;
 								bounced += 1;
 							}
-							if(y <= 0 || y >= room_height){
-								if(y <= 0)y = 0;
-								if(y >= room_height)y = room_height;
+							else if(y <= 0 || y >= room_height){
+								if(y <= 0)y = -y;
+								if(y >= room_height)y = room_height*2-y;
 								vspeed *= -1;
 								image_angle = direction;
 								bounced += 1;
@@ -525,15 +527,15 @@ attack_5 = function(){//反弹红蓝
 					custom_function = function(){
 						if(bounced < 1){
 							if(x <= 0 || x >= room_width){
-								if(x <= 0)x = 0;
-								if(x >= room_width)x = room_width;
+								if(x <= 0)x = -x;
+								if(x >= room_width)x = room_width*2-x;
 								hspeed *= -1;
 								image_angle = direction;
 								bounced += 1;
 							}
-							if(y <= 0 || y >= room_height){
-								if(y <= 0)y = 0;
-								if(y >= room_height)y = room_height;
+							else if(y <= 0 || y >= room_height){
+								if(y <= 0)y = -y;
+								if(y >= room_height)y = room_height*2-y;
 								vspeed *= -1;
 								image_angle = direction;
 								bounced += 1;
@@ -559,15 +561,15 @@ attack_5 = function(){//反弹红蓝
 					custom_function = function(){
 						if(bounced < 1){
 							if(x <= 0 || x >= room_width){
-								if(x <= 0)x = 0;
-								if(x >= room_width)x = room_width;
+								if(x <= 0)x = -x;
+								if(x >= room_width)x = room_width*2-x;
 								hspeed *= -1;
 								image_angle = direction;
 								bounced += 1;
 							}
-							if(y <= 0 || y >= room_height){
-								if(y <= 0)y = 0;
-								if(y >= room_height)y = room_height;
+							else if(y <= 0 || y >= room_height){
+								if(y <= 0)y = -y;
+								if(y >= room_height)y = room_height*2-y;
 								vspeed *= -1;
 								image_angle = direction;
 								bounced += 1;
@@ -586,15 +588,15 @@ attack_5 = function(){//反弹红蓝
 					custom_function = function(){
 						if(bounced < 1){
 							if(x <= 0 || x >= room_width){
-								if(x <= 0)x = 0;
-								if(x >= room_width)x = room_width;
+								if(x <= 0)x = -x;
+								if(x >= room_width)x = room_width*2-x;
 								hspeed *= -1;
 								image_angle = direction;
 								bounced += 1;
 							}
-							if(y <= 0 || y >= room_height){
-								if(y <= 0)y = 0;
-								if(y >= room_height)y = room_height;
+							else if(y <= 0 || y >= room_height){
+								if(y <= 0)y = -y;
+								if(y >= room_height)y = room_height*2-y;
 								vspeed *= -1;
 								image_angle = direction;
 								bounced += 1;
@@ -620,15 +622,15 @@ attack_5 = function(){//反弹红蓝
 					custom_function = function(){
 						if(bounced < 1){
 							if(x <= 0 || x >= room_width){
-								if(x <= 0)x = 0;
-								if(x >= room_width)x = room_width;
+								if(x <= 0)x = -x;
+								if(x >= room_width)x = room_width*2-x;
 								hspeed *= -1;
 								image_angle = direction;
 								bounced += 1;
 							}
-							if(y <= 0 || y >= room_height){
-								if(y <= 0)y = 0;
-								if(y >= room_height)y = room_height;
+							else if(y <= 0 || y >= room_height){
+								if(y <= 0)y = -y;
+								if(y >= room_height)y = room_height*2-y;
 								vspeed *= -1;
 								image_angle = direction;
 								bounced += 1;
@@ -647,15 +649,15 @@ attack_5 = function(){//反弹红蓝
 					custom_function = function(){
 						if(bounced < 1){
 							if(x <= 0 || x >= room_width){
-								if(x <= 0)x = 0;
-								if(x >= room_width)x = room_width;
+								if(x <= 0)x = -x;
+								if(x >= room_width)x = room_width*2-x;
 								hspeed *= -1;
 								image_angle = direction;
 								bounced += 1;
 							}
-							if(y <= 0 || y >= room_height){
-								if(y <= 0)y = 0;
-								if(y >= room_height)y = room_height;
+							else if(y <= 0 || y >= room_height){
+								if(y <= 0)y = -y;
+								if(y >= room_height)y = room_height*2-y;
 								vspeed *= -1;
 								image_angle = direction;
 								bounced += 1;
@@ -681,15 +683,15 @@ attack_5 = function(){//反弹红蓝
 					custom_function = function(){
 						if(bounced < 1){
 							if(x <= 0 || x >= room_width){
-								if(x <= 0)x = 0;
-								if(x >= room_width)x = room_width;
+								if(x <= 0)x = -x;
+								if(x >= room_width)x = room_width*2-x;
 								hspeed *= -1;
 								image_angle = direction;
 								bounced += 1;
 							}
-							if(y <= 0 || y >= room_height){
-								if(y <= 0)y = 0;
-								if(y >= room_height)y = room_height;
+							else if(y <= 0 || y >= room_height){
+								if(y <= 0)y = -y;
+								if(y >= room_height)y = room_height*2-y;
 								vspeed *= -1;
 								image_angle = direction;
 								bounced += 1;
@@ -708,15 +710,15 @@ attack_5 = function(){//反弹红蓝
 					custom_function = function(){
 						if(bounced < 1){
 							if(x <= 0 || x >= room_width){
-								if(x <= 0)x = 0;
-								if(x >= room_width)x = room_width;
+								if(x <= 0)x = -x;
+								if(x >= room_width)x = room_width*2-x;
 								hspeed *= -1;
 								image_angle = direction;
 								bounced += 1;
 							}
-							if(y <= 0 || y >= room_height){
-								if(y <= 0)y = 0;
-								if(y >= room_height)y = room_height;
+							else if(y <= 0 || y >= room_height){
+								if(y <= 0)y = -y;
+								if(y >= room_height)y = room_height*2-y;
 								vspeed *= -1;
 								image_angle = direction;
 								bounced += 1;
@@ -788,15 +790,15 @@ attack_6 = function(){//旋转激光加反弹红弹
 				custom_function = function(){
 					if(bounced < 2){
 						if(x <= 0 || x >= room_width){
-							if(x <= 0)x = 0;
-							if(x >= room_width)x = room_width;
+							if(x <= 0)x = -x;
+							if(x >= room_width)x = room_width*2-x;
 							hspeed *= -1;
 							image_angle = direction;
 							bounced += 1;
 						}
-						if(y <= 0 || y >= room_height){
-							if(y <= 0)y = 0;
-							if(y >= room_height)y = room_height;
+						else if(y <= 0 || y >= room_height){
+							if(y <= 0)y = -y;
+							if(y >= room_height)y = room_height*2-y;
 							vspeed *= -1;
 							image_angle = direction;
 							bounced += 1;
@@ -819,15 +821,15 @@ attack_6 = function(){//旋转激光加反弹红弹
 				custom_function = function(){
 					if(bounced < 1){
 						if(x <= 0 || x >= room_width){
-							if(x <= 0)x = 0;
-							if(x >= room_width)x = room_width;
+							if(x <= 0)x = -x;
+							if(x >= room_width)x = room_width*2-x;
 							hspeed *= -1;
 							image_angle = direction;
 							bounced += 1;
 						}
-						if(y <= 0 || y >= room_height){
-							if(y <= 0)y = 0;
-							if(y >= room_height)y = room_height;
+						else if(y <= 0 || y >= room_height){
+							if(y <= 0)y = -y;
+							if(y >= room_height)y = room_height*2-y;
 							vspeed *= -1;
 							image_angle = direction;
 							bounced += 1;

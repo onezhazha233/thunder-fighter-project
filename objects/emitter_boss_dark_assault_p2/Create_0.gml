@@ -30,7 +30,8 @@ attack_1 = function(){//延迟散射 90
 	if(attack_time = 1||attack_time = 30||attack_time = 60){
 		var dir = 90;
 		if(Player_IsEnabled()){
-			dir = point_direction(x,y,player.x,player.y);
+			var _pgp = Player_GetPos();
+			dir = point_direction(x,y,_pgp[0],_pgp[1]);
 		}
 		for(var k=0;k<3;k+=1){
 			var a = MakeEnemyBullet(x,y,bullet_enemy_normal,spr_bullet_enemy_darkred_0);
@@ -60,14 +61,14 @@ attack_1 = function(){//延迟散射 90
 									custom_function = function(){
 										if(!bounced){
 											if(x <= 0 || x >= room_width){
-												if(x <= 0)x = 0;
-												if(x >= room_width)x = room_width;
+												if(x <= 0)x = -x;
+												if(x >= room_width)x = room_width*2-x;
 												hspeed *= -1;
 												bounced = true;
 											}
-											if(y <= 0 || y >= room_height){
-												if(y <= 0)y = 0;
-												if(y >= room_height)y = room_height;
+											else if(y <= 0 || y >= room_height){
+												if(y <= 0)y = -y;
+												if(y >= room_height)y = room_height*2-y;
 												vspeed *= -1;
 												bounced = true;
 											}
@@ -96,7 +97,8 @@ attack_2 = function(){//连射扇形狙 40
 		MoveEnemy(false);
 		dir = -90;
 		if(Player_IsEnabled()){
-			dir = point_direction(x,y,player.x,player.y);
+			var _pgp = Player_GetPos();
+			dir = point_direction(x,y,_pgp[0],_pgp[1]);
 		}
 	}
 	if(attack_time >= 1&&attack_time <= 31&&attack_time mod 5 = 1){
@@ -236,7 +238,8 @@ attack_6 = function(){//中心散射加狙 40
 										custom_function = function(){
 											if(duration = 1){
 												duration = -1;
-												direction = point_direction(x,y,player.x,player.y);
+												var _pgp = Player_GetPos();
+												if(instance_exists(player))direction = point_direction(x,y,_pgp[0],_pgp[1]);
 												Anim_Create(id,"speed",0,0,0,20,10);
 											}
 										}
@@ -264,7 +267,8 @@ attack_7 = function(){//导弹 180
 		aa = !aa;
 		var base_dir = 90;
 		if(Player_IsEnabled()){
-			base_dir = point_direction(x,y,player.x,player.y);
+			var _pgp = Player_GetPos();
+			base_dir = point_direction(x,y,_pgp[0],_pgp[1]);
 		}
 		for(var k=0;k<4;k+=1){
 			var m = MakeEnemyBullet(x,y,bullet_enemy_dark_assault_missile);
@@ -279,7 +283,8 @@ attack_7 = function(){//导弹 180
 					age += 1;
 					if(age <= track_time && Player_IsEnabled()){
 						//direction += (point_direction(x,y,player.x,player.y) - direction)/10;
-						target_angle = point_direction(x,y,player.x,player.y);
+						var _pgp = Player_GetPos();
+						target_angle = point_direction(x,y,_pgp[0],_pgp[1]);
 						direction += angle_difference(target_angle,direction)/10;
 						image_angle = direction - 90;
 					}

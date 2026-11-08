@@ -161,7 +161,7 @@ attack_1 = function(){//倒五角星加狙
 							hspeed *= -1;
 							bounced += 1;
 						}
-						if(y <= 0 || y >= room_height){
+						else if(y <= 0 || y >= room_height){
 							if(y <= 0)y = abs(y);
 							if(y >= room_height)y = room_height-(y-room_height);
 							vspeed *= -1;
@@ -193,8 +193,9 @@ attack_1 = function(){//倒五角星加狙
 		px = mouse_x;
 		py = mouse_y;
 		if(Player_IsEnabled()){
-			px = player.x;
-			py = player.y;
+			var _pgp = Player_GetPos();
+			px = _pgp[0];
+			py = _pgp[1];
 		}
 	}
 	if(attack_time >= 60&&attack_time <= 240){
@@ -214,8 +215,9 @@ attack_1 = function(){//倒五角星加狙
 			px = mouse_x;
 			py = mouse_y;
 			if(Player_IsEnabled()){
-				px = player.x;
-				py = player.y;
+				var _pgp = Player_GetPos();
+				px = _pgp[0];
+				py = _pgp[1];
 			}
 		}
 	}
@@ -269,8 +271,9 @@ attack_3 = function(){//四边狙加随机散射
 		px = mouse_x;
 		py = mouse_y;
 		if(Player_IsEnabled()){
-			px = player.x;
-			py = player.y;
+			var _pgp = Player_GetPos();
+			px = _pgp[0];
+			py = _pgp[1];
 		}
 		for(i=0;i<4;i+=1){
 			for(j=0;j<7;j+=1){
@@ -290,8 +293,9 @@ attack_3 = function(){//四边狙加随机散射
 		px = mouse_x;
 		py = mouse_y;
 		if(Player_IsEnabled()){
-			px = player.x;
-			py = player.y;
+			var _pgp = Player_GetPos();
+			px = _pgp[0];
+			py = _pgp[1];
 		}
 		for(i=0;i<4;i+=1){
 			for(j=0;j<7;j+=1){
@@ -312,8 +316,9 @@ attack_3 = function(){//四边狙加随机散射
 		px = mouse_x;
 		py = mouse_y;
 		if(Player_IsEnabled()){
-			px = player.x;
-			py = player.y;
+			var _pgp = Player_GetPos();
+			px = _pgp[0];
+			py = _pgp[1];
 		}
 		for(i=0;i<4;i+=1){
 			for(j=0;j<7;j+=1){
@@ -333,8 +338,9 @@ attack_3 = function(){//四边狙加随机散射
 		px = mouse_x;
 		py = mouse_y;
 		if(Player_IsEnabled()){
-			px = player.x;
-			py = player.y;
+			var _pgp = Player_GetPos();
+			px = _pgp[0];
+			py = _pgp[1];
 		}
 		for(i=0;i<4;i+=1){
 			for(j=0;j<7;j+=1){
@@ -355,8 +361,9 @@ attack_3 = function(){//四边狙加随机散射
 		px = mouse_x;
 		py = mouse_y;
 		if(Player_IsEnabled()){
-			px = player.x;
-			py = player.y;
+			var _pgp = Player_GetPos();
+			px = _pgp[0];
+			py = _pgp[1];
 		}
 		for(i=0;i<4;i+=1){
 			for(j=0;j<9;j+=1){
@@ -376,8 +383,9 @@ attack_3 = function(){//四边狙加随机散射
 		px = mouse_x;
 		py = mouse_y;
 		if(Player_IsEnabled()){
-			px = player.x;
-			py = player.y;
+			var _pgp = Player_GetPos();
+			px = _pgp[0];
+			py = _pgp[1];
 		}
 		for(i=0;i<4;i+=1){
 			for(j=0;j<9;j+=1){
@@ -622,8 +630,9 @@ attack_6 = function(){//倒v下落加短激光网
 			px = mouse_x;
 			py = mouse_y;
 			if(Player_IsEnabled()){
-				px = player.x;
-				py = player.y;
+				var _pgp = Player_GetPos();
+				px = _pgp[0];
+				py = _pgp[1];
 			}
 			if(ll = 0){
 				px = 10;

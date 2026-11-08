@@ -103,7 +103,8 @@ attack_4 = function(){//两次狙
 	if(attack_time = 1){
 		p_idx = 12; // 默认值防错
 		if(instance_exists(player)){
-			px = player.x;
+			var _pgp = Player_GetPos();
+			px = _pgp[0];
 		}
 		else{
 			px = mouse_x;
@@ -135,7 +136,8 @@ attack_4 = function(){//两次狙
 	if(attack_time = 90){
 		p_idx = 12;
 		if(instance_exists(player)){
-			px = player.x;
+			var _pgp = Player_GetPos();
+			px = _pgp[0];
 		}
 		else{
 			px = mouse_x;
@@ -312,8 +314,9 @@ attack_8 = function(){//激光节点
 	if(attack_time = 1){
 		node_follow = false;
 		if(instance_exists(player)){
-			px = player.x;
-			py = player.y;
+			var _pgp = Player_GetPos();
+			px = _pgp[0];
+			py = _pgp[1];
 		}
 		else{
 			px = mouse_x;
@@ -341,8 +344,9 @@ attack_8 = function(){//激光节点
 	}
 	if(node_follow = true){
 		if(instance_exists(player)){
-			px += (player.x-px)/5;
-			py += (player.y-py)/5;
+			var _pgp = Player_GetPos();
+			px += (_pgp[0]-px)/5;
+			py += (_pgp[1]-py)/5;
 		}
 		else{
 			px += (mouse_x-px)/5;
@@ -362,7 +366,8 @@ attack_8 = function(){//激光节点
 against_on_top = function(){//防逃课
 	if(attack_time = 1){
 		if(Player_IsEnabled()){
-			if(player.y < 100){
+			var _pgp = Player_GetPos();
+			if(_pgp[1] < 100){
 				for(i=0;i<25;i+=1){
 					MakeEnemyLaser(2,laser_pos_x[i],laser_pos_y[i],2,90,60,120);
 				}

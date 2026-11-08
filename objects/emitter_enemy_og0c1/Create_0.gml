@@ -106,7 +106,8 @@ attack_2 = function(){
 							if(time = 60+dd*3){
 								pd = -90;
 								if(instance_exists(player)){
-									pd = point_direction(x,y,player.x,player.y);
+									var _pgp = Player_GetPos();
+									pd = point_direction(x,y,_pgp[0],_pgp[1]);
 								}
 								direction = pd;
 								Anim_Create(id,"speed",0,0,0,15,20,dd*5);

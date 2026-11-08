@@ -191,8 +191,9 @@ attack_4 = function(){//延迟分裂狙
 	live_name = "emitter_boss_sirius_twins_1:attack_4";
 	live;
 	if(attack_time = 1||attack_time = 40){
-		var _tx = instance_exists(player) ? player.x : mouse_x;
-		var _ty = instance_exists(player) ? player.y : mouse_y;
+		var _pgp = Player_GetPos();
+		var _tx = instance_exists(player) ? _pgp[0] : mouse_x;
+		var _ty = instance_exists(player) ? _pgp[1] : mouse_y;
 		dd = point_direction(x, y-87, _tx, _ty);
 		xx = x;
 		yy = y - 87;

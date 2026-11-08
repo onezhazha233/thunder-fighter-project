@@ -106,7 +106,8 @@ attack_0 = function(){
     // 处理第一部分
     if (attack_time >= 1 && attack_time <= 26) {
         if ((attack_time - 1) % 5 == 0) {
-            var dd = point_direction(x, y, player.x, player.y);
+var _pgp = Player_GetPos();
+            var dd = point_direction(x, y, _pgp[0], _pgp[1]);
             var a = MakeEnemyBullet(x,y,bullet_enemy_normal,spr_bullet_enemy_normal_1);
             a.image_angle = dd;
             a.direction = a.image_angle;
@@ -117,7 +118,8 @@ attack_0 = function(){
     // 处理第二部分
     if (attack_time >= 20 && attack_time <= 41) {
         if ((attack_time - 20) % 3 == 0) {
-            var dd = point_direction(x, y, player.x, player.y);
+var _pgp = Player_GetPos();
+            var dd = point_direction(x, y, _pgp[0], _pgp[1]);
             var _offset = (attack_time - 20) div 3;
 			i=0;
             repeat(2) { // 简化代码
@@ -136,7 +138,8 @@ attack_0 = function(){
 }
 
 attack_1 = function(){
-    if (attack_time == 1) pd = point_direction(x, y, player.x, player.y);
+var _pgp = Player_GetPos();
+    if (attack_time == 1) pd = point_direction(x, y, _pgp[0], _pgp[1]);
     
     // 顺时针
     if (attack_time >= 1 && attack_time <= 13) {
@@ -168,7 +171,8 @@ attack_1 = function(){
 }
 
 attack_2 = function(){
-    if (attack_time == 1) pd = point_direction(x, y, player.x, player.y);
+var _pgp = Player_GetPos();
+    if (attack_time == 1) pd = point_direction(x, y, _pgp[0], _pgp[1]);
     if (attack_time >= 1 && attack_time <= 46) {
         if ((attack_time - 1) % 15 == 0) {
             for(var i=0; i<4; i++){

@@ -201,8 +201,9 @@ attack_3 = function(){//长侧封位弹（触侧反弹） 180+exarg
 	
 attack_4 = function(){//侧狙 40
 	if(attack_time = 1){
-		dir0 = point_direction(x-220,y+200,player.x,player.y);
-		dir1 = point_direction(x+220,y+200,player.x,player.y);
+		var _pgp = Player_GetPos();
+		dir0 = point_direction(x-220,y+200,_pgp[0],_pgp[1]);
+		dir1 = point_direction(x+220,y+200,_pgp[0],_pgp[1]);
 		MoveEnemy(false);
 	}
 	if(attack_time mod 4 = 0){

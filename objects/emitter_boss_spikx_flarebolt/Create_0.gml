@@ -57,13 +57,13 @@ attack_0 = function(laser=0){//旋转散射加反弹闪电球
 					if(bounce < bounce_max){
 						if(x <= 50 || x >= room_width-50){
 							if(x <= 50)x = 50;
-							if(x >= room_width)x = room_width-50;
+							if(x >= room_width-50)x = room_width-50;
 							hspeed *= -1;
 							bounce += 1;
 						}
-						if(y <= 50 || y >= room_height-50){
+						else if(y <= 50 || y >= room_height-50){
 							if(y <= 50)y = 50;
-							if(y >= room_height)y = room_height-50;
+							if(y >= room_height-50)y = room_height-50;
 							vspeed *= -1;
 							bounce += 1;
 						}
@@ -125,13 +125,13 @@ attack_0 = function(laser=0){//旋转散射加反弹闪电球
 					if(bounce < bounce_max){
 						if(x <= 50 || x >= room_width-50){
 							if(x <= 50)x = 50;
-							if(x >= room_width)x = room_width-50;
+							if(x >= room_width-50)x = room_width-50;
 							hspeed *= -1;
 							bounce += 1;
 						}
-						if(y <= 50 || y >= room_height-50){
+						else if(y <= 50 || y >= room_height-50){
 							if(y <= 50)y = 50;
-							if(y >= room_height)y = room_height-50;
+							if(y >= room_height-50)y = room_height-50;
 							vspeed *= -1;
 							bounce += 1;
 						}
@@ -277,7 +277,8 @@ attack_3 = function(){//散射红黄子弹加蓝针狙
 		if(bntime = 1){
 			dir = -90;
 			if(Player_IsEnabled()){
-				dir = point_direction(x+bnx,y+70,player.x,player.y);
+				var _pgp = Player_GetPos();
+				dir = point_direction(x+bnx,y+70,_pgp[0],_pgp[1]);
 			}
 		}
 		if(bntime mod 3 = 1){
@@ -364,11 +365,13 @@ attack_4 = function(){//斜四向红黄子弹加蓝针狙
 			if(bntime = 1){
 				dirl = -90;
 				if(Player_IsEnabled()){
-					dirl = point_direction(x+42,y+120,player.x,player.y);
+					var _pgp = Player_GetPos();
+					dirl = point_direction(x+42,y+120,_pgp[0],_pgp[1]);
 				}
 				dirr = -90;
 				if(Player_IsEnabled()){
-					dirr = point_direction(x-42,y+120,player.x,player.y);
+					var _pgp = Player_GetPos();
+					dirr = point_direction(x-42,y+120,_pgp[0],_pgp[1]);
 				}
 			}
 			if(bntime mod 3 = 1){

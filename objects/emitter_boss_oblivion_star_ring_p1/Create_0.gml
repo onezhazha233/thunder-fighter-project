@@ -2,8 +2,9 @@
 event_inherited();
 
 get_target_dir = function(){
-	var _tx = instance_exists(player) ? player.x : mouse_x;
-	var _ty = instance_exists(player) ? player.y : mouse_y;
+	var _pgp = Player_GetPos();
+	var _tx = instance_exists(player) ? _pgp[0] : mouse_x;
+	var _ty = instance_exists(player) ? _pgp[1] : mouse_y;
 	return point_direction(x, y, _tx, _ty);
 }
 
@@ -43,14 +44,14 @@ attack_0 = function(){//中间红反弹外侧三蓝
 				custom_function = function(){
 					if(!bounced){
 						if(x <= 0 || x >= room_width){
-							if(x <= 0)x = 0;
-							if(x >= room_width)x = room_width;
+							if(x <= 0)x = -x;
+							if(x >= room_width)x = room_width*2-x;
 							hspeed *= -1;
 							bounced = true;
 						}
-						if(y <= 0 || y >= room_height){
-							if(y <= 0)y = 0;
-							if(y >= room_height)y = room_height;
+						else if(y <= 0 || y >= room_height){
+							if(y <= 0)y = -y;
+							if(y >= room_height)y = room_height*2-y;
 							vspeed *= -1;
 							bounced = true;
 						}
@@ -272,15 +273,15 @@ attack_3 = function(dir=0){//反弹子弹加蓝针
 						custom_function = function(){
 							if(bounced < 3){
 								if(x <= 0 || x >= room_width){
-									if(x <= 0)x = 0;
-									if(x >= room_width)x = room_width;
+									if(x <= 0)x = -x;
+									if(x >= room_width)x = room_width*2-x;
 									hspeed *= -1;
 									image_angle = direction;
 									bounced += 1;
 								}
-								if(y <= 0 || y >= room_height){
-									if(y <= 0)y = 0;
-									if(y >= room_height)y = room_height;
+								else if(y <= 0 || y >= room_height){
+									if(y <= 0)y = -y;
+									if(y >= room_height)y = room_height*2-y;
 									vspeed *= -1;
 									image_angle = direction;
 									bounced += 1;

@@ -7,8 +7,9 @@ attack_0 = function(){//收缩瞄准散射
 	if(attack_time = 1){
 		rr = 240;
 		Anim_Create(id,"rr",0,0,rr,10-rr,90);
-		var _tx = instance_exists(player) ? player.x : mouse_x;
-		var _ty = instance_exists(player) ? player.y : mouse_y;
+		var _pgp = Player_GetPos();
+		var _tx = instance_exists(player) ? _pgp[0] : mouse_x;
+		var _ty = instance_exists(player) ? _pgp[1] : mouse_y;
 		dd = point_direction(x,y+80,_tx,_ty);
 		mark.SetMoveEnabled(false);
 	}
@@ -35,8 +36,9 @@ attack_1 = function(){//八向反弹加曲线狙
 	live_name = "emitter_boss_xenomorph:attack_1";
 	live;
 	if(attack_time <= 2 || !variable_instance_exists(id,"tx")){
-		tx = instance_exists(player) ? player.x : mouse_x;
-		ty = instance_exists(player) ? player.y : mouse_y;
+		var _pgp = Player_GetPos();
+		tx = instance_exists(player) ? _pgp[0] : mouse_x;
+		ty = instance_exists(player) ? _pgp[1] : mouse_y;
 	}
 	if(attack_time > 1&&attack_time < 300){
 		if(attack_time mod 6 = 0){
@@ -92,8 +94,9 @@ attack_1 = function(){//八向反弹加曲线狙
 				mark.SetSequence(seq_enemy_boss_mini_og3_attack_0);
 			}
 			if(attack_time mod 40 = 0){
-				tx = instance_exists(player) ? player.x : mouse_x;
-				ty = instance_exists(player) ? player.y : mouse_y;
+				var _pgp = Player_GetPos();
+				tx = instance_exists(player) ? _pgp[0] : mouse_x;
+				ty = instance_exists(player) ? _pgp[1] : mouse_y;
 			}
 			if(attack_time mod 3 = 0){
 				var _side = ((attack_time div 40) mod 2 == 0) ? 1 : -1;
@@ -367,8 +370,9 @@ attack_3 = function(){//散射下落加扩散反弹狙
 	}
 	if(attack_time >= 60&&attack_time < 180){
 		if(attack_time = 60){
-			tx = instance_exists(player) ? player.x : mouse_x;
-			ty = instance_exists(player) ? player.y : mouse_y;
+			var _pgp = Player_GetPos();
+			tx = instance_exists(player) ? _pgp[0] : mouse_x;
+			ty = instance_exists(player) ? _pgp[1] : mouse_y;
 			mark.SetSequence(seq_enemy_boss_mini_og3_attack_2);
 			side = 0;
 		}

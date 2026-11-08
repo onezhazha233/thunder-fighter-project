@@ -70,7 +70,7 @@ function draw_laser(_spr, _img, _xx, _yy, _offset, _dir, _length, _flip, _xscale
     var _target_h = 0;
     var _count = 0;
     var _scale_x = 1;
-	//_xx = floor(_xx);
+	_xx = floor(_xx);
 	_yy = floor(_yy);
 
     if (_xscale = 0 || _yscale = 0) return false;
@@ -314,7 +314,7 @@ function draw_laser(_spr, _img, _xx, _yy, _offset, _dir, _length, _flip, _xscale
                     _strip,
                     0, _srcy,
                     _w0, _src_h,   // 横截面: 1 行源(靠 _draw_ys 拉伸); 平铺/单块: _srch 行
-                    _xx + _x_offset, _yy + _y_offset,
+                    floor(_xx + _x_offset), floor(_yy + _y_offset),
                     _xscale, _draw_ys,
                     _dir + 90,
                     _blend, _blend, _blend, _blend,

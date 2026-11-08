@@ -39,8 +39,9 @@ FireAnnihilatorShot = function(k, rp){
 
 	var lx, ly;
 	if(instance_exists(player)){
-		lx = player.x;
-		ly = player.y - 1000;
+		var _pgp = Player_GetPos();
+		lx = _pgp[0];
+		ly = _pgp[1] - 1000;
 	}
 	else{
 		lx = equipment_agent.x;

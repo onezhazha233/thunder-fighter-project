@@ -14,7 +14,8 @@ attack_0 = function(){
 					attack_time += 1;
 					if(attack_time = 30){
 						speed = 0;
-						direction = point_direction(x,y,player.x,player.y);
+						var _pgp = Player_GetPos();
+						direction = point_direction(x,y,_pgp[0],_pgp[1]);
 						Anim_Create(id,"speed",0,0,0,10,30);
 					}
 				}
@@ -32,7 +33,8 @@ attack_0 = function(){
 					attack_time += 1;
 					if(attack_time = 30){
 						speed = 0;
-						direction = point_direction(x,y,player.x,player.y);
+						var _pgp = Player_GetPos();
+						direction = point_direction(x,y,_pgp[0],_pgp[1]);
 						Anim_Create(id,"speed",0,0,0,10,30);
 					}
 				}
@@ -50,7 +52,8 @@ attack_0 = function(){
 					attack_time += 1;
 					if(attack_time = 30){
 						speed = 0;
-						direction = point_direction(x,y,player.x,player.y);
+						var _pgp = Player_GetPos();
+						direction = point_direction(x,y,_pgp[0],_pgp[1]);
 						Anim_Create(id,"speed",0,0,0,10,30);
 					}
 				}
@@ -68,7 +71,8 @@ attack_0 = function(){
 					attack_time += 1;
 					if(attack_time = 30){
 						speed = 0;
-						direction = point_direction(x,y,player.x,player.y);
+						var _pgp = Player_GetPos();
+						direction = point_direction(x,y,_pgp[0],_pgp[1]);
 						Anim_Create(id,"speed",0,0,0,10,30);
 					}
 				}

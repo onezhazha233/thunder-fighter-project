@@ -13,7 +13,8 @@ attack_0 = function(){//三四五六向散射狙 40
 		for(j=0;j<num;j+=1){
 			pd = -90;
 			if(Player_IsEnabled()){
-				pd = point_direction(x,y,player.x,player.y);
+				var _pgp = Player_GetPos();
+				pd = point_direction(x,y,_pgp[0],_pgp[1]);
 			}
 			dd = 360/num*j+pd;
 			for(i=0;i<4;i+=1){
@@ -42,7 +43,8 @@ attack_1 = function(){//延迟狙 90
 	if(attack_time >= 1&&attack_time <= 31&&attack_time mod 5 = 1){
 		var dir = -90;
 		if(Player_IsEnabled()){
-			dir = point_direction(x,y,player.x,player.y);
+			var _pgp = Player_GetPos();
+			dir = point_direction(x,y,_pgp[0],_pgp[1]);
 		}
 		var blt = MakeEnemyBullet(x,y,bullet_enemy_normal,spr_bullet_enemy_darkpurple_0);
 		blt.image_xscale = 2;
@@ -59,9 +61,10 @@ attack_1 = function(){//延迟狙 90
 						var s = MakeEnemyBullet(x,y,bullet_enemy_normal,spr_bullet_enemy_darkpurple_0);
 						s.mark = other.mark;
 						dd = -90;
-						if(Player_IsEnabled())dd = point_direction(x,y,player.x,player.y);
+						var _pgp = Player_GetPos();
+						if(Player_IsEnabled())dd = point_direction(x,y,_pgp[0],_pgp[1]);
 						td = 200;
-						if(Player_IsEnabled())td = point_distance(x,y,player.x,player.y);
+						if(Player_IsEnabled())td = point_distance(x,y,_pgp[0],_pgp[1]);
 						Anim_Create(s,"x",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,x,lengthdir_x(max(td/10,30)*(i+1),dd),30);
 						Anim_Create(s,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,y,lengthdir_y(max(td/10,30)*(i+1),dd),30);
 						s.direction = dd;
@@ -83,7 +86,8 @@ attack_2 = function(){//连射斜线狙 40
 	if(attack_time >= 1&&attack_time <= 31&&attack_time mod 10 = 1){
 		var dir = -90;
 		if(Player_IsEnabled()){
-			dir = point_direction(x,y,player.x,player.y);
+			var _pgp = Player_GetPos();
+			dir = point_direction(x,y,_pgp[0],_pgp[1]);
 		}
 		if((attack_time div 10) mod 2 = 0){
 			for(i=0;i<5;i+=1){
@@ -148,10 +152,11 @@ attack_5 = function(){//米加 90
 	if(attack_time mod 20 = 1){
 		rl = 250;
 		ra = sin(attack_time*753)*360;
-		xx = clamp(player.x + lengthdir_x(rl,ra),10,710);
-		yy = clamp(player.y + lengthdir_y(rl,ra),10,1270);
+		var _pp = Player_GetPos();
+		xx = clamp(_pp[0] + lengthdir_x(rl,ra),10,710);
+		yy = clamp(_pp[1] + lengthdir_y(rl,ra),10,1270);
 		mg = MakeEnemyBullet(xx,yy,bullet_enemy_umbra_apex_mega);
-		mg.image_angle = point_direction(xx,yy,player.x,player.y);
+		mg.image_angle = point_direction(xx,yy,_pp[0],_pp[1]);
 	}
 	if(attack_time = 90){
 		mark.SetMoveInfo();

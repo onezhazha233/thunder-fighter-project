@@ -3,8 +3,9 @@ event_inherited();
 
 // 获取目标位置的方向
 attack_0_get_target_dir = function(){
-	var _tx = instance_exists(player) ? player.x : mouse_x;
-	var _ty = instance_exists(player) ? player.y : mouse_y;
+	var _pgp = Player_GetPos();
+	var _tx = instance_exists(player) ? _pgp[0] : mouse_x;
+	var _ty = instance_exists(player) ? _pgp[1] : mouse_y;
 	return point_direction(x, y-62, _tx, _ty);
 }
 
@@ -102,8 +103,9 @@ attack_1 = function(){//狙加摆动散射
 	live;
 	if(attack_time <= 48){
 		if(attack_time mod 3 = 1){
-			var _tx = instance_exists(player) ? player.x : mouse_x;
-			var _ty = instance_exists(player) ? player.y : mouse_y;
+			var _pgp = Player_GetPos();
+			var _tx = instance_exists(player) ? _pgp[0] : mouse_x;
+			var _ty = instance_exists(player) ? _pgp[1] : mouse_y;
 			if(attack_time mod 12 = 1){
 				dd0 =  point_direction(x-80,y+40, _tx, _ty);
 				dd1 =  point_direction(x+80,y+40, _tx, _ty);
@@ -164,8 +166,9 @@ attack_2 = function(){//延迟蓝针狙
 					if(duration = 1){
 						duration = -1;
 						Anim_Create(id,"image_xscale",0,0,0.1,1.4,10);
-						var _tx = instance_exists(player) ? player.x : mouse_x;
-						var _ty = instance_exists(player) ? player.y : mouse_y;
+						var _pgp = Player_GetPos();
+						var _tx = instance_exists(player) ? _pgp[0] : mouse_x;
+						var _ty = instance_exists(player) ? _pgp[1] : mouse_y;
 						direction = point_direction(x,y,_tx,_ty);
 						image_angle = direction;
 						Anim_Create(id,"speed",0,0,0.1,20,30);
@@ -255,7 +258,7 @@ attack_4 = function(){//反弹子弹排
 								hspeed *= -1;
 								bounced += 1;
 							}
-							if(y <= 0+edge[1] || y >= room_height-edge[2]){
+							else if(y <= 0+edge[1] || y >= room_height-edge[2]){
 								if(y <= 0+edge[1])y = 0+edge[1];
 								if(y >= room_height-edge[2])y = room_height-edge[2];
 								vspeed *= -1;
@@ -288,7 +291,7 @@ attack_4 = function(){//反弹子弹排
 								hspeed *= -1;
 								bounced += 1;
 							}
-							if(y <= 0+edge[1] || y >= room_height-edge[2]){
+							else if(y <= 0+edge[1] || y >= room_height-edge[2]){
 								if(y <= 0+edge[1])y = 0+edge[1];
 								if(y >= room_height-edge[2])y = room_height-edge[2];
 								vspeed *= -1;

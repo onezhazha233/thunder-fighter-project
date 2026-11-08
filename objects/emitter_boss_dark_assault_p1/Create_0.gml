@@ -26,7 +26,8 @@ attack_1 = function(){//延迟散射 40
 	if(attack_time >= 1&&attack_time <= 31&&attack_time mod 5 = 1){
 		var dir = 90;
 		if(Player_IsEnabled()){
-			dir = point_direction(x,y,player.x,player.y);
+			var _pgp = Player_GetPos();
+			dir = point_direction(x,y,_pgp[0],_pgp[1]);
 		}
 		var blt = MakeEnemyBullet(x,y,bullet_enemy_normal,spr_bullet_enemy_darkred_0);
 		blt.image_xscale = 2;
@@ -61,7 +62,8 @@ attack_2 = function(){//连射狙 40
 	if(attack_time >= 1&&attack_time <= 31&&attack_time mod 5 = 1){
 		var dir = 90;
 		if(Player_IsEnabled()){
-			dir = point_direction(x,y,player.x,player.y);
+			var _pgp = Player_GetPos();
+			dir = point_direction(x,y,_pgp[0],_pgp[1]);
 		}
 		var blt = MakeEnemyBullet(x,y,bullet_enemy_normal,spr_bullet_enemy_darkred_0);
 		blt.direction = dir;

@@ -89,7 +89,8 @@ attack_1 = function(){//延迟散射 60
 	if(attack_time = 1||attack_time = 20||attack_time = 40||attack_time = 60){
 		var dir = 90;
 		if(Player_IsEnabled()){
-			dir = point_direction(x,y,player.x,player.y);
+			var _pgp = Player_GetPos();
+			dir = point_direction(x,y,_pgp[0],_pgp[1]);
 		}
 		for(var k=0;k<4;k+=1){
 			var a = MakeEnemyBullet(x,y,bullet_enemy_normal,spr_bullet_enemy_darkpurple_0);
@@ -119,14 +120,14 @@ attack_1 = function(){//延迟散射 60
 									custom_function = function(){
 										if(!bounced){
 											if(x <= 0 || x >= room_width){
-												if(x <= 0)x = 0;
-												if(x >= room_width)x = room_width;
+												if(x <= 0)x = -x;
+												if(x >= room_width)x = room_width*2-x;
 												hspeed *= -1;
 												bounced = true;
 											}
-											if(y <= 0 || y >= room_height){
-												if(y <= 0)y = 0;
-												if(y >= room_height)y = room_height;
+											else if(y <= 0 || y >= room_height){
+												if(y <= 0)y = -y;
+												if(y >= room_height)y = room_height*2-y;
 												vspeed *= -1;
 												bounced = true;
 											}
@@ -155,7 +156,8 @@ attack_2 = function(){//连射扫射扇形狙 90
 		MoveEnemy(false);
 		dir = -90;
 		if(Player_IsEnabled()){
-			dir = point_direction(x,y,player.x,player.y);
+			var _pgp = Player_GetPos();
+			dir = point_direction(x,y,_pgp[0],_pgp[1]);
 		}
 	}
 	if(attack_time >= 1&&attack_time <= 21&&attack_time mod 4 = 1){
@@ -169,7 +171,8 @@ attack_2 = function(){//连射扫射扇形狙 90
 	if(attack_time = 30){
 		dir = -90;
 		if(Player_IsEnabled()){
-			dir = point_direction(x,y,player.x,player.y);
+			var _pgp = Player_GetPos();
+			dir = point_direction(x,y,_pgp[0],_pgp[1]);
 		}
 	}
 	if(attack_time >= 30&&attack_time <= 51&&attack_time mod 4 = 1){
@@ -268,8 +271,9 @@ attack_5 = function(){//米加 180
 		px = 360;
 		py = 860;
 		if(Player_IsEnabled()){
-			px = player.x;
-			py = player.y;
+			var _pgp = Player_GetPos();
+			px = _pgp[0];
+			py = _pgp[1];
 		}
 		mg = MakeEnemyBullet(px+200,py,bullet_enemy_umbra_apex_mega);
 		mg.image_angle = 180;
@@ -480,7 +484,8 @@ attack_8 = function(){//穿甲弹加米加狙 700
 	}
 	if(attack_time >= bottom_fire_start && attack_time <= bottom_fire_end){
 		if(attack_time mod 80 = 0){
-			MakeEnemyBullet(player.x,400,bullet_enemy_umbra_apex_mega).image_angle = -90;
+			var _pgp = Player_GetPos();
+			MakeEnemyBullet(_pgp[0],400,bullet_enemy_umbra_apex_mega).image_angle = -90;
 		}
 		at -= 1;
 		if(at = 0){
