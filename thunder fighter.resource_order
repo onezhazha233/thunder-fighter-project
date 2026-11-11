@@ -927,6 +927,7 @@
     {"name":"GMLiveAPI","order":4,"path":"scripts/GMLiveAPI/GMLiveAPI.yy",},
     {"name":"GMU_Anim","order":10,"path":"scripts/GMU_Anim/GMU_Anim.yy",},
     {"name":"GuiClip","order":26,"path":"scripts/GuiClip/GuiClip.yy",},
+    {"name":"Hash01","order":27,"path":"scripts/Hash01/Hash01.yy",},
     {"name":"json_format","order":22,"path":"scripts/json_format/json_format.yy",},
     {"name":"Lang_ClearList","order":1,"path":"scripts/Lang_ClearList/Lang_ClearList.yy",},
     {"name":"Lang_ClearSprite","order":2,"path":"scripts/Lang_ClearSprite/Lang_ClearSprite.yy",},

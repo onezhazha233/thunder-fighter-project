@@ -1598,6 +1598,7 @@
     {"id":{"name":"GMLiveAPI","path":"scripts/GMLiveAPI/GMLiveAPI.yy",},},
     {"id":{"name":"GMU_Anim","path":"scripts/GMU_Anim/GMU_Anim.yy",},},
     {"id":{"name":"GuiClip","path":"scripts/GuiClip/GuiClip.yy",},},
+    {"id":{"name":"Hash01","path":"scripts/Hash01/Hash01.yy",},},
     {"id":{"name":"json_format","path":"scripts/json_format/json_format.yy",},},
     {"id":{"name":"Lang_BindTyperGroup","path":"scripts/Lang_BindTyperGroup/Lang_BindTyperGroup.yy",},},
     {"id":{"name":"Lang_ClearAudio","path":"scripts/Lang_ClearAudio/Lang_ClearAudio.yy",},},
