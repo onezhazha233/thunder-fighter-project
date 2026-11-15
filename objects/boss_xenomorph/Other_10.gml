@@ -2,7 +2,7 @@ live;
 event_inherited();
 
 SetMoveInfo = function(){
-	move_range = [150,250,720-150,500];
+	move_range = [200,250,720-200,500];
 	move_distance = [100,250];
 	move_duration = [40,60];
 	move_interval = [10,20];

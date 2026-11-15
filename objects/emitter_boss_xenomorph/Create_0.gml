@@ -416,11 +416,11 @@ attack_4 = function(){//下落加两轮旋转折返扩散
 				Anim_Create(bb,"image_xscale",0,0,1,(4-idx)/1.5,90,30);
 				Anim_Create(bb,"image_yscale",0,0,1,(4-idx)/1.5,90,30);
 				Anim_Create(bb,"speed",0,0,bb.speed,20,15,30);
-				Anim_Create(bb,"speed",0,0,bb.speed+15,8,20,200);
+				Anim_Create(bb,"speed",0,0,bb.speed+15,5,20,200);
 				Anim_Create(bb,"direction",0,0,bb.direction,-360,150,30);
 			}
 		});
-		During(120,150,6,function(idx){
+		During(140,170,6,function(idx){
 			for(i=0;i<16;i+=1){
 				bb = MakeEnemyBullet(200,500,bullet_enemy_normal);
 				bb.image_index = 4;
@@ -433,15 +433,15 @@ attack_4 = function(){//下落加两轮旋转折返扩散
 				Anim_Create(bb,"image_xscale",0,0,1,(4-idx)/1.5,90,30);
 				Anim_Create(bb,"image_yscale",0,0,1,(4-idx)/1.5,90,30);
 				Anim_Create(bb,"speed",0,0,bb.speed,20,15,30);
-				Anim_Create(bb,"speed",0,0,bb.speed+20,8,20,200);
+				Anim_Create(bb,"speed",0,0,bb.speed+15,5,20,200);
 				Anim_Create(bb,"direction",0,0,bb.direction,360,150,30);
 			}
 		});
 	}
-	if(attack_time = 150){
+	if(attack_time = 170){
 		mark.SetIdle();
 	}
-	if(attack_time = 330){
+	if(attack_time = 350){
 		end_attack();
 	}	
 }
@@ -527,43 +527,52 @@ attack_6 = function(){//摆动反弹虫弹
 	}
 	if(attack_time = 70){
 		mark.SetMoveEnabled(false);
-		During(70,110,8,function(){
-			mark.SetSequence(seq_enemy_boss_mini_og3_attack_1_0);
+		aa = 0;
+		During(70,110,5,function(){
+			if(aa = 0){
+				mark.SetSequence(seq_enemy_boss_mini_og3_attack_1_0);
+			}
+			else{
+				mark.SetSequence(seq_enemy_boss_mini_og3_attack_1_1);
+			}
+			aa = !aa;
 		});
 		During(70,110,8,function(idx){
-			bb = MakeEnemyBullet(x-60,y-115,bullet_enemy_normal,spr_bullet_enemy_bug);
-			bb.dir = 135;
-			bb.spd = 8;
-			bb.ox = bb.x;
-			bb.oy = bb.y;
-			bb.time = 0;
-			bb.bounced = 0;
-			bb.image_angle = bb.dir;
-			bb.image_xscale = 1.5;
-			bb.image_yscale = 1.5;
-			with(bb){
-				custom_function = function(){
-					time += 1;
-					if(time mod 6 = 0)image_index = !image_index;
-					ox += lengthdir_x(spd,dir);
-					oy += lengthdir_y(spd,dir);
-					var _sw = sin(time/10) * 30;
-					x = ox + lengthdir_x(_sw, dir + 90);
-					y = oy + lengthdir_y(_sw, dir + 90);
-					if(bounced < 3){
-						if(ox <= 0 || ox >= room_width){
-							dir = 180 - dir;                 // 水平分量反转
-							ox = clamp(ox, 0, room_width);
-							bounced += 1;
-							time = 0;                        // dir 变了，摆动轴跟着变，重置相位避免位置跳变
-							image_angle = dir;
-						}
-						else if(oy <= 0 || oy >= room_height){
-							dir = -dir;                      // 垂直分量反转
-							oy = clamp(oy, 0, room_height);
-							bounced += 1;
-							time = 0;
-							image_angle = dir;
+			for(i=0;i<1;i+=1){
+				bb = MakeEnemyBullet(x-60+i*120,y-115,bullet_enemy_normal,spr_bullet_enemy_bug);
+				bb.dir = 135-i*90;
+				bb.spd = 8;
+				bb.ox = bb.x;
+				bb.oy = bb.y;
+				bb.time = 0;
+				bb.bounced = 0;
+				bb.image_angle = bb.dir;
+				bb.image_xscale = 1.5;
+				bb.image_yscale = 1.5;
+				with(bb){
+					custom_function = function(){
+						time += 1;
+						if(time mod 6 = 0)image_index = !image_index;
+						ox += lengthdir_x(spd,dir);
+						oy += lengthdir_y(spd,dir);
+						var _sw = sin(time/10) * 30;
+						x = ox + lengthdir_x(_sw, dir + 90);
+						y = oy + lengthdir_y(_sw, dir + 90);
+						if(bounced < 3){
+							if(ox <= 0 || ox >= room_width){
+								dir = 180 - dir;                 // 水平分量反转
+								ox = clamp(ox, 0, room_width);
+								bounced += 1;
+								time = 0;                        // dir 变了，摆动轴跟着变，重置相位避免位置跳变
+								image_angle = dir;
+							}
+							else if(oy <= 0 || oy >= room_height){
+								dir = -dir;                      // 垂直分量反转
+								oy = clamp(oy, 0, room_height);
+								bounced += 1;
+								time = 0;
+								image_angle = dir;
+							}
 						}
 					}
 				}
@@ -574,55 +583,10 @@ attack_6 = function(){//摆动反弹虫弹
 		mark.SetMoveEnabled(true);
 	}
 	if(attack_time = 150){
-		mark.SetMoveEnabled(false);
-		During(150,190,8,function(){
-			mark.SetSequence(seq_enemy_boss_mini_og3_attack_1_1);
-		});
-		During(150,190,8,function(idx){
-			bb = MakeEnemyBullet(x+60,y-115,bullet_enemy_normal,spr_bullet_enemy_bug);
-			bb.dir = 45;
-			bb.spd = 8;
-			bb.ox = bb.x;
-			bb.oy = bb.y;
-			bb.time = 0;
-			bb.bounced = 0;
-			bb.image_angle = bb.dir;
-			bb.image_xscale = 1.5;
-			bb.image_yscale = 1.5;
-			with(bb){
-				custom_function = function(){
-					time += 1;
-					ox += lengthdir_x(spd,dir);
-					oy += lengthdir_y(spd,dir);
-					var _sw = sin(time/10) * 30;
-					x = ox + lengthdir_x(_sw, dir + 90);
-					y = oy + lengthdir_y(_sw, dir + 90);
-					if(bounced < 3){
-						if(ox <= 0 || ox >= room_width){
-							dir = 180 - dir;                 // 水平分量反转
-							ox = clamp(ox, 0, room_width);
-							bounced += 1;
-							time = 0;                        // dir 变了，摆动轴跟着变，重置相位避免位置跳变
-							image_angle = dir;
-						}
-						else if(oy <= 0 || oy >= room_height){
-							dir = -dir;                      // 垂直分量反转
-							oy = clamp(oy, 0, room_height);
-							bounced += 1;
-							time = 0;
-							image_angle = dir;
-						}
-					}
-				}
-			}
-		});
-	}
-	if(attack_time = 200){
-		mark.SetMoveEnabled(true);
 		end_attack();
 	}
 }
-
+	
 a0 = create_attack(0,attack_0,40)
 a1 = create_attack(1,attack_1,40)
 a2 = create_attack(2,attack_2,40,0.7)
