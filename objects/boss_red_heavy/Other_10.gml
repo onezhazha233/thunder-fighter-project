@@ -8,11 +8,6 @@ SetMoveInfo = function(){
 	move_interval = [20,30];
 }
 
-OnDie = function(){
-	Player_AddScore(500);
-	MakeBossCrystal(x,y,500);
-}
-
 SetIdle = function(){
 	if(layer_sequence_get_sequence(enemy_sequence) = sequence_get(seq_enemy_boss_mini_0_uncover)||layer_sequence_get_sequence(enemy_sequence) = sequence_get(seq_enemy_boss_mini_0_uncover_attack)){
 		SetSequence(seq_enemy_boss_mini_0_cover);

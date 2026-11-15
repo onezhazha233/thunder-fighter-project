@@ -2056,6 +2056,8 @@
     {"id":{"name":"seq_enemy_boss_mini_og3_attack_2_intro","path":"sequences/seq_enemy_boss_mini_og3_attack_2_intro/seq_enemy_boss_mini_og3_attack_2_intro.yy",},},
     {"id":{"name":"seq_enemy_boss_mini_og3_attack_2_outro","path":"sequences/seq_enemy_boss_mini_og3_attack_2_outro/seq_enemy_boss_mini_og3_attack_2_outro.yy",},},
     {"id":{"name":"seq_enemy_boss_mini_og3_attack_2","path":"sequences/seq_enemy_boss_mini_og3_attack_2/seq_enemy_boss_mini_og3_attack_2.yy",},},
+    {"id":{"name":"seq_enemy_boss_mini_og3_die_b","path":"sequences/seq_enemy_boss_mini_og3_die_b/seq_enemy_boss_mini_og3_die_b.yy",},},
+    {"id":{"name":"seq_enemy_boss_mini_og3_die","path":"sequences/seq_enemy_boss_mini_og3_die/seq_enemy_boss_mini_og3_die.yy",},},
     {"id":{"name":"seq_enemy_boss_mini_og3_flame","path":"sequences/seq_enemy_boss_mini_og3_flame/seq_enemy_boss_mini_og3_flame.yy",},},
     {"id":{"name":"seq_enemy_boss_mini_og3_idle","path":"sequences/seq_enemy_boss_mini_og3_idle/seq_enemy_boss_mini_og3_idle.yy",},},
     {"id":{"name":"seq_enemy_boss_mini_og3_intro","path":"sequences/seq_enemy_boss_mini_og3_intro/seq_enemy_boss_mini_og3_intro.yy",},},
@@ -5526,8 +5528,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"room_init","path":"rooms/room_init/room_init.yy",},},
-    {"roomId":{"name":"room_test","path":"rooms/room_test/room_test.yy",},},
     {"roomId":{"name":"room_preparation","path":"rooms/room_preparation/room_preparation.yy",},},
+    {"roomId":{"name":"room_test","path":"rooms/room_test/room_test.yy",},},
     {"roomId":{"name":"room_damagetest","path":"rooms/room_damagetest/room_damagetest.yy",},},
     {"roomId":{"name":"room_battle","path":"rooms/room_battle/room_battle.yy",},},
     {"roomId":{"name":"room_battle_loading","path":"rooms/room_battle_loading/room_battle_loading.yy",},},

@@ -1283,6 +1283,8 @@
     {"name":"seq_enemy_boss_mini_og3_attack_2_intro","order":6,"path":"sequences/seq_enemy_boss_mini_og3_attack_2_intro/seq_enemy_boss_mini_og3_attack_2_intro.yy",},
     {"name":"seq_enemy_boss_mini_og3_attack_2_outro","order":8,"path":"sequences/seq_enemy_boss_mini_og3_attack_2_outro/seq_enemy_boss_mini_og3_attack_2_outro.yy",},
     {"name":"seq_enemy_boss_mini_og3_attack_2","order":7,"path":"sequences/seq_enemy_boss_mini_og3_attack_2/seq_enemy_boss_mini_og3_attack_2.yy",},
+    {"name":"seq_enemy_boss_mini_og3_die_b","order":10,"path":"sequences/seq_enemy_boss_mini_og3_die_b/seq_enemy_boss_mini_og3_die_b.yy",},
+    {"name":"seq_enemy_boss_mini_og3_die","order":9,"path":"sequences/seq_enemy_boss_mini_og3_die/seq_enemy_boss_mini_og3_die.yy",},
     {"name":"seq_enemy_boss_mini_og3_flame","order":2,"path":"sequences/seq_enemy_boss_mini_og3_flame/seq_enemy_boss_mini_og3_flame.yy",},
     {"name":"seq_enemy_boss_mini_og3_intro","order":1,"path":"sequences/seq_enemy_boss_mini_og3_intro/seq_enemy_boss_mini_og3_intro.yy",},
     {"name":"seq_enemy_minion_0b_flame","order":1,"path":"sequences/seq_enemy_minion_0b_flame/seq_enemy_minion_0b_flame.yy",},
