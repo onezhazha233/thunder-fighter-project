@@ -233,7 +233,7 @@ attack_2 = function(){//左右下落加激光
 
 		// 左右交替弹幕：每 4 帧一次，60 帧周期内前半段打左、后半段打右。
 		// 原先两段几乎相同的发射合并为一处，靠 _left 区分朝向与初速
-		During(4, 240, 4, function(_idx, _t){
+		During(4, 240, 6, function(_idx, _t){
 			var _m = _t mod 60;
 			var _left;
 			if(_m > 0 && _m < 30)      _left = true;
@@ -251,7 +251,7 @@ attack_2 = function(){//左右下落加激光
 					bb.vspeed -= 2;
 				}
 				bb.vspeed = -10;
-				bb.gravity = 0.5;
+				bb.gravity = 0.4;
 				bb.image_angle = 90;
 				with(bb){
 					px = x;
@@ -392,7 +392,7 @@ attack_4 = function(){//下落加两轮旋转折返扩散
 			mark.SetSequence(seq_enemy_boss_mini_og3_attack_0);
 		});
 		During(1,120,6,function(idx,tt){
-			for(i=0;i<lerp(2,3,Hash01(tt*123));i+=1){
+			for(i=0;i<lerp(1,3,Hash01(tt*123));i+=1){
 				dd = -90 + lerp(-60,60,Hash01(tt+i*120));
 				bb = MakeEnemyBullet(x,y+80,bullet_enemy_normal,spr_bullet_enemy_normal_3);
 				bb.direction = dd;
@@ -403,7 +403,7 @@ attack_4 = function(){//下落加两轮旋转折返扩散
 				Anim_Create(bb,"image_yscale",0,0,1,1,120);
 			}
 		});
-		During(90,120,6,function(idx){
+		During(110,130,6,function(idx){
 			for(i=0;i<16;i+=1){
 				bb = MakeEnemyBullet(540,500,bullet_enemy_normal);
 				bb.image_index = 4;
@@ -420,7 +420,7 @@ attack_4 = function(){//下落加两轮旋转折返扩散
 				Anim_Create(bb,"direction",0,0,bb.direction,-360,150,30);
 			}
 		});
-		During(140,170,6,function(idx){
+		During(160,190,6,function(idx){
 			for(i=0;i<16;i+=1){
 				bb = MakeEnemyBullet(200,500,bullet_enemy_normal);
 				bb.image_index = 4;
@@ -438,10 +438,10 @@ attack_4 = function(){//下落加两轮旋转折返扩散
 			}
 		});
 	}
-	if(attack_time = 170){
+	if(attack_time = 200){
 		mark.SetIdle();
 	}
-	if(attack_time = 350){
+	if(attack_time = 360){
 		end_attack();
 	}	
 }
@@ -481,66 +481,15 @@ attack_6 = function(){//摆动反弹虫弹
 		mark.SetMoveEnabled(false);
 		During(1,40,8,function(){
 			mark.SetSequence(seq_enemy_boss_mini_og3_attack_0);
+			pp = Player_GetPos();
 		});
 		During(1,40,8,function(idx){
-			bb = MakeEnemyBullet(x,y+80,bullet_enemy_normal,spr_bullet_enemy_bug);
-			bb.dir = -90;
-			bb.spd = 8;
-			bb.ox = bb.x;
-			bb.oy = bb.y;
-			bb.time = 0;
-			bb.bounced = 0;
-			bb.image_angle = bb.dir;
-			bb.image_xscale = 1.5;
-			bb.image_yscale = 1.5;
-			with(bb){
-				custom_function = function(){
-					time += 1;
-					if(time mod 6 = 0)image_index = !image_index;
-					ox += lengthdir_x(spd,dir);
-					oy += lengthdir_y(spd,dir);
-					var _sw = sin(time/10) * 30;
-					x = ox + lengthdir_x(_sw, dir + 90);
-					y = oy + lengthdir_y(_sw, dir + 90);
-					if(bounced < 2){
-						if(ox <= 0 || ox >= room_width){
-							dir = 180 - dir;                 // 水平分量反转
-							ox = clamp(ox, 0, room_width);
-							bounced += 1;
-							time = 0;                        // dir 变了，摆动轴跟着变，重置相位避免位置跳变
-							image_angle = dir;
-						}
-						else if(oy <= 0 || oy >= room_height){
-							dir = -dir;                      // 垂直分量反转
-							oy = clamp(oy, 0, room_height);
-							bounced += 1;
-							time = 0;
-							image_angle = dir;
-						}
-					}
+			for(i=0;i<3;i+=1){
+				bb = MakeEnemyBullet(x,y+80,bullet_enemy_normal,spr_bullet_enemy_bug);
+				bb.dir = -90-45+i*45;
+				if(i = 1){
+					bb.dir = point_direction(x,y+80,pp[0],pp[1]);
 				}
-			}
-		});
-	}
-	if(attack_time = 40){
-		mark.SetMoveEnabled(true);
-	}
-	if(attack_time = 70){
-		mark.SetMoveEnabled(false);
-		aa = 0;
-		During(70,110,5,function(){
-			if(aa = 0){
-				mark.SetSequence(seq_enemy_boss_mini_og3_attack_1_0);
-			}
-			else{
-				mark.SetSequence(seq_enemy_boss_mini_og3_attack_1_1);
-			}
-			aa = !aa;
-		});
-		During(70,110,8,function(idx){
-			for(i=0;i<1;i+=1){
-				bb = MakeEnemyBullet(x-60+i*120,y-115,bullet_enemy_normal,spr_bullet_enemy_bug);
-				bb.dir = 135-i*90;
 				bb.spd = 8;
 				bb.ox = bb.x;
 				bb.oy = bb.y;
@@ -558,7 +507,7 @@ attack_6 = function(){//摆动反弹虫弹
 						var _sw = sin(time/10) * 30;
 						x = ox + lengthdir_x(_sw, dir + 90);
 						y = oy + lengthdir_y(_sw, dir + 90);
-						if(bounced < 3){
+						if(bounced < 2){
 							if(ox <= 0 || ox >= room_width){
 								dir = 180 - dir;                 // 水平分量反转
 								ox = clamp(ox, 0, room_width);
@@ -579,10 +528,8 @@ attack_6 = function(){//摆动反弹虫弹
 			}
 		});
 	}
-	if(attack_time = 110){
+	if(attack_time = 60){
 		mark.SetMoveEnabled(true);
-	}
-	if(attack_time = 150){
 		end_attack();
 	}
 }
