@@ -479,9 +479,9 @@ attack_6 = function(){//摆动反弹虫弹
 	live;
 	if(attack_time = 1){
 		mark.SetMoveEnabled(false);
+		pp = Player_GetPos();
 		During(1,40,8,function(){
 			mark.SetSequence(seq_enemy_boss_mini_og3_attack_0);
-			pp = Player_GetPos();
 		});
 		During(1,40,8,function(idx){
 			for(i=0;i<3;i+=1){
